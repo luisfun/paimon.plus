@@ -1,6 +1,10 @@
 ---
+import Card from '@components/Card.astro'
+import { useTranslations } from '@i18n/utils'
 import Layout from '@layout'
-import Card from '../components/Card.astro'
+export { getStaticPaths } from '@i18n/utils'
+
+const t = useTranslations(Astro.url)
 ---
 
 <Layout>

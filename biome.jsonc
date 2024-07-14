@@ -1,11 +1,11 @@
 {
-	"$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
-	"organizeImports": { "enabled": true },
-	"formatter": {
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "organizeImports": { "enabled": true },
+  "formatter": {
     "indentStyle": "space",
     "lineWidth": 120
   },
-	"linter": {
+  "linter": {
     "rules": {
       "recommended": true,
       "style": {
@@ -16,16 +16,16 @@
       }
     }
   },
-	"javascript": {
+  "javascript": {
     "globals": ["Astro"],
-		"formatter": {
+    "formatter": {
       "arrowParentheses": "asNeeded",
       "quoteStyle": "single",
       "jsxQuoteStyle": "double",
       "semicolons": "asNeeded"
     }
   },
-	"overrides": [
+  "overrides": [
     {
       "include": ["*.svelte"],
       "linter": {

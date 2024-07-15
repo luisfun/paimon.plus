@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets'
+import paimon from '@assets/images/paimon.png'
+import Svg from "@components/svg.astro"
+---
+
+<header class="flex items-center justify-between py-2">
+  <a class="flex items-center text-2xl paimon-font">
+    <div class="w-10 rounded-full overflow-hidden border border-solid border-indigo-950 mr-2 md:mr-4">
+      <Image src={paimon} alt="paimon" />
+    </div>
+    <div>Paimon+</div>
+  </a>
+  <div class="w-4">
+    <Svg icon="share-nodes" />
+  </div>
+  <div class="dropdown dropdown-end">
+    <div tabindex="0" role="button" class="btn m-1">Click</div>
+    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+      <li><a>Item 1</a></li>
+      <li><a>Item 2</a></li>
+    </ul>
+  </div>
+</header>
+
+<style>
+  .paimon-font {
+    font-family: "Genshin", system-ui, sans-serif;
+    color: var(--text);
+  }
+</style>

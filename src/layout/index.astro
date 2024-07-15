@@ -1,92 +1,24 @@
 ---
-import { getLangFromUrl } from '../i18n/utils'
+import { getLangFromUrl } from '@i18n/utils'
+import Footer from './footer.astro'
+import Head from './head.astro'
+import Header from './header.astro'
+import Style from './style.astro'
 type Props = {
   title?: string
 }
 const lang = getLangFromUrl(Astro.url)
 const { title } = Astro.props
-
-const seo = {
-  title: title || 'Paimon+',
-  desc: 'Genshin Web Tools',
-  url: 'https://paimon.plus',
-  image: 'https://paimon.plus/maskable_icon_x128.png',
-  author: 'Luis',
-  color: '#0d1117',
-}
 ---
 
 <!doctype html>
-<html lang={lang}>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{seo.title}</title>
-    <meta name="description" content={seo.desc} />
-    <meta property="og:title" content={seo.title} />
-    <meta property="og:description" content={seo.desc} />
-    <meta property="og:url" content={seo.url} />
-    <meta property="og:image" content={seo.image} />
-    <meta property="og:type" content="website" />
-    <meta property="og:image:alt" content={seo.desc} />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content={seo.author} />
-    <meta name="msapplication-TileColor" content={seo.color} />
-    <meta name="theme-color" content={seo.color}>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" sizes="512x512" href={seo.image} />
-    <link rel="manifest" href="/manifest.webmanifest">
-  </head>
-  <body>
-    <div class="max-w-screen-lg m-auto px-4 sm:px-5">
-      <slot />
-    </div>
+<html {lang}>
+  <Head {title} />
+  <body class="max-w-screen-lg m-auto px-4 sm:px-5">
+    <Header />
+    <slot />
+    <Footer />
   </body>
 </html>
 
-<style is:global>
-  html {
-    font-family: system-ui, sans-serif;
-    font-size: 16px;
-    line-height: 1;
-    color: #f0f6fc;
-    background: #0d1117;
-  }
-  @media screen and (min-width: 896px) {
-    html {
-      font-size: 20px;
-    }
-  }
-  body {
-    margin: 0;
-  }
-  a {
-    color: #388bfd;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  ul {
-    margin: 0;
-  }
-  code {
-    font-family:
-      Menlo,
-      Monaco,
-      Lucida Console,
-      Liberation Mono,
-      DejaVu Sans Mono,
-      Bitstream Vera Sans Mono,
-      Courier New,
-      monospace;
-  }
-  .grid-column-2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1.2rem;
-  }
-  @media screen and (min-width: 640px) {
-    .grid-column-2 {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-</style>
+<Style />

@@ -1,0 +1,26 @@
+{
+  "name": "Paimon+",
+  "short_name": "Paimon+",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "icons": [
+    {
+      "type": "image/png",
+      "src": "/android-chrome-96x96.png",
+      "sizes": "96x96"
+    },
+    {
+      "type": "image/png",
+      "src": "/android-chrome-144x144.png",
+      "sizes": "144x144"
+    },
+    {
+      "type": "image/png",
+      "src": "/maskable_icon_x128.png",
+      "sizes": "128x128",
+      "purpose": "maskable"
+    }
+  ]
+}

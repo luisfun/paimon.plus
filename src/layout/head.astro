@@ -1,0 +1,35 @@
+---
+type Props = {
+  title?: string
+}
+const { title } = Astro.props
+
+const seo = {
+  title: title || 'Paimon+',
+  desc: 'Genshin Web Tools',
+  url: 'https://paimon.plus',
+  image: 'https://paimon.plus/maskable_icon_x128.png',
+  author: 'Luis',
+  color: '#0d1117',
+}
+---
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{seo.title}</title>
+  <meta name="description" content={seo.desc} />
+  <meta property="og:title" content={seo.title} />
+  <meta property="og:description" content={seo.desc} />
+  <meta property="og:url" content={seo.url} />
+  <meta property="og:image" content={seo.image} />
+  <meta property="og:type" content="website" />
+  <meta property="og:image:alt" content={seo.desc} />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content={seo.author} />
+  <meta name="msapplication-TileColor" content={seo.color} />
+  <meta name="theme-color" content={seo.color} />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="512x512" href={seo.image} />
+  <!--<link rel="manifest" href="/manifest.webmanifest" />-->
+</head>

@@ -1,24 +1,29 @@
 ---
 import { Image } from 'astro:assets'
 import paimon from '@assets/images/paimon.png'
-import Svg from "@components/svg.astro"
+import Svg from '@components/svg.astro'
+import { ui } from '@i18n/ui';
+import { getLangFromUrl, useTranslatedPath } from '@i18n/utils';
+
+const pageLang = getLangFromUrl(Astro.url);
+const translatePath = useTranslatedPath(pageLang);
 ---
 
-<header class="flex items-center justify-between py-2">
-  <a class="flex items-center text-2xl paimon-font">
-    <div class="w-10 rounded-full overflow-hidden border border-solid border-indigo-950 mr-2 md:mr-4">
-      <Image src={paimon} alt="paimon" />
-    </div>
-    <div>Paimon+</div>
+<header class="flex items-center justify-between py-2 border-b border-secondary">
+  <a href={translatePath('/')} class="flex items-center text-2xl paimon-font">
+    <Image loading="eager" src={paimon} alt="paimon" class="w-9 rounded-full overflow-hidden mr-3" />
+    <div class="mt-1">Paimon<span class="ml-0.5">+</span></div>
   </a>
-  <div class="w-4">
-    <Svg icon="share-nodes" />
-  </div>
   <div class="dropdown dropdown-end">
-    <div tabindex="0" role="button" class="btn m-1">Click</div>
-    <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-      <li><a>Item 1</a></li>
-      <li><a>Item 2</a></li>
+    <div tabindex="0" role="button" class="h-6">
+      <Svg icon="lang" />
+    </div>
+    <ul class="dropdown-content menu bg-neutral rounded-md z-[1] w-fit p-1 shadow">
+      {Object.entries(ui).map(([lang, {label}]) => (
+        <li class={pageLang === lang ? "page-lang" : undefined}>
+          <a href={translatePath('/', lang as keyof typeof ui)} aria-label={label}>{label}</a>
+        </li>
+      ))}
     </ul>
   </div>
 </header>
@@ -27,5 +32,16 @@ import Svg from "@components/svg.astro"
   .paimon-font {
     font-family: "Genshin", system-ui, sans-serif;
     color: var(--text);
+  }
+  .page-lang::before {
+    content: "";
+    position: absolute;
+    left: 0.375em;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--text);
+    border-radius: 50%;
+    width: 0.375em;
+    height: 0.375em;
   }
 </style>

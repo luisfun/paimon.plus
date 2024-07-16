@@ -7,6 +7,16 @@ export default {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: [],
+    themes: [
+      {
+        paimon: {
+          //"primary": "#a991f7",
+          "secondary": "hsl(227 6.5% 27.3%)",
+          //"accent": "#37cdbe",
+          "neutral": "hsl(223 6.7% 20.6%)",
+          "base-100": "#000",
+        },
+      },
+    ],
   },
 }

@@ -1,6 +1,31 @@
 ---
+import ExternalA from '@components/external-a.astro'
+import Svg from '@components/svg.astro'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '@i18n/utils'
+
+const pageLang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(pageLang)
+const t = useTranslations(pageLang)
+
+const links = [
+  { svg: 'Beta', href: translatePath('/beta-access/'), self: true },
+  { svg: 'discord', href: 'https://discord.gg/5bKYuCcmfu', self: false },
+  { svg: 'github', href: 'https://github.com/luisfun', self: false },
+  { svg: 'patreon', href: 'https://www.patreon.com/luisfun', self: false },
+] as const
 ---
 
-<footer class="py-2 text-sm">
-
+<footer class="py-2 text-sm text-primary border-t border-secondary">
+  <div class="flex items-center justify-between flex-wrap mb-2">
+    <div class="flex items-center h-4">
+      {links.map(link => (
+        <ExternalA href={link.href} class="h-4 mr-5" aria-label={link.svg} self={link.self}>
+          <Svg icon={link.svg} />
+        </ExternalA>
+      ))}
+    </div>
+    <ExternalA href="https://luis.fun" aria-label="luis.fun">© Luis.</ExternalA>
+  </div>
+  <span class="inline-block">{t("footer.unofficial")}</span>
+  <span class="inline-block">{t("game.title")} © COGNOSPHERE.</span>
 </footer>

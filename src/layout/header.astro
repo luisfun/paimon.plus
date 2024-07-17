@@ -2,15 +2,15 @@
 import { Image } from 'astro:assets'
 import paimon from '@assets/images/paimon.png'
 import Svg from '@components/svg.astro'
-import { ui } from '@i18n/ui';
-import { getLangFromUrl, useTranslatedPath } from '@i18n/utils';
+import { ui } from '@i18n/ui'
+import { getLangFromUrl, useTranslatedPath } from '@i18n/utils'
 
-const pageLang = getLangFromUrl(Astro.url);
-const translatePath = useTranslatedPath(pageLang);
+const pageLang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(pageLang)
 ---
 
 <header class="flex items-center justify-between py-2 border-b border-secondary">
-  <a href={translatePath('/')} class="flex items-center text-2xl paimon-font">
+  <a href={translatePath('/')} class="flex items-center text-2xl genshin-font">
     <Image loading="eager" src={paimon} alt="paimon" class="w-9 rounded-full overflow-hidden mr-3" />
     <div class="mt-1">Paimon<span class="ml-0.5">+</span></div>
   </a>
@@ -29,10 +29,6 @@ const translatePath = useTranslatedPath(pageLang);
 </header>
 
 <style>
-  .paimon-font {
-    font-family: "Genshin", system-ui, sans-serif;
-    color: var(--text);
-  }
   .page-lang::before {
     content: "";
     position: absolute;

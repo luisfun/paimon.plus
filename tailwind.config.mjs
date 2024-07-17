@@ -10,11 +10,11 @@ export default {
     themes: [
       {
         paimon: {
-          //"primary": "#a991f7",
-          "secondary": "hsl(227 6.5% 27.3%)",
-          //"accent": "#37cdbe",
-          "neutral": "hsl(223 6.7% 20.6%)",
-          "base-100": "#000",
+          primary: 'hsl(215 8.8% 73.3%)',
+          secondary: 'hsl(227 6.5% 27.3%)',
+          accent: 'hsl(200 100% 49.4%)',
+          neutral: 'hsl(223 6.7% 20.6%)',
+          'base-100': '#000',
         },
       },
     ],

@@ -1,0 +1,13 @@
+---
+import Svg from '@components/svg.astro'
+---
+
+<div class="collapse">
+  <input type="checkbox" />
+  <div class="collapse-title">
+    <Svg icon="angle-up" class="h-4" />
+  </div>
+  <div class="collapse-content p-0">
+    <slot />
+  </div>
+</div>

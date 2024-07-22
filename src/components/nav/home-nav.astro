@@ -1,0 +1,21 @@
+---
+import type { navData } from '@components/nav/data'
+import NavSvg from '@components/nav/svg.astro'
+import { getLangFromUrl, useTranslatedPath } from '@i18n/utils'
+type Props = {
+  data: typeof navData
+}
+const { data } = Astro.props
+
+const pageLang = getLangFromUrl(Astro.url)
+const translatePath = useTranslatedPath(pageLang)
+---
+
+<div class="grid grid-cols-3 gap-y-8">
+  {data.map(nav => (
+    <a href={translatePath(nav.href)}>
+      <NavSvg icon={nav.svg} class="max-w-[120px] mx-auto mb-3 px-4" />
+      <div class="text-center">{nav.text}</div>
+    </a>
+  ))}
+</div>

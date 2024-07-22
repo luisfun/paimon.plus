@@ -1,0 +1,29 @@
+<style is:global>
+  @font-face {
+    font-family: 'Genshin';
+    src: url('/fonts/genshin.woff2') format('woff2');
+    font-display: swap;
+  }
+  :root {
+    --primary-230: hsl(210 9.1% 87.1%);
+    --primary-700: hsl(225 6.3% 12.5%);
+    --fallback-bc: var(--primary-230);
+    --fallback-b1: var(--primary-700);
+  }
+  html {
+    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+  @media screen and (min-width: 896px) {
+    html {
+      font-size: 18px;
+    }
+  }
+  a {
+    cursor: pointer;
+  }
+  .genshin-font {
+    font-family: "Genshin", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  }
+</style>

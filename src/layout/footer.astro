@@ -8,19 +8,19 @@ const translatePath = useTranslatedPath(pageLang)
 const t = useTranslations(pageLang)
 
 const links = [
-  { svg: 'Beta', href: translatePath('/beta-access/'), self: true },
+  { svg: 'beta', href: translatePath('/beta-access/'), self: true },
   { svg: 'discord', href: 'https://discord.gg/5bKYuCcmfu', self: false },
   { svg: 'github', href: 'https://github.com/luisfun', self: false },
   { svg: 'patreon', href: 'https://www.patreon.com/luisfun', self: false },
 ] as const
 ---
 
-<footer class="py-2 text-sm text-primary border-t border-secondary">
+<footer class="py-2 text-sm text-primary-330 border-t border-primary-530">
   <div class="flex items-center justify-between flex-wrap mb-2">
-    <div class="flex items-center h-4">
+    <div class="flex items-center">
       {links.map(link => (
-        <ExternalA href={link.href} class="h-4 mr-5" aria-label={link.svg} self={link.self}>
-          <Svg icon={link.svg} />
+        <ExternalA href={link.href} class="mr-5" aria-label={link.svg} self={link.self}>
+          <Svg icon={link.svg} class="h-4" />
         </ExternalA>
       ))}
     </div>

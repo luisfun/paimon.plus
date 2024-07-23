@@ -2,12 +2,18 @@
 import Svg from '@components/svg.astro'
 ---
 
-<div class="collapse">
-  <input type="checkbox" />
-  <div class="collapse-title">
+<div class="collapse grid-rows-[0fr_auto]">
+  <input type="checkbox" class="!row-start-2 min-h-[unset]" />
+  <div class="collapse-title row-start-2 flex justify-center items-center mt-4 p-0 pb-4 min-h-[unset]">
     <Svg icon="angle-up" class="h-4" />
   </div>
-  <div class="collapse-content p-0">
+  <div class="collapse-content row-start-1 visible overflow-hidden !p-0">
     <slot />
   </div>
 </div>
+
+<style>
+  .collapse:not(.collapse-close):has(> input[type="checkbox"]:checked), .collapse:not(.collapse-close):has(> input[type="radio"]:checked) {
+    grid-template-rows: 1fr auto;
+  }
+</style>

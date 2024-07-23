@@ -12,8 +12,8 @@ const t = useTranslations(Astro.url)
 <Layout title={t("home.title")}>
   <nav class="bg-neutral pt-6 rounded-lg">
 		<HomeNav data={navData.slice(0,6)} />
-		<More>
-			<HomeNav data={navData.slice(6)} />
+		<More more>
+			<HomeNav data={navData.slice(6)} mt />
 		</More>
 	</nav>
 	<div></div>

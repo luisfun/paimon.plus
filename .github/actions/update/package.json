@@ -1,0 +1,8 @@
+{
+	"name": "update",
+	"main": "src/index.js",
+	"type": "module",
+	"devDependencies": {
+		"puppeteer": "^21.7.0"
+	}
+}

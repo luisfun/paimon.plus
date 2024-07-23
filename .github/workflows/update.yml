@@ -1,0 +1,33 @@
+on: [push]
+
+jobs:
+  js:
+    runs-on: ubuntu-latest
+    name: Game Update
+    steps:
+      # リポジトリのチェックアウト
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      # node を使用したい
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: cd .github/actions/update && npm i
+      # アクションの実行
+      - name: Run actions/update
+        uses: ./.github/actions/update
+      # git push
+      - name: Auto push
+        run: |
+          git remote set-url origin https://github-actions:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git diff-index --quiet HEAD || git commit -m "🤖 Auto push by github-actions"
+          git push origin HEAD:${GITHUB_REF}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

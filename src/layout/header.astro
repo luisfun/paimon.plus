@@ -15,7 +15,9 @@ const translatePath = useTranslatedPath(pageLang)
     <div class="mt-1">Paimon<span class="ml-0.5">+</span></div>
   </a>
   <div class="dropdown dropdown-end">
-    <Svg tabindex="0" role="button" icon="lang" class="h-6" />
+    <div tabindex="0" role="button" aria-label="language selector">
+      <Svg icon="lang" class="h-6" />
+    </div>
     <ul class="dropdown-content menu bg-neutral rounded-md z-[1] w-fit p-1 shadow">
       {Object.entries(ui).map(([lang, {label}]) => (
         <li class={pageLang === lang ? "page-lang" : undefined}>

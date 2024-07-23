@@ -22,7 +22,3 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-
-# game sources
-src/game/.data/
-src/game/.ui/

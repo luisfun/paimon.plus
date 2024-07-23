@@ -9,8 +9,8 @@
     "build": "astro check && astro build",
     "preview": "astro build && astro preview",
     "astro": "astro",
-		"update": "node .github/local-scripts/update.mjs",
-		"update:wiki": "node .github/local-scripts/wiki-update.mjs"
+    "update": "node .github/local-scripts/update.mjs",
+    "update:wiki": "node .github/local-scripts/wiki-update.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.8.1",

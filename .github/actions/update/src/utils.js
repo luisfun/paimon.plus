@@ -1,6 +1,7 @@
 export const folder = {
   data: 'src/game/.data/',
-  ui: 'src/game/.ui/',
+  wiki: 'src/game/.wiki/',
   dist: 'src/game/',
+  ui: 'src/game/.ui/',
   webp: 'public/images/ui/',
 }

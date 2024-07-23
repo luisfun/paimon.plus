@@ -2,8 +2,8 @@ import fs from 'node:fs'
 import puppeteer from 'puppeteer'
 import { folder } from './utils.js'
 
-const fileName = 'wiki-id'
-const maxNullCount = 10 // no pageをn回まで許容
+const fileName = 'id'
+const maxNullCount = 50 // no pageをn回まで許容
 const scrapingMaxCount = 1000 // newスクレイピングの最大回数
 
 /**
@@ -13,7 +13,7 @@ const scrapingMaxCount = 1000 // newスクレイピングの最大回数
  */
 export const wikiScraping = async (updateOnly = false, num = 1000) => {
   // 読み取り済みIDの取得
-  const wikiJson = JSON.parse(fs.readFileSync(`${folder.dist + fileName}.json`, 'utf8'))
+  const wikiJson = JSON.parse(fs.readFileSync(`${folder.wiki + fileName}.json`, 'utf8'))
   // ブラウザの立ち上げ
   const browser = await puppeteer.launch({ headless: 'new' })
   const page = await browser.newPage()
@@ -22,14 +22,14 @@ export const wikiScraping = async (updateOnly = false, num = 1000) => {
     await hashScraping(wikiJson, page, num)
     await nullScraping(wikiJson, page, num)
   } else {
-    await hashScraping(wikiJson, page, maxNullCount * 2)
+    await hashScraping(wikiJson, page, maxNullCount)
     await nullScraping(wikiJson, page, maxNullCount)
     await newScraping(wikiJson, page)
   }
   // ブラウザクローズ
   await browser.close()
   // 保存
-  fs.writeFileSync(`${folder.dist + fileName}.json`, JSON.stringify(wikiJson, null, 2))
+  fs.writeFileSync(`${folder.wiki + fileName}.json`, JSON.stringify(wikiJson, null, 2))
 }
 
 /**
@@ -41,7 +41,7 @@ export const wikiScraping = async (updateOnly = false, num = 1000) => {
 const hashScraping = async (wikiJson, page, num) => {
   const hashIds = []
   for (const id in wikiJson) {
-    if (wikiJson.hasOwn(id) && wikiJson[id] === '#') hashIds.push(id) // #要素のID抽出
+    if (Object.hasOwn(wikiJson, id) && wikiJson[id] === '#') hashIds.push(id) // #要素のID抽出
   }
   const checkIds = hashIds.slice(-num) // スクレイピングする範囲設定
   for (const i of checkIds) {
@@ -60,7 +60,7 @@ const hashScraping = async (wikiJson, page, num) => {
 const nullScraping = async (wikiJson, page, num) => {
   const nullIds = []
   for (const id in wikiJson) {
-    if (wikiJson.hasOwn(id) && wikiJson[id] === '') nullIds.push(id) // null要素のID抽出
+    if (Object.hasOwn(wikiJson, id) && wikiJson[id] === '') nullIds.push(id) // null要素のID抽出
   }
   const checkIds = nullIds.slice(-(num + maxNullCount), -maxNullCount) // スクレイピングする範囲設定
   for (const i of checkIds) {

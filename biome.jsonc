@@ -32,6 +32,6 @@
     }
   ],
   "files": {
-    "ignore": ["dist", "package.json", "src/game/.data"]
+    "ignore": ["dist", "package.json", "src/game/.data", "src/game/.wiki"]
   }
 }

@@ -1,5 +1,5 @@
-import fs from 'fs'
-import { pipeline } from 'stream/promises'
+import fs from 'node:fs'
+import { pipeline } from 'node:stream/promises'
 
 import { folder } from './utils.js'
 
@@ -20,15 +20,15 @@ const getUiImages = async () => {
   const jsonNames = ['AvatarExcelConfigData', 'AvatarCostumeExcelConfigData']
   const jsons = {}
   for (const name of jsonNames) {
-    jsons[name] = JSON.parse(fs.readFileSync(folder.data + name + '.json', 'utf8'))
+    jsons[name] = JSON.parse(fs.readFileSync(`${folder.data + name}.json`, 'utf8'))
   }
   // 必要な画像リスト生成
   const imageList = jsons.AvatarExcelConfigData.map(e => e.iconName)
   const ngList = ['UI_AvatarIcon_Kate']
   const dlList = imageList
-    .filter(e => !uiFiles.includes(e + '.png'))
+    .filter(e => !uiFiles.includes(`${e}.png`))
     .filter(e => !ngList.includes(e))
-    .map(e => e + '.png')
+    .map(e => `${e}.png`)
   dlList.length = 3
   //console.log(dlList)
   //

@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 import puppeteer from 'puppeteer'
 
 import { folder } from './utils.js'
@@ -14,7 +14,7 @@ const scrapingMaxCount = 1000 // newスクレイピングの最大回数
  */
 export const wikiScraping = async (updateOnly = false, num = 1000) => {
   // 読み取り済みIDの取得
-  const wikiJson = JSON.parse(fs.readFileSync(folder.dist + fileName + '.json', 'utf8'))
+  const wikiJson = JSON.parse(fs.readFileSync(`${folder.dist + fileName}.json`, 'utf8'))
   // ブラウザの立ち上げ
   const browser = await puppeteer.launch({ headless: 'new' })
   const page = await browser.newPage()
@@ -30,7 +30,7 @@ export const wikiScraping = async (updateOnly = false, num = 1000) => {
   // ブラウザクローズ
   await browser.close()
   // 保存
-  fs.writeFileSync(folder.dist + fileName + '.json', JSON.stringify(wikiJson, null, 2))
+  fs.writeFileSync(`${folder.dist + fileName}.json`, JSON.stringify(wikiJson, null, 2))
 }
 
 /**
@@ -42,13 +42,13 @@ export const wikiScraping = async (updateOnly = false, num = 1000) => {
 const hashScraping = async (wikiJson, page, num) => {
   const hashIds = []
   for (const id in wikiJson) {
-    if (wikiJson.hasOwnProperty(id) && wikiJson[id] === '#') hashIds.push(id) // #要素のID抽出
+    if (wikiJson.hasOwn(id) && wikiJson[id] === '#') hashIds.push(id) // #要素のID抽出
   }
   const checkIds = hashIds.slice(-num) // スクレイピングする範囲設定
   for (const i of checkIds) {
     // スクレイピング、テキストデータの追加と後処理
     wikiJson[i] = await scrapingCore(page, i)
-    console.log('#' + i, wikiJson[i])
+    console.log(`#${i}`, wikiJson[i])
   }
 }
 
@@ -61,13 +61,13 @@ const hashScraping = async (wikiJson, page, num) => {
 const nullScraping = async (wikiJson, page, num) => {
   const nullIds = []
   for (const id in wikiJson) {
-    if (wikiJson.hasOwnProperty(id) && wikiJson[id] === '') nullIds.push(id) // null要素のID抽出
+    if (wikiJson.hasOwn(id) && wikiJson[id] === '') nullIds.push(id) // null要素のID抽出
   }
   const checkIds = nullIds.slice(-(num + maxNullCount), -maxNullCount) // スクレイピングする範囲設定
   for (const i of checkIds) {
     // スクレイピング、テキストデータの追加と後処理
     wikiJson[i] = await scrapingCore(page, i)
-    console.log(' ' + i, wikiJson[i])
+    console.log(` ${i}`, wikiJson[i])
   }
 }
 
@@ -101,7 +101,7 @@ const newScraping = async (wikiJson, page) => {
  */
 const scrapingCore = async (page, i) => {
   // ページ移動
-  await page.goto('https://wiki.hoyolab.com/pc/genshin/entry/' + i) // 移動
+  await page.goto(`https://wiki.hoyolab.com/pc/genshin/entry/${i}`) // 移動
   // タイトルテキスト抽出
   const titleSelector = '.detail-header-common-name > span, .detail-header-cover-name > span'
   await page.waitForSelector(titleSelector) // 待機

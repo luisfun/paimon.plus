@@ -1,4 +1,4 @@
-import fs from 'fs'
+import fs from 'node:fs'
 
 import { folder } from './utils.js'
 
@@ -44,10 +44,10 @@ export const dataDownload = async () => {
   await Promise.all(
     gitlabFileName.map(async name => {
       try {
-        const url = gitlabUrl + 'ExcelBinOutput%2F' + name + '%2Ejson/raw?ref=main'
+        const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw?ref=main`
         const response = await fetch(url)
         const json = await response.json()
-        fs.writeFileSync(folder.data + name + '.json', JSON.stringify(json, null, 2))
+        fs.writeFileSync(`${folder.data + name}.json`, JSON.stringify(json, null, 2))
       } catch (e) {
         console.log(e)
       }

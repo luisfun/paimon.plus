@@ -45,7 +45,7 @@ export default {
         paimon: {
           //primary: 'hsl(215 8.8% 73.3%)',
           //secondary: 'hsl(227 6.5% 27.3%)',
-          accent: 'hsl(200 100% 49.4%)', // --blue-345
+          //accent: 'hsl(200 100% 49.4%)', // --blue-345
           neutral: 'hsl(223 6.7% 20.6%)', // --primary-600
           'base-100': '#000',
         },

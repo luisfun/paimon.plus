@@ -1,6 +1,5 @@
 import fs from 'node:fs'
 import puppeteer from 'puppeteer'
-
 import { folder } from './utils.js'
 
 const fileName = 'wiki-id'

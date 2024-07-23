@@ -1,5 +1,4 @@
 import fs from 'node:fs'
-
 import { folder } from './utils.js'
 
 // @Dimbreath @FZFalzar https://gitlab.com/Dimbreath/AnimeGameData
@@ -10,7 +9,6 @@ const gitlabUrl = 'https://gitlab.com/api/v4/projects/53216109/repository/files/
 const gitlabFileName = [
   'AvatarExcelConfigData', // Characters
   'FetterInfoExcelConfigData', // Characters Profile Info
-  'FettersExcelConfigData', // Voices in Character Profile
   'AvatarCostumeExcelConfigData', // Costumes
   'AvatarSkillDepotExcelConfigData', // Skill Depot
   'AvatarSkillExcelConfigData', // Skills
@@ -23,6 +21,7 @@ const gitlabFileName = [
   'WeaponExcelConfigData', // Weapons
   'WeaponPromoteExcelConfigData', // Weapon Ascensions
   'WeaponCurveExcelConfigData', // Weapon Basic Stats Curves
+  'WeaponCodexExcelConfigData', // Weapon Release Information
   'EquipAffixExcelConfigData', // Artifact Set Bonus and Weapon Refinements
   'ReliquaryExcelConfigData', // Artifacts
   'ReliquaryLevelExcelConfigData', // Artifact Main Affix
@@ -44,7 +43,7 @@ export const dataDownload = async () => {
   await Promise.all(
     gitlabFileName.map(async name => {
       try {
-        const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw?ref=main`
+        const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw`
         const response = await fetch(url)
         const json = await response.json()
         fs.writeFileSync(`${folder.data + name}.json`, JSON.stringify(json, null, 2))

@@ -7,21 +7,22 @@ import Header from './header.astro'
 type Props = {
   title: string
   grid?: boolean
+  defaultTitle?: boolean
 }
 const lang = getLangFromUrl(Astro.url)
-const { title, grid } = Astro.props
+const { title, grid, defaultTitle } = Astro.props
 ---
 
 <!doctype html>
 <html {lang}>
-  <Head {title}>
+  <Head title={defaultTitle ? undefined : title}>
     <slot name="head" />
   </Head>
   <body class="max-w-screen-lg m-auto px-4 sm:px-5">
     <Header />
     <main>
       <h1 class="my-2 text-center">{title}</h1>
-      <div class=`my-12 ${grid === false ? "" : "grid grid-cols-1 sm:grid-cols-2 gap-12"}`>
+      <div class=`my-12 ${grid ? "grid grid-cols-1 sm:grid-cols-2 gap-12" : undefined}`>
         <slot />
       </div>
       <slot name="main-bottom" />

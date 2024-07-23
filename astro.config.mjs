@@ -22,8 +22,8 @@ export default defineConfig({
       name: 'Paimon+',
       start_url: '/',
       display: 'standalone',
-      background_color: '#282a2e', // --primary-645
-      theme_color: '#282a2e', // --primary-645
+      background_color: '#1a1b1e', // --primary-730
+      theme_color: '#1a1b1e', // --primary-730
       icons: [
         {
           type: 'image/png',

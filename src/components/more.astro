@@ -3,9 +3,10 @@ import Svg from '@components/svg.astro'
 ---
 
 <div class="collapse grid-rows-[0fr_auto]">
-  <input type="checkbox" class="!row-start-2 min-h-[unset]" />
-  <div class="collapse-title row-start-2 flex justify-center items-center mt-4 p-0 pb-4 min-h-[unset]">
-    <Svg icon="angle-up" class="h-4" />
+  <input type="checkbox" class="!row-start-2 mt-3 min-h-[unset]" />
+  <div class="collapse-title row-start-2 flex justify-center items-center mt-3 p-0 pb-3 min-h-[unset]">
+    <Svg icon="angle-down" class="svg-down h-4" />
+    <Svg icon="angle-up" class="svg-up hidden h-4" />
   </div>
   <div class="collapse-content row-start-1 visible overflow-hidden !p-0">
     <slot />
@@ -15,5 +16,11 @@ import Svg from '@components/svg.astro'
 <style>
   .collapse:not(.collapse-close):has(> input[type="checkbox"]:checked), .collapse:not(.collapse-close):has(> input[type="radio"]:checked) {
     grid-template-rows: 1fr auto;
+  }
+  .collapse:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .collapse-title) > .svg-down {
+    display: none;
+  }
+  .collapse:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .collapse-title) > .svg-up {
+    display: block;
   }
 </style>

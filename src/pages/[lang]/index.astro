@@ -10,7 +10,7 @@ const t = useTranslations(Astro.url)
 ---
 
 <Layout title={t("home.title")} grid defaultTitle>
-  <nav class="bg-neutral pt-6 rounded-lg">
+  <nav class="bg-neutral pt-6 rounded-2xl">
 		<HomeNav data={navData.slice(0,6)} />
 		<More more>
 			<HomeNav data={navData.slice(6)} mt />

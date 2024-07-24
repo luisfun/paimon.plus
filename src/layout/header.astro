@@ -9,7 +9,7 @@ const pageLang = getLangFromUrl(Astro.url)
 const translatePath = useTranslatedPath(pageLang)
 ---
 
-<header class="flex items-center justify-between py-2 border-b border-primary-530">
+<header class="flex items-center justify-between py-2 border-b border-primary-560">
   <a href={translatePath('/')} class="flex items-center text-2xl genshin-font">
     <Image loading="eager" src={paimon} alt="paimon" class="w-9 rounded-full overflow-hidden mr-3" />
     <div class="mt-1">Paimon<span class="ml-0.5">+</span></div>

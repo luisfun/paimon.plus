@@ -1,0 +1,3751 @@
+[
+  {
+    "id": 10000002,
+    "iconName": "UI_AvatarIcon_Ayaka",
+    "sideIconName": "UI_AvatarIcon_Side_Ayaka",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 201,
+    "nameTextMapHash": 1006042610,
+    "imageName": "UI_Gacha_AvatarImg_Ayaka",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Ayaka_01",
+      "UI_Talent_S_Ayaka_02",
+      "UI_Talent_U_Ayaka_02",
+      "UI_Talent_S_Ayaka_03",
+      "UI_Talent_U_Ayaka_01",
+      "UI_Talent_S_Ayaka_04"
+    ],
+    "skills": [
+      {
+        "id": 10024,
+        "icon": "Skill_A_01",
+        "proud": 231
+      },
+      {
+        "id": 10018,
+        "icon": "Skill_S_Ayaka_01",
+        "proud": 232
+      },
+      {
+        "id": 10019,
+        "icon": "Skill_E_Ayaka",
+        "proud": 239
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_AyakaCostumeFruhling",
+        "sideIconName": "UI_AvatarIcon_Side_AyakaCostumeFruhling",
+        "imageName": "UI_Costume_AyakaCostumeFruhling"
+      }
+    ],
+    "wikiId": 32
+  },
+  {
+    "id": 10000003,
+    "iconName": "UI_AvatarIcon_Qin",
+    "sideIconName": "UI_AvatarIcon_Side_Qin",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 301,
+    "nameTextMapHash": 3221566250,
+    "imageName": "UI_Gacha_AvatarImg_Qin",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Qin_01",
+      "UI_Talent_S_Qin_02",
+      "UI_Talent_U_Qin_02",
+      "UI_Talent_S_Qin_03",
+      "UI_Talent_U_Qin_01",
+      "UI_Talent_S_Qin_04"
+    ],
+    "skills": [
+      {
+        "id": 10031,
+        "icon": "Skill_A_01",
+        "proud": 331
+      },
+      {
+        "id": 10033,
+        "icon": "Skill_S_Qin_02",
+        "proud": 332
+      },
+      {
+        "id": 10034,
+        "icon": "Skill_E_Qin_01",
+        "proud": 339
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_QinCostumeSea",
+        "sideIconName": "UI_AvatarIcon_Side_QinCostumeSea",
+        "imageName": "UI_Costume_QinCostumeSea"
+      },
+      {
+        "iconName": "UI_AvatarIcon_QinCostumeWic",
+        "sideIconName": "UI_AvatarIcon_Side_QinCostumeWic",
+        "imageName": "UI_Costume_QinCostumeWic"
+      }
+    ],
+    "wikiId": 27
+  },
+  {
+    "id": 10000005,
+    "iconName": "UI_AvatarIcon_PlayerBoy",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 501,
+    "nameTextMapHash": 1533656818,
+    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "element": null,
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 100540,
+        "icon": "Skill_A_01",
+        "proud": 730
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      }
+    ],
+    "wikiId": 20
+  },
+  {
+    "id": 10000005,
+    "iconName": "UI_AvatarIcon_PlayerBoy",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 503,
+    "nameTextMapHash": 1533656818,
+    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_PlayerWater_01",
+      "UI_Talent_S_PlayerWater_02",
+      "UI_Talent_U_PlayerWater_01",
+      "UI_Talent_S_PlayerWater_03",
+      "UI_Talent_U_PlayerWater_02",
+      "UI_Talent_S_PlayerWater_04"
+    ],
+    "skills": [
+      {
+        "id": 100542,
+        "icon": "Skill_A_01",
+        "proud": 630
+      },
+      {
+        "id": 10087,
+        "icon": "Skill_S_PlayerWater_01",
+        "proud": 632
+      },
+      {
+        "id": 10088,
+        "icon": "Skill_E_PlayerWater_01",
+        "proud": 639
+      }
+    ],
+    "wikiId": 3997
+  },
+  {
+    "id": 10000005,
+    "iconName": "UI_AvatarIcon_PlayerBoy",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 504,
+    "nameTextMapHash": 1533656818,
+    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_PlayerWind_01",
+      "UI_Talent_S_PlayerWind_02",
+      "UI_Talent_U_PlayerWind_02",
+      "UI_Talent_S_PlayerWind_03",
+      "UI_Talent_U_PlayerWind_01",
+      "UI_Talent_S_PlayerWind_04"
+    ],
+    "skills": [
+      {
+        "id": 100543,
+        "icon": "Skill_A_01",
+        "proud": 730
+      },
+      {
+        "id": 10067,
+        "icon": "Skill_S_PlayerWind_01",
+        "proud": 732
+      },
+      {
+        "id": 10068,
+        "icon": "Skill_E_PlayerWind_01",
+        "proud": 739
+      }
+    ],
+    "wikiId": 19
+  },
+  {
+    "id": 10000005,
+    "iconName": "UI_AvatarIcon_PlayerBoy",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 506,
+    "nameTextMapHash": 1533656818,
+    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_PlayerRock_01",
+      "UI_Talent_S_PlayerRock_02",
+      "UI_Talent_U_PlayerRock_02",
+      "UI_Talent_S_PlayerRock_03",
+      "UI_Talent_U_PlayerRock_01",
+      "UI_Talent_S_PlayerRock_04"
+    ],
+    "skills": [
+      {
+        "id": 100545,
+        "icon": "Skill_A_01",
+        "proud": 730
+      },
+      {
+        "id": 10077,
+        "icon": "Skill_S_PlayerRock_01",
+        "proud": 932
+      },
+      {
+        "id": 10078,
+        "icon": "Skill_E_PlayerRock_01",
+        "proud": 939
+      }
+    ],
+    "wikiId": 17
+  },
+  {
+    "id": 10000005,
+    "iconName": "UI_AvatarIcon_PlayerBoy",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 507,
+    "nameTextMapHash": 1533656818,
+    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_PlayerElectric_01",
+      "UI_Talent_S_PlayerElectric_02",
+      "UI_Talent_U_PlayerElectric_01",
+      "UI_Talent_S_PlayerElectric_03",
+      "UI_Talent_U_PlayerElectric_02",
+      "UI_Talent_S_PlayerElectric_04"
+    ],
+    "skills": [
+      {
+        "id": 100546,
+        "icon": "Skill_A_01",
+        "proud": 1030
+      },
+      {
+        "id": 10602,
+        "icon": "Skill_S_PlayerElectric_01",
+        "proud": 1032
+      },
+      {
+        "id": 10605,
+        "icon": "Skill_E_PlayerElectric_01",
+        "proud": 1039
+      }
+    ],
+    "wikiId": 18
+  },
+  {
+    "id": 10000005,
+    "iconName": "UI_AvatarIcon_PlayerBoy",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 508,
+    "nameTextMapHash": 1533656818,
+    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_PlayerGrass_01",
+      "UI_Talent_S_PlayerGrass_02",
+      "UI_Talent_S_PlayerGrass_03",
+      "UI_Talent_S_PlayerGrass_04",
+      "UI_Talent_S_PlayerGrass_05",
+      "UI_Talent_S_PlayerGrass_06"
+    ],
+    "skills": [
+      {
+        "id": 100547,
+        "icon": "Skill_A_01",
+        "proud": 1130
+      },
+      {
+        "id": 10117,
+        "icon": "Skill_E_PlayerGrass_01",
+        "proud": 1132
+      },
+      {
+        "id": 10118,
+        "icon": "Skill_S_PlayerGrass_01",
+        "proud": 1139
+      }
+    ],
+    "wikiId": 2674
+  },
+  {
+    "id": 10000006,
+    "iconName": "UI_AvatarIcon_Lisa",
+    "sideIconName": "UI_AvatarIcon_Side_Lisa",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 601,
+    "nameTextMapHash": 3344622722,
+    "imageName": "UI_Gacha_AvatarImg_Lisa",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Lisa_01",
+      "UI_Talent_S_Lisa_02",
+      "UI_Talent_U_Lisa_02",
+      "UI_Talent_S_Lisa_03",
+      "UI_Talent_U_Lisa_01",
+      "UI_Talent_S_Lisa_04"
+    ],
+    "skills": [
+      {
+        "id": 10060,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 431
+      },
+      {
+        "id": 10061,
+        "icon": "Skill_S_Lisa_01",
+        "proud": 432
+      },
+      {
+        "id": 10062,
+        "icon": "Skill_E_Lisa_01",
+        "proud": 439
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_LisaCostumeStudentin",
+        "sideIconName": "UI_AvatarIcon_Side_LisaCostumeStudentin",
+        "imageName": "UI_Costume_LisaCostumeStudentin"
+      }
+    ],
+    "wikiId": 2
+  },
+  {
+    "id": 10000007,
+    "iconName": "UI_AvatarIcon_PlayerGirl",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 701,
+    "nameTextMapHash": 3816664530,
+    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "element": null,
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 100550,
+        "icon": "Skill_A_01",
+        "proud": 731
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      }
+    ],
+    "wikiId": 20
+  },
+  {
+    "id": 10000007,
+    "iconName": "UI_AvatarIcon_PlayerGirl",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 703,
+    "nameTextMapHash": 3816664530,
+    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_PlayerWater_01",
+      "UI_Talent_S_PlayerWater_02",
+      "UI_Talent_U_PlayerWater_01",
+      "UI_Talent_S_PlayerWater_03",
+      "UI_Talent_U_PlayerWater_02",
+      "UI_Talent_S_PlayerWater_04"
+    ],
+    "skills": [
+      {
+        "id": 100552,
+        "icon": "Skill_A_01",
+        "proud": 631
+      },
+      {
+        "id": 10087,
+        "icon": "Skill_S_PlayerWater_01",
+        "proud": 632
+      },
+      {
+        "id": 10088,
+        "icon": "Skill_E_PlayerWater_01",
+        "proud": 639
+      }
+    ],
+    "wikiId": 3997
+  },
+  {
+    "id": 10000007,
+    "iconName": "UI_AvatarIcon_PlayerGirl",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 704,
+    "nameTextMapHash": 3816664530,
+    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_PlayerWind_01",
+      "UI_Talent_S_PlayerWind_02",
+      "UI_Talent_U_PlayerWind_02",
+      "UI_Talent_S_PlayerWind_03",
+      "UI_Talent_U_PlayerWind_01",
+      "UI_Talent_S_PlayerWind_04"
+    ],
+    "skills": [
+      {
+        "id": 100553,
+        "icon": "Skill_A_01",
+        "proud": 731
+      },
+      {
+        "id": 10067,
+        "icon": "Skill_S_PlayerWind_01",
+        "proud": 732
+      },
+      {
+        "id": 10068,
+        "icon": "Skill_E_PlayerWind_01",
+        "proud": 739
+      }
+    ],
+    "wikiId": 19
+  },
+  {
+    "id": 10000007,
+    "iconName": "UI_AvatarIcon_PlayerGirl",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 706,
+    "nameTextMapHash": 3816664530,
+    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_PlayerRock_01",
+      "UI_Talent_S_PlayerRock_02",
+      "UI_Talent_U_PlayerRock_02",
+      "UI_Talent_S_PlayerRock_03",
+      "UI_Talent_U_PlayerRock_01",
+      "UI_Talent_S_PlayerRock_04"
+    ],
+    "skills": [
+      {
+        "id": 100555,
+        "icon": "Skill_A_01",
+        "proud": 731
+      },
+      {
+        "id": 10077,
+        "icon": "Skill_S_PlayerRock_01",
+        "proud": 932
+      },
+      {
+        "id": 10078,
+        "icon": "Skill_E_PlayerRock_01",
+        "proud": 939
+      }
+    ],
+    "wikiId": 17
+  },
+  {
+    "id": 10000007,
+    "iconName": "UI_AvatarIcon_PlayerGirl",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 707,
+    "nameTextMapHash": 3816664530,
+    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_PlayerElectric_01",
+      "UI_Talent_S_PlayerElectric_02",
+      "UI_Talent_U_PlayerElectric_01",
+      "UI_Talent_S_PlayerElectric_03",
+      "UI_Talent_U_PlayerElectric_02",
+      "UI_Talent_S_PlayerElectric_04"
+    ],
+    "skills": [
+      {
+        "id": 100556,
+        "icon": "Skill_A_01",
+        "proud": 1031
+      },
+      {
+        "id": 10602,
+        "icon": "Skill_S_PlayerElectric_01",
+        "proud": 1032
+      },
+      {
+        "id": 10605,
+        "icon": "Skill_E_PlayerElectric_01",
+        "proud": 1039
+      }
+    ],
+    "wikiId": 18
+  },
+  {
+    "id": 10000007,
+    "iconName": "UI_AvatarIcon_PlayerGirl",
+    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 708,
+    "nameTextMapHash": 3816664530,
+    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_PlayerGrass_01",
+      "UI_Talent_S_PlayerGrass_02",
+      "UI_Talent_S_PlayerGrass_03",
+      "UI_Talent_S_PlayerGrass_04",
+      "UI_Talent_S_PlayerGrass_05",
+      "UI_Talent_S_PlayerGrass_06"
+    ],
+    "skills": [
+      {
+        "id": 100557,
+        "icon": "Skill_A_01",
+        "proud": 1131
+      },
+      {
+        "id": 10117,
+        "icon": "Skill_E_PlayerGrass_01",
+        "proud": 1132
+      },
+      {
+        "id": 10118,
+        "icon": "Skill_S_PlayerGrass_01",
+        "proud": 1139
+      }
+    ],
+    "wikiId": 2674
+  },
+  {
+    "id": 10000014,
+    "iconName": "UI_AvatarIcon_Barbara",
+    "sideIconName": "UI_AvatarIcon_Side_Barbara",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 1401,
+    "nameTextMapHash": 3775299170,
+    "imageName": "UI_Gacha_AvatarImg_Barbara",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Barbara_01",
+      "UI_Talent_S_Barbara_02",
+      "UI_Talent_U_Barbara_02",
+      "UI_Talent_S_Barbara_03",
+      "UI_Talent_U_Barbara_01",
+      "UI_Talent_S_Barbara_04"
+    ],
+    "skills": [
+      {
+        "id": 10070,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 1431
+      },
+      {
+        "id": 10071,
+        "icon": "Skill_S_Barbara_01",
+        "proud": 1432
+      },
+      {
+        "id": 10072,
+        "icon": "Skill_E_Barbara_01",
+        "proud": 1439
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_BarbaraCostumeSummertime",
+        "sideIconName": "UI_AvatarIcon_Side_BarbaraCostumeSummertime",
+        "imageName": "UI_Costume_BarbaraCostumeSummertime"
+      }
+    ],
+    "wikiId": 35
+  },
+  {
+    "id": 10000015,
+    "iconName": "UI_AvatarIcon_Kaeya",
+    "sideIconName": "UI_AvatarIcon_Side_Kaeya",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 1501,
+    "nameTextMapHash": 4119663210,
+    "imageName": "UI_Gacha_AvatarImg_Kaeya",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Kaeya_01",
+      "UI_Talent_S_Kaeya_02",
+      "UI_Talent_U_Kaeya_01",
+      "UI_Talent_S_Kaeya_03",
+      "UI_Talent_U_Kaeya_02",
+      "UI_Talent_S_Kaeya_04"
+    ],
+    "skills": [
+      {
+        "id": 10073,
+        "icon": "Skill_A_01",
+        "proud": 1531
+      },
+      {
+        "id": 10074,
+        "icon": "Skill_S_Kaeya_01",
+        "proud": 1532
+      },
+      {
+        "id": 10075,
+        "icon": "Skill_E_Kaeya_01",
+        "proud": 1539
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_KaeyaCostumeDancer",
+        "sideIconName": "UI_AvatarIcon_Side_KaeyaCostumeDancer",
+        "imageName": "UI_Costume_KaeyaCostumeDancer"
+      }
+    ],
+    "wikiId": 9
+  },
+  {
+    "id": 10000016,
+    "iconName": "UI_AvatarIcon_Diluc",
+    "sideIconName": "UI_AvatarIcon_Side_Diluc",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 1601,
+    "nameTextMapHash": 3608180322,
+    "imageName": "UI_Gacha_AvatarImg_Diluc",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Diluc_01",
+      "UI_Talent_S_Diluc_02",
+      "UI_Talent_U_Diluc_01",
+      "UI_Talent_S_Diluc_03",
+      "UI_Talent_U_Diluc_02",
+      "UI_Talent_S_Diluc_04"
+    ],
+    "skills": [
+      {
+        "id": 10160,
+        "icon": "Skill_A_04",
+        "proud": 1631
+      },
+      {
+        "id": 10161,
+        "icon": "Skill_S_Diluc_01_01",
+        "proud": 1632
+      },
+      {
+        "id": 10165,
+        "icon": "Skill_E_Diluc_01",
+        "proud": 1639
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_DilucCostumeFlamme",
+        "sideIconName": "UI_AvatarIcon_Side_DilucCostumeFlamme",
+        "imageName": "UI_Costume_DilucCostumeFlamme"
+      }
+    ],
+    "wikiId": 43
+  },
+  {
+    "id": 10000020,
+    "iconName": "UI_AvatarIcon_Razor",
+    "sideIconName": "UI_AvatarIcon_Side_Razor",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 2001,
+    "nameTextMapHash": 4160147242,
+    "imageName": "UI_Gacha_AvatarImg_Razor",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Razor_01",
+      "UI_Talent_S_Razor_02",
+      "UI_Talent_U_Razor_02",
+      "UI_Talent_S_Razor_03",
+      "UI_Talent_U_Razor_01",
+      "UI_Talent_S_Razor_04"
+    ],
+    "skills": [
+      {
+        "id": 10201,
+        "icon": "Skill_A_04",
+        "proud": 2031
+      },
+      {
+        "id": 10202,
+        "icon": "Skill_S_Razor_01",
+        "proud": 2032
+      },
+      {
+        "id": 10203,
+        "icon": "Skill_E_Razor_01",
+        "proud": 2039
+      }
+    ],
+    "costumes": [],
+    "wikiId": 48
+  },
+  {
+    "id": 10000021,
+    "iconName": "UI_AvatarIcon_Ambor",
+    "sideIconName": "UI_AvatarIcon_Side_Ambor",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 2101,
+    "nameTextMapHash": 1966438658,
+    "imageName": "UI_Gacha_AvatarImg_Ambor",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Ambor_01",
+      "UI_Talent_S_Ambor_02",
+      "UI_Talent_U_Ambor_02",
+      "UI_Talent_S_Ambor_03",
+      "UI_Talent_U_Ambor_01",
+      "UI_Talent_S_Ambor_04"
+    ],
+    "skills": [
+      {
+        "id": 10041,
+        "icon": "Skill_A_02",
+        "proud": 2131
+      },
+      {
+        "id": 10032,
+        "icon": "Skill_S_Ambor_01",
+        "proud": 2132
+      },
+      {
+        "id": 10017,
+        "icon": "Skill_E_Ambor",
+        "proud": 2139
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_AmborCostumeWic",
+        "sideIconName": "UI_AvatarIcon_Side_AmborCostumeWic",
+        "imageName": "UI_Costume_AmborCostumeWic"
+      }
+    ],
+    "wikiId": 14
+  },
+  {
+    "id": 10000022,
+    "iconName": "UI_AvatarIcon_Venti",
+    "sideIconName": "UI_AvatarIcon_Side_Venti",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 2201,
+    "nameTextMapHash": 2466140362,
+    "imageName": "UI_Gacha_AvatarImg_Venti",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Venti_01",
+      "UI_Talent_S_Venti_02",
+      "UI_Talent_U_Venti_02",
+      "UI_Talent_S_Venti_03",
+      "UI_Talent_U_Venti_01",
+      "UI_Talent_S_Venti_04"
+    ],
+    "skills": [
+      {
+        "id": 10221,
+        "icon": "Skill_A_02",
+        "proud": 2231
+      },
+      {
+        "id": 10224,
+        "icon": "Skill_S_Venti_01",
+        "proud": 2232
+      },
+      {
+        "id": 10225,
+        "icon": "Skill_E_Venti_01",
+        "proud": 2239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 23
+  },
+  {
+    "id": 10000023,
+    "iconName": "UI_AvatarIcon_Xiangling",
+    "sideIconName": "UI_AvatarIcon_Side_Xiangling",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 2301,
+    "nameTextMapHash": 1130996346,
+    "imageName": "UI_Gacha_AvatarImg_Xiangling",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Xiangling_01",
+      "UI_Talent_S_Xiangling_02",
+      "UI_Talent_U_Xiangling_02",
+      "UI_Talent_S_Xiangling_03",
+      "UI_Talent_U_Xiangling_01",
+      "UI_Talent_S_Xiangling_04"
+    ],
+    "skills": [
+      {
+        "id": 10231,
+        "icon": "Skill_A_03",
+        "proud": 2331
+      },
+      {
+        "id": 10232,
+        "icon": "Skill_S_Xiangling_01",
+        "proud": 2332
+      },
+      {
+        "id": 10235,
+        "icon": "Skill_E_Xiangling_01",
+        "proud": 2339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 50
+  },
+  {
+    "id": 10000024,
+    "iconName": "UI_AvatarIcon_Beidou",
+    "sideIconName": "UI_AvatarIcon_Side_Beidou",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 2401,
+    "nameTextMapHash": 2646367730,
+    "imageName": "UI_Gacha_AvatarImg_Beidou",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Beidou_02",
+      "UI_Talent_S_Beidou_01",
+      "UI_Talent_U_Beidou_01",
+      "UI_Talent_S_Beidou_03",
+      "UI_Talent_U_Beidou_02",
+      "UI_Talent_S_Beidou_04"
+    ],
+    "skills": [
+      {
+        "id": 10241,
+        "icon": "Skill_A_04",
+        "proud": 2431
+      },
+      {
+        "id": 10242,
+        "icon": "Skill_S_Beidou_01",
+        "proud": 2432
+      },
+      {
+        "id": 10245,
+        "icon": "Skill_E_Beidou_01",
+        "proud": 2439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 11
+  },
+  {
+    "id": 10000025,
+    "iconName": "UI_AvatarIcon_Xingqiu",
+    "sideIconName": "UI_AvatarIcon_Side_Xingqiu",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 2501,
+    "nameTextMapHash": 4197635682,
+    "imageName": "UI_Gacha_AvatarImg_Xingqiu",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Xingqiu_01",
+      "UI_Talent_S_Xingqiu_02",
+      "UI_Talent_U_Xingqiu_01",
+      "UI_Talent_S_Xingqiu_03",
+      "UI_Talent_U_Xingqiu_02",
+      "UI_Talent_S_Xingqiu_04"
+    ],
+    "skills": [
+      {
+        "id": 10381,
+        "icon": "Skill_A_01",
+        "proud": 2531
+      },
+      {
+        "id": 10382,
+        "icon": "Skill_S_Xingqiu_01",
+        "proud": 2532
+      },
+      {
+        "id": 10385,
+        "icon": "Skill_E_Xingqiu_01",
+        "proud": 2539
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_XingqiuCostumeBamboo",
+        "sideIconName": "UI_AvatarIcon_Side_XingqiuCostumeBamboo",
+        "imageName": "UI_Costume_XingqiuCostumeBamboo"
+      }
+    ],
+    "wikiId": 39
+  },
+  {
+    "id": 10000026,
+    "iconName": "UI_AvatarIcon_Xiao",
+    "sideIconName": "UI_AvatarIcon_Side_Xiao",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 2601,
+    "nameTextMapHash": 1021947690,
+    "imageName": "UI_Gacha_AvatarImg_Xiao",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Xiao_01",
+      "UI_Talent_S_Xiao_02",
+      "UI_Talent_U_Xiao_01",
+      "UI_Talent_S_Xiao_03",
+      "UI_Talent_U_Xiao_02",
+      "UI_Talent_S_Xiao_04"
+    ],
+    "skills": [
+      {
+        "id": 10261,
+        "icon": "Skill_A_03",
+        "proud": 2631
+      },
+      {
+        "id": 10262,
+        "icon": "Skill_S_Xiao_01",
+        "proud": 2632
+      },
+      {
+        "id": 10265,
+        "icon": "Skill_E_Xiao_01",
+        "proud": 2639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 51
+  },
+  {
+    "id": 10000027,
+    "iconName": "UI_AvatarIcon_Ningguang",
+    "sideIconName": "UI_AvatarIcon_Side_Ningguang",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 2701,
+    "nameTextMapHash": 4127888970,
+    "imageName": "UI_Gacha_AvatarImg_Ningguang",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Ningguang_01",
+      "UI_Talent_S_Ningguang_05",
+      "UI_Talent_U_Ningguang_02",
+      "UI_Talent_S_Ningguang_03",
+      "UI_Talent_U_Ningguang_01",
+      "UI_Talent_S_Ningguang_04"
+    ],
+    "skills": [
+      {
+        "id": 10271,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 2731
+      },
+      {
+        "id": 10272,
+        "icon": "Skill_S_Ningguang_01",
+        "proud": 2732
+      },
+      {
+        "id": 10274,
+        "icon": "Skill_E_Ningguang_01",
+        "proud": 2739
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_NingguangCostumeFloral",
+        "sideIconName": "UI_AvatarIcon_Side_NingguangCostumeFloral",
+        "imageName": "UI_Costume_NingguangCostumeFloral"
+      }
+    ],
+    "wikiId": 8
+  },
+  {
+    "id": 10000029,
+    "iconName": "UI_AvatarIcon_Klee",
+    "sideIconName": "UI_AvatarIcon_Side_Klee",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 2901,
+    "nameTextMapHash": 3339083250,
+    "imageName": "UI_Gacha_AvatarImg_Klee",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Klee_01",
+      "UI_Talent_S_Klee_02",
+      "UI_Talent_U_Klee_01",
+      "UI_Talent_S_Klee_03",
+      "UI_Talent_U_Klee_02",
+      "UI_Talent_S_Klee_04"
+    ],
+    "skills": [
+      {
+        "id": 10291,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 2931
+      },
+      {
+        "id": 10292,
+        "icon": "Skill_S_Klee_01",
+        "proud": 2932
+      },
+      {
+        "id": 10295,
+        "icon": "Skill_E_Klee_01",
+        "proud": 2939
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_KleeCostumeWitch",
+        "sideIconName": "UI_AvatarIcon_Side_KleeCostumeWitch",
+        "imageName": "UI_Costume_KleeCostumeWitch"
+      }
+    ],
+    "wikiId": 12
+  },
+  {
+    "id": 10000030,
+    "iconName": "UI_AvatarIcon_Zhongli",
+    "sideIconName": "UI_AvatarIcon_Side_Zhongli",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 3001,
+    "nameTextMapHash": 3862787418,
+    "imageName": "UI_Gacha_AvatarImg_Zhongli",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Zhongli_01",
+      "UI_Talent_S_Zhongli_02",
+      "UI_Talent_U_Zhongli_01",
+      "UI_Talent_S_Zhongli_03",
+      "UI_Talent_U_Zhongli_02",
+      "UI_Talent_S_Zhongli_04"
+    ],
+    "skills": [
+      {
+        "id": 10301,
+        "icon": "Skill_A_03",
+        "proud": 3031
+      },
+      {
+        "id": 10302,
+        "icon": "Skill_S_Zhongli_01",
+        "proud": 3032
+      },
+      {
+        "id": 10303,
+        "icon": "Skill_E_Zhongli_01",
+        "proud": 3039
+      }
+    ],
+    "costumes": [],
+    "wikiId": 46
+  },
+  {
+    "id": 10000031,
+    "iconName": "UI_AvatarIcon_Fischl",
+    "sideIconName": "UI_AvatarIcon_Side_Fischl",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 3101,
+    "nameTextMapHash": 3277782506,
+    "imageName": "UI_Gacha_AvatarImg_Fischl",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Fischl_01",
+      "UI_Talent_S_Fischl_02",
+      "UI_Talent_U_Fischl_01",
+      "UI_Talent_S_Fischl_03",
+      "UI_Talent_U_Fischl_02",
+      "UI_Talent_S_Fischl_04"
+    ],
+    "skills": [
+      {
+        "id": 10311,
+        "icon": "Skill_A_02",
+        "proud": 3131
+      },
+      {
+        "id": 10312,
+        "icon": "Skill_S_Fischl_01",
+        "proud": 3132
+      },
+      {
+        "id": 10313,
+        "icon": "Skill_E_Fischl_01",
+        "proud": 3139
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_FischlCostumeHighness",
+        "sideIconName": "UI_AvatarIcon_Side_FischlCostumeHighness",
+        "imageName": "UI_Costume_FischlCostumeHighness"
+      }
+    ],
+    "wikiId": 38
+  },
+  {
+    "id": 10000032,
+    "iconName": "UI_AvatarIcon_Bennett",
+    "sideIconName": "UI_AvatarIcon_Side_Bennett",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 3201,
+    "nameTextMapHash": 968893378,
+    "imageName": "UI_Gacha_AvatarImg_Bennett",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Bennett_01",
+      "UI_Talent_S_Bennett_02",
+      "UI_Talent_U_Bennett_01",
+      "UI_Talent_S_Bennett_03",
+      "UI_Talent_U_Bennett_02",
+      "UI_Talent_S_Bennett_04"
+    ],
+    "skills": [
+      {
+        "id": 10321,
+        "icon": "Skill_A_01",
+        "proud": 3231
+      },
+      {
+        "id": 10322,
+        "icon": "Skill_S_Bennett_01",
+        "proud": 3232
+      },
+      {
+        "id": 10323,
+        "icon": "Skill_E_Bennett_01",
+        "proud": 3239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 26
+  },
+  {
+    "id": 10000033,
+    "iconName": "UI_AvatarIcon_Tartaglia",
+    "sideIconName": "UI_AvatarIcon_Side_Tartaglia",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 3301,
+    "nameTextMapHash": 3847143266,
+    "imageName": "UI_Gacha_AvatarImg_Tartaglia",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Tartaglia_01",
+      "UI_Talent_S_Tartaglia_02",
+      "UI_Talent_U_Tartaglia_01",
+      "UI_Talent_S_Tartaglia_05",
+      "UI_Talent_U_Tartaglia_02",
+      "UI_Talent_S_Tartaglia_04"
+    ],
+    "skills": [
+      {
+        "id": 10331,
+        "icon": "Skill_A_02",
+        "proud": 3331
+      },
+      {
+        "id": 10332,
+        "icon": "Skill_S_Tartaglia_01",
+        "proud": 3332
+      },
+      {
+        "id": 10333,
+        "icon": "Skill_E_Tartaglia_01",
+        "proud": 3339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 42
+  },
+  {
+    "id": 10000034,
+    "iconName": "UI_AvatarIcon_Noel",
+    "sideIconName": "UI_AvatarIcon_Side_Noel",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 3401,
+    "nameTextMapHash": 1921418842,
+    "imageName": "UI_Gacha_AvatarImg_Noel",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Noel_01",
+      "UI_Talent_S_Noel_02",
+      "UI_Talent_U_Noel_01",
+      "UI_Talent_S_Noel_03",
+      "UI_Talent_U_Noel_02",
+      "UI_Talent_S_Noel_04"
+    ],
+    "skills": [
+      {
+        "id": 10341,
+        "icon": "Skill_A_04",
+        "proud": 3431
+      },
+      {
+        "id": 10342,
+        "icon": "Skill_S_Noel_01",
+        "proud": 3432
+      },
+      {
+        "id": 10343,
+        "icon": "Skill_E_Noel_01",
+        "proud": 3439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 40
+  },
+  {
+    "id": 10000035,
+    "iconName": "UI_AvatarIcon_Qiqi",
+    "sideIconName": "UI_AvatarIcon_Side_Qiqi",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 3501,
+    "nameTextMapHash": 168956722,
+    "imageName": "UI_Gacha_AvatarImg_Qiqi",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Qiqi_01",
+      "UI_Talent_S_Qiqi_02",
+      "UI_Talent_U_Qiqi_01",
+      "UI_Talent_S_Qiqi_03",
+      "UI_Talent_U_Qiqi_02",
+      "UI_Talent_S_Qiqi_04"
+    ],
+    "skills": [
+      {
+        "id": 10351,
+        "icon": "Skill_A_01",
+        "proud": 3531
+      },
+      {
+        "id": 10352,
+        "icon": "Skill_S_Qiqi_01",
+        "proud": 3532
+      },
+      {
+        "id": 10353,
+        "icon": "Skill_E_Qiqi_01",
+        "proud": 3539
+      }
+    ],
+    "costumes": [],
+    "wikiId": 1
+  },
+  {
+    "id": 10000036,
+    "iconName": "UI_AvatarIcon_Chongyun",
+    "sideIconName": "UI_AvatarIcon_Side_Chongyun",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 3601,
+    "nameTextMapHash": 2876340530,
+    "imageName": "UI_Gacha_AvatarImg_Chongyun",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Chongyun_01",
+      "UI_Talent_S_Chongyun_02",
+      "UI_Talent_U_Chongyun_01",
+      "UI_Talent_S_Chongyun_03",
+      "UI_Talent_U_Chongyun_02",
+      "UI_Talent_S_Chongyun_04"
+    ],
+    "skills": [
+      {
+        "id": 10401,
+        "icon": "Skill_A_04",
+        "proud": 3631
+      },
+      {
+        "id": 10402,
+        "icon": "Skill_S_Chongyun_01",
+        "proud": 3632
+      },
+      {
+        "id": 10403,
+        "icon": "Skill_E_Chongyun_01",
+        "proud": 3639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 45
+  },
+  {
+    "id": 10000037,
+    "iconName": "UI_AvatarIcon_Ganyu",
+    "sideIconName": "UI_AvatarIcon_Side_Ganyu",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 3701,
+    "nameTextMapHash": 2679781122,
+    "imageName": "UI_Gacha_AvatarImg_Ganyu",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Ganyu_01",
+      "UI_Talent_S_Ganyu_02",
+      "UI_Talent_U_Ganyu_01",
+      "UI_Talent_S_Ganyu_03",
+      "UI_Talent_U_Ganyu_02",
+      "UI_Talent_S_Ganyu_04"
+    ],
+    "skills": [
+      {
+        "id": 10371,
+        "icon": "Skill_A_02",
+        "proud": 3731
+      },
+      {
+        "id": 10372,
+        "icon": "Skill_S_Ganyu_01",
+        "proud": 3732
+      },
+      {
+        "id": 10373,
+        "icon": "Skill_E_Ganyu_01",
+        "proud": 3739
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_GanyuCostumeYu",
+        "sideIconName": "UI_AvatarIcon_Side_GanyuCostumeYu",
+        "imageName": "UI_Costume_GanyuCostumeYu"
+      }
+    ],
+    "wikiId": 28
+  },
+  {
+    "id": 10000038,
+    "iconName": "UI_AvatarIcon_Albedo",
+    "sideIconName": "UI_AvatarIcon_Side_Albedo",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 3801,
+    "nameTextMapHash": 4108620722,
+    "imageName": "UI_Gacha_AvatarImg_Albedo",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Albedo_01",
+      "UI_Talent_S_Albedo_02",
+      "UI_Talent_U_Albedo_01",
+      "UI_Talent_S_Albedo_03",
+      "UI_Talent_U_Albedo_02",
+      "UI_Talent_S_Albedo_04"
+    ],
+    "skills": [
+      {
+        "id": 10386,
+        "icon": "Skill_A_01",
+        "proud": 3831
+      },
+      {
+        "id": 10387,
+        "icon": "Skill_S_Albedo_01",
+        "proud": 3832
+      },
+      {
+        "id": 10388,
+        "icon": "Skill_E_Albedo_01",
+        "proud": 3839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 47
+  },
+  {
+    "id": 10000039,
+    "iconName": "UI_AvatarIcon_Diona",
+    "sideIconName": "UI_AvatarIcon_Side_Diona",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 3901,
+    "nameTextMapHash": 1468367538,
+    "imageName": "UI_Gacha_AvatarImg_Diona",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Diona_01",
+      "UI_Talent_S_Diona_02",
+      "UI_Talent_U_Diona_01",
+      "UI_Talent_S_Diona_03",
+      "UI_Talent_U_Diona_02",
+      "UI_Talent_S_Diona_04"
+    ],
+    "skills": [
+      {
+        "id": 10391,
+        "icon": "Skill_A_02",
+        "proud": 3931
+      },
+      {
+        "id": 10392,
+        "icon": "Skill_S_Diona_01",
+        "proud": 3932
+      },
+      {
+        "id": 10395,
+        "icon": "Skill_E_Diona_01",
+        "proud": 3939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 44
+  },
+  {
+    "id": 10000041,
+    "iconName": "UI_AvatarIcon_Mona",
+    "sideIconName": "UI_AvatarIcon_Side_Mona",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 4101,
+    "nameTextMapHash": 1113306282,
+    "imageName": "UI_Gacha_AvatarImg_Mona",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Mona_01",
+      "UI_Talent_S_Mona_02",
+      "UI_Talent_U_Mona_01",
+      "UI_Talent_S_Mona_03",
+      "UI_Talent_U_Mona_02",
+      "UI_Talent_S_Mona_04"
+    ],
+    "skills": [
+      {
+        "id": 10411,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 4131
+      },
+      {
+        "id": 10412,
+        "icon": "Skill_S_Mona_01",
+        "proud": 4132
+      },
+      {
+        "id": 10415,
+        "icon": "Skill_E_Mona_01",
+        "proud": 4139
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_MonaCostumeWic",
+        "sideIconName": "UI_AvatarIcon_Side_MonaCostumeWic",
+        "imageName": "UI_Costume_MonaCostumeWic"
+      }
+    ],
+    "wikiId": 37
+  },
+  {
+    "id": 10000042,
+    "iconName": "UI_AvatarIcon_Keqing",
+    "sideIconName": "UI_AvatarIcon_Side_Keqing",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 4201,
+    "nameTextMapHash": 1864015138,
+    "imageName": "UI_Gacha_AvatarImg_Keqing",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Keqing_01",
+      "UI_Talent_S_Keqing_02",
+      "UI_Talent_U_Keqing_01",
+      "UI_Talent_S_Keqing_03",
+      "UI_Talent_U_Keqing_02",
+      "UI_Talent_S_Keqing_04"
+    ],
+    "skills": [
+      {
+        "id": 10421,
+        "icon": "Skill_A_01",
+        "proud": 4231
+      },
+      {
+        "id": 10422,
+        "icon": "Skill_S_Keqing_01",
+        "proud": 4232
+      },
+      {
+        "id": 10425,
+        "icon": "Skill_E_Keqing_01",
+        "proud": 4239
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_KeqingCostumeFeather",
+        "sideIconName": "UI_AvatarIcon_Side_KeqingCostumeFeather",
+        "imageName": "UI_Costume_KeqingCostumeFeather"
+      }
+    ],
+    "wikiId": 10
+  },
+  {
+    "id": 10000043,
+    "iconName": "UI_AvatarIcon_Sucrose",
+    "sideIconName": "UI_AvatarIcon_Side_Sucrose",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 4301,
+    "nameTextMapHash": 1053433018,
+    "imageName": "UI_Gacha_AvatarImg_Sucrose",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Sucrose_01",
+      "UI_Talent_S_Sucrose_02",
+      "UI_Talent_U_Sucrose_01",
+      "UI_Talent_S_Sucrose_03",
+      "UI_Talent_U_Sucrose_02",
+      "UI_Talent_S_Sucrose_04"
+    ],
+    "skills": [
+      {
+        "id": 10431,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 4331
+      },
+      {
+        "id": 10432,
+        "icon": "Skill_S_Sucrose_01",
+        "proud": 4332
+      },
+      {
+        "id": 10435,
+        "icon": "Skill_E_Sucrose_01",
+        "proud": 4339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 30
+  },
+  {
+    "id": 10000044,
+    "iconName": "UI_AvatarIcon_Xinyan",
+    "sideIconName": "UI_AvatarIcon_Side_Xinyan",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 4401,
+    "nameTextMapHash": 4273845410,
+    "imageName": "UI_Gacha_AvatarImg_Xinyan",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Xinyan_01",
+      "UI_Talent_S_Xinyan_02",
+      "UI_Talent_U_Xinyan_01",
+      "UI_Talent_S_Xinyan_03",
+      "UI_Talent_U_Xinyan_02",
+      "UI_Talent_S_Xinyan_04"
+    ],
+    "skills": [
+      {
+        "id": 10441,
+        "icon": "Skill_A_04",
+        "proud": 4431
+      },
+      {
+        "id": 10442,
+        "icon": "Skill_S_Xinyan_01",
+        "proud": 4432
+      },
+      {
+        "id": 10443,
+        "icon": "Skill_E_Xinyan_01",
+        "proud": 4439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 41
+  },
+  {
+    "id": 10000045,
+    "iconName": "UI_AvatarIcon_Rosaria",
+    "sideIconName": "UI_AvatarIcon_Side_Rosaria",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 4501,
+    "nameTextMapHash": 4260733330,
+    "imageName": "UI_Gacha_AvatarImg_Rosaria",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Rosaria_01",
+      "UI_Talent_S_Rosaria_02",
+      "UI_Talent_U_Rosaria_01",
+      "UI_Talent_S_Rosaria_03",
+      "UI_Talent_U_Rosaria_02",
+      "UI_Talent_S_Rosaria_04"
+    ],
+    "skills": [
+      {
+        "id": 10451,
+        "icon": "Skill_A_03",
+        "proud": 4531
+      },
+      {
+        "id": 10452,
+        "icon": "Skill_S_Rosaria_01",
+        "proud": 4532
+      },
+      {
+        "id": 10453,
+        "icon": "Skill_E_Rosaria_01",
+        "proud": 4539
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_RosariaCostumeWic",
+        "sideIconName": "UI_AvatarIcon_Side_RosariaCostumeWic",
+        "imageName": "UI_Costume_RosariaCostumeWic"
+      }
+    ],
+    "wikiId": 33
+  },
+  {
+    "id": 10000046,
+    "iconName": "UI_AvatarIcon_Hutao",
+    "sideIconName": "UI_AvatarIcon_Side_Hutao",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 4601,
+    "nameTextMapHash": 1940919994,
+    "imageName": "UI_Gacha_AvatarImg_Hutao",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Hutao_03",
+      "UI_Talent_S_Hutao_01",
+      "UI_Talent_U_Hutao_01",
+      "UI_Talent_S_Hutao_02",
+      "UI_Talent_U_Hutao_02",
+      "UI_Talent_S_Hutao_04"
+    ],
+    "skills": [
+      {
+        "id": 10461,
+        "icon": "Skill_A_03",
+        "proud": 4631
+      },
+      {
+        "id": 10462,
+        "icon": "Skill_S_Hutao_01",
+        "proud": 4632
+      },
+      {
+        "id": 10463,
+        "icon": "Skill_E_Hutao_01",
+        "proud": 4639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 34
+  },
+  {
+    "id": 10000047,
+    "iconName": "UI_AvatarIcon_Kazuha",
+    "sideIconName": "UI_AvatarIcon_Side_Kazuha",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 4701,
+    "nameTextMapHash": 88505754,
+    "imageName": "UI_Gacha_AvatarImg_Kazuha",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Kazuha_01",
+      "UI_Talent_S_Kazuha_02",
+      "UI_Talent_U_Kazuha_01",
+      "UI_Talent_S_Kazuha_03",
+      "UI_Talent_U_Kazuha_02",
+      "UI_Talent_S_Kazuha_04"
+    ],
+    "skills": [
+      {
+        "id": 10471,
+        "icon": "Skill_A_01",
+        "proud": 4731
+      },
+      {
+        "id": 10472,
+        "icon": "Skill_S_Kazuha_01",
+        "proud": 4732
+      },
+      {
+        "id": 10475,
+        "icon": "Skill_E_Kazuha_01",
+        "proud": 4739
+      }
+    ],
+    "costumes": [],
+    "wikiId": 22
+  },
+  {
+    "id": 10000048,
+    "iconName": "UI_AvatarIcon_Feiyan",
+    "sideIconName": "UI_AvatarIcon_Side_Feiyan",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 4801,
+    "nameTextMapHash": 697277554,
+    "imageName": "UI_Gacha_AvatarImg_Feiyan",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Feiyan_01",
+      "UI_Talent_S_Feiyan_02",
+      "UI_Talent_U_Feiyan_01",
+      "UI_Talent_S_Feiyan_03",
+      "UI_Talent_U_Feiyan_02",
+      "UI_Talent_S_Feiyan_04"
+    ],
+    "skills": [
+      {
+        "id": 10481,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 4831
+      },
+      {
+        "id": 10482,
+        "icon": "Skill_S_Feiyan_01",
+        "proud": 4832
+      },
+      {
+        "id": 10485,
+        "icon": "Skill_E_Feiyan_01",
+        "proud": 4839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 24
+  },
+  {
+    "id": 10000049,
+    "iconName": "UI_AvatarIcon_Yoimiya",
+    "sideIconName": "UI_AvatarIcon_Side_Yoimiya",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 4901,
+    "nameTextMapHash": 2504399314,
+    "imageName": "UI_Gacha_AvatarImg_Yoimiya",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Yoimiya_01",
+      "UI_Talent_S_Yoimiya_02",
+      "UI_Talent_U_Yoimiya_01",
+      "UI_Talent_S_Yoimiya_03",
+      "UI_Talent_U_Yoimiya_02",
+      "UI_Talent_S_Yoimiya_04"
+    ],
+    "skills": [
+      {
+        "id": 10491,
+        "icon": "Skill_A_02",
+        "proud": 4931
+      },
+      {
+        "id": 10492,
+        "icon": "Skill_S_Yoimiya_01",
+        "proud": 4932
+      },
+      {
+        "id": 10495,
+        "icon": "Skill_E_Yoimiya_01",
+        "proud": 4939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 15
+  },
+  {
+    "id": 10000050,
+    "iconName": "UI_AvatarIcon_Tohma",
+    "sideIconName": "UI_AvatarIcon_Side_Tohma",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 5001,
+    "nameTextMapHash": 3555115602,
+    "imageName": "UI_Gacha_AvatarImg_Tohma",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Tohma_01",
+      "UI_Talent_S_Tohma_02",
+      "UI_Talent_U_Tohma_01",
+      "UI_Talent_S_Tohma_03",
+      "UI_Talent_U_Tohma_02",
+      "UI_Talent_S_Tohma_04"
+    ],
+    "skills": [
+      {
+        "id": 10501,
+        "icon": "Skill_A_03",
+        "proud": 5031
+      },
+      {
+        "id": 10502,
+        "icon": "Skill_S_Tohma_01",
+        "proud": 5032
+      },
+      {
+        "id": 10505,
+        "icon": "Skill_E_Tohma_01",
+        "proud": 5039
+      }
+    ],
+    "costumes": [],
+    "wikiId": 16
+  },
+  {
+    "id": 10000051,
+    "iconName": "UI_AvatarIcon_Eula",
+    "sideIconName": "UI_AvatarIcon_Side_Eula",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 5101,
+    "nameTextMapHash": 3717667418,
+    "imageName": "UI_Gacha_AvatarImg_Eula",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Eula_02",
+      "UI_Talent_S_Eula_01",
+      "UI_Talent_U_Eula_01",
+      "UI_Talent_S_Eula_03",
+      "UI_Talent_U_Eula_02",
+      "UI_Talent_S_Eula_04"
+    ],
+    "skills": [
+      {
+        "id": 10511,
+        "icon": "Skill_A_04",
+        "proud": 5131
+      },
+      {
+        "id": 10512,
+        "icon": "Skill_S_Eula_01",
+        "proud": 5132
+      },
+      {
+        "id": 10515,
+        "icon": "Skill_E_Eula_01",
+        "proud": 5139
+      }
+    ],
+    "costumes": [],
+    "wikiId": 6
+  },
+  {
+    "id": 10000052,
+    "iconName": "UI_AvatarIcon_Shougun",
+    "sideIconName": "UI_AvatarIcon_Side_Shougun",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 5201,
+    "nameTextMapHash": 3024507506,
+    "imageName": "UI_Gacha_AvatarImg_Shougun",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Shougun_01",
+      "UI_Talent_S_Shougun_03",
+      "UI_Talent_U_Shougun_02",
+      "UI_Talent_S_Shougun_02",
+      "UI_Talent_U_Shougun_01",
+      "UI_Talent_S_Shougun_04"
+    ],
+    "skills": [
+      {
+        "id": 10521,
+        "icon": "Skill_A_03",
+        "proud": 5231
+      },
+      {
+        "id": 10522,
+        "icon": "Skill_S_Shougun_01",
+        "proud": 5232
+      },
+      {
+        "id": 10525,
+        "icon": "Skill_E_Shougun_01",
+        "proud": 5239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 49
+  },
+  {
+    "id": 10000053,
+    "iconName": "UI_AvatarIcon_Sayu",
+    "sideIconName": "UI_AvatarIcon_Side_Sayu",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 5301,
+    "nameTextMapHash": 2388785242,
+    "imageName": "UI_Gacha_AvatarImg_Sayu",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Sayu_01",
+      "UI_Talent_S_Sayu_02",
+      "UI_Talent_U_Sayu_02",
+      "UI_Talent_S_Sayu_03",
+      "UI_Talent_U_Sayu_01",
+      "UI_Talent_S_Sayu_04"
+    ],
+    "skills": [
+      {
+        "id": 10531,
+        "icon": "Skill_A_04",
+        "proud": 5331
+      },
+      {
+        "id": 10532,
+        "icon": "Skill_S_Sayu_01",
+        "proud": 5332
+      },
+      {
+        "id": 10535,
+        "icon": "Skill_E_Sayu_01",
+        "proud": 5339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 21
+  },
+  {
+    "id": 10000054,
+    "iconName": "UI_AvatarIcon_Kokomi",
+    "sideIconName": "UI_AvatarIcon_Side_Kokomi",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 5401,
+    "nameTextMapHash": 3914045794,
+    "imageName": "UI_Gacha_AvatarImg_Kokomi",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Kokomi_01",
+      "UI_Talent_S_Kokomi_02",
+      "UI_Talent_U_Kokomi_02",
+      "UI_Talent_S_Kokomi_03",
+      "UI_Talent_U_Kokomi_01",
+      "UI_Talent_S_Kokomi_04"
+    ],
+    "skills": [
+      {
+        "id": 10541,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 5431
+      },
+      {
+        "id": 10542,
+        "icon": "Skill_S_Kokomi_01",
+        "proud": 5432
+      },
+      {
+        "id": 10545,
+        "icon": "Skill_E_Kokomi_01",
+        "proud": 5439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 25
+  },
+  {
+    "id": 10000055,
+    "iconName": "UI_AvatarIcon_Gorou",
+    "sideIconName": "UI_AvatarIcon_Side_Gorou",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 5501,
+    "nameTextMapHash": 3400133546,
+    "imageName": "UI_Gacha_AvatarImg_Gorou",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Gorou_01",
+      "UI_Talent_S_Gorou_02",
+      "UI_Talent_U_Gorou_01",
+      "UI_Talent_S_Gorou_03",
+      "UI_Talent_U_Gorou_02",
+      "UI_Talent_S_Gorou_04"
+    ],
+    "skills": [
+      {
+        "id": 10551,
+        "icon": "Skill_A_02",
+        "proud": 5531
+      },
+      {
+        "id": 10552,
+        "icon": "Skill_S_Gorou_01",
+        "proud": 5532
+      },
+      {
+        "id": 10555,
+        "icon": "Skill_E_Gorou_01",
+        "proud": 5539
+      }
+    ],
+    "costumes": [],
+    "wikiId": 5
+  },
+  {
+    "id": 10000056,
+    "iconName": "UI_AvatarIcon_Sara",
+    "sideIconName": "UI_AvatarIcon_Side_Sara",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 5601,
+    "nameTextMapHash": 1483922610,
+    "imageName": "UI_Gacha_AvatarImg_Sara",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Sara_05",
+      "UI_Talent_S_Sara_02",
+      "UI_Talent_U_Sara_02",
+      "UI_Talent_S_Sara_03",
+      "UI_Talent_U_Sara_01",
+      "UI_Talent_S_Sara_04"
+    ],
+    "skills": [
+      {
+        "id": 10561,
+        "icon": "Skill_A_02",
+        "proud": 5631
+      },
+      {
+        "id": 10562,
+        "icon": "Skill_S_Sara_01",
+        "proud": 5632
+      },
+      {
+        "id": 10565,
+        "icon": "Skill_E_Sara_01",
+        "proud": 5639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3
+  },
+  {
+    "id": 10000057,
+    "iconName": "UI_AvatarIcon_Itto",
+    "sideIconName": "UI_AvatarIcon_Side_Itto",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 5701,
+    "nameTextMapHash": 3068316954,
+    "imageName": "UI_Gacha_AvatarImg_Itto",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Itto_01",
+      "UI_Talent_S_Itto_02",
+      "UI_Talent_U_Itto_01",
+      "UI_Talent_S_Itto_03",
+      "UI_Talent_U_Itto_02",
+      "UI_Talent_S_Itto_04"
+    ],
+    "skills": [
+      {
+        "id": 10571,
+        "icon": "Skill_A_04",
+        "proud": 5731
+      },
+      {
+        "id": 10572,
+        "icon": "Skill_S_Itto_01",
+        "proud": 5732
+      },
+      {
+        "id": 10575,
+        "icon": "Skill_E_Itto_01",
+        "proud": 5739
+      }
+    ],
+    "costumes": [],
+    "wikiId": 36
+  },
+  {
+    "id": 10000058,
+    "iconName": "UI_AvatarIcon_Yae",
+    "sideIconName": "UI_AvatarIcon_Side_Yae",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 5801,
+    "nameTextMapHash": 2713453234,
+    "imageName": "UI_Gacha_AvatarImg_Yae",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Yae_01",
+      "UI_Talent_S_Yae_02",
+      "UI_Talent_U_Yae_01",
+      "UI_Talent_S_Yae_03",
+      "UI_Talent_U_Yae_02",
+      "UI_Talent_S_Yae_04"
+    ],
+    "skills": [
+      {
+        "id": 10581,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 5831
+      },
+      {
+        "id": 10582,
+        "icon": "Skill_S_Yae_01",
+        "proud": 5832
+      },
+      {
+        "id": 10585,
+        "icon": "Skill_E_Yae_01",
+        "proud": 5839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 7
+  },
+  {
+    "id": 10000059,
+    "iconName": "UI_AvatarIcon_Heizo",
+    "sideIconName": "UI_AvatarIcon_Side_Heizo",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 5901,
+    "nameTextMapHash": 646032090,
+    "imageName": "UI_Gacha_AvatarImg_Heizo",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Heizo_01",
+      "UI_Talent_S_Heizo_02",
+      "UI_Talent_U_Heizo_01",
+      "UI_Talent_S_Heizo_03",
+      "UI_Talent_U_Heizo_02",
+      "UI_Talent_S_Heizo_04"
+    ],
+    "skills": [
+      {
+        "id": 10591,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 5931
+      },
+      {
+        "id": 10592,
+        "icon": "Skill_S_Heizo_01",
+        "proud": 5932
+      },
+      {
+        "id": 10595,
+        "icon": "Skill_E_Heizo_01",
+        "proud": 5939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2263
+  },
+  {
+    "id": 10000060,
+    "iconName": "UI_AvatarIcon_Yelan",
+    "sideIconName": "UI_AvatarIcon_Side_Yelan",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 6001,
+    "nameTextMapHash": 2848374378,
+    "imageName": "UI_Gacha_AvatarImg_Yelan",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Yelan_01",
+      "UI_Talent_S_Yelan_02",
+      "UI_Talent_U_Yelan_01",
+      "UI_Talent_S_Yelan_03",
+      "UI_Talent_U_Yelan_02",
+      "UI_Talent_S_Yelan_04"
+    ],
+    "skills": [
+      {
+        "id": 10606,
+        "icon": "Skill_A_02",
+        "proud": 6031
+      },
+      {
+        "id": 10607,
+        "icon": "Skill_S_Yelan_01",
+        "proud": 6032
+      },
+      {
+        "id": 10610,
+        "icon": "Skill_E_Yelan_01",
+        "proud": 6039
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2252
+  },
+  {
+    "id": 10000061,
+    "iconName": "UI_AvatarIcon_Momoka",
+    "sideIconName": "UI_AvatarIcon_Side_Momoka",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 6101,
+    "nameTextMapHash": 1456643042,
+    "imageName": "UI_Gacha_AvatarImg_Momoka",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Momoka_01",
+      "UI_Talent_S_Momoka_02",
+      "UI_Talent_U_Momoka_01",
+      "UI_Talent_S_Momoka_04",
+      "UI_Talent_U_Momoka_02",
+      "UI_Talent_S_Momoka_03"
+    ],
+    "skills": [
+      {
+        "id": 10611,
+        "icon": "Skill_A_01",
+        "proud": 6131
+      },
+      {
+        "id": 10612,
+        "icon": "Skill_S_Momoka_01",
+        "proud": 6132
+      },
+      {
+        "id": 10615,
+        "icon": "Skill_E_Momoka_01",
+        "proud": 6139
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_MomokaCostumeErrantry",
+        "sideIconName": "UI_AvatarIcon_Side_MomokaCostumeErrantry",
+        "imageName": "UI_Costume_MomokaCostumeErrantry"
+      }
+    ],
+    "wikiId": 3719
+  },
+  {
+    "id": 10000062,
+    "iconName": "UI_AvatarIcon_Aloy",
+    "sideIconName": "UI_AvatarIcon_Side_Aloy",
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 6201,
+    "nameTextMapHash": 3689108098,
+    "imageName": "UI_Gacha_AvatarImg_Aloy",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Aloy_Lock",
+      "UI_Talent_S_Aloy_Lock",
+      "UI_Talent_S_Aloy_Lock",
+      "UI_Talent_S_Aloy_Lock",
+      "UI_Talent_S_Aloy_Lock",
+      "UI_Talent_S_Aloy_Lock"
+    ],
+    "skills": [
+      {
+        "id": 10621,
+        "icon": "Skill_A_02",
+        "proud": 6231
+      },
+      {
+        "id": 10622,
+        "icon": "Skill_S_Aloy_01",
+        "proud": 6232
+      },
+      {
+        "id": 10625,
+        "icon": "Skill_E_Aloy_01",
+        "proud": 6239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 13
+  },
+  {
+    "id": 10000063,
+    "iconName": "UI_AvatarIcon_Shenhe",
+    "sideIconName": "UI_AvatarIcon_Side_Shenhe",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 6301,
+    "nameTextMapHash": 334242634,
+    "imageName": "UI_Gacha_AvatarImg_Shenhe",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Shenhe_02",
+      "UI_Talent_S_Shenhe_01",
+      "UI_Talent_U_Shenhe_01",
+      "UI_Talent_S_Shenhe_03",
+      "UI_Talent_U_Shenhe_02",
+      "UI_Talent_S_Shenhe_04"
+    ],
+    "skills": [
+      {
+        "id": 10631,
+        "icon": "Skill_A_03",
+        "proud": 6331
+      },
+      {
+        "id": 10632,
+        "icon": "Skill_S_Shenhe_01",
+        "proud": 6332
+      },
+      {
+        "id": 10635,
+        "icon": "Skill_E_Shenhe_01",
+        "proud": 6339
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_ShenheCostumeDai",
+        "sideIconName": "UI_AvatarIcon_Side_ShenheCostumeDai",
+        "imageName": "UI_Costume_ShenheCostumeDai"
+      }
+    ],
+    "wikiId": 29
+  },
+  {
+    "id": 10000064,
+    "iconName": "UI_AvatarIcon_Yunjin",
+    "sideIconName": "UI_AvatarIcon_Side_Yunjin",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 6401,
+    "nameTextMapHash": 655825874,
+    "imageName": "UI_Gacha_AvatarImg_Yunjin",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Yunjin_01",
+      "UI_Talent_S_Yunjin_02",
+      "UI_Talent_U_Yunjin_01",
+      "UI_Talent_S_Yunjin_03",
+      "UI_Talent_U_Yunjin_02",
+      "UI_Talent_S_Yunjin_04"
+    ],
+    "skills": [
+      {
+        "id": 10641,
+        "icon": "Skill_A_03",
+        "proud": 6431
+      },
+      {
+        "id": 10642,
+        "icon": "Skill_S_Yunjin_01",
+        "proud": 6432
+      },
+      {
+        "id": 10643,
+        "icon": "Skill_E_Yunjin_01",
+        "proud": 6439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4
+  },
+  {
+    "id": 10000065,
+    "iconName": "UI_AvatarIcon_Shinobu",
+    "sideIconName": "UI_AvatarIcon_Side_Shinobu",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 6501,
+    "nameTextMapHash": 1940821986,
+    "imageName": "UI_Gacha_AvatarImg_Shinobu",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Shinobu_01",
+      "UI_Talent_S_Shinobu_02",
+      "UI_Talent_U_Shinobu_01",
+      "UI_Talent_S_Shinobu_03",
+      "UI_Talent_U_Shinobu_02",
+      "UI_Talent_S_Shinobu_04"
+    ],
+    "skills": [
+      {
+        "id": 10651,
+        "icon": "Skill_A_01",
+        "proud": 6531
+      },
+      {
+        "id": 10652,
+        "icon": "Skill_S_Shinobu_01",
+        "proud": 6532
+      },
+      {
+        "id": 10655,
+        "icon": "Skill_E_Shinobu_01",
+        "proud": 6539
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2256
+  },
+  {
+    "id": 10000066,
+    "iconName": "UI_AvatarIcon_Ayato",
+    "sideIconName": "UI_AvatarIcon_Side_Ayato",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 6601,
+    "nameTextMapHash": 1588620330,
+    "imageName": "UI_Gacha_AvatarImg_Ayato",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Ayato_01",
+      "UI_Talent_S_Ayato_02",
+      "UI_Talent_U_Ayato_02",
+      "UI_Talent_S_Ayato_03",
+      "UI_Talent_U_Ayato_01",
+      "UI_Talent_S_Ayato_04"
+    ],
+    "skills": [
+      {
+        "id": 10661,
+        "icon": "Skill_A_01",
+        "proud": 6631
+      },
+      {
+        "id": 10662,
+        "icon": "Skill_S_Ayato_01",
+        "proud": 6632
+      },
+      {
+        "id": 10665,
+        "icon": "Skill_E_Ayato_01",
+        "proud": 6639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 31
+  },
+  {
+    "id": 10000067,
+    "iconName": "UI_AvatarIcon_Collei",
+    "sideIconName": "UI_AvatarIcon_Side_Collei",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 6701,
+    "nameTextMapHash": 2948362178,
+    "imageName": "UI_Gacha_AvatarImg_Collei",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Collei_01",
+      "UI_Talent_S_Collei_02",
+      "UI_Talent_U_Collei_02",
+      "UI_Talent_S_Collei_03",
+      "UI_Talent_U_Collei_01",
+      "UI_Talent_S_Collei_04"
+    ],
+    "skills": [
+      {
+        "id": 10671,
+        "icon": "Skill_A_02",
+        "proud": 6731
+      },
+      {
+        "id": 10672,
+        "icon": "Skill_S_Collei_01",
+        "proud": 6732
+      },
+      {
+        "id": 10675,
+        "icon": "Skill_E_Collei_01",
+        "proud": 6739
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2268
+  },
+  {
+    "id": 10000068,
+    "iconName": "UI_AvatarIcon_Dori",
+    "sideIconName": "UI_AvatarIcon_Side_Dori",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 6801,
+    "nameTextMapHash": 388272194,
+    "imageName": "UI_Gacha_AvatarImg_Dori",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Dori_01",
+      "UI_Talent_S_Dori_02",
+      "UI_Talent_U_Dori_02",
+      "UI_Talent_S_Dori_03",
+      "UI_Talent_U_Dori_01",
+      "UI_Talent_S_Dori_04"
+    ],
+    "skills": [
+      {
+        "id": 10681,
+        "icon": "Skill_A_04",
+        "proud": 6831
+      },
+      {
+        "id": 10682,
+        "icon": "Skill_S_Dori_01",
+        "proud": 6832
+      },
+      {
+        "id": 10685,
+        "icon": "Skill_E_Dori_01",
+        "proud": 6839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2269
+  },
+  {
+    "id": 10000069,
+    "iconName": "UI_AvatarIcon_Tighnari",
+    "sideIconName": "UI_AvatarIcon_Side_Tighnari",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 6901,
+    "nameTextMapHash": 2506955778,
+    "imageName": "UI_Gacha_AvatarImg_Tighnari",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Tighnari_01",
+      "UI_Talent_S_Tighnari_02",
+      "UI_Talent_U_Tighnari_01",
+      "UI_Talent_S_Tighnari_03",
+      "UI_Talent_U_Tighnari_02",
+      "UI_Talent_S_Tighnari_04"
+    ],
+    "skills": [
+      {
+        "id": 10691,
+        "icon": "Skill_A_02",
+        "proud": 6931
+      },
+      {
+        "id": 10692,
+        "icon": "Skill_S_Tighnari_01",
+        "proud": 6932
+      },
+      {
+        "id": 10695,
+        "icon": "Skill_E_Tighnari_01",
+        "proud": 6939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2265
+  },
+  {
+    "id": 10000070,
+    "iconName": "UI_AvatarIcon_Nilou",
+    "sideIconName": "UI_AvatarIcon_Side_Nilou",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 7001,
+    "nameTextMapHash": 3850149970,
+    "imageName": "UI_Gacha_AvatarImg_Nilou",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Nilou_01",
+      "UI_Talent_S_Nilou_02",
+      "UI_Talent_U_Nilou_01",
+      "UI_Talent_S_Nilou_03",
+      "UI_Talent_U_Nilou_02",
+      "UI_Talent_S_Nilou_04"
+    ],
+    "skills": [
+      {
+        "id": 10701,
+        "icon": "Skill_A_01",
+        "proud": 7031
+      },
+      {
+        "id": 10702,
+        "icon": "Skill_S_Nilou_01",
+        "proud": 7032
+      },
+      {
+        "id": 10705,
+        "icon": "Skill_E_Nilou_01",
+        "proud": 7039
+      }
+    ],
+    "costumes": [
+      {
+        "iconName": "UI_AvatarIcon_NilouCostumeFairy",
+        "sideIconName": "UI_AvatarIcon_Side_NilouCostumeFairy",
+        "imageName": "UI_Costume_NilouCostumeFairy"
+      }
+    ],
+    "wikiId": 2812
+  },
+  {
+    "id": 10000071,
+    "iconName": "UI_AvatarIcon_Cyno",
+    "sideIconName": "UI_AvatarIcon_Side_Cyno",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 7101,
+    "nameTextMapHash": 1049891906,
+    "imageName": "UI_Gacha_AvatarImg_Cyno",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Cyno_01",
+      "UI_Talent_S_Cyno_02",
+      "UI_Talent_U_Cyno_01",
+      "UI_Talent_S_Cyno_03",
+      "UI_Talent_U_Cyno_02",
+      "UI_Talent_S_Cyno_04"
+    ],
+    "skills": [
+      {
+        "id": 10711,
+        "icon": "Skill_A_03",
+        "proud": 7131
+      },
+      {
+        "id": 10712,
+        "icon": "Skill_S_Cyno_01",
+        "proud": 7132
+      },
+      {
+        "id": 10715,
+        "icon": "Skill_E_Cyno_01",
+        "proud": 7139
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2813
+  },
+  {
+    "id": 10000072,
+    "iconName": "UI_AvatarIcon_Candace",
+    "sideIconName": "UI_AvatarIcon_Side_Candace",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 7201,
+    "nameTextMapHash": 3092975658,
+    "imageName": "UI_Gacha_AvatarImg_Candace",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Candace_01",
+      "UI_Talent_S_Candace_02",
+      "UI_Talent_U_Candace_01",
+      "UI_Talent_S_Candace_03",
+      "UI_Talent_U_Candace_02",
+      "UI_Talent_S_Candace_04"
+    ],
+    "skills": [
+      {
+        "id": 10721,
+        "icon": "Skill_A_03",
+        "proud": 7231
+      },
+      {
+        "id": 10722,
+        "icon": "Skill_S_Candace_01",
+        "proud": 7232
+      },
+      {
+        "id": 10725,
+        "icon": "Skill_E_Candace_01",
+        "proud": 7239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2815
+  },
+  {
+    "id": 10000073,
+    "iconName": "UI_AvatarIcon_Nahida",
+    "sideIconName": "UI_AvatarIcon_Side_Nahida",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 7301,
+    "nameTextMapHash": 712501082,
+    "imageName": "UI_Gacha_AvatarImg_Nahida",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Nahida_01",
+      "UI_Talent_S_Nahida_02",
+      "UI_Talent_U_Nahida_01",
+      "UI_Talent_S_Nahida_03",
+      "UI_Talent_U_Nahida_02",
+      "UI_Talent_S_Nahida_04"
+    ],
+    "skills": [
+      {
+        "id": 10731,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 7331
+      },
+      {
+        "id": 10732,
+        "icon": "Skill_S_Nahida_01",
+        "proud": 7332
+      },
+      {
+        "id": 10735,
+        "icon": "Skill_E_Nahida_01",
+        "proud": 7339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2850
+  },
+  {
+    "id": 10000074,
+    "iconName": "UI_AvatarIcon_Layla",
+    "sideIconName": "UI_AvatarIcon_Side_Layla",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 7401,
+    "nameTextMapHash": 2889777514,
+    "imageName": "UI_Gacha_AvatarImg_Layla",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Layla_01",
+      "UI_Talent_S_Layla_02",
+      "UI_Talent_U_Layla_01",
+      "UI_Talent_S_Layla_03",
+      "UI_Talent_U_Layla_02",
+      "UI_Talent_S_Layla_04"
+    ],
+    "skills": [
+      {
+        "id": 10741,
+        "icon": "Skill_A_01",
+        "proud": 7431
+      },
+      {
+        "id": 10742,
+        "icon": "Skill_S_Layla_01",
+        "proud": 7432
+      },
+      {
+        "id": 10745,
+        "icon": "Skill_E_Layla_01",
+        "proud": 7439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2859
+  },
+  {
+    "id": 10000075,
+    "iconName": "UI_AvatarIcon_Wanderer",
+    "sideIconName": "UI_AvatarIcon_Side_Wanderer",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 7501,
+    "nameTextMapHash": 3230559562,
+    "imageName": "UI_Gacha_AvatarImg_Wanderer",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Wanderer_01",
+      "UI_Talent_S_Wanderer_02",
+      "UI_Talent_U_Wanderer_02",
+      "UI_Talent_S_Wanderer_03",
+      "UI_Talent_U_Wanderer_01",
+      "UI_Talent_S_Wanderer_04"
+    ],
+    "skills": [
+      {
+        "id": 10751,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 7531
+      },
+      {
+        "id": 10752,
+        "icon": "Skill_S_Wanderer_01",
+        "proud": 7532
+      },
+      {
+        "id": 10755,
+        "icon": "Skill_E_Wanderer_01",
+        "proud": 7539
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2968
+  },
+  {
+    "id": 10000076,
+    "iconName": "UI_AvatarIcon_Faruzan",
+    "sideIconName": "UI_AvatarIcon_Side_Faruzan",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 7601,
+    "nameTextMapHash": 2387711994,
+    "imageName": "UI_Gacha_AvatarImg_Faruzan",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Faruzan_01",
+      "UI_Talent_S_Faruzan_02",
+      "UI_Talent_U_Faruzan_01",
+      "UI_Talent_S_Faruzan_03",
+      "UI_Talent_U_Faruzan_02",
+      "UI_Talent_S_Faruzan_04"
+    ],
+    "skills": [
+      {
+        "id": 10761,
+        "icon": "Skill_A_02",
+        "proud": 7631
+      },
+      {
+        "id": 10762,
+        "icon": "Skill_S_Faruzan_01",
+        "proud": 7632
+      },
+      {
+        "id": 10765,
+        "icon": "Skill_E_Faruzan_01",
+        "proud": 7639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 2967
+  },
+  {
+    "id": 10000077,
+    "iconName": "UI_AvatarIcon_Yaoyao",
+    "sideIconName": "UI_AvatarIcon_Side_Yaoyao",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 7701,
+    "nameTextMapHash": 1732418482,
+    "imageName": "UI_Gacha_AvatarImg_Yaoyao",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Yaoyao_01",
+      "UI_Talent_S_Yaoyao_02",
+      "UI_Talent_U_Yaoyao_01",
+      "UI_Talent_S_Yaoyao_03",
+      "UI_Talent_U_Yaoyao_02",
+      "UI_Talent_S_Yaoyao_04"
+    ],
+    "skills": [
+      {
+        "id": 10771,
+        "icon": "Skill_A_03",
+        "proud": 7731
+      },
+      {
+        "id": 10772,
+        "icon": "Skill_S_Yaoyao_01",
+        "proud": 7732
+      },
+      {
+        "id": 10775,
+        "icon": "Skill_E_Yaoyao_01",
+        "proud": 7739
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3335
+  },
+  {
+    "id": 10000078,
+    "iconName": "UI_AvatarIcon_Alhatham",
+    "sideIconName": "UI_AvatarIcon_Side_Alhatham",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 7801,
+    "nameTextMapHash": 4002157418,
+    "imageName": "UI_Gacha_AvatarImg_Alhatham",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Alhatham_02",
+      "UI_Talent_S_Alhatham_01",
+      "UI_Talent_U_Alhatham_01",
+      "UI_Talent_S_Alhatham_03",
+      "UI_Talent_U_Alhatham_02",
+      "UI_Talent_S_Alhatham_04"
+    ],
+    "skills": [
+      {
+        "id": 10781,
+        "icon": "Skill_A_01",
+        "proud": 7831
+      },
+      {
+        "id": 10782,
+        "icon": "Skill_S_Alhatham_01",
+        "proud": 7832
+      },
+      {
+        "id": 10785,
+        "icon": "Skill_E_Alhatham_01",
+        "proud": 7839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3336
+  },
+  {
+    "id": 10000079,
+    "iconName": "UI_AvatarIcon_Dehya",
+    "sideIconName": "UI_AvatarIcon_Side_Dehya",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 7901,
+    "nameTextMapHash": 2360533154,
+    "imageName": "UI_Gacha_AvatarImg_Dehya",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Dehya_01",
+      "UI_Talent_S_Dehya_02",
+      "UI_Talent_U_Dehya_01",
+      "UI_Talent_S_Dehya_03",
+      "UI_Talent_U_Dehya_02",
+      "UI_Talent_S_Dehya_04"
+    ],
+    "skills": [
+      {
+        "id": 10791,
+        "icon": "Skill_A_04",
+        "proud": 7931
+      },
+      {
+        "id": 10792,
+        "icon": "Skill_S_Dehya_01",
+        "proud": 7932
+      },
+      {
+        "id": 10795,
+        "icon": "Skill_E_Dehya_01",
+        "proud": 7939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3463
+  },
+  {
+    "id": 10000080,
+    "iconName": "UI_AvatarIcon_Mika",
+    "sideIconName": "UI_AvatarIcon_Side_Mika",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 8001,
+    "nameTextMapHash": 231911858,
+    "imageName": "UI_Gacha_AvatarImg_Mika",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Mika_01",
+      "UI_Talent_S_Mika_02",
+      "UI_Talent_U_Mika_01",
+      "UI_Talent_S_Mika_03",
+      "UI_Talent_U_Mika_02",
+      "UI_Talent_S_Mika_04"
+    ],
+    "skills": [
+      {
+        "id": 10801,
+        "icon": "Skill_A_03",
+        "proud": 8031
+      },
+      {
+        "id": 10802,
+        "icon": "Skill_S_Mika_01",
+        "proud": 8032
+      },
+      {
+        "id": 10805,
+        "icon": "Skill_E_Mika_01",
+        "proud": 8039
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3462
+  },
+  {
+    "id": 10000081,
+    "iconName": "UI_AvatarIcon_Kaveh",
+    "sideIconName": "UI_AvatarIcon_Side_Kaveh",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 8101,
+    "nameTextMapHash": 466355514,
+    "imageName": "UI_Gacha_AvatarImg_Kaveh",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Kaveh_01",
+      "UI_Talent_S_Kaveh_02",
+      "UI_Talent_U_Kaveh_02",
+      "UI_Talent_S_Kaveh_03",
+      "UI_Talent_U_Kaveh_01",
+      "UI_Talent_S_Kaveh_04"
+    ],
+    "skills": [
+      {
+        "id": 10811,
+        "icon": "Skill_A_04",
+        "proud": 8131
+      },
+      {
+        "id": 10812,
+        "icon": "Skill_S_Kaveh_01",
+        "proud": 8132
+      },
+      {
+        "id": 10815,
+        "icon": "Skill_E_Kaveh_01",
+        "proud": 8139
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3608
+  },
+  {
+    "id": 10000082,
+    "iconName": "UI_AvatarIcon_Baizhuer",
+    "sideIconName": "UI_AvatarIcon_Side_Baizhuer",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 8201,
+    "nameTextMapHash": 2984815066,
+    "imageName": "UI_Gacha_AvatarImg_Baizhuer",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Baizhuer_01",
+      "UI_Talent_S_Baizhuer_02",
+      "UI_Talent_U_Baizhuer_01",
+      "UI_Talent_S_Baizhuer_03",
+      "UI_Talent_U_Baizhuer_02",
+      "UI_Talent_S_Baizhuer_04"
+    ],
+    "skills": [
+      {
+        "id": 10821,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 8231
+      },
+      {
+        "id": 10822,
+        "icon": "Skill_S_Baizhuer_01",
+        "proud": 8232
+      },
+      {
+        "id": 10825,
+        "icon": "Skill_E_Baizhuer_01",
+        "proud": 8239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3609
+  },
+  {
+    "id": 10000083,
+    "iconName": "UI_AvatarIcon_Linette",
+    "sideIconName": "UI_AvatarIcon_Side_Linette",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 8301,
+    "nameTextMapHash": 1225226258,
+    "imageName": "UI_Gacha_AvatarImg_Linette",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Linette_01",
+      "UI_Talent_S_Linette_02",
+      "UI_Talent_U_Linette_01",
+      "UI_Talent_S_Linette_03",
+      "UI_Talent_U_Linette_02",
+      "UI_Talent_S_Linette_04"
+    ],
+    "skills": [
+      {
+        "id": 10831,
+        "icon": "Skill_A_01",
+        "proud": 8331
+      },
+      {
+        "id": 10832,
+        "icon": "Skill_S_Linette_01",
+        "proud": 8332
+      },
+      {
+        "id": 10835,
+        "icon": "Skill_E_Linette_01",
+        "proud": 8339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3962
+  },
+  {
+    "id": 10000084,
+    "iconName": "UI_AvatarIcon_Liney",
+    "sideIconName": "UI_AvatarIcon_Side_Liney",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 8401,
+    "nameTextMapHash": 2472444970,
+    "imageName": "UI_Gacha_AvatarImg_Liney",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Liney_01",
+      "UI_Talent_S_Liney_03",
+      "UI_Talent_U_Liney_01",
+      "UI_Talent_S_Liney_02",
+      "UI_Talent_U_Liney_02",
+      "UI_Talent_S_Liney_04"
+    ],
+    "skills": [
+      {
+        "id": 10841,
+        "icon": "Skill_A_02",
+        "proud": 8431
+      },
+      {
+        "id": 10842,
+        "icon": "Skill_S_Liney_01",
+        "proud": 8432
+      },
+      {
+        "id": 10845,
+        "icon": "Skill_E_Liney_01",
+        "proud": 8439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3963
+  },
+  {
+    "id": 10000085,
+    "iconName": "UI_AvatarIcon_Freminet",
+    "sideIconName": "UI_AvatarIcon_Side_Freminet",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 8501,
+    "nameTextMapHash": 4201964354,
+    "imageName": "UI_Gacha_AvatarImg_Freminet",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Freminet_01",
+      "UI_Talent_S_Freminet_02",
+      "UI_Talent_U_Freminet_01",
+      "UI_Talent_S_Freminet_03",
+      "UI_Talent_U_Freminet_02",
+      "UI_Talent_S_Freminet_04"
+    ],
+    "skills": [
+      {
+        "id": 10851,
+        "icon": "Skill_A_04",
+        "proud": 8531
+      },
+      {
+        "id": 10852,
+        "icon": "Skill_S_Freminet_01",
+        "proud": 8532
+      },
+      {
+        "id": 10855,
+        "icon": "Skill_E_Freminet_01",
+        "proud": 8539
+      }
+    ],
+    "costumes": [],
+    "wikiId": 3964
+  },
+  {
+    "id": 10000086,
+    "iconName": "UI_AvatarIcon_Wriothesley",
+    "sideIconName": "UI_AvatarIcon_Side_Wriothesley",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 8601,
+    "nameTextMapHash": 370151050,
+    "imageName": "UI_Gacha_AvatarImg_Wriothesley",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Wriothesley_01",
+      "UI_Talent_S_Wriothesley_02",
+      "UI_Talent_U_Wriothesley_01",
+      "UI_Talent_S_Wriothesley_03",
+      "UI_Talent_U_Wriothesley_02",
+      "UI_Talent_S_Wriothesley_04"
+    ],
+    "skills": [
+      {
+        "id": 10861,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 8631
+      },
+      {
+        "id": 10862,
+        "icon": "Skill_S_Wriothesley_01",
+        "proud": 8632
+      },
+      {
+        "id": 10865,
+        "icon": "Skill_E_Wriothesley_01",
+        "proud": 8639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4022
+  },
+  {
+    "id": 10000087,
+    "iconName": "UI_AvatarIcon_Neuvillette",
+    "sideIconName": "UI_AvatarIcon_Side_Neuvillette",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 8701,
+    "nameTextMapHash": 1504902330,
+    "imageName": "UI_Gacha_AvatarImg_Neuvillette",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Neuvillette_01",
+      "UI_Talent_S_Neuvillette_02",
+      "UI_Talent_U_Neuvillette_01",
+      "UI_Talent_S_Neuvillette_03",
+      "UI_Talent_U_Neuvillette_02",
+      "UI_Talent_S_Neuvillette_04"
+    ],
+    "skills": [
+      {
+        "id": 10871,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 8731
+      },
+      {
+        "id": 10872,
+        "icon": "Skill_S_Neuvillette_01",
+        "proud": 8732
+      },
+      {
+        "id": 10875,
+        "icon": "Skill_E_Neuvillette_01",
+        "proud": 8739
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4023
+  },
+  {
+    "id": 10000088,
+    "iconName": "UI_AvatarIcon_Charlotte",
+    "sideIconName": "UI_AvatarIcon_Side_Charlotte",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 8801,
+    "nameTextMapHash": 3831162130,
+    "imageName": "UI_Gacha_AvatarImg_Charlotte",
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Charlotte_01",
+      "UI_Talent_S_Charlotte_02",
+      "UI_Talent_U_Charlotte_01",
+      "UI_Talent_S_Charlotte_03",
+      "UI_Talent_U_Charlotte_02",
+      "UI_Talent_S_Charlotte_04"
+    ],
+    "skills": [
+      {
+        "id": 10881,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 8831
+      },
+      {
+        "id": 10882,
+        "icon": "Skill_S_Charlotte_01",
+        "proud": 8832
+      },
+      {
+        "id": 10885,
+        "icon": "Skill_E_Charlotte_01",
+        "proud": 8839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4377
+  },
+  {
+    "id": 10000089,
+    "iconName": "UI_AvatarIcon_Furina",
+    "sideIconName": "UI_AvatarIcon_Side_Furina",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 8901,
+    "nameTextMapHash": 2180900234,
+    "imageName": "UI_Gacha_AvatarImg_Furina",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Furina_01",
+      "UI_Talent_S_Furina_04",
+      "UI_Talent_U_Furina_02",
+      "UI_Talent_S_Furina_03",
+      "UI_Talent_U_Furina_01",
+      "UI_Talent_S_Furina_02"
+    ],
+    "skills": [
+      {
+        "id": 10891,
+        "icon": "Skill_A_01",
+        "proud": 8931
+      },
+      {
+        "id": 10892,
+        "icon": "Skill_S_Furina_01",
+        "proud": 8932
+      },
+      {
+        "id": 10895,
+        "icon": "Skill_E_Furina_01",
+        "proud": 8939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4376
+  },
+  {
+    "id": 10000090,
+    "iconName": "UI_AvatarIcon_Chevreuse",
+    "sideIconName": "UI_AvatarIcon_Side_Chevreuse",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 9001,
+    "nameTextMapHash": 540313842,
+    "imageName": "UI_Gacha_AvatarImg_Chevreuse",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Chevreuse_01",
+      "UI_Talent_S_Chevreuse_02",
+      "UI_Talent_U_Chevreuse_01",
+      "UI_Talent_S_Chevreuse_03",
+      "UI_Talent_U_Chevreuse_02",
+      "UI_Talent_S_Chevreuse_04"
+    ],
+    "skills": [
+      {
+        "id": 10901,
+        "icon": "Skill_A_03",
+        "proud": 9031
+      },
+      {
+        "id": 10902,
+        "icon": "Skill_S_Chevreuse_01",
+        "proud": 9032
+      },
+      {
+        "id": 10905,
+        "icon": "Skill_E_Chevreuse_01",
+        "proud": 9039
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4577
+  },
+  {
+    "id": 10000091,
+    "iconName": "UI_AvatarIcon_Navia",
+    "sideIconName": "UI_AvatarIcon_Side_Navia",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 9101,
+    "nameTextMapHash": 2877588578,
+    "imageName": "UI_Gacha_AvatarImg_Navia",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Navia_01",
+      "UI_Talent_S_Navia_02",
+      "UI_Talent_U_Navia_01",
+      "UI_Talent_S_Navia_03",
+      "UI_Talent_U_Navia_02",
+      "UI_Talent_S_Navia_04"
+    ],
+    "skills": [
+      {
+        "id": 10911,
+        "icon": "Skill_A_04",
+        "proud": 9131
+      },
+      {
+        "id": 10912,
+        "icon": "Skill_S_Navia_01",
+        "proud": 9132
+      },
+      {
+        "id": 10915,
+        "icon": "Skill_E_Navia_01",
+        "proud": 9139
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4576
+  },
+  {
+    "id": 10000092,
+    "iconName": "UI_AvatarIcon_Gaming",
+    "sideIconName": "UI_AvatarIcon_Side_Gaming",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "skillDepotId": 9201,
+    "nameTextMapHash": 2822240322,
+    "imageName": "UI_Gacha_AvatarImg_Gaming",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Gaming_01",
+      "UI_Talent_S_Gaming_02",
+      "UI_Talent_U_Gaming_01",
+      "UI_Talent_S_Gaming_03",
+      "UI_Talent_U_Gaming_02",
+      "UI_Talent_S_Gaming_04"
+    ],
+    "skills": [
+      {
+        "id": 10921,
+        "icon": "Skill_A_04",
+        "proud": 9231
+      },
+      {
+        "id": 10922,
+        "icon": "Skill_S_Gaming_01",
+        "proud": 9232
+      },
+      {
+        "id": 10925,
+        "icon": "Skill_E_Gaming_01",
+        "proud": 9239
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4775
+  },
+  {
+    "id": 10000093,
+    "iconName": "UI_AvatarIcon_Liuyun",
+    "sideIconName": "UI_AvatarIcon_Side_Liuyun",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "skillDepotId": 9301,
+    "nameTextMapHash": 3648220770,
+    "imageName": "UI_Gacha_AvatarImg_Liuyun",
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Liuyun_01",
+      "UI_Talent_S_Liuyun_02",
+      "UI_Talent_U_Liuyun_02",
+      "UI_Talent_S_Liuyun_03",
+      "UI_Talent_U_Liuyun_01",
+      "UI_Talent_S_Liuyun_04"
+    ],
+    "skills": [
+      {
+        "id": 10931,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 9331
+      },
+      {
+        "id": 10932,
+        "icon": "Skill_S_Liuyun_01",
+        "proud": 9332
+      },
+      {
+        "id": 10935,
+        "icon": "Skill_E_Liuyun_01",
+        "proud": 9339
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4774
+  },
+  {
+    "id": 10000094,
+    "iconName": "UI_AvatarIcon_Chiori",
+    "sideIconName": "UI_AvatarIcon_Side_Chiori",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 9401,
+    "nameTextMapHash": 1944606922,
+    "imageName": "UI_Gacha_AvatarImg_Chiori",
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Chiori_01",
+      "UI_Talent_S_Chiori_03",
+      "UI_Talent_U_Chiori_01",
+      "UI_Talent_S_Chiori_02",
+      "UI_Talent_U_Chiori_02",
+      "UI_Talent_S_Chiori_04"
+    ],
+    "skills": [
+      {
+        "id": 10941,
+        "icon": "Skill_A_01",
+        "proud": 9431
+      },
+      {
+        "id": 10942,
+        "icon": "Skill_S_Chiori_01",
+        "proud": 9432
+      },
+      {
+        "id": 10945,
+        "icon": "Skill_E_Chiori_01",
+        "proud": 9439
+      }
+    ],
+    "costumes": [],
+    "wikiId": 4946
+  },
+  {
+    "id": 10000095,
+    "iconName": "UI_AvatarIcon_Sigewinne",
+    "sideIconName": "UI_AvatarIcon_Side_Sigewinne",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 9501,
+    "nameTextMapHash": 781488962,
+    "imageName": "UI_Gacha_AvatarImg_Sigewinne",
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Sigewinne_01",
+      "UI_Talent_S_Sigewinne_02",
+      "UI_Talent_U_Sigewinne_01",
+      "UI_Talent_S_Sigewinne_03",
+      "UI_Talent_U_Sigewinne_02",
+      "UI_Talent_S_Sigewinne_04"
+    ],
+    "skills": [
+      {
+        "id": 10951,
+        "icon": "Skill_A_02",
+        "proud": 9531
+      },
+      {
+        "id": 10952,
+        "icon": "Skill_S_Sigewinne_01",
+        "proud": 9532
+      },
+      {
+        "id": 10955,
+        "icon": "Skill_E_Sigewinne_01",
+        "proud": 9539
+      }
+    ],
+    "costumes": [],
+    "wikiId": 5597
+  },
+  {
+    "id": 10000096,
+    "iconName": "UI_AvatarIcon_Arlecchino",
+    "sideIconName": "UI_AvatarIcon_Side_Arlecchino",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 9601,
+    "nameTextMapHash": 167199474,
+    "imageName": "UI_Gacha_AvatarImg_Arlecchino",
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Arlecchino_01",
+      "UI_Talent_S_Arlecchino_02",
+      "UI_Talent_U_Arlecchino_01",
+      "UI_Talent_S_Arlecchino_03",
+      "UI_Talent_U_Arlecchino_02",
+      "UI_Talent_S_Arlecchino_04"
+    ],
+    "skills": [
+      {
+        "id": 10961,
+        "icon": "Skill_A_03",
+        "proud": 9631
+      },
+      {
+        "id": 10962,
+        "icon": "Skill_S_Arlecchino_01",
+        "proud": 9632
+      },
+      {
+        "id": 10965,
+        "icon": "Skill_E_Arlecchino_01",
+        "proud": 9639
+      }
+    ],
+    "costumes": [],
+    "wikiId": 5149
+  },
+  {
+    "id": 10000097,
+    "iconName": "UI_AvatarIcon_Sethos",
+    "sideIconName": "UI_AvatarIcon_Side_Sethos",
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "skillDepotId": 9701,
+    "nameTextMapHash": 1431322346,
+    "imageName": "UI_Gacha_AvatarImg_Sethos",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Sethos_01",
+      "UI_Talent_S_Sethos_02",
+      "UI_Talent_U_Sethos_01",
+      "UI_Talent_S_Sethos_03",
+      "UI_Talent_U_Sethos_02",
+      "UI_Talent_S_Sethos_04"
+    ],
+    "skills": [
+      {
+        "id": 10971,
+        "icon": "Skill_A_02",
+        "proud": 9731
+      },
+      {
+        "id": 10972,
+        "icon": "Skill_S_Sethos_01",
+        "proud": 9732
+      },
+      {
+        "id": 10975,
+        "icon": "Skill_E_Sethos_01",
+        "proud": 9739
+      }
+    ],
+    "costumes": [],
+    "wikiId": 5598
+  },
+  {
+    "id": 10000098,
+    "iconName": "UI_AvatarIcon_Clorinde",
+    "sideIconName": "UI_AvatarIcon_Side_Clorinde",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "skillDepotId": 9801,
+    "nameTextMapHash": 2745369298,
+    "imageName": "UI_Gacha_AvatarImg_Clorinde",
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Clorinde_01",
+      "UI_Talent_S_Clorinde_02",
+      "UI_Talent_U_Clorinde_02",
+      "UI_Talent_S_Clorinde_03",
+      "UI_Talent_U_Clorinde_01",
+      "UI_Talent_S_Clorinde_04"
+    ],
+    "skills": [
+      {
+        "id": 10981,
+        "icon": "Skill_A_01",
+        "proud": 9831
+      },
+      {
+        "id": 10982,
+        "icon": "Skill_S_Clorinde_01",
+        "proud": 9832
+      },
+      {
+        "id": 10985,
+        "icon": "Skill_E_Clorinde_01",
+        "proud": 9839
+      }
+    ],
+    "costumes": [],
+    "wikiId": 5596
+  },
+  {
+    "id": 10000099,
+    "iconName": "UI_AvatarIcon_Emilie",
+    "sideIconName": "UI_AvatarIcon_Side_Emilie",
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "skillDepotId": 9901,
+    "nameTextMapHash": 1705786122,
+    "imageName": "UI_Gacha_AvatarImg_Emilie",
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Emilie_01",
+      "UI_Talent_S_Emilie_02",
+      "UI_Talent_U_Emilie_01",
+      "UI_Talent_S_Emilie_03",
+      "UI_Talent_U_Emilie_02",
+      "UI_Talent_S_Emilie_04"
+    ],
+    "skills": [
+      {
+        "id": 10991,
+        "icon": "Skill_A_03",
+        "proud": 9931
+      },
+      {
+        "id": 10992,
+        "icon": "Skill_S_Emilie_01",
+        "proud": 9932
+      },
+      {
+        "id": 10995,
+        "icon": "Skill_E_Emilie_01",
+        "proud": 9939
+      }
+    ],
+    "costumes": [],
+    "wikiId": 5714
+  }
+]

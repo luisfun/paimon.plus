@@ -1,6 +1,9 @@
 import fs from 'node:fs'
 import { folder } from './utils.js'
 
+// https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap
+const languages = ['EN', 'JP', 'KR']
+
 // @Dimbreath @FZFalzar https://gitlab.com/Dimbreath/AnimeGameData
 const gitlabUrl = 'https://gitlab.com/api/v4/projects/53216109/repository/files/'
 
@@ -42,14 +45,17 @@ const gitlabFileName = [
 export const dataDownload = async () => {
   await Promise.all(
     gitlabFileName.map(async name => {
-      try {
-        const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw`
-        const response = await fetch(url)
-        const json = await response.json()
-        fs.writeFileSync(`${folder.data + name}.json`, JSON.stringify(json, null, 2))
-      } catch (e) {
-        console.log(e)
-      }
+      const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw`
+      const response = await fetch(url)
+      const json = await response.json()
+      fs.writeFileSync(`${folder.data + name}.json`, JSON.stringify(json, null, 2))
+    }),
+    languages.map(async lang => {
+      const name = `TextMap${lang}`
+      const url = `${gitlabUrl}TextMap%2F${name}%2Ejson/raw`
+      const response = await fetch(url)
+      const json = await response.json()
+      fs.writeFileSync(`${folder.text + name}.json`, JSON.stringify(json, null, 2))
     }),
   )
 }

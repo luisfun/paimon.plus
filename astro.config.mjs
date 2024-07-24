@@ -10,7 +10,7 @@ export default defineConfig({
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'ko'],
+    locales: ['en', 'ja', 'ko'], // src/i18n/ui.ts, .github/actions/update/src/data-download.js, data-shrink.js
     routing: {
       prefixDefaultLocale: true,
     },

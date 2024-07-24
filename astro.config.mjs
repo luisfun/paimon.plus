@@ -27,17 +27,17 @@ export default defineConfig({
       icons: [
         {
           type: 'image/png',
-          src: '/android-chrome-96x96.png',
+          src: '/icons/android-chrome-96x96.png',
           sizes: '96x96',
         },
         {
           type: 'image/png',
-          src: '/android-chrome-144x144.png',
+          src: '/icons/android-chrome-144x144.png',
           sizes: '144x144',
         },
         {
           type: 'image/png',
-          src: '/maskable_icon_x128.png',
+          src: '/icons/maskable_icon_x128.png',
           sizes: '128x128',
           purpose: 'maskable',
         },

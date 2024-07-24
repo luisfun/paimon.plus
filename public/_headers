@@ -1,5 +1,8 @@
 https://paimon-plus.pages.dev/*
   X-Robots-Tag: noindex
 
+https://dev.paimon.plus/*
+  X-Robots-Tag: noindex
+
 /*
   X-Frame-Options: DENY

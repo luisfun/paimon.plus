@@ -11,11 +11,12 @@ const head = {
   title: title || 'Paimon+',
   desc: 'Genshin Web Tools',
   url: 'https://paimon.plus',
-  image: 'https://paimon.plus/maskable_icon_x128.png',
+  image: 'https://paimon.plus/icons/android-chrome-144x144.png',
   author: 'Luis',
-  color: '#0d1117',
-  favicon32: '/favicon-32x32.png',
-  favicon16: '/favicon-16x16.png',
+  color: '#1a1b1e',
+  appleicon: "/icons/apple-touch-icon.png",
+  favicon32: '/icons/favicon-32x32.png',
+  favicon16: '/icons/favicon-16x16.png',
   manifest: `/manifest${pageLang ? `-${pageLang}` : ''}.webmanifest`,
 }
 ---
@@ -35,7 +36,7 @@ const head = {
   <meta name="twitter:creator" content={head.author} />
   <meta name="msapplication-TileColor" content={head.color} />
   <meta name="theme-color" content={head.color} />
-  <link rel="apple-touch-icon" sizes="120x120" href={head.image} />
+  <link rel="apple-touch-icon" sizes="120x120" href={head.appleicon} />
   <link rel="icon" type="image/png" sizes="32x32" href={head.favicon32} />
   <link rel="icon" type="image/png" sizes="16x16" href={head.favicon16} />
   <link rel="manifest" href={head.manifest} />

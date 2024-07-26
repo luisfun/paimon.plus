@@ -47,42 +47,20 @@ const dumpAvatar = () => {
       for (const depot of E.AvatarSkillDepot.filter(e => avatar.candSkillDepotIds.includes(e.id))) {
         const aInfo57 = { ...aInfo }
         aInfo57.skillDepotId = depot.id
-        aInfo57.element = E.AvatarSkill.find(e => e.id === depot.energySkill)?.costElemType || null
+        aInfo57.element = avatarElement(depot)
         if (!(depot.id === 501 || depot.id === 701) && aInfo57.element === null) continue
-        aInfo57.consts = depot.talents.map(talentId => E.AvatarTalent.find(e => e.talentId === talentId)?.icon)
-        aInfo57.skills = depot.skills
-          .slice(0, 2)
-          .concat(depot.energySkill)
-          .map(id => {
-            const skill = E.AvatarSkill.find(e => e.id === id)
-            return {
-              id: id || null,
-              icon: skill?.skillIcon || null,
-              proud: skill?.proudSkillGroupId || null,
-            }
-          })
+        aInfo57.consts = avatarConsts(depot)
+        aInfo57.skills = avatarSkills(depot)
         aInfo57.promoteCosts = avatarPromoteCosts(avatar.avatarPromoteId)
         aInfo57.skillCosts = avatarSkillCosts(aInfo57.skills)
-        aInfo57.wikiId = Object.values(WikiId).findIndex(
-          e => e === `Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`,
-        )
+        aInfo57.wikiId = avatarWikiId(`Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`)
         a.push(aInfo57)
       }
     } else {
       const depot = E.AvatarSkillDepot.find(e => e.id === aInfo.skillDepotId)
-      aInfo.element = E.AvatarSkill.find(e => e.id === depot.energySkill).costElemType
-      aInfo.consts = depot.talents.map(talentId => E.AvatarTalent.find(e => e.talentId === talentId).icon)
-      aInfo.skills = depot.skills
-        .slice(0, 2)
-        .concat(depot.energySkill)
-        .map(id => {
-          const skill = E.AvatarSkill.find(e => e.id === id)
-          return {
-            id,
-            icon: skill.skillIcon,
-            proud: skill.proudSkillGroupId,
-          }
-        })
+      aInfo.element = avatarElement(depot)
+      aInfo.consts = avatarConsts(depot)
+      aInfo.skills = avatarSkills(depot)
       aInfo.costumes = E.AvatarCostume.filter(e => e.characterId === aInfo.id && e.sideIconName !== '').map(costume => {
         const c = {
           iconName: costume.frontIconName,
@@ -93,13 +71,29 @@ const dumpAvatar = () => {
       })
       aInfo.promoteCosts = avatarPromoteCosts(avatar.avatarPromoteId)
       aInfo.skillCosts = avatarSkillCosts(aInfo.skills)
-      const enText = TextMap.en[aInfo.nameTextMapHash]
-      aInfo.wikiId = Object.values(WikiId).findIndex(e => e === enText)
+      aInfo.wikiId = avatarWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
     }
   }
   dumpFile('avatar', a)
 }
+
+const avatarElement = depot => E.AvatarSkill.find(e => e.id === depot.energySkill)?.costElemType || null
+
+const avatarConsts = depot => depot.talents.map(talentId => E.AvatarTalent.find(e => e.talentId === talentId)?.icon)
+
+const avatarSkills = depot =>
+  depot.skills
+    .slice(0, 2)
+    .concat(depot.energySkill)
+    .map(id => {
+      const skill = E.AvatarSkill.find(e => e.id === id)
+      return {
+        id: id || null,
+        icon: skill?.skillIcon || null,
+        proud: skill?.proudSkillGroupId || null,
+      }
+    })
 
 // @yuko1101 https://github.com/yuko1101/enka-network-api/blob/main/example/upgradeCosts.js
 const avatarPromoteCosts = avatarPromoteId => {
@@ -142,6 +136,8 @@ const avatarSkillCosts = skills => {
     }, {})
   return { coin, materials: Object.values(materials) }
 }
+
+const avatarWikiId = text => Object.values(WikiId).findIndex(e => e === text)
 
 const elementText = {
   Wind: 'Anemo',

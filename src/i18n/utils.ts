@@ -1,4 +1,5 @@
-import { defaultLang, ui } from './ui'
+import textMap from '@game/text-map.json'
+import { defaultLang, ui } from '@i18n/ui'
 
 type Lang = keyof typeof ui
 
@@ -10,9 +11,13 @@ export const getLangFromUrl = (url: URL) => {
   return defaultLang
 }
 
-export const useTranslations = (lang: Lang | URL) => (key: keyof (typeof ui)[typeof defaultLang]) =>
+export const useTranslations = (lang: Lang | URL) => (key: keyof (typeof ui)[typeof defaultLang] | number) => {
+  const l = lang instanceof URL ? getLangFromUrl(lang) : lang
   // @ts-expect-error
-  (ui[lang instanceof URL ? getLangFromUrl(lang) : lang][key] as string | undefined) || ui[defaultLang][key]
+  if (typeof key === 'number') return textMap[l][key] as string
+  // @ts-expect-error
+  return (ui[l][key] as string | undefined) || ui[defaultLang][key]
+}
 
 export const useTranslatedPath =
   (lang: Lang) =>

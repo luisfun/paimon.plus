@@ -11,17 +11,24 @@ const TextMap = { en, ja, ko }
 // avatar
 import AvatarCostume from '../../../../src/game/.data/AvatarCostumeExcelConfigData.json' assert { type: 'json' }
 import Avatar from '../../../../src/game/.data/AvatarExcelConfigData.json' assert { type: 'json' }
+import AvatarPromote from '../../../../src/game/.data/AvatarPromoteExcelConfigData.json' assert { type: 'json' }
 import AvatarSkillDepot from '../../../../src/game/.data/AvatarSkillDepotExcelConfigData.json' assert { type: 'json' }
 import AvatarSkill from '../../../../src/game/.data/AvatarSkillExcelConfigData.json' assert { type: 'json' }
 import AvatarTalent from '../../../../src/game/.data/AvatarTalentExcelConfigData.json' assert { type: 'json' }
+import ProudSkill from '../../../../src/game/.data/ProudSkillExcelConfigData.json' assert { type: 'json' }
+
+// material
+import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
 
 // wiki-id
 import WikiId from '../../../../src/game/.wiki/id.json' assert { type: 'json' }
 
-const E = { Avatar, AvatarSkillDepot, AvatarSkill, AvatarTalent, AvatarCostume }
+const E = { Avatar, AvatarSkillDepot, AvatarSkill, AvatarTalent, AvatarCostume, AvatarPromote, Material, ProudSkill }
 
 export const dataShrink = () => {
   dumpAvatar()
+  dumpMaterial()
+  dumpTextMap()
 }
 
 const dumpAvatar = () => {
@@ -54,6 +61,8 @@ const dumpAvatar = () => {
               proud: skill?.proudSkillGroupId || null,
             }
           })
+        aInfo57.promoteCosts = avatarPromoteCosts(avatar.avatarPromoteId)
+        aInfo57.skillCosts = avatarSkillCosts(aInfo57.skills)
         aInfo57.wikiId = Object.values(WikiId).findIndex(
           e => e === `Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`,
         )
@@ -82,12 +91,56 @@ const dumpAvatar = () => {
         c.imageName = `UI_Costume_${c.iconName.split('_').slice(-1)[0]}`
         return c
       })
+      aInfo.promoteCosts = avatarPromoteCosts(avatar.avatarPromoteId)
+      aInfo.skillCosts = avatarSkillCosts(aInfo.skills)
       const enText = TextMap.en[aInfo.nameTextMapHash]
       aInfo.wikiId = Object.values(WikiId).findIndex(e => e === enText)
       a.push(aInfo)
     }
   }
-  fs.writeFileSync(`${folder.dist}avatar.json`, JSON.stringify(a, null, 2))
+  dumpFile('avatar', a)
+}
+
+// @yuko1101 https://github.com/yuko1101/enka-network-api/blob/main/example/upgradeCosts.js
+const avatarPromoteCosts = avatarPromoteId => {
+  const promoteArray = E.AvatarPromote.filter(e => e.avatarPromoteId === avatarPromoteId)
+  const coin = promoteArray
+    .filter(e => e.scoinCost)
+    .map(e => e.scoinCost)
+    .reduce((a, b) => a + b)
+  const materials = promoteArray
+    .filter(e => e.costItems[0])
+    .map(e => e.costItems)
+    .reduce((materialMap, items) => {
+      for (const item of items) {
+        if (!item.id) continue
+        materialMap[item.id] ??= { id: item.id, count: 0 }
+        materialMap[item.id].count += item.count
+      }
+      return materialMap
+    }, {})
+  return { coin, materials: Object.values(materials) }
+}
+
+const avatarSkillCosts = skills => {
+  const ids = skills.map(e => e.proud)
+  const skillArray = E.ProudSkill.filter(e => ids.includes(e.proudSkillGroupId))
+  const coin = skillArray
+    .filter(e => e.coinCost)
+    .map(e => e.coinCost)
+    .reduce((a, b) => a + b)
+  const materials = skillArray
+    .filter(e => e.costItems[0]?.id)
+    .map(e => e.costItems)
+    .reduce((materialMap, items) => {
+      for (const item of items) {
+        if (!item.id) continue
+        materialMap[item.id] ??= { id: item.id, count: 0 }
+        materialMap[item.id].count += item.count
+      }
+      return materialMap
+    }, {})
+  return { coin, materials: Object.values(materials) }
 }
 
 const elementText = {
@@ -98,4 +151,46 @@ const elementText = {
   Water: 'Hydro',
   Fire: 'Pyro',
   Ice: 'Cryo',
+}
+
+const dumpMaterial = () => {
+  const avatarArray = readFile('avatar')
+  const materialIds = []
+  for (const avatar of avatarArray) {
+    for (const material of avatar.promoteCosts.materials) {
+      materialIds.push(material.id)
+    }
+    for (const material of avatar.skillCosts.materials) {
+      materialIds.push(material.id)
+    }
+  }
+  const m = [...new Set(materialIds)].map(id => {
+    const material = E.Material.find(e => e.id === id)
+    const copyIndex = ['id', 'icon', 'rankLevel', 'nameTextMapHash', 'rank']
+    const re = {}
+    for (const index of copyIndex) {
+      re[index] = material[index]
+    }
+    return re
+  })
+  dumpFile('material', m)
+}
+
+const dumpTextMap = () => {
+  let hashs = readFile('avatar').map(e => e.nameTextMapHash)
+  hashs.push(...readFile('material').map(e => e.nameTextMapHash))
+  hashs = [...new Set(hashs)]
+  const textMap = {}
+  for (const lang of Object.keys(TextMap)) {
+    textMap[lang] ??= {}
+    for (const hash of hashs) {
+      textMap[lang][hash] = TextMap[lang][hash]
+    }
+  }
+  dumpFile('text-map', textMap)
+}
+
+const readFile = name => JSON.parse(fs.readFileSync(`${folder.dist + name}.json`, 'utf8'))
+const dumpFile = (name, data) => {
+  fs.writeFileSync(`${folder.dist + name}.json`, JSON.stringify(data, null, 2))
 }

@@ -1,0 +1,1499 @@
+[
+  {
+    "id": 101202,
+    "icon": "UI_ItemIcon_101202",
+    "nameTextMapHash": 3896942756,
+    "rank": 313
+  },
+  {
+    "id": 104161,
+    "icon": "UI_ItemIcon_104161",
+    "rankLevel": 2,
+    "nameTextMapHash": 3090648604,
+    "rank": 12107
+  },
+  {
+    "id": 104162,
+    "icon": "UI_ItemIcon_104162",
+    "rankLevel": 3,
+    "nameTextMapHash": 2226068148,
+    "rank": 12107
+  },
+  {
+    "id": 104163,
+    "icon": "UI_ItemIcon_104163",
+    "rankLevel": 4,
+    "nameTextMapHash": 498228604,
+    "rank": 12107
+  },
+  {
+    "id": 104164,
+    "icon": "UI_ItemIcon_104164",
+    "rankLevel": 5,
+    "nameTextMapHash": 1494673132,
+    "rank": 12107
+  },
+  {
+    "id": 112044,
+    "icon": "UI_ItemIcon_112044",
+    "rankLevel": 1,
+    "nameTextMapHash": 3548930732,
+    "rank": 10615
+  },
+  {
+    "id": 112045,
+    "icon": "UI_ItemIcon_112045",
+    "rankLevel": 2,
+    "nameTextMapHash": 832899108,
+    "rank": 10615
+  },
+  {
+    "id": 112046,
+    "icon": "UI_ItemIcon_112046",
+    "rankLevel": 3,
+    "nameTextMapHash": 3514697380,
+    "rank": 10615
+  },
+  {
+    "id": 113023,
+    "icon": "UI_ItemIcon_113023",
+    "rankLevel": 4,
+    "nameTextMapHash": 2070124532,
+    "rank": 11101
+  },
+  {
+    "id": 104319,
+    "icon": "UI_ItemIcon_104319",
+    "rankLevel": 5,
+    "nameTextMapHash": 2454933108,
+    "rank": 14101
+  },
+  {
+    "id": 104323,
+    "icon": "UI_ItemIcon_104323",
+    "rankLevel": 2,
+    "nameTextMapHash": 2962100916,
+    "rank": 13108
+  },
+  {
+    "id": 104324,
+    "icon": "UI_ItemIcon_104324",
+    "rankLevel": 3,
+    "nameTextMapHash": 4156724932,
+    "rank": 13108
+  },
+  {
+    "id": 104325,
+    "icon": "UI_ItemIcon_104325",
+    "rankLevel": 4,
+    "nameTextMapHash": 2852490284,
+    "rank": 13108
+  },
+  {
+    "id": 113018,
+    "icon": "UI_ItemIcon_113018",
+    "rankLevel": 5,
+    "nameTextMapHash": 2573932868,
+    "rank": 11101
+  },
+  {
+    "id": 100057,
+    "icon": "UI_ItemIcon_100057",
+    "nameTextMapHash": 2071890636,
+    "rank": 311
+  },
+  {
+    "id": 104151,
+    "icon": "UI_ItemIcon_104151",
+    "rankLevel": 2,
+    "nameTextMapHash": 3707625380,
+    "rank": 12106
+  },
+  {
+    "id": 104152,
+    "icon": "UI_ItemIcon_104152",
+    "rankLevel": 3,
+    "nameTextMapHash": 2146025036,
+    "rank": 12106
+  },
+  {
+    "id": 104153,
+    "icon": "UI_ItemIcon_104153",
+    "rankLevel": 4,
+    "nameTextMapHash": 4211103924,
+    "rank": 12106
+  },
+  {
+    "id": 104154,
+    "icon": "UI_ItemIcon_104154",
+    "rankLevel": 5,
+    "nameTextMapHash": 995014132,
+    "rank": 12106
+  },
+  {
+    "id": 112005,
+    "icon": "UI_ItemIcon_112005",
+    "rankLevel": 1,
+    "nameTextMapHash": 461826612,
+    "rank": 10602
+  },
+  {
+    "id": 112006,
+    "icon": "UI_ItemIcon_112006",
+    "rankLevel": 2,
+    "nameTextMapHash": 3015475460,
+    "rank": 10602
+  },
+  {
+    "id": 112007,
+    "icon": "UI_ItemIcon_112007",
+    "rankLevel": 3,
+    "nameTextMapHash": 1726035172,
+    "rank": 10602
+  },
+  {
+    "id": 113001,
+    "icon": "UI_ItemIcon_113001",
+    "rankLevel": 4,
+    "nameTextMapHash": 3449150084,
+    "rank": 11101
+  },
+  {
+    "id": 104304,
+    "icon": "UI_ItemIcon_104304",
+    "rankLevel": 2,
+    "nameTextMapHash": 3958753156,
+    "rank": 13102
+  },
+  {
+    "id": 104305,
+    "icon": "UI_ItemIcon_104305",
+    "rankLevel": 3,
+    "nameTextMapHash": 2693927380,
+    "rank": 13102
+  },
+  {
+    "id": 104306,
+    "icon": "UI_ItemIcon_104306",
+    "rankLevel": 4,
+    "nameTextMapHash": 3735432580,
+    "rank": 13102
+  },
+  {
+    "id": 113003,
+    "icon": "UI_ItemIcon_113003",
+    "rankLevel": 5,
+    "nameTextMapHash": 1685239844,
+    "rank": 11101
+  },
+  {
+    "id": 100024,
+    "icon": "UI_ItemIcon_100024",
+    "nameTextMapHash": 3920833836,
+    "rank": 311
+  },
+  {
+    "id": 104101,
+    "icon": "UI_ItemIcon_104101",
+    "rankLevel": 2,
+    "nameTextMapHash": 1542620268,
+    "rank": 12101
+  },
+  {
+    "id": 104102,
+    "icon": "UI_ItemIcon_104102",
+    "rankLevel": 3,
+    "nameTextMapHash": 311931636,
+    "rank": 12101
+  },
+  {
+    "id": 104103,
+    "icon": "UI_ItemIcon_104103",
+    "rankLevel": 4,
+    "nameTextMapHash": 3015246748,
+    "rank": 12101
+  },
+  {
+    "id": 104104,
+    "icon": "UI_ItemIcon_104104",
+    "rankLevel": 5,
+    "nameTextMapHash": 841425532,
+    "rank": 12101
+  },
+  {
+    "id": 104301,
+    "icon": "UI_ItemIcon_104301",
+    "rankLevel": 2,
+    "nameTextMapHash": 2262214436,
+    "rank": 13101
+  },
+  {
+    "id": 104302,
+    "icon": "UI_ItemIcon_104302",
+    "rankLevel": 3,
+    "nameTextMapHash": 3020009268,
+    "rank": 13101
+  },
+  {
+    "id": 104303,
+    "icon": "UI_ItemIcon_104303",
+    "rankLevel": 4,
+    "nameTextMapHash": 2212011580,
+    "rank": 13101
+  },
+  {
+    "id": 104308,
+    "icon": "UI_ItemIcon_104308",
+    "rankLevel": 3,
+    "nameTextMapHash": 3218582564,
+    "rank": 13103
+  },
+  {
+    "id": 104309,
+    "icon": "UI_ItemIcon_104309",
+    "rankLevel": 4,
+    "nameTextMapHash": 3202197196,
+    "rank": 13103
+  },
+  {
+    "id": 112008,
+    "icon": "UI_ItemIcon_112008",
+    "rankLevel": 1,
+    "nameTextMapHash": 1838237500,
+    "rank": 10603
+  },
+  {
+    "id": 112009,
+    "icon": "UI_ItemIcon_112009",
+    "rankLevel": 2,
+    "nameTextMapHash": 2199916436,
+    "rank": 10603
+  },
+  {
+    "id": 112010,
+    "icon": "UI_ItemIcon_112010",
+    "rankLevel": 3,
+    "nameTextMapHash": 4256206044,
+    "rank": 10603
+  },
+  {
+    "id": 113005,
+    "icon": "UI_ItemIcon_113005",
+    "rankLevel": 5,
+    "nameTextMapHash": 3086954228,
+    "rank": 11101
+  },
+  {
+    "id": 104338,
+    "icon": "UI_ItemIcon_104338",
+    "rankLevel": 2,
+    "nameTextMapHash": 2877204556,
+    "rank": 13113
+  },
+  {
+    "id": 104339,
+    "icon": "UI_ItemIcon_104339",
+    "rankLevel": 3,
+    "nameTextMapHash": 389729692,
+    "rank": 13113
+  },
+  {
+    "id": 104340,
+    "icon": "UI_ItemIcon_104340",
+    "rankLevel": 4,
+    "nameTextMapHash": 1441285348,
+    "rank": 13113
+  },
+  {
+    "id": 104342,
+    "icon": "UI_ItemIcon_104342",
+    "rankLevel": 3,
+    "nameTextMapHash": 4100325052,
+    "rank": 13114
+  },
+  {
+    "id": 104343,
+    "icon": "UI_ItemIcon_104343",
+    "rankLevel": 4,
+    "nameTextMapHash": 413472740,
+    "rank": 13114
+  },
+  {
+    "id": 104345,
+    "icon": "UI_ItemIcon_104345",
+    "rankLevel": 3,
+    "nameTextMapHash": 261642860,
+    "rank": 13115
+  },
+  {
+    "id": 104346,
+    "icon": "UI_ItemIcon_104346",
+    "rankLevel": 4,
+    "nameTextMapHash": 278225452,
+    "rank": 13115
+  },
+  {
+    "id": 112080,
+    "icon": "UI_ItemIcon_112080",
+    "rankLevel": 1,
+    "nameTextMapHash": 1313089108,
+    "rank": 10628
+  },
+  {
+    "id": 112081,
+    "icon": "UI_ItemIcon_112081",
+    "rankLevel": 2,
+    "nameTextMapHash": 1145136068,
+    "rank": 10628
+  },
+  {
+    "id": 112082,
+    "icon": "UI_ItemIcon_112082",
+    "rankLevel": 3,
+    "nameTextMapHash": 1028727868,
+    "rank": 10628
+  },
+  {
+    "id": 113046,
+    "icon": "UI_ItemIcon_113046",
+    "rankLevel": 5,
+    "nameTextMapHash": 127661484,
+    "rank": 11101
+  },
+  {
+    "id": 104310,
+    "icon": "UI_ItemIcon_104310",
+    "rankLevel": 2,
+    "nameTextMapHash": 2565711028,
+    "rank": 13104
+  },
+  {
+    "id": 104311,
+    "icon": "UI_ItemIcon_104311",
+    "rankLevel": 3,
+    "nameTextMapHash": 3275055188,
+    "rank": 13104
+  },
+  {
+    "id": 104312,
+    "icon": "UI_ItemIcon_104312",
+    "rankLevel": 4,
+    "nameTextMapHash": 1927399596,
+    "rank": 13104
+  },
+  {
+    "id": 104314,
+    "icon": "UI_ItemIcon_104314",
+    "rankLevel": 3,
+    "nameTextMapHash": 2071392676,
+    "rank": 13105
+  },
+  {
+    "id": 104315,
+    "icon": "UI_ItemIcon_104315",
+    "rankLevel": 4,
+    "nameTextMapHash": 620969700,
+    "rank": 13105
+  },
+  {
+    "id": 104317,
+    "icon": "UI_ItemIcon_104317",
+    "rankLevel": 3,
+    "nameTextMapHash": 266512684,
+    "rank": 13106
+  },
+  {
+    "id": 104318,
+    "icon": "UI_ItemIcon_104318",
+    "rankLevel": 4,
+    "nameTextMapHash": 2661153132,
+    "rank": 13106
+  },
+  {
+    "id": 112011,
+    "icon": "UI_ItemIcon_112011",
+    "rankLevel": 1,
+    "nameTextMapHash": 85550076,
+    "rank": 10604
+  },
+  {
+    "id": 112012,
+    "icon": "UI_ItemIcon_112012",
+    "rankLevel": 2,
+    "nameTextMapHash": 2287171180,
+    "rank": 10604
+  },
+  {
+    "id": 112013,
+    "icon": "UI_ItemIcon_112013",
+    "rankLevel": 3,
+    "nameTextMapHash": 744013132,
+    "rank": 10604
+  },
+  {
+    "id": 113006,
+    "icon": "UI_ItemIcon_113006",
+    "rankLevel": 5,
+    "nameTextMapHash": 2030091732,
+    "rank": 11101
+  },
+  {
+    "id": 104320,
+    "icon": "UI_ItemIcon_104320",
+    "rankLevel": 2,
+    "nameTextMapHash": 2569352716,
+    "rank": 13107
+  },
+  {
+    "id": 104321,
+    "icon": "UI_ItemIcon_104321",
+    "rankLevel": 3,
+    "nameTextMapHash": 4164589940,
+    "rank": 13107
+  },
+  {
+    "id": 104322,
+    "icon": "UI_ItemIcon_104322",
+    "rankLevel": 4,
+    "nameTextMapHash": 2381438580,
+    "rank": 13107
+  },
+  {
+    "id": 104327,
+    "icon": "UI_ItemIcon_104327",
+    "rankLevel": 3,
+    "nameTextMapHash": 2811001012,
+    "rank": 13109
+  },
+  {
+    "id": 104328,
+    "icon": "UI_ItemIcon_104328",
+    "rankLevel": 4,
+    "nameTextMapHash": 3803357620,
+    "rank": 13109
+  },
+  {
+    "id": 113017,
+    "icon": "UI_ItemIcon_113017",
+    "rankLevel": 5,
+    "nameTextMapHash": 2308936636,
+    "rank": 11101
+  },
+  {
+    "id": 104329,
+    "icon": "UI_ItemIcon_104329",
+    "rankLevel": 2,
+    "nameTextMapHash": 1901318836,
+    "rank": 13110
+  },
+  {
+    "id": 104330,
+    "icon": "UI_ItemIcon_104330",
+    "rankLevel": 3,
+    "nameTextMapHash": 886644404,
+    "rank": 13110
+  },
+  {
+    "id": 104331,
+    "icon": "UI_ItemIcon_104331",
+    "rankLevel": 4,
+    "nameTextMapHash": 1067170380,
+    "rank": 13110
+  },
+  {
+    "id": 104333,
+    "icon": "UI_ItemIcon_104333",
+    "rankLevel": 3,
+    "nameTextMapHash": 778263340,
+    "rank": 13111
+  },
+  {
+    "id": 104334,
+    "icon": "UI_ItemIcon_104334",
+    "rankLevel": 4,
+    "nameTextMapHash": 3292554300,
+    "rank": 13111
+  },
+  {
+    "id": 104336,
+    "icon": "UI_ItemIcon_104336",
+    "rankLevel": 3,
+    "nameTextMapHash": 1803874988,
+    "rank": 13112
+  },
+  {
+    "id": 104337,
+    "icon": "UI_ItemIcon_104337",
+    "rankLevel": 4,
+    "nameTextMapHash": 1186858772,
+    "rank": 13112
+  },
+  {
+    "id": 112059,
+    "icon": "UI_ItemIcon_112059",
+    "rankLevel": 1,
+    "nameTextMapHash": 2849798340,
+    "rank": 10621
+  },
+  {
+    "id": 112060,
+    "icon": "UI_ItemIcon_112060",
+    "rankLevel": 2,
+    "nameTextMapHash": 884678236,
+    "rank": 10621
+  },
+  {
+    "id": 112061,
+    "icon": "UI_ItemIcon_112061",
+    "rankLevel": 3,
+    "nameTextMapHash": 358330556,
+    "rank": 10621
+  },
+  {
+    "id": 113032,
+    "icon": "UI_ItemIcon_113032",
+    "rankLevel": 5,
+    "nameTextMapHash": 3301367164,
+    "rank": 11101
+  },
+  {
+    "id": 100022,
+    "icon": "UI_ItemIcon_100022",
+    "nameTextMapHash": 2722402356,
+    "rank": 311
+  },
+  {
+    "id": 104141,
+    "icon": "UI_ItemIcon_104141",
+    "rankLevel": 2,
+    "nameTextMapHash": 1830354268,
+    "rank": 12105
+  },
+  {
+    "id": 104142,
+    "icon": "UI_ItemIcon_104142",
+    "rankLevel": 3,
+    "nameTextMapHash": 146485284,
+    "rank": 12105
+  },
+  {
+    "id": 104143,
+    "icon": "UI_ItemIcon_104143",
+    "rankLevel": 4,
+    "nameTextMapHash": 2323057604,
+    "rank": 12105
+  },
+  {
+    "id": 104144,
+    "icon": "UI_ItemIcon_104144",
+    "rankLevel": 5,
+    "nameTextMapHash": 2377787012,
+    "rank": 12105
+  },
+  {
+    "id": 112002,
+    "icon": "UI_ItemIcon_112002",
+    "rankLevel": 1,
+    "nameTextMapHash": 1442515996,
+    "rank": 10601
+  },
+  {
+    "id": 112003,
+    "icon": "UI_ItemIcon_112003",
+    "rankLevel": 2,
+    "nameTextMapHash": 2293593012,
+    "rank": 10601
+  },
+  {
+    "id": 112004,
+    "icon": "UI_ItemIcon_112004",
+    "rankLevel": 3,
+    "nameTextMapHash": 3865019532,
+    "rank": 10601
+  },
+  {
+    "id": 113002,
+    "icon": "UI_ItemIcon_113002",
+    "rankLevel": 4,
+    "nameTextMapHash": 3227388316,
+    "rank": 11101
+  },
+  {
+    "id": 104307,
+    "icon": "UI_ItemIcon_104307",
+    "rankLevel": 2,
+    "nameTextMapHash": 3272646612,
+    "rank": 13103
+  },
+  {
+    "id": 113004,
+    "icon": "UI_ItemIcon_113004",
+    "rankLevel": 5,
+    "nameTextMapHash": 2497474860,
+    "rank": 11101
+  },
+  {
+    "id": 100025,
+    "icon": "UI_ItemIcon_100025",
+    "nameTextMapHash": 873400996,
+    "rank": 311
+  },
+  {
+    "id": 104121,
+    "icon": "UI_ItemIcon_104121",
+    "rankLevel": 2,
+    "nameTextMapHash": 805672532,
+    "rank": 12103
+  },
+  {
+    "id": 104122,
+    "icon": "UI_ItemIcon_104122",
+    "rankLevel": 3,
+    "nameTextMapHash": 3993365836,
+    "rank": 12103
+  },
+  {
+    "id": 104123,
+    "icon": "UI_ItemIcon_104123",
+    "rankLevel": 4,
+    "nameTextMapHash": 1384566356,
+    "rank": 12103
+  },
+  {
+    "id": 104124,
+    "icon": "UI_ItemIcon_104124",
+    "rankLevel": 5,
+    "nameTextMapHash": 1417433532,
+    "rank": 12103
+  },
+  {
+    "id": 113012,
+    "icon": "UI_ItemIcon_113012",
+    "rankLevel": 4,
+    "nameTextMapHash": 1435804524,
+    "rank": 11101
+  },
+  {
+    "id": 113007,
+    "icon": "UI_ItemIcon_113007",
+    "rankLevel": 5,
+    "nameTextMapHash": 2394085100,
+    "rank": 11101
+  },
+  {
+    "id": 100056,
+    "icon": "UI_ItemIcon_100056",
+    "nameTextMapHash": 4260602868,
+    "rank": 311
+  },
+  {
+    "id": 112035,
+    "icon": "UI_ItemIcon_112035",
+    "rankLevel": 1,
+    "nameTextMapHash": 2331730468,
+    "rank": 10612
+  },
+  {
+    "id": 112036,
+    "icon": "UI_ItemIcon_112036",
+    "rankLevel": 2,
+    "nameTextMapHash": 1153212396,
+    "rank": 10612
+  },
+  {
+    "id": 112037,
+    "icon": "UI_ItemIcon_112037",
+    "rankLevel": 3,
+    "nameTextMapHash": 2209041116,
+    "rank": 10612
+  },
+  {
+    "id": 113010,
+    "icon": "UI_ItemIcon_113010",
+    "rankLevel": 4,
+    "nameTextMapHash": 386158132,
+    "rank": 11101
+  },
+  {
+    "id": 113008,
+    "icon": "UI_ItemIcon_113008",
+    "rankLevel": 5,
+    "nameTextMapHash": 1836033452,
+    "rank": 11101
+  },
+  {
+    "id": 100055,
+    "icon": "UI_ItemIcon_100055",
+    "nameTextMapHash": 144892988,
+    "rank": 311
+  },
+  {
+    "id": 104111,
+    "icon": "UI_ItemIcon_104111",
+    "rankLevel": 2,
+    "nameTextMapHash": 2483376012,
+    "rank": 12102
+  },
+  {
+    "id": 104112,
+    "icon": "UI_ItemIcon_104112",
+    "rankLevel": 3,
+    "nameTextMapHash": 3100999548,
+    "rank": 12102
+  },
+  {
+    "id": 104113,
+    "icon": "UI_ItemIcon_104113",
+    "rankLevel": 4,
+    "nameTextMapHash": 3381793068,
+    "rank": 12102
+  },
+  {
+    "id": 104114,
+    "icon": "UI_ItemIcon_104114",
+    "rankLevel": 5,
+    "nameTextMapHash": 2914841348,
+    "rank": 12102
+  },
+  {
+    "id": 112032,
+    "icon": "UI_ItemIcon_112032",
+    "rankLevel": 1,
+    "nameTextMapHash": 3337386732,
+    "rank": 10611
+  },
+  {
+    "id": 112033,
+    "icon": "UI_ItemIcon_112033",
+    "rankLevel": 2,
+    "nameTextMapHash": 2914740468,
+    "rank": 10611
+  },
+  {
+    "id": 112034,
+    "icon": "UI_ItemIcon_112034",
+    "rankLevel": 3,
+    "nameTextMapHash": 966140916,
+    "rank": 10611
+  },
+  {
+    "id": 113011,
+    "icon": "UI_ItemIcon_113011",
+    "rankLevel": 4,
+    "nameTextMapHash": 988997460,
+    "rank": 11101
+  },
+  {
+    "id": 100021,
+    "icon": "UI_ItemIcon_100021",
+    "nameTextMapHash": 1372081476,
+    "rank": 311
+  },
+  {
+    "id": 100023,
+    "icon": "UI_ItemIcon_100023",
+    "nameTextMapHash": 3828726124,
+    "rank": 311
+  },
+  {
+    "id": 100027,
+    "icon": "UI_ItemIcon_100027",
+    "nameTextMapHash": 22100332,
+    "rank": 312
+  },
+  {
+    "id": 104313,
+    "icon": "UI_ItemIcon_104313",
+    "rankLevel": 2,
+    "nameTextMapHash": 206988300,
+    "rank": 13105
+  },
+  {
+    "id": 100028,
+    "icon": "UI_ItemIcon_100028",
+    "nameTextMapHash": 2726159796,
+    "rank": 312
+  },
+  {
+    "id": 104316,
+    "icon": "UI_ItemIcon_104316",
+    "rankLevel": 2,
+    "nameTextMapHash": 3835242828,
+    "rank": 13106
+  },
+  {
+    "id": 100029,
+    "icon": "UI_ItemIcon_100029",
+    "nameTextMapHash": 1404683740,
+    "rank": 312
+  },
+  {
+    "id": 100031,
+    "icon": "UI_ItemIcon_100031",
+    "nameTextMapHash": 1573292868,
+    "rank": 312
+  },
+  {
+    "id": 113016,
+    "icon": "UI_ItemIcon_113016",
+    "rankLevel": 4,
+    "nameTextMapHash": 4143495132,
+    "rank": 11101
+  },
+  {
+    "id": 113015,
+    "icon": "UI_ItemIcon_113015",
+    "rankLevel": 5,
+    "nameTextMapHash": 4138714844,
+    "rank": 11101
+  },
+  {
+    "id": 100030,
+    "icon": "UI_ItemIcon_100030",
+    "nameTextMapHash": 4012901404,
+    "rank": 312
+  },
+  {
+    "id": 104171,
+    "icon": "UI_ItemIcon_104171",
+    "rankLevel": 2,
+    "nameTextMapHash": 1612219044,
+    "rank": 12108
+  },
+  {
+    "id": 104172,
+    "icon": "UI_ItemIcon_104172",
+    "rankLevel": 3,
+    "nameTextMapHash": 401353956,
+    "rank": 12108
+  },
+  {
+    "id": 104173,
+    "icon": "UI_ItemIcon_104173",
+    "rankLevel": 4,
+    "nameTextMapHash": 131508644,
+    "rank": 12108
+  },
+  {
+    "id": 104174,
+    "icon": "UI_ItemIcon_104174",
+    "rankLevel": 5,
+    "nameTextMapHash": 2186134900,
+    "rank": 12108
+  },
+  {
+    "id": 113009,
+    "icon": "UI_ItemIcon_113009",
+    "rankLevel": 4,
+    "nameTextMapHash": 1165077972,
+    "rank": 11101
+  },
+  {
+    "id": 100058,
+    "icon": "UI_ItemIcon_100058",
+    "nameTextMapHash": 2764520484,
+    "rank": 312
+  },
+  {
+    "id": 113013,
+    "icon": "UI_ItemIcon_113013",
+    "rankLevel": 5,
+    "nameTextMapHash": 3728851868,
+    "rank": 11101
+  },
+  {
+    "id": 100033,
+    "icon": "UI_ItemIcon_100033",
+    "nameTextMapHash": 1463427644,
+    "rank": 312
+  },
+  {
+    "id": 113014,
+    "icon": "UI_ItemIcon_113014",
+    "rankLevel": 5,
+    "nameTextMapHash": 773658036,
+    "rank": 11101
+  },
+  {
+    "id": 100034,
+    "icon": "UI_ItemIcon_100034",
+    "nameTextMapHash": 2214426996,
+    "rank": 312
+  },
+  {
+    "id": 112038,
+    "icon": "UI_ItemIcon_112038",
+    "rankLevel": 1,
+    "nameTextMapHash": 3308824804,
+    "rank": 10613
+  },
+  {
+    "id": 112039,
+    "icon": "UI_ItemIcon_112039",
+    "rankLevel": 2,
+    "nameTextMapHash": 3355821404,
+    "rank": 10613
+  },
+  {
+    "id": 112040,
+    "icon": "UI_ItemIcon_112040",
+    "rankLevel": 3,
+    "nameTextMapHash": 2460819340,
+    "rank": 10613
+  },
+  {
+    "id": 101206,
+    "icon": "UI_ItemIcon_101206",
+    "nameTextMapHash": 4094015444,
+    "rank": 313
+  },
+  {
+    "id": 113022,
+    "icon": "UI_ItemIcon_113022",
+    "rankLevel": 4,
+    "nameTextMapHash": 3762412924,
+    "rank": 11101
+  },
+  {
+    "id": 113019,
+    "icon": "UI_ItemIcon_113019",
+    "rankLevel": 5,
+    "nameTextMapHash": 3484301404,
+    "rank": 11101
+  },
+  {
+    "id": 101205,
+    "icon": "UI_ItemIcon_101205",
+    "nameTextMapHash": 3623663804,
+    "rank": 313
+  },
+  {
+    "id": 113024,
+    "icon": "UI_ItemIcon_113024",
+    "rankLevel": 4,
+    "nameTextMapHash": 2056318452,
+    "rank": 11101
+  },
+  {
+    "id": 101209,
+    "icon": "UI_ItemIcon_101209",
+    "nameTextMapHash": 3996650316,
+    "rank": 313
+  },
+  {
+    "id": 113026,
+    "icon": "UI_ItemIcon_113026",
+    "rankLevel": 5,
+    "nameTextMapHash": 4185077420,
+    "rank": 11101
+  },
+  {
+    "id": 113020,
+    "icon": "UI_ItemIcon_113020",
+    "rankLevel": 4,
+    "nameTextMapHash": 3851624660,
+    "rank": 11101
+  },
+  {
+    "id": 101208,
+    "icon": "UI_ItemIcon_101208",
+    "nameTextMapHash": 3862594948,
+    "rank": 313
+  },
+  {
+    "id": 113029,
+    "icon": "UI_ItemIcon_113029",
+    "rankLevel": 4,
+    "nameTextMapHash": 1816276316,
+    "rank": 11101
+  },
+  {
+    "id": 104326,
+    "icon": "UI_ItemIcon_104326",
+    "rankLevel": 2,
+    "nameTextMapHash": 2661352372,
+    "rank": 13109
+  },
+  {
+    "id": 113025,
+    "icon": "UI_ItemIcon_113025",
+    "rankLevel": 5,
+    "nameTextMapHash": 2152977356,
+    "rank": 11101
+  },
+  {
+    "id": 101203,
+    "icon": "UI_ItemIcon_101203",
+    "nameTextMapHash": 307506948,
+    "rank": 313
+  },
+  {
+    "id": 101207,
+    "icon": "UI_ItemIcon_101207",
+    "nameTextMapHash": 4091967268,
+    "rank": 313
+  },
+  {
+    "id": 112053,
+    "icon": "UI_ItemIcon_112053",
+    "rankLevel": 1,
+    "nameTextMapHash": 2130054892,
+    "rank": 10618
+  },
+  {
+    "id": 112054,
+    "icon": "UI_ItemIcon_112054",
+    "rankLevel": 2,
+    "nameTextMapHash": 4256517428,
+    "rank": 10618
+  },
+  {
+    "id": 112055,
+    "icon": "UI_ItemIcon_112055",
+    "rankLevel": 3,
+    "nameTextMapHash": 3049633276,
+    "rank": 10618
+  },
+  {
+    "id": 113028,
+    "icon": "UI_ItemIcon_113028",
+    "rankLevel": 4,
+    "nameTextMapHash": 594984684,
+    "rank": 11101
+  },
+  {
+    "id": 101204,
+    "icon": "UI_ItemIcon_101204",
+    "nameTextMapHash": 354894748,
+    "rank": 313
+  },
+  {
+    "id": 113027,
+    "icon": "UI_ItemIcon_113027",
+    "rankLevel": 5,
+    "nameTextMapHash": 2165808876,
+    "rank": 11101
+  },
+  {
+    "id": 101201,
+    "icon": "UI_ItemIcon_101201",
+    "nameTextMapHash": 767303644,
+    "rank": 313
+  },
+  {
+    "id": 113030,
+    "icon": "UI_ItemIcon_113030",
+    "rankLevel": 4,
+    "nameTextMapHash": 2389242444,
+    "rank": 11101
+  },
+  {
+    "id": 113031,
+    "icon": "UI_ItemIcon_113031",
+    "rankLevel": 4,
+    "nameTextMapHash": 4014873668,
+    "rank": 11101
+  },
+  {
+    "id": 113034,
+    "icon": "UI_ItemIcon_113034",
+    "rankLevel": 5,
+    "nameTextMapHash": 926563116,
+    "rank": 11101
+  },
+  {
+    "id": 113035,
+    "icon": "UI_ItemIcon_113035",
+    "rankLevel": 4,
+    "nameTextMapHash": 1692924756,
+    "rank": 11101
+  },
+  {
+    "id": 104131,
+    "icon": "UI_ItemIcon_104131",
+    "rankLevel": 2,
+    "nameTextMapHash": 959469100,
+    "rank": 12104
+  },
+  {
+    "id": 104132,
+    "icon": "UI_ItemIcon_104132",
+    "rankLevel": 3,
+    "nameTextMapHash": 2728980868,
+    "rank": 12104
+  },
+  {
+    "id": 104133,
+    "icon": "UI_ItemIcon_104133",
+    "rankLevel": 4,
+    "nameTextMapHash": 972163988,
+    "rank": 12104
+  },
+  {
+    "id": 104134,
+    "icon": "UI_ItemIcon_104134",
+    "rankLevel": 5,
+    "nameTextMapHash": 2238447652,
+    "rank": 12104
+  },
+  {
+    "id": 113045,
+    "icon": "UI_ItemIcon_113045",
+    "rankLevel": 4,
+    "nameTextMapHash": 2401980340,
+    "rank": 11101
+  },
+  {
+    "id": 113048,
+    "icon": "UI_ItemIcon_113048",
+    "rankLevel": 5,
+    "nameTextMapHash": 3963682724,
+    "rank": 11101
+  },
+  {
+    "id": 113033,
+    "icon": "UI_ItemIcon_113033",
+    "rankLevel": 5,
+    "nameTextMapHash": 552133044,
+    "rank": 11101
+  },
+  {
+    "id": 101213,
+    "icon": "UI_ItemIcon_101213",
+    "nameTextMapHash": 225599940,
+    "rank": 314
+  },
+  {
+    "id": 113036,
+    "icon": "UI_ItemIcon_113036",
+    "rankLevel": 4,
+    "nameTextMapHash": 1986578756,
+    "rank": 11101
+  },
+  {
+    "id": 104335,
+    "icon": "UI_ItemIcon_104335",
+    "rankLevel": 2,
+    "nameTextMapHash": 3345548268,
+    "rank": 13112
+  },
+  {
+    "id": 101217,
+    "icon": "UI_ItemIcon_101217",
+    "nameTextMapHash": 1479130340,
+    "rank": 314
+  },
+  {
+    "id": 112065,
+    "icon": "UI_ItemIcon_112065",
+    "rankLevel": 1,
+    "nameTextMapHash": 2216845460,
+    "rank": 10623
+  },
+  {
+    "id": 112066,
+    "icon": "UI_ItemIcon_112066",
+    "rankLevel": 2,
+    "nameTextMapHash": 2568989060,
+    "rank": 10623
+  },
+  {
+    "id": 112067,
+    "icon": "UI_ItemIcon_112067",
+    "rankLevel": 3,
+    "nameTextMapHash": 82539884,
+    "rank": 10623
+  },
+  {
+    "id": 113037,
+    "icon": "UI_ItemIcon_113037",
+    "rankLevel": 4,
+    "nameTextMapHash": 1912724692,
+    "rank": 11101
+  },
+  {
+    "id": 104332,
+    "icon": "UI_ItemIcon_104332",
+    "rankLevel": 2,
+    "nameTextMapHash": 965705772,
+    "rank": 13111
+  },
+  {
+    "id": 101215,
+    "icon": "UI_ItemIcon_101215",
+    "nameTextMapHash": 774700980,
+    "rank": 314
+  },
+  {
+    "id": 101214,
+    "icon": "UI_ItemIcon_101214",
+    "nameTextMapHash": 200162852,
+    "rank": 314
+  },
+  {
+    "id": 113038,
+    "icon": "UI_ItemIcon_113038",
+    "rankLevel": 4,
+    "nameTextMapHash": 639583268,
+    "rank": 11101
+  },
+  {
+    "id": 101225,
+    "icon": "UI_ItemIcon_101225",
+    "nameTextMapHash": 3811437564,
+    "rank": 314
+  },
+  {
+    "id": 101220,
+    "icon": "UI_ItemIcon_101220",
+    "nameTextMapHash": 3448878900,
+    "rank": 314
+  },
+  {
+    "id": 113039,
+    "icon": "UI_ItemIcon_113039",
+    "rankLevel": 4,
+    "nameTextMapHash": 1868454972,
+    "rank": 11101
+  },
+  {
+    "id": 113040,
+    "icon": "UI_ItemIcon_113040",
+    "rankLevel": 4,
+    "nameTextMapHash": 3732304548,
+    "rank": 11101
+  },
+  {
+    "id": 113041,
+    "icon": "UI_ItemIcon_113041",
+    "rankLevel": 5,
+    "nameTextMapHash": 954195700,
+    "rank": 11101
+  },
+  {
+    "id": 113042,
+    "icon": "UI_ItemIcon_113042",
+    "rankLevel": 5,
+    "nameTextMapHash": 1943200004,
+    "rank": 11101
+  },
+  {
+    "id": 113043,
+    "icon": "UI_ItemIcon_113043",
+    "rankLevel": 5,
+    "nameTextMapHash": 3831595124,
+    "rank": 11101
+  },
+  {
+    "id": 101222,
+    "icon": "UI_ItemIcon_101222",
+    "nameTextMapHash": 3925527068,
+    "rank": 314
+  },
+  {
+    "id": 113044,
+    "icon": "UI_ItemIcon_113044",
+    "rankLevel": 4,
+    "nameTextMapHash": 125566492,
+    "rank": 11101
+  },
+  {
+    "id": 101223,
+    "icon": "UI_ItemIcon_101223",
+    "nameTextMapHash": 1761418508,
+    "rank": 314
+  },
+  {
+    "id": 113047,
+    "icon": "UI_ItemIcon_113047",
+    "rankLevel": 5,
+    "nameTextMapHash": 4261688332,
+    "rank": 11101
+  },
+  {
+    "id": 101235,
+    "icon": "UI_ItemIcon_101235",
+    "nameTextMapHash": 205491460,
+    "rank": 315
+  },
+  {
+    "id": 112083,
+    "icon": "UI_ItemIcon_112083",
+    "rankLevel": 1,
+    "nameTextMapHash": 3384758508,
+    "rank": 10629
+  },
+  {
+    "id": 112084,
+    "icon": "UI_ItemIcon_112084",
+    "rankLevel": 2,
+    "nameTextMapHash": 3204145100,
+    "rank": 10629
+  },
+  {
+    "id": 112085,
+    "icon": "UI_ItemIcon_112085",
+    "rankLevel": 3,
+    "nameTextMapHash": 292782396,
+    "rank": 10629
+  },
+  {
+    "id": 113049,
+    "icon": "UI_ItemIcon_113049",
+    "rankLevel": 4,
+    "nameTextMapHash": 2278720404,
+    "rank": 11101
+  },
+  {
+    "id": 104344,
+    "icon": "UI_ItemIcon_104344",
+    "rankLevel": 2,
+    "nameTextMapHash": 3505049628,
+    "rank": 13115
+  },
+  {
+    "id": 101236,
+    "icon": "UI_ItemIcon_101236",
+    "nameTextMapHash": 2386701060,
+    "rank": 315
+  },
+  {
+    "id": 113051,
+    "icon": "UI_ItemIcon_113051",
+    "rankLevel": 4,
+    "nameTextMapHash": 3417328860,
+    "rank": 11101
+  },
+  {
+    "id": 101233,
+    "icon": "UI_ItemIcon_101233",
+    "nameTextMapHash": 3918052700,
+    "rank": 315
+  },
+  {
+    "id": 113050,
+    "icon": "UI_ItemIcon_113050",
+    "rankLevel": 4,
+    "nameTextMapHash": 3668451100,
+    "rank": 11101
+  },
+  {
+    "id": 104341,
+    "icon": "UI_ItemIcon_104341",
+    "rankLevel": 2,
+    "nameTextMapHash": 1406380412,
+    "rank": 13114
+  },
+  {
+    "id": 101239,
+    "icon": "UI_ItemIcon_101239",
+    "nameTextMapHash": 2214795492,
+    "rank": 315
+  },
+  {
+    "id": 113052,
+    "icon": "UI_ItemIcon_113052",
+    "rankLevel": 4,
+    "nameTextMapHash": 2643139764,
+    "rank": 11101
+  },
+  {
+    "id": 101237,
+    "icon": "UI_ItemIcon_101237",
+    "nameTextMapHash": 1497628228,
+    "rank": 315
+  },
+  {
+    "id": 113053,
+    "icon": "UI_ItemIcon_113053",
+    "rankLevel": 4,
+    "nameTextMapHash": 1448296588,
+    "rank": 11101
+  },
+  {
+    "id": 101232,
+    "icon": "UI_ItemIcon_101232",
+    "nameTextMapHash": 1859044260,
+    "rank": 315
+  },
+  {
+    "id": 113054,
+    "icon": "UI_ItemIcon_113054",
+    "rankLevel": 5,
+    "nameTextMapHash": 1578050636,
+    "rank": 11101
+  },
+  {
+    "id": 101238,
+    "icon": "UI_ItemIcon_101238",
+    "nameTextMapHash": 47844060,
+    "rank": 315
+  },
+  {
+    "id": 113057,
+    "icon": "UI_ItemIcon_113057",
+    "rankLevel": 4,
+    "nameTextMapHash": 2446795908,
+    "rank": 11101
+  },
+  {
+    "id": 113056,
+    "icon": "UI_ItemIcon_113056",
+    "rankLevel": 5,
+    "nameTextMapHash": 2238220180,
+    "rank": 11101
+  },
+  {
+    "id": 113055,
+    "icon": "UI_ItemIcon_113055",
+    "rankLevel": 5,
+    "nameTextMapHash": 3520191180,
+    "rank": 11101
+  },
+  {
+    "id": 101240,
+    "icon": "UI_ItemIcon_101240",
+    "nameTextMapHash": 1466037620,
+    "rank": 315
+  },
+  {
+    "id": 101241,
+    "icon": "UI_ItemIcon_101241",
+    "nameTextMapHash": 2720928108,
+    "rank": 312
+  },
+  {
+    "id": 113058,
+    "icon": "UI_ItemIcon_113058",
+    "rankLevel": 4,
+    "nameTextMapHash": 2931530028,
+    "rank": 11101
+  },
+  {
+    "id": 113059,
+    "icon": "UI_ItemIcon_113059",
+    "rankLevel": 4,
+    "nameTextMapHash": 3748772404,
+    "rank": 11101
+  },
+  {
+    "id": 113060,
+    "icon": "UI_ItemIcon_113060",
+    "rankLevel": 5,
+    "nameTextMapHash": 660834972,
+    "rank": 11101
+  },
+  {
+    "id": 101224,
+    "icon": "UI_ItemIcon_101224",
+    "nameTextMapHash": 239145148,
+    "rank": 314
+  },
+  {
+    "id": 113061,
+    "icon": "UI_ItemIcon_113061",
+    "rankLevel": 5,
+    "nameTextMapHash": 2216517604,
+    "rank": 11101
+  }
+]

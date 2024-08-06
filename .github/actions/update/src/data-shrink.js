@@ -51,8 +51,8 @@ const dumpAvatar = () => {
         if (!(depot.id === 501 || depot.id === 701) && aInfo57.element === null) continue
         aInfo57.consts = avatarConsts(depot)
         aInfo57.skills = avatarSkills(depot)
-        aInfo57.promoteCosts = avatarPromoteCosts(avatar.avatarPromoteId)
-        aInfo57.skillCosts = avatarSkillCosts(aInfo57.skills)
+        aInfo57.promoteCosts = avatarPromoteCosts(avatar)
+        aInfo57.skillCosts = avatarSkillCosts(aInfo57)
         aInfo57.wikiId = avatarWikiId(`Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`)
         a.push(aInfo57)
       }
@@ -69,8 +69,8 @@ const dumpAvatar = () => {
         c.imageName = `UI_Costume_${c.iconName.split('_').slice(-1)[0]}`
         return c
       })
-      aInfo.promoteCosts = avatarPromoteCosts(avatar.avatarPromoteId)
-      aInfo.skillCosts = avatarSkillCosts(aInfo.skills)
+      aInfo.promoteCosts = avatarPromoteCosts(avatar)
+      aInfo.skillCosts = avatarSkillCosts(aInfo)
       aInfo.wikiId = avatarWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
     }
@@ -96,8 +96,8 @@ const avatarSkills = depot =>
     })
 
 // @yuko1101 https://github.com/yuko1101/enka-network-api/blob/main/example/upgradeCosts.js
-const avatarPromoteCosts = avatarPromoteId => {
-  const promoteArray = E.AvatarPromote.filter(e => e.avatarPromoteId === avatarPromoteId)
+const avatarPromoteCosts = avatar => {
+  const promoteArray = E.AvatarPromote.filter(e => e.avatarPromoteId === avatar.avatarPromoteId)
   const coin = promoteArray
     .filter(e => e.scoinCost)
     .map(e => e.scoinCost)
@@ -116,8 +116,8 @@ const avatarPromoteCosts = avatarPromoteId => {
   return { coin, materials: Object.values(materials) }
 }
 
-const avatarSkillCosts = skills => {
-  const ids = skills.map(e => e.proud)
+const avatarSkillCosts = aInfo => {
+  const ids = aInfo.skills.map(e => e.proud)
   const skillArray = E.ProudSkill.filter(e => ids.includes(e.proudSkillGroupId))
   const coin = skillArray
     .filter(e => e.coinCost)

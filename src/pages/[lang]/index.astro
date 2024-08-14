@@ -1,4 +1,6 @@
 ---
+import Dialog from '@components/dialog.astro'
+import Icon from '@components/icon.svelte'
 import More from '@components/more.astro'
 import { navData } from '@components/nav/data'
 import HomeNav from '@components/nav/home-nav.astro'
@@ -12,9 +14,18 @@ const t = useTranslations(Astro.url)
 <Layout title={t("home.title")} grid defaultTitle>
   <nav class="bg-neutral pt-6 rounded-2xl">
 		<HomeNav data={navData.slice(0,6)} />
-		<More more>
+		<More>
 			<HomeNav data={navData.slice(6)} mt />
 		</More>
 	</nav>
-	<div></div>
+	<div>
+		<button class="" onclick="modal.showModal()">
+			<Icon client:visible id={100057} ui="material" />
+		</button>
+		<div>{t(100057, "material")}</div>
+		<Dialog id="modal">
+			<h3 class="text-lg font-bold">Hello!</h3>
+			<p class="py-4">Press ESC key or click outside to close</p>
+		</Dialog>
+	</div>
 </Layout>

@@ -49,7 +49,7 @@ const getMaterialImages = async uiFiles => {
   const imageList = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
   const dlList = imageList.filter(e => !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
   if (!dlList.length) return
-  dlList.length = 100
+  if (dlList.length > 100) dlList.length = 100
   for (const name of dlList) {
     const res = await fetch(ambrUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))

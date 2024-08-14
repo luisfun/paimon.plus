@@ -6,3 +6,9 @@ export const folder = {
   ui: 'src/game/.ui/',
   webp: 'public/images/ui/',
 }
+
+/**
+ * 待機
+ * @param {number} ms milliseconds
+ */
+export const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))

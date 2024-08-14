@@ -1,6 +1,6 @@
 import fs from 'node:fs'
 import puppeteer from 'puppeteer'
-import { folder } from './utils.js'
+import { folder, sleep } from './utils.js'
 
 const fileName = 'id'
 const maxNullCount = 50 // no pageをn回まで許容
@@ -116,9 +116,3 @@ const scrapingCore = async (page, i) => {
   const tcgElem = await page.$('.tcg-icon-list') // TCG画像要素
   return ((tcgElem ? 'TCG: ' : '') + text).replace(' (Coming Soon)', '')
 }
-
-/**
- * 待機
- * @param {number} ms milliseconds
- */
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))

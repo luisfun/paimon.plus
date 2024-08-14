@@ -3,6 +3,7 @@
 	"main": "src/index.js",
 	"type": "module",
 	"devDependencies": {
-		"puppeteer": "^21.7.0"
+		"puppeteer": "^23.0.2",
+		"sharp": "^0.33.4"
 	}
 }

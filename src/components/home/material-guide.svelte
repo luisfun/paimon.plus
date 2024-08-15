@@ -62,13 +62,11 @@ const onclick: HTMLButtonAttributes = {
   </div>
 </div>
 <Dialog id="modal">
-  <div class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2">
+  <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
     {#each avatars as avatar}
-      <form method="dialog">
-        <button on:click={_ => clickHandler(avatar.id)}>
-          <Icon id={avatar.id} {isLoading} />
-        </button>
-      </form>
+      <button class="aspect-square" on:click={_ => clickHandler(avatar.id)}>
+        <Icon id={avatar.id} {isLoading} />
+      </button>
     {/each}
-  </div>
+  </form>
 </Dialog>

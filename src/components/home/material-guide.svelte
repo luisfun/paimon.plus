@@ -1,11 +1,11 @@
 <script lang="ts">
 import Dialog from '@components/dialog.svelte'
+import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
 import avatarRaw from '@game/avatar.json'
 import material from '@game/material.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
-import ExternalA from '@components/external-a.svelte'
 import type { HTMLButtonAttributes } from 'svelte/elements'
 const avatars = avatarRaw
   .filter(e => !(e.id === 10000005 || e.id === 10000007))
@@ -26,11 +26,11 @@ $: selectData = avatars.find(e => e.id === select) as (typeof avatarRaw)[number]
 let isLoading = false
 
 const weaponIcon: Record<string, string> = {
-  "WEAPON_SWORD_ONE_HAND": "UI_ItemIcon_101101",
-  "WEAPON_CLAYMORE": "UI_ItemIcon_101103",
-  "WEAPON_POLE": "UI_ItemIcon_101105",
-  "WEAPON_CATALYST": "UI_ItemIcon_101104",
-  "WEAPON_BOW": "UI_ItemIcon_101102",
+  WEAPON_SWORD_ONE_HAND: 'UI_ItemIcon_101101',
+  WEAPON_CLAYMORE: 'UI_ItemIcon_101103',
+  WEAPON_POLE: 'UI_ItemIcon_101105',
+  WEAPON_CATALYST: 'UI_ItemIcon_101104',
+  WEAPON_BOW: 'UI_ItemIcon_101102',
 }
 
 const loadHandler = () => {
@@ -50,7 +50,7 @@ const onclick: HTMLButtonAttributes = {
 
 <div class="grid grid-cols-4 gap-4">
   <button {...onclick} on:click={loadHandler}>
-    <Icon id={select} loading="lazy" />
+    <Icon id={select} />
   </button>
   <div class="col-span-3 flex flex-col justify-evenly">
     <button class="mr-auto text-xl" {...onclick} on:click={loadHandler}>{t(select, "avatar")}</button>

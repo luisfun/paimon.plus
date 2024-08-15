@@ -7,6 +7,6 @@ export let id: string
     <slot />
   </div>
   <form method="dialog" class="modal-backdrop">
-    <button />
+    <button aria-label="Close" />
   </form>
 </dialog>

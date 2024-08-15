@@ -9,7 +9,7 @@ export let id: number
 export let ui: 'avatar' | 'material' = 'avatar'
 //export let costumes = ''
 export let text = ''
-export let loading: HTMLImgAttributes["loading"] = undefined
+export let loading: HTMLImgAttributes['loading'] = undefined
 export let isLoading = true
 export let expand = true
 

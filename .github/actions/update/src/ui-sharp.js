@@ -18,8 +18,8 @@ export const uiSharp = async () => {
 }
 
 const otherSharp = async () => {
-  const imgFolder = "src/game/element/"
-  const imgDist = "public/images/element/"
+  const imgFolder = 'src/game/element/'
+  const imgDist = 'public/images/element/'
   const imgFiles = fs.readdirSync(imgFolder).map(e => e.slice(0, -4))
   await Promise.all(
     imgFiles.map(name =>

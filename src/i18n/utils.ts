@@ -3,7 +3,7 @@ import material from '@game/material.json'
 import textMap from '@game/text-map.json'
 import { defaultLang, ui } from '@i18n/ui'
 
-type Lang = keyof typeof ui
+export type Lang = keyof typeof ui
 type TextMap = Record<Lang, Record<number, string>>
 type Ui = Record<Lang, Record<keyof (typeof ui)[typeof defaultLang], string>>
 

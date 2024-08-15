@@ -21,8 +21,10 @@ const t = useTranslations(lang)
 
 let select = avatars.slice(0, -1)[0].id
 
-const clickHandler = (id: number) => select = id
-$: console.log(select)
+const clickHandler = (id: number) => {
+  select = id
+  console.log(select)
+}
 // tsエラー回避用
 const onclick: HTMLButtonAttributes = {
   // @ts-expect-error
@@ -37,11 +39,11 @@ const onclick: HTMLButtonAttributes = {
   <button {...onclick}>{t(select, "avatar")}</button>
 </div>
 <Dialog id="modal">
-  <div class="grid grid-cols-3 gap-y-8">
+  <div class="grid grid-cols-6 gap-2">
     {#each avatars as avatar}
       <form method="dialog">
-        <button>
-          <Icon id={avatar.id} on:click={_ => clickHandler(avatar.id)} />
+        <button on:click={_ => clickHandler(avatar.id)}>
+          <Icon id={avatar.id} />
         </button>
       </form>
     {/each}

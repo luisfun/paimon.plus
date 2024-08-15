@@ -5,7 +5,7 @@ import { uiSharp } from './ui-sharp.js'
 import { wikiScraping } from './wiki-scraping.js'
 
 export const update = async () => {
-  await dataDownload()
+  //await dataDownload()
   //await wikiScraping()
   await dataShrink()
   await uiDownload()

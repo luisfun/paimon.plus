@@ -18,7 +18,7 @@ const rankNum: Record<string, number> = {
   QUALITY_PURPLE: 4,
 }
 
-switch (ui) {
+$: switch (ui) {
   case 'avatar': {
     const a = avatar.find(e => e.id === id)
     if (!a) break
@@ -36,7 +36,7 @@ switch (ui) {
     break
   }
 }
-if (!src && !alt && !rank) {
+$: if (!src && !alt && !rank) {
   src = `/images/ui/Empty.webp`
   alt = "Empty"
   rank = 1

@@ -22,7 +22,7 @@ const { title, grid, defaultTitle } = Astro.props
     <Header />
     <main>
       <h1 class="my-2 text-center">{title}</h1>
-      <div class=`my-12 ${grid ? "grid grid-cols-1 sm:grid-cols-2 gap-12" : undefined}`>
+      <div class=`my-12 ${grid ? "grid grid-cols-1 md:grid-cols-2 gap-12" : undefined}`>
         <slot />
       </div>
       <slot name="main-bottom" />

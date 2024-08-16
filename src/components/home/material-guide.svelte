@@ -62,11 +62,18 @@ const onclick: HTMLButtonAttributes = {
   </div>
 </div>
 <Dialog id="modal">
-  <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
-    {#each avatars as avatar}
-      <button class="aspect-square" on:click={_ => clickHandler(avatar.id)}>
-        <Icon id={avatar.id} {isLoading} />
-      </button>
-    {/each}
-  </form>
+  <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-2">
+    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.characters")} checked />
+    <div role="tabpanel" class="tab-content">
+      <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
+        {#each avatars as avatar}
+          <button class="aspect-square" on:click={_ => clickHandler(avatar.id)}>
+            <Icon id={avatar.id} {isLoading} loading="lazy" />
+          </button>
+        {/each}
+      </form>
+    </div>
+    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.weapons")} />
+    <div role="tabpanel" class="tab-content p-10">Tab content 2</div>
+  </div>
 </Dialog>

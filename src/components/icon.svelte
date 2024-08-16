@@ -20,6 +20,7 @@ let rank = 1
 const rankNum: Record<string, number> = {
   QUALITY_ORANGE: 5,
   QUALITY_PURPLE: 4,
+  QUALITY_ORANGE_SP: 5,
 }
 
 $: if (isLoading)

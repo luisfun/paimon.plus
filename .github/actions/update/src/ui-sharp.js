@@ -31,8 +31,8 @@ const createMinIcon = async () => {
   await Promise.all(
     diffFiles.map(name =>
       sharp(`${folder.ui + name}.png`)
-        .resize(128)
-        .extract({left: 16, top: 1, width: 96, height: 96})
+        .resize(256)
+        .extract({left: 32, top: 2, width: 192, height: 192})
         .webp()
         .toFile(`${folder.webp}Min_${name}.webp`),
     ),

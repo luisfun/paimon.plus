@@ -11,7 +11,6 @@ export let ui: 'avatar' | 'material' = 'avatar'
 export let text = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
 export let isLoading = true
-export let expand = true
 
 let src = '/images/None.webp'
 let alt = 'None'
@@ -28,7 +27,7 @@ $: if (isLoading)
     case 'avatar': {
       const a = avatar.find(e => e.id === id)
       if (!a) break
-      src = `/images/ui/${a.iconName}.webp`
+      src = `/images/ui/Min_${a.iconName}.webp`
       alt = (textMap as TextMap).en[a.nameTextMapHash]
       rank = rankNum[a.qualityType] || 1
       break
@@ -47,11 +46,5 @@ $: if (isLoading)
 {#if text}
 <div />
 {:else}
-<img {loading} {src} {alt} class="bg-rank-{rank} w-full rounded-[3%_3%_27%_3%] {(ui === "avatar" && expand) ? "icon-expand" : ""}" />
+<img {loading} {src} {alt} class="bg-rank-{rank} w-full rounded-[3%_3%_27%_3%]" />
 {/if}
-
-<style>
-  .icon-expand {
-    object-view-box: inset(2px 32px 62px 32px);
-  }
-</style>

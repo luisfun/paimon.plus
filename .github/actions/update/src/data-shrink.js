@@ -19,6 +19,7 @@ import ProudSkill from '../../../../src/game/.data/ProudSkillExcelConfigData.jso
 
 // weapon
 import Weapon from '../../../../src/game/.data/WeaponExcelConfigData.json' assert { type: 'json' }
+import WeaponPromote from '../../../../src/game/.data/WeaponPromoteExcelConfigData.json' assert { type: 'json' }
 
 // material
 import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
@@ -34,6 +35,7 @@ const E = {
   AvatarCostume,
   AvatarPromote,
   Weapon,
+  WeaponPromote,
   Material,
   ProudSkill,
 }
@@ -122,8 +124,6 @@ const avatarAllCosts = (avatar, aInfo) => {
       if (!item.id) continue
       materialMap[item.id] ??= 0
       materialMap[item.id] += item.count
-      //materialMap[item.id] ??= { id: item.id, count: 0 }
-      //materialMap[item.id].count += item.count
     }
     return materialMap
   }, {})
@@ -151,6 +151,19 @@ const dumpWeapon = () => {
     for (const index of weaponCopyIndex) {
       wInfo[index] = weapon[index]
     }
+    // costs
+    const weaponPromote = E.WeaponPromote.filter(e => e.weaponPromoteId === weapon.weaponPromoteId)
+    const promoteCoin = weaponPromote.map(e => e.coinCost || 0).reduce((a, b) => a + b)
+    const materials = weaponPromote.filter(e => e.costItems[0]?.id).map(e => e.costItems).reduce((materialMap, items) => {
+      for (const item of items) {
+        if (!item.id) continue
+        materialMap[item.id] ??= 0
+        materialMap[item.id] += item.count
+      }
+      return materialMap
+    }, {})
+    if (Object.keys(materials).length === 0) continue
+    wInfo.allCosts = {promoteCoin, materials}
     w.push(wInfo)
   }
   dumpFile('weapon', w)

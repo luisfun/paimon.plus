@@ -10,14 +10,15 @@ const enkaUrl = 'https://enka.network/ui/'
 export const uiDownload = async () => {
   // Downloaded Images
   const uiFiles = fs.readdirSync(folder.ui)
-  await getUiImages(uiFiles)
+  await getAvatarImages(uiFiles)
+  await getWeaponImages(uiFiles)
   await getMaterialImages(uiFiles)
 }
 
 /**
  * @param {string[]} uiFiles
  */
-const getUiImages = async uiFiles => {
+const getAvatarImages = async uiFiles => {
   const avatars = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8'))
   const imageList = []
   for (const avatar of avatars) {
@@ -32,15 +33,12 @@ const getUiImages = async uiFiles => {
         //imageList.push(`UI_Costume_${key}`)
       }
   }
-  const dlList = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
-  if (!dlList.length) return
-  if (dlList.length > 100) dlList.length = 100
-  for (const name of dlList) {
-    const res = await fetch(ambrUrl + name)
-    if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
-    else console.log('NG', name)
-    await sleep(100)
-  }
+  await downloadAmbr(imageList, uiFiles)
+}
+
+const getWeaponImages = async uiFiles => {
+  const imageList = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).flatMap(e => [e.icon, `${e.icon}_Awaken`])
+  await downloadAmbr(imageList, uiFiles)
 }
 
 /**
@@ -48,13 +46,21 @@ const getUiImages = async uiFiles => {
  */
 const getMaterialImages = async uiFiles => {
   const imageList = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
-  const dlList = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
-  if (!dlList.length) return
-  if (dlList.length > 100) dlList.length = 100
-  for (const name of dlList) {
+  await downloadAmbr(imageList, uiFiles)
+}
+
+/**
+ * @param {string[]} imageList 
+ * @param {string[]} uiFiles 
+ */
+const downloadAmbr = async (imageList, uiFiles) => {
+  const names = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
+  if (!names.length) return
+  if (names.length > 100) names.length = 100
+  for (const name of names) {
     const res = await fetch(ambrUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
-    else console.log('NG', name)
+    else console.log(`NG: ${name}`)
     await sleep(100)
   }
 }

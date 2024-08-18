@@ -39,14 +39,6 @@ let select = avatars.slice(0, -1)[0].id
 let selectData: Data = avatars.slice(0, -1)[0] as Data
 let isLoading = false
 
-const weaponIcon: Record<string, string> = {
-  WEAPON_SWORD_ONE_HAND: 'UI_ItemIcon_101101',
-  WEAPON_CLAYMORE: 'UI_ItemIcon_101103',
-  WEAPON_POLE: 'UI_ItemIcon_101105',
-  WEAPON_CATALYST: 'UI_ItemIcon_101104',
-  WEAPON_BOW: 'UI_ItemIcon_101102',
-}
-
 const loadHandler = () => {
   isLoading = true
 }
@@ -79,7 +71,7 @@ const onclick: HTMLButtonAttributes = {
       {#if selectData.element}
       <img class="h-7 mr-2" src="/images/element/{selectData.element}.webp" alt={selectData.element} />
       {/if}
-      <img class="h-7 mr-2" src="/images/ui/{weaponIcon[selectData.weaponType]}.webp" alt={selectData.weaponType} />
+      <img class="h-7 mr-2" src="/images/weapon-type/{selectData.weaponType}.webp" alt={selectData.weaponType} />
       <ExternalA class="text-sm text-link" href="//wiki.hoyolab.com/m/genshin/entry/{selectData.wikiId}">HoYoWiki</ExternalA>
     </div>
   </div>

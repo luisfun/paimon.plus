@@ -5,7 +5,7 @@ import { folder } from './utils.js'
 export const uiSharp = async () => {
   await createWebp()
   await createMinIcon()
-  //await otherSharp()
+  await otherSharp()
 }
 
 const createWebp = async () => {
@@ -46,8 +46,8 @@ const createMinIcon = async () => {
 }
 
 const otherSharp = async () => {
-  const imgFolder = 'src/game/element/'
-  const imgDist = 'public/images/element/'
+  const imgFolder = 'src/game/weapon-type/'
+  const imgDist = 'public/images/weapon-type/'
   const imgFiles = fs.readdirSync(imgFolder).map(e => e.slice(0, -4))
   await Promise.all(
     imgFiles.map(name =>

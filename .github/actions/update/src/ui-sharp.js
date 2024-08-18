@@ -4,7 +4,8 @@ import { folder } from './utils.js'
 
 export const uiSharp = async () => {
   await createWebp()
-  await createMinIcon()
+  await createMinAvatar()
+  await createMinWeapon()
   //await otherSharp()
 }
 
@@ -22,20 +23,10 @@ const createWebp = async () => {
   )
 }
 
-const createMinIcon = async () => {
-  const iconNames = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
-  const downloadedFiles = fs
-    .readdirSync(folder.ui)
-    .map(e => e.slice(0, -4))
-    .filter(e => iconNames.includes(e))
-  const sharpedFiles = fs
-    .readdirSync(folder.webp)
-    .map(e => e.slice(4, -5))
-    .filter(e => iconNames.includes(e))
-  const diffFiles = downloadedFiles.filter(e => sharpedFiles.indexOf(e) === -1)
-  if (!diffFiles[0]) return
+const createMinAvatar = async () => {
+  const names = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
   await Promise.all(
-    diffFiles.map(name =>
+    diffFiles(names).map(name =>
       sharp(`${folder.ui + name}.png`)
         .resize(256)
         .extract({ left: 32, top: 2, width: 192, height: 192 })
@@ -43,6 +34,34 @@ const createMinIcon = async () => {
         .toFile(`${folder.webp}Min_${name}.webp`),
     ),
   )
+}
+
+const createMinWeapon = async () => {
+  const names = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).map(e => e.icon)
+  await Promise.all(
+    diffFiles(names).map(name =>
+      sharp(`${folder.ui + name}.png`)
+        .resize(128)
+        .webp()
+        .toFile(`${folder.webp}Min_${name}.webp`),
+    ),
+  )
+}
+
+/**
+ * @param {string[]} names
+ * @returns {string[]}
+ */
+const diffFiles = names => {
+  const downloadedFiles = fs
+    .readdirSync(folder.ui)
+    .map(e => e.slice(0, -4))
+    .filter(e => names.includes(e))
+  const sharpedFiles = fs
+    .readdirSync(folder.webp)
+    .map(e => e.slice(4, -5))
+    .filter(e => names.includes(e))
+  return downloadedFiles.filter(e => sharpedFiles.indexOf(e) === -1)
 }
 
 const otherSharp = async () => {

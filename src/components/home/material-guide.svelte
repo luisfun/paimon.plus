@@ -103,6 +103,7 @@ const onclick: HTMLButtonAttributes = {
     </div>
     <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.weapons")} on:click={weaponLoadHandler} />
     <div role="tabpanel" class="tab-content">
+      {#if isAvatarLoading}
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each weapons as weapon}
           <button class="aspect-square" on:click={_ => weaponHandler(weapon.id)}>
@@ -110,6 +111,7 @@ const onclick: HTMLButtonAttributes = {
           </button>
         {/each}
       </form>
+      {/if}
     </div>
   </div>
 </Dialog>

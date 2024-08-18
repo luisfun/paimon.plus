@@ -36,7 +36,7 @@ $: if (isLoading)
     case 'weapon': {
       const w = weapon.find(e => e.id === id)
       if (!w) break
-      src = `/images/ui/${w.icon}_Awaken.webp`
+      src = `/images/ui/Min_${w.icon}.webp` // _Awaken
       alt = (textMap as TextMap).en[w.nameTextMapHash]
       rank = w.rankLevel
       break

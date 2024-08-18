@@ -4,7 +4,6 @@ import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
 import avatarRaw from '@game/avatar.json'
-import material from '@game/material.json'
 import weapons from '@game/weapon.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
@@ -27,8 +26,22 @@ type Data = {
 
 let select = avatars.slice(0, -1)[0].id
 let selectData: Data = avatars.slice(0, -1)[0] as Data
+let elementFilter: string[] = []
+let weaponTypeFilter: string[] = []
 let isAvatarLoading = false
 let isWeaponLoading = false
+
+const elements = ['Fire', 'Water', 'Grass', 'Electric', 'Wind', 'Ice', 'Rock']
+const weaponTypes = ['WEAPON_SWORD_ONE_HAND', 'WEAPON_CLAYMORE', 'WEAPON_BOW', 'WEAPON_CATALYST', 'WEAPON_POLE']
+
+const elementFilterHandler = (elem: string) => {
+  if (!elementFilter.includes(elem)) elementFilter = [...elementFilter, elem]
+  else elementFilter = elementFilter.filter(e => e !== elem)
+}
+const weaponTypeFilterHandler = (type: string) => {
+  if (!weaponTypeFilter.includes(type)) weaponTypeFilter = [...weaponTypeFilter, type]
+  else weaponTypeFilter = weaponTypeFilter.filter(e => e !== type)
+}
 
 const avatarLoadHandler = () => {
   isAvatarLoading = true
@@ -41,7 +54,6 @@ const avatarHandler = (id: number) => {
   select = id
   selectData = avatars.find(e => e.id === id) as Data
 }
-
 const weaponHandler = (id: number) => {
   select = id
   selectData = weapons.find(e => e.id === id) as Data
@@ -69,12 +81,28 @@ const onclick: HTMLButtonAttributes = {
     </div>
   </div>
 </div>
-<Dialog id="modal">
+<Dialog id="modal" maxH>
   <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-2">
     <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.characters")} checked />
     <div role="tabpanel" class="tab-content">
+      <div class="flex flex-col md:flex-row">
+        <div class="flex">
+          {#each elements as elem}
+            <button class="w-8 bg-primary-630 border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
+              <img src="/images/element/{elem}.webp" alt={elem} />
+            </button>
+          {/each}
+        </div>
+        <div class="flex">
+          {#each weaponTypes as type}
+            <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
+              <img src="/images/weapon-type/{type}.webp" alt={type} />
+            </button>
+          {/each}
+        </div>
+      </div>
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
-        {#each avatars as avatar}
+        {#each avatars.filter(a => !elementFilter[0] || elementFilter.includes(a.element || "")).filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as avatar}
           <button class="aspect-square" on:click={_ => avatarHandler(avatar.id)}>
             <Icon id={avatar.id} isLoading={isAvatarLoading} loading="lazy" />
           </button>

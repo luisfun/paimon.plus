@@ -1,13 +1,11 @@
 [
   {
+    "key": "Ayaka",
     "id": 10000002,
-    "iconName": "UI_AvatarIcon_Ayaka",
-    "sideIconName": "UI_AvatarIcon_Side_Ayaka",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 201,
     "nameTextMapHash": 1006042610,
-    "imageName": "UI_Gacha_AvatarImg_Ayaka",
+    "skillDepotId": 201,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Ayaka_01",
@@ -36,9 +34,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_AyakaCostumeFruhling",
-        "sideIconName": "UI_AvatarIcon_Side_AyakaCostumeFruhling",
-        "imageName": "UI_Costume_AyakaCostumeFruhling"
+        "key": "AyakaCostumeFruhling"
       }
     ],
     "allCosts": {
@@ -64,14 +60,12 @@
     "wikiId": 32
   },
   {
+    "key": "Qin",
     "id": 10000003,
-    "iconName": "UI_AvatarIcon_Qin",
-    "sideIconName": "UI_AvatarIcon_Side_Qin",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 301,
     "nameTextMapHash": 3221566250,
-    "imageName": "UI_Gacha_AvatarImg_Qin",
+    "skillDepotId": 301,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Qin_01",
@@ -100,14 +94,10 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_QinCostumeSea",
-        "sideIconName": "UI_AvatarIcon_Side_QinCostumeSea",
-        "imageName": "UI_Costume_QinCostumeSea"
+        "key": "QinCostumeSea"
       },
       {
-        "iconName": "UI_AvatarIcon_QinCostumeWic",
-        "sideIconName": "UI_AvatarIcon_Side_QinCostumeWic",
-        "imageName": "UI_Costume_QinCostumeWic"
+        "key": "QinCostumeWic"
       }
     ],
     "allCosts": {
@@ -133,14 +123,12 @@
     "wikiId": 27
   },
   {
+    "key": "PlayerBoy",
     "id": 10000005,
-    "iconName": "UI_AvatarIcon_PlayerBoy",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 501,
     "nameTextMapHash": 1533656818,
-    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "skillDepotId": 501,
     "element": null,
     "consts": [
       null,
@@ -196,14 +184,12 @@
     "wikiId": 20
   },
   {
+    "key": "PlayerBoy",
     "id": 10000005,
-    "iconName": "UI_AvatarIcon_PlayerBoy",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 503,
     "nameTextMapHash": 1533656818,
-    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "skillDepotId": 503,
     "element": "Water",
     "consts": [
       "UI_Talent_S_PlayerWater_01",
@@ -259,14 +245,12 @@
     "wikiId": 3997
   },
   {
+    "key": "PlayerBoy",
     "id": 10000005,
-    "iconName": "UI_AvatarIcon_PlayerBoy",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 504,
     "nameTextMapHash": 1533656818,
-    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "skillDepotId": 504,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_PlayerWind_01",
@@ -322,14 +306,12 @@
     "wikiId": 19
   },
   {
+    "key": "PlayerBoy",
     "id": 10000005,
-    "iconName": "UI_AvatarIcon_PlayerBoy",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 506,
     "nameTextMapHash": 1533656818,
-    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "skillDepotId": 506,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_PlayerRock_01",
@@ -396,14 +378,12 @@
     "wikiId": 17
   },
   {
+    "key": "PlayerBoy",
     "id": 10000005,
-    "iconName": "UI_AvatarIcon_PlayerBoy",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 507,
     "nameTextMapHash": 1533656818,
-    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "skillDepotId": 507,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_PlayerElectric_01",
@@ -459,14 +439,12 @@
     "wikiId": 18
   },
   {
+    "key": "PlayerBoy",
     "id": 10000005,
-    "iconName": "UI_AvatarIcon_PlayerBoy",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 508,
     "nameTextMapHash": 1533656818,
-    "imageName": "UI_Gacha_AvatarImg_PlayerBoy",
+    "skillDepotId": 508,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_PlayerGrass_01",
@@ -522,14 +500,12 @@
     "wikiId": 2674
   },
   {
+    "key": "Lisa",
     "id": 10000006,
-    "iconName": "UI_AvatarIcon_Lisa",
-    "sideIconName": "UI_AvatarIcon_Side_Lisa",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 601,
     "nameTextMapHash": 3344622722,
-    "imageName": "UI_Gacha_AvatarImg_Lisa",
+    "skillDepotId": 601,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Lisa_01",
@@ -558,9 +534,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_LisaCostumeStudentin",
-        "sideIconName": "UI_AvatarIcon_Side_LisaCostumeStudentin",
-        "imageName": "UI_Costume_LisaCostumeStudentin"
+        "key": "LisaCostumeStudentin"
       }
     ],
     "allCosts": {
@@ -586,14 +560,12 @@
     "wikiId": 2
   },
   {
+    "key": "PlayerGirl",
     "id": 10000007,
-    "iconName": "UI_AvatarIcon_PlayerGirl",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 701,
     "nameTextMapHash": 3816664530,
-    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "skillDepotId": 701,
     "element": null,
     "consts": [
       null,
@@ -649,14 +621,12 @@
     "wikiId": 20
   },
   {
+    "key": "PlayerGirl",
     "id": 10000007,
-    "iconName": "UI_AvatarIcon_PlayerGirl",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 703,
     "nameTextMapHash": 3816664530,
-    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "skillDepotId": 703,
     "element": "Water",
     "consts": [
       "UI_Talent_S_PlayerWater_01",
@@ -712,14 +682,12 @@
     "wikiId": 3997
   },
   {
+    "key": "PlayerGirl",
     "id": 10000007,
-    "iconName": "UI_AvatarIcon_PlayerGirl",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 704,
     "nameTextMapHash": 3816664530,
-    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "skillDepotId": 704,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_PlayerWind_01",
@@ -775,14 +743,12 @@
     "wikiId": 19
   },
   {
+    "key": "PlayerGirl",
     "id": 10000007,
-    "iconName": "UI_AvatarIcon_PlayerGirl",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 706,
     "nameTextMapHash": 3816664530,
-    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "skillDepotId": 706,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_PlayerRock_01",
@@ -849,14 +815,12 @@
     "wikiId": 17
   },
   {
+    "key": "PlayerGirl",
     "id": 10000007,
-    "iconName": "UI_AvatarIcon_PlayerGirl",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 707,
     "nameTextMapHash": 3816664530,
-    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "skillDepotId": 707,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_PlayerElectric_01",
@@ -912,14 +876,12 @@
     "wikiId": 18
   },
   {
+    "key": "PlayerGirl",
     "id": 10000007,
-    "iconName": "UI_AvatarIcon_PlayerGirl",
-    "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 708,
     "nameTextMapHash": 3816664530,
-    "imageName": "UI_Gacha_AvatarImg_PlayerGirl",
+    "skillDepotId": 708,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_PlayerGrass_01",
@@ -975,14 +937,12 @@
     "wikiId": 2674
   },
   {
+    "key": "Barbara",
     "id": 10000014,
-    "iconName": "UI_AvatarIcon_Barbara",
-    "sideIconName": "UI_AvatarIcon_Side_Barbara",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 1401,
     "nameTextMapHash": 3775299170,
-    "imageName": "UI_Gacha_AvatarImg_Barbara",
+    "skillDepotId": 1401,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Barbara_01",
@@ -1011,9 +971,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_BarbaraCostumeSummertime",
-        "sideIconName": "UI_AvatarIcon_Side_BarbaraCostumeSummertime",
-        "imageName": "UI_Costume_BarbaraCostumeSummertime"
+        "key": "BarbaraCostumeSummertime"
       }
     ],
     "allCosts": {
@@ -1039,14 +997,12 @@
     "wikiId": 35
   },
   {
+    "key": "Kaeya",
     "id": 10000015,
-    "iconName": "UI_AvatarIcon_Kaeya",
-    "sideIconName": "UI_AvatarIcon_Side_Kaeya",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 1501,
     "nameTextMapHash": 4119663210,
-    "imageName": "UI_Gacha_AvatarImg_Kaeya",
+    "skillDepotId": 1501,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Kaeya_01",
@@ -1075,9 +1031,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_KaeyaCostumeDancer",
-        "sideIconName": "UI_AvatarIcon_Side_KaeyaCostumeDancer",
-        "imageName": "UI_Costume_KaeyaCostumeDancer"
+        "key": "KaeyaCostumeDancer"
       }
     ],
     "allCosts": {
@@ -1103,14 +1057,12 @@
     "wikiId": 9
   },
   {
+    "key": "Diluc",
     "id": 10000016,
-    "iconName": "UI_AvatarIcon_Diluc",
-    "sideIconName": "UI_AvatarIcon_Side_Diluc",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 1601,
     "nameTextMapHash": 3608180322,
-    "imageName": "UI_Gacha_AvatarImg_Diluc",
+    "skillDepotId": 1601,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Diluc_01",
@@ -1139,9 +1091,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_DilucCostumeFlamme",
-        "sideIconName": "UI_AvatarIcon_Side_DilucCostumeFlamme",
-        "imageName": "UI_Costume_DilucCostumeFlamme"
+        "key": "DilucCostumeFlamme"
       }
     ],
     "allCosts": {
@@ -1167,14 +1117,12 @@
     "wikiId": 43
   },
   {
+    "key": "Razor",
     "id": 10000020,
-    "iconName": "UI_AvatarIcon_Razor",
-    "sideIconName": "UI_AvatarIcon_Side_Razor",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 2001,
     "nameTextMapHash": 4160147242,
-    "imageName": "UI_Gacha_AvatarImg_Razor",
+    "skillDepotId": 2001,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Razor_01",
@@ -1225,14 +1173,12 @@
     "wikiId": 48
   },
   {
+    "key": "Ambor",
     "id": 10000021,
-    "iconName": "UI_AvatarIcon_Ambor",
-    "sideIconName": "UI_AvatarIcon_Side_Ambor",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 2101,
     "nameTextMapHash": 1966438658,
-    "imageName": "UI_Gacha_AvatarImg_Ambor",
+    "skillDepotId": 2101,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Ambor_01",
@@ -1261,9 +1207,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_AmborCostumeWic",
-        "sideIconName": "UI_AvatarIcon_Side_AmborCostumeWic",
-        "imageName": "UI_Costume_AmborCostumeWic"
+        "key": "AmborCostumeWic"
       }
     ],
     "allCosts": {
@@ -1289,14 +1233,12 @@
     "wikiId": 14
   },
   {
+    "key": "Venti",
     "id": 10000022,
-    "iconName": "UI_AvatarIcon_Venti",
-    "sideIconName": "UI_AvatarIcon_Side_Venti",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 2201,
     "nameTextMapHash": 2466140362,
-    "imageName": "UI_Gacha_AvatarImg_Venti",
+    "skillDepotId": 2201,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Venti_01",
@@ -1347,14 +1289,12 @@
     "wikiId": 23
   },
   {
+    "key": "Xiangling",
     "id": 10000023,
-    "iconName": "UI_AvatarIcon_Xiangling",
-    "sideIconName": "UI_AvatarIcon_Side_Xiangling",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 2301,
     "nameTextMapHash": 1130996346,
-    "imageName": "UI_Gacha_AvatarImg_Xiangling",
+    "skillDepotId": 2301,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Xiangling_01",
@@ -1405,14 +1345,12 @@
     "wikiId": 50
   },
   {
+    "key": "Beidou",
     "id": 10000024,
-    "iconName": "UI_AvatarIcon_Beidou",
-    "sideIconName": "UI_AvatarIcon_Side_Beidou",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 2401,
     "nameTextMapHash": 2646367730,
-    "imageName": "UI_Gacha_AvatarImg_Beidou",
+    "skillDepotId": 2401,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Beidou_02",
@@ -1463,14 +1401,12 @@
     "wikiId": 11
   },
   {
+    "key": "Xingqiu",
     "id": 10000025,
-    "iconName": "UI_AvatarIcon_Xingqiu",
-    "sideIconName": "UI_AvatarIcon_Side_Xingqiu",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 2501,
     "nameTextMapHash": 4197635682,
-    "imageName": "UI_Gacha_AvatarImg_Xingqiu",
+    "skillDepotId": 2501,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Xingqiu_01",
@@ -1499,9 +1435,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_XingqiuCostumeBamboo",
-        "sideIconName": "UI_AvatarIcon_Side_XingqiuCostumeBamboo",
-        "imageName": "UI_Costume_XingqiuCostumeBamboo"
+        "key": "XingqiuCostumeBamboo"
       }
     ],
     "allCosts": {
@@ -1527,14 +1461,12 @@
     "wikiId": 39
   },
   {
+    "key": "Xiao",
     "id": 10000026,
-    "iconName": "UI_AvatarIcon_Xiao",
-    "sideIconName": "UI_AvatarIcon_Side_Xiao",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 2601,
     "nameTextMapHash": 1021947690,
-    "imageName": "UI_Gacha_AvatarImg_Xiao",
+    "skillDepotId": 2601,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Xiao_01",
@@ -1585,14 +1517,12 @@
     "wikiId": 51
   },
   {
+    "key": "Ningguang",
     "id": 10000027,
-    "iconName": "UI_AvatarIcon_Ningguang",
-    "sideIconName": "UI_AvatarIcon_Side_Ningguang",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 2701,
     "nameTextMapHash": 4127888970,
-    "imageName": "UI_Gacha_AvatarImg_Ningguang",
+    "skillDepotId": 2701,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Ningguang_01",
@@ -1621,9 +1551,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_NingguangCostumeFloral",
-        "sideIconName": "UI_AvatarIcon_Side_NingguangCostumeFloral",
-        "imageName": "UI_Costume_NingguangCostumeFloral"
+        "key": "NingguangCostumeFloral"
       }
     ],
     "allCosts": {
@@ -1649,14 +1577,12 @@
     "wikiId": 8
   },
   {
+    "key": "Klee",
     "id": 10000029,
-    "iconName": "UI_AvatarIcon_Klee",
-    "sideIconName": "UI_AvatarIcon_Side_Klee",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 2901,
     "nameTextMapHash": 3339083250,
-    "imageName": "UI_Gacha_AvatarImg_Klee",
+    "skillDepotId": 2901,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Klee_01",
@@ -1685,9 +1611,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_KleeCostumeWitch",
-        "sideIconName": "UI_AvatarIcon_Side_KleeCostumeWitch",
-        "imageName": "UI_Costume_KleeCostumeWitch"
+        "key": "KleeCostumeWitch"
       }
     ],
     "allCosts": {
@@ -1713,14 +1637,12 @@
     "wikiId": 12
   },
   {
+    "key": "Zhongli",
     "id": 10000030,
-    "iconName": "UI_AvatarIcon_Zhongli",
-    "sideIconName": "UI_AvatarIcon_Side_Zhongli",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 3001,
     "nameTextMapHash": 3862787418,
-    "imageName": "UI_Gacha_AvatarImg_Zhongli",
+    "skillDepotId": 3001,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Zhongli_01",
@@ -1771,14 +1693,12 @@
     "wikiId": 46
   },
   {
+    "key": "Fischl",
     "id": 10000031,
-    "iconName": "UI_AvatarIcon_Fischl",
-    "sideIconName": "UI_AvatarIcon_Side_Fischl",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 3101,
     "nameTextMapHash": 3277782506,
-    "imageName": "UI_Gacha_AvatarImg_Fischl",
+    "skillDepotId": 3101,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Fischl_01",
@@ -1807,9 +1727,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_FischlCostumeHighness",
-        "sideIconName": "UI_AvatarIcon_Side_FischlCostumeHighness",
-        "imageName": "UI_Costume_FischlCostumeHighness"
+        "key": "FischlCostumeHighness"
       }
     ],
     "allCosts": {
@@ -1835,14 +1753,12 @@
     "wikiId": 38
   },
   {
+    "key": "Bennett",
     "id": 10000032,
-    "iconName": "UI_AvatarIcon_Bennett",
-    "sideIconName": "UI_AvatarIcon_Side_Bennett",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 3201,
     "nameTextMapHash": 968893378,
-    "imageName": "UI_Gacha_AvatarImg_Bennett",
+    "skillDepotId": 3201,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Bennett_01",
@@ -1893,14 +1809,12 @@
     "wikiId": 26
   },
   {
+    "key": "Tartaglia",
     "id": 10000033,
-    "iconName": "UI_AvatarIcon_Tartaglia",
-    "sideIconName": "UI_AvatarIcon_Side_Tartaglia",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 3301,
     "nameTextMapHash": 3847143266,
-    "imageName": "UI_Gacha_AvatarImg_Tartaglia",
+    "skillDepotId": 3301,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Tartaglia_01",
@@ -1951,14 +1865,12 @@
     "wikiId": 42
   },
   {
+    "key": "Noel",
     "id": 10000034,
-    "iconName": "UI_AvatarIcon_Noel",
-    "sideIconName": "UI_AvatarIcon_Side_Noel",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 3401,
     "nameTextMapHash": 1921418842,
-    "imageName": "UI_Gacha_AvatarImg_Noel",
+    "skillDepotId": 3401,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Noel_01",
@@ -2009,14 +1921,12 @@
     "wikiId": 40
   },
   {
+    "key": "Qiqi",
     "id": 10000035,
-    "iconName": "UI_AvatarIcon_Qiqi",
-    "sideIconName": "UI_AvatarIcon_Side_Qiqi",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 3501,
     "nameTextMapHash": 168956722,
-    "imageName": "UI_Gacha_AvatarImg_Qiqi",
+    "skillDepotId": 3501,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Qiqi_01",
@@ -2067,14 +1977,12 @@
     "wikiId": 1
   },
   {
+    "key": "Chongyun",
     "id": 10000036,
-    "iconName": "UI_AvatarIcon_Chongyun",
-    "sideIconName": "UI_AvatarIcon_Side_Chongyun",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 3601,
     "nameTextMapHash": 2876340530,
-    "imageName": "UI_Gacha_AvatarImg_Chongyun",
+    "skillDepotId": 3601,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Chongyun_01",
@@ -2125,14 +2033,12 @@
     "wikiId": 45
   },
   {
+    "key": "Ganyu",
     "id": 10000037,
-    "iconName": "UI_AvatarIcon_Ganyu",
-    "sideIconName": "UI_AvatarIcon_Side_Ganyu",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 3701,
     "nameTextMapHash": 2679781122,
-    "imageName": "UI_Gacha_AvatarImg_Ganyu",
+    "skillDepotId": 3701,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Ganyu_01",
@@ -2161,9 +2067,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_GanyuCostumeYu",
-        "sideIconName": "UI_AvatarIcon_Side_GanyuCostumeYu",
-        "imageName": "UI_Costume_GanyuCostumeYu"
+        "key": "GanyuCostumeYu"
       }
     ],
     "allCosts": {
@@ -2189,14 +2093,12 @@
     "wikiId": 28
   },
   {
+    "key": "Albedo",
     "id": 10000038,
-    "iconName": "UI_AvatarIcon_Albedo",
-    "sideIconName": "UI_AvatarIcon_Side_Albedo",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 3801,
     "nameTextMapHash": 4108620722,
-    "imageName": "UI_Gacha_AvatarImg_Albedo",
+    "skillDepotId": 3801,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Albedo_01",
@@ -2247,14 +2149,12 @@
     "wikiId": 47
   },
   {
+    "key": "Diona",
     "id": 10000039,
-    "iconName": "UI_AvatarIcon_Diona",
-    "sideIconName": "UI_AvatarIcon_Side_Diona",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 3901,
     "nameTextMapHash": 1468367538,
-    "imageName": "UI_Gacha_AvatarImg_Diona",
+    "skillDepotId": 3901,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Diona_01",
@@ -2305,14 +2205,12 @@
     "wikiId": 44
   },
   {
+    "key": "Mona",
     "id": 10000041,
-    "iconName": "UI_AvatarIcon_Mona",
-    "sideIconName": "UI_AvatarIcon_Side_Mona",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 4101,
     "nameTextMapHash": 1113306282,
-    "imageName": "UI_Gacha_AvatarImg_Mona",
+    "skillDepotId": 4101,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Mona_01",
@@ -2341,9 +2239,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_MonaCostumeWic",
-        "sideIconName": "UI_AvatarIcon_Side_MonaCostumeWic",
-        "imageName": "UI_Costume_MonaCostumeWic"
+        "key": "MonaCostumeWic"
       }
     ],
     "allCosts": {
@@ -2369,14 +2265,12 @@
     "wikiId": 37
   },
   {
+    "key": "Keqing",
     "id": 10000042,
-    "iconName": "UI_AvatarIcon_Keqing",
-    "sideIconName": "UI_AvatarIcon_Side_Keqing",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 4201,
     "nameTextMapHash": 1864015138,
-    "imageName": "UI_Gacha_AvatarImg_Keqing",
+    "skillDepotId": 4201,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Keqing_01",
@@ -2405,9 +2299,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_KeqingCostumeFeather",
-        "sideIconName": "UI_AvatarIcon_Side_KeqingCostumeFeather",
-        "imageName": "UI_Costume_KeqingCostumeFeather"
+        "key": "KeqingCostumeFeather"
       }
     ],
     "allCosts": {
@@ -2433,14 +2325,12 @@
     "wikiId": 10
   },
   {
+    "key": "Sucrose",
     "id": 10000043,
-    "iconName": "UI_AvatarIcon_Sucrose",
-    "sideIconName": "UI_AvatarIcon_Side_Sucrose",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 4301,
     "nameTextMapHash": 1053433018,
-    "imageName": "UI_Gacha_AvatarImg_Sucrose",
+    "skillDepotId": 4301,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Sucrose_01",
@@ -2491,14 +2381,12 @@
     "wikiId": 30
   },
   {
+    "key": "Xinyan",
     "id": 10000044,
-    "iconName": "UI_AvatarIcon_Xinyan",
-    "sideIconName": "UI_AvatarIcon_Side_Xinyan",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 4401,
     "nameTextMapHash": 4273845410,
-    "imageName": "UI_Gacha_AvatarImg_Xinyan",
+    "skillDepotId": 4401,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Xinyan_01",
@@ -2549,14 +2437,12 @@
     "wikiId": 41
   },
   {
+    "key": "Rosaria",
     "id": 10000045,
-    "iconName": "UI_AvatarIcon_Rosaria",
-    "sideIconName": "UI_AvatarIcon_Side_Rosaria",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 4501,
     "nameTextMapHash": 4260733330,
-    "imageName": "UI_Gacha_AvatarImg_Rosaria",
+    "skillDepotId": 4501,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Rosaria_01",
@@ -2585,9 +2471,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_RosariaCostumeWic",
-        "sideIconName": "UI_AvatarIcon_Side_RosariaCostumeWic",
-        "imageName": "UI_Costume_RosariaCostumeWic"
+        "key": "RosariaCostumeWic"
       }
     ],
     "allCosts": {
@@ -2613,14 +2497,12 @@
     "wikiId": 33
   },
   {
+    "key": "Hutao",
     "id": 10000046,
-    "iconName": "UI_AvatarIcon_Hutao",
-    "sideIconName": "UI_AvatarIcon_Side_Hutao",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 4601,
     "nameTextMapHash": 1940919994,
-    "imageName": "UI_Gacha_AvatarImg_Hutao",
+    "skillDepotId": 4601,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Hutao_03",
@@ -2671,14 +2553,12 @@
     "wikiId": 34
   },
   {
+    "key": "Kazuha",
     "id": 10000047,
-    "iconName": "UI_AvatarIcon_Kazuha",
-    "sideIconName": "UI_AvatarIcon_Side_Kazuha",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 4701,
     "nameTextMapHash": 88505754,
-    "imageName": "UI_Gacha_AvatarImg_Kazuha",
+    "skillDepotId": 4701,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Kazuha_01",
@@ -2729,14 +2609,12 @@
     "wikiId": 22
   },
   {
+    "key": "Feiyan",
     "id": 10000048,
-    "iconName": "UI_AvatarIcon_Feiyan",
-    "sideIconName": "UI_AvatarIcon_Side_Feiyan",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 4801,
     "nameTextMapHash": 697277554,
-    "imageName": "UI_Gacha_AvatarImg_Feiyan",
+    "skillDepotId": 4801,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Feiyan_01",
@@ -2787,14 +2665,12 @@
     "wikiId": 24
   },
   {
+    "key": "Yoimiya",
     "id": 10000049,
-    "iconName": "UI_AvatarIcon_Yoimiya",
-    "sideIconName": "UI_AvatarIcon_Side_Yoimiya",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 4901,
     "nameTextMapHash": 2504399314,
-    "imageName": "UI_Gacha_AvatarImg_Yoimiya",
+    "skillDepotId": 4901,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Yoimiya_01",
@@ -2845,14 +2721,12 @@
     "wikiId": 15
   },
   {
+    "key": "Tohma",
     "id": 10000050,
-    "iconName": "UI_AvatarIcon_Tohma",
-    "sideIconName": "UI_AvatarIcon_Side_Tohma",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 5001,
     "nameTextMapHash": 3555115602,
-    "imageName": "UI_Gacha_AvatarImg_Tohma",
+    "skillDepotId": 5001,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Tohma_01",
@@ -2903,14 +2777,12 @@
     "wikiId": 16
   },
   {
+    "key": "Eula",
     "id": 10000051,
-    "iconName": "UI_AvatarIcon_Eula",
-    "sideIconName": "UI_AvatarIcon_Side_Eula",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 5101,
     "nameTextMapHash": 3717667418,
-    "imageName": "UI_Gacha_AvatarImg_Eula",
+    "skillDepotId": 5101,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Eula_02",
@@ -2961,14 +2833,12 @@
     "wikiId": 6
   },
   {
+    "key": "Shougun",
     "id": 10000052,
-    "iconName": "UI_AvatarIcon_Shougun",
-    "sideIconName": "UI_AvatarIcon_Side_Shougun",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 5201,
     "nameTextMapHash": 3024507506,
-    "imageName": "UI_Gacha_AvatarImg_Shougun",
+    "skillDepotId": 5201,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Shougun_01",
@@ -3019,14 +2889,12 @@
     "wikiId": 49
   },
   {
+    "key": "Sayu",
     "id": 10000053,
-    "iconName": "UI_AvatarIcon_Sayu",
-    "sideIconName": "UI_AvatarIcon_Side_Sayu",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 5301,
     "nameTextMapHash": 2388785242,
-    "imageName": "UI_Gacha_AvatarImg_Sayu",
+    "skillDepotId": 5301,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Sayu_01",
@@ -3077,14 +2945,12 @@
     "wikiId": 21
   },
   {
+    "key": "Kokomi",
     "id": 10000054,
-    "iconName": "UI_AvatarIcon_Kokomi",
-    "sideIconName": "UI_AvatarIcon_Side_Kokomi",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 5401,
     "nameTextMapHash": 3914045794,
-    "imageName": "UI_Gacha_AvatarImg_Kokomi",
+    "skillDepotId": 5401,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Kokomi_01",
@@ -3135,14 +3001,12 @@
     "wikiId": 25
   },
   {
+    "key": "Gorou",
     "id": 10000055,
-    "iconName": "UI_AvatarIcon_Gorou",
-    "sideIconName": "UI_AvatarIcon_Side_Gorou",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 5501,
     "nameTextMapHash": 3400133546,
-    "imageName": "UI_Gacha_AvatarImg_Gorou",
+    "skillDepotId": 5501,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Gorou_01",
@@ -3193,14 +3057,12 @@
     "wikiId": 5
   },
   {
+    "key": "Sara",
     "id": 10000056,
-    "iconName": "UI_AvatarIcon_Sara",
-    "sideIconName": "UI_AvatarIcon_Side_Sara",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 5601,
     "nameTextMapHash": 1483922610,
-    "imageName": "UI_Gacha_AvatarImg_Sara",
+    "skillDepotId": 5601,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Sara_05",
@@ -3251,14 +3113,12 @@
     "wikiId": 3
   },
   {
+    "key": "Itto",
     "id": 10000057,
-    "iconName": "UI_AvatarIcon_Itto",
-    "sideIconName": "UI_AvatarIcon_Side_Itto",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 5701,
     "nameTextMapHash": 3068316954,
-    "imageName": "UI_Gacha_AvatarImg_Itto",
+    "skillDepotId": 5701,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Itto_01",
@@ -3309,14 +3169,12 @@
     "wikiId": 36
   },
   {
+    "key": "Yae",
     "id": 10000058,
-    "iconName": "UI_AvatarIcon_Yae",
-    "sideIconName": "UI_AvatarIcon_Side_Yae",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 5801,
     "nameTextMapHash": 2713453234,
-    "imageName": "UI_Gacha_AvatarImg_Yae",
+    "skillDepotId": 5801,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Yae_01",
@@ -3367,14 +3225,12 @@
     "wikiId": 7
   },
   {
+    "key": "Heizo",
     "id": 10000059,
-    "iconName": "UI_AvatarIcon_Heizo",
-    "sideIconName": "UI_AvatarIcon_Side_Heizo",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 5901,
     "nameTextMapHash": 646032090,
-    "imageName": "UI_Gacha_AvatarImg_Heizo",
+    "skillDepotId": 5901,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Heizo_01",
@@ -3425,14 +3281,12 @@
     "wikiId": 2263
   },
   {
+    "key": "Yelan",
     "id": 10000060,
-    "iconName": "UI_AvatarIcon_Yelan",
-    "sideIconName": "UI_AvatarIcon_Side_Yelan",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 6001,
     "nameTextMapHash": 2848374378,
-    "imageName": "UI_Gacha_AvatarImg_Yelan",
+    "skillDepotId": 6001,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Yelan_01",
@@ -3483,14 +3337,12 @@
     "wikiId": 2252
   },
   {
+    "key": "Momoka",
     "id": 10000061,
-    "iconName": "UI_AvatarIcon_Momoka",
-    "sideIconName": "UI_AvatarIcon_Side_Momoka",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 6101,
     "nameTextMapHash": 1456643042,
-    "imageName": "UI_Gacha_AvatarImg_Momoka",
+    "skillDepotId": 6101,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Momoka_01",
@@ -3519,9 +3371,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_MomokaCostumeErrantry",
-        "sideIconName": "UI_AvatarIcon_Side_MomokaCostumeErrantry",
-        "imageName": "UI_Costume_MomokaCostumeErrantry"
+        "key": "MomokaCostumeErrantry"
       }
     ],
     "allCosts": {
@@ -3547,14 +3397,12 @@
     "wikiId": 3719
   },
   {
+    "key": "Aloy",
     "id": 10000062,
-    "iconName": "UI_AvatarIcon_Aloy",
-    "sideIconName": "UI_AvatarIcon_Side_Aloy",
     "qualityType": "QUALITY_ORANGE_SP",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 6201,
     "nameTextMapHash": 3689108098,
-    "imageName": "UI_Gacha_AvatarImg_Aloy",
+    "skillDepotId": 6201,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Aloy_Lock",
@@ -3605,14 +3453,12 @@
     "wikiId": 13
   },
   {
+    "key": "Shenhe",
     "id": 10000063,
-    "iconName": "UI_AvatarIcon_Shenhe",
-    "sideIconName": "UI_AvatarIcon_Side_Shenhe",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 6301,
     "nameTextMapHash": 334242634,
-    "imageName": "UI_Gacha_AvatarImg_Shenhe",
+    "skillDepotId": 6301,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Shenhe_02",
@@ -3641,9 +3487,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_ShenheCostumeDai",
-        "sideIconName": "UI_AvatarIcon_Side_ShenheCostumeDai",
-        "imageName": "UI_Costume_ShenheCostumeDai"
+        "key": "ShenheCostumeDai"
       }
     ],
     "allCosts": {
@@ -3669,14 +3513,12 @@
     "wikiId": 29
   },
   {
+    "key": "Yunjin",
     "id": 10000064,
-    "iconName": "UI_AvatarIcon_Yunjin",
-    "sideIconName": "UI_AvatarIcon_Side_Yunjin",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 6401,
     "nameTextMapHash": 655825874,
-    "imageName": "UI_Gacha_AvatarImg_Yunjin",
+    "skillDepotId": 6401,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Yunjin_01",
@@ -3727,14 +3569,12 @@
     "wikiId": 4
   },
   {
+    "key": "Shinobu",
     "id": 10000065,
-    "iconName": "UI_AvatarIcon_Shinobu",
-    "sideIconName": "UI_AvatarIcon_Side_Shinobu",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 6501,
     "nameTextMapHash": 1940821986,
-    "imageName": "UI_Gacha_AvatarImg_Shinobu",
+    "skillDepotId": 6501,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Shinobu_01",
@@ -3785,14 +3625,12 @@
     "wikiId": 2256
   },
   {
+    "key": "Ayato",
     "id": 10000066,
-    "iconName": "UI_AvatarIcon_Ayato",
-    "sideIconName": "UI_AvatarIcon_Side_Ayato",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 6601,
     "nameTextMapHash": 1588620330,
-    "imageName": "UI_Gacha_AvatarImg_Ayato",
+    "skillDepotId": 6601,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Ayato_01",
@@ -3843,14 +3681,12 @@
     "wikiId": 31
   },
   {
+    "key": "Collei",
     "id": 10000067,
-    "iconName": "UI_AvatarIcon_Collei",
-    "sideIconName": "UI_AvatarIcon_Side_Collei",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 6701,
     "nameTextMapHash": 2948362178,
-    "imageName": "UI_Gacha_AvatarImg_Collei",
+    "skillDepotId": 6701,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Collei_01",
@@ -3901,14 +3737,12 @@
     "wikiId": 2268
   },
   {
+    "key": "Dori",
     "id": 10000068,
-    "iconName": "UI_AvatarIcon_Dori",
-    "sideIconName": "UI_AvatarIcon_Side_Dori",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 6801,
     "nameTextMapHash": 388272194,
-    "imageName": "UI_Gacha_AvatarImg_Dori",
+    "skillDepotId": 6801,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Dori_01",
@@ -3959,14 +3793,12 @@
     "wikiId": 2269
   },
   {
+    "key": "Tighnari",
     "id": 10000069,
-    "iconName": "UI_AvatarIcon_Tighnari",
-    "sideIconName": "UI_AvatarIcon_Side_Tighnari",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 6901,
     "nameTextMapHash": 2506955778,
-    "imageName": "UI_Gacha_AvatarImg_Tighnari",
+    "skillDepotId": 6901,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Tighnari_01",
@@ -4017,14 +3849,12 @@
     "wikiId": 2265
   },
   {
+    "key": "Nilou",
     "id": 10000070,
-    "iconName": "UI_AvatarIcon_Nilou",
-    "sideIconName": "UI_AvatarIcon_Side_Nilou",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 7001,
     "nameTextMapHash": 3850149970,
-    "imageName": "UI_Gacha_AvatarImg_Nilou",
+    "skillDepotId": 7001,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Nilou_01",
@@ -4053,9 +3883,7 @@
     ],
     "costumes": [
       {
-        "iconName": "UI_AvatarIcon_NilouCostumeFairy",
-        "sideIconName": "UI_AvatarIcon_Side_NilouCostumeFairy",
-        "imageName": "UI_Costume_NilouCostumeFairy"
+        "key": "NilouCostumeFairy"
       }
     ],
     "allCosts": {
@@ -4081,14 +3909,12 @@
     "wikiId": 2812
   },
   {
+    "key": "Cyno",
     "id": 10000071,
-    "iconName": "UI_AvatarIcon_Cyno",
-    "sideIconName": "UI_AvatarIcon_Side_Cyno",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 7101,
     "nameTextMapHash": 1049891906,
-    "imageName": "UI_Gacha_AvatarImg_Cyno",
+    "skillDepotId": 7101,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Cyno_01",
@@ -4139,14 +3965,12 @@
     "wikiId": 2813
   },
   {
+    "key": "Candace",
     "id": 10000072,
-    "iconName": "UI_AvatarIcon_Candace",
-    "sideIconName": "UI_AvatarIcon_Side_Candace",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 7201,
     "nameTextMapHash": 3092975658,
-    "imageName": "UI_Gacha_AvatarImg_Candace",
+    "skillDepotId": 7201,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Candace_01",
@@ -4197,14 +4021,12 @@
     "wikiId": 2815
   },
   {
+    "key": "Nahida",
     "id": 10000073,
-    "iconName": "UI_AvatarIcon_Nahida",
-    "sideIconName": "UI_AvatarIcon_Side_Nahida",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 7301,
     "nameTextMapHash": 712501082,
-    "imageName": "UI_Gacha_AvatarImg_Nahida",
+    "skillDepotId": 7301,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Nahida_01",
@@ -4255,14 +4077,12 @@
     "wikiId": 2850
   },
   {
+    "key": "Layla",
     "id": 10000074,
-    "iconName": "UI_AvatarIcon_Layla",
-    "sideIconName": "UI_AvatarIcon_Side_Layla",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 7401,
     "nameTextMapHash": 2889777514,
-    "imageName": "UI_Gacha_AvatarImg_Layla",
+    "skillDepotId": 7401,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Layla_01",
@@ -4313,14 +4133,12 @@
     "wikiId": 2859
   },
   {
+    "key": "Wanderer",
     "id": 10000075,
-    "iconName": "UI_AvatarIcon_Wanderer",
-    "sideIconName": "UI_AvatarIcon_Side_Wanderer",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 7501,
     "nameTextMapHash": 3230559562,
-    "imageName": "UI_Gacha_AvatarImg_Wanderer",
+    "skillDepotId": 7501,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Wanderer_01",
@@ -4371,14 +4189,12 @@
     "wikiId": 2968
   },
   {
+    "key": "Faruzan",
     "id": 10000076,
-    "iconName": "UI_AvatarIcon_Faruzan",
-    "sideIconName": "UI_AvatarIcon_Side_Faruzan",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 7601,
     "nameTextMapHash": 2387711994,
-    "imageName": "UI_Gacha_AvatarImg_Faruzan",
+    "skillDepotId": 7601,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Faruzan_01",
@@ -4429,14 +4245,12 @@
     "wikiId": 2967
   },
   {
+    "key": "Yaoyao",
     "id": 10000077,
-    "iconName": "UI_AvatarIcon_Yaoyao",
-    "sideIconName": "UI_AvatarIcon_Side_Yaoyao",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 7701,
     "nameTextMapHash": 1732418482,
-    "imageName": "UI_Gacha_AvatarImg_Yaoyao",
+    "skillDepotId": 7701,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Yaoyao_01",
@@ -4487,14 +4301,12 @@
     "wikiId": 3335
   },
   {
+    "key": "Alhatham",
     "id": 10000078,
-    "iconName": "UI_AvatarIcon_Alhatham",
-    "sideIconName": "UI_AvatarIcon_Side_Alhatham",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 7801,
     "nameTextMapHash": 4002157418,
-    "imageName": "UI_Gacha_AvatarImg_Alhatham",
+    "skillDepotId": 7801,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Alhatham_02",
@@ -4545,14 +4357,12 @@
     "wikiId": 3336
   },
   {
+    "key": "Dehya",
     "id": 10000079,
-    "iconName": "UI_AvatarIcon_Dehya",
-    "sideIconName": "UI_AvatarIcon_Side_Dehya",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 7901,
     "nameTextMapHash": 2360533154,
-    "imageName": "UI_Gacha_AvatarImg_Dehya",
+    "skillDepotId": 7901,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Dehya_01",
@@ -4603,14 +4413,12 @@
     "wikiId": 3463
   },
   {
+    "key": "Mika",
     "id": 10000080,
-    "iconName": "UI_AvatarIcon_Mika",
-    "sideIconName": "UI_AvatarIcon_Side_Mika",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 8001,
     "nameTextMapHash": 231911858,
-    "imageName": "UI_Gacha_AvatarImg_Mika",
+    "skillDepotId": 8001,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Mika_01",
@@ -4661,14 +4469,12 @@
     "wikiId": 3462
   },
   {
+    "key": "Kaveh",
     "id": 10000081,
-    "iconName": "UI_AvatarIcon_Kaveh",
-    "sideIconName": "UI_AvatarIcon_Side_Kaveh",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 8101,
     "nameTextMapHash": 466355514,
-    "imageName": "UI_Gacha_AvatarImg_Kaveh",
+    "skillDepotId": 8101,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Kaveh_01",
@@ -4719,14 +4525,12 @@
     "wikiId": 3608
   },
   {
+    "key": "Baizhuer",
     "id": 10000082,
-    "iconName": "UI_AvatarIcon_Baizhuer",
-    "sideIconName": "UI_AvatarIcon_Side_Baizhuer",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 8201,
     "nameTextMapHash": 2984815066,
-    "imageName": "UI_Gacha_AvatarImg_Baizhuer",
+    "skillDepotId": 8201,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Baizhuer_01",
@@ -4777,14 +4581,12 @@
     "wikiId": 3609
   },
   {
+    "key": "Linette",
     "id": 10000083,
-    "iconName": "UI_AvatarIcon_Linette",
-    "sideIconName": "UI_AvatarIcon_Side_Linette",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 8301,
     "nameTextMapHash": 1225226258,
-    "imageName": "UI_Gacha_AvatarImg_Linette",
+    "skillDepotId": 8301,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Linette_01",
@@ -4835,14 +4637,12 @@
     "wikiId": 3962
   },
   {
+    "key": "Liney",
     "id": 10000084,
-    "iconName": "UI_AvatarIcon_Liney",
-    "sideIconName": "UI_AvatarIcon_Side_Liney",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 8401,
     "nameTextMapHash": 2472444970,
-    "imageName": "UI_Gacha_AvatarImg_Liney",
+    "skillDepotId": 8401,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Liney_01",
@@ -4893,14 +4693,12 @@
     "wikiId": 3963
   },
   {
+    "key": "Freminet",
     "id": 10000085,
-    "iconName": "UI_AvatarIcon_Freminet",
-    "sideIconName": "UI_AvatarIcon_Side_Freminet",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 8501,
     "nameTextMapHash": 4201964354,
-    "imageName": "UI_Gacha_AvatarImg_Freminet",
+    "skillDepotId": 8501,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Freminet_01",
@@ -4951,14 +4749,12 @@
     "wikiId": 3964
   },
   {
+    "key": "Wriothesley",
     "id": 10000086,
-    "iconName": "UI_AvatarIcon_Wriothesley",
-    "sideIconName": "UI_AvatarIcon_Side_Wriothesley",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 8601,
     "nameTextMapHash": 370151050,
-    "imageName": "UI_Gacha_AvatarImg_Wriothesley",
+    "skillDepotId": 8601,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Wriothesley_01",
@@ -5009,14 +4805,12 @@
     "wikiId": 4022
   },
   {
+    "key": "Neuvillette",
     "id": 10000087,
-    "iconName": "UI_AvatarIcon_Neuvillette",
-    "sideIconName": "UI_AvatarIcon_Side_Neuvillette",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 8701,
     "nameTextMapHash": 1504902330,
-    "imageName": "UI_Gacha_AvatarImg_Neuvillette",
+    "skillDepotId": 8701,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Neuvillette_01",
@@ -5067,14 +4861,12 @@
     "wikiId": 4023
   },
   {
+    "key": "Charlotte",
     "id": 10000088,
-    "iconName": "UI_AvatarIcon_Charlotte",
-    "sideIconName": "UI_AvatarIcon_Side_Charlotte",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 8801,
     "nameTextMapHash": 3831162130,
-    "imageName": "UI_Gacha_AvatarImg_Charlotte",
+    "skillDepotId": 8801,
     "element": "Ice",
     "consts": [
       "UI_Talent_S_Charlotte_01",
@@ -5125,14 +4917,12 @@
     "wikiId": 4377
   },
   {
+    "key": "Furina",
     "id": 10000089,
-    "iconName": "UI_AvatarIcon_Furina",
-    "sideIconName": "UI_AvatarIcon_Side_Furina",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 8901,
     "nameTextMapHash": 2180900234,
-    "imageName": "UI_Gacha_AvatarImg_Furina",
+    "skillDepotId": 8901,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Furina_01",
@@ -5183,14 +4973,12 @@
     "wikiId": 4376
   },
   {
+    "key": "Chevreuse",
     "id": 10000090,
-    "iconName": "UI_AvatarIcon_Chevreuse",
-    "sideIconName": "UI_AvatarIcon_Side_Chevreuse",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 9001,
     "nameTextMapHash": 540313842,
-    "imageName": "UI_Gacha_AvatarImg_Chevreuse",
+    "skillDepotId": 9001,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Chevreuse_01",
@@ -5241,14 +5029,12 @@
     "wikiId": 4577
   },
   {
+    "key": "Navia",
     "id": 10000091,
-    "iconName": "UI_AvatarIcon_Navia",
-    "sideIconName": "UI_AvatarIcon_Side_Navia",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 9101,
     "nameTextMapHash": 2877588578,
-    "imageName": "UI_Gacha_AvatarImg_Navia",
+    "skillDepotId": 9101,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Navia_01",
@@ -5299,14 +5085,12 @@
     "wikiId": 4576
   },
   {
+    "key": "Gaming",
     "id": 10000092,
-    "iconName": "UI_AvatarIcon_Gaming",
-    "sideIconName": "UI_AvatarIcon_Side_Gaming",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "skillDepotId": 9201,
     "nameTextMapHash": 2822240322,
-    "imageName": "UI_Gacha_AvatarImg_Gaming",
+    "skillDepotId": 9201,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Gaming_01",
@@ -5357,14 +5141,12 @@
     "wikiId": 4775
   },
   {
+    "key": "Liuyun",
     "id": 10000093,
-    "iconName": "UI_AvatarIcon_Liuyun",
-    "sideIconName": "UI_AvatarIcon_Side_Liuyun",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "skillDepotId": 9301,
     "nameTextMapHash": 3648220770,
-    "imageName": "UI_Gacha_AvatarImg_Liuyun",
+    "skillDepotId": 9301,
     "element": "Wind",
     "consts": [
       "UI_Talent_S_Liuyun_01",
@@ -5415,14 +5197,12 @@
     "wikiId": 4774
   },
   {
+    "key": "Chiori",
     "id": 10000094,
-    "iconName": "UI_AvatarIcon_Chiori",
-    "sideIconName": "UI_AvatarIcon_Side_Chiori",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 9401,
     "nameTextMapHash": 1944606922,
-    "imageName": "UI_Gacha_AvatarImg_Chiori",
+    "skillDepotId": 9401,
     "element": "Rock",
     "consts": [
       "UI_Talent_S_Chiori_01",
@@ -5473,14 +5253,12 @@
     "wikiId": 4946
   },
   {
+    "key": "Sigewinne",
     "id": 10000095,
-    "iconName": "UI_AvatarIcon_Sigewinne",
-    "sideIconName": "UI_AvatarIcon_Side_Sigewinne",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 9501,
     "nameTextMapHash": 781488962,
-    "imageName": "UI_Gacha_AvatarImg_Sigewinne",
+    "skillDepotId": 9501,
     "element": "Water",
     "consts": [
       "UI_Talent_S_Sigewinne_01",
@@ -5531,14 +5309,12 @@
     "wikiId": 5597
   },
   {
+    "key": "Arlecchino",
     "id": 10000096,
-    "iconName": "UI_AvatarIcon_Arlecchino",
-    "sideIconName": "UI_AvatarIcon_Side_Arlecchino",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 9601,
     "nameTextMapHash": 167199474,
-    "imageName": "UI_Gacha_AvatarImg_Arlecchino",
+    "skillDepotId": 9601,
     "element": "Fire",
     "consts": [
       "UI_Talent_S_Arlecchino_01",
@@ -5589,14 +5365,12 @@
     "wikiId": 5149
   },
   {
+    "key": "Sethos",
     "id": 10000097,
-    "iconName": "UI_AvatarIcon_Sethos",
-    "sideIconName": "UI_AvatarIcon_Side_Sethos",
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "skillDepotId": 9701,
     "nameTextMapHash": 1431322346,
-    "imageName": "UI_Gacha_AvatarImg_Sethos",
+    "skillDepotId": 9701,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Sethos_01",
@@ -5647,14 +5421,12 @@
     "wikiId": 5598
   },
   {
+    "key": "Clorinde",
     "id": 10000098,
-    "iconName": "UI_AvatarIcon_Clorinde",
-    "sideIconName": "UI_AvatarIcon_Side_Clorinde",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "skillDepotId": 9801,
     "nameTextMapHash": 2745369298,
-    "imageName": "UI_Gacha_AvatarImg_Clorinde",
+    "skillDepotId": 9801,
     "element": "Electric",
     "consts": [
       "UI_Talent_S_Clorinde_01",
@@ -5705,14 +5477,12 @@
     "wikiId": 5596
   },
   {
+    "key": "Emilie",
     "id": 10000099,
-    "iconName": "UI_AvatarIcon_Emilie",
-    "sideIconName": "UI_AvatarIcon_Side_Emilie",
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "skillDepotId": 9901,
     "nameTextMapHash": 1705786122,
-    "imageName": "UI_Gacha_AvatarImg_Emilie",
+    "skillDepotId": 9901,
     "element": "Grass",
     "consts": [
       "UI_Talent_S_Emilie_01",

@@ -17,16 +17,30 @@ import AvatarSkill from '../../../../src/game/.data/AvatarSkillExcelConfigData.j
 import AvatarTalent from '../../../../src/game/.data/AvatarTalentExcelConfigData.json' assert { type: 'json' }
 import ProudSkill from '../../../../src/game/.data/ProudSkillExcelConfigData.json' assert { type: 'json' }
 
+// weapon
+import Weapon from '../../../../src/game/.data/WeaponExcelConfigData.json' assert { type: 'json' }
+
 // material
 import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
 
 // wiki-id
 import WikiId from '../../../../src/game/.wiki/id.json' assert { type: 'json' }
 
-const E = { Avatar, AvatarSkillDepot, AvatarSkill, AvatarTalent, AvatarCostume, AvatarPromote, Material, ProudSkill }
+const E = {
+  Avatar,
+  AvatarSkillDepot,
+  AvatarSkill,
+  AvatarTalent,
+  AvatarCostume,
+  AvatarPromote,
+  Weapon,
+  Material,
+  ProudSkill,
+}
 
 export const dataShrink = () => {
   dumpAvatar()
+  dumpWeapon()
   dumpMaterial()
   dumpTextMap()
 }
@@ -37,12 +51,12 @@ const dumpAvatar = () => {
   const blockIds = [10000001, 11000008, 11000009, 11000010, 11000011, 11000013, 11000017, 11000018, 11000019, 11000025, 11000026, 11000027, 11000028, 11000030, 11000031, 11000032, 11000033, 11000034, 11000035, 11000036, 11000037, 11000038, 11000039, 11000040, 11000041, 11000042, 11000043, 11000044, 11000045]
   for (const avatar of E.Avatar.filter(e => !blockIds.includes(e.id))) {
     const aInfo = {}
+    aInfo.key = avatar.iconName.split('_').slice(-1)[0]
     // biome-ignore format: index
-    const avatarCopyIndex = ["id", "iconName", "sideIconName", "qualityType", "weaponType", "skillDepotId", "nameTextMapHash"]
+    const avatarCopyIndex = ["id", "qualityType", "weaponType", "nameTextMapHash", "skillDepotId"]
     for (const index of avatarCopyIndex) {
       aInfo[index] = avatar[index]
     }
-    aInfo.imageName = `UI_Gacha_AvatarImg_${aInfo.iconName.split('_').slice(-1)[0]}`
     if (aInfo.id === 10000005 || aInfo.id === 10000007) {
       for (const depot of E.AvatarSkillDepot.filter(e => avatar.candSkillDepotIds.includes(e.id))) {
         const aInfo57 = { ...aInfo }
@@ -60,14 +74,9 @@ const dumpAvatar = () => {
       aInfo.element = avatarElement(depot)
       aInfo.consts = avatarConsts(depot)
       aInfo.skills = avatarSkills(depot)
-      aInfo.costumes = E.AvatarCostume.filter(e => e.characterId === aInfo.id && e.sideIconName !== '').map(costume => {
-        const c = {
-          iconName: costume.frontIconName,
-          sideIconName: costume.sideIconName,
-        }
-        c.imageName = `UI_Costume_${c.iconName.split('_').slice(-1)[0]}`
-        return c
-      })
+      aInfo.costumes = E.AvatarCostume.filter(e => e.characterId === aInfo.id && e.sideIconName !== '').map(
+        costume => ({ key: costume.frontIconName.split('_').slice(-1)[0] }),
+      )
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
       aInfo.wikiId = avatarWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
@@ -131,6 +140,20 @@ const elementText = {
   Water: 'Hydro',
   Fire: 'Pyro',
   Ice: 'Cryo',
+}
+
+const dumpWeapon = () => {
+  const w = []
+  for (const weapon of E.Weapon) {
+    const wInfo = {}
+    // biome-ignore format: index
+    const weaponCopyIndex = ["id", "icon", "rankLevel", "nameTextMapHash", "weaponType"]
+    for (const index of weaponCopyIndex) {
+      wInfo[index] = weapon[index]
+    }
+    w.push(wInfo)
+  }
+  dumpFile('weapon', w)
 }
 
 const dumpMaterial = () => {

@@ -1,0 +1,1521 @@
+[
+  {
+    "id": 11101,
+    "icon": "UI_EquipIcon_Sword_Blunt",
+    "rankLevel": 1,
+    "nameTextMapHash": 2410593283,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11201,
+    "icon": "UI_EquipIcon_Sword_Silver",
+    "rankLevel": 2,
+    "nameTextMapHash": 2125206395,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11301,
+    "icon": "UI_EquipIcon_Sword_Steel",
+    "rankLevel": 3,
+    "nameTextMapHash": 479076483,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11302,
+    "icon": "UI_EquipIcon_Sword_Dawn",
+    "rankLevel": 3,
+    "nameTextMapHash": 1608953539,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11303,
+    "icon": "UI_EquipIcon_Sword_Traveler",
+    "rankLevel": 3,
+    "nameTextMapHash": 3673792067,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11304,
+    "icon": "UI_EquipIcon_Sword_Darker",
+    "rankLevel": 3,
+    "nameTextMapHash": 160493219,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11305,
+    "icon": "UI_EquipIcon_Sword_Sashimi",
+    "rankLevel": 3,
+    "nameTextMapHash": 3421967235,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11306,
+    "icon": "UI_EquipIcon_Sword_Mitsurugi",
+    "rankLevel": 3,
+    "nameTextMapHash": 1388004931,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11401,
+    "icon": "UI_EquipIcon_Sword_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 2474354867,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11402,
+    "icon": "UI_EquipIcon_Sword_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 3587621259,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11403,
+    "icon": "UI_EquipIcon_Sword_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 1990641987,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11404,
+    "icon": "UI_EquipIcon_Sword_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2375993851,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11405,
+    "icon": "UI_EquipIcon_Sword_Rockkiller",
+    "rankLevel": 4,
+    "nameTextMapHash": 1321135667,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11406,
+    "icon": "UI_EquipIcon_Sword_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 1991707099,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11407,
+    "icon": "UI_EquipIcon_Sword_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 4103022435,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11408,
+    "icon": "UI_EquipIcon_Sword_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3378007475,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11409,
+    "icon": "UI_EquipIcon_Sword_Bloodstained",
+    "rankLevel": 4,
+    "nameTextMapHash": 3796905611,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11410,
+    "icon": "UI_EquipIcon_Sword_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 2947140987,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11411,
+    "icon": "UI_EquipIcon_Sword_Blunt",
+    "rankLevel": 4,
+    "nameTextMapHash": 1135130229,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11412,
+    "icon": "UI_EquipIcon_Sword_Psalmus",
+    "rankLevel": 4,
+    "nameTextMapHash": 1773425155,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11413,
+    "icon": "UI_EquipIcon_Sword_Magnum",
+    "rankLevel": 4,
+    "nameTextMapHash": 2749853923,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11414,
+    "icon": "UI_EquipIcon_Sword_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 1990820123,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11415,
+    "icon": "UI_EquipIcon_Sword_Opus",
+    "rankLevel": 4,
+    "nameTextMapHash": 342097547,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11416,
+    "icon": "UI_EquipIcon_Sword_Youtou",
+    "rankLevel": 4,
+    "nameTextMapHash": 1012170803,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11417,
+    "icon": "UI_EquipIcon_Sword_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 313300315,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11418,
+    "icon": "UI_EquipIcon_Sword_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 143051931,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11419,
+    "icon": "UI_EquipIcon_Sword_YoutouEnchanted",
+    "rankLevel": 4,
+    "nameTextMapHash": 1499745907,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11420,
+    "icon": "UI_EquipIcon_Sword_YoutouShattered",
+    "rankLevel": 4,
+    "nameTextMapHash": 1538092267,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11421,
+    "icon": "UI_EquipIcon_Sword_YoutouEnchanted",
+    "rankLevel": 4,
+    "nameTextMapHash": 3464027035,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11422,
+    "icon": "UI_EquipIcon_Sword_Kasabouzu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2448629019,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11424,
+    "icon": "UI_EquipIcon_Sword_Boreas",
+    "rankLevel": 4,
+    "nameTextMapHash": 2265792579,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11425,
+    "icon": "UI_EquipIcon_Sword_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 800766043,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11426,
+    "icon": "UI_EquipIcon_Sword_Machination",
+    "rankLevel": 4,
+    "nameTextMapHash": 1921306659,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11427,
+    "icon": "UI_EquipIcon_Sword_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1790067483,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11428,
+    "icon": "UI_EquipIcon_Sword_Purewill",
+    "rankLevel": 4,
+    "nameTextMapHash": 3016493955,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11429,
+    "icon": "UI_EquipIcon_Sword_Purewill",
+    "rankLevel": 4,
+    "nameTextMapHash": 594850707,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11501,
+    "icon": "UI_EquipIcon_Sword_Falcon",
+    "rankLevel": 5,
+    "nameTextMapHash": 902264035,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11502,
+    "icon": "UI_EquipIcon_Sword_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 4055003299,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11503,
+    "icon": "UI_EquipIcon_Sword_Widsith",
+    "rankLevel": 5,
+    "nameTextMapHash": 2949448555,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11504,
+    "icon": "UI_EquipIcon_Sword_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 944332883,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11505,
+    "icon": "UI_EquipIcon_Sword_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 1345343763,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11506,
+    "icon": "UI_EquipIcon_Sword_Blunt",
+    "rankLevel": 5,
+    "nameTextMapHash": 231836963,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11507,
+    "icon": "UI_EquipIcon_Sword_Blunt",
+    "rankLevel": 5,
+    "nameTextMapHash": 3780343147,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11508,
+    "icon": "UI_EquipIcon_Sword_Blunt",
+    "rankLevel": 5,
+    "nameTextMapHash": 1664039091,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11509,
+    "icon": "UI_EquipIcon_Sword_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 4124851547,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11510,
+    "icon": "UI_EquipIcon_Sword_Amenoma",
+    "rankLevel": 5,
+    "nameTextMapHash": 1600275315,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11511,
+    "icon": "UI_EquipIcon_Sword_Deshret",
+    "rankLevel": 5,
+    "nameTextMapHash": 454086795,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11512,
+    "icon": "UI_EquipIcon_Sword_Ayus",
+    "rankLevel": 5,
+    "nameTextMapHash": 275622963,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11513,
+    "icon": "UI_EquipIcon_Sword_Regalis",
+    "rankLevel": 5,
+    "nameTextMapHash": 1473399443,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11514,
+    "icon": "UI_EquipIcon_Sword_Needle",
+    "rankLevel": 5,
+    "nameTextMapHash": 1818340435,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 11515,
+    "icon": "UI_EquipIcon_Sword_Estoc",
+    "rankLevel": 5,
+    "nameTextMapHash": 1009471939,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 12101,
+    "icon": "UI_EquipIcon_Claymore_Aniki",
+    "rankLevel": 1,
+    "nameTextMapHash": 2666951267,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12201,
+    "icon": "UI_EquipIcon_Claymore_Oyaji",
+    "rankLevel": 2,
+    "nameTextMapHash": 1182966603,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12301,
+    "icon": "UI_EquipIcon_Claymore_Glaive",
+    "rankLevel": 3,
+    "nameTextMapHash": 1479961579,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12302,
+    "icon": "UI_EquipIcon_Claymore_Siegfry",
+    "rankLevel": 3,
+    "nameTextMapHash": 4090429643,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12303,
+    "icon": "UI_EquipIcon_Claymore_Tin",
+    "rankLevel": 3,
+    "nameTextMapHash": 850802171,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12304,
+    "icon": "UI_EquipIcon_Claymore_Quartz",
+    "rankLevel": 3,
+    "nameTextMapHash": 1516554699,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12305,
+    "icon": "UI_EquipIcon_Claymore_Reasoning",
+    "rankLevel": 3,
+    "nameTextMapHash": 3097441915,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12306,
+    "icon": "UI_EquipIcon_Claymore_Mitsurugi",
+    "rankLevel": 3,
+    "nameTextMapHash": 2614170427,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12401,
+    "icon": "UI_EquipIcon_Claymore_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 735056795,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12402,
+    "icon": "UI_EquipIcon_Claymore_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 930640955,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12403,
+    "icon": "UI_EquipIcon_Claymore_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 1675686363,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12404,
+    "icon": "UI_EquipIcon_Claymore_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 877751435,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12405,
+    "icon": "UI_EquipIcon_Claymore_Perdue",
+    "rankLevel": 4,
+    "nameTextMapHash": 3684723963,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12406,
+    "icon": "UI_EquipIcon_Claymore_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 3722933411,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12407,
+    "icon": "UI_EquipIcon_Claymore_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 680510411,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12408,
+    "icon": "UI_EquipIcon_Claymore_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 20848859,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12409,
+    "icon": "UI_EquipIcon_Claymore_Kione",
+    "rankLevel": 4,
+    "nameTextMapHash": 1437658243,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12410,
+    "icon": "UI_EquipIcon_Claymore_Lapis",
+    "rankLevel": 4,
+    "nameTextMapHash": 2006422931,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12411,
+    "icon": "UI_EquipIcon_Claymore_Dragonfell",
+    "rankLevel": 4,
+    "nameTextMapHash": 2753539619,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12412,
+    "icon": "UI_EquipIcon_Claymore_MillenniaTuna",
+    "rankLevel": 4,
+    "nameTextMapHash": 346510395,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12414,
+    "icon": "UI_EquipIcon_Claymore_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 4193089947,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12415,
+    "icon": "UI_EquipIcon_Claymore_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 3073454867,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12416,
+    "icon": "UI_EquipIcon_Claymore_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 2359799475,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12417,
+    "icon": "UI_EquipIcon_Claymore_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 902184579,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12418,
+    "icon": "UI_EquipIcon_Claymore_Fleurfair",
+    "rankLevel": 4,
+    "nameTextMapHash": 1200948859,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12424,
+    "icon": "UI_EquipIcon_Claymore_BeastTamer",
+    "rankLevel": 4,
+    "nameTextMapHash": 3459616011,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12425,
+    "icon": "UI_EquipIcon_Claymore_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2077869763,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12426,
+    "icon": "UI_EquipIcon_Claymore_Champion",
+    "rankLevel": 4,
+    "nameTextMapHash": 933442195,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12427,
+    "icon": "UI_EquipIcon_Claymore_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 3693117451,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12501,
+    "icon": "UI_EquipIcon_Claymore_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 1089950259,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12502,
+    "icon": "UI_EquipIcon_Claymore_Wolfmound",
+    "rankLevel": 5,
+    "nameTextMapHash": 3995710363,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12503,
+    "icon": "UI_EquipIcon_Claymore_Widsith",
+    "rankLevel": 5,
+    "nameTextMapHash": 1075647299,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12504,
+    "icon": "UI_EquipIcon_Claymore_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 2792766467,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12505,
+    "icon": "UI_EquipIcon_Claymore_Aniki",
+    "rankLevel": 5,
+    "nameTextMapHash": 977648923,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12506,
+    "icon": "UI_EquipIcon_Claymore_Aniki",
+    "rankLevel": 5,
+    "nameTextMapHash": 2597527627,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12508,
+    "icon": "UI_EquipIcon_Claymore_Aniki",
+    "rankLevel": 5,
+    "nameTextMapHash": 759708203,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12509,
+    "icon": "UI_EquipIcon_Claymore_Aniki",
+    "rankLevel": 5,
+    "nameTextMapHash": 2507837467,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12510,
+    "icon": "UI_EquipIcon_Claymore_Itadorimaru",
+    "rankLevel": 5,
+    "nameTextMapHash": 3914951691,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12511,
+    "icon": "UI_EquipIcon_Claymore_Deshret",
+    "rankLevel": 5,
+    "nameTextMapHash": 2834063555,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 12512,
+    "icon": "UI_EquipIcon_Claymore_GoldenVerdict",
+    "rankLevel": 5,
+    "nameTextMapHash": 3812523339,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 13101,
+    "icon": "UI_EquipIcon_Pole_Gewalt",
+    "rankLevel": 1,
+    "nameTextMapHash": 2796697027,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13201,
+    "icon": "UI_EquipIcon_Pole_Rod",
+    "rankLevel": 2,
+    "nameTextMapHash": 3070169307,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13301,
+    "icon": "UI_EquipIcon_Pole_Ruby",
+    "rankLevel": 3,
+    "nameTextMapHash": 1390797107,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13302,
+    "icon": "UI_EquipIcon_Pole_Halberd",
+    "rankLevel": 3,
+    "nameTextMapHash": 618786571,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13303,
+    "icon": "UI_EquipIcon_Pole_Noire",
+    "rankLevel": 3,
+    "nameTextMapHash": 4103766499,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13304,
+    "icon": "UI_EquipIcon_Pole_Flagpole",
+    "rankLevel": 3,
+    "nameTextMapHash": 500612819,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13401,
+    "icon": "UI_EquipIcon_Pole_Stardust",
+    "rankLevel": 4,
+    "nameTextMapHash": 2664629131,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13402,
+    "icon": "UI_EquipIcon_Pole_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 1154009435,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13403,
+    "icon": "UI_EquipIcon_Pole_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 578575283,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13404,
+    "icon": "UI_EquipIcon_Pole_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 481755219,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13405,
+    "icon": "UI_EquipIcon_Pole_Gladiator",
+    "rankLevel": 4,
+    "nameTextMapHash": 4049410651,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13406,
+    "icon": "UI_EquipIcon_Pole_Lapis",
+    "rankLevel": 4,
+    "nameTextMapHash": 716252627,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13407,
+    "icon": "UI_EquipIcon_Pole_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 3755004051,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13408,
+    "icon": "UI_EquipIcon_Pole_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2935286715,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13409,
+    "icon": "UI_EquipIcon_Pole_Everfrost",
+    "rankLevel": 4,
+    "nameTextMapHash": 3443142923,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13414,
+    "icon": "UI_EquipIcon_Pole_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2491797315,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13415,
+    "icon": "UI_EquipIcon_Pole_Mori",
+    "rankLevel": 4,
+    "nameTextMapHash": 1148024603,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13416,
+    "icon": "UI_EquipIcon_Pole_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 4122509083,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13417,
+    "icon": "UI_EquipIcon_Pole_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 452357939,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13419,
+    "icon": "UI_EquipIcon_Pole_Windvane",
+    "rankLevel": 4,
+    "nameTextMapHash": 1470442731,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13424,
+    "icon": "UI_EquipIcon_Pole_Shanty",
+    "rankLevel": 4,
+    "nameTextMapHash": 449192923,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13425,
+    "icon": "UI_EquipIcon_Pole_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 4158971171,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13426,
+    "icon": "UI_EquipIcon_Pole_Caduceus",
+    "rankLevel": 4,
+    "nameTextMapHash": 2847771107,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13427,
+    "icon": "UI_EquipIcon_Pole_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 882305891,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13501,
+    "icon": "UI_EquipIcon_Pole_Homa",
+    "rankLevel": 5,
+    "nameTextMapHash": 3235324891,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13502,
+    "icon": "UI_EquipIcon_Pole_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 4158505619,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13503,
+    "icon": "UI_EquipIcon_Pole_Gewalt",
+    "rankLevel": 5,
+    "nameTextMapHash": 469555475,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13504,
+    "icon": "UI_EquipIcon_Pole_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 197755235,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13505,
+    "icon": "UI_EquipIcon_Pole_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 1997709467,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13506,
+    "icon": "UI_EquipIcon_Pole_Gewalt",
+    "rankLevel": 5,
+    "nameTextMapHash": 3532343811,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13507,
+    "icon": "UI_EquipIcon_Pole_Santika",
+    "rankLevel": 5,
+    "nameTextMapHash": 688991243,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13509,
+    "icon": "UI_EquipIcon_Pole_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 3717849275,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13511,
+    "icon": "UI_EquipIcon_Pole_Deshret",
+    "rankLevel": 5,
+    "nameTextMapHash": 4238339131,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13512,
+    "icon": "UI_EquipIcon_Pole_BloodMoon",
+    "rankLevel": 5,
+    "nameTextMapHash": 2944936683,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 13513,
+    "icon": "UI_EquipIcon_Pole_Muguet",
+    "rankLevel": 5,
+    "nameTextMapHash": 1948935171,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 14101,
+    "icon": "UI_EquipIcon_Catalyst_Apprentice",
+    "rankLevel": 1,
+    "nameTextMapHash": 3584825427,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14201,
+    "icon": "UI_EquipIcon_Catalyst_Pocket",
+    "rankLevel": 2,
+    "nameTextMapHash": 2705029563,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14301,
+    "icon": "UI_EquipIcon_Catalyst_Intro",
+    "rankLevel": 3,
+    "nameTextMapHash": 2279290283,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14302,
+    "icon": "UI_EquipIcon_Catalyst_Pulpfic",
+    "rankLevel": 3,
+    "nameTextMapHash": 3500935003,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14303,
+    "icon": "UI_EquipIcon_Catalyst_Lightnov",
+    "rankLevel": 3,
+    "nameTextMapHash": 1406746947,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14304,
+    "icon": "UI_EquipIcon_Catalyst_Jade",
+    "rankLevel": 3,
+    "nameTextMapHash": 2963220587,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14305,
+    "icon": "UI_EquipIcon_Catalyst_Phoney",
+    "rankLevel": 3,
+    "nameTextMapHash": 3719372715,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14306,
+    "icon": "UI_EquipIcon_Catalyst_Amber",
+    "rankLevel": 3,
+    "nameTextMapHash": 302691299,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14401,
+    "icon": "UI_EquipIcon_Catalyst_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 623534363,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14402,
+    "icon": "UI_EquipIcon_Catalyst_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 1163263227,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14403,
+    "icon": "UI_EquipIcon_Catalyst_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 2195665683,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14404,
+    "icon": "UI_EquipIcon_Catalyst_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 3827789435,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14405,
+    "icon": "UI_EquipIcon_Catalyst_Resurrection",
+    "rankLevel": 4,
+    "nameTextMapHash": 37147251,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14406,
+    "icon": "UI_EquipIcon_Catalyst_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 2521338131,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14407,
+    "icon": "UI_EquipIcon_Catalyst_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1072884907,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14408,
+    "icon": "UI_EquipIcon_Catalyst_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3273999011,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14409,
+    "icon": "UI_EquipIcon_Catalyst_Truelens",
+    "rankLevel": 4,
+    "nameTextMapHash": 3156385731,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14410,
+    "icon": "UI_EquipIcon_Catalyst_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 3090373787,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14411,
+    "icon": "UI_EquipIcon_Catalyst_Apprentice",
+    "rankLevel": 4,
+    "nameTextMapHash": 415851979,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14412,
+    "icon": "UI_EquipIcon_Catalyst_Everfrost",
+    "rankLevel": 4,
+    "nameTextMapHash": 2587614459,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14413,
+    "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
+    "rankLevel": 4,
+    "nameTextMapHash": 3456986819,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14414,
+    "icon": "UI_EquipIcon_Catalyst_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2324146259,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14415,
+    "icon": "UI_EquipIcon_Catalyst_Jyanome",
+    "rankLevel": 4,
+    "nameTextMapHash": 2539208459,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14416,
+    "icon": "UI_EquipIcon_Catalyst_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 426363739,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14417,
+    "icon": "UI_EquipIcon_Catalyst_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 2267978875,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14424,
+    "icon": "UI_EquipIcon_Catalyst_Yue",
+    "rankLevel": 4,
+    "nameTextMapHash": 2275710883,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14425,
+    "icon": "UI_EquipIcon_Catalyst_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2432865507,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14426,
+    "icon": "UI_EquipIcon_Catalyst_DandelionPoem",
+    "rankLevel": 4,
+    "nameTextMapHash": 2722902043,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14501,
+    "icon": "UI_EquipIcon_Catalyst_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 807607555,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14502,
+    "icon": "UI_EquipIcon_Catalyst_Fourwinds",
+    "rankLevel": 5,
+    "nameTextMapHash": 1455107995,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14503,
+    "icon": "UI_EquipIcon_Catalyst_Apprentice",
+    "rankLevel": 5,
+    "nameTextMapHash": 452043283,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14504,
+    "icon": "UI_EquipIcon_Catalyst_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 693354267,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14505,
+    "icon": "UI_EquipIcon_Catalyst_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 4007372867,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14506,
+    "icon": "UI_EquipIcon_Catalyst_Kaleido",
+    "rankLevel": 5,
+    "nameTextMapHash": 1890163363,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14508,
+    "icon": "UI_EquipIcon_Catalyst_Apprentice",
+    "rankLevel": 5,
+    "nameTextMapHash": 4123950051,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14509,
+    "icon": "UI_EquipIcon_Catalyst_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 310247243,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14511,
+    "icon": "UI_EquipIcon_Catalyst_Ayus",
+    "rankLevel": 5,
+    "nameTextMapHash": 1201790667,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14512,
+    "icon": "UI_EquipIcon_Catalyst_Alaya",
+    "rankLevel": 5,
+    "nameTextMapHash": 359484419,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14513,
+    "icon": "UI_EquipIcon_Catalyst_Wheatley",
+    "rankLevel": 5,
+    "nameTextMapHash": 724881171,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14514,
+    "icon": "UI_EquipIcon_Catalyst_Iudex",
+    "rankLevel": 5,
+    "nameTextMapHash": 4176923379,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 14515,
+    "icon": "UI_EquipIcon_Catalyst_MountainGale",
+    "rankLevel": 5,
+    "nameTextMapHash": 3660626387,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 15101,
+    "icon": "UI_EquipIcon_Bow_Hunters",
+    "rankLevel": 1,
+    "nameTextMapHash": 3600623979,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15201,
+    "icon": "UI_EquipIcon_Bow_Old",
+    "rankLevel": 2,
+    "nameTextMapHash": 2340970067,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15301,
+    "icon": "UI_EquipIcon_Bow_Crowfeather",
+    "rankLevel": 3,
+    "nameTextMapHash": 3975746731,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15302,
+    "icon": "UI_EquipIcon_Bow_Arjuna",
+    "rankLevel": 3,
+    "nameTextMapHash": 656120259,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15303,
+    "icon": "UI_EquipIcon_Bow_Curve",
+    "rankLevel": 3,
+    "nameTextMapHash": 4267718859,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15304,
+    "icon": "UI_EquipIcon_Bow_Sling",
+    "rankLevel": 3,
+    "nameTextMapHash": 1021898539,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15305,
+    "icon": "UI_EquipIcon_Bow_Msg",
+    "rankLevel": 3,
+    "nameTextMapHash": 4139294531,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15306,
+    "icon": "UI_EquipIcon_Bow_Hardwood",
+    "rankLevel": 3,
+    "nameTextMapHash": 2242027395,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15401,
+    "icon": "UI_EquipIcon_Bow_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 1240067179,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15402,
+    "icon": "UI_EquipIcon_Bow_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 2556914683,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15403,
+    "icon": "UI_EquipIcon_Bow_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 2400012995,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15404,
+    "icon": "UI_EquipIcon_Bow_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2832648187,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15405,
+    "icon": "UI_EquipIcon_Bow_Recluse",
+    "rankLevel": 4,
+    "nameTextMapHash": 3169209451,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15406,
+    "icon": "UI_EquipIcon_Bow_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 3625393819,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15407,
+    "icon": "UI_EquipIcon_Bow_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 411685275,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15408,
+    "icon": "UI_EquipIcon_Bow_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3447737235,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15409,
+    "icon": "UI_EquipIcon_Bow_Viridescent",
+    "rankLevel": 4,
+    "nameTextMapHash": 3439749859,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15410,
+    "icon": "UI_EquipIcon_Bow_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 2417717595,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15411,
+    "icon": "UI_EquipIcon_Bow_Fallensun",
+    "rankLevel": 4,
+    "nameTextMapHash": 2425414923,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15412,
+    "icon": "UI_EquipIcon_Bow_Nachtblind",
+    "rankLevel": 4,
+    "nameTextMapHash": 3949653579,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15413,
+    "icon": "UI_EquipIcon_Bow_Fleurfair",
+    "rankLevel": 4,
+    "nameTextMapHash": 650049651,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15414,
+    "icon": "UI_EquipIcon_Bow_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 4186179883,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15415,
+    "icon": "UI_EquipIcon_Bow_Predator",
+    "rankLevel": 4,
+    "nameTextMapHash": 540938627,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15416,
+    "icon": "UI_EquipIcon_Bow_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 1860795787,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15417,
+    "icon": "UI_EquipIcon_Bow_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 3176599083,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15418,
+    "icon": "UI_EquipIcon_Bow_Fin",
+    "rankLevel": 4,
+    "nameTextMapHash": 3063191787,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15419,
+    "icon": "UI_EquipIcon_Bow_Ibis",
+    "rankLevel": 4,
+    "nameTextMapHash": 316078811,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15424,
+    "icon": "UI_EquipIcon_Bow_Gurabad",
+    "rankLevel": 4,
+    "nameTextMapHash": 2958179435,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15425,
+    "icon": "UI_EquipIcon_Bow_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2600875323,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15426,
+    "icon": "UI_EquipIcon_Bow_Ultimatum",
+    "rankLevel": 4,
+    "nameTextMapHash": 4038676067,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15427,
+    "icon": "UI_EquipIcon_Bow_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1055195035,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15501,
+    "icon": "UI_EquipIcon_Bow_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 3933622347,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15502,
+    "icon": "UI_EquipIcon_Bow_Amos",
+    "rankLevel": 5,
+    "nameTextMapHash": 828711395,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15503,
+    "icon": "UI_EquipIcon_Bow_Widsith",
+    "rankLevel": 5,
+    "nameTextMapHash": 3112679155,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15504,
+    "icon": "UI_EquipIcon_Bow_Hunters",
+    "rankLevel": 5,
+    "nameTextMapHash": 565329475,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15505,
+    "icon": "UI_EquipIcon_Bow_Hunters",
+    "rankLevel": 5,
+    "nameTextMapHash": 1994081075,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15506,
+    "icon": "UI_EquipIcon_Bow_Hunters",
+    "rankLevel": 5,
+    "nameTextMapHash": 2824690859,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15507,
+    "icon": "UI_EquipIcon_Bow_Worldbane",
+    "rankLevel": 5,
+    "nameTextMapHash": 1901973075,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15508,
+    "icon": "UI_EquipIcon_Bow_Kirin",
+    "rankLevel": 5,
+    "nameTextMapHash": 4230231107,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15509,
+    "icon": "UI_EquipIcon_Bow_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 2918525947,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15511,
+    "icon": "UI_EquipIcon_Bow_Ayus",
+    "rankLevel": 5,
+    "nameTextMapHash": 1348687251,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15512,
+    "icon": "UI_EquipIcon_Bow_Pledge",
+    "rankLevel": 5,
+    "nameTextMapHash": 2988480723,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 15513,
+    "icon": "UI_EquipIcon_Bow_Arcdange",
+    "rankLevel": 5,
+    "nameTextMapHash": 1257396043,
+    "weaponType": "WEAPON_BOW"
+  },
+  {
+    "id": 20001,
+    "icon": "UI_EquipIcon_FishingRod",
+    "rankLevel": 5,
+    "nameTextMapHash": 4137694339,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 10002,
+    "icon": "UI_EquipIcon_Sword_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 2719832059,
+    "weaponType": "WEAPON_SWORD_ONE_HAND"
+  },
+  {
+    "id": 10003,
+    "icon": "UI_EquipIcon_Claymore_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 500987603,
+    "weaponType": "WEAPON_CLAYMORE"
+  },
+  {
+    "id": 10004,
+    "icon": "UI_EquipIcon_Pole_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 1595734083,
+    "weaponType": "WEAPON_POLE"
+  },
+  {
+    "id": 10005,
+    "icon": "UI_EquipIcon_Catalyst_BookTemplate",
+    "rankLevel": 1,
+    "nameTextMapHash": 2009975571,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 10006,
+    "icon": "UI_EquipIcon_Catalyst_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 4162981171,
+    "weaponType": "WEAPON_CATALYST"
+  },
+  {
+    "id": 10008,
+    "icon": "UI_EquipIcon_Bow_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 3762437019,
+    "weaponType": "WEAPON_BOW"
+  }
+]

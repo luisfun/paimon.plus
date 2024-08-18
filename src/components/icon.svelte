@@ -27,7 +27,7 @@ $: if (isLoading)
     case 'avatar': {
       const a = avatar.find(e => e.id === id)
       if (!a) break
-      src = `/images/ui/Min_${a.iconName}.webp`
+      src = `/images/ui/Min_UI_AvatarIcon_${a.key}.webp`
       alt = (textMap as TextMap).en[a.nameTextMapHash]
       rank = rankNum[a.qualityType] || 1
       break

@@ -18,12 +18,24 @@ export const uiDownload = async () => {
  * @param {string[]} uiFiles
  */
 const getUiImages = async uiFiles => {
-  const avatar = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8'))
-  const imageList = avatar.map(e => e.iconName)
-  const dlList = imageList.filter(e => !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
+  const avatars = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8'))
+  const imageList = []
+  for (const avatar of avatars) {
+    const key = avatar.key
+    imageList.push(`UI_AvatarIcon_${key}`)
+    //imageList.push(`UI_AvatarIcon_Side_${key}`)
+    //imageList.push(`UI_Gacha_AvatarImg_${key}`)
+    if (avatar.costumes)
+      for (const key of avatar.costumes.map(e => e.key)) {
+        //imageList.push(`UI_AvatarIcon_${key}`)
+        //imageList.push(`UI_AvatarIcon_Side_${key}`)
+        //imageList.push(`UI_Costume_${key}`)
+      }
+  }
+  const dlList = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
+  if (!dlList.length) return
   if (dlList.length > 100) dlList.length = 100
   for (const name of dlList) {
-    if (!name) continue
     const res = await fetch(ambrUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
     else console.log('NG', name)
@@ -36,11 +48,10 @@ const getUiImages = async uiFiles => {
  */
 const getMaterialImages = async uiFiles => {
   const imageList = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
-  const dlList = imageList.filter(e => !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
+  const dlList = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
   if (!dlList.length) return
   if (dlList.length > 100) dlList.length = 100
   for (const name of dlList) {
-    if (!name) continue
     const res = await fetch(ambrUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
     else console.log('NG', name)

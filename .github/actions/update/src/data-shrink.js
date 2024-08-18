@@ -68,7 +68,7 @@ const dumpAvatar = () => {
         aInfo57.consts = avatarConsts(depot)
         aInfo57.skills = avatarSkills(depot)
         aInfo57.allCosts = avatarAllCosts(avatar, aInfo57)
-        aInfo57.wikiId = avatarWikiId(`Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`)
+        aInfo57.wikiId = findWikiId(`Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`)
         a.push(aInfo57)
       }
     } else {
@@ -80,7 +80,7 @@ const dumpAvatar = () => {
         costume => ({ key: costume.frontIconName.split('_').slice(-1)[0] }),
       )
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
-      aInfo.wikiId = avatarWikiId(TextMap.en[aInfo.nameTextMapHash])
+      aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
     }
   }
@@ -123,14 +123,14 @@ const avatarAllCosts = (avatar, aInfo) => {
     for (const item of items) {
       if (!item.id) continue
       materialMap[item.id] ??= 0
-      materialMap[item.id] += item.count
+      materialMap[item.id] += item.count || 0
     }
     return materialMap
   }, {})
   return { promoteCoin, skillCoin, materials }
 }
 
-const avatarWikiId = text => Object.values(WikiId).findIndex(e => e === text)
+const findWikiId = text => Object.values(WikiId).findIndex(e => e === text)
 
 const elementText = {
   Wind: 'Anemo',
@@ -145,7 +145,7 @@ const elementText = {
 const dumpWeapon = () => {
   const w = []
   // biome-ignore format: ids
-  const blockIds = [20001, 10002, 10003, 10004, 10005, 10006, 10008]
+  const blockIds = [20001, 10002, 10003, 10004, 10005, 10006, 10008, 11411, 11506, 11507, 11508, 12505, 12506, 12508, 12509, 13503, 13506, 14411, 14503, 14508, 15504, 15505, 15506]
   for (const weapon of E.Weapon.filter(e => !blockIds.includes(e.id))) {
     const wInfo = {}
     // biome-ignore format: index
@@ -166,6 +166,7 @@ const dumpWeapon = () => {
     }, {})
     if (Object.keys(materials).length === 0) continue
     wInfo.allCosts = {promoteCoin, materials}
+    wInfo.wikiId = findWikiId(TextMap.en[wInfo.nameTextMapHash])
     w.push(wInfo)
   }
   dumpFile('weapon', w)
@@ -190,6 +191,7 @@ const dumpMaterial = () => {
 
 const dumpTextMap = () => {
   let hashs = readFile('avatar').map(e => e.nameTextMapHash)
+  hashs.push(...readFile('weapon').map(e => e.nameTextMapHash))
   hashs.push(...readFile('material').map(e => e.nameTextMapHash))
   hashs = [...new Set(hashs)]
   const textMap = {}

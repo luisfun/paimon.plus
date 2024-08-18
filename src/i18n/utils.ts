@@ -1,4 +1,5 @@
 import avatar from '@game/avatar.json'
+import weapon from "@game/weapon.json"
 import material from '@game/material.json'
 import textMap from '@game/text-map.json'
 import { defaultLang, ui } from '@i18n/ui'
@@ -23,13 +24,16 @@ export const useTranslations =
    * @param type
    * @returns
    */
-  (key: keyof (typeof ui)[typeof defaultLang] | number, type?: 'avatar' | 'material') => {
+  (key: keyof (typeof ui)[typeof defaultLang] | number, type?: 'avatar' | "weapon" | 'material') => {
     const l = lang instanceof URL ? getLangFromUrl(lang) : lang
     if (typeof key === 'number') {
       let hash = key
       switch (type) {
         case 'avatar':
           hash = avatar.find(e => e.id === key)?.nameTextMapHash || 0
+          break
+        case "weapon":
+          hash = weapon.find(e => e.id === key)?.nameTextMapHash || 0
           break
         case 'material':
           hash = material.find(e => e.id === key)?.nameTextMapHash || 0

@@ -5,31 +5,11 @@ import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
 import avatarRaw from '@game/avatar.json'
 import material from '@game/material.json'
-import weaponRaw from '@game/weapon.json'
+import weapons from '@game/weapon.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
 import type { HTMLButtonAttributes } from 'svelte/elements'
-const avatars = avatarRaw
-  .filter(e => !(e.id === 10000005 || e.id === 10000007))
-  .sort((a, b) => {
-    if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
-    if (a.qualityType === 'QUALITY_PURPLE' && b.qualityType === 'QUALITY_ORANGE') return -1
-    if (a.qualityType === 'QUALITY_ORANGE' && b.qualityType === 'QUALITY_PURPLE') return 1
-    return 0
-  })
-  .reverse()
-const weaponTypeFilter = (type: string) =>
-  weaponRaw
-    .filter(e => e.weaponType === type)
-    .sort((a, b) => a.rankLevel - b.rankLevel)
-    .reverse()
-const weapons = [
-  ...weaponTypeFilter('WEAPON_SWORD_ONE_HAND'),
-  ...weaponTypeFilter('WEAPON_CLAYMORE'),
-  ...weaponTypeFilter('WEAPON_POLE'),
-  ...weaponTypeFilter('WEAPON_CATALYST'),
-  ...weaponTypeFilter('WEAPON_BOW'),
-]
+const avatars = avatarRaw.filter(e => !(e.id === 10000005 || e.id === 10000007))
 
 export let lang: Lang
 const t = useTranslations(lang)

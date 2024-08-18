@@ -1,940 +1,26 @@
 [
   {
-    "id": 11101,
-    "icon": "UI_EquipIcon_Sword_Blunt",
-    "rankLevel": 1,
-    "nameTextMapHash": 2410593283,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112011": 3,
-        "112012": 5,
-        "112014": 5,
-        "112015": 6,
-        "114001": 1,
-        "114002": 3,
-        "114003": 1
-      }
-    },
-    "wikiId": 1979
-  },
-  {
-    "id": 11201,
-    "icon": "UI_EquipIcon_Sword_Silver",
-    "rankLevel": 2,
-    "nameTextMapHash": 2125206395,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112011": 5,
-        "112012": 7,
-        "112014": 6,
-        "112015": 8,
-        "114001": 1,
-        "114002": 4,
-        "114003": 1
-      }
-    },
-    "wikiId": 2039
-  },
-  {
-    "id": 11301,
-    "icon": "UI_EquipIcon_Sword_Steel",
-    "rankLevel": 3,
-    "nameTextMapHash": 479076483,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112011": 6,
-        "112012": 10,
-        "112013": 12,
-        "112014": 10,
-        "112015": 12,
-        "112016": 18,
-        "114001": 2,
-        "114002": 6,
-        "114003": 6,
-        "114004": 3
-      }
-    },
-    "wikiId": 1938
-  },
-  {
-    "id": 11302,
-    "icon": "UI_EquipIcon_Sword_Dawn",
-    "rankLevel": 3,
-    "nameTextMapHash": 1608953539,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112002": 6,
-        "112003": 10,
-        "112004": 12,
-        "112020": 10,
-        "112021": 12,
-        "112022": 18,
-        "114005": 2,
-        "114006": 6,
-        "114007": 6,
-        "114008": 3
-      }
-    },
-    "wikiId": 2052
-  },
-  {
-    "id": 11303,
-    "icon": "UI_EquipIcon_Sword_Traveler",
-    "rankLevel": 3,
-    "nameTextMapHash": 3673792067,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112008": 6,
-        "112009": 10,
-        "112010": 12,
-        "112023": 10,
-        "112024": 12,
-        "112025": 18,
-        "114009": 2,
-        "114010": 6,
-        "114011": 6,
-        "114012": 3
-      }
-    },
-    "wikiId": 1977
-  },
-  {
-    "id": 11304,
-    "icon": "UI_EquipIcon_Sword_Darker",
-    "rankLevel": 3,
-    "nameTextMapHash": 160493219,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112005": 6,
-        "112006": 10,
-        "112007": 12,
-        "112029": 10,
-        "112030": 12,
-        "112031": 18,
-        "114013": 2,
-        "114014": 6,
-        "114015": 6,
-        "114016": 3
-      }
-    },
-    "wikiId": 1984
-  },
-  {
-    "id": 11305,
-    "icon": "UI_EquipIcon_Sword_Sashimi",
-    "rankLevel": 3,
-    "nameTextMapHash": 3421967235,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "112035": 6,
-        "112036": 10,
-        "112037": 12,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 1947
-  },
-  {
-    "id": 11306,
-    "icon": "UI_EquipIcon_Sword_Mitsurugi",
-    "rankLevel": 3,
-    "nameTextMapHash": 1388004931,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112032": 6,
-        "112033": 10,
-        "112034": 12,
-        "112041": 10,
-        "112042": 12,
-        "112043": 18,
-        "114021": 2,
-        "114022": 6,
-        "114023": 6,
-        "114024": 3
-      }
-    },
-    "wikiId": 2048
-  },
-  {
-    "id": 11401,
-    "icon": "UI_EquipIcon_Sword_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 2474354867,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2017
-  },
-  {
-    "id": 11402,
-    "icon": "UI_EquipIcon_Sword_Troupe",
-    "rankLevel": 4,
-    "nameTextMapHash": 3587621259,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2007
-  },
-  {
-    "id": 11403,
-    "icon": "UI_EquipIcon_Sword_Fossil",
-    "rankLevel": 4,
-    "nameTextMapHash": 1990641987,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2003
-  },
-  {
-    "id": 11404,
-    "icon": "UI_EquipIcon_Sword_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 2375993851,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 1962
-  },
-  {
-    "id": 11405,
-    "icon": "UI_EquipIcon_Sword_Rockkiller",
-    "rankLevel": 4,
-    "nameTextMapHash": 1321135667,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1941
-  },
-  {
-    "id": 11406,
-    "icon": "UI_EquipIcon_Sword_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 1991707099,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2026
-  },
-  {
-    "id": 11407,
-    "icon": "UI_EquipIcon_Sword_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 4103022435,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2038
-  },
-  {
-    "id": 11408,
-    "icon": "UI_EquipIcon_Sword_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 3378007475,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 2058
-  },
-  {
-    "id": 11409,
-    "icon": "UI_EquipIcon_Sword_Bloodstained",
-    "rankLevel": 4,
-    "nameTextMapHash": 3796905611,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2053
-  },
-  {
-    "id": 11410,
-    "icon": "UI_EquipIcon_Sword_Outlaw",
-    "rankLevel": 4,
-    "nameTextMapHash": 2947140987,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 1983
-  },
-  {
-    "id": 11412,
-    "icon": "UI_EquipIcon_Sword_Psalmus",
-    "rankLevel": 4,
-    "nameTextMapHash": 1773425155,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2041
-  },
-  {
-    "id": 11413,
-    "icon": "UI_EquipIcon_Sword_Magnum",
-    "rankLevel": 4,
-    "nameTextMapHash": 2749853923,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2011
-  },
-  {
-    "id": 11414,
-    "icon": "UI_EquipIcon_Sword_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 1990820123,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112047": 15,
-        "112048": 18,
-        "112049": 27,
-        "114025": 3,
-        "114026": 9,
-        "114027": 9,
-        "114028": 4
-      }
-    },
-    "wikiId": 1952
-  },
-  {
-    "id": 11415,
-    "icon": "UI_EquipIcon_Sword_Opus",
-    "rankLevel": 4,
-    "nameTextMapHash": 342097547,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2032
-  },
-  {
-    "id": 11416,
-    "icon": "UI_EquipIcon_Sword_Youtou",
-    "rankLevel": 4,
-    "nameTextMapHash": 1012170803,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112017": 15,
-        "112018": 18,
-        "112019": 27,
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 2264
-  },
-  {
-    "id": 11417,
-    "icon": "UI_EquipIcon_Sword_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 313300315,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112065": 10,
-        "112066": 15,
-        "112067": 18,
-        "112068": 15,
-        "112069": 18,
-        "112070": 27,
-        "114037": 3,
-        "114038": 9,
-        "114039": 9,
-        "114040": 4
-      }
-    },
-    "wikiId": 2667
-  },
-  {
-    "id": 11418,
-    "icon": "UI_EquipIcon_Sword_Pleroma",
-    "rankLevel": 4,
-    "nameTextMapHash": 143051931,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112065": 10,
-        "112066": 15,
-        "112067": 18,
-        "112071": 15,
-        "112072": 18,
-        "112073": 27,
-        "114037": 3,
-        "114038": 9,
-        "114039": 9,
-        "114040": 4
-      }
-    },
-    "wikiId": 2909
-  },
-  {
-    "id": 11422,
-    "icon": "UI_EquipIcon_Sword_Kasabouzu",
-    "rankLevel": 4,
-    "nameTextMapHash": 2448629019,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112071": 15,
-        "112072": 18,
-        "112073": 27,
-        "114029": 3,
-        "114030": 9,
-        "114031": 9,
-        "114032": 4
-      }
-    },
-    "wikiId": 3319
-  },
-  {
-    "id": 11424,
-    "icon": "UI_EquipIcon_Sword_Boreas",
-    "rankLevel": 4,
-    "nameTextMapHash": 2265792579,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 3999
-  },
-  {
-    "id": 11425,
-    "icon": "UI_EquipIcon_Sword_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 800766043,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112086": 15,
-        "112087": 18,
-        "112088": 27,
-        "114053": 3,
-        "114054": 9,
-        "114055": 9,
-        "114056": 4
-      }
-    },
-    "wikiId": 3984
-  },
-  {
-    "id": 11426,
-    "icon": "UI_EquipIcon_Sword_Machination",
-    "rankLevel": 4,
-    "nameTextMapHash": 1921306659,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112080": 10,
-        "112081": 15,
-        "112082": 18,
-        "112086": 15,
-        "112087": 18,
-        "112088": 27,
-        "114049": 3,
-        "114050": 9,
-        "114051": 9,
-        "114052": 4
-      }
-    },
-    "wikiId": 3989
-  },
-  {
-    "id": 11427,
-    "icon": "UI_EquipIcon_Sword_Mechanic",
-    "rankLevel": 4,
-    "nameTextMapHash": 1790067483,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112080": 10,
-        "112081": 15,
-        "112082": 18,
-        "112092": 15,
-        "112093": 18,
-        "112094": 27,
-        "114053": 3,
-        "114054": 9,
-        "114055": 9,
-        "114056": 4
-      }
-    },
-    "wikiId": 4334
-  },
-  {
-    "id": 11428,
-    "icon": "UI_EquipIcon_Sword_Purewill",
-    "rankLevel": 4,
-    "nameTextMapHash": 3016493955,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112080": 10,
-        "112081": 15,
-        "112082": 18,
-        "112092": 15,
-        "112093": 18,
-        "112094": 27,
-        "114049": 3,
-        "114050": 9,
-        "114051": 9,
-        "114052": 4
-      }
-    },
-    "wikiId": 4592
-  },
-  {
-    "id": 11501,
-    "icon": "UI_EquipIcon_Sword_Falcon",
+    "id": 11515,
+    "icon": "UI_EquipIcon_Sword_Estoc",
     "rankLevel": 5,
-    "nameTextMapHash": 902264035,
+    "nameTextMapHash": 1009471939,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112011": 15,
-        "112012": 23,
-        "112013": 27,
-        "112014": 23,
-        "112015": 27,
-        "112016": 41,
-        "114001": 5,
-        "114002": 14,
-        "114003": 14,
-        "114004": 6
+        "112083": 15,
+        "112084": 23,
+        "112085": 27,
+        "112092": 23,
+        "112093": 27,
+        "112094": 41,
+        "114049": 5,
+        "114050": 14,
+        "114051": 14,
+        "114052": 6
       }
     },
-    "wikiId": 2046
-  },
-  {
-    "id": 11502,
-    "icon": "UI_EquipIcon_Sword_Dvalin",
-    "rankLevel": 5,
-    "nameTextMapHash": 4055003299,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114005": 5,
-        "114006": 14,
-        "114007": 14,
-        "114008": 6
-      }
-    },
-    "wikiId": 1954
-  },
-  {
-    "id": 11503,
-    "icon": "UI_EquipIcon_Sword_Widsith",
-    "rankLevel": 5,
-    "nameTextMapHash": 2949448555,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112008": 15,
-        "112009": 23,
-        "112010": 27,
-        "112023": 23,
-        "112024": 27,
-        "112025": 41,
-        "114009": 5,
-        "114010": 14,
-        "114011": 14,
-        "114012": 6
-      }
-    },
-    "wikiId": 2012
-  },
-  {
-    "id": 11504,
-    "icon": "UI_EquipIcon_Sword_Kunwu",
-    "rankLevel": 5,
-    "nameTextMapHash": 944332883,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112005": 15,
-        "112006": 23,
-        "112007": 27,
-        "112029": 23,
-        "112030": 27,
-        "112031": 41,
-        "114013": 5,
-        "114014": 14,
-        "114015": 14,
-        "114016": 6
-      }
-    },
-    "wikiId": 1974
-  },
-  {
-    "id": 11505,
-    "icon": "UI_EquipIcon_Sword_Morax",
-    "rankLevel": 5,
-    "nameTextMapHash": 1345343763,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112026": 23,
-        "112027": 27,
-        "112028": 41,
-        "112035": 15,
-        "112036": 23,
-        "112037": 27,
-        "114017": 5,
-        "114018": 14,
-        "114019": 14,
-        "114020": 6
-      }
-    },
-    "wikiId": 2000
-  },
-  {
-    "id": 11509,
-    "icon": "UI_EquipIcon_Sword_Narukami",
-    "rankLevel": 5,
-    "nameTextMapHash": 4124851547,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112044": 15,
-        "112045": 23,
-        "112046": 27,
-        "112047": 23,
-        "112048": 27,
-        "112049": 41,
-        "114025": 5,
-        "114026": 14,
-        "114027": 14,
-        "114028": 6
-      }
-    },
-    "wikiId": 2044
-  },
-  {
-    "id": 11510,
-    "icon": "UI_EquipIcon_Sword_Amenoma",
-    "rankLevel": 5,
-    "nameTextMapHash": 1600275315,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112017": 23,
-        "112018": 27,
-        "112019": 41,
-        "112044": 15,
-        "112045": 23,
-        "112046": 27,
-        "114029": 5,
-        "114030": 14,
-        "114031": 14,
-        "114032": 6
-      }
-    },
-    "wikiId": 1989
-  },
-  {
-    "id": 11511,
-    "icon": "UI_EquipIcon_Sword_Deshret",
-    "rankLevel": 5,
-    "nameTextMapHash": 454086795,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112065": 15,
-        "112066": 23,
-        "112067": 27,
-        "112071": 23,
-        "112072": 27,
-        "112073": 41,
-        "114037": 5,
-        "114038": 14,
-        "114039": 14,
-        "114040": 6
-      }
-    },
-    "wikiId": 2908
-  },
-  {
-    "id": 11512,
-    "icon": "UI_EquipIcon_Sword_Ayus",
-    "rankLevel": 5,
-    "nameTextMapHash": 275622963,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112065": 15,
-        "112066": 23,
-        "112067": 27,
-        "112074": 23,
-        "112075": 27,
-        "112076": 41,
-        "114037": 5,
-        "114038": 14,
-        "114039": 14,
-        "114040": 6
-      }
-    },
-    "wikiId": 3461
-  },
-  {
-    "id": 11513,
-    "icon": "UI_EquipIcon_Sword_Regalis",
-    "rankLevel": 5,
-    "nameTextMapHash": 1473399443,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112080": 15,
-        "112081": 23,
-        "112082": 27,
-        "112086": 23,
-        "112087": 27,
-        "112088": 41,
-        "114053": 5,
-        "114054": 14,
-        "114055": 14,
-        "114056": 6
-      }
-    },
-    "wikiId": 4570
+    "wikiId": 5674
   },
   {
     "id": 11514,
@@ -960,741 +46,126 @@
     "wikiId": 5150
   },
   {
-    "id": 11515,
-    "icon": "UI_EquipIcon_Sword_Estoc",
+    "id": 11513,
+    "icon": "UI_EquipIcon_Sword_Regalis",
     "rankLevel": 5,
-    "nameTextMapHash": 1009471939,
+    "nameTextMapHash": 1473399443,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112083": 15,
-        "112084": 23,
-        "112085": 27,
-        "112092": 23,
-        "112093": 27,
-        "112094": 41,
-        "114049": 5,
-        "114050": 14,
-        "114051": 14,
-        "114052": 6
+        "112080": 15,
+        "112081": 23,
+        "112082": 27,
+        "112086": 23,
+        "112087": 27,
+        "112088": 41,
+        "114053": 5,
+        "114054": 14,
+        "114055": 14,
+        "114056": 6
       }
     },
-    "wikiId": 5674
+    "wikiId": 4570
   },
   {
-    "id": 12101,
-    "icon": "UI_EquipIcon_Claymore_Aniki",
-    "rankLevel": 1,
-    "nameTextMapHash": 2666951267,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112002": 3,
-        "112003": 5,
-        "112020": 5,
-        "112021": 6,
-        "114005": 1,
-        "114006": 3,
-        "114007": 1
-      }
-    },
-    "wikiId": 2023
-  },
-  {
-    "id": 12201,
-    "icon": "UI_EquipIcon_Claymore_Oyaji",
-    "rankLevel": 2,
-    "nameTextMapHash": 1182966603,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112002": 5,
-        "112003": 7,
-        "112020": 6,
-        "112021": 8,
-        "114005": 1,
-        "114006": 4,
-        "114007": 1
-      }
-    },
-    "wikiId": 1934
-  },
-  {
-    "id": 12301,
-    "icon": "UI_EquipIcon_Claymore_Glaive",
-    "rankLevel": 3,
-    "nameTextMapHash": 1479961579,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112014": 10,
-        "112015": 12,
-        "112016": 18,
-        "112038": 6,
-        "112039": 10,
-        "112040": 12,
-        "114001": 2,
-        "114002": 6,
-        "114003": 6,
-        "114004": 3
-      }
-    },
-    "wikiId": 2037
-  },
-  {
-    "id": 12302,
-    "icon": "UI_EquipIcon_Claymore_Siegfry",
-    "rankLevel": 3,
-    "nameTextMapHash": 4090429643,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112011": 6,
-        "112012": 10,
-        "112013": 12,
-        "112020": 10,
-        "112021": 12,
-        "112022": 18,
-        "114005": 2,
-        "114006": 6,
-        "114007": 6,
-        "114008": 3
-      }
-    },
-    "wikiId": 1988
-  },
-  {
-    "id": 12303,
-    "icon": "UI_EquipIcon_Claymore_Tin",
-    "rankLevel": 3,
-    "nameTextMapHash": 850802171,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112002": 6,
-        "112003": 10,
-        "112004": 12,
-        "112023": 10,
-        "112024": 12,
-        "112025": 18,
-        "114009": 2,
-        "114010": 6,
-        "114011": 6,
-        "114012": 3
-      }
-    },
-    "wikiId": 1998
-  },
-  {
-    "id": 12305,
-    "icon": "UI_EquipIcon_Claymore_Reasoning",
-    "rankLevel": 3,
-    "nameTextMapHash": 3097441915,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112005": 6,
-        "112006": 10,
-        "112007": 12,
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 1933
-  },
-  {
-    "id": 12306,
-    "icon": "UI_EquipIcon_Claymore_Mitsurugi",
-    "rankLevel": 3,
-    "nameTextMapHash": 2614170427,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112035": 6,
-        "112036": 10,
-        "112037": 12,
-        "112041": 10,
-        "112042": 12,
-        "112043": 18,
-        "114021": 2,
-        "114022": 6,
-        "114023": 6,
-        "114024": 3
-      }
-    },
-    "wikiId": 2047
-  },
-  {
-    "id": 12401,
-    "icon": "UI_EquipIcon_Claymore_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 735056795,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2018
-  },
-  {
-    "id": 12402,
-    "icon": "UI_EquipIcon_Claymore_Troupe",
-    "rankLevel": 4,
-    "nameTextMapHash": 930640955,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2033
-  },
-  {
-    "id": 12403,
-    "icon": "UI_EquipIcon_Claymore_Fossil",
-    "rankLevel": 4,
-    "nameTextMapHash": 1675686363,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2004
-  },
-  {
-    "id": 12404,
-    "icon": "UI_EquipIcon_Claymore_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 877751435,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 1959
-  },
-  {
-    "id": 12405,
-    "icon": "UI_EquipIcon_Claymore_Perdue",
-    "rankLevel": 4,
-    "nameTextMapHash": 3684723963,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2042
-  },
-  {
-    "id": 12406,
-    "icon": "UI_EquipIcon_Claymore_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 3722933411,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2025
-  },
-  {
-    "id": 12407,
-    "icon": "UI_EquipIcon_Claymore_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 680510411,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1995
-  },
-  {
-    "id": 12408,
-    "icon": "UI_EquipIcon_Claymore_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 20848859,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2056
-  },
-  {
-    "id": 12409,
-    "icon": "UI_EquipIcon_Claymore_Kione",
-    "rankLevel": 4,
-    "nameTextMapHash": 1437658243,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2015
-  },
-  {
-    "id": 12410,
-    "icon": "UI_EquipIcon_Claymore_Lapis",
-    "rankLevel": 4,
-    "nameTextMapHash": 2006422931,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1942
-  },
-  {
-    "id": 12411,
-    "icon": "UI_EquipIcon_Claymore_Dragonfell",
-    "rankLevel": 4,
-    "nameTextMapHash": 2753539619,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2043
-  },
-  {
-    "id": 12412,
-    "icon": "UI_EquipIcon_Claymore_MillenniaTuna",
-    "rankLevel": 4,
-    "nameTextMapHash": 346510395,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2016
-  },
-  {
-    "id": 12414,
-    "icon": "UI_EquipIcon_Claymore_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 4193089947,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112047": 15,
-        "112048": 18,
-        "112049": 27,
-        "114029": 3,
-        "114030": 9,
-        "114031": 9,
-        "114032": 4
-      }
-    },
-    "wikiId": 1987
-  },
-  {
-    "id": 12415,
-    "icon": "UI_EquipIcon_Claymore_Pleroma",
-    "rankLevel": 4,
-    "nameTextMapHash": 3073454867,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "112068": 15,
-        "112069": 18,
-        "112070": 27,
-        "114045": 3,
-        "114046": 9,
-        "114047": 9,
-        "114048": 4
-      }
-    },
-    "wikiId": 2848
-  },
-  {
-    "id": 12416,
-    "icon": "UI_EquipIcon_Claymore_Maria",
-    "rankLevel": 4,
-    "nameTextMapHash": 2359799475,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112056": 15,
-        "112057": 18,
-        "112058": 27,
-        "114025": 3,
-        "114026": 9,
-        "114027": 9,
-        "114028": 4
-      }
-    },
-    "wikiId": 1971
-  },
-  {
-    "id": 12417,
-    "icon": "UI_EquipIcon_Claymore_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 902184579,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112065": 10,
-        "112066": 15,
-        "112067": 18,
-        "112068": 15,
-        "112069": 18,
-        "112070": 27,
-        "114037": 3,
-        "114038": 9,
-        "114039": 9,
-        "114040": 4
-      }
-    },
-    "wikiId": 2671
-  },
-  {
-    "id": 12418,
-    "icon": "UI_EquipIcon_Claymore_Fleurfair",
-    "rankLevel": 4,
-    "nameTextMapHash": 1200948859,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "112074": 15,
-        "112075": 18,
-        "112076": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 3614
-  },
-  {
-    "id": 12424,
-    "icon": "UI_EquipIcon_Claymore_BeastTamer",
-    "rankLevel": 4,
-    "nameTextMapHash": 3459616011,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112074": 15,
-        "112075": 18,
-        "112076": 27,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 4000
-  },
-  {
-    "id": 12425,
-    "icon": "UI_EquipIcon_Claymore_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 2077869763,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112089": 15,
-        "112090": 18,
-        "112091": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": 3985
-  },
-  {
-    "id": 12426,
-    "icon": "UI_EquipIcon_Claymore_Champion",
-    "rankLevel": 4,
-    "nameTextMapHash": 933442195,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112092": 15,
-        "112093": 18,
-        "112094": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": -1
-  },
-  {
-    "id": 12427,
-    "icon": "UI_EquipIcon_Claymore_Mechanic",
-    "rankLevel": 4,
-    "nameTextMapHash": 3693117451,
-    "weaponType": "WEAPON_CLAYMORE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112089": 15,
-        "112090": 18,
-        "112091": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": 4335
-  },
-  {
-    "id": 12501,
-    "icon": "UI_EquipIcon_Claymore_Dvalin",
+    "id": 11512,
+    "icon": "UI_EquipIcon_Sword_Ayus",
     "rankLevel": 5,
-    "nameTextMapHash": 1089950259,
-    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 275622963,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114005": 5,
-        "114006": 14,
-        "114007": 14,
-        "114008": 6
+        "112065": 15,
+        "112066": 23,
+        "112067": 27,
+        "112074": 23,
+        "112075": 27,
+        "112076": 41,
+        "114037": 5,
+        "114038": 14,
+        "114039": 14,
+        "114040": 6
       }
     },
-    "wikiId": 1953
+    "wikiId": 3461
   },
   {
-    "id": 12502,
-    "icon": "UI_EquipIcon_Claymore_Wolfmound",
+    "id": 11511,
+    "icon": "UI_EquipIcon_Sword_Deshret",
     "rankLevel": 5,
-    "nameTextMapHash": 3995710363,
-    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 454086795,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112008": 15,
-        "112009": 23,
-        "112010": 27,
-        "112023": 23,
-        "112024": 27,
-        "112025": 41,
-        "114009": 5,
-        "114010": 14,
-        "114011": 14,
-        "114012": 6
+        "112065": 15,
+        "112066": 23,
+        "112067": 27,
+        "112071": 23,
+        "112072": 27,
+        "112073": 41,
+        "114037": 5,
+        "114038": 14,
+        "114039": 14,
+        "114040": 6
       }
     },
-    "wikiId": 1992
+    "wikiId": 2908
   },
   {
-    "id": 12503,
-    "icon": "UI_EquipIcon_Claymore_Widsith",
+    "id": 11510,
+    "icon": "UI_EquipIcon_Sword_Amenoma",
     "rankLevel": 5,
-    "nameTextMapHash": 1075647299,
-    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 1600275315,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112005": 15,
-        "112006": 23,
-        "112007": 27,
-        "112014": 23,
-        "112015": 27,
-        "112016": 41,
-        "114001": 5,
-        "114002": 14,
-        "114003": 14,
-        "114004": 6
+        "112017": 23,
+        "112018": 27,
+        "112019": 41,
+        "112044": 15,
+        "112045": 23,
+        "112046": 27,
+        "114029": 5,
+        "114030": 14,
+        "114031": 14,
+        "114032": 6
       }
     },
-    "wikiId": 1986
+    "wikiId": 1989
   },
   {
-    "id": 12504,
-    "icon": "UI_EquipIcon_Claymore_Kunwu",
+    "id": 11509,
+    "icon": "UI_EquipIcon_Sword_Narukami",
     "rankLevel": 5,
-    "nameTextMapHash": 2792766467,
-    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 4124851547,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112044": 15,
+        "112045": 23,
+        "112046": 27,
+        "112047": 23,
+        "112048": 27,
+        "112049": 41,
+        "114025": 5,
+        "114026": 14,
+        "114027": 14,
+        "114028": 6
+      }
+    },
+    "wikiId": 2044
+  },
+  {
+    "id": 11505,
+    "icon": "UI_EquipIcon_Sword_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 1345343763,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
@@ -1710,53 +181,806 @@
         "114020": 6
       }
     },
-    "wikiId": 1978
+    "wikiId": 2000
   },
   {
-    "id": 12510,
-    "icon": "UI_EquipIcon_Claymore_Itadorimaru",
+    "id": 11504,
+    "icon": "UI_EquipIcon_Sword_Kunwu",
     "rankLevel": 5,
-    "nameTextMapHash": 3914951691,
-    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 944332883,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112044": 15,
-        "112045": 23,
-        "112046": 27,
-        "112056": 23,
-        "112057": 27,
-        "112058": 41,
-        "114029": 5,
-        "114030": 14,
-        "114031": 14,
-        "114032": 6
+        "112005": 15,
+        "112006": 23,
+        "112007": 27,
+        "112029": 23,
+        "112030": 27,
+        "112031": 41,
+        "114013": 5,
+        "114014": 14,
+        "114015": 14,
+        "114016": 6
       }
     },
-    "wikiId": 2031
+    "wikiId": 1974
   },
   {
-    "id": 12511,
-    "icon": "UI_EquipIcon_Claymore_Deshret",
+    "id": 11503,
+    "icon": "UI_EquipIcon_Sword_Widsith",
     "rankLevel": 5,
-    "nameTextMapHash": 2834063555,
-    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 2949448555,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112065": 15,
-        "112066": 23,
-        "112067": 27,
-        "112074": 23,
-        "112075": 27,
-        "112076": 41,
-        "114045": 5,
-        "114046": 14,
-        "114047": 14,
-        "114048": 6
+        "112008": 15,
+        "112009": 23,
+        "112010": 27,
+        "112023": 23,
+        "112024": 27,
+        "112025": 41,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
       }
     },
-    "wikiId": 3615
+    "wikiId": 2012
+  },
+  {
+    "id": 11502,
+    "icon": "UI_EquipIcon_Sword_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 4055003299,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
+      }
+    },
+    "wikiId": 1954
+  },
+  {
+    "id": 11501,
+    "icon": "UI_EquipIcon_Sword_Falcon",
+    "rankLevel": 5,
+    "nameTextMapHash": 902264035,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112011": 15,
+        "112012": 23,
+        "112013": 27,
+        "112014": 23,
+        "112015": 27,
+        "112016": 41,
+        "114001": 5,
+        "114002": 14,
+        "114003": 14,
+        "114004": 6
+      }
+    },
+    "wikiId": 2046
+  },
+  {
+    "id": 11428,
+    "icon": "UI_EquipIcon_Sword_Purewill",
+    "rankLevel": 4,
+    "nameTextMapHash": 3016493955,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112092": 15,
+        "112093": 18,
+        "112094": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
+      }
+    },
+    "wikiId": 4592
+  },
+  {
+    "id": 11427,
+    "icon": "UI_EquipIcon_Sword_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1790067483,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112092": 15,
+        "112093": 18,
+        "112094": 27,
+        "114053": 3,
+        "114054": 9,
+        "114055": 9,
+        "114056": 4
+      }
+    },
+    "wikiId": 4334
+  },
+  {
+    "id": 11426,
+    "icon": "UI_EquipIcon_Sword_Machination",
+    "rankLevel": 4,
+    "nameTextMapHash": 1921306659,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112086": 15,
+        "112087": 18,
+        "112088": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
+      }
+    },
+    "wikiId": 3989
+  },
+  {
+    "id": 11425,
+    "icon": "UI_EquipIcon_Sword_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 800766043,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112086": 15,
+        "112087": 18,
+        "112088": 27,
+        "114053": 3,
+        "114054": 9,
+        "114055": 9,
+        "114056": 4
+      }
+    },
+    "wikiId": 3984
+  },
+  {
+    "id": 11424,
+    "icon": "UI_EquipIcon_Sword_Boreas",
+    "rankLevel": 4,
+    "nameTextMapHash": 2265792579,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 3999
+  },
+  {
+    "id": 11422,
+    "icon": "UI_EquipIcon_Sword_Kasabouzu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2448629019,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112071": 15,
+        "112072": 18,
+        "112073": 27,
+        "114029": 3,
+        "114030": 9,
+        "114031": 9,
+        "114032": 4
+      }
+    },
+    "wikiId": 3319
+  },
+  {
+    "id": 11418,
+    "icon": "UI_EquipIcon_Sword_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 143051931,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112065": 10,
+        "112066": 15,
+        "112067": 18,
+        "112071": 15,
+        "112072": 18,
+        "112073": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
+      }
+    },
+    "wikiId": 2909
+  },
+  {
+    "id": 11417,
+    "icon": "UI_EquipIcon_Sword_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 313300315,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112065": 10,
+        "112066": 15,
+        "112067": 18,
+        "112068": 15,
+        "112069": 18,
+        "112070": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
+      }
+    },
+    "wikiId": 2667
+  },
+  {
+    "id": 11416,
+    "icon": "UI_EquipIcon_Sword_Youtou",
+    "rankLevel": 4,
+    "nameTextMapHash": 1012170803,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112017": 15,
+        "112018": 18,
+        "112019": 27,
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 2264
+  },
+  {
+    "id": 11415,
+    "icon": "UI_EquipIcon_Sword_Opus",
+    "rankLevel": 4,
+    "nameTextMapHash": 342097547,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2032
+  },
+  {
+    "id": 11414,
+    "icon": "UI_EquipIcon_Sword_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 1990820123,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112047": 15,
+        "112048": 18,
+        "112049": 27,
+        "114025": 3,
+        "114026": 9,
+        "114027": 9,
+        "114028": 4
+      }
+    },
+    "wikiId": 1952
+  },
+  {
+    "id": 11413,
+    "icon": "UI_EquipIcon_Sword_Magnum",
+    "rankLevel": 4,
+    "nameTextMapHash": 2749853923,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2011
+  },
+  {
+    "id": 11412,
+    "icon": "UI_EquipIcon_Sword_Psalmus",
+    "rankLevel": 4,
+    "nameTextMapHash": 1773425155,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2041
+  },
+  {
+    "id": 11410,
+    "icon": "UI_EquipIcon_Sword_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 2947140987,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 1983
+  },
+  {
+    "id": 11409,
+    "icon": "UI_EquipIcon_Sword_Bloodstained",
+    "rankLevel": 4,
+    "nameTextMapHash": 3796905611,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2053
+  },
+  {
+    "id": 11408,
+    "icon": "UI_EquipIcon_Sword_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3378007475,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 2058
+  },
+  {
+    "id": 11407,
+    "icon": "UI_EquipIcon_Sword_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 4103022435,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2038
+  },
+  {
+    "id": 11406,
+    "icon": "UI_EquipIcon_Sword_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 1991707099,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2026
+  },
+  {
+    "id": 11405,
+    "icon": "UI_EquipIcon_Sword_Rockkiller",
+    "rankLevel": 4,
+    "nameTextMapHash": 1321135667,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1941
+  },
+  {
+    "id": 11404,
+    "icon": "UI_EquipIcon_Sword_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2375993851,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 1962
+  },
+  {
+    "id": 11403,
+    "icon": "UI_EquipIcon_Sword_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 1990641987,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2003
+  },
+  {
+    "id": 11402,
+    "icon": "UI_EquipIcon_Sword_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 3587621259,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2007
+  },
+  {
+    "id": 11401,
+    "icon": "UI_EquipIcon_Sword_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 2474354867,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2017
+  },
+  {
+    "id": 11306,
+    "icon": "UI_EquipIcon_Sword_Mitsurugi",
+    "rankLevel": 3,
+    "nameTextMapHash": 1388004931,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112032": 6,
+        "112033": 10,
+        "112034": 12,
+        "112041": 10,
+        "112042": 12,
+        "112043": 18,
+        "114021": 2,
+        "114022": 6,
+        "114023": 6,
+        "114024": 3
+      }
+    },
+    "wikiId": 2048
+  },
+  {
+    "id": 11305,
+    "icon": "UI_EquipIcon_Sword_Sashimi",
+    "rankLevel": 3,
+    "nameTextMapHash": 3421967235,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "112035": 6,
+        "112036": 10,
+        "112037": 12,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 1947
+  },
+  {
+    "id": 11304,
+    "icon": "UI_EquipIcon_Sword_Darker",
+    "rankLevel": 3,
+    "nameTextMapHash": 160493219,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112005": 6,
+        "112006": 10,
+        "112007": 12,
+        "112029": 10,
+        "112030": 12,
+        "112031": 18,
+        "114013": 2,
+        "114014": 6,
+        "114015": 6,
+        "114016": 3
+      }
+    },
+    "wikiId": 1984
+  },
+  {
+    "id": 11303,
+    "icon": "UI_EquipIcon_Sword_Traveler",
+    "rankLevel": 3,
+    "nameTextMapHash": 3673792067,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112008": 6,
+        "112009": 10,
+        "112010": 12,
+        "112023": 10,
+        "112024": 12,
+        "112025": 18,
+        "114009": 2,
+        "114010": 6,
+        "114011": 6,
+        "114012": 3
+      }
+    },
+    "wikiId": 1977
+  },
+  {
+    "id": 11302,
+    "icon": "UI_EquipIcon_Sword_Dawn",
+    "rankLevel": 3,
+    "nameTextMapHash": 1608953539,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112002": 6,
+        "112003": 10,
+        "112004": 12,
+        "112020": 10,
+        "112021": 12,
+        "112022": 18,
+        "114005": 2,
+        "114006": 6,
+        "114007": 6,
+        "114008": 3
+      }
+    },
+    "wikiId": 2052
+  },
+  {
+    "id": 11301,
+    "icon": "UI_EquipIcon_Sword_Steel",
+    "rankLevel": 3,
+    "nameTextMapHash": 479076483,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112011": 6,
+        "112012": 10,
+        "112013": 12,
+        "112014": 10,
+        "112015": 12,
+        "112016": 18,
+        "114001": 2,
+        "114002": 6,
+        "114003": 6,
+        "114004": 3
+      }
+    },
+    "wikiId": 1938
+  },
+  {
+    "id": 11201,
+    "icon": "UI_EquipIcon_Sword_Silver",
+    "rankLevel": 2,
+    "nameTextMapHash": 2125206395,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112011": 5,
+        "112012": 7,
+        "112014": 6,
+        "112015": 8,
+        "114001": 1,
+        "114002": 4,
+        "114003": 1
+      }
+    },
+    "wikiId": 2039
+  },
+  {
+    "id": 11101,
+    "icon": "UI_EquipIcon_Sword_Blunt",
+    "rankLevel": 1,
+    "nameTextMapHash": 2410593283,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112011": 3,
+        "112012": 5,
+        "112014": 5,
+        "112015": 6,
+        "114001": 1,
+        "114002": 3,
+        "114003": 1
+      }
+    },
+    "wikiId": 1979
   },
   {
     "id": 12512,
@@ -1782,557 +1006,103 @@
     "wikiId": 4719
   },
   {
-    "id": 13101,
-    "icon": "UI_EquipIcon_Pole_Gewalt",
-    "rankLevel": 1,
-    "nameTextMapHash": 2796697027,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112008": 3,
-        "112009": 5,
-        "112023": 5,
-        "112024": 6,
-        "114009": 1,
-        "114010": 3,
-        "114011": 1
-      }
-    },
-    "wikiId": 1976
-  },
-  {
-    "id": 13201,
-    "icon": "UI_EquipIcon_Pole_Rod",
-    "rankLevel": 2,
-    "nameTextMapHash": 3070169307,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112008": 5,
-        "112009": 7,
-        "112023": 6,
-        "112024": 8,
-        "114009": 1,
-        "114010": 4,
-        "114011": 1
-      }
-    },
-    "wikiId": 2036
-  },
-  {
-    "id": 13301,
-    "icon": "UI_EquipIcon_Pole_Ruby",
-    "rankLevel": 3,
-    "nameTextMapHash": 1390797107,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112029": 10,
-        "112030": 12,
-        "112031": 18,
-        "112032": 6,
-        "112033": 10,
-        "112034": 12,
-        "114013": 2,
-        "114014": 6,
-        "114015": 6,
-        "114016": 3
-      }
-    },
-    "wikiId": 1996
-  },
-  {
-    "id": 13302,
-    "icon": "UI_EquipIcon_Pole_Halberd",
-    "rankLevel": 3,
-    "nameTextMapHash": 618786571,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "112038": 6,
-        "112039": 10,
-        "112040": 12,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 2035
-  },
-  {
-    "id": 13303,
-    "icon": "UI_EquipIcon_Pole_Noire",
-    "rankLevel": 3,
-    "nameTextMapHash": 4103766499,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112011": 6,
-        "112012": 10,
-        "112013": 12,
-        "112041": 10,
-        "112042": 12,
-        "112043": 18,
-        "114021": 2,
-        "114022": 6,
-        "114023": 6,
-        "114024": 3
-      }
-    },
-    "wikiId": 2059
-  },
-  {
-    "id": 13401,
-    "icon": "UI_EquipIcon_Pole_Stardust",
-    "rankLevel": 4,
-    "nameTextMapHash": 2664629131,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 1940
-  },
-  {
-    "id": 13402,
-    "icon": "UI_EquipIcon_Pole_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 1154009435,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2027
-  },
-  {
-    "id": 13403,
-    "icon": "UI_EquipIcon_Pole_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 578575283,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1990
-  },
-  {
-    "id": 13404,
-    "icon": "UI_EquipIcon_Pole_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 481755219,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2054
-  },
-  {
-    "id": 13405,
-    "icon": "UI_EquipIcon_Pole_Gladiator",
-    "rankLevel": 4,
-    "nameTextMapHash": 4049410651,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1937
-  },
-  {
-    "id": 13406,
-    "icon": "UI_EquipIcon_Pole_Lapis",
-    "rankLevel": 4,
-    "nameTextMapHash": 716252627,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 1943
-  },
-  {
-    "id": 13407,
-    "icon": "UI_EquipIcon_Pole_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 3755004051,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2021
-  },
-  {
-    "id": 13408,
-    "icon": "UI_EquipIcon_Pole_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 2935286715,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 1960
-  },
-  {
-    "id": 13409,
-    "icon": "UI_EquipIcon_Pole_Everfrost",
-    "rankLevel": 4,
-    "nameTextMapHash": 3443142923,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2060
-  },
-  {
-    "id": 13414,
-    "icon": "UI_EquipIcon_Pole_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 2491797315,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "112047": 15,
-        "112048": 18,
-        "112049": 27,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 1949
-  },
-  {
-    "id": 13415,
-    "icon": "UI_EquipIcon_Pole_Mori",
-    "rankLevel": 4,
-    "nameTextMapHash": 1148024603,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112047": 15,
-        "112048": 18,
-        "112049": 27,
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 1930
-  },
-  {
-    "id": 13416,
-    "icon": "UI_EquipIcon_Pole_Maria",
-    "rankLevel": 4,
-    "nameTextMapHash": 4122509083,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112056": 15,
-        "112057": 18,
-        "112058": 27,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 1975
-  },
-  {
-    "id": 13417,
-    "icon": "UI_EquipIcon_Pole_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 452357939,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "112068": 15,
-        "112069": 18,
-        "112070": 27,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 2668
-  },
-  {
-    "id": 13419,
-    "icon": "UI_EquipIcon_Pole_Windvane",
-    "rankLevel": 4,
-    "nameTextMapHash": 1470442731,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112017": 15,
-        "112018": 18,
-        "112019": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2847
-  },
-  {
-    "id": 13424,
-    "icon": "UI_EquipIcon_Pole_Shanty",
-    "rankLevel": 4,
-    "nameTextMapHash": 449192923,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "112077": 15,
-        "112078": 18,
-        "112079": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": 4001
-  },
-  {
-    "id": 13425,
-    "icon": "UI_EquipIcon_Pole_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 4158971171,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112089": 15,
-        "112090": 18,
-        "112091": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": 3986
-  },
-  {
-    "id": 13426,
-    "icon": "UI_EquipIcon_Pole_Caduceus",
-    "rankLevel": 4,
-    "nameTextMapHash": 2847771107,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "112095": 15,
-        "112096": 18,
-        "112097": 27,
-        "114037": 3,
-        "114038": 9,
-        "114039": 9,
-        "114040": 4
-      }
-    },
-    "wikiId": 5151
-  },
-  {
-    "id": 13427,
-    "icon": "UI_EquipIcon_Pole_Mechanic",
-    "rankLevel": 4,
-    "nameTextMapHash": 882305891,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112092": 15,
-        "112093": 18,
-        "112094": 27,
-        "114049": 3,
-        "114050": 9,
-        "114051": 9,
-        "114052": 4
-      }
-    },
-    "wikiId": 4336
-  },
-  {
-    "id": 13501,
-    "icon": "UI_EquipIcon_Pole_Homa",
+    "id": 12511,
+    "icon": "UI_EquipIcon_Claymore_Deshret",
     "rankLevel": 5,
-    "nameTextMapHash": 3235324891,
-    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 2834063555,
+    "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114021": 5,
-        "114022": 14,
-        "114023": 14,
-        "114024": 6
+        "112065": 15,
+        "112066": 23,
+        "112067": 27,
+        "112074": 23,
+        "112075": 27,
+        "112076": 41,
+        "114045": 5,
+        "114046": 14,
+        "114047": 14,
+        "114048": 6
       }
     },
-    "wikiId": 1972
+    "wikiId": 3615
   },
   {
-    "id": 13502,
-    "icon": "UI_EquipIcon_Pole_Dvalin",
+    "id": 12510,
+    "icon": "UI_EquipIcon_Claymore_Itadorimaru",
     "rankLevel": 5,
-    "nameTextMapHash": 4158505619,
-    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 3914951691,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112044": 15,
+        "112045": 23,
+        "112046": 27,
+        "112056": 23,
+        "112057": 27,
+        "112058": 41,
+        "114029": 5,
+        "114030": 14,
+        "114031": 14,
+        "114032": 6
+      }
+    },
+    "wikiId": 2031
+  },
+  {
+    "id": 12504,
+    "icon": "UI_EquipIcon_Claymore_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 2792766467,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112026": 23,
+        "112027": 27,
+        "112028": 41,
+        "112035": 15,
+        "112036": 23,
+        "112037": 27,
+        "114017": 5,
+        "114018": 14,
+        "114019": 14,
+        "114020": 6
+      }
+    },
+    "wikiId": 1978
+  },
+  {
+    "id": 12503,
+    "icon": "UI_EquipIcon_Claymore_Widsith",
+    "rankLevel": 5,
+    "nameTextMapHash": 1075647299,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112005": 15,
+        "112006": 23,
+        "112007": 27,
+        "112014": 23,
+        "112015": 27,
+        "112016": 41,
+        "114001": 5,
+        "114002": 14,
+        "114003": 14,
+        "114004": 6
+      }
+    },
+    "wikiId": 1986
+  },
+  {
+    "id": 12502,
+    "icon": "UI_EquipIcon_Claymore_Wolfmound",
+    "rankLevel": 5,
+    "nameTextMapHash": 3995710363,
+    "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
@@ -2348,145 +1118,668 @@
         "114012": 6
       }
     },
-    "wikiId": 1957
+    "wikiId": 1992
   },
   {
-    "id": 13504,
-    "icon": "UI_EquipIcon_Pole_Kunwu",
+    "id": 12501,
+    "icon": "UI_EquipIcon_Claymore_Dvalin",
     "rankLevel": 5,
-    "nameTextMapHash": 197755235,
-    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 1089950259,
+    "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112035": 15,
-        "112036": 23,
-        "112037": 27,
-        "112041": 23,
-        "112042": 27,
-        "112043": 41,
-        "114021": 5,
-        "114022": 14,
-        "114023": 14,
-        "114024": 6
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
       }
     },
-    "wikiId": 2030
+    "wikiId": 1953
   },
   {
-    "id": 13505,
-    "icon": "UI_EquipIcon_Pole_Morax",
-    "rankLevel": 5,
-    "nameTextMapHash": 1997709467,
-    "weaponType": "WEAPON_POLE",
+    "id": 12427,
+    "icon": "UI_EquipIcon_Claymore_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 3693117451,
+    "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112029": 23,
-        "112030": 27,
-        "112031": 41,
-        "112032": 15,
-        "112033": 23,
-        "112034": 27,
-        "114013": 5,
-        "114014": 14,
-        "114015": 14,
-        "114016": 6
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112089": 15,
+        "112090": 18,
+        "112091": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
       }
     },
-    "wikiId": 1948
+    "wikiId": 4335
   },
   {
-    "id": 13507,
-    "icon": "UI_EquipIcon_Pole_Santika",
-    "rankLevel": 5,
-    "nameTextMapHash": 688991243,
-    "weaponType": "WEAPON_POLE",
+    "id": 12426,
+    "icon": "UI_EquipIcon_Claymore_Champion",
+    "rankLevel": 4,
+    "nameTextMapHash": 933442195,
+    "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112026": 23,
-        "112027": 27,
-        "112028": 41,
-        "112038": 15,
-        "112039": 23,
-        "112040": 27,
-        "114017": 5,
-        "114018": 14,
-        "114019": 14,
-        "114020": 6
-      }
-    },
-    "wikiId": 1970
-  },
-  {
-    "id": 13509,
-    "icon": "UI_EquipIcon_Pole_Narukami",
-    "rankLevel": 5,
-    "nameTextMapHash": 3717849275,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112044": 15,
-        "112045": 23,
-        "112046": 27,
-        "112047": 23,
-        "112048": 27,
-        "112049": 41,
-        "114033": 5,
-        "114034": 14,
-        "114035": 14,
-        "114036": 6
-      }
-    },
-    "wikiId": 2014
-  },
-  {
-    "id": 13511,
-    "icon": "UI_EquipIcon_Pole_Deshret",
-    "rankLevel": 5,
-    "nameTextMapHash": 4238339131,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112068": 23,
-        "112069": 27,
-        "112070": 41,
-        "114041": 5,
-        "114042": 14,
-        "114043": 14,
-        "114044": 6
-      }
-    },
-    "wikiId": 2849
-  },
-  {
-    "id": 13512,
-    "icon": "UI_EquipIcon_Pole_BloodMoon",
-    "rankLevel": 5,
-    "nameTextMapHash": 2944936683,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112083": 15,
-        "112084": 23,
-        "112085": 27,
-        "112098": 23,
-        "112099": 27,
-        "112100": 41,
-        "114057": 5,
-        "114058": 14,
-        "114059": 14,
-        "114060": 6
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112092": 15,
+        "112093": 18,
+        "112094": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
       }
     },
     "wikiId": -1
+  },
+  {
+    "id": 12425,
+    "icon": "UI_EquipIcon_Claymore_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2077869763,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112089": 15,
+        "112090": 18,
+        "112091": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
+      }
+    },
+    "wikiId": 3985
+  },
+  {
+    "id": 12424,
+    "icon": "UI_EquipIcon_Claymore_BeastTamer",
+    "rankLevel": 4,
+    "nameTextMapHash": 3459616011,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112074": 15,
+        "112075": 18,
+        "112076": 27,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 4000
+  },
+  {
+    "id": 12418,
+    "icon": "UI_EquipIcon_Claymore_Fleurfair",
+    "rankLevel": 4,
+    "nameTextMapHash": 1200948859,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "112074": 15,
+        "112075": 18,
+        "112076": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 3614
+  },
+  {
+    "id": 12417,
+    "icon": "UI_EquipIcon_Claymore_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 902184579,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112065": 10,
+        "112066": 15,
+        "112067": 18,
+        "112068": 15,
+        "112069": 18,
+        "112070": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
+      }
+    },
+    "wikiId": 2671
+  },
+  {
+    "id": 12416,
+    "icon": "UI_EquipIcon_Claymore_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 2359799475,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112056": 15,
+        "112057": 18,
+        "112058": 27,
+        "114025": 3,
+        "114026": 9,
+        "114027": 9,
+        "114028": 4
+      }
+    },
+    "wikiId": 1971
+  },
+  {
+    "id": 12415,
+    "icon": "UI_EquipIcon_Claymore_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 3073454867,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "112068": 15,
+        "112069": 18,
+        "112070": 27,
+        "114045": 3,
+        "114046": 9,
+        "114047": 9,
+        "114048": 4
+      }
+    },
+    "wikiId": 2848
+  },
+  {
+    "id": 12414,
+    "icon": "UI_EquipIcon_Claymore_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 4193089947,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112047": 15,
+        "112048": 18,
+        "112049": 27,
+        "114029": 3,
+        "114030": 9,
+        "114031": 9,
+        "114032": 4
+      }
+    },
+    "wikiId": 1987
+  },
+  {
+    "id": 12412,
+    "icon": "UI_EquipIcon_Claymore_MillenniaTuna",
+    "rankLevel": 4,
+    "nameTextMapHash": 346510395,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2016
+  },
+  {
+    "id": 12411,
+    "icon": "UI_EquipIcon_Claymore_Dragonfell",
+    "rankLevel": 4,
+    "nameTextMapHash": 2753539619,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2043
+  },
+  {
+    "id": 12410,
+    "icon": "UI_EquipIcon_Claymore_Lapis",
+    "rankLevel": 4,
+    "nameTextMapHash": 2006422931,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1942
+  },
+  {
+    "id": 12409,
+    "icon": "UI_EquipIcon_Claymore_Kione",
+    "rankLevel": 4,
+    "nameTextMapHash": 1437658243,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2015
+  },
+  {
+    "id": 12408,
+    "icon": "UI_EquipIcon_Claymore_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 20848859,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2056
+  },
+  {
+    "id": 12407,
+    "icon": "UI_EquipIcon_Claymore_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 680510411,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1995
+  },
+  {
+    "id": 12406,
+    "icon": "UI_EquipIcon_Claymore_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 3722933411,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2025
+  },
+  {
+    "id": 12405,
+    "icon": "UI_EquipIcon_Claymore_Perdue",
+    "rankLevel": 4,
+    "nameTextMapHash": 3684723963,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2042
+  },
+  {
+    "id": 12404,
+    "icon": "UI_EquipIcon_Claymore_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 877751435,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 1959
+  },
+  {
+    "id": 12403,
+    "icon": "UI_EquipIcon_Claymore_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 1675686363,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2004
+  },
+  {
+    "id": 12402,
+    "icon": "UI_EquipIcon_Claymore_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 930640955,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2033
+  },
+  {
+    "id": 12401,
+    "icon": "UI_EquipIcon_Claymore_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 735056795,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2018
+  },
+  {
+    "id": 12306,
+    "icon": "UI_EquipIcon_Claymore_Mitsurugi",
+    "rankLevel": 3,
+    "nameTextMapHash": 2614170427,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112035": 6,
+        "112036": 10,
+        "112037": 12,
+        "112041": 10,
+        "112042": 12,
+        "112043": 18,
+        "114021": 2,
+        "114022": 6,
+        "114023": 6,
+        "114024": 3
+      }
+    },
+    "wikiId": 2047
+  },
+  {
+    "id": 12305,
+    "icon": "UI_EquipIcon_Claymore_Reasoning",
+    "rankLevel": 3,
+    "nameTextMapHash": 3097441915,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112005": 6,
+        "112006": 10,
+        "112007": 12,
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 1933
+  },
+  {
+    "id": 12303,
+    "icon": "UI_EquipIcon_Claymore_Tin",
+    "rankLevel": 3,
+    "nameTextMapHash": 850802171,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112002": 6,
+        "112003": 10,
+        "112004": 12,
+        "112023": 10,
+        "112024": 12,
+        "112025": 18,
+        "114009": 2,
+        "114010": 6,
+        "114011": 6,
+        "114012": 3
+      }
+    },
+    "wikiId": 1998
+  },
+  {
+    "id": 12302,
+    "icon": "UI_EquipIcon_Claymore_Siegfry",
+    "rankLevel": 3,
+    "nameTextMapHash": 4090429643,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112011": 6,
+        "112012": 10,
+        "112013": 12,
+        "112020": 10,
+        "112021": 12,
+        "112022": 18,
+        "114005": 2,
+        "114006": 6,
+        "114007": 6,
+        "114008": 3
+      }
+    },
+    "wikiId": 1988
+  },
+  {
+    "id": 12301,
+    "icon": "UI_EquipIcon_Claymore_Glaive",
+    "rankLevel": 3,
+    "nameTextMapHash": 1479961579,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112014": 10,
+        "112015": 12,
+        "112016": 18,
+        "112038": 6,
+        "112039": 10,
+        "112040": 12,
+        "114001": 2,
+        "114002": 6,
+        "114003": 6,
+        "114004": 3
+      }
+    },
+    "wikiId": 2037
+  },
+  {
+    "id": 12201,
+    "icon": "UI_EquipIcon_Claymore_Oyaji",
+    "rankLevel": 2,
+    "nameTextMapHash": 1182966603,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112002": 5,
+        "112003": 7,
+        "112020": 6,
+        "112021": 8,
+        "114005": 1,
+        "114006": 4,
+        "114007": 1
+      }
+    },
+    "wikiId": 1934
+  },
+  {
+    "id": 12101,
+    "icon": "UI_EquipIcon_Claymore_Aniki",
+    "rankLevel": 1,
+    "nameTextMapHash": 2666951267,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112002": 3,
+        "112003": 5,
+        "112020": 5,
+        "112021": 6,
+        "114005": 1,
+        "114006": 3,
+        "114007": 1
+      }
+    },
+    "wikiId": 2023
   },
   {
     "id": 13513,
@@ -2512,655 +1805,132 @@
     "wikiId": -1
   },
   {
-    "id": 14101,
-    "icon": "UI_EquipIcon_Catalyst_Apprentice",
-    "rankLevel": 1,
-    "nameTextMapHash": 3584825427,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112005": 3,
-        "112006": 5,
-        "112014": 5,
-        "112015": 6,
-        "114001": 1,
-        "114002": 3,
-        "114003": 1
-      }
-    },
-    "wikiId": 1958
-  },
-  {
-    "id": 14201,
-    "icon": "UI_EquipIcon_Catalyst_Pocket",
-    "rankLevel": 2,
-    "nameTextMapHash": 2705029563,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112005": 5,
-        "112006": 7,
-        "112014": 6,
-        "112015": 8,
-        "114001": 1,
-        "114002": 4,
-        "114003": 1
-      }
-    },
-    "wikiId": 1946
-  },
-  {
-    "id": 14301,
-    "icon": "UI_EquipIcon_Catalyst_Intro",
-    "rankLevel": 3,
-    "nameTextMapHash": 2279290283,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112002": 6,
-        "112003": 10,
-        "112004": 12,
-        "112014": 10,
-        "112015": 12,
-        "112016": 18,
-        "114001": 2,
-        "114002": 6,
-        "114003": 6,
-        "114004": 3
-      }
-    },
-    "wikiId": 2050
-  },
-  {
-    "id": 14302,
-    "icon": "UI_EquipIcon_Catalyst_Pulpfic",
-    "rankLevel": 3,
-    "nameTextMapHash": 3500935003,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112008": 6,
-        "112009": 10,
-        "112010": 12,
-        "112020": 10,
-        "112021": 12,
-        "112022": 18,
-        "114005": 2,
-        "114006": 6,
-        "114007": 6,
-        "114008": 3
-      }
-    },
-    "wikiId": 2022
-  },
-  {
-    "id": 14303,
-    "icon": "UI_EquipIcon_Catalyst_Lightnov",
-    "rankLevel": 3,
-    "nameTextMapHash": 1406746947,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112005": 6,
-        "112006": 10,
-        "112007": 12,
-        "112023": 10,
-        "112024": 12,
-        "112025": 18,
-        "114009": 2,
-        "114010": 6,
-        "114011": 6,
-        "114012": 3
-      }
-    },
-    "wikiId": 1966
-  },
-  {
-    "id": 14304,
-    "icon": "UI_EquipIcon_Catalyst_Jade",
-    "rankLevel": 3,
-    "nameTextMapHash": 2963220587,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112029": 10,
-        "112030": 12,
-        "112031": 18,
-        "112035": 6,
-        "112036": 10,
-        "112037": 12,
-        "114013": 2,
-        "114014": 6,
-        "114015": 6,
-        "114016": 3
-      }
-    },
-    "wikiId": 2010
-  },
-  {
-    "id": 14305,
-    "icon": "UI_EquipIcon_Catalyst_Phoney",
-    "rankLevel": 3,
-    "nameTextMapHash": 3719372715,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "112032": 6,
-        "112033": 10,
-        "112034": 12,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 1994
-  },
-  {
-    "id": 14401,
-    "icon": "UI_EquipIcon_Catalyst_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 623534363,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2020
-  },
-  {
-    "id": 14402,
-    "icon": "UI_EquipIcon_Catalyst_Troupe",
-    "rankLevel": 4,
-    "nameTextMapHash": 1163263227,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1991
-  },
-  {
-    "id": 14403,
-    "icon": "UI_EquipIcon_Catalyst_Fossil",
-    "rankLevel": 4,
-    "nameTextMapHash": 2195665683,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2006
-  },
-  {
-    "id": 14404,
-    "icon": "UI_EquipIcon_Catalyst_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 3827789435,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 1961
-  },
-  {
-    "id": 14405,
-    "icon": "UI_EquipIcon_Catalyst_Resurrection",
-    "rankLevel": 4,
-    "nameTextMapHash": 37147251,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1939
-  },
-  {
-    "id": 14406,
-    "icon": "UI_EquipIcon_Catalyst_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 2521338131,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2029
-  },
-  {
-    "id": 14407,
-    "icon": "UI_EquipIcon_Catalyst_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 1072884907,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 1931
-  },
-  {
-    "id": 14408,
-    "icon": "UI_EquipIcon_Catalyst_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 3273999011,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 2057
-  },
-  {
-    "id": 14409,
-    "icon": "UI_EquipIcon_Catalyst_Truelens",
-    "rankLevel": 4,
-    "nameTextMapHash": 3156385731,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 1980
-  },
-  {
-    "id": 14410,
-    "icon": "UI_EquipIcon_Catalyst_Outlaw",
-    "rankLevel": 4,
-    "nameTextMapHash": 3090373787,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1982
-  },
-  {
-    "id": 14412,
-    "icon": "UI_EquipIcon_Catalyst_Everfrost",
-    "rankLevel": 4,
-    "nameTextMapHash": 2587614459,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 1969
-  },
-  {
-    "id": 14413,
-    "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
-    "rankLevel": 4,
-    "nameTextMapHash": 3456986819,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1950
-  },
-  {
-    "id": 14414,
-    "icon": "UI_EquipIcon_Catalyst_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 2324146259,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112050": 15,
-        "112051": 18,
-        "112052": 27,
-        "114025": 3,
-        "114026": 9,
-        "114027": 9,
-        "114028": 4
-      }
-    },
-    "wikiId": 1997
-  },
-  {
-    "id": 14415,
-    "icon": "UI_EquipIcon_Catalyst_Jyanome",
-    "rankLevel": 4,
-    "nameTextMapHash": 2539208459,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "112056": 15,
-        "112057": 18,
-        "112058": 27,
-        "114025": 3,
-        "114026": 9,
-        "114027": 9,
-        "114028": 4
-      }
-    },
-    "wikiId": 2024
-  },
-  {
-    "id": 14416,
-    "icon": "UI_EquipIcon_Catalyst_Pleroma",
-    "rankLevel": 4,
-    "nameTextMapHash": 426363739,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112059": 10,
-        "112060": 15,
-        "112061": 18,
-        "112062": 15,
-        "112063": 18,
-        "112064": 27,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 2910
-  },
-  {
-    "id": 14417,
-    "icon": "UI_EquipIcon_Catalyst_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 2267978875,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112017": 15,
-        "112018": 18,
-        "112019": 27,
-        "112059": 10,
-        "112060": 15,
-        "112061": 18,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 2669
-  },
-  {
-    "id": 14424,
-    "icon": "UI_EquipIcon_Catalyst_Yue",
-    "rankLevel": 4,
-    "nameTextMapHash": 2275710883,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 4003
-  },
-  {
-    "id": 14425,
-    "icon": "UI_EquipIcon_Catalyst_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 2432865507,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112080": 10,
-        "112081": 15,
-        "112082": 18,
-        "112089": 15,
-        "112090": 18,
-        "112091": 27,
-        "114053": 3,
-        "114054": 9,
-        "114055": 9,
-        "114056": 4
-      }
-    },
-    "wikiId": 3988
-  },
-  {
-    "id": 14426,
-    "icon": "UI_EquipIcon_Catalyst_DandelionPoem",
-    "rankLevel": 4,
-    "nameTextMapHash": 2722902043,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 4338
-  },
-  {
-    "id": 14501,
-    "icon": "UI_EquipIcon_Catalyst_Dvalin",
+    "id": 13512,
+    "icon": "UI_EquipIcon_Pole_BloodMoon",
     "rankLevel": 5,
-    "nameTextMapHash": 807607555,
-    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 2944936683,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112011": 15,
-        "112012": 23,
-        "112013": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114005": 5,
-        "114006": 14,
-        "114007": 14,
-        "114008": 6
+        "112083": 15,
+        "112084": 23,
+        "112085": 27,
+        "112098": 23,
+        "112099": 27,
+        "112100": 41,
+        "114057": 5,
+        "114058": 14,
+        "114059": 14,
+        "114060": 6
       }
     },
-    "wikiId": 1955
+    "wikiId": -1
   },
   {
-    "id": 14502,
-    "icon": "UI_EquipIcon_Catalyst_Fourwinds",
+    "id": 13511,
+    "icon": "UI_EquipIcon_Pole_Deshret",
     "rankLevel": 5,
-    "nameTextMapHash": 1455107995,
-    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 4238339131,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112023": 23,
-        "112024": 27,
-        "112025": 41,
-        "114009": 5,
-        "114010": 14,
-        "114011": 14,
-        "114012": 6
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112068": 23,
+        "112069": 27,
+        "112070": 41,
+        "114041": 5,
+        "114042": 14,
+        "114043": 14,
+        "114044": 6
       }
     },
-    "wikiId": 1951
+    "wikiId": 2849
   },
   {
-    "id": 14504,
-    "icon": "UI_EquipIcon_Catalyst_Kunwu",
+    "id": 13509,
+    "icon": "UI_EquipIcon_Pole_Narukami",
     "rankLevel": 5,
-    "nameTextMapHash": 693354267,
-    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 3717849275,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112005": 15,
-        "112006": 23,
-        "112007": 27,
+        "112044": 15,
+        "112045": 23,
+        "112046": 27,
+        "112047": 23,
+        "112048": 27,
+        "112049": 41,
+        "114033": 5,
+        "114034": 14,
+        "114035": 14,
+        "114036": 6
+      }
+    },
+    "wikiId": 2014
+  },
+  {
+    "id": 13507,
+    "icon": "UI_EquipIcon_Pole_Santika",
+    "rankLevel": 5,
+    "nameTextMapHash": 688991243,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112026": 23,
+        "112027": 27,
+        "112028": 41,
+        "112038": 15,
+        "112039": 23,
+        "112040": 27,
+        "114017": 5,
+        "114018": 14,
+        "114019": 14,
+        "114020": 6
+      }
+    },
+    "wikiId": 1970
+  },
+  {
+    "id": 13505,
+    "icon": "UI_EquipIcon_Pole_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 1997709467,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112029": 23,
+        "112030": 27,
+        "112031": 41,
+        "112032": 15,
+        "112033": 23,
+        "112034": 27,
+        "114013": 5,
+        "114014": 14,
+        "114015": 14,
+        "114016": 6
+      }
+    },
+    "wikiId": 1948
+  },
+  {
+    "id": 13504,
+    "icon": "UI_EquipIcon_Pole_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 197755235,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112035": 15,
+        "112036": 23,
+        "112037": 27,
         "112041": 23,
         "112042": 27,
         "112043": 41,
@@ -3170,168 +1940,576 @@
         "114024": 6
       }
     },
-    "wikiId": 1964
+    "wikiId": 2030
   },
   {
-    "id": 14505,
-    "icon": "UI_EquipIcon_Catalyst_Morax",
+    "id": 13502,
+    "icon": "UI_EquipIcon_Pole_Dvalin",
     "rankLevel": 5,
-    "nameTextMapHash": 4007372867,
-    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 4158505619,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112077": 23,
-        "112078": 27,
-        "112079": 41,
-        "114013": 5,
-        "114014": 14,
-        "114015": 14,
-        "114016": 6
+        "112008": 15,
+        "112009": 23,
+        "112010": 27,
+        "112023": 23,
+        "112024": 27,
+        "112025": 41,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
       }
     },
-    "wikiId": 3692
+    "wikiId": 1957
   },
   {
-    "id": 14506,
-    "icon": "UI_EquipIcon_Catalyst_Kaleido",
+    "id": 13501,
+    "icon": "UI_EquipIcon_Pole_Homa",
     "rankLevel": 5,
-    "nameTextMapHash": 1890163363,
-    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 3235324891,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112050": 23,
-        "112051": 27,
-        "112052": 41,
-        "112053": 15,
-        "112054": 23,
-        "112055": 27,
-        "114025": 5,
-        "114026": 14,
-        "114027": 14,
-        "114028": 6
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114021": 5,
+        "114022": 14,
+        "114023": 14,
+        "114024": 6
       }
     },
-    "wikiId": 1932
+    "wikiId": 1972
   },
   {
-    "id": 14509,
-    "icon": "UI_EquipIcon_Catalyst_Narukami",
-    "rankLevel": 5,
-    "nameTextMapHash": 310247243,
-    "weaponType": "WEAPON_CATALYST",
+    "id": 13427,
+    "icon": "UI_EquipIcon_Pole_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 882305891,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112053": 15,
-        "112054": 23,
-        "112055": 27,
-        "112056": 23,
-        "112057": 27,
-        "112058": 41,
-        "114033": 5,
-        "114034": 14,
-        "114035": 14,
-        "114036": 6
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112092": 15,
+        "112093": 18,
+        "112094": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
       }
     },
-    "wikiId": 2001
+    "wikiId": 4336
   },
   {
-    "id": 14511,
-    "icon": "UI_EquipIcon_Catalyst_Ayus",
-    "rankLevel": 5,
-    "nameTextMapHash": 1201790667,
-    "weaponType": "WEAPON_CATALYST",
+    "id": 13426,
+    "icon": "UI_EquipIcon_Pole_Caduceus",
+    "rankLevel": 4,
+    "nameTextMapHash": 2847771107,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112071": 23,
-        "112072": 27,
-        "112073": 41,
-        "114041": 5,
-        "114042": 14,
-        "114043": 14,
-        "114044": 6
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "112095": 15,
+        "112096": 18,
+        "112097": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
       }
     },
-    "wikiId": 2966
+    "wikiId": 5151
   },
   {
-    "id": 14512,
-    "icon": "UI_EquipIcon_Catalyst_Alaya",
-    "rankLevel": 5,
-    "nameTextMapHash": 359484419,
-    "weaponType": "WEAPON_CATALYST",
+    "id": 13425,
+    "icon": "UI_EquipIcon_Pole_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 4158971171,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112062": 23,
-        "112063": 27,
-        "112064": 41,
-        "114045": 5,
-        "114046": 14,
-        "114047": 14,
-        "114048": 6
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112089": 15,
+        "112090": 18,
+        "112091": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
       }
     },
-    "wikiId": 3320
+    "wikiId": 3986
   },
   {
-    "id": 14513,
-    "icon": "UI_EquipIcon_Catalyst_Wheatley",
-    "rankLevel": 5,
-    "nameTextMapHash": 724881171,
-    "weaponType": "WEAPON_CATALYST",
+    "id": 13424,
+    "icon": "UI_EquipIcon_Pole_Shanty",
+    "rankLevel": 4,
+    "nameTextMapHash": 449192923,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112080": 15,
-        "112081": 23,
-        "112082": 27,
-        "112092": 23,
-        "112093": 27,
-        "112094": 41,
-        "114057": 5,
-        "114058": 14,
-        "114059": 14,
-        "114060": 6
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "112077": 15,
+        "112078": 18,
+        "112079": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
       }
     },
-    "wikiId": 4340
+    "wikiId": 4001
   },
   {
-    "id": 14514,
-    "icon": "UI_EquipIcon_Catalyst_Iudex",
-    "rankLevel": 5,
-    "nameTextMapHash": 4176923379,
-    "weaponType": "WEAPON_CATALYST",
+    "id": 13419,
+    "icon": "UI_EquipIcon_Pole_Windvane",
+    "rankLevel": 4,
+    "nameTextMapHash": 1470442731,
+    "weaponType": "WEAPON_POLE",
     "allCosts": {
-      "promoteCoin": 225000,
+      "promoteCoin": 150000,
       "materials": {
-        "112083": 15,
-        "112084": 23,
-        "112085": 27,
-        "112089": 23,
-        "112090": 27,
-        "112091": 41,
-        "114053": 5,
-        "114054": 14,
-        "114055": 14,
-        "114056": 6
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112017": 15,
+        "112018": 18,
+        "112019": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
       }
     },
-    "wikiId": 4339
+    "wikiId": 2847
+  },
+  {
+    "id": 13417,
+    "icon": "UI_EquipIcon_Pole_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 452357939,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "112068": 15,
+        "112069": 18,
+        "112070": 27,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 2668
+  },
+  {
+    "id": 13416,
+    "icon": "UI_EquipIcon_Pole_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 4122509083,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112056": 15,
+        "112057": 18,
+        "112058": 27,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 1975
+  },
+  {
+    "id": 13415,
+    "icon": "UI_EquipIcon_Pole_Mori",
+    "rankLevel": 4,
+    "nameTextMapHash": 1148024603,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112047": 15,
+        "112048": 18,
+        "112049": 27,
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 1930
+  },
+  {
+    "id": 13414,
+    "icon": "UI_EquipIcon_Pole_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2491797315,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "112047": 15,
+        "112048": 18,
+        "112049": 27,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 1949
+  },
+  {
+    "id": 13409,
+    "icon": "UI_EquipIcon_Pole_Everfrost",
+    "rankLevel": 4,
+    "nameTextMapHash": 3443142923,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2060
+  },
+  {
+    "id": 13408,
+    "icon": "UI_EquipIcon_Pole_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2935286715,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 1960
+  },
+  {
+    "id": 13407,
+    "icon": "UI_EquipIcon_Pole_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 3755004051,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2021
+  },
+  {
+    "id": 13406,
+    "icon": "UI_EquipIcon_Pole_Lapis",
+    "rankLevel": 4,
+    "nameTextMapHash": 716252627,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 1943
+  },
+  {
+    "id": 13405,
+    "icon": "UI_EquipIcon_Pole_Gladiator",
+    "rankLevel": 4,
+    "nameTextMapHash": 4049410651,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1937
+  },
+  {
+    "id": 13404,
+    "icon": "UI_EquipIcon_Pole_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 481755219,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2054
+  },
+  {
+    "id": 13403,
+    "icon": "UI_EquipIcon_Pole_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 578575283,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1990
+  },
+  {
+    "id": 13402,
+    "icon": "UI_EquipIcon_Pole_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 1154009435,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2027
+  },
+  {
+    "id": 13401,
+    "icon": "UI_EquipIcon_Pole_Stardust",
+    "rankLevel": 4,
+    "nameTextMapHash": 2664629131,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 1940
+  },
+  {
+    "id": 13303,
+    "icon": "UI_EquipIcon_Pole_Noire",
+    "rankLevel": 3,
+    "nameTextMapHash": 4103766499,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112011": 6,
+        "112012": 10,
+        "112013": 12,
+        "112041": 10,
+        "112042": 12,
+        "112043": 18,
+        "114021": 2,
+        "114022": 6,
+        "114023": 6,
+        "114024": 3
+      }
+    },
+    "wikiId": 2059
+  },
+  {
+    "id": 13302,
+    "icon": "UI_EquipIcon_Pole_Halberd",
+    "rankLevel": 3,
+    "nameTextMapHash": 618786571,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "112038": 6,
+        "112039": 10,
+        "112040": 12,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 2035
+  },
+  {
+    "id": 13301,
+    "icon": "UI_EquipIcon_Pole_Ruby",
+    "rankLevel": 3,
+    "nameTextMapHash": 1390797107,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112029": 10,
+        "112030": 12,
+        "112031": 18,
+        "112032": 6,
+        "112033": 10,
+        "112034": 12,
+        "114013": 2,
+        "114014": 6,
+        "114015": 6,
+        "114016": 3
+      }
+    },
+    "wikiId": 1996
+  },
+  {
+    "id": 13201,
+    "icon": "UI_EquipIcon_Pole_Rod",
+    "rankLevel": 2,
+    "nameTextMapHash": 3070169307,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112008": 5,
+        "112009": 7,
+        "112023": 6,
+        "112024": 8,
+        "114009": 1,
+        "114010": 4,
+        "114011": 1
+      }
+    },
+    "wikiId": 2036
+  },
+  {
+    "id": 13101,
+    "icon": "UI_EquipIcon_Pole_Gewalt",
+    "rankLevel": 1,
+    "nameTextMapHash": 2796697027,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112008": 3,
+        "112009": 5,
+        "112023": 5,
+        "112024": 6,
+        "114009": 1,
+        "114010": 3,
+        "114011": 1
+      }
+    },
+    "wikiId": 1976
   },
   {
     "id": 14515,
@@ -3357,764 +2535,103 @@
     "wikiId": 4941
   },
   {
-    "id": 15101,
-    "icon": "UI_EquipIcon_Bow_Hunters",
-    "rankLevel": 1,
-    "nameTextMapHash": 3600623979,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112020": 5,
-        "112021": 6,
-        "112035": 3,
-        "112036": 5,
-        "114005": 1,
-        "114006": 3,
-        "114007": 1
-      }
-    },
-    "wikiId": 1993
-  },
-  {
-    "id": 15201,
-    "icon": "UI_EquipIcon_Bow_Old",
-    "rankLevel": 2,
-    "nameTextMapHash": 2340970067,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112020": 6,
-        "112021": 8,
-        "112035": 5,
-        "112036": 7,
-        "114005": 1,
-        "114006": 4,
-        "114007": 1
-      }
-    },
-    "wikiId": 1944
-  },
-  {
-    "id": 15301,
-    "icon": "UI_EquipIcon_Bow_Crowfeather",
-    "rankLevel": 3,
-    "nameTextMapHash": 3975746731,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112011": 6,
-        "112012": 10,
-        "112013": 12,
-        "112014": 10,
-        "112015": 12,
-        "112016": 18,
-        "114001": 2,
-        "114002": 6,
-        "114003": 6,
-        "114004": 3
-      }
-    },
-    "wikiId": 2051
-  },
-  {
-    "id": 15302,
-    "icon": "UI_EquipIcon_Bow_Arjuna",
-    "rankLevel": 3,
-    "nameTextMapHash": 656120259,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112002": 6,
-        "112003": 10,
-        "112004": 12,
-        "112020": 10,
-        "112021": 12,
-        "112022": 18,
-        "114005": 2,
-        "114006": 6,
-        "114007": 6,
-        "114008": 3
-      }
-    },
-    "wikiId": 2002
-  },
-  {
-    "id": 15303,
-    "icon": "UI_EquipIcon_Bow_Curve",
-    "rankLevel": 3,
-    "nameTextMapHash": 4267718859,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112008": 6,
-        "112009": 10,
-        "112010": 12,
-        "112023": 10,
-        "112024": 12,
-        "112025": 18,
-        "114009": 2,
-        "114010": 6,
-        "114011": 6,
-        "114012": 3
-      }
-    },
-    "wikiId": 1945
-  },
-  {
-    "id": 15304,
-    "icon": "UI_EquipIcon_Bow_Sling",
-    "rankLevel": 3,
-    "nameTextMapHash": 1021898539,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112005": 6,
-        "112006": 10,
-        "112007": 12,
-        "112029": 10,
-        "112030": 12,
-        "112031": 18,
-        "114013": 2,
-        "114014": 6,
-        "114015": 6,
-        "114016": 3
-      }
-    },
-    "wikiId": 1968
-  },
-  {
-    "id": 15305,
-    "icon": "UI_EquipIcon_Bow_Msg",
-    "rankLevel": 3,
-    "nameTextMapHash": 4139294531,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "112035": 6,
-        "112036": 10,
-        "112037": 12,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 1935
-  },
-  {
-    "id": 15401,
-    "icon": "UI_EquipIcon_Bow_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 1240067179,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2019
-  },
-  {
-    "id": 15402,
-    "icon": "UI_EquipIcon_Bow_Troupe",
-    "rankLevel": 4,
-    "nameTextMapHash": 2556914683,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2009
-  },
-  {
-    "id": 15403,
-    "icon": "UI_EquipIcon_Bow_Fossil",
-    "rankLevel": 4,
-    "nameTextMapHash": 2400012995,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2005
-  },
-  {
-    "id": 15404,
-    "icon": "UI_EquipIcon_Bow_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 2832648187,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 1963
-  },
-  {
-    "id": 15405,
-    "icon": "UI_EquipIcon_Bow_Recluse",
-    "rankLevel": 4,
-    "nameTextMapHash": 3169209451,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1967
-  },
-  {
-    "id": 15406,
-    "icon": "UI_EquipIcon_Bow_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 3625393819,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2028
-  },
-  {
-    "id": 15407,
-    "icon": "UI_EquipIcon_Bow_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 411685275,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2034
-  },
-  {
-    "id": 15408,
-    "icon": "UI_EquipIcon_Bow_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 3447737235,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 2055
-  },
-  {
-    "id": 15409,
-    "icon": "UI_EquipIcon_Bow_Viridescent",
-    "rankLevel": 4,
-    "nameTextMapHash": 3439749859,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2013
-  },
-  {
-    "id": 15410,
-    "icon": "UI_EquipIcon_Bow_Outlaw",
-    "rankLevel": 4,
-    "nameTextMapHash": 2417717595,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 1981
-  },
-  {
-    "id": 15411,
-    "icon": "UI_EquipIcon_Bow_Fallensun",
-    "rankLevel": 4,
-    "nameTextMapHash": 2425414923,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2255
-  },
-  {
-    "id": 15412,
-    "icon": "UI_EquipIcon_Bow_Nachtblind",
-    "rankLevel": 4,
-    "nameTextMapHash": 3949653579,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 1965
-  },
-  {
-    "id": 15413,
-    "icon": "UI_EquipIcon_Bow_Fleurfair",
-    "rankLevel": 4,
-    "nameTextMapHash": 650049651,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2045
-  },
-  {
-    "id": 15414,
-    "icon": "UI_EquipIcon_Bow_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 4186179883,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112050": 15,
-        "112051": 18,
-        "112052": 27,
-        "114029": 3,
-        "114030": 9,
-        "114031": 9,
-        "114032": 4
-      }
-    },
-    "wikiId": 1999
-  },
-  {
-    "id": 15415,
-    "icon": "UI_EquipIcon_Bow_Predator",
-    "rankLevel": 4,
-    "nameTextMapHash": 540938627,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112050": 15,
-        "112051": 18,
-        "112052": 27,
-        "114029": 3,
-        "114030": 9,
-        "114031": 9,
-        "114032": 4
-      }
-    },
-    "wikiId": 1973
-  },
-  {
-    "id": 15416,
-    "icon": "UI_EquipIcon_Bow_Maria",
-    "rankLevel": 4,
-    "nameTextMapHash": 1860795787,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112050": 15,
-        "112051": 18,
-        "112052": 27,
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "114029": 3,
-        "114030": 9,
-        "114031": 9,
-        "114032": 4
-      }
-    },
-    "wikiId": 1985
-  },
-  {
-    "id": 15417,
-    "icon": "UI_EquipIcon_Bow_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 3176599083,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112062": 15,
-        "112063": 18,
-        "112064": 27,
-        "114045": 3,
-        "114046": 9,
-        "114047": 9,
-        "114048": 4
-      }
-    },
-    "wikiId": 2670
-  },
-  {
-    "id": 15418,
-    "icon": "UI_EquipIcon_Bow_Fin",
-    "rankLevel": 4,
-    "nameTextMapHash": 3063191787,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112059": 10,
-        "112060": 15,
-        "112061": 18,
-        "112062": 15,
-        "112063": 18,
-        "112064": 27,
-        "114045": 3,
-        "114046": 9,
-        "114047": 9,
-        "114048": 4
-      }
-    },
-    "wikiId": 2666
-  },
-  {
-    "id": 15419,
-    "icon": "UI_EquipIcon_Bow_Ibis",
-    "rankLevel": 4,
-    "nameTextMapHash": 316078811,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112065": 10,
-        "112066": 15,
-        "112067": 18,
-        "112077": 15,
-        "112078": 18,
-        "112079": 27,
-        "114037": 3,
-        "114038": 9,
-        "114039": 9,
-        "114040": 4
-      }
-    },
-    "wikiId": 3902
-  },
-  {
-    "id": 15424,
-    "icon": "UI_EquipIcon_Bow_Gurabad",
-    "rankLevel": 4,
-    "nameTextMapHash": 2958179435,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112059": 10,
-        "112060": 15,
-        "112061": 18,
-        "112077": 15,
-        "112078": 18,
-        "112079": 27,
-        "114045": 3,
-        "114046": 9,
-        "114047": 9,
-        "114048": 4
-      }
-    },
-    "wikiId": 4002
-  },
-  {
-    "id": 15425,
-    "icon": "UI_EquipIcon_Bow_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 2600875323,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112086": 15,
-        "112087": 18,
-        "112088": 27,
-        "114049": 3,
-        "114050": 9,
-        "114051": 9,
-        "114052": 4
-      }
-    },
-    "wikiId": 3987
-  },
-  {
-    "id": 15426,
-    "icon": "UI_EquipIcon_Bow_Ultimatum",
-    "rankLevel": 4,
-    "nameTextMapHash": 4038676067,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "112098": 15,
-        "112099": 18,
-        "112100": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 5713
-  },
-  {
-    "id": 15427,
-    "icon": "UI_EquipIcon_Bow_Mechanic",
-    "rankLevel": 4,
-    "nameTextMapHash": 1055195035,
-    "weaponType": "WEAPON_BOW",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112080": 10,
-        "112081": 15,
-        "112082": 18,
-        "112086": 15,
-        "112087": 18,
-        "112088": 27,
-        "114049": 3,
-        "114050": 9,
-        "114051": 9,
-        "114052": 4
-      }
-    },
-    "wikiId": 4337
-  },
-  {
-    "id": 15501,
-    "icon": "UI_EquipIcon_Bow_Dvalin",
+    "id": 14514,
+    "icon": "UI_EquipIcon_Catalyst_Iudex",
     "rankLevel": 5,
-    "nameTextMapHash": 3933622347,
-    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 4176923379,
+    "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112011": 15,
-        "112012": 23,
-        "112013": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114005": 5,
-        "114006": 14,
-        "114007": 14,
-        "114008": 6
+        "112083": 15,
+        "112084": 23,
+        "112085": 27,
+        "112089": 23,
+        "112090": 27,
+        "112091": 41,
+        "114053": 5,
+        "114054": 14,
+        "114055": 14,
+        "114056": 6
       }
     },
-    "wikiId": 1956
+    "wikiId": 4339
   },
   {
-    "id": 15502,
-    "icon": "UI_EquipIcon_Bow_Amos",
+    "id": 14513,
+    "icon": "UI_EquipIcon_Catalyst_Wheatley",
     "rankLevel": 5,
-    "nameTextMapHash": 828711395,
-    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 724881171,
+    "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112023": 23,
-        "112024": 27,
-        "112025": 41,
-        "114009": 5,
-        "114010": 14,
-        "114011": 14,
-        "114012": 6
+        "112080": 15,
+        "112081": 23,
+        "112082": 27,
+        "112092": 23,
+        "112093": 27,
+        "112094": 41,
+        "114057": 5,
+        "114058": 14,
+        "114059": 14,
+        "114060": 6
       }
     },
-    "wikiId": 2040
+    "wikiId": 4340
   },
   {
-    "id": 15503,
-    "icon": "UI_EquipIcon_Bow_Widsith",
+    "id": 14512,
+    "icon": "UI_EquipIcon_Catalyst_Alaya",
     "rankLevel": 5,
-    "nameTextMapHash": 3112679155,
-    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 359484419,
+    "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112014": 23,
-        "112015": 27,
-        "112016": 41,
-        "112032": 15,
-        "112033": 23,
-        "112034": 27,
-        "114005": 5,
-        "114006": 14,
-        "114007": 14,
-        "114008": 6
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112062": 23,
+        "112063": 27,
+        "112064": 41,
+        "114045": 5,
+        "114046": 14,
+        "114047": 14,
+        "114048": 6
       }
     },
-    "wikiId": 2008
+    "wikiId": 3320
   },
   {
-    "id": 15507,
-    "icon": "UI_EquipIcon_Bow_Worldbane",
+    "id": 14511,
+    "icon": "UI_EquipIcon_Catalyst_Ayus",
     "rankLevel": 5,
-    "nameTextMapHash": 1901973075,
-    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 1201790667,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112071": 23,
+        "112072": 27,
+        "112073": 41,
+        "114041": 5,
+        "114042": 14,
+        "114043": 14,
+        "114044": 6
+      }
+    },
+    "wikiId": 2966
+  },
+  {
+    "id": 14509,
+    "icon": "UI_EquipIcon_Catalyst_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 310247243,
+    "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
@@ -4130,76 +2647,737 @@
         "114036": 6
       }
     },
-    "wikiId": 1936
+    "wikiId": 2001
   },
   {
-    "id": 15508,
-    "icon": "UI_EquipIcon_Bow_Kirin",
+    "id": 14506,
+    "icon": "UI_EquipIcon_Catalyst_Kaleido",
     "rankLevel": 5,
-    "nameTextMapHash": 4230231107,
-    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 1890163363,
+    "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112017": 23,
-        "112018": 27,
-        "112019": 41,
+        "112050": 23,
+        "112051": 27,
+        "112052": 41,
         "112053": 15,
         "112054": 23,
         "112055": 27,
+        "114025": 5,
+        "114026": 14,
+        "114027": 14,
+        "114028": 6
+      }
+    },
+    "wikiId": 1932
+  },
+  {
+    "id": 14505,
+    "icon": "UI_EquipIcon_Catalyst_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 4007372867,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112077": 23,
+        "112078": 27,
+        "112079": 41,
         "114013": 5,
         "114014": 14,
         "114015": 14,
         "114016": 6
       }
     },
-    "wikiId": 2254
+    "wikiId": 3692
   },
   {
-    "id": 15509,
-    "icon": "UI_EquipIcon_Bow_Narukami",
+    "id": 14504,
+    "icon": "UI_EquipIcon_Catalyst_Kunwu",
     "rankLevel": 5,
-    "nameTextMapHash": 2918525947,
-    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 693354267,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112005": 15,
+        "112006": 23,
+        "112007": 27,
+        "112041": 23,
+        "112042": 27,
+        "112043": 41,
+        "114021": 5,
+        "114022": 14,
+        "114023": 14,
+        "114024": 6
+      }
+    },
+    "wikiId": 1964
+  },
+  {
+    "id": 14502,
+    "icon": "UI_EquipIcon_Catalyst_Fourwinds",
+    "rankLevel": 5,
+    "nameTextMapHash": 1455107995,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112023": 23,
+        "112024": 27,
+        "112025": 41,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
+      }
+    },
+    "wikiId": 1951
+  },
+  {
+    "id": 14501,
+    "icon": "UI_EquipIcon_Catalyst_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 807607555,
+    "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
         "112011": 15,
         "112012": 23,
         "112013": 27,
-        "112050": 23,
-        "112051": 27,
-        "112052": 41,
-        "114029": 5,
-        "114030": 14,
-        "114031": 14,
-        "114032": 6
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
       }
     },
-    "wikiId": 2049
+    "wikiId": 1955
   },
   {
-    "id": 15511,
-    "icon": "UI_EquipIcon_Bow_Ayus",
+    "id": 14426,
+    "icon": "UI_EquipIcon_Catalyst_DandelionPoem",
+    "rankLevel": 4,
+    "nameTextMapHash": 2722902043,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 4338
+  },
+  {
+    "id": 14425,
+    "icon": "UI_EquipIcon_Catalyst_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2432865507,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112089": 15,
+        "112090": 18,
+        "112091": 27,
+        "114053": 3,
+        "114054": 9,
+        "114055": 9,
+        "114056": 4
+      }
+    },
+    "wikiId": 3988
+  },
+  {
+    "id": 14424,
+    "icon": "UI_EquipIcon_Catalyst_Yue",
+    "rankLevel": 4,
+    "nameTextMapHash": 2275710883,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 4003
+  },
+  {
+    "id": 14417,
+    "icon": "UI_EquipIcon_Catalyst_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 2267978875,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112017": 15,
+        "112018": 18,
+        "112019": 27,
+        "112059": 10,
+        "112060": 15,
+        "112061": 18,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 2669
+  },
+  {
+    "id": 14416,
+    "icon": "UI_EquipIcon_Catalyst_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 426363739,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112059": 10,
+        "112060": 15,
+        "112061": 18,
+        "112062": 15,
+        "112063": 18,
+        "112064": 27,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 2910
+  },
+  {
+    "id": 14415,
+    "icon": "UI_EquipIcon_Catalyst_Jyanome",
+    "rankLevel": 4,
+    "nameTextMapHash": 2539208459,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "112056": 15,
+        "112057": 18,
+        "112058": 27,
+        "114025": 3,
+        "114026": 9,
+        "114027": 9,
+        "114028": 4
+      }
+    },
+    "wikiId": 2024
+  },
+  {
+    "id": 14414,
+    "icon": "UI_EquipIcon_Catalyst_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2324146259,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112050": 15,
+        "112051": 18,
+        "112052": 27,
+        "114025": 3,
+        "114026": 9,
+        "114027": 9,
+        "114028": 4
+      }
+    },
+    "wikiId": 1997
+  },
+  {
+    "id": 14413,
+    "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
+    "rankLevel": 4,
+    "nameTextMapHash": 3456986819,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1950
+  },
+  {
+    "id": 14412,
+    "icon": "UI_EquipIcon_Catalyst_Everfrost",
+    "rankLevel": 4,
+    "nameTextMapHash": 2587614459,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 1969
+  },
+  {
+    "id": 14410,
+    "icon": "UI_EquipIcon_Catalyst_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 3090373787,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1982
+  },
+  {
+    "id": 14409,
+    "icon": "UI_EquipIcon_Catalyst_Truelens",
+    "rankLevel": 4,
+    "nameTextMapHash": 3156385731,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 1980
+  },
+  {
+    "id": 14408,
+    "icon": "UI_EquipIcon_Catalyst_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3273999011,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 2057
+  },
+  {
+    "id": 14407,
+    "icon": "UI_EquipIcon_Catalyst_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1072884907,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 1931
+  },
+  {
+    "id": 14406,
+    "icon": "UI_EquipIcon_Catalyst_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 2521338131,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2029
+  },
+  {
+    "id": 14405,
+    "icon": "UI_EquipIcon_Catalyst_Resurrection",
+    "rankLevel": 4,
+    "nameTextMapHash": 37147251,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1939
+  },
+  {
+    "id": 14404,
+    "icon": "UI_EquipIcon_Catalyst_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 3827789435,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 1961
+  },
+  {
+    "id": 14403,
+    "icon": "UI_EquipIcon_Catalyst_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 2195665683,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2006
+  },
+  {
+    "id": 14402,
+    "icon": "UI_EquipIcon_Catalyst_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 1163263227,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1991
+  },
+  {
+    "id": 14401,
+    "icon": "UI_EquipIcon_Catalyst_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 623534363,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2020
+  },
+  {
+    "id": 14305,
+    "icon": "UI_EquipIcon_Catalyst_Phoney",
+    "rankLevel": 3,
+    "nameTextMapHash": 3719372715,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "112032": 6,
+        "112033": 10,
+        "112034": 12,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 1994
+  },
+  {
+    "id": 14304,
+    "icon": "UI_EquipIcon_Catalyst_Jade",
+    "rankLevel": 3,
+    "nameTextMapHash": 2963220587,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112029": 10,
+        "112030": 12,
+        "112031": 18,
+        "112035": 6,
+        "112036": 10,
+        "112037": 12,
+        "114013": 2,
+        "114014": 6,
+        "114015": 6,
+        "114016": 3
+      }
+    },
+    "wikiId": 2010
+  },
+  {
+    "id": 14303,
+    "icon": "UI_EquipIcon_Catalyst_Lightnov",
+    "rankLevel": 3,
+    "nameTextMapHash": 1406746947,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112005": 6,
+        "112006": 10,
+        "112007": 12,
+        "112023": 10,
+        "112024": 12,
+        "112025": 18,
+        "114009": 2,
+        "114010": 6,
+        "114011": 6,
+        "114012": 3
+      }
+    },
+    "wikiId": 1966
+  },
+  {
+    "id": 14302,
+    "icon": "UI_EquipIcon_Catalyst_Pulpfic",
+    "rankLevel": 3,
+    "nameTextMapHash": 3500935003,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112008": 6,
+        "112009": 10,
+        "112010": 12,
+        "112020": 10,
+        "112021": 12,
+        "112022": 18,
+        "114005": 2,
+        "114006": 6,
+        "114007": 6,
+        "114008": 3
+      }
+    },
+    "wikiId": 2022
+  },
+  {
+    "id": 14301,
+    "icon": "UI_EquipIcon_Catalyst_Intro",
+    "rankLevel": 3,
+    "nameTextMapHash": 2279290283,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112002": 6,
+        "112003": 10,
+        "112004": 12,
+        "112014": 10,
+        "112015": 12,
+        "112016": 18,
+        "114001": 2,
+        "114002": 6,
+        "114003": 6,
+        "114004": 3
+      }
+    },
+    "wikiId": 2050
+  },
+  {
+    "id": 14201,
+    "icon": "UI_EquipIcon_Catalyst_Pocket",
+    "rankLevel": 2,
+    "nameTextMapHash": 2705029563,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112005": 5,
+        "112006": 7,
+        "112014": 6,
+        "112015": 8,
+        "114001": 1,
+        "114002": 4,
+        "114003": 1
+      }
+    },
+    "wikiId": 1946
+  },
+  {
+    "id": 14101,
+    "icon": "UI_EquipIcon_Catalyst_Apprentice",
+    "rankLevel": 1,
+    "nameTextMapHash": 3584825427,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112005": 3,
+        "112006": 5,
+        "112014": 5,
+        "112015": 6,
+        "114001": 1,
+        "114002": 3,
+        "114003": 1
+      }
+    },
+    "wikiId": 1958
+  },
+  {
+    "id": 15513,
+    "icon": "UI_EquipIcon_Bow_Arcdange",
     "rankLevel": 5,
-    "nameTextMapHash": 1348687251,
+    "nameTextMapHash": 1257396043,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112062": 23,
-        "112063": 27,
-        "112064": 41,
-        "112065": 15,
-        "112066": 23,
-        "112067": 27,
-        "114045": 5,
-        "114046": 14,
-        "114047": 14,
-        "114048": 6
+        "112080": 15,
+        "112081": 23,
+        "112082": 27,
+        "112095": 23,
+        "112096": 27,
+        "112097": 41,
+        "114053": 5,
+        "114054": 14,
+        "114055": 14,
+        "114056": 6
       }
     },
-    "wikiId": 2665
+    "wikiId": 5673
   },
   {
     "id": 15512,
@@ -4225,26 +3403,848 @@
     "wikiId": 3983
   },
   {
-    "id": 15513,
-    "icon": "UI_EquipIcon_Bow_Arcdange",
+    "id": 15511,
+    "icon": "UI_EquipIcon_Bow_Ayus",
     "rankLevel": 5,
-    "nameTextMapHash": 1257396043,
+    "nameTextMapHash": 1348687251,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112080": 15,
-        "112081": 23,
-        "112082": 27,
-        "112095": 23,
-        "112096": 27,
-        "112097": 41,
-        "114053": 5,
-        "114054": 14,
-        "114055": 14,
-        "114056": 6
+        "112062": 23,
+        "112063": 27,
+        "112064": 41,
+        "112065": 15,
+        "112066": 23,
+        "112067": 27,
+        "114045": 5,
+        "114046": 14,
+        "114047": 14,
+        "114048": 6
       }
     },
-    "wikiId": 5673
+    "wikiId": 2665
+  },
+  {
+    "id": 15509,
+    "icon": "UI_EquipIcon_Bow_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 2918525947,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112011": 15,
+        "112012": 23,
+        "112013": 27,
+        "112050": 23,
+        "112051": 27,
+        "112052": 41,
+        "114029": 5,
+        "114030": 14,
+        "114031": 14,
+        "114032": 6
+      }
+    },
+    "wikiId": 2049
+  },
+  {
+    "id": 15508,
+    "icon": "UI_EquipIcon_Bow_Kirin",
+    "rankLevel": 5,
+    "nameTextMapHash": 4230231107,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112017": 23,
+        "112018": 27,
+        "112019": 41,
+        "112053": 15,
+        "112054": 23,
+        "112055": 27,
+        "114013": 5,
+        "114014": 14,
+        "114015": 14,
+        "114016": 6
+      }
+    },
+    "wikiId": 2254
+  },
+  {
+    "id": 15507,
+    "icon": "UI_EquipIcon_Bow_Worldbane",
+    "rankLevel": 5,
+    "nameTextMapHash": 1901973075,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112053": 15,
+        "112054": 23,
+        "112055": 27,
+        "112056": 23,
+        "112057": 27,
+        "112058": 41,
+        "114033": 5,
+        "114034": 14,
+        "114035": 14,
+        "114036": 6
+      }
+    },
+    "wikiId": 1936
+  },
+  {
+    "id": 15503,
+    "icon": "UI_EquipIcon_Bow_Widsith",
+    "rankLevel": 5,
+    "nameTextMapHash": 3112679155,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112014": 23,
+        "112015": 27,
+        "112016": 41,
+        "112032": 15,
+        "112033": 23,
+        "112034": 27,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
+      }
+    },
+    "wikiId": 2008
+  },
+  {
+    "id": 15502,
+    "icon": "UI_EquipIcon_Bow_Amos",
+    "rankLevel": 5,
+    "nameTextMapHash": 828711395,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112023": 23,
+        "112024": 27,
+        "112025": 41,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
+      }
+    },
+    "wikiId": 2040
+  },
+  {
+    "id": 15501,
+    "icon": "UI_EquipIcon_Bow_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 3933622347,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112011": 15,
+        "112012": 23,
+        "112013": 27,
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
+      }
+    },
+    "wikiId": 1956
+  },
+  {
+    "id": 15427,
+    "icon": "UI_EquipIcon_Bow_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1055195035,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112086": 15,
+        "112087": 18,
+        "112088": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
+      }
+    },
+    "wikiId": 4337
+  },
+  {
+    "id": 15426,
+    "icon": "UI_EquipIcon_Bow_Ultimatum",
+    "rankLevel": 4,
+    "nameTextMapHash": 4038676067,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "112098": 15,
+        "112099": 18,
+        "112100": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 5713
+  },
+  {
+    "id": 15425,
+    "icon": "UI_EquipIcon_Bow_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2600875323,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112086": 15,
+        "112087": 18,
+        "112088": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
+      }
+    },
+    "wikiId": 3987
+  },
+  {
+    "id": 15424,
+    "icon": "UI_EquipIcon_Bow_Gurabad",
+    "rankLevel": 4,
+    "nameTextMapHash": 2958179435,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112059": 10,
+        "112060": 15,
+        "112061": 18,
+        "112077": 15,
+        "112078": 18,
+        "112079": 27,
+        "114045": 3,
+        "114046": 9,
+        "114047": 9,
+        "114048": 4
+      }
+    },
+    "wikiId": 4002
+  },
+  {
+    "id": 15419,
+    "icon": "UI_EquipIcon_Bow_Ibis",
+    "rankLevel": 4,
+    "nameTextMapHash": 316078811,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112065": 10,
+        "112066": 15,
+        "112067": 18,
+        "112077": 15,
+        "112078": 18,
+        "112079": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
+      }
+    },
+    "wikiId": 3902
+  },
+  {
+    "id": 15418,
+    "icon": "UI_EquipIcon_Bow_Fin",
+    "rankLevel": 4,
+    "nameTextMapHash": 3063191787,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112059": 10,
+        "112060": 15,
+        "112061": 18,
+        "112062": 15,
+        "112063": 18,
+        "112064": 27,
+        "114045": 3,
+        "114046": 9,
+        "114047": 9,
+        "114048": 4
+      }
+    },
+    "wikiId": 2666
+  },
+  {
+    "id": 15417,
+    "icon": "UI_EquipIcon_Bow_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 3176599083,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112062": 15,
+        "112063": 18,
+        "112064": 27,
+        "114045": 3,
+        "114046": 9,
+        "114047": 9,
+        "114048": 4
+      }
+    },
+    "wikiId": 2670
+  },
+  {
+    "id": 15416,
+    "icon": "UI_EquipIcon_Bow_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 1860795787,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112050": 15,
+        "112051": 18,
+        "112052": 27,
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "114029": 3,
+        "114030": 9,
+        "114031": 9,
+        "114032": 4
+      }
+    },
+    "wikiId": 1985
+  },
+  {
+    "id": 15415,
+    "icon": "UI_EquipIcon_Bow_Predator",
+    "rankLevel": 4,
+    "nameTextMapHash": 540938627,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112050": 15,
+        "112051": 18,
+        "112052": 27,
+        "114029": 3,
+        "114030": 9,
+        "114031": 9,
+        "114032": 4
+      }
+    },
+    "wikiId": 1973
+  },
+  {
+    "id": 15414,
+    "icon": "UI_EquipIcon_Bow_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 4186179883,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112050": 15,
+        "112051": 18,
+        "112052": 27,
+        "114029": 3,
+        "114030": 9,
+        "114031": 9,
+        "114032": 4
+      }
+    },
+    "wikiId": 1999
+  },
+  {
+    "id": 15413,
+    "icon": "UI_EquipIcon_Bow_Fleurfair",
+    "rankLevel": 4,
+    "nameTextMapHash": 650049651,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2045
+  },
+  {
+    "id": 15412,
+    "icon": "UI_EquipIcon_Bow_Nachtblind",
+    "rankLevel": 4,
+    "nameTextMapHash": 3949653579,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 1965
+  },
+  {
+    "id": 15411,
+    "icon": "UI_EquipIcon_Bow_Fallensun",
+    "rankLevel": 4,
+    "nameTextMapHash": 2425414923,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2255
+  },
+  {
+    "id": 15410,
+    "icon": "UI_EquipIcon_Bow_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 2417717595,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 1981
+  },
+  {
+    "id": 15409,
+    "icon": "UI_EquipIcon_Bow_Viridescent",
+    "rankLevel": 4,
+    "nameTextMapHash": 3439749859,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2013
+  },
+  {
+    "id": 15408,
+    "icon": "UI_EquipIcon_Bow_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3447737235,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 2055
+  },
+  {
+    "id": 15407,
+    "icon": "UI_EquipIcon_Bow_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 411685275,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2034
+  },
+  {
+    "id": 15406,
+    "icon": "UI_EquipIcon_Bow_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 3625393819,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2028
+  },
+  {
+    "id": 15405,
+    "icon": "UI_EquipIcon_Bow_Recluse",
+    "rankLevel": 4,
+    "nameTextMapHash": 3169209451,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1967
+  },
+  {
+    "id": 15404,
+    "icon": "UI_EquipIcon_Bow_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2832648187,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 1963
+  },
+  {
+    "id": 15403,
+    "icon": "UI_EquipIcon_Bow_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 2400012995,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2005
+  },
+  {
+    "id": 15402,
+    "icon": "UI_EquipIcon_Bow_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 2556914683,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2009
+  },
+  {
+    "id": 15401,
+    "icon": "UI_EquipIcon_Bow_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 1240067179,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2019
+  },
+  {
+    "id": 15305,
+    "icon": "UI_EquipIcon_Bow_Msg",
+    "rankLevel": 3,
+    "nameTextMapHash": 4139294531,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "112035": 6,
+        "112036": 10,
+        "112037": 12,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 1935
+  },
+  {
+    "id": 15304,
+    "icon": "UI_EquipIcon_Bow_Sling",
+    "rankLevel": 3,
+    "nameTextMapHash": 1021898539,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112005": 6,
+        "112006": 10,
+        "112007": 12,
+        "112029": 10,
+        "112030": 12,
+        "112031": 18,
+        "114013": 2,
+        "114014": 6,
+        "114015": 6,
+        "114016": 3
+      }
+    },
+    "wikiId": 1968
+  },
+  {
+    "id": 15303,
+    "icon": "UI_EquipIcon_Bow_Curve",
+    "rankLevel": 3,
+    "nameTextMapHash": 4267718859,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112008": 6,
+        "112009": 10,
+        "112010": 12,
+        "112023": 10,
+        "112024": 12,
+        "112025": 18,
+        "114009": 2,
+        "114010": 6,
+        "114011": 6,
+        "114012": 3
+      }
+    },
+    "wikiId": 1945
+  },
+  {
+    "id": 15302,
+    "icon": "UI_EquipIcon_Bow_Arjuna",
+    "rankLevel": 3,
+    "nameTextMapHash": 656120259,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112002": 6,
+        "112003": 10,
+        "112004": 12,
+        "112020": 10,
+        "112021": 12,
+        "112022": 18,
+        "114005": 2,
+        "114006": 6,
+        "114007": 6,
+        "114008": 3
+      }
+    },
+    "wikiId": 2002
+  },
+  {
+    "id": 15301,
+    "icon": "UI_EquipIcon_Bow_Crowfeather",
+    "rankLevel": 3,
+    "nameTextMapHash": 3975746731,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112011": 6,
+        "112012": 10,
+        "112013": 12,
+        "112014": 10,
+        "112015": 12,
+        "112016": 18,
+        "114001": 2,
+        "114002": 6,
+        "114003": 6,
+        "114004": 3
+      }
+    },
+    "wikiId": 2051
+  },
+  {
+    "id": 15201,
+    "icon": "UI_EquipIcon_Bow_Old",
+    "rankLevel": 2,
+    "nameTextMapHash": 2340970067,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112020": 6,
+        "112021": 8,
+        "112035": 5,
+        "112036": 7,
+        "114005": 1,
+        "114006": 4,
+        "114007": 1
+      }
+    },
+    "wikiId": 1944
+  },
+  {
+    "id": 15101,
+    "icon": "UI_EquipIcon_Bow_Hunters",
+    "rankLevel": 1,
+    "nameTextMapHash": 3600623979,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112020": 5,
+        "112021": 6,
+        "112035": 3,
+        "112036": 5,
+        "114005": 1,
+        "114006": 3,
+        "114007": 1
+      }
+    },
+    "wikiId": 1993
   }
 ]

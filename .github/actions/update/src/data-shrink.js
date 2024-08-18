@@ -84,7 +84,17 @@ const dumpAvatar = () => {
       a.push(aInfo)
     }
   }
-  dumpFile('avatar', a)
+  dumpFile(
+    'avatar',
+    a
+      .sort((a, b) => {
+        if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
+        if (a.qualityType === 'QUALITY_PURPLE' && b.qualityType === 'QUALITY_ORANGE') return -1
+        if (a.qualityType === 'QUALITY_ORANGE' && b.qualityType === 'QUALITY_PURPLE') return 1
+        return 0
+      })
+      .reverse(),
+  )
 }
 
 const avatarElement = depot => E.AvatarSkill.find(e => e.id === depot.energySkill)?.costElemType || null
@@ -172,7 +182,19 @@ const dumpWeapon = () => {
     wInfo.wikiId = findWikiId(TextMap.en[wInfo.nameTextMapHash])
     w.push(wInfo)
   }
-  dumpFile('weapon', w)
+  // sort
+  const weaponTypeFilter = type =>
+    w
+      .filter(e => e.weaponType === type)
+      .sort((a, b) => a.rankLevel - b.rankLevel)
+      .reverse()
+  dumpFile('weapon', [
+    ...weaponTypeFilter('WEAPON_SWORD_ONE_HAND'),
+    ...weaponTypeFilter('WEAPON_CLAYMORE'),
+    ...weaponTypeFilter('WEAPON_POLE'),
+    ...weaponTypeFilter('WEAPON_CATALYST'),
+    ...weaponTypeFilter('WEAPON_BOW'),
+  ])
 }
 
 const dumpMaterial = () => {

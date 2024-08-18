@@ -37,7 +37,10 @@ const getAvatarImages = async uiFiles => {
 }
 
 const getWeaponImages = async uiFiles => {
-  const imageList = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).flatMap(e => [e.icon, `${e.icon}_Awaken`])
+  const imageList = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).flatMap(e => [
+    e.icon,
+    `${e.icon}_Awaken`,
+  ])
   await downloadAmbr(imageList, uiFiles)
 }
 
@@ -50,8 +53,8 @@ const getMaterialImages = async uiFiles => {
 }
 
 /**
- * @param {string[]} imageList 
- * @param {string[]} uiFiles 
+ * @param {string[]} imageList
+ * @param {string[]} uiFiles
  */
 const downloadAmbr = async (imageList, uiFiles) => {
   const names = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)

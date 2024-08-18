@@ -1,13 +1,13 @@
 <script lang="ts">
 import avatar from '@game/avatar.json'
-import weapon from "@game/weapon.json"
 import material from '@game/material.json'
 import textMap from '@game/text-map.json'
+import weapon from '@game/weapon.json'
 import type { HTMLImgAttributes } from 'svelte/elements'
 type TextMap = { en: Record<number, string> }
 
 export let id: number
-export let ui: 'avatar' | "weapon" | 'material' = 'avatar'
+export let ui: 'avatar' | 'weapon' | 'material' = 'avatar'
 //export let costumes = ''
 export let text = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
@@ -33,7 +33,7 @@ $: if (isLoading)
       rank = rankNum[a.qualityType] || 1
       break
     }
-    case "weapon": {
+    case 'weapon': {
       const w = weapon.find(e => e.id === id)
       if (!w) break
       src = `/images/ui/${w.icon}_Awaken.webp`

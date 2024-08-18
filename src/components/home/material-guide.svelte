@@ -4,8 +4,8 @@ import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
 import avatarRaw from '@game/avatar.json'
-import weaponRaw from "@game/weapon.json"
 import material from '@game/material.json'
+import weaponRaw from '@game/weapon.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
 import type { HTMLButtonAttributes } from 'svelte/elements'
@@ -18,8 +18,18 @@ const avatars = avatarRaw
     return 0
   })
   .reverse()
-const weaponTypeFilter = (type: string) => weaponRaw.filter(e => e.weaponType === type).sort((a, b)=> a.rankLevel - b.rankLevel).reverse()
-const weapons = [...weaponTypeFilter("WEAPON_SWORD_ONE_HAND"), ...weaponTypeFilter("WEAPON_CLAYMORE"), ...weaponTypeFilter("WEAPON_POLE"), ...weaponTypeFilter("WEAPON_CATALYST"), ...weaponTypeFilter("WEAPON_BOW")]
+const weaponTypeFilter = (type: string) =>
+  weaponRaw
+    .filter(e => e.weaponType === type)
+    .sort((a, b) => a.rankLevel - b.rankLevel)
+    .reverse()
+const weapons = [
+  ...weaponTypeFilter('WEAPON_SWORD_ONE_HAND'),
+  ...weaponTypeFilter('WEAPON_CLAYMORE'),
+  ...weaponTypeFilter('WEAPON_POLE'),
+  ...weaponTypeFilter('WEAPON_CATALYST'),
+  ...weaponTypeFilter('WEAPON_BOW'),
+]
 
 export let lang: Lang
 const t = useTranslations(lang)
@@ -28,19 +38,23 @@ type Data = {
   element?: string | null
   weaponType: string
   allCosts: {
-  promoteCoin: number
-  skillCoin?: number
-  materials: Record<string, number | undefined>
-}
+    promoteCoin: number
+    skillCoin?: number
+    materials: Record<string, number | undefined>
+  }
   wikiId: number
 }
 
 let select = avatars.slice(0, -1)[0].id
 let selectData: Data = avatars.slice(0, -1)[0] as Data
-let isLoading = false
+let isAvatarLoading = false
+let isWeaponLoading = false
 
-const loadHandler = () => {
-  isLoading = true
+const avatarLoadHandler = () => {
+  isAvatarLoading = true
+}
+const weaponLoadHandler = () => {
+  isWeaponLoading = true
 }
 
 const avatarHandler = (id: number) => {
@@ -49,7 +63,6 @@ const avatarHandler = (id: number) => {
 }
 
 const weaponHandler = (id: number) => {
-  console.log(id)
   select = id
   selectData = weapons.find(e => e.id === id) as Data
 }
@@ -62,11 +75,11 @@ const onclick: HTMLButtonAttributes = {
 </script>
 
 <div class="grid grid-cols-4 gap-4">
-  <button {...onclick} on:click={loadHandler}>
+  <button {...onclick} on:click={avatarLoadHandler}>
     <Icon id={select} ui={selectData.element ? "avatar" : "weapon"} />
   </button>
   <div class="col-span-3 flex flex-col justify-evenly">
-    <button class="mr-auto text-xl" {...onclick} on:click={loadHandler}>{t(select, selectData.element ? "avatar" : "weapon")}</button>
+    <button class="mr-auto text-xl" {...onclick} on:click={avatarLoadHandler}>{t(select, selectData.element ? "avatar" : "weapon")}</button>
     <div class="mr-auto flex items-center">
       {#if selectData.element}
       <img class="h-7 mr-2" src="/images/element/{selectData.element}.webp" alt={selectData.element} />
@@ -83,17 +96,17 @@ const onclick: HTMLButtonAttributes = {
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each avatars as avatar}
           <button class="aspect-square" on:click={_ => avatarHandler(avatar.id)}>
-            <Icon id={avatar.id} {isLoading} loading="lazy" />
+            <Icon id={avatar.id} isLoading={isAvatarLoading} loading="lazy" />
           </button>
         {/each}
       </form>
     </div>
-    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.weapons")} />
+    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.weapons")} on:click={weaponLoadHandler} />
     <div role="tabpanel" class="tab-content">
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each weapons as weapon}
           <button class="aspect-square" on:click={_ => weaponHandler(weapon.id)}>
-            <Icon id={weapon.id} ui="weapon" {isLoading} loading="lazy" />
+            <Icon id={weapon.id} ui="weapon" isLoading={isWeaponLoading} loading="lazy" />
           </button>
         {/each}
       </form>

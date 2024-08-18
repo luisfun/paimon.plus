@@ -5,7 +5,7 @@ import { folder } from './utils.js'
 export const uiSharp = async () => {
   await createWebp()
   await createMinIcon()
-  await otherSharp()
+  //await otherSharp()
 }
 
 const createWebp = async () => {
@@ -23,7 +23,7 @@ const createWebp = async () => {
 }
 
 const createMinIcon = async () => {
-  const iconNames = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => e.iconName)
+  const iconNames = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
   const downloadedFiles = fs
     .readdirSync(folder.ui)
     .map(e => e.slice(0, -4))

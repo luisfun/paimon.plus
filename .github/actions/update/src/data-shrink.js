@@ -156,16 +156,19 @@ const dumpWeapon = () => {
     // costs
     const weaponPromote = E.WeaponPromote.filter(e => e.weaponPromoteId === weapon.weaponPromoteId)
     const promoteCoin = weaponPromote.map(e => e.coinCost || 0).reduce((a, b) => a + b)
-    const materials = weaponPromote.filter(e => e.costItems[0]?.id).map(e => e.costItems).reduce((materialMap, items) => {
-      for (const item of items) {
-        if (!item.id) continue
-        materialMap[item.id] ??= 0
-        materialMap[item.id] += item.count
-      }
-      return materialMap
-    }, {})
+    const materials = weaponPromote
+      .filter(e => e.costItems[0]?.id)
+      .map(e => e.costItems)
+      .reduce((materialMap, items) => {
+        for (const item of items) {
+          if (!item.id) continue
+          materialMap[item.id] ??= 0
+          materialMap[item.id] += item.count
+        }
+        return materialMap
+      }, {})
     if (Object.keys(materials).length === 0) continue
-    wInfo.allCosts = {promoteCoin, materials}
+    wInfo.allCosts = { promoteCoin, materials }
     wInfo.wikiId = findWikiId(TextMap.en[wInfo.nameTextMapHash])
     w.push(wInfo)
   }
@@ -174,7 +177,7 @@ const dumpWeapon = () => {
 
 const dumpMaterial = () => {
   const avatar = readFile('avatar')
-  const weapon = readFile("weapon")
+  const weapon = readFile('weapon')
   const avatarMaterials = avatar.flatMap(a => Object.keys(a.allCosts.materials).map(e => Number(e)))
   const weaponMaterials = weapon.flatMap(w => Object.keys(w.allCosts.materials).map(e => Number(e)))
   const m = [...new Set(avatarMaterials.concat(weaponMaterials))].sort().map(id => {

@@ -10,3 +10,12 @@ export let id: string
     <button aria-label="Close" />
   </form>
 </dialog>
+
+<style>
+  .modal {
+    transition-duration: .1s;
+  }
+  .modal-box {
+    transition-duration: .1s;
+  }
+</style>

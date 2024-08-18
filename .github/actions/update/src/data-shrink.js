@@ -172,9 +172,11 @@ const dumpWeapon = () => {
 }
 
 const dumpMaterial = () => {
-  const avatarArray = readFile('avatar')
-  const materialIds = avatarArray.flatMap(avatar => Object.keys(avatar.allCosts.materials).map(e => Number(e)))
-  const m = [...new Set(materialIds)].sort().map(id => {
+  const avatar = readFile('avatar')
+  const weapon = readFile("weapon")
+  const avatarMaterials = avatar.flatMap(a => Object.keys(a.allCosts.materials).map(e => Number(e)))
+  const weaponMaterials = weapon.flatMap(w => Object.keys(w.allCosts.materials).map(e => Number(e)))
+  const m = [...new Set(avatarMaterials.concat(weaponMaterials))].sort().map(id => {
     const material = E.Material.find(e => e.id === Number(id))
     const copyIndex = ['id', 'icon', 'rankLevel', 'nameTextMapHash', 'rank']
     const re = {}

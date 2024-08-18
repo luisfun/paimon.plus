@@ -144,7 +144,9 @@ const elementText = {
 
 const dumpWeapon = () => {
   const w = []
-  for (const weapon of E.Weapon) {
+  // biome-ignore format: ids
+  const blockIds = [20001, 10002, 10003, 10004, 10005, 10006, 10008]
+  for (const weapon of E.Weapon.filter(e => !blockIds.includes(e.id))) {
     const wInfo = {}
     // biome-ignore format: index
     const weaponCopyIndex = ["id", "icon", "rankLevel", "nameTextMapHash", "weaponType"]

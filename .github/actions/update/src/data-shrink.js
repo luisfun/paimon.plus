@@ -51,8 +51,7 @@ const dumpAvatar = () => {
         if (!(depot.id === 501 || depot.id === 701) && aInfo57.element === null) continue
         aInfo57.consts = avatarConsts(depot)
         aInfo57.skills = avatarSkills(depot)
-        aInfo57.promoteCosts = avatarPromoteCosts(avatar)
-        aInfo57.skillCosts = avatarSkillCosts(aInfo57)
+        aInfo57.allCosts = avatarAllCosts(avatar, aInfo57)
         aInfo57.wikiId = avatarWikiId(`Traveler${aInfo57.element ? ` (${elementText[aInfo57.element]})` : ''}`)
         a.push(aInfo57)
       }
@@ -69,8 +68,7 @@ const dumpAvatar = () => {
         c.imageName = `UI_Costume_${c.iconName.split('_').slice(-1)[0]}`
         return c
       })
-      aInfo.promoteCosts = avatarPromoteCosts(avatar)
-      aInfo.skillCosts = avatarSkillCosts(aInfo)
+      aInfo.allCosts = avatarAllCosts(avatar, aInfo)
       aInfo.wikiId = avatarWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
     }
@@ -96,45 +94,31 @@ const avatarSkills = depot =>
     })
 
 // @yuko1101 https://github.com/yuko1101/enka-network-api/blob/main/example/upgradeCosts.js
-const avatarPromoteCosts = avatar => {
+const avatarAllCosts = (avatar, aInfo) => {
   const promoteArray = E.AvatarPromote.filter(e => e.avatarPromoteId === avatar.avatarPromoteId)
-  const coin = promoteArray
+  const promoteMaterials = promoteArray.filter(e => e.costItems[0]?.id).map(e => e.costItems)
+  const ids = aInfo.skills.map(e => e.proud)
+  const skillArray = E.ProudSkill.filter(e => ids.includes(e.proudSkillGroupId))
+  const skillMaterials = skillArray.filter(e => e.costItems[0]?.id).map(e => e.costItems)
+  const promoteCoin = promoteArray
     .filter(e => e.scoinCost)
     .map(e => e.scoinCost)
     .reduce((a, b) => a + b)
-  const materials = promoteArray
-    .filter(e => e.costItems[0])
-    .map(e => e.costItems)
-    .reduce((materialMap, items) => {
-      for (const item of items) {
-        if (!item.id) continue
-        materialMap[item.id] ??= { id: item.id, count: 0 }
-        materialMap[item.id].count += item.count
-      }
-      return materialMap
-    }, {})
-  return { coin, materials: Object.values(materials) }
-}
-
-const avatarSkillCosts = aInfo => {
-  const ids = aInfo.skills.map(e => e.proud)
-  const skillArray = E.ProudSkill.filter(e => ids.includes(e.proudSkillGroupId))
-  const coin = skillArray
+  const skillCoin = skillArray
     .filter(e => e.coinCost)
     .map(e => e.coinCost)
     .reduce((a, b) => a + b)
-  const materials = skillArray
-    .filter(e => e.costItems[0]?.id)
-    .map(e => e.costItems)
-    .reduce((materialMap, items) => {
-      for (const item of items) {
-        if (!item.id) continue
-        materialMap[item.id] ??= { id: item.id, count: 0 }
-        materialMap[item.id].count += item.count
-      }
-      return materialMap
-    }, {})
-  return { coin, materials: Object.values(materials) }
+  const materials = promoteMaterials.concat(skillMaterials).reduce((materialMap, items) => {
+    for (const item of items) {
+      if (!item.id) continue
+      materialMap[item.id] ??= 0
+      materialMap[item.id] += item.count
+      //materialMap[item.id] ??= { id: item.id, count: 0 }
+      //materialMap[item.id].count += item.count
+    }
+    return materialMap
+  }, {})
+  return { promoteCoin, skillCoin, materials }
 }
 
 const avatarWikiId = text => Object.values(WikiId).findIndex(e => e === text)
@@ -151,17 +135,9 @@ const elementText = {
 
 const dumpMaterial = () => {
   const avatarArray = readFile('avatar')
-  const materialIds = []
-  for (const avatar of avatarArray) {
-    for (const material of avatar.promoteCosts.materials) {
-      materialIds.push(material.id)
-    }
-    for (const material of avatar.skillCosts.materials) {
-      materialIds.push(material.id)
-    }
-  }
-  const m = [...new Set(materialIds)].map(id => {
-    const material = E.Material.find(e => e.id === id)
+  const materialIds = avatarArray.flatMap(avatar => Object.keys(avatar.allCosts.materials).map(e => Number(e)))
+  const m = [...new Set(materialIds)].sort().map(id => {
+    const material = E.Material.find(e => e.id === Number(id))
     const copyIndex = ['id', 'icon', 'rankLevel', 'nameTextMapHash', 'rank']
     const re = {}
     for (const index of copyIndex) {

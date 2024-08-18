@@ -24,15 +24,21 @@ const createWebp = async () => {
 
 const createMinIcon = async () => {
   const iconNames = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => e.iconName)
-  const downloadedFiles = fs.readdirSync(folder.ui).map(e => e.slice(0, -4)).filter(e => iconNames.includes(e))
-  const sharpedFiles = fs.readdirSync(folder.webp).map(e => e.slice(4, -5)).filter(e => iconNames.includes(e))
+  const downloadedFiles = fs
+    .readdirSync(folder.ui)
+    .map(e => e.slice(0, -4))
+    .filter(e => iconNames.includes(e))
+  const sharpedFiles = fs
+    .readdirSync(folder.webp)
+    .map(e => e.slice(4, -5))
+    .filter(e => iconNames.includes(e))
   const diffFiles = downloadedFiles.filter(e => sharpedFiles.indexOf(e) === -1)
   if (!diffFiles[0]) return
   await Promise.all(
     diffFiles.map(name =>
       sharp(`${folder.ui + name}.png`)
         .resize(256)
-        .extract({left: 32, top: 2, width: 192, height: 192})
+        .extract({ left: 32, top: 2, width: 192, height: 192 })
         .webp()
         .toFile(`${folder.webp}Min_${name}.webp`),
     ),

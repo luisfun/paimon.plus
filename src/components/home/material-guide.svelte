@@ -1,4 +1,5 @@
 <script lang="ts">
+// client:load
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'

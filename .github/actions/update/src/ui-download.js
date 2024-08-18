@@ -23,6 +23,7 @@ const getUiImages = async uiFiles => {
   const dlList = imageList.filter(e => !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
   if (dlList.length > 100) dlList.length = 100
   for (const name of dlList) {
+    if (!name) continue
     const res = await fetch(ambrUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
     else console.log('NG', name)
@@ -39,6 +40,7 @@ const getMaterialImages = async uiFiles => {
   if (!dlList.length) return
   if (dlList.length > 100) dlList.length = 100
   for (const name of dlList) {
+    if (!name) continue
     const res = await fetch(ambrUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
     else console.log('NG', name)

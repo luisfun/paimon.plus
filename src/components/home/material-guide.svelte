@@ -89,14 +89,14 @@ const onclick: HTMLButtonAttributes = {
         <div class="flex">
           {#each elements as elem}
             <button class="w-8 bg-primary-630 border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
-              <img src="/images/element/{elem}.webp" alt={elem} />
+              <img loading="lazy" src={isAvatarLoading ? `/images/element/${elem}.webp` : "/images/None.webp"} alt={elem} />
             </button>
           {/each}
         </div>
         <div class="flex">
           {#each weaponTypes as type}
             <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
-              <img src="/images/weapon-type/{type}.webp" alt={type} />
+              <img loading="lazy" src={isAvatarLoading ? `/images/weapon-type/${type}.webp` : "/images/None.webp"} alt={type} />
             </button>
           {/each}
         </div>

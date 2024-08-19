@@ -22,7 +22,7 @@ const rankNum: Record<string, number> = {
   QUALITY_ORANGE_SP: 5,
 }
 
-switch (ui) {
+$: switch (ui) {
   case 'avatar': {
     const a = avatar.find(e => e.id === id)
     if (!a) break

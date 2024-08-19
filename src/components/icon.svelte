@@ -53,5 +53,5 @@ $: switch (ui) {
 {#if text}
 <div />
 {:else}
-<img {loading} {src} {alt} class="bg-rank-{rank} w-full rounded-[3%_3%_27%_3%]" />
+<img {loading} {src} {alt} class="bg-rank-{rank} bg-cover w-full rounded-[3%_3%_27%_3%]" />
 {/if}

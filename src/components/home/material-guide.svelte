@@ -104,7 +104,7 @@ const onclick: HTMLButtonAttributes = {
       </div>
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each avatarData.filter(a => !elementFilter[0] || elementFilter.includes(a.element || "")).filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as avatar}
-          <button class="aspect-square" on:click={_ => avatarHandler(avatar.id)}>
+          <button on:click={_ => avatarHandler(avatar.id)}>
             <Icon id={avatar.id} loading="lazy" />
           </button>
         {/each}
@@ -124,7 +124,7 @@ const onclick: HTMLButtonAttributes = {
       </div>
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each weaponJson.filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as weapon}
-          <button class="aspect-square" on:click={_ => weaponHandler(weapon.id)}>
+          <button on:click={_ => weaponHandler(weapon.id)}>
             <Icon id={weapon.id} ui="weapon" loading="lazy" />
           </button>
         {/each}

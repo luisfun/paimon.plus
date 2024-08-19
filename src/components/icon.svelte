@@ -1,4 +1,5 @@
 <script lang="ts">
+import { dummySrc } from '@components/utils'
 import avatar from '@game/avatar.json'
 import material from '@game/material.json'
 import textMap from '@game/text-map.json'
@@ -12,7 +13,7 @@ export let ui: 'avatar' | 'weapon' | 'material' = 'avatar'
 export let text = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
 
-let src = '/images/None.webp'
+let src = dummySrc
 let alt = 'None'
 let rank = 1
 
@@ -30,7 +31,7 @@ const setSrc = (newSrc: string) => {
     img.onload = () => {
       src = newSrc
     }
-    src = '/images/None.webp'
+    src = dummySrc
     img.src = newSrc
   }
 }
@@ -65,5 +66,5 @@ $: switch (ui) {
 {#if text}
 <div />
 {:else}
-<img {loading} {src} {alt} class="bg-rank-{rank} bg-cover w-full rounded-[3%_3%_27%_3%]" />
+<img {loading} {src} {alt} class="bg-rank-{rank} bg-cover w-full rounded-[3%_3%_27%_3%] aspect-square" />
 {/if}

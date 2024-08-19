@@ -55,7 +55,7 @@ $: switch (ui) {
   case 'material': {
     const m = material.find(e => e.id === id)
     if (!m) break
-    setSrc(`/images/ui/${m.icon}.webp`)
+    setSrc(`/images/ui/Min_${m.icon}.webp`)
     alt = (textMap as TextMap).en[m.nameTextMapHash]
     rank = m.rankLevel || 1
     break

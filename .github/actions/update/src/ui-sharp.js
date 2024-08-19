@@ -5,12 +5,12 @@ import { folder } from './utils.js'
 export const uiSharp = async () => {
   await createWebp()
   await createMinAvatar()
-  await createMinWeapon()
+  await createMinImage()
   //await otherSharp()
 }
 
 const createWebp = async () => {
-  const uiFiles = fs.readdirSync(folder.ui).map(e => e.slice(0, -4))
+  const uiFiles = fs.readdirSync(folder.ui).map(e => e.slice(0, -4)).filter(e => !e.startsWith("UI_ItemIcon_"))
   const webpFiles = fs.readdirSync(folder.webp).map(e => e.slice(0, -5))
   const diffFiles = uiFiles.filter(e => webpFiles.indexOf(e) === -1)
   if (!diffFiles[0]) return
@@ -26,7 +26,7 @@ const createWebp = async () => {
 const createMinAvatar = async () => {
   const names = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
   await Promise.all(
-    diffFiles(names).map(name =>
+    minDiff(names).map(name =>
       sharp(`${folder.ui + name}.png`)
         .resize(256)
         .extract({ left: 32, top: 2, width: 192, height: 192 })
@@ -36,10 +36,11 @@ const createMinAvatar = async () => {
   )
 }
 
-const createMinWeapon = async () => {
-  const names = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).map(e => e.icon)
+const createMinImage = async () => {
+  const weapons = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).map(e => e.icon)
+  const materials = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
   await Promise.all(
-    diffFiles(names).map(name =>
+    minDiff([...weapons, ...materials]).map(name =>
       sharp(`${folder.ui + name}.png`)
         .resize(128)
         .webp()
@@ -52,7 +53,7 @@ const createMinWeapon = async () => {
  * @param {string[]} names
  * @returns {string[]}
  */
-const diffFiles = names => {
+const minDiff = names => {
   const downloadedFiles = fs
     .readdirSync(folder.ui)
     .map(e => e.slice(0, -4))

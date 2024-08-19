@@ -1782,1581 +1782,6 @@
     "wikiId": 2023
   },
   {
-    "id": 13513,
-    "icon": "UI_EquipIcon_Pole_Muguet",
-    "rankLevel": 5,
-    "nameTextMapHash": 1948935171,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112038": 15,
-        "112039": 23,
-        "112040": 27,
-        "112098": 23,
-        "112099": 27,
-        "112100": 41,
-        "114057": 5,
-        "114058": 14,
-        "114059": 14,
-        "114060": 6
-      }
-    },
-    "wikiId": -1
-  },
-  {
-    "id": 13512,
-    "icon": "UI_EquipIcon_Pole_BloodMoon",
-    "rankLevel": 5,
-    "nameTextMapHash": 2944936683,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112083": 15,
-        "112084": 23,
-        "112085": 27,
-        "112098": 23,
-        "112099": 27,
-        "112100": 41,
-        "114057": 5,
-        "114058": 14,
-        "114059": 14,
-        "114060": 6
-      }
-    },
-    "wikiId": -1
-  },
-  {
-    "id": 13511,
-    "icon": "UI_EquipIcon_Pole_Deshret",
-    "rankLevel": 5,
-    "nameTextMapHash": 4238339131,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112068": 23,
-        "112069": 27,
-        "112070": 41,
-        "114041": 5,
-        "114042": 14,
-        "114043": 14,
-        "114044": 6
-      }
-    },
-    "wikiId": 2849
-  },
-  {
-    "id": 13509,
-    "icon": "UI_EquipIcon_Pole_Narukami",
-    "rankLevel": 5,
-    "nameTextMapHash": 3717849275,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112044": 15,
-        "112045": 23,
-        "112046": 27,
-        "112047": 23,
-        "112048": 27,
-        "112049": 41,
-        "114033": 5,
-        "114034": 14,
-        "114035": 14,
-        "114036": 6
-      }
-    },
-    "wikiId": 2014
-  },
-  {
-    "id": 13507,
-    "icon": "UI_EquipIcon_Pole_Santika",
-    "rankLevel": 5,
-    "nameTextMapHash": 688991243,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112026": 23,
-        "112027": 27,
-        "112028": 41,
-        "112038": 15,
-        "112039": 23,
-        "112040": 27,
-        "114017": 5,
-        "114018": 14,
-        "114019": 14,
-        "114020": 6
-      }
-    },
-    "wikiId": 1970
-  },
-  {
-    "id": 13505,
-    "icon": "UI_EquipIcon_Pole_Morax",
-    "rankLevel": 5,
-    "nameTextMapHash": 1997709467,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112029": 23,
-        "112030": 27,
-        "112031": 41,
-        "112032": 15,
-        "112033": 23,
-        "112034": 27,
-        "114013": 5,
-        "114014": 14,
-        "114015": 14,
-        "114016": 6
-      }
-    },
-    "wikiId": 1948
-  },
-  {
-    "id": 13504,
-    "icon": "UI_EquipIcon_Pole_Kunwu",
-    "rankLevel": 5,
-    "nameTextMapHash": 197755235,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112035": 15,
-        "112036": 23,
-        "112037": 27,
-        "112041": 23,
-        "112042": 27,
-        "112043": 41,
-        "114021": 5,
-        "114022": 14,
-        "114023": 14,
-        "114024": 6
-      }
-    },
-    "wikiId": 2030
-  },
-  {
-    "id": 13502,
-    "icon": "UI_EquipIcon_Pole_Dvalin",
-    "rankLevel": 5,
-    "nameTextMapHash": 4158505619,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112008": 15,
-        "112009": 23,
-        "112010": 27,
-        "112023": 23,
-        "112024": 27,
-        "112025": 41,
-        "114009": 5,
-        "114010": 14,
-        "114011": 14,
-        "114012": 6
-      }
-    },
-    "wikiId": 1957
-  },
-  {
-    "id": 13501,
-    "icon": "UI_EquipIcon_Pole_Homa",
-    "rankLevel": 5,
-    "nameTextMapHash": 3235324891,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114021": 5,
-        "114022": 14,
-        "114023": 14,
-        "114024": 6
-      }
-    },
-    "wikiId": 1972
-  },
-  {
-    "id": 13427,
-    "icon": "UI_EquipIcon_Pole_Mechanic",
-    "rankLevel": 4,
-    "nameTextMapHash": 882305891,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112092": 15,
-        "112093": 18,
-        "112094": 27,
-        "114049": 3,
-        "114050": 9,
-        "114051": 9,
-        "114052": 4
-      }
-    },
-    "wikiId": 4336
-  },
-  {
-    "id": 13426,
-    "icon": "UI_EquipIcon_Pole_Caduceus",
-    "rankLevel": 4,
-    "nameTextMapHash": 2847771107,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "112095": 15,
-        "112096": 18,
-        "112097": 27,
-        "114037": 3,
-        "114038": 9,
-        "114039": 9,
-        "114040": 4
-      }
-    },
-    "wikiId": 5151
-  },
-  {
-    "id": 13425,
-    "icon": "UI_EquipIcon_Pole_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 4158971171,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112083": 10,
-        "112084": 15,
-        "112085": 18,
-        "112089": 15,
-        "112090": 18,
-        "112091": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": 3986
-  },
-  {
-    "id": 13424,
-    "icon": "UI_EquipIcon_Pole_Shanty",
-    "rankLevel": 4,
-    "nameTextMapHash": 449192923,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "112077": 15,
-        "112078": 18,
-        "112079": 27,
-        "114057": 3,
-        "114058": 9,
-        "114059": 9,
-        "114060": 4
-      }
-    },
-    "wikiId": 4001
-  },
-  {
-    "id": 13419,
-    "icon": "UI_EquipIcon_Pole_Windvane",
-    "rankLevel": 4,
-    "nameTextMapHash": 1470442731,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112017": 15,
-        "112018": 18,
-        "112019": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2847
-  },
-  {
-    "id": 13417,
-    "icon": "UI_EquipIcon_Pole_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 452357939,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "112068": 15,
-        "112069": 18,
-        "112070": 27,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 2668
-  },
-  {
-    "id": 13416,
-    "icon": "UI_EquipIcon_Pole_Maria",
-    "rankLevel": 4,
-    "nameTextMapHash": 4122509083,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112044": 10,
-        "112045": 15,
-        "112046": 18,
-        "112056": 15,
-        "112057": 18,
-        "112058": 27,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 1975
-  },
-  {
-    "id": 13415,
-    "icon": "UI_EquipIcon_Pole_Mori",
-    "rankLevel": 4,
-    "nameTextMapHash": 1148024603,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112047": 15,
-        "112048": 18,
-        "112049": 27,
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 1930
-  },
-  {
-    "id": 13414,
-    "icon": "UI_EquipIcon_Pole_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 2491797315,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "112047": 15,
-        "112048": 18,
-        "112049": 27,
-        "114033": 3,
-        "114034": 9,
-        "114035": 9,
-        "114036": 4
-      }
-    },
-    "wikiId": 1949
-  },
-  {
-    "id": 13409,
-    "icon": "UI_EquipIcon_Pole_Everfrost",
-    "rankLevel": 4,
-    "nameTextMapHash": 3443142923,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 2060
-  },
-  {
-    "id": 13408,
-    "icon": "UI_EquipIcon_Pole_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 2935286715,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 1960
-  },
-  {
-    "id": 13407,
-    "icon": "UI_EquipIcon_Pole_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 3755004051,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2021
-  },
-  {
-    "id": 13406,
-    "icon": "UI_EquipIcon_Pole_Lapis",
-    "rankLevel": 4,
-    "nameTextMapHash": 716252627,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 1943
-  },
-  {
-    "id": 13405,
-    "icon": "UI_EquipIcon_Pole_Gladiator",
-    "rankLevel": 4,
-    "nameTextMapHash": 4049410651,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1937
-  },
-  {
-    "id": 13404,
-    "icon": "UI_EquipIcon_Pole_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 481755219,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2054
-  },
-  {
-    "id": 13403,
-    "icon": "UI_EquipIcon_Pole_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 578575283,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1990
-  },
-  {
-    "id": 13402,
-    "icon": "UI_EquipIcon_Pole_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 1154009435,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 2027
-  },
-  {
-    "id": 13401,
-    "icon": "UI_EquipIcon_Pole_Stardust",
-    "rankLevel": 4,
-    "nameTextMapHash": 2664629131,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 1940
-  },
-  {
-    "id": 13303,
-    "icon": "UI_EquipIcon_Pole_Noire",
-    "rankLevel": 3,
-    "nameTextMapHash": 4103766499,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112011": 6,
-        "112012": 10,
-        "112013": 12,
-        "112041": 10,
-        "112042": 12,
-        "112043": 18,
-        "114021": 2,
-        "114022": 6,
-        "114023": 6,
-        "114024": 3
-      }
-    },
-    "wikiId": 2059
-  },
-  {
-    "id": 13302,
-    "icon": "UI_EquipIcon_Pole_Halberd",
-    "rankLevel": 3,
-    "nameTextMapHash": 618786571,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "112038": 6,
-        "112039": 10,
-        "112040": 12,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 2035
-  },
-  {
-    "id": 13301,
-    "icon": "UI_EquipIcon_Pole_Ruby",
-    "rankLevel": 3,
-    "nameTextMapHash": 1390797107,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112029": 10,
-        "112030": 12,
-        "112031": 18,
-        "112032": 6,
-        "112033": 10,
-        "112034": 12,
-        "114013": 2,
-        "114014": 6,
-        "114015": 6,
-        "114016": 3
-      }
-    },
-    "wikiId": 1996
-  },
-  {
-    "id": 13201,
-    "icon": "UI_EquipIcon_Pole_Rod",
-    "rankLevel": 2,
-    "nameTextMapHash": 3070169307,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112008": 5,
-        "112009": 7,
-        "112023": 6,
-        "112024": 8,
-        "114009": 1,
-        "114010": 4,
-        "114011": 1
-      }
-    },
-    "wikiId": 2036
-  },
-  {
-    "id": 13101,
-    "icon": "UI_EquipIcon_Pole_Gewalt",
-    "rankLevel": 1,
-    "nameTextMapHash": 2796697027,
-    "weaponType": "WEAPON_POLE",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112008": 3,
-        "112009": 5,
-        "112023": 5,
-        "112024": 6,
-        "114009": 1,
-        "114010": 3,
-        "114011": 1
-      }
-    },
-    "wikiId": 1976
-  },
-  {
-    "id": 14515,
-    "icon": "UI_EquipIcon_Catalyst_MountainGale",
-    "rankLevel": 5,
-    "nameTextMapHash": 3660626387,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112008": 15,
-        "112009": 23,
-        "112010": 27,
-        "112095": 23,
-        "112096": 27,
-        "112097": 41,
-        "114017": 5,
-        "114018": 14,
-        "114019": 14,
-        "114020": 6
-      }
-    },
-    "wikiId": 4941
-  },
-  {
-    "id": 14514,
-    "icon": "UI_EquipIcon_Catalyst_Iudex",
-    "rankLevel": 5,
-    "nameTextMapHash": 4176923379,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112083": 15,
-        "112084": 23,
-        "112085": 27,
-        "112089": 23,
-        "112090": 27,
-        "112091": 41,
-        "114053": 5,
-        "114054": 14,
-        "114055": 14,
-        "114056": 6
-      }
-    },
-    "wikiId": 4339
-  },
-  {
-    "id": 14513,
-    "icon": "UI_EquipIcon_Catalyst_Wheatley",
-    "rankLevel": 5,
-    "nameTextMapHash": 724881171,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112080": 15,
-        "112081": 23,
-        "112082": 27,
-        "112092": 23,
-        "112093": 27,
-        "112094": 41,
-        "114057": 5,
-        "114058": 14,
-        "114059": 14,
-        "114060": 6
-      }
-    },
-    "wikiId": 4340
-  },
-  {
-    "id": 14512,
-    "icon": "UI_EquipIcon_Catalyst_Alaya",
-    "rankLevel": 5,
-    "nameTextMapHash": 359484419,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112062": 23,
-        "112063": 27,
-        "112064": 41,
-        "114045": 5,
-        "114046": 14,
-        "114047": 14,
-        "114048": 6
-      }
-    },
-    "wikiId": 3320
-  },
-  {
-    "id": 14511,
-    "icon": "UI_EquipIcon_Catalyst_Ayus",
-    "rankLevel": 5,
-    "nameTextMapHash": 1201790667,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112071": 23,
-        "112072": 27,
-        "112073": 41,
-        "114041": 5,
-        "114042": 14,
-        "114043": 14,
-        "114044": 6
-      }
-    },
-    "wikiId": 2966
-  },
-  {
-    "id": 14509,
-    "icon": "UI_EquipIcon_Catalyst_Narukami",
-    "rankLevel": 5,
-    "nameTextMapHash": 310247243,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112053": 15,
-        "112054": 23,
-        "112055": 27,
-        "112056": 23,
-        "112057": 27,
-        "112058": 41,
-        "114033": 5,
-        "114034": 14,
-        "114035": 14,
-        "114036": 6
-      }
-    },
-    "wikiId": 2001
-  },
-  {
-    "id": 14506,
-    "icon": "UI_EquipIcon_Catalyst_Kaleido",
-    "rankLevel": 5,
-    "nameTextMapHash": 1890163363,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112050": 23,
-        "112051": 27,
-        "112052": 41,
-        "112053": 15,
-        "112054": 23,
-        "112055": 27,
-        "114025": 5,
-        "114026": 14,
-        "114027": 14,
-        "114028": 6
-      }
-    },
-    "wikiId": 1932
-  },
-  {
-    "id": 14505,
-    "icon": "UI_EquipIcon_Catalyst_Morax",
-    "rankLevel": 5,
-    "nameTextMapHash": 4007372867,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112059": 15,
-        "112060": 23,
-        "112061": 27,
-        "112077": 23,
-        "112078": 27,
-        "112079": 41,
-        "114013": 5,
-        "114014": 14,
-        "114015": 14,
-        "114016": 6
-      }
-    },
-    "wikiId": 3692
-  },
-  {
-    "id": 14504,
-    "icon": "UI_EquipIcon_Catalyst_Kunwu",
-    "rankLevel": 5,
-    "nameTextMapHash": 693354267,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112005": 15,
-        "112006": 23,
-        "112007": 27,
-        "112041": 23,
-        "112042": 27,
-        "112043": 41,
-        "114021": 5,
-        "114022": 14,
-        "114023": 14,
-        "114024": 6
-      }
-    },
-    "wikiId": 1964
-  },
-  {
-    "id": 14502,
-    "icon": "UI_EquipIcon_Catalyst_Fourwinds",
-    "rankLevel": 5,
-    "nameTextMapHash": 1455107995,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112002": 15,
-        "112003": 23,
-        "112004": 27,
-        "112023": 23,
-        "112024": 27,
-        "112025": 41,
-        "114009": 5,
-        "114010": 14,
-        "114011": 14,
-        "114012": 6
-      }
-    },
-    "wikiId": 1951
-  },
-  {
-    "id": 14501,
-    "icon": "UI_EquipIcon_Catalyst_Dvalin",
-    "rankLevel": 5,
-    "nameTextMapHash": 807607555,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 225000,
-      "materials": {
-        "112011": 15,
-        "112012": 23,
-        "112013": 27,
-        "112020": 23,
-        "112021": 27,
-        "112022": 41,
-        "114005": 5,
-        "114006": 14,
-        "114007": 14,
-        "114008": 6
-      }
-    },
-    "wikiId": 1955
-  },
-  {
-    "id": 14426,
-    "icon": "UI_EquipIcon_Catalyst_DandelionPoem",
-    "rankLevel": 4,
-    "nameTextMapHash": 2722902043,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 4338
-  },
-  {
-    "id": 14425,
-    "icon": "UI_EquipIcon_Catalyst_Vorpal",
-    "rankLevel": 4,
-    "nameTextMapHash": 2432865507,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112080": 10,
-        "112081": 15,
-        "112082": 18,
-        "112089": 15,
-        "112090": 18,
-        "112091": 27,
-        "114053": 3,
-        "114054": 9,
-        "114055": 9,
-        "114056": 4
-      }
-    },
-    "wikiId": 3988
-  },
-  {
-    "id": 14424,
-    "icon": "UI_EquipIcon_Catalyst_Yue",
-    "rankLevel": 4,
-    "nameTextMapHash": 2275710883,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 4003
-  },
-  {
-    "id": 14417,
-    "icon": "UI_EquipIcon_Catalyst_Arakalari",
-    "rankLevel": 4,
-    "nameTextMapHash": 2267978875,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112017": 15,
-        "112018": 18,
-        "112019": 27,
-        "112059": 10,
-        "112060": 15,
-        "112061": 18,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 2669
-  },
-  {
-    "id": 14416,
-    "icon": "UI_EquipIcon_Catalyst_Pleroma",
-    "rankLevel": 4,
-    "nameTextMapHash": 426363739,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112059": 10,
-        "112060": 15,
-        "112061": 18,
-        "112062": 15,
-        "112063": 18,
-        "112064": 27,
-        "114041": 3,
-        "114042": 9,
-        "114043": 9,
-        "114044": 4
-      }
-    },
-    "wikiId": 2910
-  },
-  {
-    "id": 14415,
-    "icon": "UI_EquipIcon_Catalyst_Jyanome",
-    "rankLevel": 4,
-    "nameTextMapHash": 2539208459,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112053": 10,
-        "112054": 15,
-        "112055": 18,
-        "112056": 15,
-        "112057": 18,
-        "112058": 27,
-        "114025": 3,
-        "114026": 9,
-        "114027": 9,
-        "114028": 4
-      }
-    },
-    "wikiId": 2024
-  },
-  {
-    "id": 14414,
-    "icon": "UI_EquipIcon_Catalyst_Bakufu",
-    "rankLevel": 4,
-    "nameTextMapHash": 2324146259,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112050": 15,
-        "112051": 18,
-        "112052": 27,
-        "114025": 3,
-        "114026": 9,
-        "114027": 9,
-        "114028": 4
-      }
-    },
-    "wikiId": 1997
-  },
-  {
-    "id": 14413,
-    "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
-    "rankLevel": 4,
-    "nameTextMapHash": 3456986819,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1950
-  },
-  {
-    "id": 14412,
-    "icon": "UI_EquipIcon_Catalyst_Everfrost",
-    "rankLevel": 4,
-    "nameTextMapHash": 2587614459,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 1969
-  },
-  {
-    "id": 14410,
-    "icon": "UI_EquipIcon_Catalyst_Outlaw",
-    "rankLevel": 4,
-    "nameTextMapHash": 3090373787,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1982
-  },
-  {
-    "id": 14409,
-    "icon": "UI_EquipIcon_Catalyst_Truelens",
-    "rankLevel": 4,
-    "nameTextMapHash": 3156385731,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 1980
-  },
-  {
-    "id": 14408,
-    "icon": "UI_EquipIcon_Catalyst_Blackrock",
-    "rankLevel": 4,
-    "nameTextMapHash": 3273999011,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 2057
-  },
-  {
-    "id": 14407,
-    "icon": "UI_EquipIcon_Catalyst_Exotic",
-    "rankLevel": 4,
-    "nameTextMapHash": 1072884907,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112002": 10,
-        "112003": 15,
-        "112004": 18,
-        "112041": 15,
-        "112042": 18,
-        "112043": 27,
-        "114021": 3,
-        "114022": 9,
-        "114023": 9,
-        "114024": 4
-      }
-    },
-    "wikiId": 1931
-  },
-  {
-    "id": 14406,
-    "icon": "UI_EquipIcon_Catalyst_Proto",
-    "rankLevel": 4,
-    "nameTextMapHash": 2521338131,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112011": 10,
-        "112012": 15,
-        "112013": 18,
-        "112026": 15,
-        "112027": 18,
-        "112028": 27,
-        "114017": 3,
-        "114018": 9,
-        "114019": 9,
-        "114020": 4
-      }
-    },
-    "wikiId": 2029
-  },
-  {
-    "id": 14405,
-    "icon": "UI_EquipIcon_Catalyst_Resurrection",
-    "rankLevel": 4,
-    "nameTextMapHash": 37147251,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112029": 15,
-        "112030": 18,
-        "112031": 27,
-        "112038": 10,
-        "112039": 15,
-        "112040": 18,
-        "114013": 3,
-        "114014": 9,
-        "114015": 9,
-        "114016": 4
-      }
-    },
-    "wikiId": 1939
-  },
-  {
-    "id": 14404,
-    "icon": "UI_EquipIcon_Catalyst_Theocrat",
-    "rankLevel": 4,
-    "nameTextMapHash": 3827789435,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "112032": 10,
-        "112033": 15,
-        "112034": 18,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 1961
-  },
-  {
-    "id": 14403,
-    "icon": "UI_EquipIcon_Catalyst_Fossil",
-    "rankLevel": 4,
-    "nameTextMapHash": 2195665683,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112023": 15,
-        "112024": 18,
-        "112025": 27,
-        "112035": 10,
-        "112036": 15,
-        "112037": 18,
-        "114009": 3,
-        "114010": 9,
-        "114011": 9,
-        "114012": 4
-      }
-    },
-    "wikiId": 2006
-  },
-  {
-    "id": 14402,
-    "icon": "UI_EquipIcon_Catalyst_Troupe",
-    "rankLevel": 4,
-    "nameTextMapHash": 1163263227,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112005": 10,
-        "112006": 15,
-        "112007": 18,
-        "112020": 15,
-        "112021": 18,
-        "112022": 27,
-        "114005": 3,
-        "114006": 9,
-        "114007": 9,
-        "114008": 4
-      }
-    },
-    "wikiId": 1991
-  },
-  {
-    "id": 14401,
-    "icon": "UI_EquipIcon_Catalyst_Zephyrus",
-    "rankLevel": 4,
-    "nameTextMapHash": 623534363,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 150000,
-      "materials": {
-        "112008": 10,
-        "112009": 15,
-        "112010": 18,
-        "112014": 15,
-        "112015": 18,
-        "112016": 27,
-        "114001": 3,
-        "114002": 9,
-        "114003": 9,
-        "114004": 4
-      }
-    },
-    "wikiId": 2020
-  },
-  {
-    "id": 14305,
-    "icon": "UI_EquipIcon_Catalyst_Phoney",
-    "rankLevel": 3,
-    "nameTextMapHash": 3719372715,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112026": 10,
-        "112027": 12,
-        "112028": 18,
-        "112032": 6,
-        "112033": 10,
-        "112034": 12,
-        "114017": 2,
-        "114018": 6,
-        "114019": 6,
-        "114020": 3
-      }
-    },
-    "wikiId": 1994
-  },
-  {
-    "id": 14304,
-    "icon": "UI_EquipIcon_Catalyst_Jade",
-    "rankLevel": 3,
-    "nameTextMapHash": 2963220587,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112029": 10,
-        "112030": 12,
-        "112031": 18,
-        "112035": 6,
-        "112036": 10,
-        "112037": 12,
-        "114013": 2,
-        "114014": 6,
-        "114015": 6,
-        "114016": 3
-      }
-    },
-    "wikiId": 2010
-  },
-  {
-    "id": 14303,
-    "icon": "UI_EquipIcon_Catalyst_Lightnov",
-    "rankLevel": 3,
-    "nameTextMapHash": 1406746947,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112005": 6,
-        "112006": 10,
-        "112007": 12,
-        "112023": 10,
-        "112024": 12,
-        "112025": 18,
-        "114009": 2,
-        "114010": 6,
-        "114011": 6,
-        "114012": 3
-      }
-    },
-    "wikiId": 1966
-  },
-  {
-    "id": 14302,
-    "icon": "UI_EquipIcon_Catalyst_Pulpfic",
-    "rankLevel": 3,
-    "nameTextMapHash": 3500935003,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112008": 6,
-        "112009": 10,
-        "112010": 12,
-        "112020": 10,
-        "112021": 12,
-        "112022": 18,
-        "114005": 2,
-        "114006": 6,
-        "114007": 6,
-        "114008": 3
-      }
-    },
-    "wikiId": 2022
-  },
-  {
-    "id": 14301,
-    "icon": "UI_EquipIcon_Catalyst_Intro",
-    "rankLevel": 3,
-    "nameTextMapHash": 2279290283,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 105000,
-      "materials": {
-        "112002": 6,
-        "112003": 10,
-        "112004": 12,
-        "112014": 10,
-        "112015": 12,
-        "112016": 18,
-        "114001": 2,
-        "114002": 6,
-        "114003": 6,
-        "114004": 3
-      }
-    },
-    "wikiId": 2050
-  },
-  {
-    "id": 14201,
-    "icon": "UI_EquipIcon_Catalyst_Pocket",
-    "rankLevel": 2,
-    "nameTextMapHash": 2705029563,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 35000,
-      "materials": {
-        "112005": 5,
-        "112006": 7,
-        "112014": 6,
-        "112015": 8,
-        "114001": 1,
-        "114002": 4,
-        "114003": 1
-      }
-    },
-    "wikiId": 1946
-  },
-  {
-    "id": 14101,
-    "icon": "UI_EquipIcon_Catalyst_Apprentice",
-    "rankLevel": 1,
-    "nameTextMapHash": 3584825427,
-    "weaponType": "WEAPON_CATALYST",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112005": 3,
-        "112006": 5,
-        "112014": 5,
-        "112015": 6,
-        "114001": 1,
-        "114002": 3,
-        "114003": 1
-      }
-    },
-    "wikiId": 1958
-  },
-  {
     "id": 15513,
     "icon": "UI_EquipIcon_Bow_Arcdange",
     "rankLevel": 5,
@@ -4246,5 +2671,1580 @@
       }
     },
     "wikiId": 1993
+  },
+  {
+    "id": 14515,
+    "icon": "UI_EquipIcon_Catalyst_MountainGale",
+    "rankLevel": 5,
+    "nameTextMapHash": 3660626387,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112008": 15,
+        "112009": 23,
+        "112010": 27,
+        "112095": 23,
+        "112096": 27,
+        "112097": 41,
+        "114017": 5,
+        "114018": 14,
+        "114019": 14,
+        "114020": 6
+      }
+    },
+    "wikiId": 4941
+  },
+  {
+    "id": 14514,
+    "icon": "UI_EquipIcon_Catalyst_Iudex",
+    "rankLevel": 5,
+    "nameTextMapHash": 4176923379,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112083": 15,
+        "112084": 23,
+        "112085": 27,
+        "112089": 23,
+        "112090": 27,
+        "112091": 41,
+        "114053": 5,
+        "114054": 14,
+        "114055": 14,
+        "114056": 6
+      }
+    },
+    "wikiId": 4339
+  },
+  {
+    "id": 14513,
+    "icon": "UI_EquipIcon_Catalyst_Wheatley",
+    "rankLevel": 5,
+    "nameTextMapHash": 724881171,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112080": 15,
+        "112081": 23,
+        "112082": 27,
+        "112092": 23,
+        "112093": 27,
+        "112094": 41,
+        "114057": 5,
+        "114058": 14,
+        "114059": 14,
+        "114060": 6
+      }
+    },
+    "wikiId": 4340
+  },
+  {
+    "id": 14512,
+    "icon": "UI_EquipIcon_Catalyst_Alaya",
+    "rankLevel": 5,
+    "nameTextMapHash": 359484419,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112062": 23,
+        "112063": 27,
+        "112064": 41,
+        "114045": 5,
+        "114046": 14,
+        "114047": 14,
+        "114048": 6
+      }
+    },
+    "wikiId": 3320
+  },
+  {
+    "id": 14511,
+    "icon": "UI_EquipIcon_Catalyst_Ayus",
+    "rankLevel": 5,
+    "nameTextMapHash": 1201790667,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112071": 23,
+        "112072": 27,
+        "112073": 41,
+        "114041": 5,
+        "114042": 14,
+        "114043": 14,
+        "114044": 6
+      }
+    },
+    "wikiId": 2966
+  },
+  {
+    "id": 14509,
+    "icon": "UI_EquipIcon_Catalyst_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 310247243,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112053": 15,
+        "112054": 23,
+        "112055": 27,
+        "112056": 23,
+        "112057": 27,
+        "112058": 41,
+        "114033": 5,
+        "114034": 14,
+        "114035": 14,
+        "114036": 6
+      }
+    },
+    "wikiId": 2001
+  },
+  {
+    "id": 14506,
+    "icon": "UI_EquipIcon_Catalyst_Kaleido",
+    "rankLevel": 5,
+    "nameTextMapHash": 1890163363,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112050": 23,
+        "112051": 27,
+        "112052": 41,
+        "112053": 15,
+        "112054": 23,
+        "112055": 27,
+        "114025": 5,
+        "114026": 14,
+        "114027": 14,
+        "114028": 6
+      }
+    },
+    "wikiId": 1932
+  },
+  {
+    "id": 14505,
+    "icon": "UI_EquipIcon_Catalyst_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 4007372867,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112077": 23,
+        "112078": 27,
+        "112079": 41,
+        "114013": 5,
+        "114014": 14,
+        "114015": 14,
+        "114016": 6
+      }
+    },
+    "wikiId": 3692
+  },
+  {
+    "id": 14504,
+    "icon": "UI_EquipIcon_Catalyst_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 693354267,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112005": 15,
+        "112006": 23,
+        "112007": 27,
+        "112041": 23,
+        "112042": 27,
+        "112043": 41,
+        "114021": 5,
+        "114022": 14,
+        "114023": 14,
+        "114024": 6
+      }
+    },
+    "wikiId": 1964
+  },
+  {
+    "id": 14502,
+    "icon": "UI_EquipIcon_Catalyst_Fourwinds",
+    "rankLevel": 5,
+    "nameTextMapHash": 1455107995,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112023": 23,
+        "112024": 27,
+        "112025": 41,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
+      }
+    },
+    "wikiId": 1951
+  },
+  {
+    "id": 14501,
+    "icon": "UI_EquipIcon_Catalyst_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 807607555,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112011": 15,
+        "112012": 23,
+        "112013": 27,
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
+      }
+    },
+    "wikiId": 1955
+  },
+  {
+    "id": 14426,
+    "icon": "UI_EquipIcon_Catalyst_DandelionPoem",
+    "rankLevel": 4,
+    "nameTextMapHash": 2722902043,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 4338
+  },
+  {
+    "id": 14425,
+    "icon": "UI_EquipIcon_Catalyst_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 2432865507,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112089": 15,
+        "112090": 18,
+        "112091": 27,
+        "114053": 3,
+        "114054": 9,
+        "114055": 9,
+        "114056": 4
+      }
+    },
+    "wikiId": 3988
+  },
+  {
+    "id": 14424,
+    "icon": "UI_EquipIcon_Catalyst_Yue",
+    "rankLevel": 4,
+    "nameTextMapHash": 2275710883,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 4003
+  },
+  {
+    "id": 14417,
+    "icon": "UI_EquipIcon_Catalyst_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 2267978875,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112017": 15,
+        "112018": 18,
+        "112019": 27,
+        "112059": 10,
+        "112060": 15,
+        "112061": 18,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 2669
+  },
+  {
+    "id": 14416,
+    "icon": "UI_EquipIcon_Catalyst_Pleroma",
+    "rankLevel": 4,
+    "nameTextMapHash": 426363739,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112059": 10,
+        "112060": 15,
+        "112061": 18,
+        "112062": 15,
+        "112063": 18,
+        "112064": 27,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 2910
+  },
+  {
+    "id": 14415,
+    "icon": "UI_EquipIcon_Catalyst_Jyanome",
+    "rankLevel": 4,
+    "nameTextMapHash": 2539208459,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "112056": 15,
+        "112057": 18,
+        "112058": 27,
+        "114025": 3,
+        "114026": 9,
+        "114027": 9,
+        "114028": 4
+      }
+    },
+    "wikiId": 2024
+  },
+  {
+    "id": 14414,
+    "icon": "UI_EquipIcon_Catalyst_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2324146259,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112050": 15,
+        "112051": 18,
+        "112052": 27,
+        "114025": 3,
+        "114026": 9,
+        "114027": 9,
+        "114028": 4
+      }
+    },
+    "wikiId": 1997
+  },
+  {
+    "id": 14413,
+    "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
+    "rankLevel": 4,
+    "nameTextMapHash": 3456986819,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1950
+  },
+  {
+    "id": 14412,
+    "icon": "UI_EquipIcon_Catalyst_Everfrost",
+    "rankLevel": 4,
+    "nameTextMapHash": 2587614459,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 1969
+  },
+  {
+    "id": 14410,
+    "icon": "UI_EquipIcon_Catalyst_Outlaw",
+    "rankLevel": 4,
+    "nameTextMapHash": 3090373787,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1982
+  },
+  {
+    "id": 14409,
+    "icon": "UI_EquipIcon_Catalyst_Truelens",
+    "rankLevel": 4,
+    "nameTextMapHash": 3156385731,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 1980
+  },
+  {
+    "id": 14408,
+    "icon": "UI_EquipIcon_Catalyst_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 3273999011,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 2057
+  },
+  {
+    "id": 14407,
+    "icon": "UI_EquipIcon_Catalyst_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 1072884907,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 1931
+  },
+  {
+    "id": 14406,
+    "icon": "UI_EquipIcon_Catalyst_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 2521338131,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2029
+  },
+  {
+    "id": 14405,
+    "icon": "UI_EquipIcon_Catalyst_Resurrection",
+    "rankLevel": 4,
+    "nameTextMapHash": 37147251,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1939
+  },
+  {
+    "id": 14404,
+    "icon": "UI_EquipIcon_Catalyst_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 3827789435,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 1961
+  },
+  {
+    "id": 14403,
+    "icon": "UI_EquipIcon_Catalyst_Fossil",
+    "rankLevel": 4,
+    "nameTextMapHash": 2195665683,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2006
+  },
+  {
+    "id": 14402,
+    "icon": "UI_EquipIcon_Catalyst_Troupe",
+    "rankLevel": 4,
+    "nameTextMapHash": 1163263227,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1991
+  },
+  {
+    "id": 14401,
+    "icon": "UI_EquipIcon_Catalyst_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 623534363,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112014": 15,
+        "112015": 18,
+        "112016": 27,
+        "114001": 3,
+        "114002": 9,
+        "114003": 9,
+        "114004": 4
+      }
+    },
+    "wikiId": 2020
+  },
+  {
+    "id": 14305,
+    "icon": "UI_EquipIcon_Catalyst_Phoney",
+    "rankLevel": 3,
+    "nameTextMapHash": 3719372715,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "112032": 6,
+        "112033": 10,
+        "112034": 12,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 1994
+  },
+  {
+    "id": 14304,
+    "icon": "UI_EquipIcon_Catalyst_Jade",
+    "rankLevel": 3,
+    "nameTextMapHash": 2963220587,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112029": 10,
+        "112030": 12,
+        "112031": 18,
+        "112035": 6,
+        "112036": 10,
+        "112037": 12,
+        "114013": 2,
+        "114014": 6,
+        "114015": 6,
+        "114016": 3
+      }
+    },
+    "wikiId": 2010
+  },
+  {
+    "id": 14303,
+    "icon": "UI_EquipIcon_Catalyst_Lightnov",
+    "rankLevel": 3,
+    "nameTextMapHash": 1406746947,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112005": 6,
+        "112006": 10,
+        "112007": 12,
+        "112023": 10,
+        "112024": 12,
+        "112025": 18,
+        "114009": 2,
+        "114010": 6,
+        "114011": 6,
+        "114012": 3
+      }
+    },
+    "wikiId": 1966
+  },
+  {
+    "id": 14302,
+    "icon": "UI_EquipIcon_Catalyst_Pulpfic",
+    "rankLevel": 3,
+    "nameTextMapHash": 3500935003,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112008": 6,
+        "112009": 10,
+        "112010": 12,
+        "112020": 10,
+        "112021": 12,
+        "112022": 18,
+        "114005": 2,
+        "114006": 6,
+        "114007": 6,
+        "114008": 3
+      }
+    },
+    "wikiId": 2022
+  },
+  {
+    "id": 14301,
+    "icon": "UI_EquipIcon_Catalyst_Intro",
+    "rankLevel": 3,
+    "nameTextMapHash": 2279290283,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112002": 6,
+        "112003": 10,
+        "112004": 12,
+        "112014": 10,
+        "112015": 12,
+        "112016": 18,
+        "114001": 2,
+        "114002": 6,
+        "114003": 6,
+        "114004": 3
+      }
+    },
+    "wikiId": 2050
+  },
+  {
+    "id": 14201,
+    "icon": "UI_EquipIcon_Catalyst_Pocket",
+    "rankLevel": 2,
+    "nameTextMapHash": 2705029563,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112005": 5,
+        "112006": 7,
+        "112014": 6,
+        "112015": 8,
+        "114001": 1,
+        "114002": 4,
+        "114003": 1
+      }
+    },
+    "wikiId": 1946
+  },
+  {
+    "id": 14101,
+    "icon": "UI_EquipIcon_Catalyst_Apprentice",
+    "rankLevel": 1,
+    "nameTextMapHash": 3584825427,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112005": 3,
+        "112006": 5,
+        "112014": 5,
+        "112015": 6,
+        "114001": 1,
+        "114002": 3,
+        "114003": 1
+      }
+    },
+    "wikiId": 1958
+  },
+  {
+    "id": 13513,
+    "icon": "UI_EquipIcon_Pole_Muguet",
+    "rankLevel": 5,
+    "nameTextMapHash": 1948935171,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112038": 15,
+        "112039": 23,
+        "112040": 27,
+        "112098": 23,
+        "112099": 27,
+        "112100": 41,
+        "114057": 5,
+        "114058": 14,
+        "114059": 14,
+        "114060": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 13512,
+    "icon": "UI_EquipIcon_Pole_BloodMoon",
+    "rankLevel": 5,
+    "nameTextMapHash": 2944936683,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112083": 15,
+        "112084": 23,
+        "112085": 27,
+        "112098": 23,
+        "112099": 27,
+        "112100": 41,
+        "114057": 5,
+        "114058": 14,
+        "114059": 14,
+        "114060": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 13511,
+    "icon": "UI_EquipIcon_Pole_Deshret",
+    "rankLevel": 5,
+    "nameTextMapHash": 4238339131,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112068": 23,
+        "112069": 27,
+        "112070": 41,
+        "114041": 5,
+        "114042": 14,
+        "114043": 14,
+        "114044": 6
+      }
+    },
+    "wikiId": 2849
+  },
+  {
+    "id": 13509,
+    "icon": "UI_EquipIcon_Pole_Narukami",
+    "rankLevel": 5,
+    "nameTextMapHash": 3717849275,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112044": 15,
+        "112045": 23,
+        "112046": 27,
+        "112047": 23,
+        "112048": 27,
+        "112049": 41,
+        "114033": 5,
+        "114034": 14,
+        "114035": 14,
+        "114036": 6
+      }
+    },
+    "wikiId": 2014
+  },
+  {
+    "id": 13507,
+    "icon": "UI_EquipIcon_Pole_Santika",
+    "rankLevel": 5,
+    "nameTextMapHash": 688991243,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112026": 23,
+        "112027": 27,
+        "112028": 41,
+        "112038": 15,
+        "112039": 23,
+        "112040": 27,
+        "114017": 5,
+        "114018": 14,
+        "114019": 14,
+        "114020": 6
+      }
+    },
+    "wikiId": 1970
+  },
+  {
+    "id": 13505,
+    "icon": "UI_EquipIcon_Pole_Morax",
+    "rankLevel": 5,
+    "nameTextMapHash": 1997709467,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112029": 23,
+        "112030": 27,
+        "112031": 41,
+        "112032": 15,
+        "112033": 23,
+        "112034": 27,
+        "114013": 5,
+        "114014": 14,
+        "114015": 14,
+        "114016": 6
+      }
+    },
+    "wikiId": 1948
+  },
+  {
+    "id": 13504,
+    "icon": "UI_EquipIcon_Pole_Kunwu",
+    "rankLevel": 5,
+    "nameTextMapHash": 197755235,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112035": 15,
+        "112036": 23,
+        "112037": 27,
+        "112041": 23,
+        "112042": 27,
+        "112043": 41,
+        "114021": 5,
+        "114022": 14,
+        "114023": 14,
+        "114024": 6
+      }
+    },
+    "wikiId": 2030
+  },
+  {
+    "id": 13502,
+    "icon": "UI_EquipIcon_Pole_Dvalin",
+    "rankLevel": 5,
+    "nameTextMapHash": 4158505619,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112008": 15,
+        "112009": 23,
+        "112010": 27,
+        "112023": 23,
+        "112024": 27,
+        "112025": 41,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
+      }
+    },
+    "wikiId": 1957
+  },
+  {
+    "id": 13501,
+    "icon": "UI_EquipIcon_Pole_Homa",
+    "rankLevel": 5,
+    "nameTextMapHash": 3235324891,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112002": 15,
+        "112003": 23,
+        "112004": 27,
+        "112020": 23,
+        "112021": 27,
+        "112022": 41,
+        "114021": 5,
+        "114022": 14,
+        "114023": 14,
+        "114024": 6
+      }
+    },
+    "wikiId": 1972
+  },
+  {
+    "id": 13427,
+    "icon": "UI_EquipIcon_Pole_Mechanic",
+    "rankLevel": 4,
+    "nameTextMapHash": 882305891,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112092": 15,
+        "112093": 18,
+        "112094": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
+      }
+    },
+    "wikiId": 4336
+  },
+  {
+    "id": 13426,
+    "icon": "UI_EquipIcon_Pole_Caduceus",
+    "rankLevel": 4,
+    "nameTextMapHash": 2847771107,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "112095": 15,
+        "112096": 18,
+        "112097": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
+      }
+    },
+    "wikiId": 5151
+  },
+  {
+    "id": 13425,
+    "icon": "UI_EquipIcon_Pole_Vorpal",
+    "rankLevel": 4,
+    "nameTextMapHash": 4158971171,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112089": 15,
+        "112090": 18,
+        "112091": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
+      }
+    },
+    "wikiId": 3986
+  },
+  {
+    "id": 13424,
+    "icon": "UI_EquipIcon_Pole_Shanty",
+    "rankLevel": 4,
+    "nameTextMapHash": 449192923,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "112077": 15,
+        "112078": 18,
+        "112079": 27,
+        "114057": 3,
+        "114058": 9,
+        "114059": 9,
+        "114060": 4
+      }
+    },
+    "wikiId": 4001
+  },
+  {
+    "id": 13419,
+    "icon": "UI_EquipIcon_Pole_Windvane",
+    "rankLevel": 4,
+    "nameTextMapHash": 1470442731,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112017": 15,
+        "112018": 18,
+        "112019": 27,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2847
+  },
+  {
+    "id": 13417,
+    "icon": "UI_EquipIcon_Pole_Arakalari",
+    "rankLevel": 4,
+    "nameTextMapHash": 452357939,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "112068": 15,
+        "112069": 18,
+        "112070": 27,
+        "114041": 3,
+        "114042": 9,
+        "114043": 9,
+        "114044": 4
+      }
+    },
+    "wikiId": 2668
+  },
+  {
+    "id": 13416,
+    "icon": "UI_EquipIcon_Pole_Maria",
+    "rankLevel": 4,
+    "nameTextMapHash": 4122509083,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112056": 15,
+        "112057": 18,
+        "112058": 27,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 1975
+  },
+  {
+    "id": 13415,
+    "icon": "UI_EquipIcon_Pole_Mori",
+    "rankLevel": 4,
+    "nameTextMapHash": 1148024603,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112047": 15,
+        "112048": 18,
+        "112049": 27,
+        "112053": 10,
+        "112054": 15,
+        "112055": 18,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 1930
+  },
+  {
+    "id": 13414,
+    "icon": "UI_EquipIcon_Pole_Bakufu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2491797315,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "112047": 15,
+        "112048": 18,
+        "112049": 27,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": 1949
+  },
+  {
+    "id": 13409,
+    "icon": "UI_EquipIcon_Pole_Everfrost",
+    "rankLevel": 4,
+    "nameTextMapHash": 3443142923,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 2060
+  },
+  {
+    "id": 13408,
+    "icon": "UI_EquipIcon_Pole_Theocrat",
+    "rankLevel": 4,
+    "nameTextMapHash": 2935286715,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 1960
+  },
+  {
+    "id": 13407,
+    "icon": "UI_EquipIcon_Pole_Zephyrus",
+    "rankLevel": 4,
+    "nameTextMapHash": 3755004051,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112002": 10,
+        "112003": 15,
+        "112004": 18,
+        "112023": 15,
+        "112024": 18,
+        "112025": 27,
+        "114009": 3,
+        "114010": 9,
+        "114011": 9,
+        "114012": 4
+      }
+    },
+    "wikiId": 2021
+  },
+  {
+    "id": 13406,
+    "icon": "UI_EquipIcon_Pole_Lapis",
+    "rankLevel": 4,
+    "nameTextMapHash": 716252627,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 1943
+  },
+  {
+    "id": 13405,
+    "icon": "UI_EquipIcon_Pole_Gladiator",
+    "rankLevel": 4,
+    "nameTextMapHash": 4049410651,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112020": 15,
+        "112021": 18,
+        "112022": 27,
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "114005": 3,
+        "114006": 9,
+        "114007": 9,
+        "114008": 4
+      }
+    },
+    "wikiId": 1937
+  },
+  {
+    "id": 13404,
+    "icon": "UI_EquipIcon_Pole_Blackrock",
+    "rankLevel": 4,
+    "nameTextMapHash": 481755219,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 2054
+  },
+  {
+    "id": 13403,
+    "icon": "UI_EquipIcon_Pole_Exotic",
+    "rankLevel": 4,
+    "nameTextMapHash": 578575283,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112029": 15,
+        "112030": 18,
+        "112031": 27,
+        "112035": 10,
+        "112036": 15,
+        "112037": 18,
+        "114013": 3,
+        "114014": 9,
+        "114015": 9,
+        "114016": 4
+      }
+    },
+    "wikiId": 1990
+  },
+  {
+    "id": 13402,
+    "icon": "UI_EquipIcon_Pole_Proto",
+    "rankLevel": 4,
+    "nameTextMapHash": 1154009435,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": 2027
+  },
+  {
+    "id": 13401,
+    "icon": "UI_EquipIcon_Pole_Stardust",
+    "rankLevel": 4,
+    "nameTextMapHash": 2664629131,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112008": 10,
+        "112009": 15,
+        "112010": 18,
+        "112026": 15,
+        "112027": 18,
+        "112028": 27,
+        "114017": 3,
+        "114018": 9,
+        "114019": 9,
+        "114020": 4
+      }
+    },
+    "wikiId": 1940
+  },
+  {
+    "id": 13303,
+    "icon": "UI_EquipIcon_Pole_Noire",
+    "rankLevel": 3,
+    "nameTextMapHash": 4103766499,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112011": 6,
+        "112012": 10,
+        "112013": 12,
+        "112041": 10,
+        "112042": 12,
+        "112043": 18,
+        "114021": 2,
+        "114022": 6,
+        "114023": 6,
+        "114024": 3
+      }
+    },
+    "wikiId": 2059
+  },
+  {
+    "id": 13302,
+    "icon": "UI_EquipIcon_Pole_Halberd",
+    "rankLevel": 3,
+    "nameTextMapHash": 618786571,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112026": 10,
+        "112027": 12,
+        "112028": 18,
+        "112038": 6,
+        "112039": 10,
+        "112040": 12,
+        "114017": 2,
+        "114018": 6,
+        "114019": 6,
+        "114020": 3
+      }
+    },
+    "wikiId": 2035
+  },
+  {
+    "id": 13301,
+    "icon": "UI_EquipIcon_Pole_Ruby",
+    "rankLevel": 3,
+    "nameTextMapHash": 1390797107,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 105000,
+      "materials": {
+        "112029": 10,
+        "112030": 12,
+        "112031": 18,
+        "112032": 6,
+        "112033": 10,
+        "112034": 12,
+        "114013": 2,
+        "114014": 6,
+        "114015": 6,
+        "114016": 3
+      }
+    },
+    "wikiId": 1996
+  },
+  {
+    "id": 13201,
+    "icon": "UI_EquipIcon_Pole_Rod",
+    "rankLevel": 2,
+    "nameTextMapHash": 3070169307,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 35000,
+      "materials": {
+        "112008": 5,
+        "112009": 7,
+        "112023": 6,
+        "112024": 8,
+        "114009": 1,
+        "114010": 4,
+        "114011": 1
+      }
+    },
+    "wikiId": 2036
+  },
+  {
+    "id": 13101,
+    "icon": "UI_EquipIcon_Pole_Gewalt",
+    "rankLevel": 1,
+    "nameTextMapHash": 2796697027,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112008": 3,
+        "112009": 5,
+        "112023": 5,
+        "112024": 6,
+        "114009": 1,
+        "114010": 3,
+        "114011": 1
+      }
+    },
+    "wikiId": 1976
   }
 ]

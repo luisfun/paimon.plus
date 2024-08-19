@@ -81,22 +81,22 @@ const onclick: HTMLButtonAttributes = {
     </div>
   </div>
 </div>
-<Dialog id="modal" maxH>
+<Dialog id="modal" maxH visible={isAvatarLoading}>
   <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-2">
     <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.characters")} checked />
     <div role="tabpanel" class="tab-content">
-      <div class="flex flex-col md:flex-row">
-        <div class="flex">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 my-3">
+        <div class="grid grid-cols-7 gap-3 mx-auto">
           {#each elements as elem}
             <button class="w-8 bg-primary-630 border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
-              <img loading="lazy" src={isAvatarLoading ? `/images/element/${elem}.webp` : "/images/None.webp"} alt={elem} />
+              <img loading="lazy" src="/images/element/{elem}.webp" alt={elem} />
             </button>
           {/each}
         </div>
-        <div class="flex">
+        <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
             <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
-              <img loading="lazy" src={isAvatarLoading ? `/images/weapon-type/${type}.webp` : "/images/None.webp"} alt={type} />
+              <img loading="lazy" src="/images/weapon-type/{type}.webp" alt={type} />
             </button>
           {/each}
         </div>
@@ -104,18 +104,27 @@ const onclick: HTMLButtonAttributes = {
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each avatars.filter(a => !elementFilter[0] || elementFilter.includes(a.element || "")).filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as avatar}
           <button class="aspect-square" on:click={_ => avatarHandler(avatar.id)}>
-            <Icon id={avatar.id} isLoading={isAvatarLoading} loading="lazy" />
+            <Icon id={avatar.id} loading="lazy" />
           </button>
         {/each}
       </form>
     </div>
     <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.weapons")} on:click={weaponLoadHandler} />
     <div role="tabpanel" class="tab-content">
-      {#if isAvatarLoading}
+      {#if isWeaponLoading}
+      <div class="grid grid-cols-1 gap-y-3 my-3">
+        <div class="grid grid-cols-5 gap-3 mx-auto">
+          {#each weaponTypes as type}
+            <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
+              <img loading="lazy" src="/images/weapon-type/{type}.webp" alt={type} />
+            </button>
+          {/each}
+        </div>
+      </div>
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
-        {#each weapons as weapon}
+        {#each weapons.filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as weapon}
           <button class="aspect-square" on:click={_ => weaponHandler(weapon.id)}>
-            <Icon id={weapon.id} ui="weapon" isLoading={isWeaponLoading} loading="lazy" />
+            <Icon id={weapon.id} ui="weapon" loading="lazy" />
           </button>
         {/each}
       </form>

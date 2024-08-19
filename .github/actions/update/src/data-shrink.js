@@ -191,9 +191,9 @@ const dumpWeapon = () => {
   dumpFile('weapon', [
     ...weaponTypeFilter('WEAPON_SWORD_ONE_HAND'),
     ...weaponTypeFilter('WEAPON_CLAYMORE'),
-    ...weaponTypeFilter('WEAPON_POLE'),
-    ...weaponTypeFilter('WEAPON_CATALYST'),
     ...weaponTypeFilter('WEAPON_BOW'),
+    ...weaponTypeFilter('WEAPON_CATALYST'),
+    ...weaponTypeFilter('WEAPON_POLE'),
   ])
 }
 

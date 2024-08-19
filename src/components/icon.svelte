@@ -7,15 +7,18 @@ import weapon from '@game/weapon.json'
 import type { HTMLImgAttributes } from 'svelte/elements'
 type TextMap = { en: Record<number, string> }
 
-export let id: number
-export let ui: 'avatar' | 'weapon' | 'material' = 'avatar'
+export let id: number | string
+export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' = 'avatar'
 //export let costumes = ''
 export let text = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
+export let style = ''
 
 let src = dummySrc
 let alt = 'None'
 let rank = 1
+let width = 1
+let height = 1
 
 const rankNum: Record<string, number> = {
   QUALITY_ORANGE: 5,
@@ -23,13 +26,15 @@ const rankNum: Record<string, number> = {
   QUALITY_ORANGE_SP: 5,
 }
 
-const setSrc = (newSrc: string) => {
+const setSrc = (newSrc: string, px: number) => {
   if (typeof window === 'undefined') {
     src = newSrc
   } else {
     const img = new Image()
     img.onload = () => {
       src = newSrc
+      width = px
+      height = px
     }
     src = dummySrc
     img.src = newSrc
@@ -39,7 +44,7 @@ $: switch (ui) {
   case 'avatar': {
     const a = avatar.find(e => e.id === id)
     if (!a) break
-    setSrc(`/images/ui/Min_UI_AvatarIcon_${a.key}.webp`)
+    setSrc(`/images/ui/Min_UI_AvatarIcon_${a.key}.webp`, 192)
     alt = (textMap as TextMap).en[a.nameTextMapHash]
     rank = rankNum[a.qualityType] || 1
     break
@@ -47,7 +52,7 @@ $: switch (ui) {
   case 'weapon': {
     const w = weapon.find(e => e.id === id)
     if (!w) break
-    setSrc(`/images/ui/Min_${w.icon}.webp`)
+    setSrc(`/images/ui/Min_${w.icon}.webp`, 128)
     alt = (textMap as TextMap).en[w.nameTextMapHash]
     rank = w.rankLevel
     break
@@ -55,9 +60,21 @@ $: switch (ui) {
   case 'material': {
     const m = material.find(e => e.id === id)
     if (!m) break
-    setSrc(`/images/ui/Min_${m.icon}.webp`)
+    setSrc(`/images/ui/Min_${m.icon}.webp`, 128)
     alt = (textMap as TextMap).en[m.nameTextMapHash]
     rank = m.rankLevel || 1
+    break
+  }
+  case 'element': {
+    setSrc(`/images/element/${id}.webp`, 84)
+    alt = id.toString()
+    rank = 0
+    break
+  }
+  case 'weapon-type': {
+    setSrc(`/images/weapon-type/${id}.webp`, 56)
+    alt = id.toString()
+    rank = 0
     break
   }
 }
@@ -66,5 +83,5 @@ $: switch (ui) {
 {#if text}
 <div />
 {:else}
-<img {loading} {src} {alt} class="bg-rank-{rank} bg-cover w-full rounded-[3%_3%_27%_3%] aspect-square" />
+<img {loading} {width} {height} {src} {alt} class={(ui === "element" || ui === "weapon-type") ? style : `bg-rank-${rank} bg-cover w-full rounded-[3%_3%_27%_3%] ${style}`} />
 {/if}

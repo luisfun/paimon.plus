@@ -10,7 +10,10 @@ export const uiSharp = async () => {
 }
 
 const createWebp = async () => {
-  const uiFiles = fs.readdirSync(folder.ui).map(e => e.slice(0, -4)).filter(e => !e.startsWith("UI_ItemIcon_"))
+  const uiFiles = fs
+    .readdirSync(folder.ui)
+    .map(e => e.slice(0, -4))
+    .filter(e => !e.startsWith('UI_ItemIcon_'))
   const webpFiles = fs.readdirSync(folder.webp).map(e => e.slice(0, -5))
   const diffFiles = uiFiles.filter(e => webpFiles.indexOf(e) === -1)
   if (!diffFiles[0]) return

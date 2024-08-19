@@ -75,9 +75,9 @@ const onclick: HTMLButtonAttributes = {
     <button class="mr-auto text-xl" {...onclick} on:click={avatarLoadHandler}>{t(select, selectData.element ? "avatar" : "weapon")}</button>
     <div class="mr-auto flex items-center">
       {#if selectData.element}
-      <img class="h-7 mr-2" src="/images/element/{selectData.element}.webp" alt={selectData.element} />
+      <Icon id={selectData.element} ui="element" style="w-7 mr-2" />
       {/if}
-      <img class="h-7 mr-2" src="/images/weapon-type/{selectData.weaponType}.webp" alt={selectData.weaponType} />
+      <Icon id={selectData.weaponType} ui="weapon-type" style="w-7 mr-2" />
       <ExternalA class="text-sm text-link" href="//wiki.hoyolab.com/m/genshin/entry/{selectData.wikiId}">HoYoWiki</ExternalA>
     </div>
   </div>
@@ -90,14 +90,14 @@ const onclick: HTMLButtonAttributes = {
         <div class="grid grid-cols-7 gap-3 mx-auto">
           {#each elements as elem}
             <button class="w-8 bg-primary-630 border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
-              <img loading="lazy" src="/images/element/{elem}.webp" alt={elem} />
+              <Icon id={elem} ui="element" />
             </button>
           {/each}
         </div>
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
             <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
-              <img loading="lazy" src="/images/weapon-type/{type}.webp" alt={type} />
+              <Icon id={type} ui="weapon-type" />
             </button>
           {/each}
         </div>
@@ -117,7 +117,7 @@ const onclick: HTMLButtonAttributes = {
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
             <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
-              <img loading="lazy" src="/images/weapon-type/{type}.webp" alt={type} />
+              <Icon id={type} ui="weapon-type" />
             </button>
           {/each}
         </div>

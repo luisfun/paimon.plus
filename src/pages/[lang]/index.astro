@@ -12,12 +12,14 @@ const t = useTranslations(lang)
 ---
 
 <Layout title={t("home.title")} grid defaultTitle>
-  <nav class="max-w-md w-full mx-auto bg-neutral pt-6 rounded-2xl">
-		<HomeNav data={navData.slice(0,6)} />
-		<More>
-			<HomeNav data={navData.slice(6)} mt />
-		</More>
-	</nav>
+	<div>
+		<nav class="max-w-md w-full mx-auto bg-neutral pt-6 rounded-2xl">
+			<HomeNav data={navData.slice(0,6)} />
+			<More>
+				<HomeNav data={navData.slice(6)} mt />
+			</More>
+		</nav>
+	</div>
 	<div class="max-w-md w-full mx-auto">
 		<MaterialGuide client:load {lang} />
 	</div>

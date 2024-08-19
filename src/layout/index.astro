@@ -18,7 +18,7 @@ const { title, grid, defaultTitle } = Astro.props
   <Head title={defaultTitle ? undefined : title}>
     <slot name="head" />
   </Head>
-  <body class="max-w-screen-lg m-auto px-4 sm:px-5">
+  <body class="max-w-screen-lg w-11/12 m-auto">
     <Header />
     <main>
       <h1 class="my-2 text-center">{title}</h1>

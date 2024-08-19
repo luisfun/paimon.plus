@@ -202,7 +202,7 @@ const dumpMaterial = () => {
   const weapon = readFile('weapon')
   const avatarMaterials = avatar.flatMap(a => Object.keys(a.allCosts.materials).map(e => Number(e)))
   const weaponMaterials = weapon.flatMap(w => Object.keys(w.allCosts.materials).map(e => Number(e)))
-  const m = [...new Set(avatarMaterials.concat(weaponMaterials))].sort().map(id => {
+  const m = [...new Set([...avatarMaterials, ...weaponMaterials, 104003])].sort().map(id => {
     const material = E.Material.find(e => e.id === Number(id))
     const copyIndex = ['id', 'icon', 'rankLevel', 'nameTextMapHash', 'rank']
     const re = {}

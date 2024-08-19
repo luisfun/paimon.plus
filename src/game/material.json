@@ -258,6 +258,13 @@
     "rank": 312
   },
   {
+    "id": 104003,
+    "icon": "UI_ItemIcon_104003",
+    "rankLevel": 4,
+    "nameTextMapHash": 1790552548,
+    "rank": 100
+  },
+  {
     "id": 104101,
     "icon": "UI_ItemIcon_104101",
     "rankLevel": 2,

@@ -22,30 +22,33 @@ const rankNum: Record<string, number> = {
   QUALITY_ORANGE_SP: 5,
 }
 
-$: switch (ui) {
-  case 'avatar': {
-    const a = avatar.find(e => e.id === id)
-    if (!a) break
-    src = `/images/ui/Min_UI_AvatarIcon_${a.key}.webp`
-    alt = (textMap as TextMap).en[a.nameTextMapHash]
-    rank = rankNum[a.qualityType] || 1
-    break
-  }
-  case 'weapon': {
-    const w = weapon.find(e => e.id === id)
-    if (!w) break
-    src = `/images/ui/Min_${w.icon}.webp` // _Awaken
-    alt = (textMap as TextMap).en[w.nameTextMapHash]
-    rank = w.rankLevel
-    break
-  }
-  case 'material': {
-    const m = material.find(e => e.id === id)
-    if (!m) break
-    src = `/images/ui/${m.icon}.webp`
-    alt = (textMap as TextMap).en[m.nameTextMapHash]
-    rank = m.rankLevel || 1
-    break
+$: {
+  src = '/images/None.webp'
+  switch (ui) {
+    case 'avatar': {
+      const a = avatar.find(e => e.id === id)
+      if (!a) break
+      src = `/images/ui/Min_UI_AvatarIcon_${a.key}.webp`
+      alt = (textMap as TextMap).en[a.nameTextMapHash]
+      rank = rankNum[a.qualityType] || 1
+      break
+    }
+    case 'weapon': {
+      const w = weapon.find(e => e.id === id)
+      if (!w) break
+      src = `/images/ui/Min_${w.icon}.webp` // _Awaken
+      alt = (textMap as TextMap).en[w.nameTextMapHash]
+      rank = w.rankLevel
+      break
+    }
+    case 'material': {
+      const m = material.find(e => e.id === id)
+      if (!m) break
+      src = `/images/ui/${m.icon}.webp`
+      alt = (textMap as TextMap).en[m.nameTextMapHash]
+      rank = m.rankLevel || 1
+      break
+    }
   }
 }
 </script>

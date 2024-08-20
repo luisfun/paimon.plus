@@ -105,7 +105,7 @@ const onclick: HTMLButtonAttributes = {
       <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
         {#each avatarData.filter(a => !elementFilter[0] || elementFilter.includes(a.element || "")).filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as avatar}
           <button on:click={_ => avatarHandler(avatar.id)}>
-            <Icon id={avatar.id} loading="lazy" />
+            <Icon id={avatar.id} ui="avatar" loading="lazy" />
           </button>
         {/each}
       </form>

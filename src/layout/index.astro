@@ -8,9 +8,10 @@ type Props = {
   title: string
   grid?: boolean
   defaultTitle?: boolean
+  minHFull?: boolean
 }
 const lang = getLangFromUrl(Astro.url)
-const { title, grid, defaultTitle } = Astro.props
+const { title, grid, defaultTitle, minHFull } = Astro.props
 ---
 
 <!doctype html>
@@ -22,7 +23,7 @@ const { title, grid, defaultTitle } = Astro.props
     <Header />
     <main>
       <h1 class="my-2 text-center">{title}</h1>
-      <div class=`my-12 ${grid ? "grid grid-cols-1 md:grid-cols-2 gap-12" : undefined}`>
+      <div class=`my-12${grid ? " grid grid-cols-1 md:grid-cols-2 gap-12" : ""}${minHFull ? " min-h-screen" : ""}`>
         <slot />
       </div>
       <slot name="main-bottom" />

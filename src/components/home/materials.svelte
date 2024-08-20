@@ -86,7 +86,6 @@ $: {
 
 <div class="grid grid-cols-4 gap-3 mt-3">
   {#each materials as material}
-    <Icon id={material.materials[0].id} ui="material" />
+    <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(" / ")} />
   {/each}
 </div>
-

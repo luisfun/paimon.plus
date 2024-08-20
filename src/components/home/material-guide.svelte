@@ -84,19 +84,19 @@ const onclick: HTMLButtonAttributes = {
 </div>
 <Dialog id="modal" maxH visible={isAvatarLoading}>
   <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-2">
-    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.characters")} checked />
+    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-text-sub checked:text-text checked:bg-neutral" aria-label={t("game.characters")} checked />
     <div role="tabpanel" class="tab-content">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 my-3">
         <div class="grid grid-cols-7 gap-3 mx-auto">
           {#each elements as elem}
-            <button class="w-8 bg-primary-630 border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
+            <button class="w-8 bg-neutral border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
               <Icon id={elem} ui="element" />
             </button>
           {/each}
         </div>
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
-            <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
+            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
               <Icon id={type} ui="weapon-type" />
             </button>
           {/each}
@@ -110,13 +110,13 @@ const onclick: HTMLButtonAttributes = {
         {/each}
       </form>
     </div>
-    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-primary-345 checked:text-primary-230 checked:bg-primary-630" aria-label={t("game.weapons")} on:click={weaponLoadHandler} />
+    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-text-sub checked:text-text checked:bg-neutral" aria-label={t("game.weapons")} on:click={weaponLoadHandler} />
     <div role="tabpanel" class="tab-content">
       {#if isWeaponLoading}
       <div class="grid grid-cols-1 gap-y-3 my-3">
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
-            <button class="w-8 bg-primary-630 border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
+            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
               <Icon id={type} ui="weapon-type" />
             </button>
           {/each}

@@ -22,6 +22,7 @@ type Data = {
     skillCoin?: number
     materials: Record<string, number | undefined>
   }
+  rankLevel?: number
   wikiId: number
 }
 
@@ -133,4 +134,4 @@ const onclick: HTMLButtonAttributes = {
     </div>
   </div>
 </Dialog>
-<Materials costs={selectData.allCosts} />
+<Materials costs={selectData.allCosts} rank={selectData.rankLevel} />

@@ -7,6 +7,7 @@ export let costs: {
   skillCoin?: number
   materials: Record<string, number | undefined>
 }
+export let rank: number | undefined
 
 let materials: {
   rank: number
@@ -18,6 +19,7 @@ let materials: {
     count: number
   }[]
 }[] = []
+
 const order = (rank: number) => {
   if (costs.skillCoin) {
     switch (true) {
@@ -58,7 +60,7 @@ const order = (rank: number) => {
 }
 $: {
   if (costs.skillCoin) costs.materials['104003'] = 419 // avatar exp
-  else costs.materials["104013"] = 1 // weapon exp
+  else costs.materials["104013"] = [0, 72, 108, 399, 605, 907][rank || 0] // weapon exp
   materials = []
   for (const id of Object.keys(costs.materials).map(e => Number(e))) {
     const data = materialJson.find(e => e.id === id)
@@ -86,6 +88,6 @@ $: {
 
 <div class="grid grid-cols-4 gap-3 mt-3">
   {#each materials as material}
-    <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(" / ")} />
+    <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} />
   {/each}
 </div>

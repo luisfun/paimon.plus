@@ -82,7 +82,7 @@ $: switch (ui) {
 {#if text}
 <div class="relative rounded-[3%_3%_27%_3%] overflow-hidden">
   <img {loading} {width} {height} {src} {alt} class={(ui === "element" || ui === "weapon-type") ? style : `bg-rank-${rank} bg-cover w-full ${style}`} />
-  <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-sm">{text}</div>
+  <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">{text}</div>
 </div>
 {:else}
 <img {loading} {width} {height} {src} {alt} class={(ui === "element" || ui === "weapon-type") ? style : `bg-rank-${rank} bg-cover w-full rounded-[3%_3%_27%_3%] ${style}`} />

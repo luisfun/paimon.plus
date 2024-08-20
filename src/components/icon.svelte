@@ -1,5 +1,4 @@
 <script lang="ts">
-import { dummySrc } from '@components/utils'
 import avatar from '@game/avatar.json'
 import material from '@game/material.json'
 import textMap from '@game/text-map.json'
@@ -14,6 +13,7 @@ export let text = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
 export let style = ''
 
+const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
 let src = dummySrc
 let alt = 'None'
 let rank = 1
@@ -27,14 +27,14 @@ const rankNum: Record<string, number> = {
 }
 
 const setSrc = (newSrc: string, px: number) => {
+  width = px
+  height = px
   if (typeof window === 'undefined') {
     src = newSrc
   } else {
     const img = new Image()
     img.onload = () => {
       src = newSrc
-      width = px
-      height = px
     }
     src = dummySrc
     img.src = newSrc

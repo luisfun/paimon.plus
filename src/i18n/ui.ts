@@ -8,7 +8,7 @@ export const ui = {
     'game.weapons': 'Weapons',
     'footer.unofficial': 'Paimon+ is not affiliated to miHoYo.',
     'home.title': 'Genshin Impact Online Tools',
-    "showcase.title": "Character Showcase",
+    'showcase.title': 'Character Showcase',
     ts: 'ts',
   },
   ja: {
@@ -18,7 +18,7 @@ export const ui = {
     'game.weapons': '武器',
     'footer.unofficial': 'Paimon+は非公式のwebサイトです。',
     'home.title': '原神 webツール',
-    "showcase.title": "プロフィール キャラクター",
+    'showcase.title': 'プロフィール キャラクター',
   },
   ko: {
     label: '한국어',
@@ -26,6 +26,6 @@ export const ui = {
 
     'footer.unofficial': 'Paimon+는 비공식 웹사이트입니다.',
     'home.title': '원신 웹 툴',
-    "showcase.title": "캐릭터 진열장",
+    'showcase.title': '캐릭터 진열장',
   },
 } as const

@@ -43,24 +43,24 @@ const order = (rank: number) => {
       default:
         return 1
     }
-  } else {
-    switch (true) {
-      case rank === 5: // Mystic Enhancement Ore
-        return 4
-      case 10601 <= rank && rank <= 10700: // Enemy Drops
-        return 3
-      case 15101 <= rank && rank <= 15200: // Ascension Material 15200??
-        return 1
-      case 10101 <= rank && rank <= 10200: // Elite Enemy Drops 10101?? 10200??
-        return 2
-      default:
-        return 1
-    }
+  }
+  switch (true) {
+    case rank === 5: // Mystic Enhancement Ore
+      return 4
+    case 10601 <= rank && rank <= 10700: // Enemy Drops
+      return 3
+    case 15101 <= rank && rank <= 15200: // Ascension Material 15200??
+      return 1
+    case 10101 <= rank && rank <= 10200: // Elite Enemy Drops 10101?? 10200??
+      return 2
+    default:
+      return 1
   }
 }
 $: {
-  if (costs.skillCoin) costs.materials['104003'] = 419 // avatar exp
-  else costs.materials["104013"] = [0, 72, 108, 399, 605, 907][rank || 0] // weapon exp
+  if (costs.skillCoin)
+    costs.materials['104003'] = 419 // avatar exp
+  else costs.materials['104013'] = [0, 72, 108, 399, 605, 907][rank || 0] // weapon exp
   materials = []
   for (const id of Object.keys(costs.materials).map(e => Number(e))) {
     const data = materialJson.find(e => e.id === id)

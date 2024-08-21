@@ -1,3 +1,21 @@
 name = "paimon-plus"
 pages_build_output_dir = "./dist"
 compatibility_date = "2024-07-14"
+
+[[ kv_namespaces ]]
+binding = "kv"
+id = "3ca71728b0484ed79b452470ba74aeb7"
+preview_id = "genshin-kv"
+
+[[ d1_databases ]]
+binding = "showcase"
+database_name = "genshin-showcase"
+database_id = ""
+
+[[ d1_databases ]]
+binding = "statistical"
+database_name = "genshin-statistical-sources"
+database_id = ""
+
+[ limits ]
+cpu_ms = 100

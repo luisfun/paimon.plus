@@ -1,6 +1,6 @@
 import type { CacheStorage } from '../../../node_modules/@cloudflare/workers-types/index'
-
-const API_VER = '0.3.0'
+import { API_VER, uidTest } from '../../../src/components/api'
+import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api'
 
 // kv key name
 const KEY_STATUS = 'enka-status'
@@ -15,7 +15,7 @@ type Env = {
 export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const { uid } = ctx.params
   if (ctx.request.headers.get('sec-fetch-site') !== 'same-origin') return resStatus(403)
-  if (typeof uid !== 'string' || !/^(18|[1-35-9])\d{8}$/.test(uid)) return resStatus(400)
+  if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
 
   //********** cache block **********
   // cache init
@@ -64,6 +64,11 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     case 400:
     case 404:
       return resError(status, uidCache)
+  }
+  // other error
+  if (status < 200 || 399 < status) {
+    console.warn(`unknown error: ${status}`)
+    return resStatus(599)
   }
 
   const json = { ...((await uidData[0].json()) as EnkaApi), ver: API_VER, timestamp: Date.now() }
@@ -148,103 +153,4 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
           .bind(uid, timestamp, JSON.stringify(e)),
       ),
   ])
-}
-
-type ApiData = EnkaApi & { ver: string; timestamp: number }
-
-type EnkaApi = {
-  playerInfo: {
-    nickname: string
-    level: number
-    signature?: string
-    worldLevel?: number
-    nameCardId: number
-    finishAchievementNum?: number
-    towerFloorIndex?: number
-    towerLevelIndex?: number
-    showAvatarInfoList?: {
-      avatarId: number
-      level: number
-      costumeId?: number
-    }[]
-    showNameCardIdList?: number[]
-    profilePicture: {
-      avatarId: number
-      costumeId?: number
-    }
-  }
-  avatarInfoList?: {
-    avatarId: number
-    propMap: {
-      [index: string]: {
-        type: number
-        ival: string
-        val?: string
-      }
-    }
-    talentIdList?: number[]
-    fightPropMap: {
-      [index: string]: number
-    }
-    skillDepotId: number
-    inherentProudSkillList: number[]
-    skillLevelMap: {
-      [index: string]: number
-    }
-    proudSkillExtraLevelMap?: {
-      [index: string]: number
-    }
-    equipList?: (Weapon | Reliquary)[]
-    fetterInfo: {
-      expLevel: number // 好感度
-    }
-    costumeId?: number
-  }[]
-  ttl: number
-  uid: string
-  owner?: unknown
-}
-type Weapon = {
-  itemId: number
-  weapon: {
-    level: number
-    promoteLevel?: number
-    affixMap?: {
-      [index: string]: number // 0-4
-    }
-  }
-  flat: {
-    nameTextMapHash: string
-    rankLevel: number
-    weaponStats: {
-      appendPropId: string
-      statValue: number
-    }[]
-    itemType: string
-    icon: string
-  }
-}
-type Reliquary = {
-  itemId: number
-  reliquary: {
-    level: number
-    mainPropId: number
-    appendPropIdList?: number[]
-  }
-  flat: {
-    nameTextMapHash: string
-    setNameTextMapHash: string
-    rankLevel: number
-    reliquaryMainstat: {
-      mainPropId: string
-      statValue: number
-    }
-    reliquarySubstats?: {
-      appendPropId: string
-      statValue: number
-    }[]
-    itemType: string
-    icon: string
-    equipType: string
-  }
 }

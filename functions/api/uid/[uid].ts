@@ -36,15 +36,17 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
   // response cache
   if (uidCache) {
-    const cacheTime = uidCache.timestamp + uidCache.ttl * 1000 - Date.now()
-    if (cacheTime > 0) return resJson(uidCache, 304, cacheTime / 1000)
+    const cacheTime = Math.ceil(uidCache.timestamp / 1000 + uidCache.ttl - Date.now() / 1000)
+    if (cacheTime > 0) return resJson203(304, { ...uidCache, ttl: cacheTime }, cacheTime)
+    if (ctx.request.headers.get('cache-control') === 'force-cache') return resJson203(304, { ...uidCache, ttl: 0 }, 0)
   }
+
+  //if (uid) return resJson({uid}, 200, 60)
 
   //********** fetch block **********
   const uids: number[] = JSON.parse(cacheData[2])
   const uidData = await Promise.all([
-    //new Response(JSON.stringify({ uid })),
-    fetch(`https://enka.network/api/uid/${uid}`, { headers: { 'User-Agent': 'Paimon+@Luis/1.0' } }),
+    fetch(`https://enka.network/api/uid/${uid}`, { headers: { 'User-Agent': 'Paimon+@luis.fun/1.0' } }),
     //fetchDB(c, uid),
   ])
 
@@ -67,7 +69,13 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const json = { ...((await uidData[0].json()) as EnkaApi), ver: API_VER, timestamp: Date.now() }
   const res = resJson(json, status, json.ttl)
   // save
-  ctx.waitUntil(Promise.all([saveCache(cache, cacheKey, res), saveShowcase(ctx.env, uid, json, uids), saveStatistical(ctx.env, uid, json)]))
+  ctx.waitUntil(
+    Promise.all([
+      saveCache(cache, cacheKey, res),
+      saveShowcase(ctx.env, uid, json, uids),
+      saveStatistical(ctx.env, uid, json),
+    ]),
+  )
 
   // response
   return res
@@ -75,7 +83,9 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
 const resStatus = (status: number) => new Response(null, { status })
 const resError = (status: string | number, uidCache: ApiData | undefined) =>
-  uidCache ? resJson({ ...uidCache, status: Number(status) }, 304, 60) : resStatus(Number(status))
+  uidCache ? resJson203(status, uidCache, uidCache.ttl) : resStatus(Number(status))
+const resJson203 = (status: string | number, uidCache: ApiData | undefined, age: number) =>
+  resJson({ ...uidCache, status: Number(status) }, 203, age)
 const resJson = (json: unknown, status: number, age: number) =>
   new Response(JSON.stringify(json), {
     status,
@@ -88,7 +98,7 @@ const saveCache = async (cache: CacheStorage['default'], cacheKey: string, res: 
   await cache.put(cacheKey, res.clone())
 }
 
-const saveShowcase = async (env: Env, uid: string, json:ApiData, uids: number[]) => {
+const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: number[]) => {
   if (!uids.includes(Number(uid))) return
   const db = env.showcase
   const { timestamp } = json

@@ -9,5 +9,5 @@ const t = useTranslations(lang)
 ---
 
 <Layout title={t("showcase.title")} minHFull>
-  <Island client:only="svelte" />
+  <Island client:only="svelte" {lang} />
 </Layout>

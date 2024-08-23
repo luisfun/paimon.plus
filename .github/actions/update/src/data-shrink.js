@@ -24,6 +24,9 @@ import WeaponPromote from '../../../../src/game/.data/WeaponPromoteExcelConfigDa
 // material
 import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
 
+// artifact-substat
+import ReliquaryAffix from '../../../../src/game/.data/ReliquaryAffixExcelConfigData.json' assert { type: 'json' }
+
 // wiki-id
 import WikiId from '../../../../src/game/.wiki/id.json' assert { type: 'json' }
 
@@ -38,6 +41,7 @@ const E = {
   WeaponPromote,
   Material,
   ProudSkill,
+  ReliquaryAffix,
 }
 
 export const dataShrink = () => {
@@ -45,6 +49,7 @@ export const dataShrink = () => {
   dumpWeapon()
   dumpMaterial()
   dumpTextMap()
+  dumpReliquaryAffix()
 }
 
 const dumpAvatar = () => {
@@ -55,8 +60,7 @@ const dumpAvatar = () => {
     const aInfo = {}
     aInfo.key = avatar.iconName.split('_').slice(-1)[0]
     // biome-ignore format: index
-    const avatarCopyIndex = ["id", "qualityType", "weaponType", "nameTextMapHash", "skillDepotId"]
-    for (const index of avatarCopyIndex) {
+    for (const index of ["id", "qualityType", "weaponType", "nameTextMapHash", "skillDepotId"]) {
       aInfo[index] = avatar[index]
     }
     if (aInfo.id === 10000005 || aInfo.id === 10000007) {
@@ -159,8 +163,7 @@ const dumpWeapon = () => {
   for (const weapon of E.Weapon.filter(e => !blockIds.includes(e.id))) {
     const wInfo = {}
     // biome-ignore format: index
-    const weaponCopyIndex = ["id", "icon", "rankLevel", "nameTextMapHash", "weaponType"]
-    for (const index of weaponCopyIndex) {
+    for (const index of ["id", "icon", "rankLevel", "nameTextMapHash", "weaponType"]) {
       wInfo[index] = weapon[index]
     }
     // costs
@@ -227,6 +230,11 @@ const dumpTextMap = () => {
     }
   }
   dumpFile('text-map', textMap)
+}
+
+const dumpReliquaryAffix = () => {
+  const re = E.ReliquaryAffix.map(e => ({ id: e.id, propType: e.propType, propValue: e.propValue }))
+  dumpFile('reliquary-affix', re)
 }
 
 const readFile = name => JSON.parse(fs.readFileSync(`${folder.dist + name}.json`, 'utf8'))

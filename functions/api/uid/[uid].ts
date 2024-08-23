@@ -17,7 +17,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   if (ctx.request.headers.get('sec-fetch-site') !== 'same-origin') return resStatus(403)
   if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
 
-  //********** cache block **********
+  //********** cache section **********
   // cache init
   const cache = (caches as unknown as CacheStorage).default
   const reqUrl = new URL(ctx.request.url)
@@ -43,7 +43,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
   //if (uid) return resJson({uid}, 200, 60)
 
-  //********** fetch block **********
+  //********** fetch section **********
   const uids: number[] = JSON.parse(cacheData[2])
   const uidData = await Promise.all([
     fetch(`https://enka.network/api/uid/${uid}`, { headers: { 'User-Agent': 'Paimon+@luis.fun/1.0' } }),

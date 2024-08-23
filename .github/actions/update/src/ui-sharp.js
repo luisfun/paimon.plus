@@ -69,8 +69,8 @@ const minDiff = names => {
 }
 
 const otherSharp = async () => {
-  const imgFolder = 'src/game/weapon-type/'
-  const imgDist = 'public/images/weapon-type/'
+  const imgFolder = 'src/game/card-assets/'
+  const imgDist = 'public/images/card-assets/'
   const imgFiles = fs.readdirSync(imgFolder).map(e => e.slice(0, -4))
   await Promise.all(
     imgFiles.map(name =>

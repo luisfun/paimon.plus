@@ -7,7 +7,7 @@
     "fix:unsafe": "biome check --write --unsafe . && astro check",
     "dev": "astro dev",
     "build": "astro check && astro build",
-    "preview": "astro build && wrangler pages dev ./dist",
+    "preview": "astro build && wrangler pages dev ./dist --ip localhost --port 4321",
     "astro": "astro",
     "update": "node .github/local-scripts/update.mjs",
     "update:wiki": "node .github/local-scripts/wiki-update.mjs"

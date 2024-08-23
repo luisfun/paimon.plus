@@ -1,8 +1,8 @@
 <script lang="ts">
 // client:only="svelte"
 import type { ApiData } from '@components/api'
+import Icon from '@components/icon.svelte'
 import Uid from '@components/uid.svelte'
-import Icon from "@components/icon.svelte"
 
 let uidData: ApiData | undefined
 let status = 0

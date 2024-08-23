@@ -14,7 +14,7 @@ let status = 0
 
 <Uid bind:uidData bind:status />
 {#if uidData?.avatarInfoList?.[0]}
-<div class="overflow-x-auto">
+<div class="overflow-x-auto mx-[calc((-100/91.666667+1)/2*100%)] sm:mx-auto">
   <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
     <Card {lang} avatarInfo={uidData.avatarInfoList[0]} />
   </div>

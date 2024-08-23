@@ -6,6 +6,7 @@ import { ui } from '@i18n/ui'
 import { getLangFromUrl, useTranslatedPath } from '@i18n/utils'
 
 const pageLang = getLangFromUrl(Astro.url)
+const [, , pagePath] = Astro.url.pathname.split('/')
 const translatePath = useTranslatedPath(pageLang)
 ---
 
@@ -21,7 +22,7 @@ const translatePath = useTranslatedPath(pageLang)
     <ul class="dropdown-content menu bg-neutral rounded-md z-[1] w-fit p-1 shadow-[0_0_.5rem_var(--background)]">
       {Object.entries(ui).map(([lang, {label}]) => (
         <li class={pageLang === lang ? "page-lang" : undefined}>
-          <a href={translatePath('/', lang as keyof typeof ui)} aria-label={label}>{label}</a>
+          <a href={translatePath(pagePath ? `/${pagePath}/` : '/', lang as keyof typeof ui)} aria-label={label}>{label}</a>
         </li>
       ))}
     </ul>

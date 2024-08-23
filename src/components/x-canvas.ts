@@ -126,7 +126,9 @@ const XCanvas = class {
    */
   render(document: Document, delay?: boolean | number) {
     const renderFunc = () => {
-      document.fonts.ready.then(() => this.draw()) // fontを読み終えたら描写 & pre-render
+      document.fonts.load(`${this.fontSize}px ${this.fontFamily}`).then(() => {
+        document.fonts.ready.then(() => this.draw())
+      }) // fontを読み終えたら描写 & pre-render
       setTimeout(() => this.imageLoader(), typeof delay === 'number' ? delay : 0)
     }
     if (!delay) renderFunc()

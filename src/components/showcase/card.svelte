@@ -24,7 +24,7 @@ onMount(() => {
       if ('weapon' in e) weapon.push(e as WeaponRemap)
       if ('reliquary' in e) artifactList.push(e as ReliquaryRemap)
     }
-    xc.applyFont('GenshinJa', 24, '#fff')
+    xc.applyFont(lang === 'en' ? 'Genshin' : 'GenshinJa', 24, '#fff')
     xc.main(
       null,
       c(
@@ -428,11 +428,3 @@ const sxMiniPaper = {
 </script>
 
 <canvas width="1920" height="480" class="w-full" bind:this={canvas} />
-
-<style>
-  @font-face {
-    font-family: 'GenshinJa';
-    src: url('/fonts/genshin-ja.woff2') format('woff2');
-    font-display: swap;
-  }
-</style>

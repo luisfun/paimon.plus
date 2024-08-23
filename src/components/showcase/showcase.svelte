@@ -4,7 +4,7 @@ import type { ApiData } from '@components/api'
 import Icon from '@components/icon.svelte'
 import Uid from '@components/uid.svelte'
 import type { Lang } from '@i18n/utils'
-import Card from './card.svelte';
+import Card from './card.svelte'
 
 export let lang: Lang
 

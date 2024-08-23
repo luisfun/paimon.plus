@@ -13,11 +13,11 @@ const t = useTranslations(lang)
 let canvas: HTMLCanvasElement
 onMount(() => {
   const avatarData = avatarJson.find(e => e.id === avatar.avatarId)
-  const ctx = canvas.getContext(`2d`, { willReadFrequently: true })
+  const ctx = canvas.getContext('2d', { willReadFrequently: true })
   if (avatarData && ctx) {
     const xc = new XCanvas(ctx, 1920, 1920 / 4)
     const c = xCreate
-    xc.applyFont(`GenshinJa`, 24, `#fff`)
+    xc.applyFont('GenshinJa', 24, '#fff')
     /*
     xc.main(null, c(`div`,
         {sx: {
@@ -196,7 +196,7 @@ onMount(() => {
 })
 
 const isIOS = () => {
-  if (typeof window === `undefined`) return false
+  if (typeof window === 'undefined') return false
   if (navigator.userAgent.match(/iPhone|iPad|iPod.+Mobile/)) return true
   return false
 }
@@ -213,10 +213,10 @@ const u = {
     Grass: '#57A45C', // #2D8E34
     None: '#94a0a7',
   } as Record<string, string>,
-  equipTypes: [`EQUIP_BRACER`, `EQUIP_NECKLACE`, `EQUIP_SHOES`, `EQUIP_RING`, `EQUIP_DRESS`],
-  bga: `#0005`,
-  bga2: `#0007`,
-  lightGreen: `#82ff9a`,
+  equipTypes: ['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS'],
+  bga: '#0005',
+  bga2: '#0007',
+  lightGreen: '#82ff9a',
 }
 </script>
 

@@ -118,7 +118,7 @@ const get_character_stats = (avatarInfo: AvatarInfo) => {
   ]
   const stats = displayStatus.map(type => {
     const fightProp = fightProps.find(e => e.type === type)
-    if (!fightProp) return { type: type, icon: ``, value: { main: 0 }, display: { main: `` } }
+    if (!fightProp) return { type: type, icon: '', value: { main: 0 }, display: { main: '' } }
     const statValue = avatarInfo.fightPropMap[fightProp.prop] || 0
     const re: {
       type: string
@@ -209,13 +209,13 @@ const get_prop_type = (prop: string, reverse?: boolean) => {
     { type: 'Cryo DMG Bonus', prop: 'FIGHT_PROP_ICE_ADD_HURT' },
     { type: 'Geo DMG Bonus', prop: 'FIGHT_PROP_ROCK_ADD_HURT' },
   ]
-  if (!reverse) return props.find(e => e.prop === prop)?.type || ``
-  else return props.find(e => e.type === prop)?.prop || ``
+  if (!reverse) return props.find(e => e.prop === prop)?.type || ''
+  return props.find(e => e.type === prop)?.prop || ''
 }
 const statToString = (type: string | undefined, value: number, x100?: boolean) =>
   isFlat(type)
     ? value.toLocaleString(undefined, { maximumFractionDigits: 0 })
-    : (value * (x100 ? 100 : 1)).toLocaleString(undefined, { maximumFractionDigits: 1, minimumFractionDigits: 1 }) + '%'
+    : `${(value * (x100 ? 100 : 1)).toLocaleString(undefined, { maximumFractionDigits: 1, minimumFractionDigits: 1 })}%`
 const isFlat = (type: string | undefined) =>
   ['Max HP', 'Base ATK', 'HP', 'ATK', 'DEF', 'Elemental Mastery'].some(e => e === type)
 const get_reliquary_sets = (avatarInfo: AvatarInfo) => {
@@ -226,7 +226,7 @@ const get_reliquary_sets = (avatarInfo: AvatarInfo) => {
   for (const e of avatarInfo.equipList || []) {
     if ('reliquary' in e)
       tmpList.push({
-        icon: e.flat.icon.slice(0, -1) + '4',
+        icon: `${e.flat.icon.slice(0, -1)}4`,
         nameTextMapHash: e.flat.setNameTextMapHash,
       })
   }
@@ -246,7 +246,7 @@ const get_reliquary_sets = (avatarInfo: AvatarInfo) => {
   }[] = []
   for (const e of setList) {
     if (e.count < 2) continue
-    else if (e.count < 4) reList.push({ icon: e.icon, count: 2, nameTextMapHash: e.nameTextMapHash })
+    if (e.count < 4) reList.push({ icon: e.icon, count: 2, nameTextMapHash: e.nameTextMapHash })
     else reList.push({ icon: e.icon, count: 4, nameTextMapHash: e.nameTextMapHash })
   }
   return reList.sort((a, b) => Number(a?.icon?.slice(-7, -2)) - Number(b?.icon?.slice(-7, -2)))

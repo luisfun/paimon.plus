@@ -111,13 +111,12 @@ const saveCache = async (cache: CacheStorage['default'], cacheKey: string, res: 
 }
 
 const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: number[]) => {
-  if (!uids.includes(Number(uid))) return
+  if (!uids?.includes(Number(uid))) return
   const db = env.showcase
   const { timestamp } = json
 }
 
 const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
-  console.log(json.avatarInfoList)
   // キャラなし
   if (!json.avatarInfoList) return
   const db = env.statistical

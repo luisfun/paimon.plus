@@ -89,8 +89,9 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
 //********** cache time log **********
 const logCacheTime = async (env: Env, time: number) => {
+  const t = 60 - time
   const log = await env.kv.get("cache-time")
-  if (log && Number(log) > time) await env.kv.put("cache-time", time.toString())
+  if (log && Number(log) > t) await env.kv.put("cache-time", t.toString())
 }
 
 const resStatus = (status: number) => new Response(null, { status })
@@ -126,9 +127,6 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
   )
   const idList = json.avatarInfoList.map(e => `_${e.avatarId}`)
   const diffId = idList.filter(x => tableList.indexOf(x) === -1)
-  console.log(`tableList: ${tableList}`)
-  console.log(`idList: ${idList}`)
-  console.log(`diffId: ${diffId}`)
   // テーブル生成
   if (diffId[0])
     await db.batch([

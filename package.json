@@ -7,6 +7,7 @@
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro build && wrangler pages dev ./dist --ip localhost --port 4321",
+    "log": "wrangler pages deployment tail --project-name paimon-plus",
     "fix": "biome check --write . && astro check",
     "fix:unsafe": "biome check --write --unsafe . && astro check",
     "update": "node .github/local-scripts/update.mjs",

@@ -38,6 +38,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   if (uidCache) {
     const cacheTime = Math.ceil(uidCache.timestamp / 1000 + uidCache.ttl - Date.now() / 1000)
     if (cacheTime > 0) return resJson203(304, { ...uidCache, ttl: cacheTime }, cacheTime)
+    if (cacheTime > 0) await logCacheTime(ctx.env, cacheTime) //********** cache time log **********
     if (ctx.request.headers.get('cache-control') === 'force-cache') return resJson203(304, { ...uidCache, ttl: 0 }, 0)
   }
 
@@ -84,6 +85,12 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
   // response
   return res
+}
+
+//********** cache time log **********
+const logCacheTime = async (env: Env, time: number) => {
+  const log = await env.kv.get("cache-time")
+  if (log && Number(log) > time) await env.kv.put("cache-time", time.toString())
 }
 
 const resStatus = (status: number) => new Response(null, { status })

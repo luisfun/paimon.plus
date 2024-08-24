@@ -117,6 +117,7 @@ const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: number[]
 }
 
 const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
+  console.log(json.avatarInfoList)
   // キャラなし
   if (!json.avatarInfoList) return
   const db = env.statistical
@@ -126,6 +127,9 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
   )
   const idList = json.avatarInfoList.map(e => `_${e.avatarId}`)
   const diffId = idList.filter(x => tableList.indexOf(x) === -1)
+  console.log(`tableList: ${tableList}`)
+  console.log(`idList: ${idList}`)
+  console.log(`diffId: ${diffId}`)
   // テーブル生成
   if (diffId[0])
     await db.batch([

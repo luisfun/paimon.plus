@@ -3,12 +3,12 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "fix": "biome check --write . && astro check",
-    "fix:unsafe": "biome check --write --unsafe . && astro check",
+    "astro": "astro",
     "dev": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro build && wrangler pages dev ./dist --ip localhost --port 4321",
-    "astro": "astro",
+    "fix": "biome check --write . && astro check",
+    "fix:unsafe": "biome check --write --unsafe . && astro check",
     "update": "node .github/local-scripts/update.mjs",
     "update:wiki": "node .github/local-scripts/wiki-update.mjs"
   },

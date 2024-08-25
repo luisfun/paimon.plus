@@ -39,8 +39,8 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   if (cacheData[0]) {
     const uidKv: ApiData = JSON.parse(cacheData[0])
     const cacheTime = Math.ceil(uidKv.timestamp / 1000 + uidKv.ttl - Date.now() / 1000)
-    if (cacheTime > 0) return resJson203(304, { ...uidKv, ttl: cacheTime }, cacheTime)
     if (cacheTime > 0) await logCacheTime(ctx.env, cacheTime) //********** cache time log **********
+    if (cacheTime > 0) return resJson203(304, { ...uidKv, ttl: cacheTime }, cacheTime)
   }
   // response force cache
   if (ctx.request.headers.get('cache-control') === 'force-cache' && uidCache)

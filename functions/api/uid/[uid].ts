@@ -97,8 +97,9 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 const logCacheTime = async (env: Env, time: number) => {
   const t = 60 - time
   const key = '0-cache-time'
-  const log = await env.kv.get(key)
-  if (log && Number(log) > t) await env.kv.put(key, t.toString())
+  const log = Number(await env.kv.get(key))
+  if (!log) await env.kv.put(key, t.toString())
+  if (log > t) await env.kv.put(key, t.toString())
 }
 
 const resStatus = (status: number) => new Response(null, { status })

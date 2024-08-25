@@ -78,7 +78,7 @@ export const avatarRemap = (info: AvatarInfo) => {
       }
     }
   }
-  return re
+  return re // as Omit<typeof re, "equipList"> & { equipList?: (WeaponRemap | ReliquaryRemap)[] }
 }
 const get_ascension_level = (ascension: string | number | undefined) =>
   [20, 40, 50, 60, 70, 80, 90][Number(ascension)] || 20
@@ -402,13 +402,26 @@ export type WeaponRemap = Weapon & {
     }[]
   }
 }
-export type ReliquaryRemap = Reliquary & {
+export type ReliquaryRemap = {
+  itemId: number
+  reliquary: {
+    level: number
+    mainPropId: number
+    appendPropIdList?: number[]
+  }
   flat: {
+    nameTextMapHash: string
+    setNameTextMapHash: string
+    rankLevel: number
     reliquaryMainstat: {
+      mainPropId: string
+      statValue: number
       type: string
       display: string
     }
     reliquarySubstats?: {
+      appendPropId: string
+      statValue: number
       display: string
       rolls: {
         rank: number
@@ -416,5 +429,8 @@ export type ReliquaryRemap = Reliquary & {
         display: string
       }[]
     }[]
+    itemType: string
+    icon: string
+    equipType: string
   }
 }

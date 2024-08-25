@@ -73,7 +73,7 @@ type ClipPath = {
   path: SxSize[]
 }
 
-const XCanvas = class {
+export const XCanvas = class {
   private ctx: CanvasRenderingContext2D
   private canvasWidth: number
   private canvasHeight: number
@@ -346,7 +346,6 @@ const XCanvas = class {
     this.ctx.clip()
   }
 }
-export default XCanvas
 
 /**
  * main func

@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { ApiData, ReliquaryRemap, WeaponRemap } from '@components/api'
 import { avatarRemap } from '@components/api'
-import XCanvas, { xCreate } from '@components/x-canvas'
+import { XCanvas, xCreate } from '@components/x-canvas'
 import { useTranslations } from '@i18n/utils'
 import type { Lang } from '@i18n/utils'
 import { onMount } from 'svelte'
@@ -87,11 +87,11 @@ onMount(() => {
                           backgroundColor: '#282828dd',
                           borderRadius: 6,
                           overflow: 'hidden',
-                          //color: skill.add!==0 ? `cyan` : undefined //********************************* 一旦
+                          color: skill.add !== 0 ? 'cyan' : undefined,
                         },
                       },
-                      1,
-                    ), //skill.level + skill.add), //********************************* 一旦
+                      skill.level + skill.add,
+                    ),
                   ),
                 ) || []),
               ),
@@ -253,6 +253,7 @@ onMount(() => {
                         sx: { ml: -4, mr: 10, width: 32, height: 32 },
                         src: srcUrl(stat.icon, 'card-assets'),
                       }),
+                      // @ts-expect-error
                       c('div', { sx: { ml: 0 } }, t(stat.type === 'CRIT DMG' ? 'CRIT Damage' : stat.type)),
                     ),
                     // ステータス値

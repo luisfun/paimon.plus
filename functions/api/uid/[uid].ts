@@ -2,10 +2,6 @@ import type { CacheStorage } from '../../../node_modules/@cloudflare/workers-typ
 import { API_VER, uidTest } from '../../../src/components/api'
 import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api'
 
-// kv key name
-const KEY_STATUS = 'enka-status'
-const KEY_SHOWCASE = 'showcase-uids'
-
 type Env = {
   kv: KVNamespace
   showcase: D1Database
@@ -22,25 +18,33 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const cache = (caches as unknown as CacheStorage).default
   const reqUrl = new URL(ctx.request.url)
   const cacheKey = reqUrl.origin + reqUrl.pathname
+  // kv key name
+  const KEY_STATUS = '0-enka-status'
+  const KEY_SHOWCASE = '0-showcase-uids'
 
   // get cache, kv
   const cacheData = await Promise.all([
+    ctx.env.kv.get(uid),
+    ctx.env.kv.get(KEY_STATUS, { cacheTtl: 180 }), // 3m
+    ctx.env.kv.get(KEY_SHOWCASE, { cacheTtl: 180 }), // 3m
     cache.match(cacheKey),
-    ctx.env.kv.get(KEY_STATUS, { cacheTtl: 180 }), // KEY_STATUS 3m
-    ctx.env.kv.get(KEY_SHOWCASE, { cacheTtl: 180 }), // KEY_SHOWCASE 3m
   ])
-  const uidCache: ApiData | undefined = await cacheData[0]?.json()
+  const uidCache: ApiData | undefined = await cacheData[3]?.json()
 
   // response error
+  if (cacheData[0] === '400' || cacheData[0] === '404') return resError(cacheData[0], uidCache)
   if (cacheData[1]) return resError(cacheData[1], uidCache) // 424/429/500/503
 
   // response cache
-  if (uidCache) {
-    const cacheTime = Math.ceil(uidCache.timestamp / 1000 + uidCache.ttl - Date.now() / 1000)
-    if (cacheTime > 0) return resJson203(304, { ...uidCache, ttl: cacheTime }, cacheTime)
+  if (cacheData[0]) {
+    const uidKv: ApiData = JSON.parse(cacheData[0])
+    const cacheTime = Math.ceil(uidKv.timestamp / 1000 + uidKv.ttl - Date.now() / 1000)
+    if (cacheTime > 0) return resJson203(304, { ...uidKv, ttl: cacheTime }, cacheTime)
     if (cacheTime > 0) await logCacheTime(ctx.env, cacheTime) //********** cache time log **********
-    if (ctx.request.headers.get('cache-control') === 'force-cache') return resJson203(304, { ...uidCache, ttl: 0 }, 0)
   }
+  // response force cache
+  if (ctx.request.headers.get('cache-control') === 'force-cache' && uidCache)
+    return resJson203(304, { ...uidCache, ttl: 0 }, 0)
 
   //if (uid) return resJson({uid}, 200, 60)
 
@@ -58,12 +62,13 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     case 429:
     case 500:
     case 503:
-      await ctx.env.kv.put(KEY_STATUS, status.toString(), { expirationTtl: 180 }) // KEY_STATUS 3m
+      await ctx.env.kv.put(KEY_STATUS, status.toString(), { expirationTtl: 180 }) // 3m
       //await sendDiscord(status)
       console.log(`fetch enka.status: ${status}, ${uid}`)
       return resError(status, uidCache)
     case 400:
     case 404:
+      await ctx.env.kv.put(uid, status.toString(), { expirationTtl: 60 }) // 1m
       return resError(status, uidCache)
   }
   // other error
@@ -77,6 +82,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   // save
   ctx.waitUntil(
     Promise.all([
+      ctx.env.kv.put(uid, JSON.stringify(json), { expirationTtl: 60 }), // 1m
       saveCache(cache, cacheKey, res),
       saveShowcase(ctx.env, uid, json, uids),
       saveStatistical(ctx.env, uid, json),
@@ -90,8 +96,9 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 //********** cache time log **********
 const logCacheTime = async (env: Env, time: number) => {
   const t = 60 - time
-  const log = await env.kv.get("cache-time")
-  if (log && Number(log) > t) await env.kv.put("cache-time", t.toString())
+  const key = '0-cache-time'
+  const log = await env.kv.get(key)
+  if (log && Number(log) > t) await env.kv.put(key, t.toString())
 }
 
 const resStatus = (status: number) => new Response(null, { status })
@@ -106,7 +113,7 @@ const resJson = (json: unknown, status: number, age: number) =>
   })
 
 const saveCache = async (cache: CacheStorage['default'], cacheKey: string, res: Response) => {
-  res.headers.append('Cache-Control', 's-maxage=7776000') // 90day
+  res.headers.append('Cache-Control', 's-maxage=15552000') // 180day
   // @ts-expect-error
   await cache.put(cacheKey, res.clone())
 }

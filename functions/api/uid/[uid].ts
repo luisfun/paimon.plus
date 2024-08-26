@@ -21,7 +21,9 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   if (ctx.request.headers.get('sec-fetch-site') !== 'same-origin') return resStatus(403)
   if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
 
-  await createTable(ctx.env) //********** create table **********
+  //********** create table **********
+  await createTable(ctx.env)
+  
   //********** cache section **********
   // cache init
   const cache = (caches as unknown as CacheStorage).default

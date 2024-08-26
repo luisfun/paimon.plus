@@ -13,6 +13,7 @@ type DBKVResult = { key: string; value: string; updated_at: number } | undefined
 const KEY_STATUS = 'enka-status'
 const KEY_UIDS = 'showcase-uids'
 const KEY_TABLE_NAMES = 'table-names'
+const QUERY_GET_TABLE = 'SELECT name FROM sqlite_master WHERE type="table"'
 const QUERY_GET_KV = 'SELECT * FROM key_value WHERE key = ? LIMIT 1'
 const QUERY_SET_KV = 'REPLACE INTO key_value (key, updated_at, value) VALUES(?, ?, ?)'
 
@@ -23,7 +24,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
   //********** create table **********
   await createTable(ctx.env)
-  
+
   //********** cache section **********
   // cache init
   const cache = (caches as unknown as CacheStorage).default
@@ -115,22 +116,17 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
 //********** create table **********
 const createTable = async (env: Env) => {
+  const queryCreateKv = 'CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)'
   // showcase
   let db = env.showcase
-  let tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
-    e => e.name,
-  )
-  if (!tableList.includes('key_value'))
-    await db.prepare('CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)').all()
+  let tableList = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
+  if (!tableList.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableList.includes('cache_uid'))
     await db.prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
   // statistical sources
   db = env.statistical
-  tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
-    e => e.name,
-  )
-  if (!tableList.includes('key_value'))
-    await db.prepare('CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)').all()
+  tableList = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
+  if (!tableList.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableList.includes('player'))
     await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
 }
@@ -189,12 +185,10 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
     (await db.prepare(QUERY_GET_KV).bind(KEY_TABLE_NAMES).first<DBKVResult>())?.value || '[]',
   ) as string[]
   const idList = json.avatarInfoList.map(e => `_${e.avatarId}`)
-  const diffId = idList.filter(x => tableNames.indexOf(x) === -1)
+  const diffId = idList.filter(e => tableNames.indexOf(e) === -1)
   // テーブル生成
   if (diffId[0]) {
-    const oldNames = (
-      await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()
-    ).map(e => e.name)
+    const oldNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
     await db.batch([
       ...diffId.flatMap(e =>
         db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)`),

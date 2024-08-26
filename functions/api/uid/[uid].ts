@@ -15,7 +15,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
   const KEY_STATUS = 'enka-status'
 
-  await createTable(ctx.env) //********** create table **********
+  //await createTable(ctx.env) //********** create table **********
   //********** cache section **********
   // cache init
   const cache = (caches as unknown as CacheStorage).default
@@ -55,7 +55,6 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     const uidData: ApiData = JSON.parse(cacheData[0].cache.data)
     //const uidAllData = getDBShowcase(ctx.env, uid)
     const age = Math.ceil(uidData.timestamp / 1000 + uidData.ttl - Date.now() / 1000)
-    if (age > 0) await logCacheTime(ctx.env, age) //********** cache time log **********
     if (age > 0) return resJson203(304, uidData, age)
   }
   // response force cache
@@ -124,14 +123,6 @@ const createTable = async (env: Env) => {
   )
   if (!tableList.includes('player'))
     await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
-}
-
-//********** cache time log **********
-const logCacheTime = async (env: Env, time: number) => {
-  const t = 60 - time
-  const key = 'cache-time'
-  const log = Number((await getDB('kv', env, key))?.value)
-  if (!log || log > t) await putDB('kv', env, key, t.toString(), Date.now())
 }
 
 const resStatus = (status: number) => new Response(null, { status })

@@ -42,7 +42,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   ])
   const uidCache: ApiData | undefined = await cacheData[1]?.json()
   const isValid = (result: { updated_at: number } | undefined, sec: number) =>
-    !!result && result.updated_at + sec * 1e3 < Date.now()
+    !!result && result.updated_at + sec * 1e3 > Date.now()
 
   // response error
   const uidStatus = cacheData[0].cache?.data
@@ -130,7 +130,7 @@ const createTable = async (env: Env) => {
 const logCacheTime = async (env: Env, time: number) => {
   const t = 60 - time
   const key = 'cache-time'
-  const log = Number((await getDB('kv', env, key)).value)
+  const log = Number((await getDB('kv', env, key))?.value)
   if (!log || log > t) await putDB('kv', env, key, t.toString(), Date.now())
 }
 

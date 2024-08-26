@@ -49,7 +49,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     })(),
     cache.match(cacheKey),
   ])
-  const uidCache: ApiData | undefined = await cacheData[1]?.json()
+  const uidCache = await cacheData[1]?.json<ApiData>()
   const isValid = (result: { updated_at: number } | undefined, sec: number) =>
     !!result && result.updated_at + sec * 1e3 > Date.now()
 

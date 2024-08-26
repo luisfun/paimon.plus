@@ -310,8 +310,7 @@ export type EnkaApi = {
     }[]
     showNameCardIdList?: number[]
     profilePicture: {
-      avatarId: number
-      costumeId?: number
+      id: number
     }
   }
   avatarInfoList?: AvatarInfo[]

@@ -50,7 +50,7 @@ const createMinImage = async () => {
   await Promise.all(
     minDiff([...weapons, ...materials, ...circles]).map(name =>
       sharp(`${folder.ui + name}.png`)
-        .resize(128)
+        .resize({height: 128})
         .webp()
         .toFile(`${folder.webp}Min_${name}.webp`),
     ),

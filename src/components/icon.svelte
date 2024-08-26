@@ -1,13 +1,14 @@
 <script lang="ts">
-import avatar from '@game/avatar.json'
-import material from '@game/material.json'
-import textMap from '@game/text-map.json'
-import weapon from '@game/weapon.json'
+import avatarJson from '@game/avatar.json'
+import materialJson from '@game/material.json'
+import textMapJson from '@game/text-map.json'
+import weaponJson from '@game/weapon.json'
+import profilePictureJson from "@game/profile-picture.json"
 import type { HTMLImgAttributes } from 'svelte/elements'
 type TextMap = { en: Record<number, string> }
 
 export let id: number | string
-export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type'
+export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | "circle"
 export let text: string | number = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
 export let style = ''
@@ -16,8 +17,8 @@ const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEA
 let src = dummySrc
 let alt = 'None'
 let rank = 1
-let width = 1
-let height = 1
+let width: number | undefined = 1
+let height: number | undefined = 1
 
 const rankNum: Record<string, number> = {
   QUALITY_ORANGE: 5,
@@ -25,9 +26,9 @@ const rankNum: Record<string, number> = {
   QUALITY_ORANGE_SP: 5,
 }
 
-const setSrc = (newSrc: string, px: number) => {
-  width = px
-  height = px
+const setSrc = (newSrc: string, w: number | undefined, h?: number) => {
+  width = w
+  height = h || w
   if (typeof window === 'undefined') {
     src = newSrc
   } else {
@@ -41,26 +42,26 @@ const setSrc = (newSrc: string, px: number) => {
 }
 $: switch (ui) {
   case 'avatar': {
-    const a = avatar.find(e => e.id === id)
+    const a = avatarJson.find(e => e.id === id)
     if (!a) break
     setSrc(`/images/ui/Min_UI_AvatarIcon_${a.key}.webp`, 192)
-    alt = (textMap as TextMap).en[a.nameTextMapHash]
+    alt = (textMapJson as TextMap).en[a.nameTextMapHash]
     rank = rankNum[a.qualityType] || 1
     break
   }
   case 'weapon': {
-    const w = weapon.find(e => e.id === id)
+    const w = weaponJson.find(e => e.id === id)
     if (!w) break
     setSrc(`/images/ui/Min_${w.icon}.webp`, 128)
-    alt = (textMap as TextMap).en[w.nameTextMapHash]
+    alt = (textMapJson as TextMap).en[w.nameTextMapHash]
     rank = w.rankLevel
     break
   }
   case 'material': {
-    const m = material.find(e => e.id === id)
+    const m = materialJson.find(e => e.id === id)
     if (!m) break
     setSrc(`/images/ui/Min_${m.icon}.webp`, 128)
-    alt = (textMap as TextMap).en[m.nameTextMapHash]
+    alt = (textMapJson as TextMap).en[m.nameTextMapHash]
     rank = m.rankLevel || 1
     break
   }
@@ -75,6 +76,12 @@ $: switch (ui) {
     alt = id.toString()
     rank = 0
     break
+  }
+  case "circle": {
+    const pfp = (profilePictureJson as Record<string | number, string>)[id]
+    setSrc(`/images/ui/Min_${pfp}.webp`, undefined, 128)
+    alt = pfp.split("_")[2]
+    rank = 0
   }
 }
 </script>

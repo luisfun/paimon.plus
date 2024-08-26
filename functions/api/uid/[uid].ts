@@ -8,14 +8,20 @@ type Env = {
   statistical: D1Database
 }
 
+type DBKVResult = { key: string; value: string; updated_at: number } | undefined
+
+const KEY_STATUS = 'enka-status'
+const KEY_UIDS = 'showcase-uids'
+const KEY_TABLE_NAMES = 'table-names'
+const QUERY_GET_KV = 'SELECT * FROM key_value WHERE key = ? LIMIT 1'
+const QUERY_SET_KV = 'REPLACE INTO key_value (key, updated_at, value) VALUES(?, ?, ?)'
+
 export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const { uid } = ctx.params
   if (ctx.request.headers.get('sec-fetch-site') !== 'same-origin') return resStatus(403)
   if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
 
-  const KEY_STATUS = 'enka-status'
-
-  //await createTable(ctx.env) //********** create table **********
+  await createTable(ctx.env) //********** create table **********
   //********** cache section **********
   // cache init
   const cache = (caches as unknown as CacheStorage).default
@@ -29,13 +35,13 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
       const results = (
         await db.batch([
           db.prepare('SELECT * FROM cache_uid WHERE uid = ? LIMIT 1').bind(uid),
-          db.prepare('SELECT * FROM key_value WHERE key = ? LIMIT 1').bind(KEY_STATUS),
-          db.prepare('SELECT name FROM sqlite_master WHERE type="table"'), //************************
+          db.prepare(QUERY_GET_KV).bind(KEY_STATUS),
+          db.prepare(QUERY_GET_KV).bind(KEY_UIDS),
         ])
       ).map(e => e.results)
       const cache = results[0][0] as { uid: string; data: string; updated_at: number } | undefined
-      const status = results[1][0] as { key: string; value: string; updated_at: number }
-      const uids = (results[2] as { name: string }[]).map(e => e.name.substring(1))
+      const status = results[1][0] as DBKVResult
+      const uids = JSON.parse((results[1][0] as DBKVResult)?.value || '[]') as string[]
       return { cache, status, uids }
     })(),
     cache.match(cacheKey),
@@ -121,6 +127,8 @@ const createTable = async (env: Env) => {
   tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
     e => e.name,
   )
+  if (!tableList.includes('key_value'))
+    await db.prepare('CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)').all()
   if (!tableList.includes('player'))
     await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
 }
@@ -143,10 +151,7 @@ const getDB = async (type: 'kv', env: Env, key: string) => {
 }
 const putDB = async (type: 'kv' | 'uid', env: Env, key: string, value: string, timestamp: number) => {
   const db = env.showcase
-  const query =
-    type === 'uid'
-      ? 'REPLACE INTO cache_uid (uid, updated_at, data) VALUES(?, ?, ?)'
-      : 'REPLACE INTO key_value (key, updated_at, value) VALUES(?, ?, ?)'
+  const query = type === 'uid' ? 'REPLACE INTO cache_uid (uid, updated_at, data) VALUES(?, ?, ?)' : QUERY_SET_KV
   return await db.prepare(query).bind(key, timestamp, value).all<undefined>()
 }
 
@@ -178,18 +183,23 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
   if (!json.avatarInfoList) return
   const db = env.statistical
   const { timestamp } = json
-  const tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
-    e => e.name,
-  )
+  const tableNames = JSON.parse(
+    (await db.prepare(QUERY_GET_KV).bind(KEY_TABLE_NAMES).first<DBKVResult>())?.value || '[]',
+  ) as string[]
   const idList = json.avatarInfoList.map(e => `_${e.avatarId}`)
-  const diffId = idList.filter(x => tableList.indexOf(x) === -1)
+  const diffId = idList.filter(x => tableNames.indexOf(x) === -1)
   // テーブル生成
-  if (diffId[0])
+  if (diffId[0]) {
+    const oldNames = (
+      await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()
+    ).map(e => e.name)
     await db.batch([
-      ...diffId.map(e =>
+      ...diffId.flatMap(e =>
         db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)`),
       ),
+      db.prepare(QUERY_SET_KV).bind(KEY_TABLE_NAMES, timestamp, JSON.stringify([...oldNames, ...diffId])),
     ])
+  }
   await db.batch([
     // プレイヤーデータ保存
     db

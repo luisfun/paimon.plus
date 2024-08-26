@@ -1,14 +1,14 @@
 <script lang="ts">
 import avatarJson from '@game/avatar.json'
 import materialJson from '@game/material.json'
+import profilePictureJson from '@game/profile-picture.json'
 import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
-import profilePictureJson from "@game/profile-picture.json"
 import type { HTMLImgAttributes } from 'svelte/elements'
 type TextMap = { en: Record<number, string> }
 
 export let id: number | string
-export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | "circle"
+export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle'
 export let text: string | number = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
 export let style = ''
@@ -77,10 +77,10 @@ $: switch (ui) {
     rank = 0
     break
   }
-  case "circle": {
+  case 'circle': {
     const pfp = (profilePictureJson as Record<string | number, string>)[id]
     setSrc(`/images/ui/Min_${pfp}.webp`, undefined, 128)
-    alt = pfp.split("_")[2]
+    alt = pfp.split('_')[2]
     rank = 0
   }
 }

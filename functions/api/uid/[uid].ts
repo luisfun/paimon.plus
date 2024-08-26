@@ -15,6 +15,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
   const KEY_STATUS = 'enka-status'
 
+  await createTable(ctx.env) //********** create table **********
   //********** cache section **********
   // cache init
   const cache = (caches as unknown as CacheStorage).default
@@ -105,6 +106,26 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   return res
 }
 
+//********** create table **********
+const createTable = async (env: Env) => {
+  // showcase
+  let db = env.showcase
+  let tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
+    e => e.name,
+  )
+  if (tableList.includes('key_value'))
+    await db.prepare('CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)').all()
+  if (tableList.includes('cache_uid'))
+    await db.prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
+  // statistical sources
+  db = env.statistical
+  tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
+    e => e.name,
+  )
+  if (tableList.includes('player'))
+    await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
+}
+
 //********** cache time log **********
 const logCacheTime = async (env: Env, time: number) => {
   const t = 60 - time
@@ -175,7 +196,7 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
   if (diffId[0])
     await db.batch([
       ...diffId.map(e =>
-        db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid INT PRIMARY KEY, updated_at INT, data TEXT)`),
+        db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)`),
       ),
     ])
   await db.batch([

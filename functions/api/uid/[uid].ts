@@ -99,7 +99,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     return resStatus(599)
   }
 
-  const json = { ...((await uidData[0].json<EnkaApi>())), ver: API_VER, timestamp: Date.now() }
+  const json = { ...(await uidData[0].json<EnkaApi>()), ver: API_VER, timestamp: Date.now() }
   const res = resJson(json, status, json.ttl)
   // save
   ctx.waitUntil(

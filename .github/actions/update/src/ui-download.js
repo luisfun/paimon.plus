@@ -13,6 +13,7 @@ export const uiDownload = async () => {
   await getAvatarImages(uiFiles)
   await getWeaponImages(uiFiles)
   await getMaterialImages(uiFiles)
+  await getProfilePicture(uiFiles)
 }
 
 /**
@@ -33,7 +34,7 @@ const getAvatarImages = async uiFiles => {
         //imageList.push(`UI_Costume_${key}`)
       }
   }
-  await downloadAmbr(imageList, uiFiles)
+  await download(ambrUrl, imageList, uiFiles)
 }
 
 const getWeaponImages = async uiFiles => {
@@ -41,7 +42,7 @@ const getWeaponImages = async uiFiles => {
     e.icon,
     `${e.icon}_Awaken`,
   ])
-  await downloadAmbr(imageList, uiFiles)
+  await download(ambrUrl, imageList, uiFiles)
 }
 
 /**
@@ -49,19 +50,28 @@ const getWeaponImages = async uiFiles => {
  */
 const getMaterialImages = async uiFiles => {
   const imageList = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
-  await downloadAmbr(imageList, uiFiles)
+  await download(ambrUrl, imageList, uiFiles)
 }
 
 /**
+ * @param {string[]} uiFiles
+ */
+const getProfilePicture = async uiFiles => {
+  const imageList = Object.values(JSON.parse(fs.readFileSync(`${folder.dist}profile-picture.json`, 'utf8')))
+  await download(enkaUrl, imageList, uiFiles)
+}
+
+/**
+ * @param {string} baseUrl
  * @param {string[]} imageList
  * @param {string[]} uiFiles
  */
-const downloadAmbr = async (imageList, uiFiles) => {
+const download = async (baseUrl, imageList, uiFiles) => {
   const names = imageList.filter(e => e && !uiFiles.includes(`${e}.png`)).map(e => `${e}.png`)
   if (!names.length) return
   if (names.length > 100) names.length = 100
   for (const name of names) {
-    const res = await fetch(ambrUrl + name)
+    const res = await fetch(baseUrl + name)
     if (res.ok) pipeline(res.body, fs.createWriteStream(folder.ui + name))
     else console.log(`NG: ${name}`)
     await sleep(100)

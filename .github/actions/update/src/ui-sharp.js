@@ -13,7 +13,11 @@ const createWebp = async () => {
   const uiFiles = fs
     .readdirSync(folder.ui)
     .map(e => e.slice(0, -4))
-    .filter(e => !e.startsWith('UI_ItemIcon_'))
+    .filter(e => {
+      if (e.startsWith('UI_AvatarIcon_Side_')) return true
+      if (e.startsWith('UI_AvatarIcon_') || e.startsWith('UI_ItemIcon_')) return false
+      return true
+    })
   const webpFiles = fs.readdirSync(folder.webp).map(e => e.slice(0, -5))
   const diffFiles = uiFiles.filter(e => webpFiles.indexOf(e) === -1)
   if (!diffFiles[0]) return
@@ -27,9 +31,9 @@ const createWebp = async () => {
 }
 
 const createMinAvatar = async () => {
-  const names = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
+  const icons = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
   await Promise.all(
-    minDiff(names).map(name =>
+    minDiff(icons).map(name =>
       sharp(`${folder.ui + name}.png`)
         .resize(256)
         .extract({ left: 32, top: 2, width: 192, height: 192 })
@@ -42,8 +46,9 @@ const createMinAvatar = async () => {
 const createMinImage = async () => {
   const weapons = JSON.parse(fs.readFileSync(`${folder.dist}weapon.json`, 'utf8')).map(e => e.icon)
   const materials = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
+  const circles = Object.values(JSON.parse(fs.readFileSync(`${folder.dist}profile-picture.json`, 'utf8')))
   await Promise.all(
-    minDiff([...weapons, ...materials]).map(name =>
+    minDiff([...weapons, ...materials, ...circles]).map(name =>
       sharp(`${folder.ui + name}.png`)
         .resize(128)
         .webp()

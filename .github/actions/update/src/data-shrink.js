@@ -27,6 +27,9 @@ import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' a
 // artifact-substat
 import ReliquaryAffix from '../../../../src/game/.data/ReliquaryAffixExcelConfigData.json' assert { type: 'json' }
 
+//
+import ProfilePicture from '../../../../src/game/.data/ProfilePictureExcelConfigData.json' assert { type: 'json' }
+
 // wiki-id
 import WikiId from '../../../../src/game/.wiki/id.json' assert { type: 'json' }
 
@@ -42,12 +45,14 @@ const E = {
   Material,
   ProudSkill,
   ReliquaryAffix,
+  ProfilePicture,
 }
 
 export const dataShrink = () => {
   dumpAvatar()
   dumpWeapon()
   dumpMaterial()
+  dumpProfilePicture()
   dumpTextMap()
   dumpReliquaryAffix()
 }
@@ -215,6 +220,14 @@ const dumpMaterial = () => {
     return re
   })
   dumpFile('material', m)
+}
+
+const dumpProfilePicture = () => {
+  const pfp = {}
+  for (const p of E.ProfilePicture) {
+    pfp[p.id.toString()] = p.iconPath
+  }
+  dumpFile('profile-picture', pfp)
 }
 
 const dumpTextMap = () => {

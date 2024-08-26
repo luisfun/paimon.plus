@@ -30,7 +30,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
         await db.batch([
           db.prepare('SELECT * FROM cache_uid WHERE uid = ? LIMIT 1').bind(uid),
           db.prepare('SELECT * FROM key_value WHERE key = ? LIMIT 1').bind(KEY_STATUS),
-          db.prepare('SELECT name FROM sqlite_master WHERE type="table"'),
+          db.prepare('SELECT name FROM sqlite_master WHERE type="table"'), //************************
         ])
       ).map(e => e.results)
       const cache = results[0][0] as { uid: string; data: string; updated_at: number } | undefined

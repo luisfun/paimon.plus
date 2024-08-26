@@ -33,7 +33,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
           db.prepare('SELECT name FROM sqlite_master WHERE type="table"'),
         ])
       ).map(e => e.results)
-      const cache = results[0][0] as { uid: string; data: string; updated_at: number } | null
+      const cache = results[0][0] as { uid: string; data: string; updated_at: number } | undefined
       const status = results[1][0] as { key: string; value: string; updated_at: number }
       const uids = (results[2] as { name: string }[]).map(e => e.name.substring(1))
       return { cache, status, uids }
@@ -45,7 +45,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     !!result && result.updated_at + sec * 1e3 < Date.now()
 
   // response error
-  const uidStatus = cacheData[0].cache.data
+  const uidStatus = cacheData[0].cache?.data
   if (isValid(cacheData[0].cache, 180) && (uidStatus === '400' || uidStatus === '404'))
     return resError(uidStatus, uidCache)
   if (isValid(cacheData[0].status, 180)) return resError(cacheData[0].status.value, uidCache) // 424/429/500/503
@@ -113,16 +113,16 @@ const createTable = async (env: Env) => {
   let tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
     e => e.name,
   )
-  if (tableList.includes('key_value'))
+  if (!tableList.includes('key_value'))
     await db.prepare('CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)').all()
-  if (tableList.includes('cache_uid'))
+  if (!tableList.includes('cache_uid'))
     await db.prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
   // statistical sources
   db = env.statistical
   tableList = (await db.prepare('SELECT name FROM sqlite_master WHERE type="table"').raw<{ name: string }>()).map(
     e => e.name,
   )
-  if (tableList.includes('player'))
+  if (!tableList.includes('player'))
     await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
 }
 

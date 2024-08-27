@@ -46,4 +46,20 @@
   .bg-rank-1 {
     background-image: url(/images/icon-bg/1.webp);
   }
+  .no-spin::-webkit-inner-spin-button,
+  .no-spin::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance:textfield;
+  }
+  .collapse:not(.collapse-close):has(> input[type="checkbox"]:checked),
+  .collapse:not(.collapse-close):has(> input[type="radio"]:checked) {
+    grid-template-rows: 1fr auto;
+  }
+  .collapse:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .collapse-title) > .svg-down {
+    display: none;
+  }
+  .collapse:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .collapse-title) > .svg-up {
+    display: block;
+  }
 </style>

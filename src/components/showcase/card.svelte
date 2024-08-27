@@ -10,7 +10,6 @@ export let avatarInfo: Exclude<ApiData['avatarInfoList'], undefined>[number]
 export let lang: Lang
 const t = useTranslations(lang)
 const a = avatarRemap(avatarInfo)
-//$: a = avatarRemap(avatarInfo)
 
 let canvas: HTMLCanvasElement
 onMount(() => {

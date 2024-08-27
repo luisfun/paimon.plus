@@ -11,8 +11,12 @@ export const fetchUid = async (uid: number | undefined, cache?: 'cache') => {
     cache ? { cache: 'force-cache', headers: { 'Cache-Control': 'force-cache' } } : undefined,
   )
   if (200 <= res.status && res.status <= 399) {
+    const json = (await res.json()) as ApiData
     localStorage.setItem('uid', uid?.toString() || '')
-    return { json: (await res.json()) as ApiData, status: res.status }
+    const newLog = { name: json.playerInfo.nickname, uid: uid?.toString() || '' }
+    const uidLog = JSON.parse(localStorage.getItem('uid-log') || '[]') as { name: string; uid: string }[]
+    localStorage.setItem('uid-log', JSON.stringify([...new Map([newLog, ...uidLog].map(e => [e.uid, e])).values()]))
+    return { json, status: res.status }
   }
   return { json: undefined, status: res.status }
 }

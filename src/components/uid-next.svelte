@@ -1,10 +1,10 @@
 <script lang="ts">
 import { fetchUid, uidTest } from '@components/api'
 import type { ApiData } from '@components/api'
-import Icon from '@components/icon.svelte'
-import Svg from '@components/svg.svelte';
-import More from '@components/more.svelte';
 import Dialog from '@components/dialog.svelte'
+import Icon from '@components/icon.svelte'
+import More from '@components/more.svelte'
+import Svg from '@components/svg.svelte'
 import type { HTMLButtonAttributes } from 'svelte/elements'
 
 export let uid: number | undefined
@@ -43,7 +43,8 @@ const onclick: HTMLButtonAttributes = {
     </button>
   </div>
 </div>
-<More mt0>
+<div class="md:mt-3" />
+<More style="md:hidden" mt0>
   aaa
 </More>
 <Dialog id="uid_log">

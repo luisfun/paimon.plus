@@ -1,5 +1,117 @@
 [
   {
+    "key": "Mualani",
+    "id": 10000102,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 3949670506,
+    "skillDepotId": 10201,
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Mualani_01",
+      "UI_Talent_S_Mualani_02",
+      "UI_Talent_U_Mualani_01",
+      "UI_Talent_S_Mualani_03",
+      "UI_Talent_U_Mualani_02",
+      "UI_Talent_S_Mualani_04"
+    ],
+    "skills": [
+      {
+        "id": 30000,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 10231
+      },
+      {
+        "id": 30002,
+        "icon": "Skill_S_Mualani_01",
+        "proud": 10232
+      },
+      {
+        "id": 30007,
+        "icon": "Skill_E_Mualani_01",
+        "proud": 10239
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101247": 168,
+        "104121": 1,
+        "104122": 9,
+        "104123": 9,
+        "104124": 6,
+        "104319": 3,
+        "104347": 9,
+        "104348": 63,
+        "104349": 114,
+        "112104": 36,
+        "112105": 96,
+        "112106": 129,
+        "113056": 18,
+        "113064": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "Kinich",
+    "id": 10000101,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 4172712634,
+    "skillDepotId": 10101,
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Kinich_01",
+      "UI_Talent_S_Kinich_02",
+      "UI_Talent_U_Kinich_01",
+      "UI_Talent_S_Kinich_03",
+      "UI_Talent_U_Kinich_02",
+      "UI_Talent_S_Kinich_04"
+    ],
+    "skills": [
+      {
+        "id": 11011,
+        "icon": "Skill_A_04",
+        "proud": 10131
+      },
+      {
+        "id": 11012,
+        "icon": "Skill_S_Kinich_01",
+        "proud": 10132
+      },
+      {
+        "id": 11015,
+        "icon": "Skill_E_Kinich_01",
+        "proud": 10139
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101250": 168,
+        "104131": 1,
+        "104132": 9,
+        "104133": 9,
+        "104134": 6,
+        "104319": 3,
+        "104350": 9,
+        "104351": 63,
+        "104352": 114,
+        "112101": 36,
+        "112102": 96,
+        "112103": 129,
+        "113062": 18,
+        "113065": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "key": "Emilie",
     "id": 10000099,
     "qualityType": "QUALITY_ORANGE",
@@ -3199,6 +3311,121 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Qin",
+    "id": 11000046,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 3986000746,
+    "skillDepotId": 1501,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Kaeya_01",
+      "UI_Talent_S_Kaeya_02",
+      "UI_Talent_U_Kaeya_01",
+      "UI_Talent_S_Kaeya_03",
+      "UI_Talent_U_Kaeya_02",
+      "UI_Talent_S_Kaeya_04"
+    ],
+    "skills": [
+      {
+        "id": 10073,
+        "icon": "Skill_A_01",
+        "proud": 1531
+      },
+      {
+        "id": 10074,
+        "icon": "Skill_S_Kaeya_01",
+        "proud": 1532
+      },
+      {
+        "id": 10075,
+        "icon": "Skill_E_Kaeya_01",
+        "proud": 1539
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101202": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104307": 9,
+        "104308": 63,
+        "104309": 114,
+        "104319": 3,
+        "112035": 18,
+        "112036": 66,
+        "112037": 93,
+        "112044": 18,
+        "112045": 30,
+        "112046": 36,
+        "113008": 18,
+        "113023": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "Kachina",
+    "id": 10000100,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 2531816890,
+    "skillDepotId": 10001,
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Kachina_01",
+      "UI_Talent_S_Kachina_02",
+      "UI_Talent_U_Kachina_01",
+      "UI_Talent_S_Kachina_03",
+      "UI_Talent_U_Kachina_02",
+      "UI_Talent_S_Kachina_04"
+    ],
+    "skills": [
+      {
+        "id": 11001,
+        "icon": "Skill_A_03",
+        "proud": 10031
+      },
+      {
+        "id": 11002,
+        "icon": "Skill_S_Kachina_01",
+        "proud": 10032
+      },
+      {
+        "id": 11005,
+        "icon": "Skill_E_Kachina_01",
+        "proud": 10039
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101249": 168,
+        "104171": 1,
+        "104172": 9,
+        "104173": 9,
+        "104174": 6,
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 36,
+        "112105": 96,
+        "112106": 129,
+        "113060": 18,
+        "113065": 46
+      }
+    },
+    "wikiId": -1
   },
   {
     "key": "Sethos",

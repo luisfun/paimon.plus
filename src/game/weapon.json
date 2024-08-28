@@ -276,6 +276,29 @@
     "wikiId": 2046
   },
   {
+    "id": 11431,
+    "icon": "UI_EquipIcon_Sword_Isikhulu",
+    "rankLevel": 4,
+    "nameTextMapHash": 3434743027,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112098": 15,
+        "112099": 18,
+        "112100": 27,
+        "112101": 10,
+        "112102": 15,
+        "112103": 18,
+        "114061": 3,
+        "114062": 9,
+        "114063": 9,
+        "114064": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11428,
     "icon": "UI_EquipIcon_Sword_Purewill",
     "rankLevel": 4,
@@ -983,6 +1006,29 @@
     "wikiId": 1979
   },
   {
+    "id": 12513,
+    "icon": "UI_EquipIcon_Claymore_EmeraldSword",
+    "rankLevel": 5,
+    "nameTextMapHash": 1183454019,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112104": 15,
+        "112105": 23,
+        "112106": 27,
+        "112110": 23,
+        "112111": 27,
+        "112112": 41,
+        "114065": 5,
+        "114066": 14,
+        "114067": 14,
+        "114068": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 12512,
     "icon": "UI_EquipIcon_Claymore_GoldenVerdict",
     "rankLevel": 5,
@@ -1142,6 +1188,29 @@
       }
     },
     "wikiId": 1953
+  },
+  {
+    "id": 12431,
+    "icon": "UI_EquipIcon_Claymore_Isikhulu",
+    "rankLevel": 4,
+    "nameTextMapHash": 2481464075,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112104": 10,
+        "112105": 15,
+        "112106": 18,
+        "112110": 15,
+        "112111": 18,
+        "112112": 27,
+        "114061": 3,
+        "114062": 9,
+        "114063": 9,
+        "114064": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 12427,
@@ -1989,6 +2058,29 @@
     "wikiId": 1956
   },
   {
+    "id": 15431,
+    "icon": "UI_EquipIcon_Bow_Isikhulu",
+    "rankLevel": 4,
+    "nameTextMapHash": 565052971,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112095": 15,
+        "112096": 18,
+        "112097": 27,
+        "112101": 10,
+        "112102": 15,
+        "112103": 18,
+        "114069": 3,
+        "114070": 9,
+        "114071": 9,
+        "114072": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 15427,
     "icon": "UI_EquipIcon_Bow_Mechanic",
     "rankLevel": 4,
@@ -2673,6 +2765,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14516,
+    "icon": "UI_EquipIcon_Catalyst_MechaPufferfish",
+    "rankLevel": 5,
+    "nameTextMapHash": 1673987515,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112101": 15,
+        "112102": 23,
+        "112103": 27,
+        "112107": 23,
+        "112108": 27,
+        "112109": 41,
+        "114061": 5,
+        "114062": 14,
+        "114063": 14,
+        "114064": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14515,
     "icon": "UI_EquipIcon_Catalyst_MountainGale",
     "rankLevel": 5,
@@ -2924,6 +3039,52 @@
       }
     },
     "wikiId": 1955
+  },
+  {
+    "id": 14431,
+    "icon": "UI_EquipIcon_Catalyst_Isikhulu",
+    "rankLevel": 4,
+    "nameTextMapHash": 3092853059,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112005": 10,
+        "112006": 15,
+        "112007": 18,
+        "112107": 15,
+        "112108": 18,
+        "112109": 27,
+        "114065": 3,
+        "114066": 9,
+        "114067": 9,
+        "114068": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 14427,
+    "icon": "UI_EquipIcon_Catalyst_ConchSprayer",
+    "rankLevel": 4,
+    "nameTextMapHash": 422144187,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112101": 10,
+        "112102": 15,
+        "112103": 18,
+        "112113": 15,
+        "112114": 18,
+        "112115": 27,
+        "114069": 3,
+        "114070": 9,
+        "114071": 9,
+        "114072": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 14426,
@@ -3538,7 +3699,7 @@
         "114060": 6
       }
     },
-    "wikiId": -1
+    "wikiId": 5847
   },
   {
     "id": 13512,
@@ -3723,6 +3884,29 @@
       }
     },
     "wikiId": 1972
+  },
+  {
+    "id": 13431,
+    "icon": "UI_EquipIcon_Pole_Isikhulu",
+    "rankLevel": 4,
+    "nameTextMapHash": 415520051,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112104": 10,
+        "112105": 15,
+        "112106": 18,
+        "112113": 15,
+        "112114": 18,
+        "112115": 27,
+        "114065": 3,
+        "114066": 9,
+        "114067": 9,
+        "114068": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13427,

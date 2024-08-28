@@ -258,6 +258,24 @@
     "rank": 312
   },
   {
+    "id": 101247,
+    "icon": "UI_ItemIcon_101247",
+    "nameTextMapHash": 4108433756,
+    "rank": 316
+  },
+  {
+    "id": 101249,
+    "icon": "UI_ItemIcon_101249",
+    "nameTextMapHash": 2670150404,
+    "rank": 316
+  },
+  {
+    "id": 101250,
+    "icon": "UI_ItemIcon_101250",
+    "nameTextMapHash": 19028052,
+    "rank": 316
+  },
+  {
     "id": 104003,
     "icon": "UI_ItemIcon_104003",
     "rankLevel": 4,
@@ -816,6 +834,69 @@
     "rankLevel": 4,
     "nameTextMapHash": 278225452,
     "rank": 13115
+  },
+  {
+    "id": 104347,
+    "icon": "UI_ItemIcon_104347",
+    "rankLevel": 2,
+    "nameTextMapHash": 181933276,
+    "rank": 13116
+  },
+  {
+    "id": 104348,
+    "icon": "UI_ItemIcon_104348",
+    "rankLevel": 3,
+    "nameTextMapHash": 279513804,
+    "rank": 13116
+  },
+  {
+    "id": 104349,
+    "icon": "UI_ItemIcon_104349",
+    "rankLevel": 4,
+    "nameTextMapHash": 2186573124,
+    "rank": 13116
+  },
+  {
+    "id": 104350,
+    "icon": "UI_ItemIcon_104350",
+    "rankLevel": 2,
+    "nameTextMapHash": 522559596,
+    "rank": 13117
+  },
+  {
+    "id": 104351,
+    "icon": "UI_ItemIcon_104351",
+    "rankLevel": 3,
+    "nameTextMapHash": 2720738460,
+    "rank": 13117
+  },
+  {
+    "id": 104352,
+    "icon": "UI_ItemIcon_104352",
+    "rankLevel": 4,
+    "nameTextMapHash": 3127398652,
+    "rank": 13117
+  },
+  {
+    "id": 104353,
+    "icon": "UI_ItemIcon_104353",
+    "rankLevel": 2,
+    "nameTextMapHash": 1330781756,
+    "rank": 13118
+  },
+  {
+    "id": 104354,
+    "icon": "UI_ItemIcon_104354",
+    "rankLevel": 3,
+    "nameTextMapHash": 621148708,
+    "rank": 13118
+  },
+  {
+    "id": 104355,
+    "icon": "UI_ItemIcon_104355",
+    "rankLevel": 4,
+    "nameTextMapHash": 2706579636,
+    "rank": 13118
   },
   {
     "id": 112002,
@@ -1511,6 +1592,111 @@
     "rank": 10134
   },
   {
+    "id": 112101,
+    "icon": "UI_ItemIcon_112101",
+    "rankLevel": 1,
+    "nameTextMapHash": 4078912436,
+    "rank": 10635
+  },
+  {
+    "id": 112102,
+    "icon": "UI_ItemIcon_112102",
+    "rankLevel": 2,
+    "nameTextMapHash": 185496004,
+    "rank": 10635
+  },
+  {
+    "id": 112103,
+    "icon": "UI_ItemIcon_112103",
+    "rankLevel": 3,
+    "nameTextMapHash": 564670180,
+    "rank": 10635
+  },
+  {
+    "id": 112104,
+    "icon": "UI_ItemIcon_112104",
+    "rankLevel": 1,
+    "nameTextMapHash": 3715939572,
+    "rank": 10636
+  },
+  {
+    "id": 112105,
+    "icon": "UI_ItemIcon_112105",
+    "rankLevel": 2,
+    "nameTextMapHash": 1137550316,
+    "rank": 10636
+  },
+  {
+    "id": 112106,
+    "icon": "UI_ItemIcon_112106",
+    "rankLevel": 3,
+    "nameTextMapHash": 3748972940,
+    "rank": 10636
+  },
+  {
+    "id": 112107,
+    "icon": "UI_ItemIcon_112107",
+    "rankLevel": 2,
+    "nameTextMapHash": 1572410052,
+    "rank": 10137
+  },
+  {
+    "id": 112108,
+    "icon": "UI_ItemIcon_112108",
+    "rankLevel": 3,
+    "nameTextMapHash": 2279091420,
+    "rank": 10137
+  },
+  {
+    "id": 112109,
+    "icon": "UI_ItemIcon_112109",
+    "rankLevel": 4,
+    "nameTextMapHash": 2951054716,
+    "rank": 10137
+  },
+  {
+    "id": 112110,
+    "icon": "UI_ItemIcon_112110",
+    "rankLevel": 2,
+    "nameTextMapHash": 3979941412,
+    "rank": 10138
+  },
+  {
+    "id": 112111,
+    "icon": "UI_ItemIcon_112111",
+    "rankLevel": 3,
+    "nameTextMapHash": 1077445556,
+    "rank": 10138
+  },
+  {
+    "id": 112112,
+    "icon": "UI_ItemIcon_112112",
+    "rankLevel": 4,
+    "nameTextMapHash": 3895330420,
+    "rank": 10138
+  },
+  {
+    "id": 112113,
+    "icon": "UI_ItemIcon_112113",
+    "rankLevel": 2,
+    "nameTextMapHash": 2284574636,
+    "rank": 10139
+  },
+  {
+    "id": 112114,
+    "icon": "UI_ItemIcon_112114",
+    "rankLevel": 3,
+    "nameTextMapHash": 1849680204,
+    "rank": 10139
+  },
+  {
+    "id": 112115,
+    "icon": "UI_ItemIcon_112115",
+    "rankLevel": 4,
+    "nameTextMapHash": 4147918676,
+    "rank": 10139
+  },
+  {
     "id": 113001,
     "icon": "UI_ItemIcon_113001",
     "rankLevel": 4,
@@ -1928,6 +2114,27 @@
     "icon": "UI_ItemIcon_113061",
     "rankLevel": 5,
     "nameTextMapHash": 2216517604,
+    "rank": 11101
+  },
+  {
+    "id": 113062,
+    "icon": "UI_ItemIcon_113062",
+    "rankLevel": 5,
+    "nameTextMapHash": 1659336452,
+    "rank": 11101
+  },
+  {
+    "id": 113064,
+    "icon": "UI_ItemIcon_113064",
+    "rankLevel": 4,
+    "nameTextMapHash": 1641575548,
+    "rank": 11101
+  },
+  {
+    "id": 113065,
+    "icon": "UI_ItemIcon_113065",
+    "rankLevel": 4,
+    "nameTextMapHash": 312848636,
     "rank": 11101
   },
   {
@@ -2349,5 +2556,89 @@
     "rankLevel": 5,
     "nameTextMapHash": 1188621748,
     "rank": 15115
+  },
+  {
+    "id": 114061,
+    "icon": "UI_ItemIcon_114061",
+    "rankLevel": 2,
+    "nameTextMapHash": 2738390100,
+    "rank": 15116
+  },
+  {
+    "id": 114062,
+    "icon": "UI_ItemIcon_114062",
+    "rankLevel": 3,
+    "nameTextMapHash": 2544947124,
+    "rank": 15116
+  },
+  {
+    "id": 114063,
+    "icon": "UI_ItemIcon_114063",
+    "rankLevel": 4,
+    "nameTextMapHash": 2321774348,
+    "rank": 15116
+  },
+  {
+    "id": 114064,
+    "icon": "UI_ItemIcon_114064",
+    "rankLevel": 5,
+    "nameTextMapHash": 189628396,
+    "rank": 15116
+  },
+  {
+    "id": 114065,
+    "icon": "UI_ItemIcon_114065",
+    "rankLevel": 2,
+    "nameTextMapHash": 2495009204,
+    "rank": 15117
+  },
+  {
+    "id": 114066,
+    "icon": "UI_ItemIcon_114066",
+    "rankLevel": 3,
+    "nameTextMapHash": 980700500,
+    "rank": 15117
+  },
+  {
+    "id": 114067,
+    "icon": "UI_ItemIcon_114067",
+    "rankLevel": 4,
+    "nameTextMapHash": 2790178484,
+    "rank": 15117
+  },
+  {
+    "id": 114068,
+    "icon": "UI_ItemIcon_114068",
+    "rankLevel": 5,
+    "nameTextMapHash": 2420204052,
+    "rank": 15117
+  },
+  {
+    "id": 114069,
+    "icon": "UI_ItemIcon_114069",
+    "rankLevel": 2,
+    "nameTextMapHash": 1136126652,
+    "rank": 15118
+  },
+  {
+    "id": 114070,
+    "icon": "UI_ItemIcon_114070",
+    "rankLevel": 3,
+    "nameTextMapHash": 2996994716,
+    "rank": 15118
+  },
+  {
+    "id": 114071,
+    "icon": "UI_ItemIcon_114071",
+    "rankLevel": 4,
+    "nameTextMapHash": 947183444,
+    "rank": 15118
+  },
+  {
+    "id": 114072,
+    "icon": "UI_ItemIcon_114072",
+    "rankLevel": 5,
+    "nameTextMapHash": 1522196276,
+    "rank": 15118
   }
 ]

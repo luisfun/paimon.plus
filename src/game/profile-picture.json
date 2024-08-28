@@ -104,6 +104,9 @@
   "8200": "UI_AvatarIcon_Sethos_Circle",
   "8300": "UI_AvatarIcon_Sigewinne_Circle",
   "8400": "UI_AvatarIcon_Emilie_Circle",
+  "8500": "UI_AvatarIcon_Kachina_Circle",
+  "8600": "UI_AvatarIcon_Mualani_Circle",
+  "8700": "UI_AvatarIcon_Kinich_Circle",
   "99999": "UI_AvatarIcon_Ambor_Circle",
   "100010": "UI_AvatarIcon_72105_Circle",
   "100020": "UI_AvatarIcon_72158_Circle",
@@ -121,5 +124,6 @@
   "100140": "UI_AvatarIcon_74078_Circle",
   "100150": "UI_AvatarIcon_74085_Circle",
   "100160": "UI_AvatarIcon_71100_Circle",
-  "100170": "UI_AvatarIcon_74196_Circle"
+  "100170": "UI_AvatarIcon_74196_Circle",
+  "100180": "UI_AvatarIcon_75002_Circle"
 }

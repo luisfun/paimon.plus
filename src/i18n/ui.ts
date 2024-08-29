@@ -8,6 +8,10 @@ export const ui = {
     'game.weapons': 'Weapons',
     'footer.unofficial': 'Paimon+ is not affiliated to miHoYo.',
     'home.title': 'Genshin Impact Online Tools',
+    'home.thanks': 'Appreciation',
+    'home.developers': 'Developers',
+    'home.translators': 'Translators',
+    'home.resources': 'Resources',
     'showcase.title': 'Character Showcase',
     // stat
     'Max HP': 'Max HP',
@@ -50,6 +54,10 @@ export const ui = {
     'game.weapons': '武器',
     'footer.unofficial': 'Paimon+は非公式のwebサイトです。',
     'home.title': '原神 webツール',
+    'home.thanks': '謝辞',
+    'home.developers': '開発者',
+    'home.translators': '翻訳者',
+    'home.resources': 'データソース',
     'showcase.title': 'プロフィール キャラクター',
     // stat
     'Max HP': 'HP上限',

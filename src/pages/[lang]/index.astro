@@ -1,4 +1,5 @@
 ---
+import ExternalA from '@components/external-a.svelte'
 import MaterialGuide from '@components/home/material-guide.svelte'
 import More from '@components/more.svelte'
 import { navData } from '@components/nav/data'
@@ -9,6 +10,16 @@ export { getStaticPaths } from '@i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+
+const thx = {
+  'home.developers': [['Luis', 'https://luis.fun/', '🤡']],
+  'home.translators': [['박작가', '', '한국어']],
+  'home.resources': [
+    ['Dim', 'https://gitlab.com/Dimbreath/AnimeGameData', 'Game Data'],
+    ['Anonbelle', 'https://ambr.top', 'Image Resources'],
+    ['Algoinde', 'https://enka.network/', 'Showcase API'],
+  ],
+}
 ---
 
 <Layout title={t("home.title")} grid defaultTitle>
@@ -23,4 +34,27 @@ const t = useTranslations(lang)
 	<div class="max-w-md w-full mx-auto">
 		<MaterialGuide client:load {lang} />
 	</div>
+	<div class="collapse collapse-arrow bg-neutral">
+		<input type="checkbox" class="min-h-12" />
+		<div class="collapse-title min-h-12">{t("home.thanks")}</div>
+		<div class="collapse-content">
+			{(Object.keys(thx) as (keyof typeof thx)[]).map(key => (
+				<div class="mt-6 mb-4 first:mt-4">{t(key)}</div>
+				<div class="text-base">
+					{thx[key].map(e => (
+						<div>
+							{e[1] ? <ExternalA class="text-link" href={e[1]}>{e[0]}</ExternalA> : e[0]}
+							— {e[2]}
+						</div>
+					))}
+				</div>
+			))}
+		</div>
+	</div>
 </Layout>
+
+<style>
+	.collapse-arrow > .collapse-title:after{
+		top: 1.55rem;
+	}
+</style>

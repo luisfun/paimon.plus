@@ -14,3 +14,10 @@ export let style = ''
     <slot />
   </div>
 </div>
+
+<style>
+  .collapse:not(.collapse-close):has(> input[type="checkbox"]:checked),
+  .collapse:not(.collapse-close):has(> input[type="radio"]:checked) {
+    grid-template-rows: 1fr auto;
+  }
+</style>

@@ -1,6 +1,12 @@
 <script lang="ts">
+import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
 import materialJson from '@game/material.json'
+import type { Lang } from '@i18n/utils'
+import { useTranslations } from '@i18n/utils'
+
+export let lang: Lang
+const t = useTranslations(lang)
 
 export let costs: {
   promoteCoin: number
@@ -17,6 +23,7 @@ let materials: {
     icon: string
     level: number
     count: number
+    wikiId: number
   }[]
 }[] = []
 
@@ -71,7 +78,9 @@ $: {
       materials.push({
         rank: data.rank,
         order: order(data.rank !== 11101 ? data.rank : ~(data.rankLevel || 0)),
-        materials: [{ id, icon: data.icon, level: data.rankLevel || 1, count: costs.materials[id] || 0 }],
+        materials: [
+          { id, icon: data.icon, level: data.rankLevel || 1, count: costs.materials[id] || 0, wikiId: data.wikiId },
+        ],
       })
     else
       materials[index].materials.push({
@@ -79,6 +88,7 @@ $: {
         icon: data.icon,
         level: data.rankLevel || 1,
         count: costs.materials[id] || 0,
+        wikiId: data.wikiId,
       })
   }
   for (const m of materials) m.materials.sort((a, b) => a.level - b.level)
@@ -87,7 +97,15 @@ $: {
 </script>
 
 <div class="grid grid-cols-4 gap-3 mt-3">
-  {#each materials as material}
-    <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} />
+  {#each materials as material, i}
+    <div class="dropdown dropdown-hover{i%4 === 3 ? " dropdown-end" : ""}">
+      <div tabindex="0" role="button">
+        <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} />
+      </div>
+      <div tabindex="0" class="dropdown-content bg-neutral rounded-box w-[165%] z-[1] p-3 shadow text-sm">
+        <div>{t(material.materials[0].id, "material")}</div>
+        <ExternalA class="text-sm text-link" href="//wiki.hoyolab.com/m/genshin/entry/{material.materials[0].wikiId}">HoYoWiki</ExternalA>
+      </div>
+    </div>
   {/each}
 </div>

@@ -20,10 +20,10 @@ export const wikiScraping = async (type = undefined, num = 1000) => {
   const page = await browser.newPage()
   //
   switch (type) {
-    case "newOnly":
+    case 'newOnly':
       await newScraping(wikiJson, page, num)
       break
-    case "update":
+    case 'update':
       await hashScraping(wikiJson, page, num)
       await nullScraping(wikiJson, page, num)
       break

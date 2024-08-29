@@ -134,4 +134,4 @@ const onclick: HTMLButtonAttributes = {
     </div>
   </div>
 </Dialog>
-<Materials costs={selectData.allCosts} rank={selectData.rankLevel} />
+<Materials {lang} costs={selectData.allCosts} rank={selectData.rankLevel} />

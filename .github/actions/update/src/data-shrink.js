@@ -217,6 +217,7 @@ const dumpMaterial = () => {
     for (const index of copyIndex) {
       re[index] = material[index]
     }
+    re.wikiId = findWikiId(TextMap.en[re.nameTextMapHash])
     return re
   })
   dumpFile('material', m)

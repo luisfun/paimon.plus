@@ -53,7 +53,7 @@
         "113064": 46
       }
     },
-    "wikiId": -1
+    "wikiId": 6319
   },
   {
     "key": "Kinich",
@@ -109,7 +109,7 @@
         "113065": 46
       }
     },
-    "wikiId": -1
+    "wikiId": 6317
   },
   {
     "key": "Emilie",
@@ -3313,65 +3313,6 @@
     "wikiId": 32
   },
   {
-    "key": "Qin",
-    "id": 11000046,
-    "qualityType": "QUALITY_PURPLE",
-    "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 3986000746,
-    "skillDepotId": 1501,
-    "element": "Ice",
-    "consts": [
-      "UI_Talent_S_Kaeya_01",
-      "UI_Talent_S_Kaeya_02",
-      "UI_Talent_U_Kaeya_01",
-      "UI_Talent_S_Kaeya_03",
-      "UI_Talent_U_Kaeya_02",
-      "UI_Talent_S_Kaeya_04"
-    ],
-    "skills": [
-      {
-        "id": 10073,
-        "icon": "Skill_A_01",
-        "proud": 1531
-      },
-      {
-        "id": 10074,
-        "icon": "Skill_S_Kaeya_01",
-        "proud": 1532
-      },
-      {
-        "id": 10075,
-        "icon": "Skill_E_Kaeya_01",
-        "proud": 1539
-      }
-    ],
-    "costumes": [],
-    "allCosts": {
-      "promoteCoin": 420000,
-      "skillCoin": 4957500,
-      "materials": {
-        "101202": 168,
-        "104161": 1,
-        "104162": 9,
-        "104163": 9,
-        "104164": 6,
-        "104307": 9,
-        "104308": 63,
-        "104309": 114,
-        "104319": 3,
-        "112035": 18,
-        "112036": 66,
-        "112037": 93,
-        "112044": 18,
-        "112045": 30,
-        "112046": 36,
-        "113008": 18,
-        "113023": 46
-      }
-    },
-    "wikiId": -1
-  },
-  {
     "key": "Kachina",
     "id": 10000100,
     "qualityType": "QUALITY_PURPLE",
@@ -3425,7 +3366,7 @@
         "113065": 46
       }
     },
-    "wikiId": -1
+    "wikiId": 6318
   },
   {
     "key": "Sethos",

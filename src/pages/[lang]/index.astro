@@ -43,7 +43,7 @@ const thx = {
 				<div class="text-base">
 					{thx[key].map(e => (
 						<div>
-							{e[1] ? <ExternalA class="text-link" href={e[1]}>{e[0]}</ExternalA> : e[0]}
+							{e[1] ? <ExternalA class="text-link" href={e[1]} aria-label={e[0]}>{e[0]}</ExternalA> : e[0]}
 							— {e[2]}
 						</div>
 					))}

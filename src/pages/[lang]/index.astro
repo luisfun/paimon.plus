@@ -35,7 +35,7 @@ const thx = {
 		<MaterialGuide client:load {lang} />
 	</div>
 	<div class="collapse collapse-arrow bg-neutral">
-		<input type="checkbox" class="min-h-12" />
+		<input type="checkbox" class="min-h-12" aria-label={t("home.thanks")} />
 		<div class="collapse-title min-h-12">{t("home.thanks")}</div>
 		<div class="collapse-content">
 			{(Object.keys(thx) as (keyof typeof thx)[]).map(key => (

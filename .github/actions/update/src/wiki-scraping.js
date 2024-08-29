@@ -8,23 +8,30 @@ const scrapingMaxCount = 1000 // newスクレイピングの最大回数
 
 /**
  * 実行用
+ * @param {"update" | "newOnly"} type ローカル用
  * @param {boolean} updateOnly ローカル用 アップデートのみ 新ページを読まない
- * @param {number} num アップデートする数（後ろからnum個）
+ * @param {number} num アップデートする数
  */
-export const wikiScraping = async (updateOnly = false, num = 1000) => {
+export const wikiScraping = async (type = undefined, num = 1000) => {
   // 読み取り済みIDの取得
   const wikiJson = JSON.parse(fs.readFileSync(`${folder.wiki + fileName}.json`, 'utf8'))
   // ブラウザの立ち上げ
   const browser = await puppeteer.launch({ headless: 'new' })
   const page = await browser.newPage()
   //
-  if (updateOnly) {
-    await hashScraping(wikiJson, page, num)
-    await nullScraping(wikiJson, page, num)
-  } else {
-    await hashScraping(wikiJson, page, maxNullCount)
-    await nullScraping(wikiJson, page, maxNullCount)
-    await newScraping(wikiJson, page)
+  switch (type) {
+    case "newOnly":
+      await newScraping(wikiJson, page, num)
+      break
+    case "update":
+      await hashScraping(wikiJson, page, num)
+      await nullScraping(wikiJson, page, num)
+      break
+    default:
+      await hashScraping(wikiJson, page, maxNullCount)
+      await nullScraping(wikiJson, page, maxNullCount)
+      await newScraping(wikiJson, page, maxNullCount)
+      break
   }
   // ブラウザクローズ
   await browser.close()
@@ -75,12 +82,12 @@ const nullScraping = async (wikiJson, page, num) => {
  * @param {*} wikiJson
  * @param {Page} page
  */
-const newScraping = async (wikiJson, page) => {
+const newScraping = async (wikiJson, page, num) => {
   const wikiValues = Object.values(wikiJson)
   while (wikiValues.length > 0 && wikiValues[wikiValues.length - 1] === '') wikiValues.pop() // 最後の空要素を取り除く
   let noPageCount = 0 // 中断カウント
   let maxCount = scrapingMaxCount // 最大回数
-  for (let i = wikiValues.length; noPageCount < maxNullCount; i++) {
+  for (let i = wikiValues.length; noPageCount < num; i++) {
     // n回nullが続いたらストップ
     // スクレイピング、テキストデータの追加と後処理
     wikiJson[i] = await scrapingCore(page, i)

@@ -16,7 +16,6 @@ export let style = ''
 const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
 let src = dummySrc
 let alt = 'None'
-let rank = 1
 let width: number | undefined = 1
 let height: number | undefined = 1
 let sx = ''
@@ -71,14 +70,12 @@ $: {
     case 'element': {
       setSrc(`/images/element/${id}.webp`, 84)
       alt = id.toString()
-      rank = 0
       sx = ''
       break
     }
     case 'weapon-type': {
       setSrc(`/images/weapon-type/${id}.webp`, 56)
       alt = id.toString()
-      rank = 0
       sx = ''
       break
     }
@@ -86,7 +83,6 @@ $: {
       const pfp = (profilePictureJson as Record<string | number, string>)[id]
       setSrc(`/images/ui/Min_${pfp}.webp`, undefined, 128)
       alt = pfp.split('_')[2]
-      rank = 0
       sx += ' pfp-icon'
       break
     }

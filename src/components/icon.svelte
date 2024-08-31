@@ -8,7 +8,7 @@ import type { HTMLImgAttributes } from 'svelte/elements'
 type TextMap = { en: Record<number, string> }
 
 export let id: number | string
-export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle'
+export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
 export let text: string | number = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
 export let style = ''

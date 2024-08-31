@@ -102,13 +102,15 @@ $: {
       <div tabindex="0" role="button">
         <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} />
       </div>
-      <div tabindex="-1" class="dropdown-content bg-neutral rounded-box w-[165%] z-[1] p-3 shadow text-sm">
+      <div tabindex="-1" class="dropdown-content bg-neutral rounded-box w-[165%] z-[1] p-3 text-sm shadow-background">
         <div>{t(material.materials[0].id, "material")}</div>
+        {#if material.materials[0].wikiId !== -1}
         <ExternalA
           class="text-sm text-link"
           href="//wiki.hoyolab.com/m/genshin/entry/{material.materials[0].wikiId}"
           aria-label={t(material.materials[0].id, "material")}
         >HoYoWiki</ExternalA>
+        {/if}
       </div>
     </div>
   {/each}

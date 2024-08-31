@@ -3,11 +3,13 @@
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
+import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import weaponJson from '@game/weapon.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
 import type { HTMLButtonAttributes } from 'svelte/elements'
+import InfiniteScroll from './infinite-scroll.svelte'
 import Materials from './materials.svelte'
 const avatarData = avatarJson.filter(e => !(e.id === 10000005 || e.id === 10000007))
 
@@ -73,13 +75,17 @@ const onclick: HTMLButtonAttributes = {
     <Icon id={select} ui={selectData.element ? "avatar" : "weapon"} />
   </button>
   <div class="col-span-3 flex flex-col justify-evenly pl-2">
-    <button class="mr-auto text-xl" {...onclick} on:click={avatarLoadHandler}>{t(select, selectData.element ? "avatar" : "weapon")}</button>
+    <button class="mr-auto text-xl flex items-center" {...onclick} on:click={avatarLoadHandler}>
+      {t(select, selectData.element ? "avatar" : "weapon")}<Svg icon="caret-down" class="h-3 ml-2" />
+    </button>
     <div class="mr-auto flex items-center">
       {#if selectData.element}
       <Icon id={selectData.element} ui="element" style="w-7 mr-2" />
       {/if}
       <Icon id={selectData.weaponType} ui="weapon-type" style="w-7 mr-2" />
+      {#if selectData.wikiId !== -1}
       <ExternalA class="text-sm text-link" href="//wiki.hoyolab.com/m/genshin/entry/{selectData.wikiId}">HoYoWiki</ExternalA>
+      {/if}
     </div>
   </div>
 </div>
@@ -103,13 +109,14 @@ const onclick: HTMLButtonAttributes = {
           {/each}
         </div>
       </div>
-      <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
-        {#each avatarData.filter(a => !elementFilter[0] || elementFilter.includes(a.element || "")).filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as avatar}
-          <button on:click={_ => avatarHandler(avatar.id)}>
-            <Icon id={avatar.id} ui="avatar" loading="lazy" />
-          </button>
-        {/each}
-      </form>
+      <InfiniteScroll
+        ui="avatar"
+        ids={avatarData
+          .filter(a => !elementFilter[0] || elementFilter.includes(a.element || ""))
+          .filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType))
+          .map(e => e.id)}
+        onclick={avatarHandler}
+      />
     </div>
     <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-text-sub checked:text-text checked:bg-neutral" aria-label={t("game.weapons")} on:click={weaponLoadHandler} />
     <div role="tabpanel" class="tab-content">
@@ -123,13 +130,11 @@ const onclick: HTMLButtonAttributes = {
           {/each}
         </div>
       </div>
-      <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
-        {#each weaponJson.filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)) as weapon}
-          <button on:click={_ => weaponHandler(weapon.id)}>
-            <Icon id={weapon.id} ui="weapon" loading="lazy" />
-          </button>
-        {/each}
-      </form>
+      <InfiniteScroll
+        ui="weapon"
+        ids={weaponJson.filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)).map(e => e.id)}
+        onclick={weaponHandler}
+      />
       {/if}
     </div>
   </div>

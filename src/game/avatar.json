@@ -1098,6 +1098,7 @@
     ],
     "costumes": [
       {
+        "skinId": 207001,
         "key": "NilouCostumeFairy"
       }
     ],
@@ -1270,6 +1271,7 @@
     ],
     "costumes": [
       {
+        "skinId": 206301,
         "key": "ShenheCostumeDai"
       }
     ],
@@ -1834,6 +1836,7 @@
     ],
     "costumes": [
       {
+        "skinId": 204201,
         "key": "KeqingCostumeFeather"
       }
     ],
@@ -1894,6 +1897,7 @@
     ],
     "costumes": [
       {
+        "skinId": 204101,
         "key": "MonaCostumeWic"
       }
     ],
@@ -2010,6 +2014,7 @@
     ],
     "costumes": [
       {
+        "skinId": 203701,
         "key": "GanyuCostumeYu"
       }
     ],
@@ -2238,6 +2243,7 @@
     ],
     "costumes": [
       {
+        "skinId": 202901,
         "key": "KleeCostumeWitch"
       }
     ],
@@ -2410,6 +2416,7 @@
     ],
     "costumes": [
       {
+        "skinId": 201601,
         "key": "DilucCostumeFlamme"
       }
     ],
@@ -3224,9 +3231,11 @@
     ],
     "costumes": [
       {
+        "skinId": 200301,
         "key": "QinCostumeSea"
       },
       {
+        "skinId": 200302,
         "key": "QinCostumeWic"
       }
     ],
@@ -3287,6 +3296,7 @@
     ],
     "costumes": [
       {
+        "skinId": 200201,
         "key": "AyakaCostumeFruhling"
       }
     ],
@@ -4299,6 +4309,7 @@
     ],
     "costumes": [
       {
+        "skinId": 206101,
         "key": "MomokaCostumeErrantry"
       }
     ],
@@ -4695,6 +4706,7 @@
     ],
     "costumes": [
       {
+        "skinId": 204501,
         "key": "RosariaCostumeWic"
       }
     ],
@@ -5091,6 +5103,7 @@
     ],
     "costumes": [
       {
+        "skinId": 203101,
         "key": "FischlCostumeHighness"
       }
     ],
@@ -5151,6 +5164,7 @@
     ],
     "costumes": [
       {
+        "skinId": 202701,
         "key": "NingguangCostumeFloral"
       }
     ],
@@ -5211,6 +5225,7 @@
     ],
     "costumes": [
       {
+        "skinId": 202501,
         "key": "XingqiuCostumeBamboo"
       }
     ],
@@ -5383,6 +5398,7 @@
     ],
     "costumes": [
       {
+        "skinId": 202101,
         "key": "AmborCostumeWic"
       }
     ],
@@ -5499,6 +5515,7 @@
     ],
     "costumes": [
       {
+        "skinId": 201501,
         "key": "KaeyaCostumeDancer"
       }
     ],
@@ -5559,6 +5576,7 @@
     ],
     "costumes": [
       {
+        "skinId": 201401,
         "key": "BarbaraCostumeSummertime"
       }
     ],
@@ -5619,6 +5637,7 @@
     ],
     "costumes": [
       {
+        "skinId": 200601,
         "key": "LisaCostumeStudentin"
       }
     ],

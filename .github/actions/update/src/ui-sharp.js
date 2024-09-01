@@ -31,7 +31,11 @@ const createWebp = async () => {
 }
 
 const createMinAvatar = async () => {
-  const icons = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).map(e => `UI_AvatarIcon_${e.key}`)
+  const icons = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8')).flatMap(e => {
+    const re = [`UI_AvatarIcon_${e.key}`]
+    if (e.costumes) for (const cos of e.costumes) re.push(`UI_AvatarIcon_${cos.key}`)
+    return re
+  })
   await Promise.all(
     minDiff(icons).map(name =>
       sharp(`${folder.ui + name}.png`)

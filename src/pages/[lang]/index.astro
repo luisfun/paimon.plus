@@ -37,17 +37,17 @@ const thx = {
 	<div class="collapse collapse-arrow bg-neutral">
 		<input type="checkbox" class="min-h-12" aria-label={t("home.thanks")} />
 		<div class="collapse-title min-h-12">{t("home.thanks")}</div>
-		<div class="collapse-content">
+		<div class="collapse-content text-base">
 			{(Object.keys(thx) as (keyof typeof thx)[]).map(key => (
-				<div class="mt-6 mb-4 first:mt-4">{t(key)}</div>
-				<div class="text-base">
+				<div class="mt-6 mb-3 first:mt-3">{t(key)}</div>
+				<>
 					{thx[key].map(e => (
 						<div>
 							{e[1] ? <ExternalA class="text-link" href={e[1]} aria-label={e[0]}>{e[0]}</ExternalA> : e[0]}
 							— {e[2]}
 						</div>
 					))}
-				</div>
+				</>
 			))}
 		</div>
 	</div>

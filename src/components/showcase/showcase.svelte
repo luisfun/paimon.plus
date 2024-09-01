@@ -19,24 +19,25 @@ let status = 0
 {:else}
 <UidNext bind:uid bind:apiData bind:status />
 {/if}
-{#if apiData?.avatarInfoList?.[0]}
-<div class="overflow-x-auto mx-[calc((-100/91.666667+1)/2*100%)] sm:mx-auto">
-  <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
-    <Card {lang} avatarInfo={apiData.avatarInfoList[0]} />
-  </div>
-</div>
-{/if}
+
 {#if apiData}
 <div>
-  <div>{apiData.uid}</div>
   {#if apiData.avatarInfoList}
   <div class="flex flex-wrap">
     {#each apiData.avatarInfoList as avatar}
     <div class="w-16">
-      <Icon id={avatar.avatarId} ui="avatar" />
+      <Icon id={avatar.avatarId} skinId={avatar.costumeId} ui="avatar" />
     </div>
     {/each}
   </div>
   {/if}
+</div>
+{/if}
+
+{#if apiData?.avatarInfoList?.[0]}
+<div class="overflow-x-auto mx-100vw lg:mx-auto">
+  <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
+    <Card {lang} avatarInfo={apiData.avatarInfoList[0]} />
+  </div>
 </div>
 {/if}

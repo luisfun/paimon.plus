@@ -8,6 +8,7 @@ import type { HTMLImgAttributes } from 'svelte/elements'
 type TextMap = { en: Record<number, string> }
 
 export let id: number | string
+export let skinId: number | undefined = undefined
 export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
 export let text: string | number = ''
 export let loading: HTMLImgAttributes['loading'] = undefined
@@ -46,7 +47,8 @@ $: {
     case 'avatar': {
       const a = avatarJson.find(e => e.id === id)
       if (!a) break
-      setSrc(`/images/ui/Min_UI_AvatarIcon_${a.key}.webp`, 192)
+      const key = a.costumes?.find(e => e.skinId === skinId)?.key || a.key
+      setSrc(`/images/ui/Min_UI_AvatarIcon_${key}.webp`, 192)
       alt = (textMapJson as TextMap).en[a.nameTextMapHash]
       sx += ` bg-rank-${rankNum[a.qualityType] || 1}`
       break

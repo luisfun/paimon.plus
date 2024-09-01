@@ -21,20 +21,24 @@ export const uiDownload = async () => {
  */
 const getAvatarImages = async uiFiles => {
   const avatars = JSON.parse(fs.readFileSync(`${folder.dist}avatar.json`, 'utf8'))
-  const imageList = []
+  const ambrDLList = []
+  const enkaDLList = []
   for (const avatar of avatars) {
     const key = avatar.key
-    imageList.push(`UI_AvatarIcon_${key}`)
-    //imageList.push(`UI_AvatarIcon_Side_${key}`)
-    //imageList.push(`UI_Gacha_AvatarImg_${key}`)
+    ambrDLList.push(`UI_AvatarIcon_${key}`)
+    enkaDLList.push(`UI_AvatarIcon_Side_${key}`)
+    ambrDLList.push(`UI_Gacha_AvatarImg_${key}`)
     if (avatar.costumes)
       for (const key of avatar.costumes.map(e => e.key)) {
-        //imageList.push(`UI_AvatarIcon_${key}`)
-        //imageList.push(`UI_AvatarIcon_Side_${key}`)
-        //imageList.push(`UI_Costume_${key}`)
+        ambrDLList.push(`UI_AvatarIcon_${key}`)
+        enkaDLList.push(`UI_AvatarIcon_Side_${key}`)
+        ambrDLList.push(`UI_Costume_${key}`)
       }
   }
-  await download(ambrUrl, imageList, uiFiles)
+  await Promise.all([
+    download(ambrUrl, ambrDLList, uiFiles),
+    download(enkaUrl, enkaDLList, uiFiles)
+  ])
 }
 
 const getWeaponImages = async uiFiles => {

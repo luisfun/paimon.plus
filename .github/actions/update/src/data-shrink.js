@@ -86,7 +86,7 @@ const dumpAvatar = () => {
       aInfo.consts = avatarConsts(depot)
       aInfo.skills = avatarSkills(depot)
       aInfo.costumes = E.AvatarCostume.filter(e => e.characterId === aInfo.id && e.sideIconName !== '').map(
-        costume => ({ key: costume.frontIconName.split('_').slice(-1)[0] }),
+        costume => ({ skinId: costume.skinId, key: costume.frontIconName.split('_').slice(-1)[0] }),
       )
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
       aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])

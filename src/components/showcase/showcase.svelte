@@ -28,7 +28,7 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
 <div class="sticky top-0 relative avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
-  <div class="absolute top-0 left-0 w-16 h-full list-bg-left hidden lg:block" />
+  <div class="absolute top-0 left-0 w-16 h-full z-10 list-bg-left hidden lg:block" />
   <div class="flex flex-nowrap overflow-x-auto scrollbar-hidden">
     {#each apiData.avatarInfoList as avatar, i}
       <SideIcon
@@ -40,7 +40,7 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
       />
     {/each}
   </div>
-  <div class="absolute top-0 right-0 w-16 h-full list-bg-right hidden lg:block" />
+  <div class="absolute top-0 right-0 w-16 h-full z-10 list-bg-right hidden lg:block" />
 </div>
 {/if}
 

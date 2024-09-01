@@ -28,7 +28,7 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
 <div class="sticky top-0 relative avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem] lg:px-12">
-  <div class="list-bg-left hidden lg:block" />
+  <div class="absolute top-0 left-0 w-16 h-full list-bg-left hidden lg:block" />
   <div class="flex flex-nowrap overflow-x-auto">
     {#each apiData.avatarInfoList as avatar, i}
       <SideIcon
@@ -40,7 +40,7 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
       />
     {/each}
   </div>
-  <div class="list-bg-right hidden lg:block" />
+  <div class="absolute top-0 right-0 w-16 h-full list-bg-right hidden lg:block" />
 </div>
 {/if}
 
@@ -66,19 +66,9 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
     backdrop-filter: blur(.5rem);
   }
   .list-bg-left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 4rem;
-    height: 100%;
     background: linear-gradient(to right, var(--background) calc(100% - 4rem), transparent);
   }
   .list-bg-right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 4rem;
-    height: 100%;
     background: linear-gradient(to left, var(--background) calc(100% - 4rem), transparent);
   }
 </style>

@@ -37,7 +37,7 @@ $: {
 }
 </script>
 
-<button class="side-wrap{style}" on:click={_ => onSelect(id)}>
+<button class="lg:first:ml-12 lg:last:mr-12 side-wrap{style}" on:click={_ => onSelect(id)}>
   <img loading="lazy" width=128 height=128 {src} {alt} class="side-img" />
 </button>
 
@@ -68,7 +68,7 @@ $: {
   .side-select::before {
     border-color: #96db83;
     background: #4fccf099;
-    box-shadow: 0 0 1rem #4fccf060;
+    box-shadow: 0 0 1rem #4fccf080;
   }
   .side-img {
     position: absolute;

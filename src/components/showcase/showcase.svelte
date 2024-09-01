@@ -27,9 +27,9 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
 {/if}
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
-<div class="sticky top-0 relative avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem] lg:px-12">
+<div class="sticky top-0 relative avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
   <div class="absolute top-0 left-0 w-16 h-full list-bg-left hidden lg:block" />
-  <div class="flex flex-nowrap overflow-x-auto">
+  <div class="flex flex-nowrap overflow-x-auto scrollbar-hidden">
     {#each apiData.avatarInfoList as avatar, i}
       <SideIcon
         id={avatar.avatarId}
@@ -70,5 +70,11 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
   }
   .list-bg-right {
     background: linear-gradient(to left, var(--background) calc(100% - 4rem), transparent);
+  }
+  .scrollbar-hidden {
+    scrollbar-width: none;
+  }
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
   }
 </style>

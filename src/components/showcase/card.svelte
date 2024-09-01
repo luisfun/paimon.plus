@@ -1,19 +1,88 @@
 <script lang="ts">
-import type { ApiData, ReliquaryRemap, WeaponRemap } from '@components/api'
+import type { AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api'
 import { avatarRemap } from '@components/api'
 import { XCanvas, xCreate } from '@components/x-canvas'
 import { useTranslations } from '@i18n/utils'
 import type { Lang } from '@i18n/utils'
-import { onMount } from 'svelte'
 
-export let avatarInfo: Exclude<ApiData['avatarInfoList'], undefined>[number]
+export let avatarInfo: AvatarInfo
 export let lang: Lang
 const t = useTranslations(lang)
-const a = avatarRemap(avatarInfo)
-
+let a = avatarRemap(avatarInfo)
 let canvas: HTMLCanvasElement
-onMount(() => {
-  const ctx = canvas.getContext('2d', { willReadFrequently: true })
+
+const isIOS = () => {
+  if (typeof window === 'undefined') return false
+  if (navigator.userAgent.match(/iPhone|iPad|iPod.+Mobile/)) return true
+  return false
+}
+const srcUrl = (name: string | null | undefined, folder?: 'ui' | 'element' | 'card-assets', type?: 'jpg') =>
+  `/images${folder ? `/${folder}` : ''}/${name ? name : 'Empty'}.${type ? type : 'webp'}`
+const u = {
+  elementMap: {
+    Rock: '#bb9f4b',
+    Wind: '#52B0B1',
+    Ice: '#46A8BA',
+    Water: '#84A1C6',
+    Electric: '#9876AD',
+    Fire: '#BA8C83',
+    Grass: '#57A45C', // #2D8E34
+    None: '#94a0a7',
+  } as Record<string, string>,
+  equipTypes: ['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS'],
+  bga: '#0005',
+  bga2: '#0007',
+  bgas: '#282828dd',
+  lightGreen: '#82ff9a',
+}
+const getConsPos = (i: number) => {
+  const r = 186
+  const th = 15
+  const cy = -22
+  const cx = -42 // 調節項目
+  const rad = ((2 * Math.PI) / 360) * (th * 2.5 - th * i)
+  const base = {
+    x: Math.cos(rad) * r,
+    y: Math.sin(rad) * r,
+  }
+  return { mt: -base.y + cy, ml: base.x + cx }
+}
+const elementColor = (element: string | null | undefined, light?: boolean) => {
+  const colorLight: Record<string, string> = {
+    Fire: 'rgba(255,102,64,.65)',
+    Ice: 'rgba(122,242,242,.65)',
+    Water: 'rgba(0,192,255,.65)',
+    Electric: 'rgba(204,128,255,.65)',
+    Wind: 'rgba(51,215,160,.65)',
+    Rock: 'rgba(255,176,13,.65)',
+    Grass: 'rgba(51,215,160,.65)',
+    None: 'rgba(192,192,192,.65)',
+  }
+  const colorDark: Record<string, string> = {
+    Fire: '#3d1818',
+    Ice: '#09375c',
+    Water: '#15315c',
+    Electric: '#2a1a67',
+    Wind: '#153434',
+    Rock: '#3d3015',
+    Grass: '#183d12',
+    None: '#333',
+  }
+  return light ? colorLight[element || ''] || colorLight.None : colorDark[element || ''] || colorDark.None
+}
+const sxMiniPaper = {
+  position: 'absolute',
+  mr: 2,
+  mb: 2,
+  textAlign: 'center',
+  backgroundColor: u.bgas,
+  borderRadius: 8,
+  overflow: 'hidden',
+} as const
+
+$: {
+  a = avatarRemap(avatarInfo)
+  const ctx = canvas?.getContext('2d', { willReadFrequently: true })
   if (ctx) {
     const xc = new XCanvas(ctx, 1920, 480)
     const c = xCreate
@@ -355,76 +424,7 @@ onMount(() => {
     )
     xc.render(document, isIOS() ? 50 : false)
   }
-})
-
-const isIOS = () => {
-  if (typeof window === 'undefined') return false
-  if (navigator.userAgent.match(/iPhone|iPad|iPod.+Mobile/)) return true
-  return false
 }
-const srcUrl = (name: string | null | undefined, folder?: 'ui' | 'element' | 'card-assets', type?: 'jpg') =>
-  `/images${folder ? `/${folder}` : ''}/${name ? name : 'Empty'}.${type ? type : 'webp'}`
-const u = {
-  elementMap: {
-    Rock: '#bb9f4b',
-    Wind: '#52B0B1',
-    Ice: '#46A8BA',
-    Water: '#84A1C6',
-    Electric: '#9876AD',
-    Fire: '#BA8C83',
-    Grass: '#57A45C', // #2D8E34
-    None: '#94a0a7',
-  } as Record<string, string>,
-  equipTypes: ['EQUIP_BRACER', 'EQUIP_NECKLACE', 'EQUIP_SHOES', 'EQUIP_RING', 'EQUIP_DRESS'],
-  bga: '#0005',
-  bga2: '#0007',
-  bgas: '#282828dd',
-  lightGreen: '#82ff9a',
-}
-const getConsPos = (i: number) => {
-  const r = 186
-  const th = 15
-  const cy = -22
-  const cx = -42 // 調節項目
-  const rad = ((2 * Math.PI) / 360) * (th * 2.5 - th * i)
-  const base = {
-    x: Math.cos(rad) * r,
-    y: Math.sin(rad) * r,
-  }
-  return { mt: -base.y + cy, ml: base.x + cx }
-}
-const elementColor = (element: string | null | undefined, light?: boolean) => {
-  const colorLight: Record<string, string> = {
-    Fire: 'rgba(255,102,64,.65)',
-    Ice: 'rgba(122,242,242,.65)',
-    Water: 'rgba(0,192,255,.65)',
-    Electric: 'rgba(204,128,255,.65)',
-    Wind: 'rgba(51,215,160,.65)',
-    Rock: 'rgba(255,176,13,.65)',
-    Grass: 'rgba(51,215,160,.65)',
-    None: 'rgba(192,192,192,.65)',
-  }
-  const colorDark: Record<string, string> = {
-    Fire: '#3d1818',
-    Ice: '#09375c',
-    Water: '#15315c',
-    Electric: '#2a1a67',
-    Wind: '#153434',
-    Rock: '#3d3015',
-    Grass: '#183d12',
-    None: '#333',
-  }
-  return light ? colorLight[element || ''] || colorLight.None : colorDark[element || ''] || colorDark.None
-}
-const sxMiniPaper = {
-  position: 'absolute',
-  mr: 2,
-  mb: 2,
-  textAlign: 'center',
-  backgroundColor: u.bgas,
-  borderRadius: 8,
-  overflow: 'hidden',
-} as const
 </script>
 
 <canvas width="1920" height="480" class="w-full" bind:this={canvas} />

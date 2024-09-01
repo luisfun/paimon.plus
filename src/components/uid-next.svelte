@@ -26,7 +26,7 @@ const onclick: HTMLButtonAttributes = {
 }
 </script>
 
-<div class="flex justify-between items-center h-10 px-1">
+<div class="flex justify-between items-center h-10 px-1 md:mb-3">
   <div class="flex items-center">
     <div class="w-10 h-10 mr-4 flex justify-center items-center">
       <Icon id={apiData?.playerInfo.profilePicture.id || 2} ui="circle" />
@@ -43,7 +43,6 @@ const onclick: HTMLButtonAttributes = {
     </button>
   </div>
 </div>
-<div class="md:mt-3" />
 <More style="md:hidden" mt0>
   aaa
 </More>

@@ -1,17 +1,23 @@
 <script lang="ts">
 // client:only="svelte"
-import type { ApiData } from '@components/api'
-import Icon from '@components/icon.svelte'
+import type { ApiData, AvatarInfo } from '@components/api'
 import UidInit from '@components/uid-init.svelte'
 import UidNext from '@components/uid-next.svelte'
 import type { Lang } from '@i18n/utils'
 import Card from './card.svelte'
+import SideIcon from './side-icon.svelte'
 
 export let lang: Lang
 
 let uid: number | undefined
 let apiData: ApiData | undefined
 let status = 0
+let avatarInfo: AvatarInfo | undefined = undefined
+
+const onSelect = (id: number) => {
+  avatarInfo = apiData?.avatarInfoList?.find(e => e.avatarId === id)
+}
+$: avatarInfo = apiData?.avatarInfoList?.[0]
 </script>
 
 {#if !apiData}
@@ -20,24 +26,59 @@ let status = 0
 <UidNext bind:uid bind:apiData bind:status />
 {/if}
 
-{#if apiData}
-<div>
-  {#if apiData.avatarInfoList}
-  <div class="flex flex-wrap">
-    {#each apiData.avatarInfoList as avatar}
-    <div class="w-16">
-      <Icon id={avatar.avatarId} skinId={avatar.costumeId} ui="avatar" />
-    </div>
+{#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
+<div class="sticky top-0 relative avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem] lg:px-12">
+  <div class="list-bg-left hidden lg:block" />
+  <div class="flex flex-nowrap overflow-x-auto">
+    {#each apiData.avatarInfoList as avatar, i}
+      <SideIcon
+        id={avatar.avatarId}
+        skinId={avatar.costumeId}
+        active={apiData.playerInfo.showAvatarInfoList.length - i > 0}
+        select={avatar.avatarId === avatarInfo?.avatarId}
+        {onSelect}
+      />
     {/each}
   </div>
-  {/if}
+  <div class="list-bg-right hidden lg:block" />
 </div>
 {/if}
 
-{#if apiData?.avatarInfoList?.[0]}
-<div class="overflow-x-auto mx-100vw lg:mx-auto">
+{#if avatarInfo}
+<div class="overflow-x-auto mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-auto">
   <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
-    <Card {lang} avatarInfo={apiData.avatarInfoList[0]} />
+    <Card {lang} {avatarInfo} />
   </div>
 </div>
 {/if}
+
+<div class="h-svh" />
+
+<style>
+  .avatar-list::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: hsl(223 6.7% 20.6% / .8);
+    backdrop-filter: blur(.5rem);
+  }
+  .list-bg-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4rem;
+    height: 100%;
+    background: linear-gradient(to right, var(--background) calc(100% - 4rem), transparent);
+  }
+  .list-bg-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4rem;
+    height: 100%;
+    background: linear-gradient(to left, var(--background) calc(100% - 4rem), transparent);
+  }
+</style>

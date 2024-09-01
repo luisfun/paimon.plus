@@ -35,10 +35,7 @@ const getAvatarImages = async uiFiles => {
         ambrDLList.push(`UI_Costume_${key}`)
       }
   }
-  await Promise.all([
-    download(ambrUrl, ambrDLList, uiFiles),
-    download(enkaUrl, enkaDLList, uiFiles)
-  ])
+  await Promise.all([download(ambrUrl, ambrDLList, uiFiles), download(enkaUrl, enkaDLList, uiFiles)])
 }
 
 const getWeaponImages = async uiFiles => {

@@ -1,3 +1,4 @@
+import { ls } from '@components/local-storage'
 import avatarJson from '@game/avatar.json'
 import affixJson from '@game/reliquary-affix.json'
 
@@ -5,7 +6,7 @@ export const API_VER = '0.3.0'
 export const uidTest = (uid: string | number | undefined) => /^(18|[1-35-9])\d{8}$/.test(uid?.toString() || '')
 
 export const fetchUid = async (uid: number | undefined, cache?: 'cache') => {
-  if (!uidTest(uid)) return { json: undefined, status: 499 }
+  if (!uidTest(uid)) return { json: undefined, status: 499, uidLogs: ls.uidLog.get() }
   const res = await fetch(
     `/api/uid/${uid}`,
     cache ? { cache: 'force-cache', headers: { 'Cache-Control': 'force-cache' } } : undefined,
@@ -13,12 +14,10 @@ export const fetchUid = async (uid: number | undefined, cache?: 'cache') => {
   if (200 <= res.status && res.status <= 399) {
     const json = (await res.json()) as ApiData
     localStorage.setItem('uid', uid?.toString() || '')
-    const newLog = { name: json.playerInfo.nickname, uid: uid?.toString() || '' }
-    const uidLog = JSON.parse(localStorage.getItem('uid-log') || '[]') as { name: string; uid: string }[]
-    localStorage.setItem('uid-log', JSON.stringify([...new Map([newLog, ...uidLog].map(e => [e.uid, e])).values()]))
-    return { json, status: res.status }
+    const uidLogs = ls.uidLog.set(uid, json)
+    return { json, status: res.status, uidLogs }
   }
-  return { json: undefined, status: res.status }
+  return { json: undefined, status: res.status, uidLogs: ls.uidLog.get() }
 }
 
 export const avatarRemap = (info: AvatarInfo) => {
@@ -314,7 +313,8 @@ export type EnkaApi = {
     }[]
     showNameCardIdList?: number[]
     profilePicture: {
-      id: number
+      id?: number
+      avatarId?: number
     }
   }
   avatarInfoList?: AvatarInfo[]

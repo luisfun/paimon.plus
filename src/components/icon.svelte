@@ -82,9 +82,11 @@ $: {
       break
     }
     case 'circle': {
-      const pfp = (profilePictureJson as Record<string | number, string>)[id]
+      const pfp =
+        (profilePictureJson as Record<string | number, string>)[id] ||
+        `UI_AvatarIcon_${avatarJson.find(e => e.id === id)?.key}`
       setSrc(`/images/ui/Min_${pfp}.webp`, undefined, 128)
-      alt = pfp.split('_')[2]
+      alt = pfp?.split('_')[2] || ''
       sx += ' pfp-icon'
       break
     }

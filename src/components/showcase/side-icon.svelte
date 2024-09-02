@@ -27,7 +27,9 @@ const setSrc = (newSrc: string) => {
   }
 }
 $: {
-  style = select ? ' side-select' : active ? ' side-active' : ''
+  style = ''
+  if (select) style += ' side-select'
+  if (active) style += ' side-active'
   const a = avatarJson.find(e => e.id === id)
   if (a) {
     const key = a.costumes?.find(e => e.skinId === skinId)?.key || a.key
@@ -66,14 +68,22 @@ $: {
     border-color: #96db8380;
   }
   .side-select::before {
-    border-color: #96db83;
+    border-color: #4fccf099;
     background: #4fccf099;
     box-shadow: 0 0 1rem #4fccf080;
   }
+  .side-active.side-select::before {
+    border-color: #96db83;
+  }
   .side-img {
     position: absolute;
-    top: -1rem;
-    left: 0;
-    right: 0;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4.6rem;
+    transition: width .1s ease;
+  }
+  .side-select .side-img {
+    width: 5rem;
   }
 </style>

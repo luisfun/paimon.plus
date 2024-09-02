@@ -13,6 +13,7 @@ const onSelect = (id: number) => {
 }
 $: avatarInfo = apiData?.avatarInfoList?.[0]
 
+const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElement }) => {
   if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return
   const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth
@@ -22,7 +23,10 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
   scrollLeft += e.deltaY
   if (scrollLeft < 0) scrollLeft = 0
   if (scrollLeft > maxScrollLeft) scrollLeft = maxScrollLeft
-  scrollElement.scrollBy({ left: scrollLeft - scrollElement.scrollLeft, behavior: 'smooth' })
+  scrollElement.scrollBy({
+    left: scrollLeft - scrollElement.scrollLeft,
+    behavior: mediaQuery.matches ? 'auto' : 'smooth',
+  })
 }
 </script>
 

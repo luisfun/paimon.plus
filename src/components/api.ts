@@ -23,13 +23,13 @@ export const fetchUid = async (uid: number | undefined, cache?: 'cache') => {
 
 export const avatarRemap = (info: AvatarInfo) => {
   const data = avatarJson.find(e => e.id === info.avatarId && e.skillDepotId === info.skillDepotId)
-  //const costume =
+  const costume = data?.costumes?.find(e => e.skinId === info.costumeId)
   const level = Number(info.propMap['4001'].val)
   const levelLimit = get_ascension_level(info.propMap['1002'].val)
   const nameTextMapHash = data?.nameTextMapHash
   const element = data?.element
-  const sideIcon = `UI_AvatarIcon_Side_${data?.key}` //******************************** 一旦
-  const avatarImg = `UI_Gacha_AvatarImg_${data?.key}` //******************************** 一旦
+  const sideIcon = costume ? `UI_AvatarIcon_Side_${costume.key}` : `UI_AvatarIcon_Side_${data?.key}`
+  const avatarImg = costume ? `UI_Costume_${costume.key}` : `UI_Gacha_AvatarImg_${data?.key}`
   const talentIcons =
     data?.consts.map((icon, i) => ({ icon, unlock: i < (info.talentIdList?.length || 0) })) ||
     Array(6)

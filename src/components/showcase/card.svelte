@@ -10,6 +10,8 @@ export let lang: Lang
 const t = useTranslations(lang)
 let a = avatarRemap(avatarInfo)
 let canvas: HTMLCanvasElement
+// @ts-expect-error
+let xc: XCanvas
 
 const isIOS = () => {
   if (typeof window === 'undefined') return false
@@ -84,7 +86,7 @@ $: {
   a = avatarRemap(avatarInfo)
   const ctx = canvas?.getContext('2d', { willReadFrequently: true })
   if (ctx) {
-    const xc = new XCanvas(ctx, 1920, 480)
+    xc ??= new XCanvas(ctx, 1920, 480)
     const c = xCreate
     const weapon: WeaponRemap[] = []
     const artifactList: ReliquaryRemap[] = []

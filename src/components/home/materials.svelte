@@ -102,7 +102,7 @@ $: {
       <div tabindex="0" role="button">
         <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} />
       </div>
-      <div tabindex="-1" class="dropdown-content bg-neutral rounded-box w-[165%] z-[1] p-3 text-sm shadow-background">
+      <div tabindex="-1" class="dropdown-content bg-neutral rounded-box w-[165%] z-10 p-3 text-sm shadow-background">
         <div>{t(material.materials[0].id, "material")}</div>
         {#if material.materials[0].wikiId !== -1}
         <ExternalA

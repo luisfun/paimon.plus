@@ -10,9 +10,11 @@ import type { HTMLButtonAttributes } from 'svelte/elements'
 export let uid: number | undefined
 export let apiData: ApiData | undefined
 export let status: number
+let uidLogs = ls.uidLog.get().filter(e => e.uid !== uid?.toString())
+let logDisabled = !uidLogs[0]
+$: logDisabled = !uidLogs[0]
 let disabled = true
 $: disabled = !uidTest(uid)
-let uidLogs = ls.uidLog.get().filter(e => e.uid !== uid?.toString())
 
 const clickHandler = async (getUid: number | undefined, cache?: 'cache') => {
   const res = await fetchUid(getUid, cache)
@@ -44,7 +46,7 @@ const onclose: HTMLButtonAttributes = {
     <div>{apiData?.playerInfo.nickname}</div>
   </div>
   <div class="flex items-center input input-bordered px-1 h-8 bg-neutral rounded-full">
-    <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 rounded-full" {...onclick}>
+    <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 rounded-full" {...onclick} disabled={logDisabled}>
       <Svg icon="clock-rotate-left" />
     </button>
     <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" />
@@ -57,7 +59,6 @@ const onclose: HTMLButtonAttributes = {
   aaa
 </More>
 <Dialog id="uid_log">
-  {#if uidLogs[0]}
   <div class="grid grid-cols-[1.5rem_2rem_auto_auto_1.5rem] gap-3 leading-8 m-4">
     {#each uidLogs as log}
       <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 my-auto rounded-full" on:click={_ => trashHandler(log.uid)}>
@@ -71,7 +72,4 @@ const onclose: HTMLButtonAttributes = {
       </button>
     {/each}
   </div>
-  {:else}
-  <div class="m-8">no logs</div>
-  {/if}
 </Dialog>

@@ -39,17 +39,17 @@ $: {
 }
 </script>
 
-<button class="lg:first:ml-12 lg:last:mr-12 side-wrap{style}" on:click={_ => onSelect(id)}>
+<button class="side-wrap{style}" on:click={_ => onSelect(id)}>
   <img loading="lazy" width=128 height=128 {src} {alt} class="side-img" />
 </button>
 
 <style>
   .side-wrap {
     position: relative;
-    flex: 0 0 5rem;
-    width: 5rem;
-    height: 5rem;
-    padding: calc(1rem - 3px);
+    flex: 0 0 4.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    padding: calc(.75rem - 3px);
     cursor: pointer;
   }
   .side-wrap::before {
@@ -70,20 +70,35 @@ $: {
   .side-select::before {
     border-color: #4fccf099;
     background: #4fccf099;
-    box-shadow: 0 0 1rem #4fccf080;
+    box-shadow: 0 0 1.5rem #4fccf080;
   }
   .side-active.side-select::before {
     border-color: #96db83;
   }
+  .side-wrap::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    display: block;
+    border-bottom: solid 3px;
+    border-color: transparent;
+    transition: border-color .1s ease;
+  } 
+  .side-select::after {
+    border-color: #4fccf0;
+  }
   .side-img {
     position: absolute;
-    bottom: 1rem;
+    bottom: .75rem;
     left: 50%;
     transform: translateX(-50%);
     width: 4.6rem;
     transition: width .1s ease;
   }
   .side-select .side-img {
+    max-width: none;
     width: 5rem;
   }
 </style>

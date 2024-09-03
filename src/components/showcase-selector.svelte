@@ -31,10 +31,10 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
-<div class="sticky top-0 relative avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
+<div class="sticky top-0 flex justify-center avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
   <div class="absolute top-0 left-0 w-16 h-full z-10 pointer-events-none list-bg-left hidden lg:block" />
   <div class="absolute top-0 right-0 w-16 h-full z-10 pointer-events-none list-bg-right hidden lg:block" />
-  <div class="flex flex-nowrap overflow-x-auto scrollbar-hidden scroll-smooth" bind:this={scrollElement} on:wheel={e => wheelHandler(e)}>
+  <div class="flex flex-nowrap overflow-x-auto scrollbar-hidden px-3 lg:px-12" bind:this={scrollElement} on:wheel={e => wheelHandler(e)}>
     {#each apiData.avatarInfoList as avatar, i}
       <SideIcon
         id={avatar.avatarId}

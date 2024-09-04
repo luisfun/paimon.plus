@@ -518,7 +518,7 @@ const calcPosUni = (x: number, w: number, innerArr: CalcUniInner[]) => {
 
 const num2num = (num: unknown) => (typeof num === 'number' ? num : undefined)
 const per2num = (per: unknown) =>
-  typeof per === 'string' && per.slice(-1)[0] === '%' ? Number(per.slice(0, -1)) / 100 : undefined
+  typeof per === 'string' && per.at(-1) === '%' ? Number(per.slice(0, -1)) / 100 : undefined
 /*
 const rem2num = <T>(value: T, fontSize: number) => {
   if(typeof value===`string` && value.slice(-3)===`rem`) return fontSize * Number(value.slice(0,-3))

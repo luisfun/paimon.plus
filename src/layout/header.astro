@@ -21,24 +21,11 @@ const translatePath = useTranslatedPath(pageLang)
     </div>
     <ul class="dropdown-content menu bg-neutral rounded-md z-[1] w-fit p-1 shadow-background">
       {Object.entries(ui).map(([lang, {label}]) => (
-        <li class={pageLang === lang ? "page-lang" : undefined}>
+        <li>
+          {pageLang === lang && <div class="absolute left-1.5 top-1/2 -transform-y-1/2 bg-[var(--text)] rounded-full w-1.5 h-1.5 p-0" />}
           <a href={translatePath(pagePath ? `/${pagePath}/` : '/', lang as keyof typeof ui)} aria-label={label}>{label}</a>
         </li>
       ))}
     </ul>
   </div>
 </header>
-
-<style>
-  .page-lang::before {
-    content: "";
-    position: absolute;
-    left: 0.375em;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: var(--text);
-    border-radius: 50%;
-    width: 0.375em;
-    height: 0.375em;
-  }
-</style>

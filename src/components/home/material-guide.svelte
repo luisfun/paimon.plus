@@ -89,7 +89,7 @@ const onclick: HTMLButtonAttributes = {
     </div>
   </div>
 </div>
-<Dialog id="modal" maxW maxH visible={isAvatarLoading}>
+<Dialog id="modal" maxFixed visible={isAvatarLoading}>
   <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-2">
     <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-text-sub checked:text-text checked:bg-neutral" aria-label={t("game.characters")} checked />
     <div role="tabpanel" class="tab-content">

@@ -11,8 +11,9 @@ export let avatarInfo: AvatarInfo | undefined
 
 let scrollElement: HTMLElement
 let scrollLeft = 0
-let isList = false
 let dialog: HTMLDialogElement
+let isList = false
+let isDialogVisible = false
 
 const onSelect = (id: number) => {
   avatarInfo = apiData?.avatarInfoList?.find(e => e.avatarId === id)
@@ -21,6 +22,7 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
 
 const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElement }) => {
+  if (dialog.open) return
   if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return
   const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth
   if ((scrollElement.scrollLeft <= 0 && e.deltaY < 0) || (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0))
@@ -50,6 +52,11 @@ onMount(() => {
     window.removeEventListener('resize', listener)
   }
 })
+
+const onModal = () => {
+  isDialogVisible = true
+  dialog.showModal()
+}
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
@@ -57,15 +64,15 @@ onMount(() => {
   <div class="absolute top-0 left-0 w-16 h-full z-20 pointer-events-none list-bg-left hidden lg:block" />
   <div class="absolute top-0 right-0 w-16 h-full z-20 pointer-events-none list-bg-right hidden lg:block" />
   <div
-    class="flex flex-nowrap overflow-x-auto scrollbar-hidden px-3 lg:px-12"
+    class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"
     bind:this={scrollElement}
     on:wheel={e => wheelHandler(e)}
   >
     {#if isList}
-      <button class="flex-none w-12 h-12 my-auto mr-3 z-10 menu-outline rounded-full" on:click={() => dialog.showModal()}>
+      <button class="flex-none w-12 h-12 my-auto mx-3 z-10 menu-outline rounded-full" on:click={onModal}>
         <Svg icon="menu-tile" class="w-9 m-auto" />
       </button>
-      <Dialog bind:dialog >
+      <Dialog bind:dialog visible={isDialogVisible}>
         <DialogDelayIcon
           style="m-2"
           ids={apiData.avatarInfoList.map(e => e.costumeId ? [e.avatarId, e.costumeId] : e.avatarId)}

@@ -1,12 +1,18 @@
 <script lang="ts">
 import type { ApiData, AvatarInfo } from '@components/api'
-import SideIcon from '@components/side-icon.svelte'
+import SideIcon from '@components/showcase-side-icon.svelte'
+import { onMount } from 'svelte'
+import DialogDelayIcon from './dialog-delay-Icon.svelte'
+import Dialog from './dialog.svelte'
+import Svg from './svg.svelte'
 
 export let apiData: ApiData | undefined
 export let avatarInfo: AvatarInfo | undefined
 
-let scrollElement: Element
+let scrollElement: HTMLElement
 let scrollLeft = 0
+let isList = false
+let dialog: HTMLDialogElement
 
 const onSelect = (id: number) => {
   avatarInfo = apiData?.avatarInfoList?.find(e => e.avatarId === id)
@@ -28,13 +34,46 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
     behavior: mediaQuery.matches ? 'auto' : 'smooth',
   })
 }
+
+const setIsList = (apiData?: ApiData | undefined) => {
+  // when update ApiData
+  if (apiData) isList = false
+  setTimeout(() => {
+    isList = scrollElement?.offsetWidth < scrollElement?.scrollWidth
+  }, 0)
+}
+$: setIsList(apiData)
+onMount(() => {
+  const listener = () => setIsList()
+  window.addEventListener('resize', listener)
+  return () => {
+    window.removeEventListener('resize', listener)
+  }
+})
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
 <div class="sticky top-0 flex justify-center avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
-  <div class="absolute top-0 left-0 w-16 h-full z-10 pointer-events-none list-bg-left hidden lg:block" />
-  <div class="absolute top-0 right-0 w-16 h-full z-10 pointer-events-none list-bg-right hidden lg:block" />
-  <div class="flex flex-nowrap overflow-x-auto scrollbar-hidden px-3 lg:px-12" bind:this={scrollElement} on:wheel={e => wheelHandler(e)}>
+  <div class="absolute top-0 left-0 w-16 h-full z-20 pointer-events-none list-bg-left hidden lg:block" />
+  <div class="absolute top-0 right-0 w-16 h-full z-20 pointer-events-none list-bg-right hidden lg:block" />
+  <div
+    class="flex flex-nowrap overflow-x-auto scrollbar-hidden px-3 lg:px-12"
+    bind:this={scrollElement}
+    on:wheel={e => wheelHandler(e)}
+  >
+    {#if isList}
+      <button class="flex-none w-12 h-12 my-auto mr-3 z-10 menu-outline rounded-full" on:click={() => dialog.showModal()}>
+        <Svg icon="menu-tile" class="w-9 m-auto" />
+      </button>
+      <Dialog bind:dialog >
+        <DialogDelayIcon
+          style="m-2"
+          ids={apiData.avatarInfoList.map(e => e.costumeId ? [e.avatarId, e.costumeId] : e.avatarId)}
+          ui="avatar"
+          onclick={onSelect}
+        />
+      </Dialog>
+    {/if}
     {#each apiData.avatarInfoList as avatar, i}
       <SideIcon
         id={avatar.avatarId}
@@ -70,5 +109,8 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
   }
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;
+  }
+  .menu-outline {
+    outline: solid 3px rgba(255, 255, 255, .2);
   }
 </style>

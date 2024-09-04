@@ -2,9 +2,10 @@
 import Icon from '@components/icon.svelte'
 import { onMount } from 'svelte'
 
-export let ids: number[]
+export let ids: (number | number[])[]
 export let onclick: (id: number) => void
 export let ui: 'avatar' | 'weapon'
+export let style = ''
 
 let form: HTMLElement
 let divs: HTMLElement[] = []
@@ -31,10 +32,15 @@ onMount(() => {
 })
 </script>
 
-<form bind:this={form} class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2" method="dialog">
+<form bind:this={form} class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2 {style}" method="dialog">
   {#each ids as id, i}
-    <button bind:this={divs[i]} on:click={_ => onclick(id)} id={`${ui}-${i}`}>
-      <Icon id={id} ui={load[i] ? ui : "dummy"} loading="lazy" />
+    <button bind:this={divs[i]} on:click={() => onclick(typeof id === "number" ? id : id[0])} id={`${ui}-${i}`}>
+      <Icon
+        id={typeof id === "number" ? id : id[0]}
+        skinId={typeof id === "number" ? undefined : id[1]}
+        ui={load[i] ? ui : "dummy"}
+        loading="lazy"
+      />
     </button>
   {/each}
 </form>

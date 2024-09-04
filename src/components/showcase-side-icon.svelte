@@ -39,14 +39,14 @@ $: {
 }
 </script>
 
-<button class="side-wrap{style}" on:click={_ => onSelect(id)}>
+<button class="side-wrap{style}" on:click={() => onSelect(id)}>
   <img loading="lazy" width=128 height=128 {src} {alt} class="side-img" />
 </button>
 
 <style>
   .side-wrap {
     position: relative;
-    flex: 0 0 4.5rem;
+    flex: none;
     width: 4.5rem;
     height: 4.5rem;
     padding: calc(.75rem - 3px);
@@ -56,24 +56,24 @@ $: {
     position: absolute;
     transform: translate(-50%, -50%);
     content: "";
-    border: solid 3px;
-    border-color: rgba(255, 255, 255, .2);
+    outline: solid 3px;
+    outline-color: rgba(255, 255, 255, .2);
     background: rgba(0, 0, 0, .2);
-    width: calc(3rem + 6px);
-    height: calc(3rem + 6px);
+    width: 3rem;
+    height: 3rem;
     border-radius: 9999px;
-    transition: border-color .1s ease, background .1s ease, box-shadow .1s ease;
+    transition: outline-color .1s ease, background .1s ease, box-shadow .1s ease;
   }
   .side-active::before {
-    border-color: #96db8380;
+    outline-color: #96db8380;
   }
   .side-select::before {
-    border-color: #4fccf099;
+    outline-color: #4fccf099;
     background: #4fccf099;
     box-shadow: 0 0 1.5rem #4fccf080;
   }
   .side-active.side-select::before {
-    border-color: #96db83;
+    outline-color: #96db83;
   }
   .side-wrap::after {
     position: absolute;

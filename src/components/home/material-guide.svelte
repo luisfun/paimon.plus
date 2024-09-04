@@ -1,4 +1,5 @@
 <script lang="ts">
+import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 // client:load
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
@@ -9,7 +10,6 @@ import weaponJson from '@game/weapon.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
 import type { HTMLButtonAttributes } from 'svelte/elements'
-import InfiniteScroll from './infinite-scroll.svelte'
 import Materials from './materials.svelte'
 const avatarData = avatarJson.filter(e => !(e.id === 10000005 || e.id === 10000007))
 
@@ -96,20 +96,20 @@ const onclick: HTMLButtonAttributes = {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 my-3">
         <div class="grid grid-cols-7 gap-3 mx-auto">
           {#each elements as elem}
-            <button class="w-8 bg-neutral border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={_ => elementFilterHandler(elem)}>
+            <button class="w-8 bg-neutral border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" on:click={() => elementFilterHandler(elem)}>
               <Icon id={elem} ui="element" />
             </button>
           {/each}
         </div>
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
-            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
+            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={() => weaponTypeFilterHandler(type)}>
               <Icon id={type} ui="weapon-type" />
             </button>
           {/each}
         </div>
       </div>
-      <InfiniteScroll
+      <DialogDelayIcon
         ui="avatar"
         ids={avatarData
           .filter(a => !elementFilter[0] || elementFilter.includes(a.element || ""))
@@ -124,13 +124,13 @@ const onclick: HTMLButtonAttributes = {
       <div class="grid grid-cols-1 gap-y-3 my-3">
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
-            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={_ => weaponTypeFilterHandler(type)}>
+            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" on:click={() => weaponTypeFilterHandler(type)}>
               <Icon id={type} ui="weapon-type" />
             </button>
           {/each}
         </div>
       </div>
-      <InfiniteScroll
+      <DialogDelayIcon
         ui="weapon"
         ids={weaponJson.filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)).map(e => e.id)}
         onclick={weaponHandler}

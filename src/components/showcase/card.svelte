@@ -404,7 +404,7 @@ $: {
                                     color: '#fff8',
                                   },
                                 },
-                                sub.rolls.map(_ => '.').join(''),
+                                sub.rolls.map(() => '.').join(''),
                               ),
                             c('div', { sx: { textAlign: 'right' } }, sub.display),
                           ),

@@ -60,16 +60,15 @@ const onModal = () => {
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
-<div class="sticky top-0 flex justify-center avatar-list mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
-  <div class="absolute top-0 left-0 w-16 h-full z-20 pointer-events-none list-bg-left hidden lg:block" />
-  <div class="absolute top-0 right-0 w-16 h-full z-20 pointer-events-none list-bg-right hidden lg:block" />
+<div class="sticky top-0 flex justify-center mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
+  <div class="absolute top-0 left-0 w-full h-full backdrop-blur avatar-list-bg" />
   <div
     class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"
     bind:this={scrollElement}
     on:wheel={e => wheelHandler(e)}
   >
     {#if isList}
-      <button class="flex-none w-12 h-12 my-auto mx-3 z-10 menu-outline rounded-full" on:click={onModal}>
+      <button class="flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" on:click={onModal}>
         <Svg icon="menu-tile" class="w-9 m-auto" />
       </button>
       <Dialog bind:dialog visible={isDialogVisible}>
@@ -91,19 +90,15 @@ const onModal = () => {
       />
     {/each}
   </div>
+  <div class="absolute top-0 left-0 w-16 h-full pointer-events-none list-bg-left hidden lg:block" />
+  <div class="absolute top-0 right-0 w-16 h-full pointer-events-none list-bg-right hidden lg:block" />
 </div>
 {/if}
 
 <style>
-  .avatar-list::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  .avatar-list-bg {
+    z-index: -1;
     background: hsl(223 6.7% 20.6% / .8);
-    backdrop-filter: blur(.5rem);
   }
   .list-bg-left {
     background: linear-gradient(to right, var(--background) calc(100% - 4rem), transparent);

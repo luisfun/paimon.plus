@@ -2,25 +2,17 @@
 // client:only="svelte"
 import type { ApiData, AvatarInfo } from '@components/api'
 import ShowcaseSelector from '@components/showcase-selector.svelte'
-import UidInit from '@components/uid-init.svelte'
-import UidNext from '@components/uid-next.svelte'
+import UidInput from '@components/uid-input.svelte'
 import type { Lang } from '@i18n/utils'
 import Card from './card.svelte'
 
 export let lang: Lang
 
-let uid: number | undefined
 let apiData: ApiData | undefined
-let status = 0
 let avatarInfo: AvatarInfo | undefined = undefined
 </script>
 
-{#if !apiData}
-<UidInit bind:uid bind:apiData bind:status />
-{:else}
-<UidNext bind:uid bind:apiData bind:status />
-{/if}
-
+<UidInput {lang} bind:apiData />
 <ShowcaseSelector {apiData} bind:avatarInfo />
 
 {#if avatarInfo}

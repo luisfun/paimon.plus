@@ -2,7 +2,7 @@ import type { ApiData } from '@components/api'
 
 const uidLogLimit = 9
 
-type UidLog = { name: string; uid: string; pfp: { id?: number; avatarId?: number } }
+export type UidLog = { name: string; uid: string; pfp: { id?: number; avatarId?: number } }
 
 const UID_LOG = 'uid-logs'
 

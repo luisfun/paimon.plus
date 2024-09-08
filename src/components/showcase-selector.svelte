@@ -13,7 +13,7 @@ let scrollElement: HTMLElement
 let scrollLeft = 0
 let dialog: HTMLDialogElement | undefined
 let isList = false
-let olduid = ''
+let listLength = 0
 let isDialogVisible = false
 
 const onSelect = (id: number) => {
@@ -40,10 +40,8 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
 
 const setIsList = (apiData?: ApiData | undefined) => {
   // when update ApiData
-  if (apiData && olduid !== apiData.uid) {
-    isList = false
-    olduid = apiData.uid
-  }
+  if (apiData?.avatarInfoList && listLength > apiData.avatarInfoList.length) isList = false
+  if (apiData) listLength = apiData.avatarInfoList?.length || 0
   setTimeout(() => {
     isList = scrollElement?.offsetWidth < scrollElement?.scrollWidth
   }, 0)

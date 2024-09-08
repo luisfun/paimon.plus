@@ -33,6 +33,9 @@ const clickHandler = async (getUid: number | undefined, cache?: 'cache') => {
   isFetching = false
   logDisabled = !uidLogs[0]
 }
+const keypressHandler = async (e: KeyboardEvent & { currentTarget: EventTarget & HTMLInputElement }) => {
+  if (e.code === 'Enter') await clickHandler(uid)
+}
 const trashHandler = (deleteUid: string) => {
   uidLogs = ls.uidLog.delete(deleteUid).filter(e => e.uid !== uid?.toString())
   logDisabled = !uidLogs[0]
@@ -76,7 +79,7 @@ onMount(async () => {
   </div>
   {/if}
   <div class="flex items-center input input-bordered px-1.5 bg-neutral rounded-full">
-    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-48 text-center text-2xl leading-[3rem]" />
+    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-48 text-center text-2xl leading-[3rem]" on:keypress={keypressHandler} />
     {#if isFetching}
     <div class="loading loading-ring w-8" />
     {:else}
@@ -98,7 +101,7 @@ onMount(async () => {
     <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 rounded-full" on:click={() => dialog.showModal()} disabled={isInitLoading || logDisabled} aria-label="uid logs">
       <Svg icon="clock-rotate-left" />
     </button>
-    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" />
+    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" on:keypress={keypressHandler} />
     {#if isFetching}
     <div class="loading loading-ring w-6" />
     {:else}

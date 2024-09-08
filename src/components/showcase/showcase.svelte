@@ -8,7 +8,7 @@ import Card from './card.svelte'
 
 export let lang: Lang
 
-let apiData: ApiData | undefined
+let apiData: ApiData | undefined = undefined
 let avatarInfo: AvatarInfo | undefined = undefined
 </script>
 

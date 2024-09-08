@@ -11,7 +11,7 @@ export let avatarInfo: AvatarInfo | undefined
 
 let scrollElement: HTMLElement
 let scrollLeft = 0
-let dialog: HTMLDialogElement
+let dialog: HTMLDialogElement | undefined
 let isList = false
 let isDialogVisible = false
 
@@ -22,7 +22,7 @@ $: avatarInfo = apiData?.avatarInfoList?.[0]
 
 const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElement }) => {
-  if (dialog.open) return
+  if (dialog?.open) return
   if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return
   const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth
   if ((scrollElement.scrollLeft <= 0 && e.deltaY < 0) || (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0))
@@ -55,7 +55,7 @@ onMount(() => {
 
 const onModal = () => {
   isDialogVisible = true
-  dialog.showModal()
+  dialog?.showModal()
 }
 </script>
 
@@ -68,12 +68,12 @@ const onModal = () => {
     on:wheel={e => wheelHandler(e)}
   >
     {#if isList}
-      <button class="flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" on:click={onModal}>
+      <button class="flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" on:click={onModal} aria-label="character list">
         <Svg icon="menu-tile" class="w-9 m-auto" />
       </button>
       <Dialog bind:dialog visible={isDialogVisible}>
         <DialogDelayIcon
-          style="m-2"
+          style="m-2{apiData.avatarInfoList.length < 13 ? " !grid-cols-4 max-w-72" : ""}"
           ids={apiData.avatarInfoList.map(e => e.costumeId ? [e.avatarId, e.costumeId] : e.avatarId)}
           ui="avatar"
           onclick={onSelect}

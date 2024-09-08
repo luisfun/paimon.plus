@@ -311,12 +311,20 @@ export type EnkaApi = {
       avatarId: number
       level: number
       costumeId?: number
+      energyType?: number
+      talentLevel?: number
     }[]
     showNameCardIdList?: number[]
     profilePicture: {
       id?: number
       avatarId?: number
     }
+    fetterCount?: number
+    isShowAvatarTalent?: boolean
+    towerStarIndex?: number
+    theaterActIndex?: number
+    theaterModeIndex?: number
+    theaterStarIndex?: number
   }
   avatarInfoList?: AvatarInfo[]
   ttl: number

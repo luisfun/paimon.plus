@@ -13,6 +13,7 @@ let scrollElement: HTMLElement
 let scrollLeft = 0
 let dialog: HTMLDialogElement | undefined
 let isList = false
+let olduid = ''
 let isDialogVisible = false
 
 const onSelect = (id: number) => {
@@ -39,7 +40,10 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
 
 const setIsList = (apiData?: ApiData | undefined) => {
   // when update ApiData
-  if (apiData) isList = false
+  if (apiData && olduid !== apiData.uid) {
+    isList = false
+    olduid = apiData.uid
+  }
   setTimeout(() => {
     isList = scrollElement?.offsetWidth < scrollElement?.scrollWidth
   }, 0)

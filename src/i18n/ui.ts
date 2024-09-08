@@ -13,6 +13,9 @@ export const ui = {
     'home.translators': 'Translators',
     'home.resources': 'Resources',
     'showcase.title': 'Character Showcase',
+    'showcase.error.register': 'No characters found in the Character Showcase.',
+    'showcase.error.public':
+      'Please enable the "Show Character Details" option in your Character Showcase in-game to see the details.',
     'uid.player.ar': 'AR',
     'uid.player.wl': 'WL',
     'uid.player.achievements': 'Achievements',
@@ -77,6 +80,9 @@ export const ui = {
     'home.translators': '翻訳者',
     'home.resources': 'データソース',
     'showcase.title': 'プロフィール キャラクター',
+    'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
+    'showcase.error.public':
+      '「キャラクターラインナップ」の「キャラ詳細非表示」を「キャラ詳細表示中」に切り替えて下さい。',
     'uid.player.achievements': 'アチーブメント',
     'uid.player.friendship': '好感度Max',
     'uid.player.tower': '深境螺旋',

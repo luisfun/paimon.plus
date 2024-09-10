@@ -39,7 +39,7 @@ $: {
 }
 </script>
 
-<button class="relative flex-none w-[4.5rem] h-[4.5rem] p-[calc(.75rem-3px)] pointer" on:click={() => onSelect(id)}>
+<button class="relative flex-none w-[4.5rem] h-[4.5rem] pointer" on:click={() => onSelect(id)}>
   <div class="side-bg absolute top-1/2 left-1/2 -transform-1/2 outline outline-[3px] w-12 h-12 rounded-full transition-all{style}" />
   <div class="absolute bottom-0 left-1/2 -transform-x-1/2 border border-b-2 transition-all {select ? "w-full side-bottom-color": "w-0 border-transparent"}" />
   <img loading="lazy" width=128 height=128 {src} {alt} class="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all {select ? "w-20" : "w-[4.6rem]"}" />

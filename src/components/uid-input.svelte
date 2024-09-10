@@ -22,15 +22,15 @@ let logDisabled = true
 let disabled = true
 $: disabled = !uidTest(uid)
 
-const clickHandler = async (getUid: number | undefined, cache?: 'cache', isInit = false) => {
-  if (!isInit) isFetching = true
+const clickHandler = async (getUid: number | undefined, cache?: 'cache') => {
+  isFetching = true
   logDisabled = true
   const res = await fetchUid(getUid, cache)
   uid = getUid
   apiData = res.json
   status = apiData?.status || res.status
   uidLogs = res.uidLogs.filter(e => e.uid !== getUid?.toString())
-  if (!isInit) isFetching = false
+  isFetching = false
   logDisabled = !uidLogs[0]
 }
 const keypressHandler = async (e: KeyboardEvent & { currentTarget: EventTarget & HTMLInputElement }) => {
@@ -44,12 +44,10 @@ const trashHandler = (deleteUid: string) => {
 onMount(async () => {
   const lsUid = localStorage.getItem('uid')
   const uid = lsUid ? Number(lsUid) : undefined
-  isFetching = true
   await Promise.all([
-    clickHandler(uid, 'cache', true),
-    clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined, true),
+    clickHandler(uid, 'cache'),
+    clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined),
   ])
-  isFetching = false
   isInitLoading = false
 })
 </script>
@@ -106,10 +104,10 @@ onMount(async () => {
       <Svg icon="clock-rotate-left" />
     </button>
     <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" on:keypress={keypressHandler} />
-    {#if isFetching}
+    {#if isInitLoading || isFetching}
     <div class="loading loading-ring w-6" />
     {:else}
-    <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 rounded-full" on:click={() => clickHandler(uid)} disabled={isInitLoading || disabled} aria-label="get uid info">
+    <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 rounded-full" on:click={() => clickHandler(uid)} {disabled} aria-label="get uid info">
       <Svg icon="angle-right" height="100%" />
     </button>
     {/if}

@@ -44,8 +44,10 @@ const trashHandler = (deleteUid: string) => {
 onMount(async () => {
   const lsUid = localStorage.getItem('uid')
   const uid = lsUid ? Number(lsUid) : undefined
-  await clickHandler(uid, 'cache')
-  await clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined)
+  await Promise.all([
+    clickHandler(uid, 'cache'),
+    clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined),
+  ])
   isInitLoading = false
 })
 </script>

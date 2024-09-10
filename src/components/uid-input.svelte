@@ -22,15 +22,15 @@ let logDisabled = true
 let disabled = true
 $: disabled = !uidTest(uid)
 
-const clickHandler = async (getUid: number | undefined, cache?: 'cache') => {
-  isFetching = true
+const clickHandler = async (getUid: number | undefined, cache?: 'cache', isInit = false) => {
+  if (!isInit) isFetching = true
   logDisabled = true
   const res = await fetchUid(getUid, cache)
   uid = getUid
   apiData = res.json
   status = apiData?.status || res.status
   uidLogs = res.uidLogs.filter(e => e.uid !== getUid?.toString())
-  isFetching = false
+  if (!isInit) isFetching = false
   logDisabled = !uidLogs[0]
 }
 const keypressHandler = async (e: KeyboardEvent & { currentTarget: EventTarget & HTMLInputElement }) => {
@@ -45,8 +45,8 @@ onMount(async () => {
   const lsUid = localStorage.getItem('uid')
   const uid = lsUid ? Number(lsUid) : undefined
   await Promise.all([
-    clickHandler(uid, 'cache'),
-    clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined),
+    clickHandler(uid, 'cache', true),
+    clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined, true),
   ])
   isInitLoading = false
 })

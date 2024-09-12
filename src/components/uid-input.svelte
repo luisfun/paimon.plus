@@ -92,7 +92,7 @@ onMount(async () => {
   </div>
 </div>
 {:else}
-<div class="flex justify-between items-center h-10 px-1 md:mb-3">
+<div class="flex justify-between items-center h-10 px-1">
   <div class="flex items-center">
     <div class="w-10 h-10 mr-4 flex justify-center items-center">
       <Icon id={apiData.playerInfo.profilePicture.id || apiData.playerInfo.profilePicture.avatarId || 1} ui="circle" />

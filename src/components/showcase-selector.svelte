@@ -70,8 +70,8 @@ const onModal = () => {
     on:wheel={e => wheelHandler(e)}
   >
     {#if isList}
-      <button class="flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" on:click={onModal} aria-label="character list">
-        <Svg icon="menu-tile" class="w-9 m-auto" />
+      <button class="relative flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" on:click={onModal} aria-label="character list">
+        <Svg icon="menu-tile" class="absolute top-1/2 left-1/2 -transform-1/2 w-9" />
       </button>
       <Dialog bind:dialog visible={isDialogVisible}>
         <DialogDelayIcon

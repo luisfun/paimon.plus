@@ -4,11 +4,12 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@layout": ["src/layout/index.astro"],
+      "@manual/*": ["src/.manual-update/*"],
       "@assets/*": ["src/assets/*"],
       "@components/*": ["src/components/*"],
+      "@game/*": ["src/game/*"],
       "@i18n/*": ["src/i18n/*"],
-      "@game/*": ["src/game/*"]
+      "@layout": ["src/layout/index.astro"]
     }
   },
   "extends": "astro/tsconfigs/strict"

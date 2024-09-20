@@ -24,7 +24,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
 
   //********** create table **********
-  await createTable(ctx.env)
+  //await createTable(ctx.env)
 
   //********** cache section **********
   // cache init

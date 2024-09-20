@@ -16,6 +16,7 @@ const KEY_TABLE_NAMES = 'table-names'
 const QUERY_GET_TABLE = 'SELECT name FROM sqlite_master WHERE type="table"'
 const QUERY_GET_KV = 'SELECT * FROM key_value WHERE key = ? LIMIT 1'
 const QUERY_SET_KV = 'REPLACE INTO key_value (key, updated_at, value) VALUES(?, ?, ?)'
+const QUERY_SET_UID = 'REPLACE INTO cache_uid (uid, updated_at, status, data) VALUES(?, ?, ?, ?)'
 
 export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const { uid } = ctx.params
@@ -23,7 +24,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
 
   //********** create table **********
-  //await createTable(ctx.env)
+  await createTable(ctx.env)
 
   //********** cache section **********
   // cache init
@@ -32,7 +33,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const cacheKey = reqUrl.origin + reqUrl.pathname
 
   // get db, cache
-  const cacheData = await Promise.all([
+  const rawCache = await Promise.all([
     (async () => {
       const db = ctx.env.showcase
       const results = (
@@ -42,32 +43,34 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
           db.prepare(QUERY_GET_KV).bind(KEY_UIDS),
         ])
       ).map(e => e.results)
-      const cache = results[0][0] as { uid: string; data: string; updated_at: number } | undefined
-      const status = results[1][0] as DBKVResult
-      const uids = JSON.parse((results[1][0] as DBKVResult)?.value || '[]') as string[]
-      return { cache, status, uids }
+      const uidCache = results[0][0] as { uid: string; status: number; data: string; updated_at: number } | undefined
+      const enkaStatus = results[1][0] as DBKVResult
+      const storedUids = JSON.parse((results[1][0] as DBKVResult)?.value || '[]') as string[]
+      return { uidCache, enkaStatus, storedUids }
     })(),
     cache.match(cacheKey),
   ])
-  const uidCache = await cacheData[1]?.json<ApiData>()
+  const { uidCache, enkaStatus, storedUids } = rawCache[0]
+  const uidCacheData = uidCache ? (JSON.parse(uidCache.data) as ApiData) : await rawCache[1]?.json<ApiData>()
+  const timestamp = Date.now()
   const isValid = (result: { updated_at: number } | undefined, sec: number) =>
-    !!result && result.updated_at + sec * 1e3 > Date.now()
+    !!result && result.updated_at + sec * 1e3 > timestamp
+  const resCache = (age: number) => (uidCacheData ? res({ ...uidCacheData, status: 304 }, 203, age) : resStatus(599))
+  const resError = (status: number) =>
+    uidCacheData ? res({ ...uidCacheData, status }, 203, uidCacheData.ttl) : resStatus(status)
 
   // response error
-  const uidStatus = cacheData[0].cache?.data
-  if (isValid(cacheData[0].cache, 180) && (uidStatus === '400' || uidStatus === '404'))
-    return resError(uidStatus, uidCache)
-  if (isValid(cacheData[0].status, 180)) return resError(cacheData[0].status.value, uidCache) // 424/429/500/503
+  if (isValid(uidCache, 180) && (uidCache?.status === 400 || uidCache?.status === 404)) return resError(uidCache.status)
+  if (isValid(enkaStatus, 180)) return resError(Number(enkaStatus.value)) // 424/429/500/503
 
   // response cache
-  if (isValid(cacheData[0].cache, 60)) {
-    const uidData: ApiData = JSON.parse(cacheData[0].cache.data)
+  if (isValid(uidCache, 60)) {
     //const uidAllData = getDBShowcase(ctx.env, uid)
-    const age = Math.ceil(uidData.timestamp / 1000 + uidData.ttl - Date.now() / 1000)
-    if (age > 0) return resJson203(304, uidData, age)
+    const age = Math.ceil(uidCacheData.timestamp / 1000 + uidCacheData.ttl - timestamp / 1000)
+    if (age > 0) return resCache(age)
   }
   // response force cache
-  if (ctx.request.headers.get('cache-control') === 'force-cache' && uidCache) return resJson203(304, uidCache, 0)
+  if (ctx.request.headers.get('cache-control') === 'force-cache' && uidCacheData) return resCache(0)
 
   //if (uid) return resJson({uid}, 200, 60)
 
@@ -84,34 +87,34 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     case 429:
     case 500:
     case 503:
-      await putDB('kv', ctx.env, KEY_STATUS, status.toString(), Date.now())
+      await putDBKV(ctx.env.showcase, KEY_STATUS, Date.now(), status.toString())
       //await sendDiscord(status)
       console.log(`fetch enka.status: ${status}, ${uid}`)
-      return resError(status, uidCache)
+      return resError(status)
     case 400:
     case 404:
-      await putDB('uid', ctx.env, uid, status.toString(), Date.now())
-      return resError(status, uidCache)
+      await putUidCache(ctx.env, uid, Date.now(), status, '')
+      return resError(status)
   }
   // other error
   if (status < 200 || 399 < status) {
     console.warn(`unknown error: ${status}`)
-    return resStatus(599)
+    return resError(599)
   }
 
-  const json = { ...(await uidData[0].json<EnkaApi>()), ver: API_VER, timestamp: Date.now() }
-  const res = resJson(json, status, json.ttl)
+  const json: ApiData = { ...(await uidData[0].json<EnkaApi>()), ver: API_VER, timestamp: Date.now() }
+  const response = res(json, status, json.ttl)
   // save
   ctx.waitUntil(
     Promise.all([
-      saveCache(cache, cacheKey, res),
-      saveShowcase(ctx.env, uid, json, cacheData[0].uids),
+      saveCache(cache, cacheKey, response),
+      saveShowcase(ctx.env, uid, json, storedUids),
       saveStatistical(ctx.env, uid, json),
     ]),
   )
 
   // response
-  return res
+  return response
 }
 
 //********** create table **********
@@ -122,7 +125,9 @@ const createTable = async (env: Env) => {
   let tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
   if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableNames.includes('cache_uid'))
-    await db.prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
+    await db
+      .prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, status INT, data TEXT)')
+      .all()
   // statistical sources
   db = env.statistical
   tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
@@ -132,26 +137,16 @@ const createTable = async (env: Env) => {
 }
 
 const resStatus = (status: number) => new Response(null, { status })
-const resError = (status: string | number, uidCache: ApiData | undefined) =>
-  uidCache ? resJson203(status, uidCache, uidCache.ttl) : resStatus(Number(status))
-const resJson203 = (status: string | number, apiData: ApiData | undefined, age: number) =>
-  resJson({ ...apiData, status: Number(status) }, 203, age)
-const resJson = (json: unknown, status: number, age: number) =>
-  new Response(JSON.stringify(json), {
-    status,
-    headers: { 'Content-Type': 'application/json', 'Cache-Control': `max-age=${age}` },
-  })
+// biome-ignore format: ternary operator
+const res = (data: ApiData | undefined, status: number, age: number) =>
+  !data && Number(status) < 400 ? resStatus(599) :
+  !data ? resStatus(status) :
+  new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': `max-age=${age}` } })
 
-const getDB = async (type: 'kv', env: Env, key: string) => {
-  const db = env.showcase
-  const query = 'SELECT * FROM key_value WHERE key = ? LIMIT 1'
-  return await db.prepare(query).bind(key).first<{ key: string; value: string; updated_at: number }>()
-}
-const putDB = async (type: 'kv' | 'uid', env: Env, key: string, value: string, timestamp: number) => {
-  const db = env.showcase
-  const query = type === 'uid' ? 'REPLACE INTO cache_uid (uid, updated_at, data) VALUES(?, ?, ?)' : QUERY_SET_KV
-  return await db.prepare(query).bind(key, timestamp, value).all<undefined>()
-}
+const putUidCache = (env: Env, uid: string, timestamp: number, status: number, data: string) =>
+  env.showcase.prepare(QUERY_SET_UID).bind(uid, timestamp, status, data).all<undefined>()
+const putDBKV = (db: D1Database, key: string, timestamp: number, value: string) =>
+  db.prepare(QUERY_SET_KV).bind(key, timestamp, value).all<undefined>()
 
 const getDBShowcase = async (env: Env, uid: string) => {}
 
@@ -166,9 +161,7 @@ const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: string[]
   const { timestamp } = json
   // cache
   await db.batch([
-    db
-      .prepare('REPLACE INTO cache_uid (uid, updated_at, data) VALUES(?, ?, ?)')
-      .bind(uid, timestamp, JSON.stringify(json)),
+    db.prepare(QUERY_SET_UID).bind(uid, timestamp, 200, JSON.stringify(json)),
     db.prepare('DELETE FROM cache_uid WHERE updated_at < ?').bind(timestamp - 180_000),
   ])
   // save

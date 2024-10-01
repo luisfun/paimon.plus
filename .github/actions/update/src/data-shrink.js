@@ -49,12 +49,14 @@ const E = {
 }
 
 export const dataShrink = () => {
+  console.log('Data Shrink Start')
   dumpAvatar()
   dumpWeapon()
   dumpMaterial()
   dumpProfilePicture()
   dumpTextMap()
   dumpReliquaryAffix()
+  console.log('Data Shrink End')
 }
 
 const dumpAvatar = () => {

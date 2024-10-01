@@ -8,23 +8,27 @@ const scrapingMaxCount = 1000 // newスクレイピングの最大回数
 
 /**
  * 実行用
- * @param {"update" | "newOnly"} type ローカル用
+ * @param {"new" | "hash" | "null"} type ローカル用
  * @param {boolean} updateOnly ローカル用 アップデートのみ 新ページを読まない
  * @param {number} num アップデートする数
  */
-export const wikiScraping = async (type = undefined, num = 1000) => {
+export const wikiScraping = async (type = undefined, num = scrapingMaxCount) => {
+  console.log('Wiki Scraping Start')
   // 読み取り済みIDの取得
   const wikiJson = JSON.parse(fs.readFileSync(`${folder.wiki + fileName}.json`, 'utf8'))
   // ブラウザの立ち上げ
   const browser = await puppeteer.launch({ headless: 'new' })
   const page = await browser.newPage()
+  page.setDefaultNavigationTimeout(60_000)
   //
   switch (type) {
-    case 'newOnly':
+    case 'new':
       await newScraping(wikiJson, page, num)
       break
-    case 'update':
+    case 'hash':
       await hashScraping(wikiJson, page, num)
+      break
+    case 'null':
       await nullScraping(wikiJson, page, num)
       break
     default:
@@ -37,6 +41,7 @@ export const wikiScraping = async (type = undefined, num = 1000) => {
   await browser.close()
   // 保存
   fs.writeFileSync(`${folder.wiki + fileName}.json`, JSON.stringify(wikiJson, null, 2))
+  console.log('Wiki Scraping End')
 }
 
 /**

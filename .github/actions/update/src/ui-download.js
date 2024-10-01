@@ -8,12 +8,14 @@ const ambrUrl = 'https://api.ambr.top/assets/UI/'
 const enkaUrl = 'https://enka.network/ui/'
 
 export const uiDownload = async () => {
+  console.log('UI Download Start')
   // Downloaded Images
   const uiFiles = fs.readdirSync(folder.ui)
   await getAvatarImages(uiFiles)
   await getWeaponImages(uiFiles)
   await getMaterialImages(uiFiles)
   await getProfilePicture(uiFiles)
+  console.log('UI Download End')
 }
 
 /**

@@ -43,6 +43,7 @@ const gitlabFileName = [
 ]
 
 export const dataDownload = async () => {
+  console.log('Data Download Start')
   await Promise.all(
     gitlabFileName.map(async name => {
       const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw`
@@ -58,4 +59,5 @@ export const dataDownload = async () => {
       fs.writeFileSync(`${folder.text + name}.json`, JSON.stringify(json, null, 2))
     }),
   )
+  console.log('Data Download End')
 }

@@ -3,10 +3,12 @@ import sharp from 'sharp'
 import { folder } from './utils.js'
 
 export const uiSharp = async () => {
+  console.log('UI Sharp Start')
   await createWebp()
   await createMinAvatar()
   await createMinImage()
   //await otherSharp()
+  console.log('UI Sharp End')
 }
 
 const createWebp = async () => {

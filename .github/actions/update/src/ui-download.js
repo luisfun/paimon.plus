@@ -2,9 +2,9 @@ import fs from 'node:fs'
 import { pipeline } from 'node:stream/promises'
 import { folder, sleep } from './utils.js'
 
-// @anonsbelle https://ambr.top
+// @Hakush.in https://hakush.in
 // @Algoinde https://enka.network
-const ambrUrl = 'https://api.ambr.top/assets/UI/'
+const ambrUrl = 'https://api.hakush.in/gi/UI/'
 const enkaUrl = 'https://enka.network/ui/'
 
 export const uiDownload = async () => {

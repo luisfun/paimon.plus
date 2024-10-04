@@ -15,14 +15,14 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/svelte": "^5.7.1",
+    "@astrojs/svelte": "^6.0.0-beta.0",
     "@astrojs/tailwind": "^5.1.1",
     "@biomejs/biome": "1.9.3",
     "@cloudflare/workers-types": "^4.20240925.0",
-    "astro": "^4.15.11",
+    "astro": "^5.0.0-beta.3",
     "astro-webmanifest": "^1.0.0",
     "daisyui": "^4.12.12",
-    "svelte": "^4.2.19",
+    "svelte": "^5.0.0-next.262",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
     "wrangler": "^3.80.0"

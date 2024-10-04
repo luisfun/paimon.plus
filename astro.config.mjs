@@ -1,12 +1,12 @@
 import svelte from '@astrojs/svelte'
 import tailwind from '@astrojs/tailwind'
 import webmanifest from 'astro-webmanifest'
-import { defineConfig, squooshImageService } from 'astro/config'
+import { defineConfig, passthroughImageService } from 'astro/config'
 
 // https://astro.build/config
 export default defineConfig({
   image: {
-    service: squooshImageService(), // デフォルトの sharp は他のパッケージと競合してるのかも？（動かない）
+    service: passthroughImageService(), // ???
   },
   i18n: {
     defaultLocale: 'en',

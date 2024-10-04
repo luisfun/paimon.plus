@@ -14,17 +14,17 @@
     "update:wiki": "node .github/local-scripts/wiki-update.mjs"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.3",
+    "@astrojs/check": "^0.9.4",
     "@astrojs/svelte": "^5.7.1",
     "@astrojs/tailwind": "^5.1.1",
     "@biomejs/biome": "1.9.3",
     "@cloudflare/workers-types": "^4.20240925.0",
     "astro": "^4.15.11",
     "astro-webmanifest": "^1.0.0",
-    "daisyui": "^4.12.11",
+    "daisyui": "^4.12.12",
     "svelte": "^4.2.19",
     "tailwindcss": "^3.4.13",
     "typescript": "^5.6.2",
-    "wrangler": "^3.79.0"
+    "wrangler": "^3.80.0"
   }
 }

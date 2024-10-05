@@ -63,7 +63,7 @@ const onModal = () => {
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
 <div class="sticky -top-px flex justify-center mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
-  <div class="absolute inset-0 backdrop-blur avatar-list-bg" />
+  <div class="absolute inset-0 backdrop-blur avatar-list-bg"></div>
   <div
     class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"
     bind:this={scrollElement}
@@ -92,15 +92,15 @@ const onModal = () => {
       />
     {/each}
   </div>
-  <div class="absolute top-0 bottom-0 left-0 w-16 pointer-events-none list-bg-left hidden lg:block" />
-  <div class="absolute top-0 bottom-0 right-0 w-16 pointer-events-none list-bg-right hidden lg:block" />
+  <div class="absolute top-0 bottom-0 left-0 w-16 pointer-events-none list-bg-left hidden lg:block"></div>
+  <div class="absolute top-0 bottom-0 right-0 w-16 pointer-events-none list-bg-right hidden lg:block"></div>
 </div>
 {/if}
 
 <style>
   .avatar-list-bg {
     z-index: -1;
-    background: hsl(223 6.7% 20.6% / .8);
+    background: #242734cc;
   }
   .list-bg-left {
     background: linear-gradient(to right, var(--background) calc(100% - 4rem), transparent);

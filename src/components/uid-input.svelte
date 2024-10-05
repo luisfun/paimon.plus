@@ -54,7 +54,7 @@ onMount(async () => {
 
 {#if isInitLoading && !apiData}
 <div class="flex justify-center mt-[15svh]">
-  <div class="loading loading-ring w-24" />
+  <div class="loading loading-ring w-24"></div>
 </div>
 {:else if !apiData}
 <div class="flex flex-col items-center mt-[15svh]">
@@ -83,7 +83,7 @@ onMount(async () => {
   <div class="flex items-center input input-bordered px-1.5 bg-neutral rounded-full">
     <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-48 text-center text-2xl leading-[3rem]" on:keypress={keypressHandler} />
     {#if isFetching}
-    <div class="loading loading-ring w-8" />
+    <div class="loading loading-ring w-8"></div>
     {:else}
     <button class="btn btn-neutral p-0.5 min-h-8 w-8 h-8 rounded-full" on:click={() => clickHandler(uid)} {disabled} aria-label="get uid info">
       <Svg icon="angle-right" height="100%" />
@@ -105,7 +105,7 @@ onMount(async () => {
     </button>
     <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" on:keypress={keypressHandler} />
     {#if isInitLoading || isFetching}
-    <div class="loading loading-ring w-6" />
+    <div class="loading loading-ring w-6"></div>
     {:else}
     <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 rounded-full" on:click={() => clickHandler(uid)} {disabled} aria-label="get uid info">
       <Svg icon="angle-right" height="100%" />

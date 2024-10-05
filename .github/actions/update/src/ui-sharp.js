@@ -7,7 +7,6 @@ export const uiSharp = async () => {
   await createWebp()
   await createMinAvatar()
   await createMinImage()
-  //await otherSharp()
   console.log('UI Sharp End')
 }
 
@@ -79,15 +78,32 @@ const minDiff = names => {
   return downloadedFiles.filter(e => sharpedFiles.indexOf(e) === -1)
 }
 
-const otherSharp = async () => {
-  const imgFolder = 'src/game/card-assets/'
-  const imgDist = 'public/images/card-assets/'
+// local-script
+export const otherSharp = async () => {
+  const imgFolder = 'src/assets/.images/'
+  const imgDist = 'src/assets/webp/'
   const imgFiles = fs.readdirSync(imgFolder).map(e => e.slice(0, -4))
   await Promise.all(
-    imgFiles.map(name =>
+    assetsDiff(imgFiles).map(name =>
       sharp(`${imgFolder + name}.png`)
-        .webp({ lossless: true })
+        .webp()
         .toFile(`${imgDist + name}.webp`),
     ),
   )
+}
+
+/**
+ * @param {string[]} names
+ * @returns {string[]}
+ */
+const assetsDiff = names => {
+  const downloadedFiles = fs
+    .readdirSync('src/assets/.images/')
+    .map(e => e.slice(0, -4))
+    .filter(e => names.includes(e))
+  const sharpedFiles = fs
+    .readdirSync('src/assets/webp/')
+    .map(e => e.slice(4, -5))
+    .filter(e => names.includes(e))
+  return downloadedFiles.filter(e => sharpedFiles.indexOf(e) === -1)
 }

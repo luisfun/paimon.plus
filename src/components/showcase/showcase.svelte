@@ -18,4 +18,4 @@ let avatarInfo: AvatarInfo | undefined = undefined
 <ShowcaseSelector {apiData} bind:avatarInfo />
 <StatsCard {lang} {avatarInfo} />
 
-<div class="h-svh" />
+<div class="h-svh"></div>

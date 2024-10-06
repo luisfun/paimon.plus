@@ -34,6 +34,7 @@ export const ui = {
     'uid.error.li2': '2. Try entering the UID again later.',
     'uid.error.report': 'If you report it on our Discord, we might be able to deal with it sooner.',
     'uid.error.link': 'Discord invitation link',
+    "card.download": "Download",
     // stat
     'Max HP': 'Max HP',
     'Base ATK': 'Base ATK',
@@ -99,6 +100,7 @@ export const ui = {
     'uid.error.li2': '2. 時間を置いてから、もう一度UIDを入力してみてください。',
     'uid.error.report': 'Discordで報告すると、より早く対応できるかもしれません。',
     'uid.error.link': 'Discordの招待リンク',
+    "card.download": "ダウンロード",
     // stat
     'Max HP': 'HP上限',
     'Base ATK': '基礎攻撃力',

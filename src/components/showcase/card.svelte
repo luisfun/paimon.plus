@@ -429,4 +429,4 @@ $: {
 }
 </script>
 
-<canvas width="1920" height="480" class="w-full" bind:this={canvas} />
+<canvas width="1920" height="480" class="w-full" bind:this={canvas}></canvas>

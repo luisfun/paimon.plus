@@ -11,11 +11,13 @@ type SubStat = 'CRIT' | 'HP' | 'ATK' | 'DEF' | 'ER' | 'EM'
 const SubStats = RawSubStats as Record<keyof typeof RawSubStats, SubStat[]>
 const subStats = (name: string) => SubStats[name as keyof typeof RawSubStats] || SubStats.default
 
-type Props = {
+const {
+  lang,
+  avatarInfo,
+}: {
   lang: Lang
   avatarInfo: AvatarInfo | undefined
-}
-const { lang, avatarInfo }: Props = $props()
+} = $props()
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 

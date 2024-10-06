@@ -8,15 +8,21 @@ import weaponJson from '@game/weapon.json'
 import type { HTMLImgAttributes } from 'svelte/elements'
 const textMap: { en: Record<number, string> } = textMapJson
 
-type Props = {
+const {
+  id,
+  skinId,
+  ui,
+  text,
+  loading,
+  style,
+}: {
   id: number | string
   skinId?: number
   ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
   text?: string | number
   loading?: HTMLImgAttributes['loading']
-  style: string
-}
-const { id, skinId, ui, text, loading, style = '' }: Props = $props()
+  style?: string
+} = $props()
 
 const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
 const rankNum: Record<string, number> = {
@@ -25,8 +31,8 @@ const rankNum: Record<string, number> = {
   QUALITY_ORANGE_SP: 5,
 }
 
-let imgProps: HTMLImgAttributes = $derived.by(() => {
-  const sx = `bg-cover w-full rounded-[4%_4%_27%] ${style}`
+let imgProps = $derived.by<HTMLImgAttributes>(() => {
+  const sx = `bg-cover w-full rounded-[4%_4%_27%]${style ? ` ${style}` : ''}`
   switch (ui) {
     case 'avatar': {
       const a = avatarJson.find(e => e.id === id)

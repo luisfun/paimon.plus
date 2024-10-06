@@ -1,18 +1,29 @@
+<svelte:options runes={true} />
 <script lang="ts">
-export let dialog: HTMLDialogElement | undefined = undefined
-export let id: string | undefined = undefined
-export let maxFixed = false
-export let visible = true
+import type { Snippet } from 'svelte'
+let {
+  dialog = $bindable(),
+  id,
+  maxFixed = false,
+  visible = true,
+  children,
+}: {
+  dialog?: HTMLDialogElement
+  id?: string
+  maxFixed?: boolean
+  visible?: boolean
+  children: Snippet
+} = $props()
 </script>
 
 <dialog bind:this={dialog} {id} class="modal">
   <div class="modal-box bg-background p-0 border border-border sm:max-w-xl md:max-w-2xl max-h-[calc(100svh-5rem)]{maxFixed ? " h-full" : " w-auto"}">
     {#if visible}
-    <slot />
+      {@render children()}
     {/if}
   </div>
   <form method="dialog" class="modal-backdrop">
-    <button aria-label="Close" />
+    <button aria-label="Close"></button>
   </form>
 </dialog>
 

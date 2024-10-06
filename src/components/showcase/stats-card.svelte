@@ -1,15 +1,15 @@
 <svelte:options runes={true} />
 <script lang="ts">
 import type { AvatarInfo } from '@components/api'
+import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
+import { useTranslatedPath, useTranslations } from '@i18n/utils'
 import RawSubStats from '@manual/showcase-sub-stats.json'
 import Card from './card.svelte'
-import Svg from '@components/svg.svelte'
-import { useTranslations, useTranslatedPath } from '@i18n/utils'
-const en = useTranslations("en")
+const en = useTranslations('en')
 type SubStat = 'CRIT' | 'HP' | 'ATK' | 'DEF' | 'ER' | 'EM'
 const SubStats = RawSubStats as Record<keyof typeof RawSubStats, SubStat[]>
-const subStats = (name: string) => SubStats[name as keyof typeof RawSubStats] || SubStats["default"]
+const subStats = (name: string) => SubStats[name as keyof typeof RawSubStats] || SubStats.default
 
 type Props = {
   lang: Lang
@@ -19,7 +19,7 @@ const { lang, avatarInfo }: Props = $props()
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 
-let subMarks = $state(subStats(en(avatarInfo?.avatarId || 0, "avatar")))
+let subMarks = $state(subStats(en(avatarInfo?.avatarId || 0, 'avatar')))
 </script>
 
 {#if avatarInfo}

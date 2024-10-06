@@ -1,3 +1,4 @@
+<svelte:options runes={true} />
 <script lang="ts">
 import avatarJson from '@game/avatar.json'
 import materialJson from '@game/material.json'
@@ -5,101 +6,108 @@ import profilePictureJson from '@game/profile-picture.json'
 import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
 import type { HTMLImgAttributes } from 'svelte/elements'
-type TextMap = { en: Record<number, string> }
+const textMap: { en: Record<number, string> } = textMapJson
 
-export let id: number | string
-export let skinId: number | undefined = undefined
-export let ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
-export let text: string | number = ''
-export let loading: HTMLImgAttributes['loading'] = undefined
-export let style = ''
+type Props = {
+  id: number | string
+  skinId?: number
+  ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
+  text?: string | number
+  loading?: HTMLImgAttributes['loading']
+  style: string
+}
+const { id, skinId, ui, text, loading, style = '' }: Props = $props()
 
 const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
-let src = dummySrc
-let alt = 'None'
-let width: number | undefined = 1
-let height: number | undefined = 1
-let sx = ''
-
 const rankNum: Record<string, number> = {
   QUALITY_ORANGE: 5,
   QUALITY_PURPLE: 4,
   QUALITY_ORANGE_SP: 5,
 }
 
-const setSrc = (newSrc: string, w: number | undefined, h?: number) => {
-  width = w
-  height = h || w
-  if (typeof window === 'undefined') {
-    src = newSrc
-  } else {
-    const img = new Image()
-    img.onload = () => {
-      src = newSrc
-    }
-    src = dummySrc
-    img.src = newSrc
-  }
-}
-$: {
-  sx = 'bg-cover w-full rounded-[4%_4%_27%]'
+let imgProps: HTMLImgAttributes = $derived.by(() => {
+  const sx = `bg-cover w-full rounded-[4%_4%_27%] ${style}`
   switch (ui) {
     case 'avatar': {
       const a = avatarJson.find(e => e.id === id)
       if (!a) break
       const key = a.costumes?.find(e => e.skinId === skinId)?.key || a.key
-      setSrc(`/images/ui/Min_UI_AvatarIcon_${key}.webp`, 192)
-      alt = (textMapJson as TextMap).en[a.nameTextMapHash]
-      sx += ` bg-rank-${rankNum[a.qualityType] || 1}`
-      break
+      return {
+        src: `/images/ui/Min_UI_AvatarIcon_${key}.webp`,
+        width: 192,
+        height: 192,
+        alt: textMap.en[a.nameTextMapHash],
+        class: `${sx} bg-rank-${rankNum[a.qualityType] || 1}`,
+      }
     }
     case 'weapon': {
       const w = weaponJson.find(e => e.id === id)
       if (!w) break
-      setSrc(`/images/ui/Min_${w.icon}.webp`, 128)
-      alt = (textMapJson as TextMap).en[w.nameTextMapHash]
-      sx += ` bg-rank-${w.rankLevel}`
-      break
+      return {
+        src: `/images/ui/Min_${w.icon}.webp`,
+        width: 128,
+        height: 128,
+        alt: textMap.en[w.nameTextMapHash],
+        class: `${sx} bg-rank-${w.rankLevel}`,
+      }
     }
     case 'material': {
       const m = materialJson.find(e => e.id === id)
       if (!m) break
-      setSrc(`/images/ui/Min_${m.icon}.webp`, 128)
-      alt = (textMapJson as TextMap).en[m.nameTextMapHash]
-      sx += ` bg-rank-${m.rankLevel || 1}`
-      break
+      return {
+        src: `/images/ui/Min_${m.icon}.webp`,
+        width: 128,
+        height: 128,
+        alt: textMap.en[m.nameTextMapHash],
+        class: `${sx} bg-rank-${m.rankLevel || 1}`,
+      }
     }
     case 'element': {
-      setSrc(`/images/element/${id}.webp`, 84)
-      alt = id.toString()
-      sx = ''
-      break
+      return {
+        src: `/images/element/${id}.webp`,
+        width: 84,
+        height: 84,
+        alt: id.toString(),
+        class: style,
+      }
     }
     case 'weapon-type': {
-      setSrc(`/images/weapon-type/${id}.webp`, 56)
-      alt = id.toString()
-      sx = ''
-      break
+      return {
+        src: `/images/weapon-type/${id}.webp`,
+        width: 56,
+        height: 56,
+        alt: id.toString(),
+        class: style,
+      }
     }
     case 'circle': {
       const pfp =
         (profilePictureJson as Record<string | number, string>)[id] ||
         `UI_AvatarIcon_${avatarJson.find(e => e.id === id)?.key}`
-      setSrc(`/images/ui/Min_${pfp}.webp`, undefined, 128)
-      alt = pfp?.split('_')[2] || ''
-      sx += ' pfp-icon'
-      break
+      return {
+        src: `/images/ui/Min_${pfp}.webp`,
+        width: undefined,
+        height: 128,
+        alt: pfp?.split('_')[2] || '',
+        class: `${sx} pfp-icon`,
+      }
     }
   }
-  sx += ` ${style}`
-}
+  return {
+    src: dummySrc,
+    width: 1,
+    height: 1,
+    alt: 'None',
+    class: sx,
+  }
+})
 </script>
 
 {#if text}
 <div class="relative rounded-[4%_4%_27%] overflow-hidden">
-  <img {loading} {width} {height} {src} {alt} class={sx} />
+  <img {loading} {...imgProps} />
   <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">{text}</div>
 </div>
 {:else}
-<img {loading} {width} {height} {src} {alt} class={sx} />
+<img {loading} {...imgProps} />
 {/if}

@@ -39,8 +39,7 @@ const propsInit = (style: string | undefined) => ({
   class: styleInit(style),
 })
 
-let imgProps = $state.raw<HTMLImgAttributes>(propsInit(style))
-const newProps = $derived.by(() => {
+const imgProps = $derived.by(() => {
   const sx = styleInit(style)
   switch (ui) {
     case 'avatar': {
@@ -110,24 +109,25 @@ const newProps = $derived.by(() => {
   }
   return propsInit(style)
 })
+let overwriteProps = $state<HTMLImgAttributes>({})
 let srcLog = $state(dummySrc)
 let isInitialRender = $state(true)
 
 $effect(() => {
-  if (isInitialRender || !dummyLoading || srcLog === newProps.src || typeof window === 'undefined') {
-    console.log('apend')
-    imgProps = newProps
+  if (isInitialRender || !dummyLoading || srcLog === imgProps.src) {
+    overwriteProps = {}
+    srcLog = imgProps.src
     isInitialRender = false
   } else {
     console.log('dummyLoading')
-    imgProps = { ...newProps, src: dummySrc }
+    overwriteProps = { src: dummySrc }
     if (typeof window !== 'undefined') {
       const img = new Image()
       img.onload = () => {
-        imgProps = newProps
-        srcLog = newProps.src
+        overwriteProps = {}
+        srcLog = imgProps.src
       }
-      img.src = newProps.src
+      img.src = imgProps.src
     }
   }
 })
@@ -135,9 +135,9 @@ $effect(() => {
 
 {#if text}
 <div class="relative rounded-[4%_4%_27%] overflow-hidden">
-  <img {...imgProps} />
+  <img {...imgProps} {...overwriteProps} />
   <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">{text}</div>
 </div>
 {:else}
-<img {...imgProps} />
+<img {...imgProps} {...overwriteProps} />
 {/if}

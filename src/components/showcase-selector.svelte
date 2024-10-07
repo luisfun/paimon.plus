@@ -1,30 +1,34 @@
+<svelte:options runes={true} />
 <script lang="ts">
 import type { ApiData, AvatarInfo } from '@components/api'
-import SideIcon from '@components/showcase-side-icon.svelte'
 import { onMount } from 'svelte'
 import DialogDelayIcon from './dialog-delay-Icon.svelte'
 import Dialog from './dialog.svelte'
+import Icon from './icon.svelte'
 import Svg from './svg.svelte'
 
-export let apiData: ApiData | undefined
-export let avatarInfo: AvatarInfo | undefined
+let {
+  apiData,
+  avatarInfo = $bindable(),
+}: {
+  apiData: ApiData | undefined
+  avatarInfo: AvatarInfo | undefined
+} = $props()
 
-let scrollElement: HTMLElement
+let scrollElement = $state<HTMLElement>()
 let scrollLeft = 0
-let dialog: HTMLDialogElement | undefined
-let isList = false
+let dialog = $state<HTMLDialogElement>()
+let isList = $state(false)
 let listLength = 0
-let isDialogVisible = false
+let isDialogVisible = $state(false)
 
 const onSelect = (id: number) => {
   avatarInfo = apiData?.avatarInfoList?.find(e => e.avatarId === id)
 }
-$: avatarInfo = apiData?.avatarInfoList?.[0]
 
 const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElement }) => {
-  if (dialog?.open) return
-  if (Math.abs(e.deltaY) < Math.abs(e.deltaX)) return
+  if (!scrollElement || dialog?.open || Math.abs(e.deltaY) < Math.abs(e.deltaX)) return
   const maxScrollLeft = scrollElement.scrollWidth - scrollElement.clientWidth
   if ((scrollElement.scrollLeft <= 0 && e.deltaY < 0) || (scrollElement.scrollLeft >= maxScrollLeft && e.deltaY > 0))
     return
@@ -38,16 +42,24 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
   })
 }
 
-const setIsList = (apiData?: ApiData | undefined) => {
+const onModal = () => {
+  isDialogVisible = true
+  dialog?.showModal()
+}
+
+const setIsList = (apiData?: ApiData) => {
   // when update ApiData
+  if (!scrollElement) return
   if (apiData?.avatarInfoList && listLength > apiData.avatarInfoList.length) isList = false
   if (apiData) listLength = apiData.avatarInfoList?.length || 0
   setTimeout(() => {
+    if (!scrollElement) return
     isList = scrollElement?.offsetWidth < scrollElement?.scrollWidth
   }, 0)
 }
-$: setIsList(apiData)
+
 onMount(() => {
+  console.log('onMount')
   const listener = () => setIsList()
   window.addEventListener('resize', listener)
   return () => {
@@ -55,10 +67,10 @@ onMount(() => {
   }
 })
 
-const onModal = () => {
-  isDialogVisible = true
-  dialog?.showModal()
-}
+$effect(() => {
+  avatarInfo = apiData?.avatarInfoList?.[0]
+  setIsList(apiData)
+})
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
@@ -67,10 +79,10 @@ const onModal = () => {
   <div
     class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"
     bind:this={scrollElement}
-    on:wheel={e => wheelHandler(e)}
+    onwheel={e => wheelHandler(e)}
   >
     {#if isList}
-      <button class="relative flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" on:click={onModal} aria-label="character list">
+      <button class="relative flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" onclick={onModal} aria-label="character list">
         <Svg icon="menu-tile" class="absolute top-1/2 left-1/2 -transform-1/2 w-9" />
       </button>
       <Dialog bind:dialog visible={isDialogVisible}>
@@ -83,13 +95,15 @@ const onModal = () => {
       </Dialog>
     {/if}
     {#each apiData.avatarInfoList as avatar, i}
-      <SideIcon
-        id={avatar.avatarId}
-        skinId={avatar.costumeId}
-        active={apiData.playerInfo.showAvatarInfoList.length - i > 0}
-        select={avatar.avatarId === avatarInfo?.avatarId}
-        {onSelect}
-      />
+      {@const id = avatar.avatarId}
+      {@const skinId = avatar.costumeId}
+      {@const active = apiData.playerInfo.showAvatarInfoList.length - i > 0}
+      {@const select = avatar.avatarId === avatarInfo?.avatarId}
+      <button class="relative flex-none w-[4.5rem] h-[4.5rem] pointer" onclick={() => onSelect(id)}>
+        <div class="side-bg absolute top-1/2 left-1/2 -transform-1/2 outline outline-[3px] w-12 h-12 rounded-full transition-all{(select ? ' side-bg-select' : "") + (active ? ' side-bg-active' : "")}"></div>
+        <div class="absolute bottom-0 left-1/2 -transform-x-1/2 border border-b-2 transition-all {select ? "w-full side-bottom-color": "w-0 border-transparent"}"></div>
+        <Icon {id} {skinId} ui="side" style="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all {select ? "w-20" : "w-[4.6rem]"}" />
+      </button>
     {/each}
   </div>
   <div class="absolute top-0 bottom-0 left-0 w-16 pointer-events-none list-bg-left hidden lg:block"></div>
@@ -100,7 +114,7 @@ const onModal = () => {
 <style>
   .avatar-list-bg {
     z-index: -1;
-    background: #242734cc;
+    background: #242734bb;
   }
   .list-bg-left {
     background: linear-gradient(to right, var(--background) calc(100% - 4rem), transparent);
@@ -116,5 +130,24 @@ const onModal = () => {
   }
   .menu-outline {
     outline: solid 3px rgba(255, 255, 255, .2);
+  }
+
+  .side-bg {
+    outline-color: rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
+  }
+  .side-bg-active {
+    outline-color: #96db8380;
+  }
+  .side-bg-select {
+    outline-color: #4fccf099;
+    background: #4fccf099;
+    box-shadow: 0 0 1.5rem #4fccf080;
+  }
+  .side-bg-active.side-bg-select {
+    outline-color: #96db83;
+  }
+  .side-bottom-color {
+    border-color: #4fccf0;
   }
 </style>

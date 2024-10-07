@@ -18,7 +18,7 @@ const {
 }: {
   id: number | string
   skinId?: number
-  ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
+  ui: 'dummy' | 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'side'
   text?: string | number
   style?: string
   dummyLoading?: boolean
@@ -104,6 +104,18 @@ const imgProps = $derived.by(() => {
         height: 128,
         alt: pfp?.split('_')[2] || '',
         class: `${sx} pfp-icon`,
+      }
+    }
+    case 'side': {
+      const a = avatarJson.find(e => e.id === id)
+      if (!a) break
+      const key = a.costumes?.find(e => e.skinId === skinId)?.key || a.key
+      return {
+        src: `/images/ui/UI_AvatarIcon_Side_${key}.webp`,
+        width: 128,
+        height: 128,
+        alt: textMap.en[a.nameTextMapHash],
+        class: style,
       }
     }
   }

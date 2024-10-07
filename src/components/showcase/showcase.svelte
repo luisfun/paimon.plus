@@ -1,3 +1,4 @@
+<svelte:options runes={true} />
 <script lang="ts">
 // client:only="svelte"
 import type { ApiData, AvatarInfo } from '@components/api'
@@ -7,10 +8,10 @@ import UidInput from '@components/uid-input.svelte'
 import type { Lang } from '@i18n/utils'
 import StatsCard from './stats-card.svelte'
 
-export let lang: Lang
+const { lang }: { lang: Lang } = $props()
 
-let apiData: ApiData | undefined = undefined
-let avatarInfo: AvatarInfo | undefined = undefined
+let apiData = $state<ApiData>()
+let avatarInfo = $state<AvatarInfo>()
 </script>
 
 <UidInput {lang} bind:apiData />

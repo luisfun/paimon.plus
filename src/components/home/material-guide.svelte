@@ -73,7 +73,7 @@ const weaponHandler = (id: number) => {
 
 <div class="grid grid-cols-4 gap-3">
   <button onclick={avatarLoadHandler}>
-    <Icon id={select} ui={selectData.element ? "avatar" : "weapon"} loading="eager" />
+    <Icon id={select} ui={selectData.element ? "avatar" : "weapon"} />
   </button>
   <div class="col-span-3 flex flex-col justify-evenly pl-2">
     <button class="mr-auto text-xl flex items-center" onclick={avatarLoadHandler}>

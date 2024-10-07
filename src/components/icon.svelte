@@ -15,7 +15,6 @@ const {
   text,
   style,
   dummyLoading,
-  loading,
 }: {
   id: number | string
   skinId?: number
@@ -23,7 +22,6 @@ const {
   text?: string | number
   style?: string
   dummyLoading?: boolean
-  loading?: HTMLImgAttributes['loading']
 } = $props()
 
 const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
@@ -136,9 +134,9 @@ $effect(() => {
 
 {#if text}
 <div class="relative rounded-[4%_4%_27%] overflow-hidden">
-  <img {loading} {...imgProps} {...overwriteProps} />
+  <img {...imgProps} {...overwriteProps} />
   <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">{text}</div>
 </div>
 {:else}
-<img {loading} {...imgProps} {...overwriteProps} />
+<img {...imgProps} {...overwriteProps} />
 {/if}

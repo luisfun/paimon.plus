@@ -110,17 +110,22 @@ const newProps = $derived.by(() => {
   }
   return propsInit(style)
 })
+let srcLog = $state(dummySrc)
+let isInitialRender = $state(true)
 
 $effect(() => {
-  if (!dummyLoading /*|| $state.snapshot(imgProps.src) === newProps.src*/ || typeof window === 'undefined')
+  if (isInitialRender || !dummyLoading || srcLog === newProps.src || typeof window === 'undefined') {
+    console.log('apend')
     imgProps = newProps
-  else {
+    isInitialRender = false
+  } else {
     console.log('dummyLoading')
     imgProps = { ...newProps, src: dummySrc }
     if (typeof window !== 'undefined') {
       const img = new Image()
       img.onload = () => {
         imgProps = newProps
+        srcLog = newProps.src
       }
       img.src = newProps.src
     }

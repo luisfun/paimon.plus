@@ -1,3 +1,4 @@
+<svelte:options runes={true} />
 <script lang="ts">
 import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'
@@ -5,27 +6,20 @@ import materialJson from '@game/material.json'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
 
-export let lang: Lang
+const {
+  lang,
+  costs,
+  rank,
+}: {
+  lang: Lang
+  costs: {
+    promoteCoin: number
+    skillCoin?: number
+    materials: Record<string, number | undefined>
+  }
+  rank: number | undefined
+} = $props()
 const t = useTranslations(lang)
-
-export let costs: {
-  promoteCoin: number
-  skillCoin?: number
-  materials: Record<string, number | undefined>
-}
-export let rank: number | undefined
-
-let materials: {
-  rank: number
-  order: number
-  materials: {
-    id: number
-    icon: string
-    level: number
-    count: number
-    wikiId: number
-  }[]
-}[] = []
 
 const order = (rank: number) => {
   if (costs.skillCoin) {
@@ -64,36 +58,40 @@ const order = (rank: number) => {
       return 1
   }
 }
-$: {
-  if (costs.skillCoin)
-    costs.materials['104003'] = 419 // avatar exp
-  else costs.materials['104013'] = [0, 72, 108, 399, 605, 907][rank || 0] // weapon exp
-  materials = []
-  for (const id of Object.keys(costs.materials).map(e => Number(e))) {
+
+const materials = $derived.by(() => {
+  console.log('materials')
+  const c = { promoteCoin: costs.promoteCoin, skillCoin: costs.skillCoin, materials: { ...costs.materials } }
+  if (c.skillCoin)
+    c.materials['104003'] = 419 // avatar exp
+  else c.materials['104013'] = [0, 72, 108, 399, 605, 907][rank || 0] // weapon exp
+  const m = []
+  for (const id of Object.keys(c.materials).map(e => Number(e))) {
     const data = materialJson.find(e => e.id === id)
     if (!data) continue
-    const index = materials.findIndex(e => e.rank === data.rank)
+    const index = m.findIndex(e => e.rank === data.rank)
     if (index === -1 || data.rank === 11101)
       // ボスを分離
-      materials.push({
+      m.push({
         rank: data.rank,
         order: order(data.rank !== 11101 ? data.rank : ~(data.rankLevel || 0)),
         materials: [
-          { id, icon: data.icon, level: data.rankLevel || 1, count: costs.materials[id] || 0, wikiId: data.wikiId },
+          { id, icon: data.icon, level: data.rankLevel || 1, count: c.materials[id] || 0, wikiId: data.wikiId },
         ],
       })
     else
-      materials[index].materials.push({
+      m[index].materials.push({
         id,
         icon: data.icon,
         level: data.rankLevel || 1,
-        count: costs.materials[id] || 0,
+        count: c.materials[id] || 0,
         wikiId: data.wikiId,
       })
   }
-  for (const m of materials) m.materials.sort((a, b) => a.level - b.level)
-  materials.sort((a, b) => a.order - b.order)
-}
+  for (const material of m) material.materials.sort((a, b) => a.level - b.level)
+  m.sort((a, b) => a.order - b.order)
+  return m
+})
 </script>
 
 <div class="grid grid-cols-4 gap-3 mt-3">

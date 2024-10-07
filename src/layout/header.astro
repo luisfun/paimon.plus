@@ -1,5 +1,4 @@
 ---
-import { Image } from 'astro:assets'
 import paimon from '@assets/webp/paimon.webp'
 import Svg from '@components/svg.svelte'
 import { ui } from '@i18n/ui'
@@ -12,7 +11,7 @@ const translatePath = useTranslatedPath(pageLang)
 
 <header class="flex items-center justify-between py-2 border-b border-border">
   <a href={translatePath('/')} class="flex items-center text-2xl genshin-font">
-    <Image loading="eager" src={paimon} alt="paimon" class="w-9 rounded-full overflow-hidden mr-3" />
+    <img src={paimon.src} width={paimon.width} height={paimon.height} alt="paimon" class="w-9 rounded-full overflow-hidden mr-3" />
     <div class="mt-1">Paimon<span class="ml-0.5">+</span></div>
   </a>
   <div class="dropdown dropdown-hover dropdown-end">

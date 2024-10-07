@@ -60,7 +60,6 @@ const order = (rank: number) => {
 }
 
 const materials = $derived.by(() => {
-  console.log('materials')
   const c = { promoteCoin: costs.promoteCoin, skillCoin: costs.skillCoin, materials: { ...costs.materials } }
   if (c.skillCoin)
     c.materials['104003'] = 419 // avatar exp

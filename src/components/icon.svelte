@@ -13,15 +13,15 @@ const {
   skinId,
   ui,
   text,
-  loading,
   style,
+  dummyLoading,
 }: {
   id: number | string
   skinId?: number
   ui: 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'dummy'
   text?: string | number
-  loading?: HTMLImgAttributes['loading']
   style?: string
+  dummyLoading?: boolean
 } = $props()
 
 const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
@@ -30,9 +30,18 @@ const rankNum: Record<string, number> = {
   QUALITY_PURPLE: 4,
   QUALITY_ORANGE_SP: 5,
 }
+const styleInit = (style: string | undefined) => `bg-cover w-full rounded-[4%_4%_27%]${style ? ` ${style}` : ''}`
+const propsInit = (style: string | undefined) => ({
+  src: dummySrc,
+  width: 1,
+  height: 1,
+  alt: 'None',
+  class: styleInit(style),
+})
 
-let imgProps = $derived.by<HTMLImgAttributes>(() => {
-  const sx = `bg-cover w-full rounded-[4%_4%_27%]${style ? ` ${style}` : ''}`
+let imgProps = $state.raw<HTMLImgAttributes>(propsInit(style))
+const newProps = $derived.by(() => {
+  const sx = styleInit(style)
   switch (ui) {
     case 'avatar': {
       const a = avatarJson.find(e => e.id === id)
@@ -99,21 +108,31 @@ let imgProps = $derived.by<HTMLImgAttributes>(() => {
       }
     }
   }
-  return {
-    src: dummySrc,
-    width: 1,
-    height: 1,
-    alt: 'None',
-    class: sx,
+  return propsInit(style)
+})
+
+$effect(() => {
+  if (!dummyLoading /*|| $state.snapshot(imgProps.src) === newProps.src*/ || typeof window === 'undefined')
+    imgProps = newProps
+  else {
+    console.log('dummyLoading')
+    imgProps = { ...newProps, src: dummySrc }
+    if (typeof window !== 'undefined') {
+      const img = new Image()
+      img.onload = () => {
+        imgProps = newProps
+      }
+      img.src = newProps.src
+    }
   }
 })
 </script>
 
 {#if text}
 <div class="relative rounded-[4%_4%_27%] overflow-hidden">
-  <img {loading} {...imgProps} />
+  <img {...imgProps} />
   <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">{text}</div>
 </div>
 {:else}
-<img {loading} {...imgProps} />
+<img {...imgProps} />
 {/if}

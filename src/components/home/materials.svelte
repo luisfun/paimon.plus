@@ -100,7 +100,7 @@ $: {
   {#each materials as material, i}
     <div class="dropdown dropdown-hover{i%4 === 3 ? " dropdown-end" : ""}">
       <div tabindex="0" role="button">
-        <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} />
+        <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} dummyLoading />
       </div>
       <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-[165%] z-10 px-3 py-2 text-sm shadow-background">
         <div>{t(material.materials[0].id, "material")}</div>

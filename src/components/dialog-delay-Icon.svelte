@@ -39,7 +39,6 @@ onMount(() => {
         id={typeof id === "number" ? id : id[0]}
         skinId={typeof id === "number" ? undefined : id[1]}
         ui={load[i] ? ui : "dummy"}
-        loading="lazy"
       />
     </button>
   {/each}

@@ -23,8 +23,8 @@ const subMarkProps = $derived(defineToProps(subMarks))
 let canvas: HTMLCanvasElement
 let xc: XCanvas
 
-const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap["flat"]["reliquarySubstats"]) => {
-  const rollMap = reliquarySub?.map(sub => ({appendPropId: sub.appendPropId, roll: sub.rolls.length}))
+const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap['flat']['reliquarySubstats']) => {
+  const rollMap = reliquarySub?.map(sub => ({ appendPropId: sub.appendPropId, roll: sub.rolls.length }))
   if (!rollMap) return 0
   return rollMap.filter(e => markProps.includes(e.appendPropId)).reduce((sum, e) => sum + e.roll, 0)
 }
@@ -430,9 +430,16 @@ $effect(() => {
                   c(
                     'div',
                     { sx: { mb: 0, height: 56, display: 'flex', backgroundColor: u.bga2 } },
-                    c("img", { sx: { ml: 20, width: 28, height: 28 }, src: srcUrl(artifact.flat.equipType, "card-assets") }),
-                    c('div', { sx: { mb: 36, textAlign: 'right', fontSize: "2.5rem", color: u.lightGreen } }, "."),
-                    c('div', { sx: { mr: 20, textAlign: 'right', fontSize: '1.25rem' } }, `× ${getSubRollMark(subMarkProps, artifact.flat.reliquarySubstats)}`),
+                    c('img', {
+                      sx: { ml: 20, width: 28, height: 28 },
+                      src: srcUrl(artifact.flat.equipType, 'card-assets'),
+                    }),
+                    c('div', { sx: { mb: 36, textAlign: 'right', fontSize: '2.5rem', color: u.lightGreen } }, '.'),
+                    c(
+                      'div',
+                      { sx: { mr: 20, textAlign: 'right', fontSize: '1.25rem' } },
+                      `× ${getSubRollMark(subMarkProps, artifact.flat.reliquarySubstats)}`,
+                    ),
                   ),
                 ),
             )

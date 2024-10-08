@@ -59,7 +59,6 @@ const setIsList = (apiData?: ApiData) => {
 }
 
 onMount(() => {
-  console.log('onMount')
   const listener = () => setIsList()
   window.addEventListener('resize', listener)
   return () => {
@@ -67,9 +66,13 @@ onMount(() => {
   }
 })
 
+let uidLog = apiData?.uid
 $effect(() => {
-  avatarInfo = apiData?.avatarInfoList?.[0]
-  setIsList(apiData)
+  if (uidLog !== apiData?.uid) {
+    avatarInfo = apiData?.avatarInfoList?.[0]
+    setIsList(apiData)
+    uidLog = apiData?.uid
+  }
 })
 </script>
 

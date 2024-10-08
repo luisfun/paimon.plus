@@ -18,7 +18,7 @@ const {
 }: {
   id: number | string
   skinId?: number
-  ui: 'dummy' | 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'side'
+  ui: 'dummy' | 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'side' | 'stat'
   text?: string | number
   style?: string
   dummyLoading?: boolean
@@ -115,6 +115,24 @@ const imgProps = $derived.by(() => {
         width: 128,
         height: 128,
         alt: textMap.en[a.nameTextMapHash],
+        class: style,
+      }
+    }
+    case 'stat': {
+      const s = {
+        'HP %': 'FIGHT_PROP_HP_PERCENT',
+        'ATK %': 'FIGHT_PROP_ATTACK_PERCENT',
+        'DEF %': 'FIGHT_PROP_DEFENSE_PERCENT',
+        'Elemental Mastery': 'FIGHT_PROP_ELEMENT_MASTERY',
+        CRIT: 'FIGHT_PROP_CRITICAL',
+        'Energy Recharge': 'FIGHT_PROP_CHARGE_EFFICIENCY',
+      }[id]
+      if (!s) break
+      return {
+        src: `/images/card-assets/${s}.webp`,
+        width: 256,
+        height: 256,
+        alt: id.toString(),
         class: style,
       }
     }

@@ -17,6 +17,8 @@ let avatarInfo = $state<AvatarInfo>()
 <UidInput {lang} bind:apiData />
 <ShowcaseListError {lang} {apiData} />
 <ShowcaseSelector {apiData} bind:avatarInfo />
+{#if avatarInfo}
 <StatsCard {lang} {avatarInfo} />
+{/if}
 
 <div class="h-svh"></div>

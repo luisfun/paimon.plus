@@ -1,17 +1,33 @@
+<svelte:options runes={true} />
 <script lang="ts">
 import type { AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api'
 import { avatarRemap } from '@components/api'
 import { XCanvas, xCreate } from '@components/x-canvas'
 import { useTranslations } from '@i18n/utils'
 import type { Lang } from '@i18n/utils'
+import { type defineSub, defineToProps } from './utils'
 
-export let avatarInfo: AvatarInfo
-export let lang: Lang
+const {
+  lang,
+  avatarInfo,
+  subMarks,
+}: {
+  lang: Lang
+  avatarInfo: AvatarInfo
+  subMarks: (typeof defineSub)[number][]
+} = $props()
 const t = useTranslations(lang)
-let a = avatarRemap(avatarInfo)
+
+const a = $derived(avatarRemap(avatarInfo))
+const subMarkProps = $derived(defineToProps(subMarks))
 let canvas: HTMLCanvasElement
-// @ts-expect-error
 let xc: XCanvas
+
+const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap["flat"]["reliquarySubstats"]) => {
+  const rollMap = reliquarySub?.map(sub => ({appendPropId: sub.appendPropId, roll: sub.rolls.length}))
+  if (!rollMap) return 0
+  return rollMap.filter(e => markProps.includes(e.appendPropId)).reduce((sum, e) => sum + e.roll, 0)
+}
 
 const isIOS = () => {
   if (typeof window === 'undefined') return false
@@ -82,8 +98,7 @@ const sxMiniPaper = {
   overflow: 'hidden',
 } as const
 
-$: {
-  a = avatarRemap(avatarInfo)
+$effect(() => {
   const ctx = canvas?.getContext('2d', { willReadFrequently: true })
   if (ctx) {
     xc ??= new XCanvas(ctx, 1920, 480)
@@ -401,7 +416,7 @@ $: {
                                     height: 24 * 1.45,
                                     textAlign: 'right',
                                     fontSize: '1.45rem',
-                                    color: '#fff8',
+                                    color: subMarkProps.includes(sub.appendPropId) ? u.lightGreen : '#fff8',
                                   },
                                 },
                                 sub.rolls.map(() => '.').join(''),
@@ -415,8 +430,9 @@ $: {
                   c(
                     'div',
                     { sx: { mb: 0, height: 56, display: 'flex', backgroundColor: u.bga2 } },
-                    c('img', { sx: { ml: 14, width: 36, height: 36 }, src: srcUrl('') }),
-                    c('div', { sx: { mr: 20, textAlign: 'right', fontSize: '1.45rem' } }, 40),
+                    c("img", { sx: { ml: 20, width: 28, height: 28 }, src: srcUrl(artifact.flat.equipType, "card-assets") }),
+                    c('div', { sx: { mb: 36, textAlign: 'right', fontSize: "2.5rem", color: u.lightGreen } }, "."),
+                    c('div', { sx: { mr: 20, textAlign: 'right', fontSize: '1.25rem' } }, `× ${getSubRollMark(subMarkProps, artifact.flat.reliquarySubstats)}`),
                   ),
                 ),
             )
@@ -426,7 +442,7 @@ $: {
     )
     xc.render(document, isIOS() ? 50 : false)
   }
-}
+})
 </script>
 
 <canvas width="1920" height="480" class="w-full" bind:this={canvas}></canvas>

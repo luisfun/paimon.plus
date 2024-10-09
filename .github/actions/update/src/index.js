@@ -11,4 +11,4 @@ const update = async () => {
   await uiDownload()
   await uiSharp()
 }
-update()
+await update()

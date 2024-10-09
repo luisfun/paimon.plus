@@ -5,3 +5,4 @@ const update = async () => {
   await wikiScraping('null', 100)
   await wikiScraping('new', 100)
 }
+await update()

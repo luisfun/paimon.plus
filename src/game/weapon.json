@@ -1,5 +1,28 @@
 [
   {
+    "id": 11516,
+    "icon": "UI_EquipIcon_Sword_XochitlsTube",
+    "rankLevel": 5,
+    "nameTextMapHash": 3432339555,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112101": 15,
+        "112102": 23,
+        "112103": 27,
+        "112113": 23,
+        "112114": 27,
+        "112115": 41,
+        "114069": 5,
+        "114070": 14,
+        "114071": 14,
+        "114072": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11515,
     "icon": "UI_EquipIcon_Sword_Estoc",
     "rankLevel": 5,
@@ -297,6 +320,29 @@
       }
     },
     "wikiId": 6547
+  },
+  {
+    "id": 11430,
+    "icon": "UI_EquipIcon_Sword_Umpakati",
+    "rankLevel": 4,
+    "nameTextMapHash": 495182275,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112104": 10,
+        "112105": 15,
+        "112106": 18,
+        "112107": 15,
+        "112108": 18,
+        "112109": 27,
+        "114061": 3,
+        "114062": 9,
+        "114063": 9,
+        "114064": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 11428,
@@ -1211,6 +1257,29 @@
       }
     },
     "wikiId": 6548
+  },
+  {
+    "id": 12430,
+    "icon": "UI_EquipIcon_Claymore_Umpakati",
+    "rankLevel": 4,
+    "nameTextMapHash": 688237043,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112101": 10,
+        "112102": 15,
+        "112103": 18,
+        "112113": 15,
+        "112114": 18,
+        "112115": 27,
+        "114069": 3,
+        "114070": 9,
+        "114071": 9,
+        "114072": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 12427,
@@ -3907,6 +3976,29 @@
       }
     },
     "wikiId": 6549
+  },
+  {
+    "id": 13430,
+    "icon": "UI_EquipIcon_Pole_Umpakati",
+    "rankLevel": 4,
+    "nameTextMapHash": 1965515667,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112038": 10,
+        "112039": 15,
+        "112040": 18,
+        "112110": 15,
+        "112111": 18,
+        "112112": 27,
+        "114065": 3,
+        "114066": 9,
+        "114067": 9,
+        "114068": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13427,

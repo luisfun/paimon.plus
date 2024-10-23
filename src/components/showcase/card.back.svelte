@@ -2,10 +2,9 @@
 <script lang="ts">
 import type { AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api'
 import { avatarRemap } from '@components/api'
+import { XCanvas, xCreate } from '@components/x-canvas'
 import { useTranslations } from '@i18n/utils'
 import type { Lang } from '@i18n/utils'
-import { XCanvas, div, img } from '@luisfun/x-canvas'
-import { onMount } from 'svelte'
 import { type defineSub, defineToProps } from './utils'
 
 const {
@@ -100,122 +99,6 @@ const sxMiniPaper = {
 } as const
 
 $effect(() => {
-  console.log('effect')
-  xc ??= new XCanvas(canvas, '/workers', {
-    canvasWidth: 1920,
-    canvasHeight: 480,
-    fontFace: lang === 'en' ? ['Genshin', '/fonts/genshin.woff2'] : ['GenshinJa', '/fonts/genshin-ja.woff2'],
-    fontSize: 24,
-    fontColor: '#fff',
-    debugMode: true,
-  })
-  const weapon: WeaponRemap[] = []
-  const artifactList: ReliquaryRemap[] = []
-  for (const e of a.equipList || []) {
-    if ('weapon' in e) weapon.push(e as WeaponRemap)
-    if ('reliquary' in e) artifactList.push(e as ReliquaryRemap)
-  }
-  xc.render(
-    {
-      backgroundColor: u.elementMap[a.element || ''],
-      backgroundImage: srcUrl('overlay', 'card-assets', 'jpg'),
-      backgroundBlendMode: 'overlay',
-      // @ts-expect-error
-      objectFit: 'cover',
-      overflow: 'hidden',
-    },
-    div(
-      { display: 'flex', p: 8 },
-      // キャラ情報
-      div(
-        { w: '23%', p: 8 },
-        // キャラ名と元素
-        div(
-          { display: 'flex', h: 36, mt: 2, ml: 2 },
-          div(
-            { w: 42, h: 42, m: -3, backgroundColor: u.bga, overflow: 'hidden', borderRadius: '50%' },
-            img({ m: 1, src: srcUrl(a.element, 'element') }),
-          ),
-          div({ ml: 12, fontSize: '1.2rem', shadow: { size: 16 } }, t(a.avatarId, 'avatar')),
-        ),
-        div(
-          { h: '100%' },
-          // スキル
-          div(
-            { position: 'absolute', w: '27%', ml: 2, mt: 14, mb: 4 },
-            ...(a.skills?.map(skill =>
-              div(
-                { w: 66, h: 66 },
-                img({ position: 'absolute', m: -18, opacity: 0.75, src: srcUrl('TalentBack', 'card-assets') }),
-                img({ w: 66, h: 66, src: srcUrl(skill.icon, 'ui') }),
-                div(
-                  {
-                    position: 'absolute',
-                    w: 38,
-                    h: 32,
-                    mt: -32,
-                    mr: -24,
-                    textAlign: 'center',
-                    backgroundColor: '#282828dd',
-                    borderRadius: 6,
-                    overflow: 'hidden',
-                    color: skill.add !== 0 ? 'cyan' : undefined,
-                  },
-                  skill.level + skill.add,
-                ),
-              ),
-            ) || []),
-          ),
-          // キャラクターicon
-          div(
-            { position: 'absolute', ml: 2 },
-            div({ h: 240, mt: 0 }, img({ h: '100%', mt: -42, shadow: { size: 16 }, src: srcUrl(a.sideIcon, 'ui') })),
-            div({ mt: -38, fontSize: '1.2rem', textAlign: 'center', shadow: { size: 16, for: 2 } }, `Lv.${a.level}`),
-          ),
-          // キャラ凸
-          div(
-            { position: 'absolute', w: 1, h: 1 },
-            ...a.talentIcons.map((cons, i) =>
-              div(
-                {
-                  position: 'absolute',
-                  ...getConsPos(i),
-                  w: 52,
-                  h: 52,
-                  borderRadius: '50%',
-                  border: cons.unlock ? { width: 3, color: elementColor(a.element, true) } : undefined,
-                },
-                div(
-                  {
-                    position: 'absolute',
-                    m: 3,
-                    backgroundColor: u.bga2,
-                    borderRadius: '50%',
-                    overflow: 'hidden',
-                    border: { width: 2, color: cons.unlock ? '#fff' : '#888' },
-                  },
-                  cons.unlock
-                    ? img({ m: 3, src: srcUrl(cons.icon, 'ui') })
-                    : img({ m: -9, opacity: 0.8, src: srcUrl('consLock', 'card-assets') }),
-                ),
-              ),
-            ),
-          ),
-        ),
-        div(
-          { display: 'flex', h: '53%', mt: 14 },
-          // weapon
-          !weapon[0]
-            ? div({ ml: 10, mr: 10 })
-            : div(
-                { ml: 10, mr: 10 },
-                img({ position: 'absolute', m: 2, shadow: { size: 16 }, src: srcUrl(weapon[0].flat.icon, 'ui') }),
-              ),
-        ),
-      ),
-    ),
-  )
-  /*
   const ctx = canvas?.getContext('2d', { willReadFrequently: true })
   if (ctx) {
     xc ??= new XCanvas(ctx, 1920, 480)
@@ -566,7 +449,6 @@ $effect(() => {
     )
     xc.render(document, isIOS() ? 50 : false)
   }
-    */
 })
 </script>
 

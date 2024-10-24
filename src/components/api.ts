@@ -56,6 +56,7 @@ export const avatarRemap = (info: AvatarInfo) => {
     skills,
     stats,
     reliquarySets,
+    reliquarySubStats: [] as { appendPropId: string; statValue: number; display: string; rollCount: number }[],
   }
   for (const equip of re.equipList || []) {
     if ('reliquary' in equip) {
@@ -70,6 +71,20 @@ export const avatarRemap = (info: AvatarInfo) => {
         const type = get_prop_type(sub.appendPropId)
         sub.display = statToString(type, sub.statValue)
         sub.rolls = rollSet.find(e => e.prop === sub.appendPropId)?.rolls || []
+        // reliquarySubStats All
+        const subStat = re.reliquarySubStats.find(e => e.appendPropId === sub.appendPropId)
+        if (subStat) {
+          subStat.statValue += sub.statValue
+          subStat.display = statToString(type, subStat.statValue)
+          subStat.rollCount += sub.rolls.length
+        } else {
+          re.reliquarySubStats.push({
+            appendPropId: sub.appendPropId,
+            statValue: sub.statValue,
+            display: sub.display,
+            rollCount: sub.rolls.length,
+          })
+        }
       }
     } else if ('weapon' in equip) {
       const eq = equip as WeaponRemap
@@ -82,6 +97,7 @@ export const avatarRemap = (info: AvatarInfo) => {
       }
     }
   }
+  re.reliquarySubStats.sort((a, b) => getPropNumber(a.appendPropId) - getPropNumber(b.appendPropId))
   return re // as Omit<typeof re, "equipList"> & { equipList?: (WeaponRemap | ReliquaryRemap)[] }
 }
 const get_ascension_level = (ascension: string | number | undefined) =>
@@ -216,6 +232,19 @@ const get_prop_type = (prop: string, reverse?: boolean) => {
   if (!reverse) return props.find(e => e.prop === prop)?.type || ''
   return props.find(e => e.type === prop)?.prop || ''
 }
+const getPropNumber = (prop: string) =>
+  [
+    'FIGHT_PROP_HP_PERCENT',
+    'FIGHT_PROP_HP',
+    'FIGHT_PROP_ATTACK_PERCENT',
+    'FIGHT_PROP_ATTACK',
+    'FIGHT_PROP_DEFENSE_PERCENT',
+    'FIGHT_PROP_DEFENSE',
+    'FIGHT_PROP_ELEMENT_MASTERY',
+    'FIGHT_PROP_CRITICAL',
+    'FIGHT_PROP_CRITICAL_HURT',
+    'FIGHT_PROP_CHARGE_EFFICIENCY',
+  ].findIndex(e => e === prop)
 const statToString = (type: string | undefined, value: number, x100?: boolean) =>
   isFlat(type)
     ? value.toLocaleString(undefined, { maximumFractionDigits: 0 })

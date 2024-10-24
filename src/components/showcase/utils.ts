@@ -7,6 +7,7 @@ export const defineToName = {
   CRIT: 'CRIT',
   ER: 'Energy Recharge',
 } as const
+
 export const defineToProps = (stats: (typeof defineSub)[number][]) =>
   stats.flatMap(
     stat =>

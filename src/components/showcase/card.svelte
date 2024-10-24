@@ -124,7 +124,7 @@ $effect(() => {
       overflow: 'hidden',
     },
     div(
-      { display: 'flex', p: 8 },
+      { display: 'flex', mt: 0, p: 8 },
       // キャラ情報
       div(
         { w: '23%', p: 8 },
@@ -202,22 +202,22 @@ $effect(() => {
           ),
         ),
         div(
-          { display: 'flex', h: '53%', mt: 14 },
+          { display: 'flex', h: '48%', mt: '.5rem' },
           // weapon
           !weapon[0]
-            ? div({ ml: 10, mr: 10 })
+            ? div({ w: '35%', mr: '.75rem' })
             : div(
-                { ml: 10, mr: 10 },
+                { w: '35%', mr: '.75rem' },
                 img({ position: 'absolute', m: 2, shadow: { size: 16 }, src: srcUrl(weapon[0].flat.icon, 'ui') }),
                 weapon[0].weapon.affixMap &&
                   div(
-                    { ...sxMiniPaper, w: 48, h: 38, fontSize: '1.2rem' },
+                    { ...sxMiniPaper, w: '2.25rem', h: 38, fontSize: '1.2rem' },
                     `R${Object.values(weapon[0].weapon.affixMap)[0] + 1}`,
                   ),
               ),
           // artifact set
           div(
-            {},
+            { w: '35%', ml: '.75rem' },
             // 1つのとき
             a.reliquarySets[0] && !a.reliquarySets[1]
               ? div(
@@ -228,7 +228,7 @@ $effect(() => {
                     shadow: { size: 16 },
                     src: srcUrl(a.reliquarySets[0].icon, 'ui'),
                   }),
-                  div({ ...sxMiniPaper, w: 42, h: 38, fontSize: '1.2rem' }, a.reliquarySets[0].count),
+                  div({ ...sxMiniPaper, w: '1.75rem', h: 38, fontSize: '1.2rem' }, a.reliquarySets[0].count),
                 )
               : // 2つのとき
                 a.reliquarySets[0] && a.reliquarySets[1]
@@ -244,7 +244,7 @@ $effect(() => {
                           shadow: { size: 12 },
                           src: srcUrl(a.reliquarySets[0].icon, 'ui'),
                         }),
-                        div({ ...sxMiniPaper, w: 36, h: 32 }, a.reliquarySets[0].count),
+                        div({ ...sxMiniPaper, w: '1.5rem', h: 32 }, a.reliquarySets[0].count),
                       ),
                     ),
                     div(
@@ -257,7 +257,7 @@ $effect(() => {
                           shadow: { size: 12 },
                           src: srcUrl(a.reliquarySets[1].icon, 'ui'),
                         }),
-                        div({ ...sxMiniPaper, w: 36, h: 32 }, a.reliquarySets[1].count),
+                        div({ ...sxMiniPaper, w: '1.5rem', h: 32 }, a.reliquarySets[1].count),
                       ),
                     ),
                   )
@@ -305,10 +305,17 @@ $effect(() => {
             div(
               { backgroundColor: u.bga, overflow: 'hidden', borderRadius: 16 },
               // 聖遺物画像
-              img({ position: 'absolute', mt: -15, ml: -5, w: 160, h: 160, src: srcUrl(artifact.flat.icon, 'ui') }),
+              img({
+                position: 'absolute',
+                mt: '-0.75rem',
+                ml: -5,
+                w: 160,
+                h: 160,
+                src: srcUrl(artifact.flat.icon, 'ui'),
+              }),
               // メインステータス
               div(
-                { mt: 70, mr: 16, h: 98 },
+                { mt: '2.75rem', mr: 16, h: 98 },
                 img({ mr: -6, w: 42, h: 42, src: srcUrl(artifact.flat.reliquaryMainstat.mainPropId, 'card-assets') }),
                 div(
                   { w: '100%', textAlign: 'right', fontSize: '1.45rem', h: 24 * 1.45 },
@@ -345,16 +352,44 @@ $effect(() => {
                 ),
               // フッター
               div(
-                { mb: 0, h: 56, display: 'flex', backgroundColor: u.bga2 },
-                img({ ml: 20, w: 28, h: 28, src: srcUrl(artifact.flat.equipType, 'card-assets') }),
-                div({ mb: 1, mr: '.5rem', fontSize: '2.5rem', color: u.lightGreen }, '.'),
+                { mb: 0, h: '2.125rem', display: 'flex', backgroundColor: u.bga2 },
+                img({ ml: '1rem', w: 26, h: 26, src: srcUrl(artifact.flat.equipType, 'card-assets') }),
+                div({ w: '1rem', mb: -1, mr: 0, fontSize: '2.5rem', color: u.lightGreen }, '.'),
                 div(
-                  { mr: 20, textAlign: 'right', fontSize: '1.25rem' },
+                  { ml: '.125rem', mr: '1rem', textAlign: 'right', fontSize: '1.125rem' },
                   `× ${getSubRollMark(subMarkProps, artifact.flat.reliquarySubstats)}`,
                 ),
               ),
             ),
         )
+      }),
+    ),
+    div(
+      { display: 'flex', h: '1rem', mt: -12, mb: 2 },
+      div({ w: '23%', h: '1rem', ml: 0, textAlign: 'center', fontSize: '.75rem' }, 'Paimon.Plus / Enka.Network'),
+      ...a.reliquarySubStats
+        .filter(sub => subMarkProps.includes(sub.appendPropId))
+        .flatMap(sub => [
+          div({ m: 0, h: '1rem', fontSize: '.875rem' }, sub.rollCount),
+          img({
+            m: 0,
+            w: '1rem',
+            h: '1rem',
+            ml: '.125rem',
+            mr: '.125rem',
+            src: srcUrl(sub.appendPropId, 'card-assets'),
+          }),
+          div({ m: 0, mr: '1rem', h: '1rem', fontSize: '.875rem' }, sub.display),
+        ]),
+      ...[0].flatMap(() => {
+        const rollCount = a.reliquarySubStats
+          .filter(sub => subMarkProps.includes(sub.appendPropId))
+          .reduce((count, sub) => sub.rollCount + count, 0)
+        if (rollCount === 0) return undefined
+        return [
+          div({ ml: 0, mr: -4, mb: 16, w: '1rem', h: '1rem', fontSize: '2.125rem', color: u.lightGreen }, '.'),
+          div({ m: 0, mr: '1rem', h: '1rem', fontSize: '.875rem' }, `× ${rollCount}`),
+        ]
       }),
     ),
   )

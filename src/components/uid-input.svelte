@@ -171,3 +171,15 @@ onMount(async () => {
   </div>
 </Dialog>
 {/if}
+
+{#if apiData}
+  {#if !apiData.avatarInfoList}
+    <div class="text-base text-center">
+      {#if !apiData.playerInfo.showAvatarInfoList}
+        {t("showcase.error.register")}
+      {:else}
+        {t("showcase.error.public")}
+      {/if}
+    </div>
+  {/if}
+{/if}

@@ -18,5 +18,3 @@ let avatarInfo = $state<AvatarInfo>()
 {#if avatarInfo}
 <StatsCard {lang} {avatarInfo} />
 {/if}
-
-<div class="h-svh"></div>

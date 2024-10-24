@@ -7,20 +7,22 @@ import type { Lang } from '@i18n/utils'
 import { XCanvas, div, img } from '@luisfun/x-canvas'
 import { type defineSub, defineToProps } from './utils'
 
-const {
+let {
   lang,
   avatarInfo,
   subMarks,
+  canvas = $bindable(),
 }: {
   lang: Lang
   avatarInfo: AvatarInfo
   subMarks: (typeof defineSub)[number][]
+  canvas: HTMLCanvasElement
 } = $props()
 const t = useTranslations(lang)
 
 const a = $derived(avatarRemap(avatarInfo))
 const subMarkProps = $derived(defineToProps(subMarks))
-let canvas: HTMLCanvasElement
+//let canvas: HTMLCanvasElement
 let xc: XCanvas
 
 const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap['flat']['reliquarySubstats']) => {

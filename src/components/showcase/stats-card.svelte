@@ -6,6 +6,7 @@ import Icon from '@components/icon.svelte'
 import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
 import { useTranslatedPath, useTranslations } from '@i18n/utils'
+import { imageDownload } from '@luisfun/x-canvas'
 import SubStatsJson from '@manual/showcase-sub-stats.json'
 import Card from './card.svelte'
 // biome-ignore lint: svelte
@@ -26,6 +27,7 @@ const translatePath = useTranslatedPath(lang)
 
 let dialog = $state<HTMLDialogElement>()
 let subMarks = $state(initSub(avatarInfo?.avatarId))
+let canvas: HTMLCanvasElement
 
 const onClick = (stat: (typeof defineSub)[number]) => {
   if (!subMarks.includes(stat)) subMarks.push(stat)
@@ -44,12 +46,12 @@ $effect.pre(() => {
 {#if avatarInfo}
 <div class="overflow-x-auto mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-auto mb-2">
   <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
-    <Card {lang} {avatarInfo} {subMarks} />
+    <Card {lang} {avatarInfo} {subMarks} bind:canvas />
   </div>
 </div>
 <div class="flex justify-around sm:justify-evenly">
   <div class="flex justify-center">
-    <button class="btn btn-sm btn-primary leading-8 mr-2 sm:mr-4">
+    <button class="btn btn-sm btn-primary leading-8 mr-2 sm:mr-4" onclick={() => imageDownload(canvas, "card")}>
       <Svg icon="download" class="py-1.5" height="100%" />{t("card.download")}
     </button>
     <button class="btn btn-sm btn-primary leading-8 btn-circle" aria-label="sub stats config" onclick={() => dialog?.showModal()}>

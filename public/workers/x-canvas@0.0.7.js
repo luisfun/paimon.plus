@@ -62,12 +62,14 @@ class XCanvasWorker {
   render(root) {
     const pos = { x: 0, y: 0, z: 0, w: this.#canvas.width, h: this.#canvas.height };
     this.#structure = { pos, elem: root, inner: this.#recuStructure(pos, root) };
-    if (self.fonts.check(`${this.#fontSize}px ${this.#fontFamily}`)) this.#draw();
+    if (this.#isFontReady) this.#draw();
     else
       this.#fontFace?.load().then(() => {
-        if (self.fonts.check(`${this.#fontSize}px ${this.#fontFamily}`)) this.#isFontReady = true;
-        this.#structure = { pos, elem: root, inner: this.#recuStructure(pos, root) };
-        this.#draw();
+        if (self.fonts.check(`${this.#fontSize}px ${this.#fontFamily}`)) {
+          this.#isFontReady = true;
+          this.#structure = { pos, elem: root, inner: this.#recuStructure(pos, root) };
+          this.#draw();
+        }
       });
     this.#load();
   }
@@ -149,7 +151,7 @@ class XCanvasWorker {
     let tmp = x;
     if (w < sumNum || w === sumNum && 0 < sumPer) {
       return innerArr.map((inner) => {
-        if (inner.pos === "absolute") return this.#calcPosAbsolute(tmp, w, inner);
+        if (inner.pos === "absolute") return this.#calcPosAbsolute(x, w, inner);
         const { start, len, next } = this.#calcPosStatic(tmp, w, inner);
         tmp = next;
         return { start, len };
@@ -158,7 +160,7 @@ class XCanvasWorker {
     const remainRate = (w - sumNum) / w;
     if (remainRate < sumPer) {
       return innerArr.map((inner) => {
-        if (inner.pos === "absolute") return this.#calcPosAbsolute(tmp, w, inner);
+        if (inner.pos === "absolute") return this.#calcPosAbsolute(x, w, inner);
         const { start, len, next } = this.#calcPosStatic(tmp, w * remainRate / sumPer, inner);
         tmp = next;
         return { start, len };
@@ -173,7 +175,7 @@ class XCanvasWorker {
       if (inner.me === "auto") mAutoCount++;
     }
     return innerArr.map((inner) => {
-      if (inner.pos === "absolute") return this.#calcPosAbsolute(tmp, w, inner);
+      if (inner.pos === "absolute") return this.#calcPosAbsolute(x, w, inner);
       if (lenAutoCount > 0) {
         const { start: start2, len: len2, next: next2 } = this.#calcPosStatic(tmp, w, inner, (w - sumNum - sumPer * w) / lenAutoCount);
         tmp = next2;
@@ -250,7 +252,7 @@ class XCanvasWorker {
    * Draw
    */
   #draw(structure, recursive) {
-    if (!structure && this.#imageSrcList.length !== this.#imageMap.size) return;
+    if (!structure && (this.#imageSrcList.length !== this.#imageMap.size || !this.#structure?.inner?.[0])) return;
     const s = recursive ? structure : this.#structure;
     if (!s) return;
     if (typeof s.elem !== "object" || !s.elem) return;

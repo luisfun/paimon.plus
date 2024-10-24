@@ -16,8 +16,7 @@ export let style = ''
 </div>
 
 <style>
-  .collapse:not(.collapse-close):has(> input[type="checkbox"]:checked),
-  .collapse:not(.collapse-close):has(> input[type="radio"]:checked) {
+  .collapse:not(.collapse-close):has(> input[type="checkbox"]:checked) {
     grid-template-rows: 1fr auto;
   }
 </style>

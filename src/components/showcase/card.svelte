@@ -22,7 +22,6 @@ const t = useTranslations(lang)
 
 const a = $derived(avatarRemap(avatarInfo))
 const subMarkProps = $derived(defineToProps(subMarks))
-//let canvas: HTMLCanvasElement
 let xc: XCanvas
 
 const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap['flat']['reliquarySubstats']) => {
@@ -121,7 +120,6 @@ $effect(() => {
       backgroundColor: u.elementMap[a.element || ''],
       backgroundImage: srcUrl('overlay', 'card-assets', 'jpg'),
       backgroundBlendMode: 'overlay',
-      // @ts-expect-error
       objectFit: 'cover',
       overflow: 'hidden',
     },
@@ -135,7 +133,7 @@ $effect(() => {
           { display: 'flex', h: 36, mt: 2, ml: 2 },
           div(
             { w: 42, h: 42, m: -3, backgroundColor: u.bga, overflow: 'hidden', borderRadius: '50%' },
-            img({ m: 1, src: srcUrl(a.element, 'element') }),
+            img({ m: 1 }, srcUrl(a.element, 'element')),
           ),
           div({ ml: 12, fontSize: '1.2rem', shadow: { size: 16 } }, t(a.avatarId, 'avatar')),
         ),
@@ -147,8 +145,8 @@ $effect(() => {
             ...(a.skills?.map(skill =>
               div(
                 { w: 66, h: 66 },
-                img({ position: 'absolute', m: -18, opacity: 0.75, src: srcUrl('TalentBack', 'card-assets') }),
-                img({ w: 66, h: 66, src: srcUrl(skill.icon, 'ui') }),
+                img({ position: 'absolute', m: -18, opacity: 0.75, unsharpMask: [10, 2, 1] }, srcUrl('TalentBack', 'card-assets')),
+                img({ w: 66, h: 66 }, srcUrl(skill.icon, 'ui')),
                 div(
                   {
                     position: 'absolute',
@@ -170,7 +168,10 @@ $effect(() => {
           // キャラクターicon
           div(
             { position: 'absolute', ml: 2 },
-            div({ h: 240, mt: 0 }, img({ h: '100%', mt: -42, shadow: { size: 16 }, src: srcUrl(a.sideIcon, 'ui') })),
+            div(
+              { h: 240, mt: 0 },
+              img({ h: '100%', mt: -42, shadow: { size: 16 } }, srcUrl(a.sideIcon, 'ui')),
+            ),
             div({ mt: -38, fontSize: '1.2rem', textAlign: 'center', shadow: { size: 16, for: 2 } }, `Lv.${a.level}`),
           ),
           // キャラ凸
@@ -196,8 +197,8 @@ $effect(() => {
                     border: { width: 2, color: cons.unlock ? '#fff' : '#888' },
                   },
                   cons.unlock
-                    ? img({ src: srcUrl(cons.icon, 'ui') })
-                    : img({ m: -12, opacity: 0.8, src: srcUrl('consLock', 'card-assets') }),
+                    ? img({}, srcUrl(cons.icon, 'ui'))
+                    : img({ m: -12, opacity: 0.8 }, srcUrl('consLock', 'card-assets')),
                 ),
               ),
             ),
@@ -210,7 +211,7 @@ $effect(() => {
             ? div({ w: '35%', mr: '.75rem' })
             : div(
                 { w: '35%', mr: '.75rem' },
-                img({ position: 'absolute', m: 2, shadow: { size: 16 }, src: srcUrl(weapon[0].flat.icon, 'ui') }),
+                img({ position: 'absolute', m: 2, shadow: { size: 16 } }, srcUrl(weapon[0].flat.icon, 'ui')),
                 weapon[0].weapon.affixMap &&
                   div(
                     { ...sxMiniPaper, w: '2.25rem', h: 38, fontSize: '1.2rem' },
@@ -224,12 +225,7 @@ $effect(() => {
             a.reliquarySets[0] && !a.reliquarySets[1]
               ? div(
                   {},
-                  img({
-                    position: 'absolute',
-                    m: -4,
-                    shadow: { size: 16 },
-                    src: srcUrl(a.reliquarySets[0].icon, 'ui'),
-                  }),
+                  img({ position: 'absolute', m: -4, shadow: { size: 16 } }, srcUrl(a.reliquarySets[0].icon, 'ui')),
                   div({ ...sxMiniPaper, w: '1.75rem', h: 38, fontSize: '1.2rem' }, a.reliquarySets[0].count),
                 )
               : // 2つのとき
@@ -240,12 +236,10 @@ $effect(() => {
                       { position: 'absolute', clipPathLine: [0, 0, '100%', 0, '100%', '100%'] },
                       div(
                         { mt: 0, mr: 0, w: '70%', h: '70%' },
-                        img({
-                          position: 'absolute',
-                          m: -4,
-                          shadow: { size: 12 },
-                          src: srcUrl(a.reliquarySets[0].icon, 'ui'),
-                        }),
+                        img(
+                          { position: 'absolute', m: -4, shadow: { size: 12 } },
+                          srcUrl(a.reliquarySets[0].icon, 'ui'),
+                        ),
                         div({ ...sxMiniPaper, w: '1.5rem', h: 32 }, a.reliquarySets[0].count),
                       ),
                     ),
@@ -253,12 +247,10 @@ $effect(() => {
                       { position: 'absolute', clipPathLine: [0, 0, '100%', '100%', 0, '100%'] },
                       div(
                         { mb: 0, ml: 0, w: '70%', h: '70%' },
-                        img({
-                          position: 'absolute',
-                          m: -4,
-                          shadow: { size: 12 },
-                          src: srcUrl(a.reliquarySets[1].icon, 'ui'),
-                        }),
+                        img(
+                          { position: 'absolute', m: -4, shadow: { size: 12 } },
+                          srcUrl(a.reliquarySets[1].icon, 'ui'),
+                        ),
                         div({ ...sxMiniPaper, w: '1.5rem', h: 32 }, a.reliquarySets[1].count),
                       ),
                     ),
@@ -280,7 +272,7 @@ $effect(() => {
                 // ステータス名
                 div(
                   { display: 'flex' },
-                  img({ ml: -4, mr: 10, w: 32, h: 32, src: srcUrl(stat.icon, 'card-assets') }),
+                  img({ ml: -4, mr: 10, w: 32, h: 32 }, srcUrl(stat.icon, 'card-assets')),
                   // @ts-expect-error
                   div({ ml: 0 }, t(stat.type === 'CRIT DMG' ? 'CRIT Damage' : stat.type)),
                 ),
@@ -307,18 +299,11 @@ $effect(() => {
             div(
               { backgroundColor: u.bga, overflow: 'hidden', borderRadius: 16 },
               // 聖遺物画像
-              img({
-                position: 'absolute',
-                mt: '-0.75rem',
-                ml: -5,
-                w: 160,
-                h: 160,
-                src: srcUrl(artifact.flat.icon, 'ui'),
-              }),
+              img({ position: 'absolute', mt: '-0.75rem', ml: -5, w: 160, h: 160 }, srcUrl(artifact.flat.icon, 'ui')),
               // メインステータス
               div(
                 { mt: '2.75rem', mr: 16, h: 98 },
-                img({ mr: -6, w: 42, h: 42, src: srcUrl(artifact.flat.reliquaryMainstat.mainPropId, 'card-assets') }),
+                img({ mr: -6, w: 42, h: 42 }, srcUrl(artifact.flat.reliquaryMainstat.mainPropId, 'card-assets')),
                 div(
                   { w: '100%', textAlign: 'right', fontSize: '1.45rem', h: 24 * 1.45 },
                   artifact.flat.reliquaryMainstat.display,
@@ -331,7 +316,7 @@ $effect(() => {
                   ...artifact.flat.reliquarySubstats.map(sub =>
                     div(
                       { ml: 20, mr: 20, mt: 0, display: 'flex', h: '25%' },
-                      img({ ml: 0, w: 32, h: 32, src: srcUrl(sub.appendPropId, 'card-assets') }),
+                      img({ ml: 0, w: 32, h: 32 }, srcUrl(sub.appendPropId, 'card-assets')),
                       div(
                         { mr: 0 },
                         sub.rolls &&
@@ -355,8 +340,8 @@ $effect(() => {
               // フッター
               div(
                 { mb: 0, h: '2.125rem', display: 'flex', backgroundColor: u.bga2 },
-                img({ ml: '1rem', w: 26, h: 26, src: srcUrl(artifact.flat.equipType, 'card-assets') }),
-                div({ w: '1rem', mb: -1, mr: 0, fontSize: '2.5rem', color: u.lightGreen }, '.'),
+                img({ ml: '1rem', w: 26, h: 26 }, srcUrl(artifact.flat.equipType, 'card-assets')),
+                div({ w: '1rem', mb: -1, mr: 0, fontSize: '2.45rem', color: u.lightGreen }, '.'),
                 div(
                   { ml: '.125rem', mr: '1rem', textAlign: 'right', fontSize: '1.125rem' },
                   `× ${getSubRollMark(subMarkProps, artifact.flat.reliquarySubstats)}`,
@@ -373,14 +358,7 @@ $effect(() => {
         .filter(sub => subMarkProps.includes(sub.appendPropId))
         .flatMap(sub => [
           div({ m: 0, h: '1rem', fontSize: '.875rem' }, sub.rollCount),
-          img({
-            m: 0,
-            w: '1rem',
-            h: '1rem',
-            ml: '.125rem',
-            mr: '.125rem',
-            src: srcUrl(sub.appendPropId, 'card-assets'),
-          }),
+          img({ w: '1rem', h: '1rem', m: 0, ml: '.125rem', mr: '.125rem' }, srcUrl(sub.appendPropId, 'card-assets')),
           div({ m: 0, mr: '1rem', h: '1rem', fontSize: '.875rem' }, sub.display),
         ]),
       ...[0].flatMap(() => {

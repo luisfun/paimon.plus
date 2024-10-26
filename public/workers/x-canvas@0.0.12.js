@@ -1,10 +1,11 @@
 const defaultFont = "Helvetica Neue, Arial, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo, sans-serif";
+const isNonElement = (elem) => typeof elem !== "object" || elem instanceof ImageBitmap;
+const fetchImage = (url) => fetch(self.location.origin + url).then((res) => res.blob()).then((blob) => createImageBitmap(blob));
 const fixFontFaceConstructor = (parameters) => {
   let [family, source, descriptors] = parameters;
   if (typeof source === "string" && !source.startsWith("url(")) source = `url(${self.location.origin + source})`;
   return [family, source, descriptors];
 };
-const fetchImage = (url) => fetch(self.location.origin + url).then((res) => res.blob()).then((blob) => createImageBitmap(blob));
 const drawImageArea = (image, pos, props) => {
   const w = image.width;
   const h = image.height;
@@ -28,6 +29,85 @@ const drawImageArea = (image, pos, props) => {
   return [0, 0, w, h, posX, pos.y, img.w, img.h];
 };
 const per2num = (per) => typeof per === "string" && per.at(-1) === "%" ? Number(per.slice(0, -1)) / 100 : void 0;
+const unsharpMask = (canvas, amount, radius, threshold) => {
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+  const width = canvas.width;
+  const height = canvas.height;
+  const imageData = ctx.getImageData(0, 0, width, height);
+  const originalData = new ImageData(new Uint8ClampedArray(imageData.data), width, height);
+  const blurredData = new ImageData(new Uint8ClampedArray(imageData.data), width, height);
+  gaussianBlur(blurredData, radius);
+  const originalPixels = originalData.data;
+  const blurredPixels = blurredData.data;
+  for (let i = 0; i < originalPixels.length; i += 4) {
+    for (let j = 0; j < 3; j++) {
+      const diff = originalPixels[i + j] - blurredPixels[i + j];
+      if (Math.abs(diff) > threshold) {
+        originalPixels[i + j] = Math.min(Math.max(originalPixels[i + j] + diff * amount, 0), 255);
+      }
+    }
+  }
+  ctx.putImageData(originalData, 0, 0);
+};
+const gaussianBlur = (imageData, radius) => {
+  const width = imageData.width;
+  const height = imageData.height;
+  const pixels = imageData.data;
+  const tmpPixels = new Uint8ClampedArray(pixels);
+  const sigma = radius / 3;
+  const twoSigmaSquare = 2 * sigma * sigma;
+  const piTwoSigmaSquare = Math.PI * twoSigmaSquare;
+  const weights = [];
+  let weightSum = 0;
+  for (let i = -radius; i <= radius; i++) {
+    const weight = Math.exp(-(i * i) / twoSigmaSquare) / piTwoSigmaSquare;
+    weights.push(weight);
+    weightSum += weight;
+  }
+  for (let i = 0; i < weights.length; i++) {
+    weights[i] /= weightSum;
+  }
+  for (let y = 0; y < height; y++) {
+    for (let x = 0; x < width; x++) {
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      for (let i = -radius; i <= radius; i++) {
+        const xi = Math.min(Math.max(x + i, 0), width - 1);
+        const index2 = (y * width + xi) * 4;
+        const weight = weights[i + radius];
+        r += tmpPixels[index2] * weight;
+        g += tmpPixels[index2 + 1] * weight;
+        b += tmpPixels[index2 + 2] * weight;
+      }
+      const index = (y * width + x) * 4;
+      pixels[index] = r;
+      pixels[index + 1] = g;
+      pixels[index + 2] = b;
+    }
+  }
+  tmpPixels.set(pixels);
+  for (let x = 0; x < width; x++) {
+    for (let y = 0; y < height; y++) {
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      for (let i = -radius; i <= radius; i++) {
+        const yi = Math.min(Math.max(y + i, 0), height - 1);
+        const index2 = (yi * width + x) * 4;
+        const weight = weights[i + radius];
+        r += tmpPixels[index2] * weight;
+        g += tmpPixels[index2 + 1] * weight;
+        b += tmpPixels[index2 + 2] * weight;
+      }
+      const index = (y * width + x) * 4;
+      pixels[index] = r;
+      pixels[index + 1] = g;
+      pixels[index + 2] = b;
+    }
+  }
+};
 class XCanvasWorker {
   #canvas;
   #ctx;
@@ -77,8 +157,8 @@ class XCanvasWorker {
    * Analysis of Structure
    */
   #recuStructure(pos, elem) {
+    if (isNonElement(elem)) return void 0;
     const posArr = this.#calcChildrenPos(pos, elem);
-    if (typeof elem !== "object" || !posArr) return void 0;
     const re = elem.children?.map((child, i) => ({
       pos: posArr[i],
       elem: child,
@@ -88,7 +168,6 @@ class XCanvasWorker {
     return re;
   }
   #calcChildrenPos(pos, elem) {
-    if (typeof elem !== "object") return void 0;
     const px = this.#fixSize(elem.props.p, pos.w, 0);
     const py = this.#fixSize(elem.props.p, pos.h, 0);
     const pt = this.#fixSize(elem.props.pt, pos.h, py);
@@ -96,13 +175,13 @@ class XCanvasWorker {
     const pb = this.#fixSize(elem.props.pb, pos.h, py);
     const pl = this.#fixSize(elem.props.pl, pos.w, px);
     const sxArr = elem.children.map((child) => {
-      if (typeof child !== "object")
+      if (isNonElement(child))
         return { z: 0, w: "auto", h: "auto", mt: "auto", mr: "auto", mb: "auto", ml: "auto", position: void 0 };
       const m = this.#fixSize(child.props?.m, this.#fontSize);
       return {
         z: child.props?.z ?? 0,
-        w: child.props?.w ?? this.#getTextWidth(child.children[0], child.props.fontSize) ?? "auto",
-        h: child.props?.h ?? (typeof child.children[0] === "string" || typeof child.children[0] === "number" ? this.#fixSize(child.props.fontSize, this.#fontSize, this.#fontSize) * 1.5 : "auto"),
+        w: child.props?.w ?? (child.type !== "img" ? this.#getTextWidth(child.children[0], child.props.fontSize) ?? "auto" : "auto"),
+        h: child.props?.h ?? (child.type !== "img" && (typeof child.children[0] === "string" || typeof child.children[0] === "number") ? this.#fixSize(child.props.fontSize, this.#fontSize, this.#fontSize) * 1.5 : "auto"),
         mt: child.props?.mt ?? m,
         mr: child.props?.mr ?? m,
         mb: child.props?.mb ?? m,
@@ -218,35 +297,21 @@ class XCanvasWorker {
   #load(structure, recursive) {
     const s = recursive ? structure : this.#structure;
     if (!s) return;
-    if (typeof s.elem !== "object" || !s.elem) return;
-    if (s.elem.type === "img") this.#loadImage(s.elem.props.src);
+    if (isNonElement(s.elem)) return;
+    if (s.elem.type === "img") this.#loadImage(s.elem.children[0], s.elem.props.id);
     if (s.elem.props.backgroundImage) this.#loadImage(s.elem.props.backgroundImage);
-    if (s.elem.type === "canvas")
-      this.#loadCanvas(s.elem.props.id || "canvas", s.elem.props.func, s.pos, s.elem.props.refresh);
     for (const e of s.inner || []) this.#load(e, true);
   }
-  #loadImage(src) {
-    if (this.#imageSrcList.includes(src)) return;
-    this.#imageSrcList.push(src);
-    fetchImage(src).then((image) => {
-      this.#imageMap.set(src, image);
-      this.#draw();
-    });
-  }
-  #loadCanvas(id, func, pos, refresh = true) {
-    if (!refresh && this.#imageSrcList.includes(id)) return;
-    if (!this.#imageSrcList.includes(id)) this.#imageSrcList.push(id);
-    let canvas = this.#imageMap.get(id);
-    if (canvas instanceof OffscreenCanvas) {
-      canvas.width = Math.round(pos.w);
-      canvas.height = Math.round(pos.h);
-    } else {
-      canvas = new OffscreenCanvas(Math.round(pos.w), Math.round(pos.h));
-    }
-    func(canvas).then(() => {
-      this.#imageMap.set(id, canvas);
-      this.#draw();
-    });
+  #loadImage(src, id) {
+    const index = id ?? (typeof src === "string" ? src : "image");
+    if (typeof src !== "string") this.#imageMap.set(index, src);
+    if (this.#imageSrcList.includes(index)) return;
+    this.#imageSrcList.push(index);
+    if (typeof src === "string")
+      fetchImage(src).then((image) => {
+        this.#imageMap.set(index, image);
+        this.#draw();
+      });
   }
   /*
    * Draw
@@ -255,15 +320,14 @@ class XCanvasWorker {
     if (!structure && (this.#imageSrcList.length !== this.#imageMap.size || !this.#structure?.inner?.[0])) return;
     const s = recursive ? structure : this.#structure;
     if (!s) return;
-    if (typeof s.elem !== "object" || !s.elem) return;
+    if (isNonElement(s.elem)) return;
     if (!recursive && this.#debugMode) console.log("Canvas Render", this.#structure);
     const h = s.elem.props?.overflow === "hidden" ? { pos: s.pos, radius: s.elem.props.borderRadius } : void 0;
     if (h) this.#ctxClipBox(h.pos, h.radius);
     const clipPath = s.elem.props?.clipPathLine ? { pos: s.pos, path: s.elem.props.clipPathLine } : void 0;
     if (clipPath) this.#ctxClipPath(clipPath.pos, clipPath.path);
     if (s.elem.props) this.#drawBackground(s.pos, s.elem.props);
-    if (s.elem.type === "img") this.#drawImage(s.pos, s.elem.props?.src || "", s.elem.props);
-    if (s.elem.type === "canvas") this.#drawImage(s.pos, s.elem.props?.id || "canvas", s.elem.props);
+    if (s.elem.type === "img") this.#drawImage(s.pos, s.elem.children[0], s.elem.props);
     if (s.elem.type === "div") {
       if (typeof s.elem.children[0] === "string" || typeof s.elem.children[0] === "number") {
         this.#drawText(s.pos, s.elem.children[0], s.elem.props);
@@ -294,8 +358,17 @@ class XCanvasWorker {
     if (props?.opacity) this.#ctx.globalAlpha = 1;
   }
   #drawImage(pos, src, props) {
-    const image = this.#imageMap.get(src);
+    const index = props.id ?? (typeof src === "string" ? src : "image");
+    let image = this.#imageMap.get(index);
     if (!image) return;
+    if (props.unsharpMask) {
+      const canvas = new OffscreenCanvas(pos.w, pos.h);
+      const ctx = canvas.getContext("2d");
+      const [, , sw, sh, dx, dy, dw, dh] = drawImageArea(image, pos, props);
+      ctx?.drawImage(image, 0, 0, sw, sh, dx - pos.x, dy - pos.y, dw, dh);
+      unsharpMask(canvas, ...props.unsharpMask);
+      image = canvas;
+    }
     if (props.opacity) this.#ctx.globalAlpha = props.opacity;
     if (props.shadow) {
       this.#ctx.shadowBlur = props.shadow.size;

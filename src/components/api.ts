@@ -68,14 +68,14 @@ export const avatarRemap = (info: AvatarInfo) => {
       // reliquarySubstats
       const rollSet = get_reliquary_roll_set(eq.reliquary.appendPropIdList)
       for (const sub of eq.flat.reliquarySubstats || []) {
-        const type = get_prop_type(sub.appendPropId)
-        sub.display = statToString(type, sub.statValue)
+        sub.type = get_prop_type(sub.appendPropId)
+        sub.display = statToString(sub.type, sub.statValue)
         sub.rolls = rollSet.find(e => e.prop === sub.appendPropId)?.rolls || []
         // reliquarySubStats All
         const subStat = re.reliquarySubStats.find(e => e.appendPropId === sub.appendPropId)
         if (subStat) {
           subStat.statValue += sub.statValue
-          subStat.display = statToString(type, subStat.statValue)
+          subStat.display = statToString(sub.type, subStat.statValue)
           subStat.rollCount += sub.rolls.length
         } else {
           re.reliquarySubStats.push({
@@ -463,6 +463,7 @@ export type ReliquaryRemap = {
     reliquarySubstats?: {
       appendPropId: string
       statValue: number
+      type: string
       display: string
       rolls: {
         rank: number

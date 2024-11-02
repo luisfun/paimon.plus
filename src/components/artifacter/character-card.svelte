@@ -5,7 +5,7 @@ import { avatarRemap } from '@components/api'
 import { useTranslations } from '@i18n/utils'
 import type { Lang } from '@i18n/utils'
 import { XCanvas, div, img } from '@luisfun/x-canvas'
-import { type defineSub, defineToProps } from './utils'
+//import { type defineSub, defineToProps } from './utils'
 
 let {
   lang,

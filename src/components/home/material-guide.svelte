@@ -34,7 +34,7 @@ let elementFilter = $state<string[]>([])
 let weaponTypeFilter = $state<string[]>([])
 let isAvatarLoading = $state(false)
 let isWeaponLoading = $state(false)
-let dialog = $state<HTMLDialogElement>()
+let dialog: HTMLDialogElement
 
 const elements = ['Fire', 'Water', 'Grass', 'Electric', 'Wind', 'Ice', 'Rock']
 const weaponTypes = ['WEAPON_SWORD_ONE_HAND', 'WEAPON_CLAYMORE', 'WEAPON_BOW', 'WEAPON_CATALYST', 'WEAPON_POLE']

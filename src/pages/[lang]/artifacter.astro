@@ -1,0 +1,13 @@
+---
+//import Island from '@components/artifacter/artifacter.svelte'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title={t("showcase.title")} minHFull>
+  <!--Island client:only="svelte" {lang} /-->
+</Layout>

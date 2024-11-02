@@ -15,9 +15,9 @@ let {
   avatarInfo: AvatarInfo | undefined
 } = $props()
 
-let scrollElement = $state<HTMLElement>()
+let scrollElement: HTMLElement
 let scrollLeft = 0
-let dialog = $state<HTMLDialogElement>()
+let dialog: HTMLDialogElement
 let isList = $state(false)
 let listLength = 0
 let isDialogVisible = $state(false)

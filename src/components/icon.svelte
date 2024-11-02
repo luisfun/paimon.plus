@@ -140,13 +140,11 @@ const imgProps = $derived.by(() => {
   return propsInit(style)
 })
 let overwriteProps = $state<HTMLImgAttributes>({})
-let srcLog = $state(dummySrc)
-let isInitialRender = $state(true)
+let isInitialRender = true
 
 $effect(() => {
-  if (isInitialRender || !dummyLoading || srcLog === imgProps.src) {
+  if (isInitialRender || !dummyLoading) {
     overwriteProps = {}
-    srcLog = imgProps.src
     isInitialRender = false
   } else {
     overwriteProps = { src: dummySrc }
@@ -154,7 +152,6 @@ $effect(() => {
       const img = new Image()
       img.onload = () => {
         overwriteProps = {}
-        srcLog = imgProps.src
       }
       img.src = imgProps.src
     }

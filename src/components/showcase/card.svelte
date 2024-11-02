@@ -145,7 +145,7 @@ $effect(() => {
             ...(a.skills?.map(skill =>
               div(
                 { w: 66, h: 66 },
-                img({ position: 'absolute', m: -18, opacity: 0.75, unsharpMask: [10, 2, 1] }, srcUrl('TalentBack', 'card-assets')),
+                img({ position: 'absolute', m: -18, opacity: 0.75 }, srcUrl('TalentBack', 'card-assets')),
                 img({ w: 66, h: 66 }, srcUrl(skill.icon, 'ui')),
                 div(
                   {
@@ -170,7 +170,7 @@ $effect(() => {
             { position: 'absolute', ml: 2 },
             div(
               { h: 240, mt: 0 },
-              img({ h: '100%', mt: -42, shadow: { size: 16 } }, srcUrl(a.sideIcon, 'ui')),
+              img({ h: '100%', mt: -42, shadow: { size: 16 }, unsharpMask: [4, 2, 0] }, srcUrl(a.sideIcon, 'ui')),
             ),
             div({ mt: -38, fontSize: '1.2rem', textAlign: 'center', shadow: { size: 16, for: 2 } }, `Lv.${a.level}`),
           ),

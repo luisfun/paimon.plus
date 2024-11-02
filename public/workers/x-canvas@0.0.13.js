@@ -4,6 +4,7 @@ const fetchImage = (url) => fetch(self.location.origin + url).then((res) => res.
 const fixFontFaceConstructor = (parameters) => {
   let [family, source, descriptors] = parameters;
   if (typeof source === "string" && !source.startsWith("url(")) source = `url(${self.location.origin + source})`;
+  if (!descriptors) descriptors = { display: "swap" };
   return [family, source, descriptors];
 };
 const drawImageArea = (image, pos, props) => {

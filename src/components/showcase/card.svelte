@@ -104,10 +104,7 @@ $effect(() => {
   xc ??= new XCanvas(canvas, '/workers', {
     canvasWidth: 1920,
     canvasHeight: 480,
-    fontFace:
-      lang === 'en'
-        ? ['Genshin', '/fonts/genshin.woff2', { display: 'fallback' }]
-        : ['GenshinJa', '/fonts/genshin-ja.woff2', { display: 'fallback' }],
+    fontFace: lang === 'en' ? ['Genshin', '/fonts/genshin.woff2'] : ['GenshinJa', '/fonts/genshin-ja.woff2'],
     fontSize: 24,
     fontColor: '#fff',
     //debugMode: true,

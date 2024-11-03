@@ -1,5 +1,5 @@
 ---
-//import Island from '@components/artifacter/artifacter.svelte'
+import Island from '@components/artifacter/island.svelte'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
 export { getStaticPaths } from '@i18n/utils'
@@ -8,6 +8,6 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<Layout title={t("showcase.title")} minHFull>
-  <!--Island client:only="svelte" {lang} /-->
+<Layout title={t("artifacter.title")} minHFull>
+  <Island client:only="svelte" {lang} />
 </Layout>

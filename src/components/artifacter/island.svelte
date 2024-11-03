@@ -5,7 +5,7 @@ import type { ApiData, AvatarInfo } from '@components/api'
 import ShowcaseSelector from '@components/showcase-selector.svelte'
 import UidInput from '@components/uid-input.svelte'
 import type { Lang } from '@i18n/utils'
-//import StatsCard from './stats-card.svelte'
+import Character from './character.svelte'
 
 const { lang }: { lang: Lang } = $props()
 
@@ -16,5 +16,5 @@ let avatarInfo = $state<AvatarInfo>()
 <UidInput {lang} bind:apiData />
 <ShowcaseSelector {apiData} bind:avatarInfo />
 {#if avatarInfo}
-<!--StatsCard {lang} {avatarInfo} /-->
+<Character {lang} {avatarInfo} />
 {/if}

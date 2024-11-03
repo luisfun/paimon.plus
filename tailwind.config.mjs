@@ -24,7 +24,7 @@ export default {
           //"secondary-content": "rgba(255, 255, 255, 0.85)",
           //accent: 'hsl(200 100% 49.4%)', // --blue-345
           neutral: '#1b1d2a',
-          'base-100': '#000',
+          'base-100': '#1b1d2a',
         },
       },
     ],

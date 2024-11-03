@@ -16,6 +16,7 @@ export const ui = {
     'showcase.error.register': 'No characters found in the Character Showcase.',
     'showcase.error.public':
       'Please enable the "Show Character Details" option in your Character Showcase in-game to see the details.',
+    'artifacter.title': 'Artifacter Web',
     'uid.player.ar': 'AR',
     'uid.player.wl': 'WL',
     'uid.player.achievements': 'Achievements',

@@ -80,7 +80,7 @@ onMount(async () => {
     </div>
   </div>
   {/if}
-  <div class="flex items-center input input-bordered px-1.5 bg-neutral rounded-full">
+  <div class="flex items-center input input-bordered px-1.5 rounded-full">
     <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-48 text-center text-2xl leading-[3rem]" on:keypress={keypressHandler} />
     {#if isFetching}
     <div class="loading loading-ring w-8"></div>
@@ -99,7 +99,7 @@ onMount(async () => {
     </div>
     <div>{apiData.playerInfo.nickname}</div>
   </div>
-  <div class="flex items-center input input-bordered px-1 h-8 bg-neutral rounded-full">
+  <div class="flex items-center input input-bordered px-1 h-8 rounded-full">
     <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 rounded-full" on:click={() => dialog.showModal()} disabled={isInitLoading || logDisabled} aria-label="uid logs">
       <Svg icon="clock-rotate-left" />
     </button>

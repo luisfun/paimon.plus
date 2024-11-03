@@ -72,6 +72,30 @@ export const sxMiniPaper = {
  * showcase only
  */
 
+export const defineSub = ['HP', 'ATK', 'DEF', 'EM', 'CRIT', 'ER'] as const
+
+export const defineToName = {
+  HP: 'HP %',
+  ATK: 'ATK %',
+  DEF: 'DEF %',
+  EM: 'Elemental Mastery',
+  CRIT: 'CRIT',
+  ER: 'Energy Recharge',
+} as const
+
+export const defineToProps = (stats: (typeof defineSub)[number][]) =>
+  stats.flatMap(
+    stat =>
+      ({
+        HP: 'FIGHT_PROP_HP_PERCENT',
+        ATK: 'FIGHT_PROP_ATTACK_PERCENT',
+        DEF: 'FIGHT_PROP_DEFENSE_PERCENT',
+        EM: 'FIGHT_PROP_ELEMENT_MASTERY',
+        CRIT: ['FIGHT_PROP_CRITICAL', 'FIGHT_PROP_CRITICAL_HURT'],
+        ER: 'FIGHT_PROP_CHARGE_EFFICIENCY',
+      })[stat],
+  )
+
 export const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap['flat']['reliquarySubstats']) => {
   const rollMap = reliquarySub?.map(sub => ({ appendPropId: sub.appendPropId, roll: sub.rolls.length }))
   if (!rollMap) return 0
@@ -82,9 +106,8 @@ export const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap
  * artifacter only
  */
 
-export type ScoreType = `CRIT` | `ATK` | `DEF` | `HP` | `ER` | `EM`
-
-export const scoreTypeMenuItems = ['CRIT', 'HP', 'ATK', 'DEF', 'EM', 'ER']
+export const scoreTypeMenuItems = ['CRIT', 'HP', 'ATK', 'DEF', 'EM', 'ER'] as const
+export type ScoreType = typeof scoreTypeMenuItems[number]
 
 export const menuItemMap = [
   { type: 'EM', name: 'Elemental Mastery' },

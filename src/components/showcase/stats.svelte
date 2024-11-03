@@ -3,14 +3,14 @@
 import type { AvatarInfo } from '@components/api'
 import Dialog from '@components/dialog.svelte'
 import Icon from '@components/icon.svelte'
+// biome-ignore lint: svelte
+import { defineSub, defineToName } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
 import { useTranslatedPath, useTranslations } from '@i18n/utils'
 import { imageDownload } from '@luisfun/x-canvas'
 import SubStatsJson from '@manual/showcase-sub-stats.json'
 import StatsCard from './stats-card.svelte'
-// biome-ignore lint: svelte
-import { defineSub, defineToName } from './utils'
 const SubStats = SubStatsJson as Record<keyof typeof SubStatsJson, (typeof defineSub)[number][]>
 const initSub = (id: number | undefined) =>
   SubStats[useTranslations('en')(id || -1, 'avatar') as keyof typeof SubStatsJson] || SubStats.default

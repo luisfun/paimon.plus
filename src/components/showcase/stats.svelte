@@ -25,9 +25,9 @@ const {
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 
+let canvas: HTMLCanvasElement
 let dialog: HTMLDialogElement
 let subMarks = $state(initSub(avatarInfo?.avatarId))
-let canvas: HTMLCanvasElement
 
 const onClick = (stat: (typeof defineSub)[number]) => {
   if (!subMarks.includes(stat)) subMarks.push(stat)

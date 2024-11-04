@@ -17,6 +17,10 @@ export const ui = {
     'showcase.error.public':
       'Please enable the "Show Character Details" option in your Character Showcase in-game to see the details.',
     'artifacter.title': 'Artifacter Web',
+    'artifacter.hint.none': 'This scoring is not in the original.',
+    'artifacter.hint.same': 'This scoring is the same as the original.',
+    'artifacter.hint.formula': 'Formula',
+    'artifacter.hint.grade': 'Grade',
     'uid.player.ar': 'AR',
     'uid.player.wl': 'WL',
     'uid.player.achievements': 'Achievements',
@@ -67,7 +71,8 @@ export const ui = {
     'Anemo DMG Bonus': 'Anemo DMG Bonus',
     'Cryo DMG Bonus': 'Cryo DMG Bonus',
     'Geo DMG Bonus': 'Geo DMG Bonus',
-    ts: 'ts',
+    // like stat
+    'CRIT Value': 'CRIT Value',
   },
   ja: {
     label: '日本語',
@@ -84,6 +89,10 @@ export const ui = {
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
     'showcase.error.public':
       '「キャラクターラインナップ」の「キャラ詳細非表示」を「キャラ詳細表示中」に切り替えて下さい。',
+    'artifacter.hint.none': '本家には無いスコアリングです。',
+    'artifacter.hint.same': '本家と同じスコアリングです。',
+    'artifacter.hint.formula': '計算式',
+    'artifacter.hint.grade': '評価',
     'uid.player.achievements': 'アチーブメント',
     'uid.player.friendship': '好感度Max',
     'uid.player.tower': '深境螺旋',
@@ -130,6 +139,8 @@ export const ui = {
     'Anemo DMG Bonus': '風元素ダメージ',
     'Geo DMG Bonus': '岩元素ダメージ',
     'Cryo DMG Bonus': '氷元素ダメージ',
+    // like stat
+    'CRIT Value': '会心スコア',
   },
   ko: {
     label: '한국어',

@@ -107,7 +107,7 @@ export const getSubRollMark = (markProps: string[], reliquarySub: ReliquaryRemap
  */
 
 export const scoreTypeMenuItems = ['CRIT', 'HP', 'ATK', 'DEF', 'EM', 'ER'] as const
-export type ScoreType = typeof scoreTypeMenuItems[number]
+export type ScoreType = (typeof scoreTypeMenuItems)[number]
 
 export const menuItemMap = [
   { type: 'EM', name: 'Elemental Mastery' },

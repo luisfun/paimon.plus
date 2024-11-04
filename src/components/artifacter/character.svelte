@@ -2,20 +2,13 @@
 <script lang="ts">
 import type { AvatarInfo } from '@components/api'
 import Dialog from '@components/dialog.svelte'
-import Icon from '@components/icon.svelte'
 import { type ScoreType, scoreTypeMenuItems } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
-import { useTranslatedPath, useTranslations } from '@i18n/utils'
+import { useTranslations } from '@i18n/utils'
 import { imageDownload } from '@luisfun/x-canvas'
+import GradeHintDialog from './grade-hint-dialog.svelte'
 //import CharacterCard from './character-card.svelte'
-
-//import SubStatsJson from '@manual/showcase-sub-stats.json'
-// biome-ignore lint: svelte
-//import { defineSub, defineToName } from './utils'
-//const SubStats = SubStatsJson as Record<keyof typeof SubStatsJson, (typeof defineSub)[number][]>
-//const initSub = (id: number | undefined) =>
-//  SubStats[useTranslations('en')(id || -1, 'avatar') as keyof typeof SubStatsJson] || SubStats.default
 
 const {
   lang,
@@ -25,10 +18,10 @@ const {
   avatarInfo: AvatarInfo // 簡易初期化のため上流でundefinedをはじく
 } = $props()
 const t = useTranslations(lang)
-const translatePath = useTranslatedPath(lang)
 
-let scoreType = $state<ScoreType>(scoreTypeMenuItems[0])
 let canvas: HTMLCanvasElement
+let dialog: HTMLDialogElement
+let scoreType = $state<ScoreType>(scoreTypeMenuItems[0])
 </script>
 
 {#if avatarInfo}
@@ -42,11 +35,17 @@ let canvas: HTMLCanvasElement
     <Svg icon="download" class="py-1.5" height="100%" />{t("card.download")}
   </button>
   <div class="flex justify-center">
-    <select bind:value={scoreType} class="select select-bordered select-primary select-sm w-full max-w-xs">
+    <select bind:value={scoreType} class="select select-bordered select-primary select-sm w-full max-w-xs mr-2 sm:mr-4">
       {#each scoreTypeMenuItems as item}
         <option value={item}>{t(item)}</option>
       {/each}
     </select>
+    <button class="btn btn-circle btn-xs btn-ghost text-warning my-auto" onclick={() => dialog?.showModal()}>
+      <Svg icon="circle-question" height="100%" />
+    </button>
   </div>
 </div>
+<Dialog bind:dialog>
+  <GradeHintDialog {lang} />
+</Dialog>
 {/if}

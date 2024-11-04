@@ -20,6 +20,7 @@ export default {
         paimon: {
           primary: '#556DE5',
           'primary-content': '#fff',
+          warning: 'yellow',
           //secondary: '#343746',
           //"secondary-content": "rgba(255, 255, 255, 0.85)",
           //accent: 'hsl(200 100% 49.4%)', // --blue-345

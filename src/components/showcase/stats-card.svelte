@@ -287,9 +287,9 @@ $effect(() => {
       { display: 'flex', h: '1rem', mt: -12, mb: 2 },
       div(
         { display: 'flex', w: '23%', h: '1rem', mb: 2, ml: 0 },
-        div({ mr: 0, fontSize: '.875rem', h: '.875rem', mb: 0 }, 'Paimon+ '),
+        div({ mr: '.5rem', fontSize: '.75rem', h: '.75rem', mb: 0 }, 'Paimon+'),
         div({ ml: 0, mr: 0, fontSize: '.625rem', h: '.625rem', mb: 0 }, 'powered by'),
-        div({ ml: 0, fontSize: '.75rem', h: '.75rem', mb: 0 }, ' Enka.Network'),
+        div({ ml: '.25rem', fontSize: '.75rem', h: '.75rem', mb: 0 }, 'Enka.Network'),
       ),
       ...a.reliquarySubStats
         .filter(sub => subMarkProps.includes(sub.appendPropId))

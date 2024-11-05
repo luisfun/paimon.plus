@@ -1,0 +1,282 @@
+[
+  {
+    "id": 10001,
+    "nameTextMapHash": 2364208851,
+    "wikiId": 2093
+  },
+  {
+    "id": 10002,
+    "nameTextMapHash": 3535784755,
+    "wikiId": 2063
+  },
+  {
+    "id": 10003,
+    "nameTextMapHash": 4082302819,
+    "wikiId": 2069
+  },
+  {
+    "id": 10004,
+    "nameTextMapHash": 1383639611,
+    "wikiId": 2066
+  },
+  {
+    "id": 10005,
+    "nameTextMapHash": 855894507,
+    "wikiId": 2073
+  },
+  {
+    "id": 10006,
+    "nameTextMapHash": 2890909531,
+    "wikiId": 2078
+  },
+  {
+    "id": 10007,
+    "nameTextMapHash": 3890292467,
+    "wikiId": 2074
+  },
+  {
+    "id": 10008,
+    "nameTextMapHash": 1186209435,
+    "wikiId": 2096
+  },
+  {
+    "id": 10009,
+    "nameTextMapHash": 2764598579,
+    "wikiId": 2080
+  },
+  {
+    "id": 10010,
+    "nameTextMapHash": 2191797987,
+    "wikiId": 2061
+  },
+  {
+    "id": 10011,
+    "nameTextMapHash": 1103732675,
+    "wikiId": 2071
+  },
+  {
+    "id": 10012,
+    "nameTextMapHash": 3618167299,
+    "wikiId": 2068
+  },
+  {
+    "id": 10013,
+    "nameTextMapHash": 3782508715,
+    "wikiId": 2084
+  },
+  {
+    "id": 14001,
+    "nameTextMapHash": 933076627,
+    "wikiId": 2062
+  },
+  {
+    "id": 14002,
+    "nameTextMapHash": 1873342283,
+    "wikiId": 2070
+  },
+  {
+    "id": 14003,
+    "nameTextMapHash": 1632377563,
+    "wikiId": 2083
+  },
+  {
+    "id": 14004,
+    "nameTextMapHash": 83115355,
+    "wikiId": 2094
+  },
+  {
+    "id": 15001,
+    "nameTextMapHash": 1212345779,
+    "wikiId": 2095
+  },
+  {
+    "id": 15002,
+    "nameTextMapHash": 1562601179,
+    "wikiId": 2091
+  },
+  {
+    "id": 15003,
+    "nameTextMapHash": 147298547,
+    "wikiId": 2081
+  },
+  {
+    "id": 15004,
+    "nameTextMapHash": 729851187,
+    "wikiId": -1
+  },
+  {
+    "id": 15005,
+    "nameTextMapHash": 2512309395,
+    "wikiId": 2067
+  },
+  {
+    "id": 15006,
+    "nameTextMapHash": 1524173875,
+    "wikiId": 2085
+  },
+  {
+    "id": 15007,
+    "nameTextMapHash": 1751039235,
+    "wikiId": 2075
+  },
+  {
+    "id": 15008,
+    "nameTextMapHash": 1541919827,
+    "wikiId": 2077
+  },
+  {
+    "id": 15009,
+    "nameTextMapHash": 0,
+    "wikiId": -1
+  },
+  {
+    "id": 15010,
+    "nameTextMapHash": 0,
+    "wikiId": -1
+  },
+  {
+    "id": 15011,
+    "nameTextMapHash": 0,
+    "wikiId": -1
+  },
+  {
+    "id": 15012,
+    "nameTextMapHash": 0,
+    "wikiId": -1
+  },
+  {
+    "id": 15013,
+    "nameTextMapHash": 0,
+    "wikiId": -1
+  },
+  {
+    "id": 15014,
+    "nameTextMapHash": 2040573235,
+    "wikiId": 2072
+  },
+  {
+    "id": 15015,
+    "nameTextMapHash": 1438974835,
+    "wikiId": 2099
+  },
+  {
+    "id": 15016,
+    "nameTextMapHash": 156294403,
+    "wikiId": 2079
+  },
+  {
+    "id": 15017,
+    "nameTextMapHash": 1337666507,
+    "wikiId": 2064
+  },
+  {
+    "id": 15018,
+    "nameTextMapHash": 862591315,
+    "wikiId": 2092
+  },
+  {
+    "id": 15019,
+    "nameTextMapHash": 4144069251,
+    "wikiId": 2098
+  },
+  {
+    "id": 15020,
+    "nameTextMapHash": 2276480763,
+    "wikiId": 2090
+  },
+  {
+    "id": 15021,
+    "nameTextMapHash": 2546254811,
+    "wikiId": 2065
+  },
+  {
+    "id": 15022,
+    "nameTextMapHash": 1756609915,
+    "wikiId": 2082
+  },
+  {
+    "id": 15023,
+    "nameTextMapHash": 1558036915,
+    "wikiId": 2097
+  },
+  {
+    "id": 15024,
+    "nameTextMapHash": 3626268211,
+    "wikiId": 2076
+  },
+  {
+    "id": 15025,
+    "nameTextMapHash": 1675079283,
+    "wikiId": 2672
+  },
+  {
+    "id": 15026,
+    "nameTextMapHash": 4145306051,
+    "wikiId": 2673
+  },
+  {
+    "id": 15027,
+    "nameTextMapHash": 2538235187,
+    "wikiId": 3322
+  },
+  {
+    "id": 15028,
+    "nameTextMapHash": 3094139291,
+    "wikiId": 3321
+  },
+  {
+    "id": 15029,
+    "nameTextMapHash": 1925210475,
+    "wikiId": 3693
+  },
+  {
+    "id": 15030,
+    "nameTextMapHash": 235897163,
+    "wikiId": 3694
+  },
+  {
+    "id": 15031,
+    "nameTextMapHash": 1249831867,
+    "wikiId": 3990
+  },
+  {
+    "id": 15032,
+    "nameTextMapHash": 3410220315,
+    "wikiId": 3991
+  },
+  {
+    "id": 15033,
+    "nameTextMapHash": 2803305851,
+    "wikiId": 4717
+  },
+  {
+    "id": 15034,
+    "nameTextMapHash": 279470883,
+    "wikiId": 4716
+  },
+  {
+    "id": 15035,
+    "nameTextMapHash": 1492570003,
+    "wikiId": 5578
+  },
+  {
+    "id": 15036,
+    "nameTextMapHash": 352459163,
+    "wikiId": 5579
+  },
+  {
+    "id": 15037,
+    "nameTextMapHash": 2949388203,
+    "wikiId": 6553
+  },
+  {
+    "id": 15038,
+    "nameTextMapHash": 1774579403,
+    "wikiId": 6554
+  },
+  {
+    "id": 15000,
+    "nameTextMapHash": 0,
+    "wikiId": -1
+  }
+]

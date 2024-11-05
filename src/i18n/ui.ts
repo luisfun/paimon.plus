@@ -17,6 +17,9 @@ export const ui = {
     'showcase.error.public':
       'Please enable the "Show Character Details" option in your Character Showcase in-game to see the details.',
     'artifacter.title': 'Artifacter Web',
+    'artifacter.card.total': 'Total Score',
+    'artifacter.card.tcv': 'Total CRIT Value',
+    'artifacter.crit': 'CRIT Only',
     'artifacter.hint.none': 'This scoring is not in the original.',
     'artifacter.hint.same': 'This scoring is the same as the original.',
     'artifacter.hint.formula': 'Formula',
@@ -89,6 +92,9 @@ export const ui = {
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
     'showcase.error.public':
       '「キャラクターラインナップ」の「キャラ詳細非表示」を「キャラ詳細表示中」に切り替えて下さい。',
+    'artifacter.card.total': '総合スコア',
+    'artifacter.card.tcv': '総会心スコア',
+    'artifacter.crit': '会心のみ',
     'artifacter.hint.none': '本家には無いスコアリングです。',
     'artifacter.hint.same': '本家と同じスコアリングです。',
     'artifacter.hint.formula': '計算式',

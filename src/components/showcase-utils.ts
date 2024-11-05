@@ -2,7 +2,6 @@ import type { ReliquaryRemap } from './api'
 
 export const bga = '#0005'
 export const bga2 = '#0007'
-//export const colora = `#fffa`
 export const bgas = '#282828dd'
 export const lightGreen = '#82ff9a'
 
@@ -186,3 +185,9 @@ export const scoreIcon = (name: string) => {
   ]
   return props.find(e => e.name === name)?.prop || 'FIGHT_PROP_CRITICAL'
 }
+
+export const sxBga = {
+  backgroundColor: bga,
+  overflow: 'hidden',
+  borderRadius: 16,
+} as const

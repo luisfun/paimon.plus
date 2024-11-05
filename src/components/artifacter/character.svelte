@@ -7,8 +7,8 @@ import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
 import { useTranslations } from '@i18n/utils'
 import { imageDownload } from '@luisfun/x-canvas'
+import CharacterCard from './character-card.svelte'
 import GradeHintDialog from './grade-hint-dialog.svelte'
-//import CharacterCard from './character-card.svelte'
 
 const {
   lang,
@@ -27,7 +27,7 @@ let scoreType = $state<ScoreType>(scoreTypeMenuItems[0])
 {#if avatarInfo}
 <div class="overflow-x-auto mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-auto mb-2">
   <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
-    <!--CharacterCard {lang} {avatarInfo} {subMarks} bind:canvas /-->
+    <CharacterCard {lang} {avatarInfo} {scoreType} bind:canvas />
   </div>
 </div>
 <div class="flex justify-around sm:justify-evenly">

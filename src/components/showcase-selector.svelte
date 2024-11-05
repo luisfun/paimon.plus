@@ -10,9 +10,11 @@ import Svg from './svg.svelte'
 let {
   apiData,
   avatarInfo = $bindable(),
+  sticky,
 }: {
   apiData: ApiData | undefined
   avatarInfo: AvatarInfo | undefined
+  sticky?: boolean
 } = $props()
 
 let scrollElement: HTMLElement
@@ -77,7 +79,7 @@ $effect(() => {
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
-<div class="sticky -top-px flex justify-center mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
+<div class="{sticky ? "sticky -top-px" : "relative"} flex justify-center mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
   <div class="absolute inset-0 backdrop-blur avatar-list-bg"></div>
   <div
     class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"

@@ -24,10 +24,14 @@ import WeaponPromote from '../../../../src/game/.data/WeaponPromoteExcelConfigDa
 // material
 import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
 
+import EquipAffix from '../../../../src/game/.data/EquipAffixExcelConfigData.json' assert { type: 'json' }
+// artifact-set
+import ReliquarySet from '../../../../src/game/.data/ReliquarySetExcelConfigData.json' assert { type: 'json' }
+
 // artifact-substat
 import ReliquaryAffix from '../../../../src/game/.data/ReliquaryAffixExcelConfigData.json' assert { type: 'json' }
 
-//
+// pfp
 import ProfilePicture from '../../../../src/game/.data/ProfilePictureExcelConfigData.json' assert { type: 'json' }
 
 // wiki-id
@@ -46,6 +50,8 @@ const E = {
   ProudSkill,
   ReliquaryAffix,
   ProfilePicture,
+  ReliquarySet,
+  EquipAffix,
 }
 
 export const dataShrink = () => {
@@ -53,6 +59,7 @@ export const dataShrink = () => {
   dumpAvatar()
   dumpWeapon()
   dumpMaterial()
+  dumpReliquarySet()
   dumpProfilePicture()
   dumpTextMap()
   dumpReliquaryAffix()
@@ -225,6 +232,16 @@ const dumpMaterial = () => {
   dumpFile('material', m)
 }
 
+const dumpReliquarySet = () => {
+  const set = E.ReliquarySet.map(set => {
+    const { setId, equipAffixId } = set
+    const affix = E.EquipAffix.find(e => e.id === equipAffixId && !!e.level)
+    const nameTextMapHash = affix?.nameTextMapHash || 0
+    return { id: setId, nameTextMapHash, wikiId: findWikiId(TextMap.en[nameTextMapHash]) }
+  })
+  dumpFile('reliquary-set', set)
+}
+
 const dumpProfilePicture = () => {
   const pfp = {}
   for (const p of E.ProfilePicture) {
@@ -237,6 +254,7 @@ const dumpTextMap = () => {
   let hashs = readFile('avatar').map(e => e.nameTextMapHash)
   hashs.push(...readFile('weapon').map(e => e.nameTextMapHash))
   hashs.push(...readFile('material').map(e => e.nameTextMapHash))
+  hashs.push(...readFile('reliquary-set').map(e => e.nameTextMapHash))
   hashs = [...new Set(hashs)]
   const textMap = {}
   for (const lang of Object.keys(TextMap)) {

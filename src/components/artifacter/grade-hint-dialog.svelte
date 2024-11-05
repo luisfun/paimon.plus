@@ -25,7 +25,7 @@ const basicTable = [
 </script>
 
 <div class="m-4">
-  <div class="text-lg font-bold border-b border-border">{t(scoreTypeMenuItems[0])}</div>
+  <div class="text-lg font-bold border-b border-border">{t("artifacter.crit")}</div>
   <div class="text-sm text-text-sub text-right">{t("artifacter.hint.none")}</div>
   {t("artifacter.hint.formula")}
   <table class="table bg-neutral rounded-none">

@@ -32,7 +32,7 @@ let scoreType = $state<ScoreType>(scoreTypeMenuItems[0])
 </div>
 <div class="flex justify-around sm:justify-evenly">
   <button class="btn btn-sm btn-primary leading-8" onclick={() => imageDownload(canvas, "card")}>
-    <Svg icon="download" class="py-1.5" height="100%" />{t("card.download")}
+    <Svg icon="download" class="py-1.5 inline-block" height="100%" />{t("card.download")}
   </button>
   <div class="flex justify-center">
     <select bind:value={scoreType} class="select select-bordered select-primary select-sm w-full max-w-xs mr-2 sm:mr-4">

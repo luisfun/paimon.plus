@@ -79,12 +79,12 @@ $effect(() => {
           ),
           div(
             { display: 'flex', m: 0, h: 24 * 1.2 },
-            div({ w: 76 * 1.2, fontSize: '1.2rem', shadow: { size: 12, for: 4 } }, `Lv.${a.level}`),
+            div({ w: 76 * 1.2, ml: 0, mr: 0, fontSize: '1.2rem', shadow: { size: 12, for: 4 } }, `Lv.${a.level}`),
             img(
-              { mr: 2 * 1.2, w: 28 * 1.2, h: 28 * 1.2, shadow: { size: 12, for: 4 } },
+              { ml: 0, mr: 2 * 1.2, w: 28 * 1.2, h: 28 * 1.2, shadow: { size: 12, for: 4 } },
               src('Friendship', 'card-assets'),
             ),
-            div({ fontSize: '1.2rem', shadow: { size: 12, for: 4 } }, a.fetterInfo.expLevel),
+            div({ ml: 0, fontSize: '1.2rem', shadow: { size: 12, for: 4 } }, a.fetterInfo.expLevel),
           ),
         ),
         // スキル
@@ -98,7 +98,9 @@ $effect(() => {
               div(
                 {
                   ...sxMiniPaper,
-                  mt: -8,
+                  ml: 'auto',
+                  mr: 'auto',
+                  mb: -28,
                   w: 44,
                   h: 36,
                   fontSize: '1.15rem',
@@ -164,13 +166,13 @@ $effect(() => {
                   { display: 'flex' },
                   img({ ml: -4, mr: 10, w: 32 * 1.15, h: 32 * 1.15 }, src(stat.icon, 'card-assets')),
                   // @ts-expect-error
-                  div({ ml: 0, fontSize: '1.15rem' }, t(stat.type)),
+                  div({ ml: 2, fontSize: '1.15rem' }, t(stat.type)),
                 ),
                 // ステータス値 詳細
                 stat.display.base &&
                   stat.display.add &&
                   div(
-                    { position: 'absolute', display: 'flex', mb: 0, h: '.85rem' },
+                    { position: 'absolute', display: 'flex', mb: -2, h: '.85rem' },
                     div({ w: '58%', mr: 0, fontSize: '.85rem', textAlign: 'right' }, stat.display.base),
                     div({ w: '42%', ml: 8, fontSize: '.85rem', color: lightGreen }, `+${stat.display.add}`),
                   ),
@@ -197,7 +199,7 @@ $effect(() => {
           ),
           div(
             { w: '70%', p: 8, pl: 16 },
-            div({ h: 24 * 1.4, fontSize: '1.1rem' }, t(weapon[0].itemId, 'weapon')),
+            div({ h: 24 * 1.4, ml: 0, fontSize: '1.1rem' }, t(weapon[0].itemId, 'weapon')),
             div(
               { h: 24 * 1.4, fontSize: '1.1rem', ml: 0, ...sxBga, borderRadius: 8, w: 62 * 1.4, textAlign: 'center' },
               `Lv.${weapon[0].weapon.level}`,
@@ -300,10 +302,7 @@ $effect(() => {
               div(
                 { mt: 8, mr: 14, h: 140 },
                 img({ mt: 0, mr: 0, w: 46, h: 46 }, src(artifact.flat.reliquaryMainstat.mainPropId, 'card-assets')),
-                div(
-                  { mt: 0, textAlign: 'right', fontSize: '1.75rem', h: 24 * 1.75 },
-                  artifact.flat.reliquaryMainstat.display,
-                ),
+                div({ mt: 0, mr: 0, fontSize: '1.75rem', h: 24 * 1.75 }, artifact.flat.reliquaryMainstat.display),
                 div(
                   { mt: 0, mr: 0, ...sxBga, borderRadius: 8, textAlign: 'center', w: 58, h: 30 },
                   `+${artifact.reliquary.level - 1}`,
@@ -334,7 +333,7 @@ $effect(() => {
                             },
                             sub.rolls.map(_ => '.').join(''),
                           ),
-                        div({ textAlign: 'right' }, sub.display),
+                        div({ mr: 0 }, sub.display),
                       ),
                     ),
                   ),
@@ -342,10 +341,10 @@ $effect(() => {
               // フッター
               div(
                 { mb: 0, pl: 14, pr: 14, h: 54, display: 'flex', backgroundColor: bga2 },
-                img({ w: 32, h: 32 }, src(artifact.flat.equipType, 'card-assets')),
+                img({ w: 32, h: 32, ml: 0, mr: 0 }, src(artifact.flat.equipType, 'card-assets')),
                 img({ ml: 10, mr: 10, w: 38, h: 38 }, src(score.grade, 'card-assets')),
-                div({ mb: 10, h: 24, textAlign: 'right', color: '#fffa' }, scoreType === 'CRIT' ? 'CV' : 'Score'),
-                div({ mr: 0, w: 64 * 1.45, textAlign: 'right', fontSize: '1.45rem' }, score.value.toFixed(1)),
+                div({ mb: 10, h: 24, mr: 0, color: '#fffa' }, scoreType === 'CRIT' ? 'CV' : 'Score'),
+                div({ ml: '.5rem', mr: 0, textAlign: 'right', fontSize: '1.45rem' }, score.value.toFixed(1)),
               ),
             ),
         )

@@ -86,7 +86,7 @@ const basicTable = [
 </div>
 
 <style>
-  .table :where(th, td) {
+  .table :where(td) {
     padding-top: .125rem;
     padding-bottom: .125rem
   }

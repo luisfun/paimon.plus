@@ -17,17 +17,17 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",
-    "@astrojs/svelte": "^6.0.0-beta.1",
+    "@astrojs/svelte": "^6.0.0-beta.2",
     "@astrojs/tailwind": "^5.1.2",
     "@biomejs/biome": "1.9.4",
-    "@cloudflare/workers-types": "^4.20241022.0",
+    "@cloudflare/workers-types": "^4.20241106.0",
     "@luisfun/x-canvas": "^0.0.13",
-    "astro": "^5.0.0-beta.6",
+    "astro": "^5.0.0-beta.7",
     "astro-webmanifest": "^1.0.0",
     "daisyui": "^4.12.14",
-    "svelte": "^5.1.10",
+    "svelte": "^5.1.13",
     "tailwindcss": "^3.4.14",
     "typescript": "^5.6.3",
-    "wrangler": "^3.84.1"
+    "wrangler": "^3.86.0"
   }
 }

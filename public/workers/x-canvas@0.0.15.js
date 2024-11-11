@@ -22,7 +22,6 @@ const drawImageArea = (image, pos, props, crip) => {
   }
   const sx = crip?.[3] ?? 0;
   const sy = crip?.[0] ?? 0;
-  if (crip) console.log(sx, sy, w, h);
   if (fit === "x") {
     const img2 = { w: pos.w, h: h * pos.w / w };
     const posY = pos.y + pos.h / 2 - img2.h / 2;

@@ -15,6 +15,7 @@ const {
   text,
   style,
   dummyLoading,
+  dummyPaimon,
 }: {
   id: number | string
   skinId?: number
@@ -22,9 +23,12 @@ const {
   text?: string | number
   style?: string
   dummyLoading?: boolean
+  dummyPaimon?: boolean
 } = $props()
 
-const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
+const dummySrc = dummyPaimon
+  ? '/images/Empty.webp'
+  : 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
 const rankNum: Record<string, number> = {
   QUALITY_ORANGE: 5,
   QUALITY_PURPLE: 4,

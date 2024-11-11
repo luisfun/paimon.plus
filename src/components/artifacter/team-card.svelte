@@ -22,30 +22,43 @@ import { XCanvas, div, img } from '@luisfun/x-canvas'
 
 let {
   lang,
-  avatarInfo,
-  scoreType,
+  avatarInfoList,
+  selectTeam,
   canvas = $bindable(),
 }: {
   lang: Lang
-  avatarInfo: AvatarInfo
-  scoreType: ScoreType
+  avatarInfoList: AvatarInfo[]
+  selectTeam: [number, ScoreType][]
   canvas: HTMLCanvasElement
 } = $props()
 const t = useTranslations(lang)
 
-const a = $derived(avatarRemap(avatarInfo))
+const avatarList = $derived(
+  selectTeam
+    .filter(e => e[0] !== -1)
+    .map(e => {
+      const i = avatarInfoList.findIndex(a => a.avatarId === e[0])
+      return { ...avatarRemap(avatarInfoList[i]), scoreType: e[1] }
+    }),
+)
 let xc: XCanvas
+let memberNum = 0
 
 $effect(() => {
   //console.log('effect')
-  xc ??= new XCanvas(canvas, '/workers', {
-    canvasWidth: 1920,
-    canvasHeight: 1080,
-    fontFace: lang === 'en' ? ['Genshin', '/fonts/genshin.woff2'] : ['GenshinJa', '/fonts/genshin-ja.woff2'],
-    fontSize: 24,
-    fontColor: '#fff',
-    //debugMode: true,
-  })
+  xc ??= new XCanvas(canvas, '/workers')
+  if (memberNum !== avatarList.length) {
+    xc.options({
+      canvasWidth: 1920,
+      canvasHeight: 480 * avatarList.length,
+      fontFace: lang === 'en' ? ['Genshin', '/fonts/genshin.woff2'] : ['GenshinJa', '/fonts/genshin-ja.woff2'],
+      fontSize: 24,
+      fontColor: '#fff',
+      //debugMode: true,
+    })
+    memberNum = avatarList.length
+  }
+  /*
   const weapon: WeaponRemap[] = []
   const artifactList: ReliquaryRemap[] = []
   for (const e of a.equipList || []) {
@@ -54,6 +67,7 @@ $effect(() => {
   }
   const scoreSet = getScoreSet(artifactList, scoreType)
   const totalScore = getTotalScoreSet(scoreSet, scoreType)
+  */
   xc.render(
     {
       backgroundColor: elementMap[a.element || ''],
@@ -365,4 +379,4 @@ $effect(() => {
 })
 </script>
 
-<canvas width="1920" height="1080" class="w-full" bind:this={canvas}></canvas>
+<canvas width="1920" height="480" class="w-full" bind:this={canvas}></canvas>

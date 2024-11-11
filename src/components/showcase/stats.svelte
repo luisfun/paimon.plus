@@ -9,11 +9,10 @@ import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
 import { useTranslatedPath, useTranslations } from '@i18n/utils'
 import { imageDownload } from '@luisfun/x-canvas'
-import SubStatsJson from '@manual/showcase-sub-stats.json'
+import DefaultMarks from '@manual/showcase-default-marks'
 import StatsCard from './stats-card.svelte'
-const SubStats = SubStatsJson as Record<keyof typeof SubStatsJson, (typeof defineSub)[number][]>
 const initSub = (id: number | undefined) =>
-  SubStats[useTranslations('en')(id || -1, 'avatar') as keyof typeof SubStatsJson] || SubStats.default
+  DefaultMarks[useTranslations('en')(id || -1, 'avatar') as keyof typeof DefaultMarks] || DefaultMarks.default
 
 const {
   lang,

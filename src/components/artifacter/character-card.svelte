@@ -69,7 +69,18 @@ $effect(() => {
       div(
         { w: '40%' },
         // アバター画像
-        img({ position: 'absolute', mt: -12, ml: -12, overflow: 'hidden' }, src(a.avatarImg, 'ui')),
+        img(
+          {
+            position: 'absolute',
+            mt: -12,
+            ml: -12,
+            overflow: 'hidden',
+            objectFit: 'cover',
+            clipImgRect: ['10%', 0, '30%', 0],
+            opacityGradient: ['to right', [0, 0], ['25%', 1], ['75%', 1], ['100%', 0]],
+          },
+          src(a.avatarImg, 'ui'),
+        ),
         // キャラ名
         div(
           { position: 'absolute', m: 16 },

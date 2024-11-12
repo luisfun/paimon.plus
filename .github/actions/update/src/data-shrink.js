@@ -239,17 +239,17 @@ const dumpMaterial = () => {
 
 const dumpReliquaryIcon = () => {
   const blockList = [
-    "UI_RelicIcon_15004_1",
-    "UI_RelicIcon_15004_2",
-    "UI_RelicIcon_15004_3",
-    "UI_RelicIcon_15004_4",
-    "UI_RelicIcon_15004_5",
-    "UI_RelicIcon_15012_3",
-    "UI_RelicIcon_15000_1",
-    "UI_RelicIcon_15000_2",
-    "UI_RelicIcon_15000_3",
-    "UI_RelicIcon_15000_4",
-    "UI_RelicIcon_15000_5",
+    'UI_RelicIcon_15004_1',
+    'UI_RelicIcon_15004_2',
+    'UI_RelicIcon_15004_3',
+    'UI_RelicIcon_15004_4',
+    'UI_RelicIcon_15004_5',
+    'UI_RelicIcon_15012_3',
+    'UI_RelicIcon_15000_1',
+    'UI_RelicIcon_15000_2',
+    'UI_RelicIcon_15000_3',
+    'UI_RelicIcon_15000_4',
+    'UI_RelicIcon_15000_5',
   ]
   const icon = [...new Set(E.Reliquary.map(r => r.icon))].filter(i => !blockList.includes(i))
   dumpFile('reliquary-icon', icon)

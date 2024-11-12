@@ -33,6 +33,15 @@ const onReset = (i: number) => {
   selectTeam[i][0] = -1
   dialogs[i].close()
 }
+
+$effect.pre(() => {
+  selectTeam = [
+    [avatarInfoList[0].avatarId, scoreTypeMenuItems[0]],
+    [-1, 'CRIT'],
+    [-1, 'CRIT'],
+    [-1, 'CRIT'],
+  ]
+})
 </script>
 
 {#if avatarInfoList}

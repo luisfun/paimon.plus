@@ -17,14 +17,19 @@ export const fetchUid = async (
   )
   if (200 <= res.status && res.status <= 399) {
     const json = (await res.json()) as ApiData
+    // ver check
     if (API_VER !== json.ver) {
+      // retry
       if (cache) return await fetchUid(uid)
+      // error
       return { json: undefined, status: res.status, uidLogs: ls.uidLog.get() }
     }
+    // Successful
     localStorage.setItem('uid', uid?.toString() || '')
     const uidLogs = ls.uidLog.set(uid, json)
     return { json, status: res.status, uidLogs }
   }
+  // error
   return { json: undefined, status: res.status, uidLogs: ls.uidLog.get() }
 }
 

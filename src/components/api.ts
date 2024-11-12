@@ -1,11 +1,14 @@
-import { ls } from '@components/local-storage'
+import { type UidLog, ls } from '@components/local-storage'
 import avatarJson from '@game/avatar.json'
 import affixJson from '@game/reliquary-affix.json'
 
 export const API_VER = '0.3.0'
 export const uidTest = (uid: string | number | undefined) => /^(18|[1-35-9])\d{8}$/.test(uid?.toString() || '')
 
-export const fetchUid = async (uid: number | undefined, cache?: 'cache') => {
+export const fetchUid = async (
+  uid: number | undefined,
+  cache?: 'cache',
+): Promise<{ json: ApiData | undefined; status: number; uidLogs: UidLog[] }> => {
   if (uid === undefined) return { json: undefined, status: 0, uidLogs: ls.uidLog.get() }
   if (!uidTest(uid)) return { json: undefined, status: 499, uidLogs: ls.uidLog.get() }
   const res = await fetch(
@@ -14,6 +17,10 @@ export const fetchUid = async (uid: number | undefined, cache?: 'cache') => {
   )
   if (200 <= res.status && res.status <= 399) {
     const json = (await res.json()) as ApiData
+    if (API_VER !== json.ver) {
+      if (cache) return await fetchUid(uid)
+      return { json: undefined, status: res.status, uidLogs: ls.uidLog.get() }
+    }
     localStorage.setItem('uid', uid?.toString() || '')
     const uidLogs = ls.uidLog.set(uid, json)
     return { json, status: res.status, uidLogs }

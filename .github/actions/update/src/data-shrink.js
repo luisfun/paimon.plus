@@ -21,10 +21,13 @@ import ProudSkill from '../../../../src/game/.data/ProudSkillExcelConfigData.jso
 import Weapon from '../../../../src/game/.data/WeaponExcelConfigData.json' assert { type: 'json' }
 import WeaponPromote from '../../../../src/game/.data/WeaponPromoteExcelConfigData.json' assert { type: 'json' }
 
+import EquipAffix from '../../../../src/game/.data/EquipAffixExcelConfigData.json' assert { type: 'json' }
 // material
 import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
 
-import EquipAffix from '../../../../src/game/.data/EquipAffixExcelConfigData.json' assert { type: 'json' }
+// artifact
+import Reliquary from '../../../../src/game/.data/ReliquaryExcelConfigData.json' assert { type: 'json' }
+
 // artifact-set
 import ReliquarySet from '../../../../src/game/.data/ReliquarySetExcelConfigData.json' assert { type: 'json' }
 
@@ -48,6 +51,7 @@ const E = {
   WeaponPromote,
   Material,
   ProudSkill,
+  Reliquary,
   ReliquaryAffix,
   ProfilePicture,
   ReliquarySet,
@@ -59,6 +63,7 @@ export const dataShrink = () => {
   dumpAvatar()
   dumpWeapon()
   dumpMaterial()
+  dumpReliquaryIcon()
   dumpReliquarySet()
   dumpProfilePicture()
   dumpTextMap()
@@ -230,6 +235,24 @@ const dumpMaterial = () => {
     return re
   })
   dumpFile('material', m)
+}
+
+const dumpReliquaryIcon = () => {
+  const blockList = [
+    "UI_RelicIcon_15004_1",
+    "UI_RelicIcon_15004_2",
+    "UI_RelicIcon_15004_3",
+    "UI_RelicIcon_15004_4",
+    "UI_RelicIcon_15004_5",
+    "UI_RelicIcon_15012_3",
+    "UI_RelicIcon_15000_1",
+    "UI_RelicIcon_15000_2",
+    "UI_RelicIcon_15000_3",
+    "UI_RelicIcon_15000_4",
+    "UI_RelicIcon_15000_5",
+  ]
+  const icon = [...new Set(E.Reliquary.map(r => r.icon))].filter(i => !blockList.includes(i))
+  dumpFile('reliquary-icon', icon)
 }
 
 const dumpReliquarySet = () => {

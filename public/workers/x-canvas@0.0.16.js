@@ -340,6 +340,10 @@ class XCanvasWorker {
       fetchImage(src).then((image) => {
         this.#imageMap.set(index, image);
         this.#draw();
+      }).catch(() => {
+        console.error("web worker: fetch image");
+        this.#imageMap.set(index, void 0);
+        this.#draw();
       });
   }
   /*

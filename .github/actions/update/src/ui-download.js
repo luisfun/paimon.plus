@@ -14,6 +14,7 @@ export const uiDownload = async () => {
   await getAvatarImages(uiFiles)
   await getWeaponImages(uiFiles)
   await getMaterialImages(uiFiles)
+  await getReliquaryIcon(uiFiles)
   await getProfilePicture(uiFiles)
   console.log('UI Download End')
 }
@@ -36,6 +37,8 @@ const getAvatarImages = async uiFiles => {
         enkaDLList.push(`UI_AvatarIcon_Side_${key}`)
         ambrDLList.push(`UI_Costume_${key}`)
       }
+    for (const cons of avatar.consts) ambrDLList.push(cons)
+    for (const skill of avatar.skills) ambrDLList.push(skill.icon)
   }
   await Promise.all([download(ambrUrl, ambrDLList, uiFiles), download(enkaUrl, enkaDLList, uiFiles)])
 }
@@ -54,6 +57,14 @@ const getWeaponImages = async uiFiles => {
 const getMaterialImages = async uiFiles => {
   const imageList = JSON.parse(fs.readFileSync(`${folder.dist}material.json`, 'utf8')).map(e => e.icon)
   await download(ambrUrl, imageList, uiFiles)
+}
+
+/**
+ * @param {string[]} uiFiles
+ */
+const getReliquaryIcon = async uiFiles => {
+  const imageList = JSON.parse(fs.readFileSync(`${folder.dist}reliquary-icon.json`, 'utf8'))
+  await download(`${ambrUrl}reliquary/`, imageList, uiFiles)
 }
 
 /**

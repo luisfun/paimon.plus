@@ -1,7 +1,10 @@
+<svelte:options runes={true} />
 <script lang="ts">
-export let self = false
+import type { SvelteHTMLElements } from 'svelte/elements'
 
-let rest = self
+const { self, children, ...rest }: { self: boolean } & SvelteHTMLElements['a'] = $props()
+
+const externalProps = self
   ? {}
   : {
       rel: 'noreferrer noopener',
@@ -9,4 +12,4 @@ let rest = self
     }
 </script>
 
-<a {...rest} {...$$restProps}><slot /></a>
+<a {...externalProps} {...rest}>{@render children?.()}</a>

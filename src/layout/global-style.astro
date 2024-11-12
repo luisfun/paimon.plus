@@ -74,7 +74,10 @@
   .-transform-y-1\/2 {
     transform: translateY(-50%);
   }
+  .divider {
+    @apply before:bg-border after:bg-border before:h-px after:h-px;
+  }
   .tab {
-    border-radius: 0;
+    @apply rounded-none;
   }
 </style>

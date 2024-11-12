@@ -37,10 +37,10 @@ const onReset = (i: number) => {
 
 {#if avatarInfoList}
 <div class="divider mt-12 mb-4">{t("artifacter.team")}</div>
-<div class="mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem] py-4 gradient">
-  <div class="grid gap-4 grid-cols-1 sm:grid-cols-[repeat(4,_max-content)] sm:w-min m-auto">
+<div class="mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem] py-3 gradient">
+  <div class="grid gap-3 grid-cols-1 sm:grid-cols-[repeat(4,_max-content)] sm:w-min m-auto">
   {#each selectTeam as member, i}
-    <div class="grid gap-4 grid-cols-[repeat(2,_max-content)] sm:grid-cols-1 m-auto">
+    <div class="grid gap-3 sm:gap-2 grid-cols-[repeat(2,_max-content)] sm:grid-cols-1 m-auto">
       <button class="w-14 m-auto" onclick={() => dialogs[i].showModal()}>
         <Icon id={member[0]} ui="avatar" dummyPaimon />
       </button>

@@ -1,5 +1,8 @@
 ---
+import enka from '@assets/webp/EnkaNetwork.webp'
 import Island from '@components/artifacter/island.svelte'
+import ExternalA from '@components/external-a.svelte'
+import Svg from '@components/svg.svelte'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
 export { getStaticPaths } from '@i18n/utils'
@@ -10,4 +13,19 @@ const t = useTranslations(lang)
 
 <Layout title={t("artifacter.title")} minHFull>
   <Island client:only="svelte" {lang} />
+  <div slot="main-bottom" class="flex flex-col items-center text-text-sub">
+    <div class="mb-2">
+      <div>{t("artifacter.projects")}</div>
+      <div>{t("artifacter.original")}:
+        <ExternalA href="https://github.com/FuroBath/ArtifacterImageGen" class="text-link mx-1">Genshin Artifacter</ExternalA>
+        |
+        <ExternalA href="https://x.com/hyugo_genshin" class="text-link ml-1">
+          <Svg icon="x-twitter" class="inline-block h-4" />@Hyugo_genshin
+        </ExternalA>
+      </div>
+    </div>
+    <ExternalA href="https://enka.network" aria-label="enka network">
+      <img src={enka.src} width={enka.width} height={enka.height} alt="enka network" />
+    </ExternalA>
+  </div>
 </Layout>

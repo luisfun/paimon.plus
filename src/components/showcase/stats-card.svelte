@@ -45,7 +45,7 @@ $effect(() => {
     fontFace: lang === 'en' ? ['Genshin', '/fonts/genshin.woff2'] : ['GenshinJa', '/fonts/genshin-ja.woff2'],
     fontSize: 24,
     fontColor: '#fff',
-    debugMode: true,
+    //debugMode: true,
   })
   const weapon: WeaponRemap[] = []
   const artifactList: ReliquaryRemap[] = []

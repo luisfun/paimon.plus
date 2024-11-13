@@ -144,17 +144,20 @@ const imgProps = $derived.by(() => {
 })
 let overwriteProps = $state<HTMLImgAttributes>({})
 let isInitialRender = $state(true)
+let srcLog = $state(dummySrc)
 
 $effect(() => {
-  if (isInitialRender || !dummyLoading) {
+  if (isInitialRender || !dummyLoading || srcLog === imgProps.src) {
     overwriteProps = {}
     isInitialRender = false
+    srcLog = imgProps.src
   } else {
     overwriteProps = { src: dummySrc }
     if (typeof window !== 'undefined') {
       const img = new Image()
       img.onload = () => {
         overwriteProps = {}
+        srcLog = imgProps.src
       }
       img.src = imgProps.src
     }

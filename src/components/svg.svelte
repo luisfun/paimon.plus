@@ -1,7 +1,7 @@
 <script lang="ts">
-import type { SVGAttributes } from 'svelte/elements'
+import type { SvelteHTMLElements } from 'svelte/elements'
 
-export let icon: keyof typeof data
+const { icon, ...rest }: { icon: keyof typeof data } & SvelteHTMLElements['svg'] = $props()
 
 // biome-ignore format: svg data
 const data = {
@@ -40,10 +40,9 @@ const svg = data[icon]
 
 const addData = {
   'menu-tile': { 'clip-rule': 'evenodd', 'fill-rule': 'evenodd' },
-} as Record<string, SVGAttributes<SVGSVGElement>>
-const props = addData[icon]
+} as Record<string, SvelteHTMLElements['svg']>
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox={svg.v} {...$$restProps} {...props}>
+<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox={svg.v} {...rest} {...addData[icon]}>
   <path d={svg.d} />
 </svg>

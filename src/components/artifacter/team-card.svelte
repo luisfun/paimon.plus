@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 import type { AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api'
 import { avatarRemap } from '@components/api'

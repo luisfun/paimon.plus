@@ -9,18 +9,21 @@ import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
 
-export let lang: Lang
+let { lang, apiData = $bindable() }: { lang: Lang; apiData: ApiData | undefined } = $props()
 const t = useTranslations(lang)
-export let apiData: ApiData | undefined
-let uid: number | undefined
-let isInitLoading = true
-let isFetching = false
-let status: number
+
+let uid = $state<number | undefined>(undefined)
+let isInitLoading = $state(true)
+let isFetching = $state(false)
+let status = $state(0)
 let dialog: HTMLDialogElement
-let uidLogs: UidLog[] = []
-let logDisabled = true
-let disabled = true
-$: disabled = !uidTest(uid)
+let uidLogs = $state<UidLog[]>([])
+let logDisabled = $state(true)
+let disabled = $state(true)
+
+$effect(() => {
+  disabled = !uidTest(uid)
+})
 
 const clickHandler = async (getUid: number | undefined, cache?: 'cache') => {
   isFetching = true
@@ -39,6 +42,10 @@ const keypressHandler = async (e: KeyboardEvent & { currentTarget: EventTarget &
 const trashHandler = (deleteUid: string) => {
   uidLogs = ls.uidLog.delete(deleteUid).filter(e => e.uid !== uid?.toString())
   logDisabled = !uidLogs[0]
+}
+const logClickHandler = async (uid: string) => {
+  dialog.close()
+  await clickHandler(Number(uid), 'cache')
 }
 
 onMount(async () => {
@@ -81,11 +88,11 @@ onMount(async () => {
   </div>
   {/if}
   <div class="flex items-center input input-bordered px-1.5 rounded-full">
-    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-48 text-center text-2xl leading-[3rem]" on:keypress={keypressHandler} />
+    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-48 text-center text-2xl leading-[3rem]" onkeypress={keypressHandler} />
     {#if isFetching}
     <div class="loading loading-ring w-8"></div>
     {:else}
-    <button class="btn btn-neutral p-0.5 min-h-8 w-8 h-8 rounded-full" on:click={() => clickHandler(uid)} {disabled} aria-label="get uid info">
+    <button class="btn btn-neutral p-0.5 min-h-8 w-8 h-8 rounded-full" onclick={() => clickHandler(uid)} {disabled} aria-label="get uid info">
       <Svg icon="angle-right" height="100%" />
     </button>
     {/if}
@@ -100,14 +107,14 @@ onMount(async () => {
     <div>{apiData.playerInfo.nickname}</div>
   </div>
   <div class="flex items-center input input-bordered px-1 h-8 rounded-full">
-    <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 rounded-full" on:click={() => dialog.showModal()} disabled={isInitLoading || logDisabled} aria-label="uid logs">
+    <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 rounded-full" onclick={() => dialog.showModal()} disabled={isInitLoading || logDisabled} aria-label="uid logs">
       <Svg icon="clock-rotate-left" />
     </button>
-    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" on:keypress={keypressHandler} />
+    <input type="number" placeholder="UID" bind:value={uid} class="no-spin w-24 text-center leading-8" onkeypress={keypressHandler} />
     {#if isInitLoading || isFetching}
     <div class="loading loading-ring w-6"></div>
     {:else}
-    <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 rounded-full" on:click={() => clickHandler(uid)} {disabled} aria-label="get uid info">
+    <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 rounded-full" onclick={() => clickHandler(uid)} {disabled} aria-label="get uid info">
       <Svg icon="angle-right" height="100%" />
     </button>
     {/if}
@@ -158,13 +165,13 @@ onMount(async () => {
 <Dialog bind:dialog>
   <div class="grid grid-cols-[1.5rem_2rem_auto_auto_1.5rem] gap-3 leading-8 m-4">
     {#each uidLogs as log}
-      <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 my-auto rounded-full" on:click={() => trashHandler(log.uid)} aria-label="delete uid log">
+      <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 my-auto rounded-full" onclick={() => trashHandler(log.uid)} aria-label="delete uid log">
         <Svg icon="trash-can" height="100%" />
       </button>
       <Icon id={log.pfp.id || log.pfp.avatarId || 1} ui="circle" />
       <div>{log.name}</div>
       <div>{log.uid}</div>
-      <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 my-auto rounded-full" on:click={() => clickHandler(Number(log.uid), "cache")} on:click={() => dialog.close()} aria-label="get uid info">
+      <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 my-auto rounded-full" onclick={() => logClickHandler(log.uid)} aria-label="get uid info">
         <Svg icon="angle-right" height="100%" />
       </button>
     {/each}

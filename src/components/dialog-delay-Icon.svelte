@@ -2,14 +2,16 @@
 import Icon from '@components/icon.svelte'
 import { onMount } from 'svelte'
 
-export let ids: (number | number[])[]
-export let onclick: (id: number) => void
-export let ui: 'avatar' | 'weapon'
-export let style = ''
+const {
+  ids,
+  onclick,
+  ui,
+  style = '',
+}: { ids: (number | number[])[]; onclick: (id: number) => void; ui: 'avatar' | 'weapon'; style?: string } = $props()
 
 let form: HTMLElement
 let divs: HTMLElement[] = []
-let load = ids.map(() => false)
+let load = $state(ids.map(() => false))
 
 onMount(() => {
   const observer = new IntersectionObserver((entries, observer) => {
@@ -34,7 +36,7 @@ onMount(() => {
 
 <form bind:this={form} class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2 {style}" method="dialog">
   {#each ids as id, i}
-    <button bind:this={divs[i]} on:click={() => onclick(typeof id === "number" ? id : id[0])} id={`${ui}-${i}`}>
+    <button bind:this={divs[i]} onclick={() => onclick(typeof id === "number" ? id : id[0])} id={`${ui}-${i}`}>
       <Icon
         id={typeof id === "number" ? id : id[0]}
         skinId={typeof id === "number" ? undefined : id[1]}

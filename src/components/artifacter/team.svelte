@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 import type { AvatarInfo } from '@components/api'
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'

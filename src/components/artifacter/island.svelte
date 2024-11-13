@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 // client:only="svelte"
 import type { ApiData, AvatarInfo } from '@components/api'

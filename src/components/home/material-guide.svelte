@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 // client:load
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'

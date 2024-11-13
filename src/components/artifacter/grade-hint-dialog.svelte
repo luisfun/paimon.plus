@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 import { scoreTypeMenuItems, src } from '@components/showcase-utils'
 import type { Lang } from '@i18n/utils'

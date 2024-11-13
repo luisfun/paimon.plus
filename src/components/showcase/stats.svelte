@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 import type { AvatarInfo } from '@components/api'
 import Dialog from '@components/dialog.svelte'

@@ -1,7 +1,8 @@
 <script lang="ts">
 import Svg from '@components/svg.svelte'
-export let mt0 = false
-export let style = ''
+import type { Snippet } from 'svelte'
+
+const { mt0 = false, style = '', children }: { mt0?: boolean; style?: string; children: Snippet } = $props()
 </script>
 
 <div class="collapse grid-rows-[0fr_auto] rounded-none {style}">
@@ -11,7 +12,7 @@ export let style = ''
     <Svg icon="angle-up" class="svg-up hidden w-4" />
   </div>
   <div class="collapse-content row-start-1 visible overflow-hidden !p-0">
-    <slot />
+    {@render children?.()}
   </div>
 </div>
 

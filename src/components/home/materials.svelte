@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 import ExternalA from '@components/external-a.svelte'
 import Icon from '@components/icon.svelte'

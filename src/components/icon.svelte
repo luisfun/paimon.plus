@@ -1,4 +1,3 @@
-<svelte:options runes={true} />
 <script lang="ts">
 import avatarJson from '@game/avatar.json'
 import materialJson from '@game/material.json'

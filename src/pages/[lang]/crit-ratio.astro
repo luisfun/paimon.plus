@@ -8,6 +8,6 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<Layout title={t("crit-ratio.title")}>
+<Layout title={t("crit-ratio.title")} grid>
   <Island client:load {lang} />
 </Layout>

@@ -50,6 +50,8 @@ export const ui = {
     'card.download': 'Download',
     // crit-ratio
     'crit-ratio.title': 'CRIT Ratio Checker',
+    'crit-ratio.(wg)': '(White + Green)',
+    'crit-ratio.keep': 'Keep Note',
     'crit-ratio.current': 'Current Ratio',
     'crit-ratio.ideal': 'Ideal Ratio',
     'crit-ratio.green': 'Green',
@@ -139,6 +141,8 @@ export const ui = {
     'card.download': 'ダウンロード',
     // crit-ratio
     'crit-ratio.title': '会心 理想値診断',
+    'crit-ratio.(wg)': '(白字 + 緑字)',
+    'crit-ratio.keep': '期待値をメモ',
     'crit-ratio.current': '現在値',
     'crit-ratio.ideal': '理想値',
     'crit-ratio.green': '緑',

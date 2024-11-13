@@ -1,4 +1,5 @@
 <script lang="ts">
+import More from '@components/more.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { Chart, Filler, Legend, LineElement, PointElement, RadarController, RadialLinearScale, Tooltip } from 'chart.js'
 import type { Snippet } from 'svelte'
@@ -63,7 +64,7 @@ const avgI = $derived(avg(base, ideal[0] * base, ideal[1], ideal[2]))
 const diff = $derived((avgI - avgC) / avgC)
 const low = $derived(a_ < 2.776 ? [2 / 3, 0.5 / ideal[1], 2] : [1, 1, 1])
 const data = $derived({
-  labels: [`${t(type)} (${t('crit-ratio.green')})`, t('CRIT DMG'), t('CRIT Rate')],
+  labels: [`${t(type)} (${t('crit-ratio.green')})`, t('C DMG'), t('C Rate')],
   datasets: [
     {
       label: t('crit-ratio.current'),
@@ -117,14 +118,24 @@ const options = {
   },
 }
 
+let chart: Chart
+
 $effect(() => {
-  if (canvas) new Chart(canvas, { type: 'radar', data, options })
+  if (canvas) {
+    if (chart) chart.destroy()
+    chart = new Chart(canvas, { type: 'radar', data, options })
+  }
+  return () => {
+    if (chart) chart.destroy()
+  }
 })
 </script>
 
 <div>{`${t(type)} ✕ ${t("CRIT")} (${t("crit-ratio.avg")})`} : <span class="text-3xl">{avgC}</span></div>
 <div>{t(`crit-ratio.diff`)} : <span class="text-3xl">{(diff*100).toFixed(2)}</span> %</div>
 {@render children?.()}
-<div class="text-lg font-bold mb-4">{t(`crit-ratio.${type}`)}</div>
-{#if (a_ < 2.776)}<p>{t("crit-ratio.low")}</p>{/if}
-<div><canvas bind:this={canvas}></canvas></div>
+<More checked>
+  <div class="text-lg font-bold mb-4" class:mt-4={!children}>{t(`crit-ratio.${type}`)}</div>
+  {#if (a_ < 2.776)}<div>{t("crit-ratio.low")}</div>{/if}
+  <canvas bind:this={canvas}></canvas>
+</More>

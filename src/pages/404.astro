@@ -1,14 +1,9 @@
 ---
 import qiqi from '@assets/webp/qiqi-fallen.webp'
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
-export { getStaticPaths } from '@i18n/utils'
-
-const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 ---
 
-<Layout title={t("404.title")}>
-  <div class="text-center">{t("404.text")}</div>
+<Layout title="404 Not Found">
+  <div class="text-center text-5xl genshin-font">404</div>
   <img class="w-72 h-72 m-auto" src={qiqi.src} width={qiqi.width} height={qiqi.height} alt="Qiqi Fallen" />
 </Layout>

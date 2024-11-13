@@ -1,5 +1,5 @@
 ---
-import { getLangFromUrl } from '@i18n/utils'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Footer from './footer.astro'
 import GlobalStyle from './global-style.astro'
 import Head from './head.astro'
@@ -11,12 +11,13 @@ type Props = {
   minHFull?: boolean
 }
 const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
 const { title, grid, defaultTitle, minHFull } = Astro.props
 ---
 
 <!doctype html>
 <html {lang}>
-  <Head title={defaultTitle ? undefined : title}>
+  <Head title={defaultTitle ? undefined : (t("seo.prefix") + title)}>
     <slot name="head" />
   </Head>
   <body class="max-w-screen-lg w-11/12 m-auto">

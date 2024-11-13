@@ -3,6 +3,7 @@ export const defaultLang = 'en'
 export const ui = {
   en: {
     label: 'English',
+    'seo.prefix': 'Genshin Impact ',
     'game.title': 'Genshin Impact',
     'game.characters': 'Characters',
     'game.weapons': 'Weapons',
@@ -12,6 +13,7 @@ export const ui = {
     'home.developers': 'Developers',
     'home.translators': 'Translators',
     'home.resources': 'Resources',
+    // showcase, artifacter
     'showcase.title': 'Character Showcase',
     'showcase.error.register': 'No characters found in the Character Showcase.',
     'showcase.error.public':
@@ -46,6 +48,17 @@ export const ui = {
     'uid.error.report': 'If you report it on our Discord, we might be able to deal with it sooner.',
     'uid.error.link': 'Discord invitation link',
     'card.download': 'Download',
+    // crit-ratio
+    'crit-ratio.title': 'CRIT Ratio Checker',
+    'crit-ratio.current': 'Current Ratio',
+    'crit-ratio.ideal': 'Ideal Ratio',
+    'crit-ratio.green': 'Green',
+    'crit-ratio.avg': 'Avg.',
+    'crit-ratio.diff': 'Difference from Ideal Ratio',
+    'crit-ratio.HP': 'Balance of HP and CRIT',
+    'crit-ratio.ATK': 'Balance of ATK and CRIT',
+    'crit-ratio.DEF': 'Balance of DEF and CRIT',
+    'crit-ratio.low': 'Low equipment score makes it appear as an specialization.',
     // stat
     'Max HP': 'Max HP',
     'Base ATK': 'Base ATK',
@@ -82,6 +95,7 @@ export const ui = {
   },
   ja: {
     label: '日本語',
+    'seo.prefix': '【原神】',
     'game.title': '原神',
     'game.characters': 'キャラクター',
     'game.weapons': '武器',
@@ -91,6 +105,7 @@ export const ui = {
     'home.developers': '開発者',
     'home.translators': '翻訳者',
     'home.resources': 'データソース',
+    // showcase, artifacter
     'showcase.title': 'プロフィール キャラクター',
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
     'showcase.error.public':
@@ -122,6 +137,17 @@ export const ui = {
     'uid.error.report': 'Discordで報告すると、より早く対応できるかもしれません。',
     'uid.error.link': 'Discordの招待リンク',
     'card.download': 'ダウンロード',
+    // crit-ratio
+    'crit-ratio.title': '会心 理想値診断',
+    'crit-ratio.current': '現在値',
+    'crit-ratio.ideal': '理想値',
+    'crit-ratio.green': '緑',
+    'crit-ratio.avg': '期待値',
+    'crit-ratio.diff': '理想値との差',
+    'crit-ratio.HP': 'HPと会心のバランス',
+    'crit-ratio.ATK': '攻撃と会心のバランス',
+    'crit-ratio.DEF': '防御と会心のバランス',
+    'crit-ratio.low': '装備スコアが低いと、特化型として表示されます。',
     // stat
     'Max HP': 'HP上限',
     'Base ATK': '基礎攻撃力',
@@ -156,6 +182,7 @@ export const ui = {
   },
   ko: {
     label: '한국어',
+    'seo.prefix': '[원신] ',
     'game.title': '원신',
 
     'footer.unofficial': 'Paimon+는 비공식 웹사이트입니다.',

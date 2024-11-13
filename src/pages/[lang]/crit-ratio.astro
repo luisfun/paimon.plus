@@ -1,0 +1,13 @@
+---
+import Island from '@components/crit-ratio/island.svelte'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title={t("crit-ratio.title")}>
+  <Island client:load {lang} />
+</Layout>

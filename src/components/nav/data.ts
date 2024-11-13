@@ -2,7 +2,7 @@ export const navData = [
   {
     svg: 'atk-crit' as const,
     text: 'Check Ideal',
-    href: '/atk-crit/',
+    href: '/crit-ratio/',
   },
   {
     svg: 'team' as const,

@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api'
+import type { AvatarRemapped, ReliquaryRemap, WeaponRemap } from '@components/api'
 import { avatarRemap } from '@components/api'
 import {
   bga,
@@ -21,18 +21,17 @@ import { XCanvas, div, img } from '@luisfun/x-canvas'
 
 let {
   lang,
-  avatarInfo,
+  a,
   subMarks,
   canvas = $bindable(),
 }: {
   lang: Lang
-  avatarInfo: AvatarInfo
+  a: AvatarRemapped
   subMarks: (typeof defineSub)[number][]
   canvas: HTMLCanvasElement
 } = $props()
 const t = useTranslations(lang)
 
-const a = $derived(avatarRemap(avatarInfo))
 const subMarkProps = $derived(defineToProps(subMarks))
 let xc: XCanvas
 

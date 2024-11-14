@@ -336,6 +336,8 @@ const get_reliquary_roll_set = (idList: number[] | undefined) => {
 const rollStatToString = (prop: string, value: number) =>
   isFlat(get_prop_type(prop)) ? value.toFixed(0) : (value * 100).toFixed(1)
 
+export type AvatarRemapped = ReturnType<typeof avatarRemap>
+
 export type ApiData = EnkaApi & { ver: string; timestamp: number; status?: number }
 
 export type EnkaApi = {

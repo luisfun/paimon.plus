@@ -3,37 +3,20 @@ import More from '@components/more.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { Chart, Filler, Legend, LineElement, PointElement, RadarController, RadialLinearScale, Tooltip } from 'chart.js'
 import type { Snippet } from 'svelte'
+import { type InputStats, avg } from './crit-ratio-utils'
 
 const text = 'rgba(255, 255, 255, 0.85)'
 const textSub = 'rgba(255, 255, 255, 0.45)'
 
 Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend)
 
-const {
-  lang,
-  type,
-  base,
-  add,
-  cr,
-  cd,
-  children,
-}: {
-  lang: Lang
-  type: 'ATK' | 'DEF' | 'HP'
-  base: number
-  add: number
-  cr: number
-  cd: number
-  children?: Snippet
-} = $props()
+const { lang, type, base, add, cr, cd, children }: { lang: Lang; children?: Snippet } & InputStats = $props()
 const t = useTranslations(lang)
 
 let canvas: HTMLCanvasElement
+let chart: Chart
 
 // core
-const avg = (base: number, add: number, cr: number, cd: number) =>
-  Number(((base + add) * (1 + clip01(cr) * cd)).toFixed(1))
-const clip01 = (num: number) => (num < 0 ? 0 : num > 1 ? 1 : num)
 const score = (type: string, base: number, add: number, cr: number, cd: number) =>
   (type === 'DEF' ? 0.8 : 1) * (add / base) + 1.5 * cr + 0.75 * cd
 const score_ = (type: string, a: number) => a + (type === 'DEF' ? 0.8 : 1) - 1
@@ -118,8 +101,6 @@ const options = {
   },
 }
 
-let chart: Chart
-
 $effect(() => {
   if (canvas) {
     if (chart) chart.destroy()
@@ -137,5 +118,5 @@ $effect(() => {
 <More checked>
   <div class="text-lg font-bold mb-4" class:mt-4={!children}>{t(`crit-ratio.${type}`)}</div>
   {#if (a_ < 2.776)}<div>{t("crit-ratio.low")}</div>{/if}
-  <canvas bind:this={canvas}></canvas>
+  <canvas class="max-w-[485px] max-h-[485px]" bind:this={canvas}></canvas>
 </More>

@@ -18,6 +18,9 @@ export const ui = {
     'showcase.error.register': 'No characters found in the Character Showcase.',
     'showcase.error.public':
       'Please enable the "Show Character Details" option in your Character Showcase in-game to see the details.',
+    'showcase.analysis': 'Analysis',
+    'showcase.more': 'Read more',
+    'showcase.crit-ratio': 'CRIT Ratio Checker',
     'artifacter.title': 'Artifacter Web',
     'artifacter.card.total': 'Total Score',
     'artifacter.card.tcv': 'Total CRIT Value',
@@ -112,6 +115,9 @@ export const ui = {
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
     'showcase.error.public':
       '「キャラクターラインナップ」の「キャラ詳細非表示」を「キャラ詳細表示中」に切り替えて下さい。',
+    'showcase.analysis': '分析',
+    'showcase.more': '詳しく見る',
+    'showcase.crit-ratio': '会心バランス診断',
     'artifacter.card.total': '総合スコア',
     'artifacter.card.tcv': '総会心スコア',
     'artifacter.crit': '会心のみ',
@@ -140,7 +146,7 @@ export const ui = {
     'uid.error.link': 'Discordの招待リンク',
     'card.download': 'ダウンロード',
     // crit-ratio
-    'crit-ratio.title': '会心 理想値診断',
+    'crit-ratio.title': '会心バランス 理想値診断',
     'crit-ratio.(wg)': '(白字 + 緑字)',
     'crit-ratio.keep': '期待値をメモ',
     'crit-ratio.current': '現在値',

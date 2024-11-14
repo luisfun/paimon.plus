@@ -1,4 +1,5 @@
 <script lang="ts">
+import type { InputStats } from '@components/crit-ratio-utils'
 import { type Lang, useTranslations } from '@i18n/utils'
 
 let {
@@ -8,14 +9,7 @@ let {
   add = $bindable(),
   cr = $bindable(),
   cd = $bindable(),
-}: {
-  lang: Lang
-  type: 'ATK' | 'DEF' | 'HP'
-  base: number | undefined
-  add: number | undefined
-  cr: number | undefined
-  cd: number | undefined
-} = $props()
+}: { lang: Lang } & Partial<InputStats> = $props()
 const t = useTranslations(lang)
 
 const selectType = ['ATK', 'HP', 'DEF'] as const

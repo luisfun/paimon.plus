@@ -44,7 +44,7 @@ $effect.pre(() => {
 </script>
 
 {#if avatarInfoList}
-<div class="divider mt-12 mb-4">{t("artifacter.team")}</div>
+<div class="divider mt-12">{t("artifacter.team")}</div>
 <div class="mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem] py-3 gradient">
   <div class="grid gap-3 grid-cols-1 sm:grid-cols-[repeat(4,_max-content)] sm:w-min m-auto">
   {#each selectTeam as member, i}

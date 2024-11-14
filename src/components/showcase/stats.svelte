@@ -1,12 +1,11 @@
 <script lang="ts">
-import type { AvatarInfo } from '@components/api'
+import type { AvatarRemapped } from '@components/api'
 import Dialog from '@components/dialog.svelte'
 import Icon from '@components/icon.svelte'
 // biome-ignore lint: svelte
 import { defineSub, defineToName } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
-import type { Lang } from '@i18n/utils'
-import { useTranslatedPath, useTranslations } from '@i18n/utils'
+import { type Lang, useTranslatedPath, useTranslations } from '@i18n/utils'
 import { imageDownload } from '@luisfun/x-canvas'
 import DefaultMarks from '@manual/showcase-default-marks'
 import StatsCard from './stats-card.svelte'
@@ -15,36 +14,36 @@ const initSub = (id: number | undefined) =>
 
 const {
   lang,
-  avatarInfo,
+  a,
 }: {
   lang: Lang
-  avatarInfo: AvatarInfo // 簡易初期化のため上流でundefinedをはじく
+  a: AvatarRemapped // 簡易初期化のため上流でundefinedをはじく
 } = $props()
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 
 let canvas: HTMLCanvasElement
 let dialog: HTMLDialogElement
-let subMarks = $state(initSub(avatarInfo?.avatarId))
+let subMarks = $state(initSub(a?.avatarId))
 
 const onClick = (stat: (typeof defineSub)[number]) => {
   if (!subMarks.includes(stat)) subMarks.push(stat)
   else subMarks = subMarks.filter(e => e !== stat)
 }
 
-let avatarIdLog = avatarInfo?.avatarId
+let avatarIdLog = a?.avatarId
 $effect.pre(() => {
-  if (avatarIdLog !== avatarInfo?.avatarId) {
-    subMarks = initSub(avatarInfo?.avatarId)
-    avatarIdLog = avatarInfo?.avatarId
+  if (avatarIdLog !== a?.avatarId) {
+    subMarks = initSub(a?.avatarId)
+    avatarIdLog = a?.avatarId
   }
 })
 </script>
 
-{#if avatarInfo}
+{#if a}
 <div class="overflow-x-auto mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-auto mb-2">
   <div class="w-[768px] md:w-[1024px] rounded-lg overflow-hidden">
-    <StatsCard {lang} {avatarInfo} {subMarks} bind:canvas />
+    <StatsCard {lang} {a} {subMarks} bind:canvas />
   </div>
 </div>
 <div class="flex justify-around sm:justify-evenly">

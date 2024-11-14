@@ -83,9 +83,7 @@ const weaponHandler = (id: number) => {
       <Icon id={selectData.element} ui="element" style="w-7 mr-2" />
       {/if}
       <Icon id={selectData.weaponType} ui="weapon-type" style="w-7 mr-2" />
-      {#if selectData.wikiId !== -1}
       <HoyoWiki class="text-sm text-link" {lang} wikiId={selectData.wikiId} />
-      {/if}
     </div>
   </div>
 </div>

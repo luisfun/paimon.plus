@@ -6,27 +6,6 @@ import { defineConfig, passthroughImageService } from 'astro/config'
 // https://astro.build/config
 export default defineConfig({
   //site: 'https://paimon.plus',
-  redirects: {
-    '/': '/en',
-    '/atk-crit': '/en/crit-ratio',
-    '/ja/atk-crit': '/ja/crit-ratio',
-    '/ko/atk-crit': '/ko/crit-ratio',
-    '/team-builder': '/en/team-builder',
-    '/showcase': '/en/showcase',
-    '/avg-dmg': '/en/avg-dmg',
-    '/wish-banner': '/en/wish-banner',
-    '/showcase-analytics': '/en/showcase-analytics',
-    '/talent-materials': '/en/talent-materials',
-    '/team-randomizer': '/en/team-randomizer',
-    '/artifacter': '/en/artifacter',
-    '/player-card-templates': '/en/player-card-templates',
-    '/player-card': '/en/player-card',
-    '/developer-tools': '/en/developer-tools',
-    '/beta-access': '/en/beta-access',
-    // old
-    '/random-team-generator': '/en/team-randomizer',
-    '/ja/random-team-generator': '/ja/team-randomizer',
-  },
   image: {
     service: passthroughImageService(), // ???
   },

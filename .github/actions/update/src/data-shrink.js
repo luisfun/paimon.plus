@@ -5,8 +5,9 @@ import { folder } from './utils.js'
 import en from '../../../../src/game/.text/TextMapEN.json' assert { type: 'json' }
 import ja from '../../../../src/game/.text/TextMapJP.json' assert { type: 'json' }
 import ko from '../../../../src/game/.text/TextMapKR.json' assert { type: 'json' }
+import pt from '../../../../src/game/.text/TextMapPT.json' assert { type: 'json' }
 
-const TextMap = { en, ja, ko }
+const TextMap = { en, ja, ko, pt }
 
 // avatar
 import AvatarCostume from '../../../../src/game/.data/AvatarCostumeExcelConfigData.json' assert { type: 'json' }

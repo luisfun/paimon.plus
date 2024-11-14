@@ -199,4 +199,7 @@ export const ui = {
     'home.title': '원신 웹 툴',
     'showcase.title': '캐릭터 진열장',
   },
+  pt: {
+    label: "Português",
+  },
 } as const

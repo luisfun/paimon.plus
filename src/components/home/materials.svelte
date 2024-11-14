@@ -98,7 +98,7 @@ const materials = $derived.by(() => {
       <div tabindex="0" role="button">
         <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} dummyLoading />
       </div>
-      <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-[165%] z-10 px-3 py-2 text-sm shadow-background">
+      <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-max max-w-[calc(200%+0.75rem)] z-10 px-3 py-2 text-sm shadow-background">
         <div>{t(material.materials[0].id, "material")}</div>
         {#if material.materials[0].wikiId !== -1}
         <ExternalA

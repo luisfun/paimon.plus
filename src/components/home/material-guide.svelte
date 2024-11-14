@@ -2,7 +2,7 @@
 // client:load
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
-import ExternalA from '@components/external-a.svelte'
+import HoyoWiki from '@components/hoyo-wiki.svelte'
 import Icon from '@components/icon.svelte'
 import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
@@ -84,7 +84,7 @@ const weaponHandler = (id: number) => {
       {/if}
       <Icon id={selectData.weaponType} ui="weapon-type" style="w-7 mr-2" />
       {#if selectData.wikiId !== -1}
-      <ExternalA class="text-sm text-link" href="//wiki.hoyolab.com/m/genshin/entry/{selectData.wikiId}">HoYoWiki</ExternalA>
+      <HoyoWiki class="text-sm text-link" {lang} wikiId={selectData.wikiId} />
       {/if}
     </div>
   </div>

@@ -200,6 +200,6 @@ export const ui = {
     'showcase.title': '캐릭터 진열장',
   },
   pt: {
-    label: "Português",
+    label: 'Português',
   },
 } as const

@@ -2,7 +2,7 @@ import fs from 'node:fs'
 import { folder } from './utils.js'
 
 // https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap
-const languages = ['EN', 'JP', 'KR', "PT"]
+const languages = ['EN', 'JP', 'KR', 'PT']
 
 // @Dimbreath @FZFalzar https://gitlab.com/Dimbreath/AnimeGameData
 const gitlabUrl = 'https://gitlab.com/api/v4/projects/53216109/repository/files/'

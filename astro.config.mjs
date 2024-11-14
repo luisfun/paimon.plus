@@ -11,7 +11,7 @@ export default defineConfig({
   },
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'ja', 'ko', "pt"], // webmanifest, src/i18n/ui.ts, .github/actions/update/src/data-download.js, data-shrink.js
+    locales: ['en', 'ja', 'ko', 'pt'], // webmanifest, src/i18n/ui.ts, .github/actions/update/src/data-download.js, data-shrink.js
     routing: {
       prefixDefaultLocale: true,
       redirectToDefaultLocale: false,

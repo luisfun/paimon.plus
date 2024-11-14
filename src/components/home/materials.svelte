@@ -1,5 +1,5 @@
 <script lang="ts">
-import ExternalA from '@components/external-a.svelte'
+import HoyoWiki from '@components/hoyo-wiki.svelte'
 import Icon from '@components/icon.svelte'
 import materialJson from '@game/material.json'
 import type { Lang } from '@i18n/utils'
@@ -101,11 +101,7 @@ const materials = $derived.by(() => {
       <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-max max-w-[calc(200%+0.75rem)] z-10 px-3 py-2 text-sm shadow-background">
         <div>{t(material.materials[0].id, "material")}</div>
         {#if material.materials[0].wikiId !== -1}
-        <ExternalA
-          class="text-link"
-          href="//wiki.hoyolab.com/m/genshin/entry/{material.materials[0].wikiId}"
-          aria-label={t(material.materials[0].id, "material")}
-        >HoYoWiki</ExternalA>
+        <HoyoWiki class="text-link" {lang} wikiId={material.materials[0].wikiId} />
         {/if}
       </div>
     </div>

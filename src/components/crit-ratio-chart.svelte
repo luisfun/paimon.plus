@@ -7,7 +7,16 @@ import { type InputStats, avg, text, textSub } from './crit-ratio-utils'
 
 Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend)
 
-const { lang, type, base, add, cr, cd, children }: { lang: Lang; children?: Snippet } & InputStats = $props()
+const {
+  lang,
+  checked,
+  type,
+  base,
+  add,
+  cr,
+  cd,
+  children,
+}: { lang: Lang; checked?: boolean; children?: Snippet } & InputStats = $props()
 const t = useTranslations(lang)
 
 let canvas: HTMLCanvasElement
@@ -112,7 +121,7 @@ $effect(() => {
 <div>{`${t(type)} ✕ ${t("CRIT")} (${t("crit-ratio.avg")})`} : <span class="text-3xl">{avgC}</span></div>
 <div>{t(`crit-ratio.diff`)} : <span class="text-3xl">{(diff*100).toFixed(2)}</span> %</div>
 {@render children?.()}
-<More checked>
+<More checked={checked === undefined ? true : checked}>
   <div class="text-lg font-bold mb-4" class:mt-4={!children}>{t(`crit-ratio.${type}`)}</div>
   {#if (a_ < 2.776)}<div>{t("crit-ratio.low")}</div>{/if}
   <canvas class="max-w-[485px] max-h-[485px]" bind:this={canvas}></canvas>

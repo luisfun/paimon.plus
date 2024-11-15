@@ -1,0 +1,18 @@
+---
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import qiqi from '@assets/webp/qiqi-fallen.webp'
+import Layout from '@layout'
+import ExternalA from "@components/external-a.svelte"
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title="Talent Materials">
+  <div class="flex flex-col items-center my-32">
+    <div class="mb-4">{t("nopage.text")}</div>
+    <ExternalA class="text-link" href=`//wiki.hoyolab.com/m/genshin/home_module/calendar?lang=${lang}`>HoYoWiki</ExternalA>
+    <img class="w-32 h-32 m-auto" src={qiqi.src} width={qiqi.width} height={qiqi.height} alt="Qiqi Fallen" />
+  </div>
+</Layout>

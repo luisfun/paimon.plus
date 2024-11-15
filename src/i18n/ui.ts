@@ -9,6 +9,7 @@ export const ui = {
     'game.characters': 'Characters',
     'game.weapons': 'Weapons',
     'footer.unofficial': 'Paimon+ is not affiliated to miHoYo.',
+    "nopage.text": "This page is no longer available. Please visit the new URL below.",
     // home
     'home.title': 'Genshin Impact Online Tools',
     'home.thanks': 'Appreciation',
@@ -113,6 +114,7 @@ export const ui = {
     'game.characters': 'キャラクター',
     'game.weapons': '武器',
     'footer.unofficial': 'Paimon+は非公式のwebサイトです。',
+    "nopage.text": "このページは廃止されました。代わりに次のURLを利用してください。",
     // home
     'home.title': '原神 webツール',
     'home.thanks': '謝辞',

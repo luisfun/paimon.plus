@@ -9,51 +9,55 @@ const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
 
 let type = $state<'ATK' | 'HP' | 'DEF'>('ATK')
-let base = $state<number>(123) //()
-let add = $state<number>(123) //()
-let cr = $state<number>(66) //()
-let cd = $state<number>(123) //()
+let base = $state<number>()
+let add = $state<number>()
+let cr = $state<number>()
+let cd = $state<number>()
 let noteArr = $state<NoteArr>([])
 let checked = $state(true)
 
 const selectType = ['ATK', 'HP', 'DEF'] as const
 
 const onclick = () => {
-  checked = false
-  noteArr.unshift({
-    type,
-    base,
-    add,
-    cr,
-    cd,
-    avg: avg(base, add, cr / 100, cd / 100),
-    cDmg: avg(base, add, 1, cd / 100),
-  })
+  if (base && add && cr && cd) {
+    checked = false
+    noteArr.unshift({
+      type,
+      base,
+      add,
+      cr,
+      cd,
+      avg: avg(base, add, cr / 100, cd / 100),
+      cDmg: avg(base, add, 1, cd / 100),
+    })
+  }
 }
+
+$effect(() => {
+  if (!noteArr[0]) checked = true
+})
 </script>
 
 <div>
-  <div>
-    <select bind:value={type} class="select select-sm text-base leading-8">
-      {#each selectType as stat}
-        <option value={stat}>{t(stat)}</option>
-      {/each}
-    </select>
-    {t("crit-ratio.(wg)")}
-    <div class="flex items-center ml-6 mt-2 mb-6">
-      <input bind:value={base} type="number" class="input input-bordered text-3xl w-32" />
-      <div class="mx-2 text-3xl">+</div>
-      <input bind:value={add} type="number" class="input input-bordered text-3xl w-32" />
-    </div>
-    {t("CRIT Rate")}
-    <div class="ml-6 mt-2 mb-6">
-      <input bind:value={cr} type="number" class="input input-bordered text-3xl w-32" />
-    </div>
-    {t("CRIT DMG")}
-    <div class="ml-6 mt-2 mb-6">
-      <input bind:value={cd} type="number" class="input input-bordered text-3xl w-32" />
-    </div>
-  </div>  
+  <select bind:value={type} class="select select-sm text-base leading-8">
+    {#each selectType as stat}
+      <option value={stat}>{t(stat)}</option>
+    {/each}
+  </select>
+  {t("crit-ratio.(wg)")}
+  <div class="flex items-center ml-6 mt-2 mb-6">
+    <input bind:value={base} type="number" class="input input-bordered text-3xl w-32" />
+    <div class="mx-2 text-3xl">+</div>
+    <input bind:value={add} type="number" class="input input-bordered text-3xl w-32" />
+  </div>
+  {t("CRIT Rate")}
+  <div class="ml-6 mt-2 mb-6">
+    <input bind:value={cr} type="number" class="input input-bordered text-3xl w-32" />
+  </div>
+  {t("CRIT DMG")}
+  <div class="ml-6 mt-2 mb-6">
+    <input bind:value={cd} type="number" class="input input-bordered text-3xl w-32" />
+  </div>
 </div>
 <div>
   {#if base && add && cr && cd}

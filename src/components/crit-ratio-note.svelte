@@ -120,14 +120,13 @@ $effect(() => {
 {#if noteArr[0]}
 <div bind:this={textElem} class="mb-auto">
   {#each noteArr as note, i}
-    {@const isBaseAdd = note.base && note.add}
     <div class="flex justify-between border border-border rounded py-1 px-2 mb-4 last:mb-0">
-      <div class="grid gap-1 text-sm" class:grid-cols-2={!isBaseAdd} class:grid-cols-3={isBaseAdd}>
-        {#if isBaseAdd}
+      <div class="grid gap-1 text-sm" class:grid-cols-2={!note.type} class:grid-cols-3={note.type}>
+        {#if note.type}
         <div>{t(note.type)}</div><div class="text-right">{note.base}</div><div>+{note.add}</div>
         {/if}
-        <div>{t(`C Rate`)}</div><div class="text-right">{note.cr}</div>{#if isBaseAdd}<div></div>{/if}
-        <div>{t(`C DMG`)}</div><div class="text-right">{note.cd}</div>{#if isBaseAdd}<div></div>{/if}
+        <div>{t(`C Rate`)}</div><div class="text-right">{note.cr}</div>{#if note.type}<div></div>{/if}
+        <div>{t(`C DMG`)}</div><div class="text-right">{note.cd}</div>{#if note.type}<div></div>{/if}
       </div>
       <div class="my-auto">
         <div class="text-center">{t("crit-ratio.avg")}</div>

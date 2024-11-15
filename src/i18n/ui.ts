@@ -53,7 +53,7 @@ export const ui = {
     'uid.error.report': 'If you report it on our Discord, we might be able to deal with it sooner.',
     'uid.error.link': 'Discord invitation link',
     'card.download': 'Download',
-    // crit-ratio
+    // crit-ratio, avg-dmg
     'crit-ratio.title': 'CRIT Ratio Checker',
     'crit-ratio.(wg)': '(White + Green)',
     'crit-ratio.keep': 'Keep Note',
@@ -66,6 +66,11 @@ export const ui = {
     'crit-ratio.ATK': 'Balance of ATK and CRIT',
     'crit-ratio.DEF': 'Balance of DEF and CRIT',
     'crit-ratio.low': 'Low equipment score makes it appear as an specialization.',
+    'avg-dmg.title': 'Average Damage Calculator',
+    'avg-dmg.stats': 'In The Stats',
+    'avg-dmg.damage': 'Damage Dealt',
+    'avg-dmg.noncrit': 'Non CRIT',
+    'avg-dmg.avg': 'Damage (Avg.)',
     // stat
     'Max HP': 'Max HP',
     'Base ATK': 'Base ATK',
@@ -149,7 +154,7 @@ export const ui = {
     'uid.error.report': 'Discordで報告すると、より早く対応できるかもしれません。',
     'uid.error.link': 'Discordの招待リンク',
     'card.download': 'ダウンロード',
-    // crit-ratio
+    // crit-ratio, avg-dmg
     'crit-ratio.title': '会心バランス 理想値診断',
     'crit-ratio.(wg)': '(白字 + 緑字)',
     'crit-ratio.keep': '期待値をメモ',
@@ -162,6 +167,11 @@ export const ui = {
     'crit-ratio.ATK': '攻撃と会心のバランス',
     'crit-ratio.DEF': '防御と会心のバランス',
     'crit-ratio.low': '装備スコアが低いと、特化型として表示されます。',
+    'avg-dmg.title': 'ダメージ期待値 計算機',
+    'avg-dmg.stats': 'ステータス',
+    'avg-dmg.damage': '与ダメージ',
+    'avg-dmg.noncrit': '非会心',
+    'avg-dmg.avg': 'ダメージ (期待値)',
     // stat
     'Max HP': 'HP上限',
     'Base ATK': '基礎攻撃力',
@@ -256,7 +266,7 @@ export const ui = {
     'uid.error.report': 'Se você reportar isso em nosso Discord, poderemos lidar com isso mais rapido',
     'uid.error.link': 'Link de convite do Discord',
     'card.download': 'Baixar',
-    // crit-ratio
+    // crit-ratio, avg-dmg
     'crit-ratio.title': 'Verificador de Média do Crítico',
     'crit-ratio.(wg)': '(Branco + Verde)',
     'crit-ratio.keep': 'Manter Nota',

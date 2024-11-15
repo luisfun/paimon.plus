@@ -60,7 +60,7 @@ $effect.pre(() => {
     </div>
     <Dialog bind:dialog={dialogs[i]}>
       <button class="h-12 mt-2 mb-0 mx-auto block" onclick={() => onReset(i)}>
-        <Icon id={0} ui="avatar" style="w-12 h-12" dummyPaimon />
+        <Icon id={0} ui="avatar" class="w-12 h-12" dummyPaimon />
       </button>
       <DialogDelayIcon
         style="m-2{avatarInfoList.length < 13 ? " !grid-cols-4 max-w-72" : ""}"

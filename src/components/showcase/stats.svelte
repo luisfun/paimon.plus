@@ -65,7 +65,7 @@ $effect.pre(() => {
     <div class="form-control m-1">
       <label class="label cursor-pointer justify-normal">
         <input type="checkbox" checked={subMarks.includes(stat)} class="checkbox checkbox-primary" onclick={() => onClick(stat)} />
-        <Icon id={defineToName[stat]} ui="stat" style="w-6 mx-1" />
+        <Icon id={defineToName[stat]} ui="stat" class="w-6 mx-1" />
         <span class="label-text leading-6">{t(defineToName[stat])}</span>
       </label>
     </div>

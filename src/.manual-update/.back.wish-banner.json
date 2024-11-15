@@ -1,0 +1,555 @@
+[
+  {
+    "ver": 0,
+    "character5": ["", ""],
+    "character4": ["", "", ""],
+    "weapon5": ["", ""],
+    "weapon4": ["", "", "", "", ""]
+  },
+
+  {
+    "ver": 5.1,
+    "character5": ["Nahida", "Hu Tao"],
+    "character4": ["", "", ""],
+    "weapon5": ["", ""],
+    "weapon4": ["", "", "", "", ""]
+  },
+  {
+    "ver": 5.1,
+    "character5": ["Xilonen", "Chiori"],
+    "character4": ["Dori", "Candace", "Collei"],
+    "weapon5": ["Peak Patrol Song", "Uraku Misugiri"],
+    "weapon4": ["Sturdy Bone", "Sacrificial Greatsword", "Mountain-Bracing Bolt", "Favonius Codex", "Rust"]
+  },
+  {
+    "ver": 5.0,
+    "character5": ["Kinich", "Raiden Shogun"],
+    "character4": ["Thoma", "Kujou Sara", "Chevreuse"],
+    "weapon5": ["Fang of the Mountain King", "Engulfing Lightning"],
+    "weapon4": ["Sacrificial Sword", "Rainslasher", "Favonius Lance", "The Widsith", "Sacrificial Bow"]
+  },
+  {
+    "ver": 5.0,
+    "character5": ["Mualani", "Kaedehara Kazuha"],
+    "character4": ["Kachina", "Xinyan", "Bennett"],
+    "weapon5": ["Surf's Up", "Freedom-Sworn"],
+    "weapon4": ["Favonius Sword", "Favonius Greatsword", "Dragon's Bane", "Sacrificial Fragments", "The Stringless"]
+  },
+  {
+    "ver": 4.8,
+    "character5": ["Emilie", "Yelan"],
+    "character4": ["Yanfei", "Xiangling", "Razor"],
+    "weapon5": ["Lumidouce Elegy", "Aqua Simulacra"],
+    "weapon4": ["The Flute", "Makhaira Aquamarine", "Favonius Lance", "Wandering Evenstar", "Favonius Warbow"]
+  },
+  {
+    "ver": 4.8,
+    "character5": ["Navia", "Nilou"],
+    "character4": ["Kirara", "Kaveh", "Ningguang"],
+    "weapon5": ["Verdict", "Key of Khaj-Nisut"],
+    "weapon4": ["Xiphos' Moonlight", "The Bell", "Dragon's Bane", "Eye of Perception", "Rust"]
+  },
+  {
+    "ver": 4.7,
+    "character5": ["Sigewinne", "Furina"],
+    "character4": ["Noelle", "Gaming", "Rosaria"],
+    "weapon5": ["Silvershower Heartstrings", "Splendor of Tranquil Waters"],
+    "weapon4": ["Lion's Roar", "Lithic Blade", "Favonius Lance", "Favonius Codex", "Sacrificial Bow"]
+  },
+  {
+    "ver": 4.7,
+    "character5": ["Clorinde", "Alhaitham"],
+    "character4": ["Sethos", "Bennett", "Thoma"],
+    "weapon5": ["Absolution", "Light of Foliar Incision"],
+    "weapon4": ["Sacrificial Sword", "Sacrificial Greatsword", "Lithic Spear", "The Widsith", "The Stringless"]
+  },
+  {
+    "ver": 4.6,
+    "character5": ["Wanderer", "Baizhu"],
+    "character4": ["Beidou", "Faruzan", "Layla"],
+    "weapon5": ["Tulaytullah's Remembrance", "Jadefall's Splendor"],
+    "weapon4": ["Favonius Sword", "Rainslasher", "Prospector's Drill", "Sacrificial Fragments", "Range Gauge"]
+  },
+  {
+    "ver": 4.6,
+    "character5": ["Arlecchino", "Lyney"],
+    "character4": ["Freminet", "Lynette", "Xiangling"],
+    "weapon5": ["Crimson Moon's Semblance", "The First Great Magic"],
+    "weapon4": [
+      "The Dockhand's Assistant",
+      "Portable Power Saw",
+      "Dragon's Bane",
+      "Eye of Perception",
+      "Favonius Warbow"
+    ]
+  },
+  {
+    "ver": 4.5,
+    "character5": ["Neuvillette", "Kaedehara Kazuha"],
+    "character4": ["Barbara", "Xingqiu", "Yanfei"],
+    "weapon5": ["Tome of the Eternal Flow", "Freedom-Sworn"],
+    "weapon4": ["The Flute", "Favonius Greatsword", "Favonius Lance", "Wine and Song", "Mitternachts Waltz"]
+  },
+  {
+    "ver": 4.5,
+    "character5": ["Chiori", "Arataki Itto"],
+    "character4": ["Gorou", "Yun Jin", "Dori"],
+    "weapon5": ["Uraku Misugiri", "Redhorn Stonethresher"],
+    "weapon4": ["The Alley Flash", "The Bell", "Dragon's Bane", "Favonius Codex", "Alley Hunter"]
+  },
+  {
+    "ver": 4.4,
+    "character5": ["Xiao", "Yae Miko"],
+    "character4": ["Yaoyao", "Xinyan", "Ningguang"],
+    "weapon5": ["Primordial Jade Winged-Spear", "Kagura's Verity"],
+    "weapon4": ["Lion's Roar", "Lithic Blade", "Favonius Lance", "The Widsith", "The Stringless"]
+  },
+  {
+    "ver": 4.4,
+    "character5": ["Xianyun", "Nahida"],
+    "character4": ["Gaming", "Faruzan", "Noelle"],
+    "weapon5": ["Crane's Echoing Call", "A Thousand Floating Dreams"],
+    "weapon4": [
+      "Sacrificial Sword",
+      "Sacrificial Greatsword",
+      "Lithic Spear",
+      "Sacrificial Fragments",
+      "Sacrificial Bow"
+    ]
+  },
+  {
+    "ver": 4.3,
+    "character5": ["Raiden Shogun", "Yoimiya"],
+    "character4": ["Chevreuse", "Kujou Sara", "Bennett"],
+    "weapon5": ["Engulfing Lightning", "Thundering Pulse"],
+    "weapon4": ["Favonius Sword", "Rainslasher", "Wavebreaker's Fin", "Eye of Perception", "Rust"]
+  },
+  {
+    "ver": 4.3,
+    "character5": ["Navia", "Kamisato Ayaka"],
+    "character4": ["Sucrose", "Rosaria", "Candace"],
+    "weapon5": ["Verdict", "Mistsplitter Reforged"],
+    "weapon4": ["The Flute", "Akuoumaru", "Dragon's Bane", "Favonius Codex", "Mouun's Moon"]
+  },
+  {
+    "ver": 4.2,
+    "character5": ["Kamisato Ayato", "Cyno"],
+    "character4": ["Kirara", "Kuki Shinobu", "Xiangling"],
+    "weapon5": ["Haran Geppaku Futsu", "Staff of the Scarlet Sands"],
+    "weapon4": ["Lion's Roar", "Favonius Greatsword", "Favonius Lance", "The Widsith", "Favonius Warbow"]
+  },
+  {
+    "ver": 4.2,
+    "character5": ["Furina", "Baizhu"],
+    "character4": ["Charlotte", "Collei", "Beidou"],
+    "weapon5": ["Splendor of Tranquil Waters", "Jadefall's Splendor"],
+    "weapon4": ["Sacrificial Sword", "The Bell", "Dragon's Bane", "Sacrificial Fragments", "The Stringless"]
+  },
+  {
+    "ver": 4.1,
+    "character5": ["Wriothesley", "Venti"],
+    "character4": ["Chongyun", "Thoma", "Dori"],
+    "weapon5": ["Cashflow Supervision", "Elegy for the End"],
+    "weapon4": ["Favonius Sword", "Rainslasher", "Prospector's Drill", "Eye of Perception", "Range Gauge"]
+  },
+  {
+    "ver": 4.1,
+    "character5": ["Neuvillette", "Hu Tao"],
+    "character4": ["Fischl", "Xingqiu", "Diona"],
+    "weapon5": ["Tome of the Eternal Flow", "Staff of Homa"],
+    "weapon4": [
+      "The Dockhand's Assistant",
+      "Portable Power Saw",
+      "Favonius Lance",
+      "Favonius Codex",
+      "Mitternachts Waltz"
+    ]
+  },
+  {
+    "ver": 4.0,
+    "character5": ["Zhongli", "Tartaglia"],
+    "character4": ["Freminet", "Sayu", "Noelle"],
+    "weapon5": ["Vortex Vanquisher", "Polar Star"],
+    "weapon4": ["The Flute", "Sacrificial Greatsword", "Dragon's Bane", "The Widsith", "Rust"]
+  },
+  {
+    "ver": 4.0,
+    "character5": ["Lyney", "Yelan"],
+    "character4": ["Lynette", "Bennett", "Barbara"],
+    "weapon5": ["The First Great Magic", "Aqua Simulacra"],
+    "weapon4": [
+      "Sacrificial Sword",
+      "Favonius Greatsword",
+      "Favonius Lance",
+      "Sacrificial Fragments",
+      "Sacrificial Bow"
+    ]
+  },
+
+  {
+    "ver": 3.8,
+    "character5": ["Sangonomiya Kokomi", "Wanderer"],
+    "character4": ["Faruzan", "Rosaria", "Yanfei"],
+    "weapon5": ["Everlasting Moonglow", "Tulaytullah's Remembrance"],
+    "weapon4": ["Lion's Roar", "The Bell", "Dragon's Bane", "Wine and Song", "Favonius Warbow"]
+  },
+  {
+    "ver": 3.8,
+    "character5": ["Eula", "Klee"],
+    "character4": ["Mika", "Razor", "Thoma"],
+    "weapon5": ["Song of Broken Pines", "Lost Prayer to the Sacred Winds"],
+    "weapon4": ["The Alley Flash", "Rainslasher", "Favonius Lance", "Eye of Perception", "Alley Hunter"]
+  },
+  {
+    "ver": 3.7,
+    "character5": ["Kaedehara Kazuha", "Alhaitham"],
+    "character4": ["Shikanoin Heizou", "Xiangling", "Yaoyao"],
+    "weapon5": ["Freedom-Sworn", "Light of Foliar Incision"],
+    "weapon4": ["Favonius Sword", "Sacrificial Greatsword", "Wavebreaker's Fin", "Favonius Codex", "Mouun's Moon"]
+  },
+  {
+    "ver": 3.7,
+    "character5": ["Yoimiya", "Yae Miko"],
+    "character4": ["Kirara", "Yun Jin", "Chongyun"],
+    "weapon5": ["Thundering Pulse", "Kagura's Verity"],
+    "weapon4": ["The Flute", "Akuoumaru", "Dragon's Bane", "The Widsith", "Rust"]
+  },
+  {
+    "ver": 3.6,
+    "character5": ["Baizhu", "Ganyu"],
+    "character4": ["Kaveh", "Candace", "Fischl"],
+    "weapon5": ["Jadefall's Splendor", "Amos' Bow"],
+    "weapon4": ["Lion's Roar", "Makhaira Aquamarine", "Favonius Lance", "Wandering Evenstar", "Sacrificial Bow"]
+  },
+  {
+    "ver": 3.6,
+    "character5": ["Nahida", "Nilou"],
+    "character4": ["Kuki Shinobu", "Dori", "Layla"],
+    "weapon5": ["A Thousand Floating Dreams", "Key of Khaj-Nisut"],
+    "weapon4": ["Xiphos' Moonlight", "Favonius Greatsword", "Dragon's Bane", "Sacrificial Fragments", "The Stringless"]
+  },
+  {
+    "ver": 3.5,
+    "character5": ["Kamisato Ayaka", "Shenhe"],
+    "character4": ["Mika", "Sucrose", "Diona"],
+    "weapon5": ["Mistsplitter Reforged", "Calamity Queller"],
+    "weapon4": ["Sacrificial Sword", "The Bell", "Favonius Lance", "Wine and Song", "Favonius Warbow"]
+  },
+  {
+    "ver": 3.5,
+    "character5": ["Dehya", "Cyno"],
+    "character4": ["Bennett", "Barbara", "Collei"],
+    "weapon5": ["Beacon of the Reed Sea", "Staff of the Scarlet Sands"],
+    "weapon4": ["The Alley Flash", "Sacrificial Greatsword", "Dragon's Bane", "Eye of Perception", "Alley Hunter"]
+  },
+  {
+    "ver": 3.4,
+    "character5": ["Hu Tao", "Yelan"],
+    "character4": ["Xingqiu", "Ningguang", "Beidou"],
+    "weapon5": ["Staff of Homa", "Aqua Simulacra"],
+    "weapon4": ["Favonius Sword", "Lithic Blade", "Dragon's Bane", "Favonius Codex", "Rust"]
+  },
+  {
+    "ver": 3.4,
+    "character5": ["Alhaitham", "Xiao"],
+    "character4": ["Yaoyao", "Yun Jin", "Xinyan"],
+    "weapon5": ["Light of Foliar Incision", "Primordial Jade Winged-Spear"],
+    "weapon4": ["The Flute", "Rainslasher", "Lithic Spear", "The Widsith", "Sacrificial Bow"]
+  },
+  {
+    "ver": 3.3,
+    "character5": ["Raiden Shogun", "Kamisato Ayato"],
+    "character4": ["Rosaria", "Sayu", "Kujou Sara"],
+    "weapon5": ["Engulfing Lightning", "Haran Geppaku Futsu"],
+    "weapon4": ["Lion's Roar", "Akuoumaru", "Favonius Lance", "Sacrificial Fragments", "Mouun's Moon"]
+  },
+  {
+    "ver": 3.3,
+    "character5": ["Wanderer", "Arataki Itto"],
+    "character4": ["Faruzan", "Gorou", "Yanfei"],
+    "weapon5": ["Tulaytullah's Remembrance", "Redhorn Stonethresher"],
+    "weapon4": ["Sacrificial Sword", "Favonius Greatsword", "Wavebreaker's Fin", "Eye of Perception", "Favonius Warbow"]
+  },
+  {
+    "ver": 3.2,
+    "character5": ["Yae Miko", "Tartaglia"],
+    "character4": ["Layla", "Thoma", "Shikanoin Heizou"],
+    "weapon5": ["Kagura's Verity", "Polar Star"],
+    "weapon4": ["Favonius Sword", "The Bell", "Dragon's Bane", "Favonius Codex", "The Stringless"]
+  },
+  {
+    "ver": 3.2,
+    "character5": ["Nahida", "Yoimiya"],
+    "character4": ["Razor", "Noelle", "Bennett"],
+    "weapon5": ["A Thousand Floating Dreams", "Thundering Pulse"],
+    "weapon4": ["The Flute", "Sacrificial Greatsword", "Favonius Lance", "The Widsith", "Rust"]
+  },
+  {
+    "ver": 3.1,
+    "character5": ["Nilou", "Albedo"],
+    "character4": ["Barbara", "Beidou", "Xiangling"],
+    "weapon5": ["Key of Khaj-Nisut", "Primordial Jade Cutter"],
+    "weapon4": ["Xiphos' Moonlight", "Rainslasher", "Dragon's Bane", "Wandering Evenstar", "Sacrificial Bow"]
+  },
+  {
+    "ver": 3.1,
+    "character5": ["Cyno", "Venti"],
+    "character4": ["Candace", "Kuki Shinobu", "Sayu"],
+    "weapon5": ["Staff of the Scarlet Sands", "Elegy for the End"],
+    "weapon4": ["Lion's Roar", "Makhaira Aquamarine", "Favonius Lance", "Sacrificial Fragments", "Favonius Warbow"]
+  },
+  {
+    "ver": 3.0,
+    "character5": ["Ganyu", "Sangonomiya Kokomi"],
+    "character4": ["Dori", "Sucrose", "Xingqiu"],
+    "weapon5": ["Amos' Bow", "Everlasting Moonglow"],
+    "weapon4": ["Sacrificial Sword", "Favonius Greatsword", "Dragon's Bane", "Eye of Perception", "Rust"]
+  },
+  {
+    "ver": 3.0,
+    "character5": ["Tighnari", "Zhongli"],
+    "character4": ["Collei", "Diona", "Fischl"],
+    "weapon5": ["Hunter's Path", "Vortex Vanquisher"],
+    "weapon4": ["Favonius Sword", "The Bell", "Favonius Lance", "Favonius Codex", "The Stringless"]
+  },
+
+  {
+    "ver": 2.8,
+    "character5": ["Yoimiya"],
+    "character4": ["Yun Jin", "Xinyan", "Bennett"],
+    "weapon5": ["Thundering Pulse", "Summit Shaper"],
+    "weapon4": ["The Flute", "Sacrificial Greatsword", "Dragon's Bane", "Wine and Song", "Alley Hunter"]
+  },
+  {
+    "ver": 2.8,
+    "character5": ["Kaedehara Kazuha", "Klee"],
+    "character4": ["Shikanoin Heizou", "Thoma", "Ningguang"],
+    "weapon5": ["Freedom-Sworn", "Lost Prayer to the Sacred Winds"],
+    "weapon4": ["The Alley Flash", "Rainslasher", "Favonius Lance", "The Widsith", "Mitternachts Waltz"]
+  },
+  {
+    "ver": 2.7,
+    "character5": ["Arataki Itto"],
+    "character4": ["Kuki Shinobu", "Chongyun", "Gorou"],
+    "weapon5": ["Redhorn Stonethresher", "Memory of Dust"],
+    "weapon4": ["Lion's Roar", "Lithic Blade", "Dragon's Bane", "Sacrificial Fragments", "The Stringless"]
+  },
+  {
+    "ver": 2.7,
+    "character5": ["Yelan", "Xiao"],
+    "character4": ["Barbara", "Yanfei", "Noelle"],
+    "weapon5": ["Aqua Simulacra", "Primordial Jade Winged-Spear"],
+    "weapon4": ["Sacrificial Sword", "Favonius Greatsword", "Lithic Spear", "Eye of Perception", "Sacrificial Bow"]
+  },
+  {
+    "ver": 2.6,
+    "character5": ["Kamisato Ayaka"],
+    "character4": ["Razor", "Rosaria", "Sayu"],
+    "weapon5": ["Mistsplitter Reforged", "The Unforged"],
+    "weapon4": ["Favonius Sword", "The Bell", "Favonius Lance", "Favonius Codex", "Favonius Warbow"]
+  },
+  {
+    "ver": 2.6,
+    "character5": ["Kamisato Ayato", "Venti"],
+    "character4": ["Sucrose", "Xiangling", "Yun Jin"],
+    "weapon5": ["Haran Geppaku Futsu", "Elegy for the End"],
+    "weapon4": ["The Flute", "Sacrificial Greatsword", "Dragon's Bane", "The Widsith", "Rust"]
+  },
+  {
+    "ver": 2.5,
+    "character5": ["Raiden Shogun", "Sangonomiya Kokomi"],
+    "character4": ["Bennett", "Xinyan", "Kujou Sara"],
+    "weapon5": ["Engulfing Lightning", "Everlasting Moonglow"],
+    "weapon4": ["Lion's Roar", "Akuoumaru", "Favonius Lance", "Sacrificial Fragments", "Mouun's Moon"]
+  },
+  {
+    "ver": 2.5,
+    "character5": ["Yae Miko"],
+    "character4": ["Fischl", "Diona", "Thoma"],
+    "weapon5": ["Kagura's Verity", "Primordial Jade Cutter"],
+    "weapon4": ["Sacrificial Sword", "Rainslasher", "Wavebreaker's Fin", "Eye of Perception", "The Stringless"]
+  },
+  {
+    "ver": 2.4,
+    "character5": ["Zhongli", "Ganyu"],
+    "character4": ["Xingqiu", "Beidou", "Yanfei"],
+    "weapon5": ["Vortex Vanquisher", "Amos' Bow"],
+    "weapon4": ["Favonius Sword", "Lithic Blade", "Dragon's Bane", "Favonius Codex", "Sacrificial Bow"]
+  },
+  {
+    "ver": 2.4,
+    "character5": ["Shenhe", "Xiao"],
+    "character4": ["Yun Jin", "Ningguang", "Chongyun"],
+    "weapon5": ["Calamity Queller", "Primordial Jade Winged-Spear"],
+    "weapon4": ["The Flute", "Favonius Greatsword", "Lithic Spear", "The Widsith", "Favonius Warbow"]
+  },
+  {
+    "ver": 2.3,
+    "character5": ["Arataki Itto"],
+    "character4": ["Gorou", "Barbara", "Xiangling"],
+    "weapon5": ["Redhorn Stonethresher", "Skyward Harp"],
+    "weapon4": ["The Alley Flash", "The Bell", "Favonius Lance", "Sacrificial Fragments", "Mitternachts Waltz"]
+  },
+  {
+    "ver": 2.3,
+    "character5": ["Albedo", "Eula"],
+    "character4": ["Bennett", "Noelle", "Rosaria"],
+    "weapon5": ["Freedom-Sworn", "Song of Broken Pines"],
+    "weapon4": ["Lion's Roar", "Sacrificial Greatsword", "Dragon's Bane", "Wine and Song", "Alley Hunter"]
+  },
+  {
+    "ver": 2.2,
+    "character5": ["Hu Tao"],
+    "character4": ["Thoma", "Diona", "Sayu"],
+    "weapon5": ["Staff of Homa", "Elegy for the End"],
+    "weapon4": ["Sacrificial Sword", "Rainslasher", "Wavebreaker's Fin", "The Widsith", "Mouun's Moon"]
+  },
+  {
+    "ver": 2.2,
+    "character5": ["Tartaglia"],
+    "character4": ["Ningguang", "Chongyun", "Yanfei"],
+    "weapon5": ["Polar Star", "Memory of Dust"],
+    "weapon4": ["Favonius Sword", "Akuoumaru", "Favonius Lance", "Eye of Perception", "Rust"]
+  },
+  {
+    "ver": 2.1,
+    "character5": ["Sangonomiya Kokomi"],
+    "character4": ["Rosaria", "Beidou", "Xingqiu"],
+    "weapon5": ["Everlasting Moonglow", "Primordial Jade Cutter"],
+    "weapon4": ["The Flute", "Favonius Greatsword", "Dragon's Bane", "Favonius Codex", "The Stringless"]
+  },
+  {
+    "ver": 2.1,
+    "character5": ["Raiden Shogun"],
+    "character4": ["Kujou Sara", "Xiangling", "Sucrose"],
+    "weapon5": ["Engulfing Lightning", "The Unforged"],
+    "weapon4": ["Lion's Roar", "The Bell", "Favonius Lance", "The Widsith", "Sacrificial Bow"]
+  },
+  {
+    "ver": 2.0,
+    "character5": ["Yoimiya"],
+    "character4": ["Sayu", "Diona", "Xinyan"],
+    "weapon5": ["Thundering Pulse", "Skyward Blade"],
+    "weapon4": ["Sacrificial Sword", "Rainslasher", "Dragon's Bane", "Sacrificial Fragments", "Favonius Warbow"]
+  },
+  {
+    "ver": 2.0,
+    "character5": ["Kamisato Ayaka"],
+    "character4": ["Ningguang", "Chongyun", "Yanfei"],
+    "weapon5": ["Mistsplitter Reforged", "Skyward Spine"],
+    "weapon4": ["Favonius Sword", "Sacrificial Greatsword", "Favonius Lance", "Favonius Codex", "The Stringless"]
+  },
+
+  {
+    "ver": 1.6,
+    "character5": ["Kaedehara Kazuha"],
+    "character4": ["Rosaria", "Bennett", "Razor"],
+    "weapon5": ["Freedom-Sworn", "Skyward Atlas"],
+    "weapon4": ["The Alley Flash", "Favonius Greatsword", "Dragon's Bane", "Wine and Song", "Alley Hunter"]
+  },
+  {
+    "ver": 1.6,
+    "character5": ["Klee"],
+    "character4": ["Barbara", "Sucrose", "Fischl"],
+    "weapon5": ["Skyward Pride", "Lost Prayer to the Sacred Winds"],
+    "weapon4": ["Lion's Roar", "The Bell", "Favonius Lance", "The Widsith", "Mitternachts Waltz"]
+  },
+  {
+    "ver": 1.5,
+    "character5": ["Eula"],
+    "character4": ["Xinyan", "Xingqiu", "Beidou"],
+    "weapon5": ["Song of Broken Pines", "Aquila Favonia"],
+    "weapon4": ["Sacrificial Sword", "Rainslasher", "Dragon's Bane", "Sacrificial Fragments", "Rust"]
+  },
+  {
+    "ver": 1.5,
+    "character5": ["Zhongli"],
+    "character4": ["Yanfei", "Noelle", "Diona"],
+    "weapon5": ["Summit Shaper", "Memory of Dust"],
+    "weapon4": ["The Flute", "Lithic Blade", "Lithic Spear", "Eye of Perception", "Sacrificial Bow"]
+  },
+  {
+    "ver": 1.4,
+    "character5": ["Tartaglia"],
+    "character4": ["Rosaria", "Barbara", "Fischl"],
+    "weapon5": ["Skyward Harp", "Lost Prayer to the Sacred Winds"],
+    "weapon4": ["Favonius Sword", "Sacrificial Greatsword", "Favonius Lance", "Favonius Codex", "Alley Hunter"]
+  },
+  {
+    "ver": 1.4,
+    "character5": ["Venti"],
+    "character4": ["Sucrose", "Razor", "Noelle"],
+    "weapon5": ["Elegy for the End", "Skyward Blade"],
+    "weapon4": ["The Alley Flash", "Favonius Greatsword", "Dragon's Bane", "Wine and Song", "Favonius Warbow"]
+  },
+  {
+    "ver": 1.3,
+    "character5": ["Hu Tao"],
+    "character4": ["Xingqiu", "Xiangling", "Chongyun"]
+  },
+  {
+    "ver": 1.3,
+    "weapon5": ["Staff of Homa", "Wolf's Gravestone"],
+    "weapon4": ["Lion's Roar", "Lithic Blade", "Lithic Spear", "The Widsith", "Sacrificial Bow"]
+  },
+  {
+    "ver": 1.3,
+    "character5": ["Keqing"],
+    "character4": ["Ningguang", "Bennett", "Barbara"]
+  },
+  {
+    "ver": 1.3,
+    "character5": ["Xiao"],
+    "character4": ["Diona", "Beidou", "Xinyan"],
+    "weapon5": ["Primordial Jade Cutter", "Primordial Jade Winged-Spear"],
+    "weapon4": ["The Flute", "Sacrificial Greatsword", "Favonius Lance", "Eye of Perception", "Rust"]
+  },
+  {
+    "ver": 1.2,
+    "character5": ["Ganyu"],
+    "character4": ["Xiangling", "Xingqiu", "Noelle"],
+    "weapon5": ["Skyward Pride", "Amos' Bow"],
+    "weapon4": ["Sacrificial Sword", "The Bell", "Dragon's Bane", "Eye of Perception", "Favonius Warbow"]
+  },
+  {
+    "ver": 1.2,
+    "character5": ["Albedo"],
+    "character4": ["Fischl", "Sucrose", "Bennett"],
+    "weapon5": ["Summit Shaper", "Skyward Atlas"],
+    "weapon4": ["Favonius Sword", "Favonius Greatsword", "Favonius Lance", "Sacrificial Fragments", "The Stringless"]
+  },
+  {
+    "ver": 1.1,
+    "character5": ["Zhongli"],
+    "character4": ["Xinyan", "Razor", "Chongyun"],
+    "weapon5": ["Vortex Vanquisher", "The Unforged"],
+    "weapon4": ["Lion's Roar", "The Bell", "Dragon's Bane", "Favonius Codex", "Favonius Warbow"]
+  },
+  {
+    "ver": 1.1,
+    "character5": ["Tartaglia"],
+    "character4": ["Diona", "Beidou", "Ningguang"],
+    "weapon5": ["Memory of Dust", "Skyward Harp"],
+    "weapon4": ["The Flute", "Rainslasher", "Favonius Lance", "Eye of Perception", "Rust"]
+  },
+  {
+    "ver": 1.0,
+    "character5": ["Klee"],
+    "character4": ["Xingqiu", "Noelle", "Sucrose"],
+    "weapon5": ["Lost Prayer to the Sacred Winds", "Wolf's Gravestone"],
+    "weapon4": [
+      "Sacrificial Sword",
+      "Sacrificial Greatsword",
+      "Dragon's Bane",
+      "Sacrificial Fragments",
+      "Sacrificial Bow"
+    ]
+  },
+  {
+    "ver": 1.0,
+    "character5": ["Venti"],
+    "character4": ["Barbara", "Fischl", "Xiangling"],
+    "weapon5": ["Aquila Favonia", "Amos' Bow"],
+    "weapon4": ["The Flute", "The Bell", "Favonius Lance", "The Widsith", "The Stringless"]
+  }
+]

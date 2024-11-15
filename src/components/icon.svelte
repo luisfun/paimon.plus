@@ -4,7 +4,8 @@ import materialJson from '@game/material.json'
 import profilePictureJson from '@game/profile-picture.json'
 import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
-import type { HTMLImgAttributes } from 'svelte/elements'
+//import type { HTMLImgAttributes } from 'svelte/elements'
+import type { SvelteHTMLElements } from 'svelte/elements'
 const textMap: { en: Record<number, string> } = textMapJson
 
 const {
@@ -12,18 +13,19 @@ const {
   skinId,
   ui,
   text,
-  style,
   dummyLoading,
   dummyPaimon,
+  nonBg,
+  ...rest
 }: {
   id: number | string
   skinId?: number
   ui: 'dummy' | 'avatar' | 'weapon' | 'material' | 'element' | 'weapon-type' | 'circle' | 'side' | 'stat'
   text?: string | number
-  style?: string
   dummyLoading?: boolean
   dummyPaimon?: boolean
-} = $props()
+  nonBg?: boolean
+} & Omit<SvelteHTMLElements['img'], 'id'> = $props()
 
 const dummySrc = dummyPaimon
   ? '/images/Empty.webp'
@@ -33,17 +35,17 @@ const rankNum: Record<string, number> = {
   QUALITY_PURPLE: 4,
   QUALITY_ORANGE_SP: 5,
 }
-const styleInit = (style: string | undefined) => `bg-cover w-full rounded-[4%_4%_27%]${style ? ` ${style}` : ''}`
-const propsInit = (style: string | undefined) => ({
+const classInit = (c: string | null | undefined) => `bg-cover w-full rounded-[4%_4%_27%]${c ? ` ${c}` : ''}`
+const propsInit = (c: string | null | undefined) => ({
   src: dummySrc,
   width: 1,
   height: 1,
   alt: 'None',
-  class: styleInit(style),
+  class: classInit(c),
 })
 
 const imgProps = $derived.by(() => {
-  const sx = styleInit(style)
+  const sx = classInit(rest.class)
   switch (ui) {
     case 'avatar': {
       const a = avatarJson.find(e => e.id === id)
@@ -54,7 +56,7 @@ const imgProps = $derived.by(() => {
         width: 192,
         height: 192,
         alt: textMap.en[a.nameTextMapHash],
-        class: `${sx} bg-rank-${rankNum[a.qualityType] || 1}`,
+        class: `${sx}${nonBg ? '' : ` bg-rank-${rankNum[a.qualityType] || 1}`}`,
       }
     }
     case 'weapon': {
@@ -65,7 +67,7 @@ const imgProps = $derived.by(() => {
         width: 128,
         height: 128,
         alt: textMap.en[w.nameTextMapHash],
-        class: `${sx} bg-rank-${w.rankLevel}`,
+        class: `${sx}${nonBg ? '' : ` bg-rank-${w.rankLevel}`}`,
       }
     }
     case 'material': {
@@ -76,7 +78,7 @@ const imgProps = $derived.by(() => {
         width: 128,
         height: 128,
         alt: textMap.en[m.nameTextMapHash],
-        class: `${sx} bg-rank-${m.rankLevel || 1}`,
+        class: `${sx}${nonBg ? '' : ` bg-rank-${m.rankLevel || 1}`}`,
       }
     }
     case 'element': {
@@ -85,7 +87,7 @@ const imgProps = $derived.by(() => {
         width: 84,
         height: 84,
         alt: id.toString(),
-        class: style,
+        class: rest.class,
       }
     }
     case 'weapon-type': {
@@ -94,7 +96,7 @@ const imgProps = $derived.by(() => {
         width: 56,
         height: 56,
         alt: id.toString(),
-        class: style,
+        class: rest.class,
       }
     }
     case 'circle': {
@@ -118,7 +120,7 @@ const imgProps = $derived.by(() => {
         width: 128,
         height: 128,
         alt: textMap.en[a.nameTextMapHash],
-        class: style,
+        class: rest.class,
       }
     }
     case 'stat': {
@@ -136,13 +138,13 @@ const imgProps = $derived.by(() => {
         width: 256,
         height: 256,
         alt: id.toString(),
-        class: style,
+        class: rest.class,
       }
     }
   }
-  return propsInit(style)
+  return propsInit(rest.class)
 })
-let overwriteProps = $state<HTMLImgAttributes>({})
+let overwriteProps = $state<SvelteHTMLElements['img']>({})
 let isInitialRender = $state(true)
 let srcLog = $state(dummySrc)
 
@@ -167,9 +169,9 @@ $effect(() => {
 
 {#if text}
 <div class="relative rounded-[4%_4%_27%] overflow-hidden">
-  <img {...imgProps} {...overwriteProps} />
+  <img {...imgProps} {...overwriteProps} {...rest} />
   <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">{text}</div>
 </div>
 {:else}
-<img {...imgProps} {...overwriteProps} />
+<img {...imgProps} {...overwriteProps} {...rest} />
 {/if}

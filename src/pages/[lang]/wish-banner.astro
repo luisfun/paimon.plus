@@ -1,0 +1,112 @@
+---
+import Icon from '@components/icon.svelte'
+import avatarJson from '@game/avatar.json'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+import { wish } from '@manual/wish-banner'
+export { getStaticPaths } from '@i18n/utils'
+
+const normals = ['Jean', 'Diluc', 'Qiqi', 'Mona', 'Keqing', 'Tighnari', 'Dehya']
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+const en = useTranslations('en')
+
+const table = (array: string[][]) => {
+  const arr = array.concat().reverse()
+  const list = []
+  for (const names of arr) {
+    for (const name of names) {
+      if (list.indexOf(name) === -1 && name !== '') list.push(name)
+    }
+  }
+  const baseList = list
+    .map(e => {
+      const tmp = []
+      let count = -1
+      for (const names of arr) {
+        if (names.indexOf(e) !== -1)
+          count = 0 //PUされた
+        else if (count !== -1) count++ //PUされない＋過去にPU
+        tmp.push(count)
+      }
+      return { name: e, data: tmp.reverse() }
+    })
+    .reverse()
+  const limitedList = baseList.filter(e => !normals.includes(e.name))
+  const normalList = baseList.filter(e => normals.includes(e.name))
+  return [...limitedList, ...normalList]
+}
+const colorScale = (value: number) => {
+  const a = 0.2
+  let r: number
+  let g: number
+  let b: number
+  const val = (-Math.cos(4 * Math.PI * value) / 2 + 0.5) * 255
+  if (value >= 4 / 4) {
+    r = 255
+    g = 0
+    b = 0
+  } else if (value >= 3 / 4) {
+    r = 255
+    g = val
+    b = 0
+  } else if (value >= 2 / 4) {
+    r = val
+    g = 255
+    b = 0
+  } else if (value >= 1 / 4) {
+    r = 0
+    g = 255
+    b = val
+  } else if (value >= 0 / 4) {
+    r = 0
+    g = val
+    b = 255
+  } else {
+    r = 0
+    g = 0
+    b = 255
+  }
+  return `rgba(${r},${g},${b},${a})`
+}
+---
+
+<Layout title={t("wish-banner.title")}>
+  <div class=`grid grid-cols-[repeat(${wish.length + 1}, 2rem)] sm:grid-cols-[repeat(${wish.length + 1}, 2.75rem)] grid-rows-[auto_auto_2rem_auto] sm:grid-rows-[auto_auto_2.75rem_auto] overflow-x-scroll font-genshin text-lg sm:text-2xl leading-8 sm:leading-[2.75rem] text-center`>
+    <div class="row-start-1 w-8 sm:w-11"></div>
+    <div class="row-start-2 text-sm bg-neutral">{t("wish-banner.ver")}</div>
+    {wish.map(e => (
+      <div class="row-start-1 w-8 sm:w-11">
+        <div class="h-1/2">
+          {e.c51.map(c => {
+            const a = avatarJson.find(a => en(a.id, "avatar") === c)
+            if (!a) return undefined
+            return <Icon id={a.id} ui="avatar" nonBg />
+          })}
+        </div>
+        <div class="h-1/2">
+          {e.c52.map(c => {
+            const a = avatarJson.find(a => en(a.id, "avatar") === c)
+            if (!a) return undefined
+            return <Icon id={a.id} ui="avatar" nonBg />
+          })}
+        </div>
+      </div>
+      <div class="row-start-2 text-sm bg-neutral">{e.ver.toFixed(1)}</div>
+    ))}
+    {table(wish.map(e => e.c51.concat(e.c52, e.c5e1 ?? []))).map((e,i) => {
+      const a = avatarJson.find(a => en(a.id, "avatar") === e.name)
+      if (!a) return undefined
+      return <>
+        <Icon id={a.id} ui="avatar" style={`grid-row-start: ${i+3};`} />
+        {e.data.map(num => {
+          if (num === -1) return undefined
+          else if (num !== 0) return <div style={`grid-row-start: ${i+3}; background: ${colorScale((num-1)/15)}`}>{num}</div>
+          return <Icon id={a.id} ui="avatar" style={`grid-row-start: ${i+3};`} nonBg />
+        })}
+      </>
+    })}
+  </div>
+  <div class="mt-2">{t("wish-banner.hint")}</div>
+</Layout>

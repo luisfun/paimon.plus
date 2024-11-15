@@ -80,9 +80,9 @@ const weaponHandler = (id: number) => {
     </button>
     <div class="mr-auto flex items-center">
       {#if selectData.element}
-      <Icon id={selectData.element} ui="element" style="w-7 mr-2" />
+      <Icon id={selectData.element} ui="element" class="w-7 mr-2" />
       {/if}
-      <Icon id={selectData.weaponType} ui="weapon-type" style="w-7 mr-2" />
+      <Icon id={selectData.weaponType} ui="weapon-type" class="w-7 mr-2" />
       <HoyoWiki class="text-sm text-link" {lang} wikiId={selectData.wikiId} />
     </div>
   </div>

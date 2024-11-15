@@ -9,7 +9,7 @@ export const ui = {
     'game.characters': 'Characters',
     'game.weapons': 'Weapons',
     'footer.unofficial': 'Paimon+ is not affiliated to miHoYo.',
-    "nopage.text": "This page is no longer available. Please visit the new URL below.",
+    'nopage.text': 'This page is no longer available. Please visit the new URL below.',
     // home
     'home.title': 'Genshin Impact Online Tools',
     'home.thanks': 'Appreciation',
@@ -72,6 +72,10 @@ export const ui = {
     'avg-dmg.damage': 'Damage Dealt',
     'avg-dmg.noncrit': 'Non CRIT',
     'avg-dmg.avg': 'Damage (Avg.)',
+    // wish-banner
+    'wish-banner.title': 'Wish Banner History',
+    'wish-banner.ver': 'Ver.',
+    'wish-banner.hint': '[Shift] + [Mouse Wheel] to scroll horizontally',
     // stat
     'Max HP': 'Max HP',
     'Base ATK': 'Base ATK',
@@ -114,7 +118,7 @@ export const ui = {
     'game.characters': 'キャラクター',
     'game.weapons': '武器',
     'footer.unofficial': 'Paimon+は非公式のwebサイトです。',
-    "nopage.text": "このページは廃止されました。代わりに次のURLを利用してください。",
+    'nopage.text': 'このページは廃止されました。代わりに次のURLを利用してください。',
     // home
     'home.title': '原神 webツール',
     'home.thanks': '謝辞',
@@ -174,6 +178,9 @@ export const ui = {
     'avg-dmg.damage': '与ダメージ',
     'avg-dmg.noncrit': '非会心',
     'avg-dmg.avg': 'ダメージ (期待値)',
+    // wish-banner
+    'wish-banner.title': '祈願ピックアップ履歴',
+    'wish-banner.hint': '[Shift] + [マウスホイール] で横スクロール',
     // stat
     'Max HP': 'HP上限',
     'Base ATK': '基礎攻撃力',

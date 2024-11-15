@@ -30,9 +30,9 @@ export const navData = [
     href: '/showcase-analytics/',
   },
   {
-    svg: 'book' as const,
-    text: 'Talent Materials',
-    href: '/talent-materials/',
+    svg: 'player-card' as const,
+    text: 'Player Card',
+    href: '/player-card-templates/',
   },
   {
     svg: 'dice' as const,
@@ -43,10 +43,5 @@ export const navData = [
     svg: 'circlet' as const,
     text: 'Artifacter',
     href: '/artifacter/',
-  },
-  {
-    svg: 'player-card' as const,
-    text: 'Player Card',
-    href: '/player-card-templates/',
   },
 ]

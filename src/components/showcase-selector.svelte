@@ -106,7 +106,7 @@ $effect(() => {
       <button class="relative flex-none w-[4.5rem] h-[4.5rem] pointer" onclick={() => onSelect(id)}>
         <div class="side-bg absolute top-1/2 left-1/2 -transform-1/2 outline outline-[3px] w-12 h-12 rounded-full transition-all{(select ? ' side-bg-select' : "") + (active ? ' side-bg-active' : "")}"></div>
         <div class="absolute bottom-0 left-1/2 -transform-x-1/2 border border-b-2 transition-all {select ? "w-full side-bottom-color": "w-0 border-transparent"}"></div>
-        <Icon {id} {skinId} ui="side" style="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all {select ? "w-20" : "w-[4.6rem]"}" />
+        <Icon {id} {skinId} ui="side" class="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all {select ? "w-20" : "w-[4.6rem]"}" />
       </button>
     {/each}
   </div>

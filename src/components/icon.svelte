@@ -4,7 +4,6 @@ import materialJson from '@game/material.json'
 import profilePictureJson from '@game/profile-picture.json'
 import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
-//import type { HTMLImgAttributes } from 'svelte/elements'
 import type { SvelteHTMLElements } from 'svelte/elements'
 const textMap: { en: Record<number, string> } = textMapJson
 

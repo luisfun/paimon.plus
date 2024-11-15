@@ -243,8 +243,8 @@ export const ui = {
     'showcase.error.public':
       'Por favor, ative a opção "Mostrar os detalhes do Personagem" em Exibição de Personagem no jogo par ver os detalhes.',
     'showcase.analysis': 'Análise',
-    'showcase.more': 'Ler mais',
-    'showcase.crit-ratio': 'Verificador da Média do Crítico',
+    'showcase.more': 'Ver mais',
+    'showcase.crit-ratio': 'Visualizador de Chance de Crítico',
     'artifacter.title': 'Rede Artifacter',
     'artifacter.card.total': 'Pontuação Total',
     'artifacter.card.tcv': 'CV Total',
@@ -276,7 +276,7 @@ export const ui = {
     'uid.error.link': 'Link de convite do Discord',
     'card.download': 'Baixar',
     // crit-ratio, avg-dmg
-    'crit-ratio.title': 'Verificador de Média do Crítico',
+    'crit-ratio.title': 'Visualizador de Chance de Crítico',
     'crit-ratio.(wg)': '(Branco + Verde)',
     'crit-ratio.keep': 'Manter Nota',
     'crit-ratio.current': 'Taxa Atual',

@@ -278,7 +278,7 @@ export const ui = {
     // crit-ratio, avg-dmg
     'crit-ratio.title': 'Visualizador de Chance de Crítico',
     'crit-ratio.(wg)': '(Branco + Verde)',
-    'crit-ratio.keep': 'Manter Nota',
+    'crit-ratio.keep': 'Salvar Nota',
     'crit-ratio.current': 'Taxa Atual',
     'crit-ratio.ideal': 'Taxa Ideal',
     'crit-ratio.green': 'Verde',

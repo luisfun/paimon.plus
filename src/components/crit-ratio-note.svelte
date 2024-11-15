@@ -29,7 +29,7 @@ const data = $derived({
     {
       type: 'bar' as const,
       label: t('crit-ratio.avg'),
-      data: noteArr.toReversed().map(e => Number(e.avg)),
+      data: [...noteArr].reverse().map(e => Number(e.avg)),
       borderColor: text, //palette.text.primary,
       backgroundColor: 'rgba(16,14,35,0.2)',
       borderRadius: 7,
@@ -37,7 +37,7 @@ const data = $derived({
     {
       type: 'scatter' as const,
       label: t('CRIT'),
-      data: noteArr.toReversed().map(e => Number(e.cDmg)),
+      data: [...noteArr].reverse().map(e => Number(e.cDmg)),
       borderColor: '#ff0',
       backgroundColor: 'rgba(16,14,35,0.2)',
       pointStyle: 'rectRot',

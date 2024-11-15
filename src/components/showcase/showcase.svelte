@@ -14,16 +14,15 @@ const translatePath = useTranslatedPath(lang)
 
 let apiData = $state<ApiData>()
 let avatarInfo = $state<AvatarInfo>()
-const a = $derived(avatarInfo ? avatarRemap(avatarInfo) : undefined)
-const typeFocus = $derived(a ? (statFocus[useTranslations('en')(a.avatarId, 'avatar')] ?? 'ATK') : 'ATK')
 </script>
 
 <UidInput {lang} bind:apiData />
 <ShowcaseSelector {apiData} bind:avatarInfo sticky />
-{#if a}
-{@const type = typeFocus === "Max HP" ? "HP" : typeFocus}
-{@const base = a.stats.find(e => e.type === typeFocus)?.value.base ?? 0}
-{@const add = a.stats.find(e => e.type === typeFocus)?.value.add ?? 0}
+{#if avatarInfo}
+{@const a = avatarRemap(avatarInfo)}
+{@const type = statFocus[useTranslations('en')(a.avatarId, 'avatar')] ?? 'ATK'}
+{@const base = a.stats.find(e => e.type === type)?.value.base ?? 0}
+{@const add = a.stats.find(e => e.type === type)?.value.add ?? 0}
 {@const cr = a.stats.find(e => e.type === "CRIT Rate")?.value.main ?? 0}
 {@const cd = a.stats.find(e => e.type === "CRIT DMG")?.value.main ?? 0}
 <Stats {lang} {a} />

@@ -1,21 +1,21 @@
 export const statFocus = {
-  Sigewinne: 'Max HP',
+  Sigewinne: 'HP',
   Chiori: 'none',
-  Furina: 'Max HP',
-  Neuvillette: 'Max HP',
+  Furina: 'HP',
+  Neuvillette: 'HP',
   Alhaitham: 'none',
   Nahida: 'none',
-  Nilou: 'Max HP',
-  Yelan: 'Max HP',
+  Nilou: 'HP',
+  Yelan: 'HP',
   Shenhe: 'none',
   'Arataki Itto': 'none',
   'Sangonomiya Kokomi': 'none',
   'Hu Tao': 'none',
   Albedo: 'DEF',
-  'Kuki Shinobu': 'Max HP',
+  'Kuki Shinobu': 'HP',
   'Yun Jin': 'none',
   Noelle: 'none',
-} as Record<string, 'none' | 'Max HP' | 'ATK' | 'DEF'>
+} as Record<string, 'none' | 'HP' | 'ATK' | 'DEF'>
 
 /*
 export const statFocus = [

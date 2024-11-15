@@ -1,6 +1,7 @@
 ---
-import { getLangFromUrl } from '@i18n/utils'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
 const pageLang = getLangFromUrl(Astro.url)
+const t = useTranslations(pageLang)
 
 type Props = {
   title?: string
@@ -9,7 +10,7 @@ const { title } = Astro.props
 
 const head = {
   title: title || 'Paimon+',
-  desc: 'Genshin Web Tools',
+  desc: t('seo.description'),
   url: 'https://paimon.plus',
   image: 'https://paimon.plus/icons/android-chrome-144x144.png',
   author: 'Luis',

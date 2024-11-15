@@ -115,7 +115,7 @@ export const avatarRemap = (info: AvatarInfo) => {
 const get_ascension_level = (ascension: string | number | undefined) =>
   [20, 40, 50, 60, 70, 80, 90][Number(ascension)] || 20
 const get_character_stats = (avatarInfo: AvatarInfo) => {
-  const displayStatus = ['Max HP', 'ATK', 'DEF', 'Elemental Mastery', 'CRIT Rate', 'CRIT DMG', 'Energy Recharge']
+  const displayStatus = ['HP', 'ATK', 'DEF', 'Elemental Mastery', 'CRIT Rate', 'CRIT DMG', 'Energy Recharge']
   const displayDmgs = [
     'Physical DMG Bonus',
     'Pyro DMG Bonus',
@@ -127,7 +127,7 @@ const get_character_stats = (avatarInfo: AvatarInfo) => {
     'Cryo DMG Bonus',
   ]
   const fightProps = [
-    { type: 'Max HP', prop: 2000, icon: 'FIGHT_PROP_HP' },
+    { type: 'HP', prop: 2000, icon: 'FIGHT_PROP_HP' },
     { type: 'ATK', prop: 2001, icon: 'FIGHT_PROP_ATTACK' },
     { type: 'DEF', prop: 2002, icon: 'FIGHT_PROP_DEFENSE' },
     { type: 'Elemental Mastery', prop: 28, icon: 'FIGHT_PROP_ELEMENT_MASTERY' },
@@ -144,7 +144,7 @@ const get_character_stats = (avatarInfo: AvatarInfo) => {
     { type: 'Cryo DMG Bonus', prop: 46, icon: 'FIGHT_PROP_ICE_ADD_HURT' },
   ]
   const baseList = [
-    { type: 'Max HP', prop: 1 },
+    { type: 'HP', prop: 1 },
     { type: 'ATK', prop: 4 },
     { type: 'DEF', prop: 7 },
   ]
@@ -220,7 +220,6 @@ const get_prop_type = (prop: string, reverse?: boolean) => {
   const props = [
     { type: 'Base ATK', prop: 'FIGHT_PROP_BASE_ATTACK' },
     { type: 'HP', prop: 'FIGHT_PROP_HP' },
-    { type: 'Max HP', prop: 'FIGHT_PROP_HP' },
     { type: 'ATK', prop: 'FIGHT_PROP_ATTACK' },
     { type: 'DEF', prop: 'FIGHT_PROP_DEFENSE' },
     { type: 'HP %', prop: 'FIGHT_PROP_HP_PERCENT' },
@@ -261,8 +260,7 @@ const statToString = (type: string | undefined, value: number, x100?: boolean) =
   isFlat(type)
     ? value.toLocaleString(undefined, { maximumFractionDigits: 0 })
     : `${(value * (x100 ? 100 : 1)).toLocaleString(undefined, { maximumFractionDigits: 1, minimumFractionDigits: 1 })}%`
-const isFlat = (type: string | undefined) =>
-  ['Max HP', 'Base ATK', 'HP', 'ATK', 'DEF', 'Elemental Mastery'].some(e => e === type)
+const isFlat = (type: string | undefined) => ['Base ATK', 'HP', 'ATK', 'DEF', 'Elemental Mastery'].some(e => e === type)
 const get_reliquary_sets = (avatarInfo: AvatarInfo) => {
   const tmpList: {
     icon: string

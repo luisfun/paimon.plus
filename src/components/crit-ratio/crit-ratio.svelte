@@ -17,7 +17,15 @@ let cd = $state<number>(123) //()
 let noteArr = $state<NoteArr>([])
 
 const onclick = () =>
-  noteArr.push({ type, base, add, cr, cd, avg: avg(base, add, cr / 100, cd / 100), cDmg: avg(base, add, 1, cd / 100) })
+  noteArr.unshift({
+    type,
+    base,
+    add,
+    cr,
+    cd,
+    avg: avg(base, add, cr / 100, cd / 100),
+    cDmg: avg(base, add, 1, cd / 100),
+  })
 </script>
 
 <div>

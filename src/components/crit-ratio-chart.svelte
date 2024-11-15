@@ -3,10 +3,7 @@ import More from '@components/more.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { Chart, Filler, Legend, LineElement, PointElement, RadarController, RadialLinearScale, Tooltip } from 'chart.js'
 import type { Snippet } from 'svelte'
-import { type InputStats, avg } from './crit-ratio-utils'
-
-const text = 'rgba(255, 255, 255, 0.85)'
-const textSub = 'rgba(255, 255, 255, 0.45)'
+import { type InputStats, avg, text, textSub } from './crit-ratio-utils'
 
 Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend)
 

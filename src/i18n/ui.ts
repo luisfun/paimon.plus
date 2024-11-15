@@ -9,6 +9,7 @@ export const ui = {
     'game.characters': 'Characters',
     'game.weapons': 'Weapons',
     'footer.unofficial': 'Paimon+ is not affiliated to miHoYo.',
+    // home
     'home.title': 'Genshin Impact Online Tools',
     'home.thanks': 'Appreciation',
     'home.developers': 'Developers',
@@ -107,6 +108,7 @@ export const ui = {
     'game.characters': 'キャラクター',
     'game.weapons': '武器',
     'footer.unofficial': 'Paimon+は非公式のwebサイトです。',
+    // home
     'home.title': '原神 webツール',
     'home.thanks': '謝辞',
     'home.developers': '開発者',
@@ -198,6 +200,7 @@ export const ui = {
     'game.title': '원신',
 
     'footer.unofficial': 'Paimon+는 비공식 웹사이트입니다.',
+    // home
     'home.title': '원신 웹 툴',
     'showcase.title': '캐릭터 진열장',
   },
@@ -209,20 +212,21 @@ export const ui = {
     'game.characters': 'Personagens',
     'game.weapons': 'Armas',
     'footer.unofficial': 'Paimon+ não esta filiada com a miHoYo.',
+    // home
     'home.title': 'Ferramentas Genshin Impact Online',
     'home.thanks': 'Agradecimentos',
-    'home.developers': 'Desenvolvedores',
+    'home.developers': 'Desenvolvedor',
     'home.translators': 'Tradução',
     'home.resources': 'Recursos',
     // showcase, artifacter
-    'showcase.title': 'Vitrine de Personagens',
-    'showcase.error.register': 'Nenhum Personagem foi encontrado na Vitrine.',
+    'showcase.title': 'Exibição de Personagens',
+    'showcase.error.register': 'Nenhum Personagem foi encontrado no Perfil.',
     'showcase.error.public':
       'Por favor, ative a opção "Mostrar os detalhes do Personagem" em Exibição de Personagem no jogo par ver os detalhes.',
     'showcase.analysis': 'Análise',
     'showcase.more': 'Ler mais',
     'showcase.crit-ratio': 'Verificador da Média do Crítico',
-    'artifacter.title': 'Visualizar Personagens',
+    'artifacter.title': 'Rede Artifacter',
     'artifacter.card.total': 'Pontuação Total',
     'artifacter.card.tcv': 'CV Total',
     'artifacter.crit': 'CV Apenas',
@@ -266,7 +270,7 @@ export const ui = {
     'crit-ratio.DEF': 'Saldo de DEF e Crítico',
     'crit-ratio.low': 'A baixa pontuação do equipamento faz com que pareça uma melhoria',
     // Status
-    'Max HP': 'Vida Máxima',
+    'Max HP': 'Vida',
     'Base ATK': 'ATQ Básico',
     HP: 'Vida',
     ATK: 'ATQ',
@@ -287,7 +291,7 @@ export const ui = {
     'En. Recharge': 'Rec. Energia',
     'Healing Bonus': 'Bônus de Cura',
     'Elemental DMG Bonus': 'Bônus de Dano Elemental',
-    'El. DMG': 'Dn Elem.',
+    'El. DMG': 'Dano Elem.',
     'Physical DMG Bonus': 'Bônus de Dano Físico',
     'Pyro DMG Bonus': 'Bônus de Dano Pyro',
     'Electro DMG Bonus': 'Bônus de Dano Electro',

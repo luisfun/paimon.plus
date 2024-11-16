@@ -7,8 +7,7 @@ import Icon from '@components/icon.svelte'
 import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import weaponJson from '@game/weapon.json'
-import type { Lang } from '@i18n/utils'
-import { useTranslations } from '@i18n/utils'
+import { type Lang, useTranslations } from '@i18n/utils'
 import Materials from './materials.svelte'
 const avatarData = avatarJson.filter(e => !(e.id === 10000005 || e.id === 10000007))
 

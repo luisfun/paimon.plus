@@ -4,7 +4,6 @@ export const ui = {
   en: {
     label: 'English',
     'seo.prefix': 'Genshin Impact ',
-    'seo.description': 'Genshin Impact Online Tools',
     'game.title': 'Genshin Impact',
     'game.characters': 'Characters',
     'game.weapons': 'Weapons',
@@ -16,6 +15,13 @@ export const ui = {
     'home.developers': 'Developers',
     'home.translators': 'Translators',
     'home.resources': 'Resources',
+    'home.nav.official': 'Official Link',
+    'home.nav.checkin': 'Check-In',
+    'home.nav.wiki': 'HoYoWiki',
+    'home.nav.map': 'Teyvat Map',
+    'home.nav.chronicle': 'Chronicle',
+    'home.nav.calculator': 'Calculator',
+    'home.nav.calendar': 'Calendar',
     // showcase, artifacter
     'showcase.title': 'Character Showcase',
     'showcase.error.register': 'No characters found in the Character Showcase.',
@@ -113,7 +119,6 @@ export const ui = {
   ja: {
     label: '日本語',
     'seo.prefix': '【原神】',
-    'seo.description': '原神 webツール',
     'game.title': '原神',
     'game.characters': 'キャラクター',
     'game.weapons': '武器',
@@ -125,6 +130,12 @@ export const ui = {
     'home.developers': '開発者',
     'home.translators': '翻訳者',
     'home.resources': 'データソース',
+    'home.nav.official': '公式リンク',
+    'home.nav.checkin': 'ログボ',
+    'home.nav.map': 'マップ',
+    'home.nav.chronicle': '戦績',
+    'home.nav.calculator': '育成計算機',
+    'home.nav.calendar': '素材曜日',
     // showcase, artifacter
     'showcase.title': 'プロフィール キャラクター',
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
@@ -226,7 +237,6 @@ export const ui = {
   pt: {
     label: 'Português',
     'seo.prefix': 'Genshin Impact ',
-    'seo.description': 'Ferramentas Genshin Impact Online',
     'game.title': 'Genshin Impact',
     'game.characters': 'Personagens',
     'game.weapons': 'Armas',

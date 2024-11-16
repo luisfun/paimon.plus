@@ -315,6 +315,15 @@ export const ui = {
     'crit-ratio.ATK': 'Saldo de ATQ e Crítico',
     'crit-ratio.DEF': 'Saldo de DEF e Crítico',
     'crit-ratio.low': 'A baixa pontuação do equipamento faz com que pareça uma melhoria',
+    'avg-dmg.title': 'Calculadora de Dano',
+    'avg-dmg.stats': 'Status',
+    'avg-dmg.damage': 'Dano Causado',
+    'avg-dmg.noncrit': 'Sem CRIT',
+    'avg-dmg.avg': 'Dano (Média)',
+    // wish-banner
+    'wish-banner.title': 'Histórico de Banners',
+    'wish-banner.ver': 'Ver.',
+    'wish-banner.hint': '[Shift] + [Scroll do mouse] para rolar horizontalmente',
     // Status
     'Max HP': 'Vida',
     'Base ATK': 'ATQ Básico',

@@ -1,50 +1,50 @@
 export const navLink = [
   {
-    svg: 'atk-crit' as const,
-    text: 'Check Ideal',
+    svg: 'atk-crit',
+    text: 'home.nav.crit-ratio',
     href: '/crit-ratio/',
   },
   {
-    svg: 'team' as const,
-    text: 'Team Builder',
+    svg: 'team',
+    text: 'home.nav.team-builder',
     href: '/team-builder/',
   },
   {
-    svg: 'character' as const,
-    text: 'Showcase',
+    svg: 'character',
+    text: 'home.nav.showcase',
     href: '/showcase/',
   },
   {
-    svg: 'avg-dmg' as const,
-    text: 'Calculator',
+    svg: 'avg-dmg',
+    text: 'home.nav.avg-dmg',
     href: '/avg-dmg/',
   },
   {
-    svg: 'wish' as const,
-    text: 'Wish Banner',
+    svg: 'wish',
+    text: 'home.nav.wish-banner',
     href: '/wish-banner/',
   },
   {
-    svg: 'analytics' as const,
-    text: 'Statistics',
+    svg: 'analytics',
+    text: 'home.nav.analytics',
     href: '/showcase-analytics/',
   },
   {
-    svg: 'player-card' as const,
-    text: 'Player Card',
+    svg: 'player-card',
+    text: 'home.nav.player-card',
     href: '/player-card-templates/',
   },
   {
-    svg: 'dice' as const,
-    text: 'Randomizer',
+    svg: 'dice',
+    text: 'home.nav.randomizer',
     href: '/team-randomizer/',
   },
   {
-    svg: 'circlet' as const,
-    text: 'Artifacter',
+    svg: 'circlet',
+    text: 'home.nav.artifacter',
     href: '/artifacter/',
   },
-]
+] as const
 
 export const officialLink = [
   {

@@ -18,12 +18,12 @@ const onclick = () => {
 }
 </script>
 
-{#snippet svgGrid(data: typeof navLink, mt?: boolean)}
+{#snippet svgGrid(data: typeof navLink[number][], mt?: boolean)}
 <div class="grid grid-cols-3 gap-y-8" class:mt-8={mt}>
   {#each data as link}
     <a href={translatePath(link.href)}>
       <NavSvg icon={link.svg} class="max-w-28 mx-auto mb-3 px-4" />
-      <div class="text-center">{link.text}</div>
+      <div class="text-center">{t(link.text)}</div>
     </a>
   {/each}
 </div>
@@ -33,7 +33,7 @@ const onclick = () => {
   {@render svgGrid(navLink.slice(0,6))}
   <More {onclick}>
     {@render svgGrid(navLink.slice(6), true)}
-    <div class="divider mt-8 mb-4 mx-12">{t("home.nav.official")}</div>
+    <div class="divider mt-8 mb-6 mx-12 text-xs text-text-sub">{t("home.nav.official")}</div>
     <div class="grid grid-cols-3 gap-y-8">
       {#each officialLink as link}
         <ExternalA href={`${link.href + (link.img==="checkin"? "&" : "?")}lang=${lang}`}>

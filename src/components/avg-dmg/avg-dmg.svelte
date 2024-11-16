@@ -8,9 +8,9 @@ const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
 
 let isCrit = $state(true)
-let cr = $state<number>(66) //()
-let cd = $state<number>(123) //()
-let dmg = $state<number>(123) //()
+let cr = $state<number>()
+let cd = $state<number>()
+let dmg = $state<number>()
 let noteArr = $state<NoteArr>([])
 let checked = $state(true)
 
@@ -24,13 +24,15 @@ const cDmg = (cd: number, isCrit: boolean, dmg: number) => {
 }
 
 const onclick = () => {
-  checked = false
-  noteArr.unshift({
-    cr,
-    cd,
-    avg: avg(cr / 100, cd / 100, isCrit, dmg),
-    cDmg: cDmg(cd / 100, isCrit, dmg),
-  })
+  if (cr && cd && dmg) {
+    checked = false
+    noteArr.unshift({
+      cr,
+      cd,
+      avg: avg(cr / 100, cd / 100, isCrit, dmg),
+      cDmg: cDmg(cd / 100, isCrit, dmg),
+    })
+  }
 }
 </script>
 

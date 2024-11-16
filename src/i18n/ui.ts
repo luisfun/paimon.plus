@@ -92,7 +92,6 @@ export const ui = {
     'wish-banner.ver': 'Ver.',
     'wish-banner.hint': '[Shift] + [Mouse Wheel] to scroll horizontally',
     // stat
-    'Max HP': 'Max HP',
     'Base ATK': 'Base ATK',
     HP: 'HP',
     ATK: 'ATK',
@@ -210,7 +209,6 @@ export const ui = {
     'wish-banner.title': '祈願ピックアップ履歴',
     'wish-banner.hint': '[Shift] + [マウスホイール] で横スクロール',
     // stat
-    'Max HP': 'HP上限',
     'Base ATK': '基礎攻撃力',
     ATK: '攻撃力',
     DEF: '防御力',
@@ -325,7 +323,6 @@ export const ui = {
     'wish-banner.ver': 'Ver.',
     'wish-banner.hint': '[Shift] + [Scroll do mouse] para rolar horizontalmente',
     // Status
-    'Max HP': 'Vida',
     'Base ATK': 'ATQ Básico',
     HP: 'Vida',
     ATK: 'ATQ',

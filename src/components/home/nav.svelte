@@ -33,7 +33,7 @@ const onclick = () => {
   {@render svgGrid(navLink.slice(0,6))}
   <More {onclick}>
     {@render svgGrid(navLink.slice(6), true)}
-    <div class="divider mt-8 mb-6 mx-12 text-xs text-text-sub">{t("home.nav.official")}</div>
+    <div class="divider my-6 mx-12 text-xs text-text-sub">{t("home.nav.official")}</div>
     <div class="grid grid-cols-3 gap-y-8">
       {#each officialLink as link}
         <ExternalA href={`${link.href + (link.img==="checkin"? "&" : "?")}lang=${lang}`}>

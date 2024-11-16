@@ -18,7 +18,7 @@ const translatePath = useTranslatedPath(pageLang)
     <div tabindex="0" role="button" aria-label="language selector">
       <Svg icon="lang" class="h-6" />
     </div>
-    <ul tabindex="0" class="dropdown-content menu bg-neutral rounded-md z-[1] w-fit p-1 shadow-background">
+    <ul tabindex="0" class="dropdown-content menu bg-neutral rounded-md z-10 w-fit p-1 shadow-background">
       {Object.entries(ui).map(([lang, {label}]) => (
         <li>
           {pageLang === lang && <div class="absolute left-1.5 top-1/2 -transform-y-1/2 bg-text rounded-full w-1.5 h-1.5 p-0" />}

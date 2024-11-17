@@ -1,7 +1,7 @@
 <script lang="ts">
 import type { AvatarRemapped } from '@components/api'
 import Dialog from '@components/dialog.svelte'
-import Icon from '@components/icon.svelte'
+import { statProps } from '@components/img-props'
 // biome-ignore lint: svelte
 import { defineSub, defineToName } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
@@ -65,7 +65,7 @@ $effect.pre(() => {
     <div class="form-control m-1">
       <label class="label cursor-pointer justify-normal">
         <input type="checkbox" checked={subMarks.includes(stat)} class="checkbox checkbox-primary" onclick={() => onClick(stat)} />
-        <Icon id={defineToName[stat]} ui="stat" class="w-6 mx-1" />
+        <img {...statProps(defineToName[stat])} class="w-6 mx-1" />
         <span class="label-text leading-6">{t(defineToName[stat])}</span>
       </label>
     </div>

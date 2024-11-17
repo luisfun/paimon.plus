@@ -2,12 +2,12 @@
 import { type ApiData, fetchUid, uidTest } from '@components/api'
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
-import Icon from '@components/icon.svelte'
 import { type UidLog, ls } from '@components/local-storage'
 import More from '@components/more.svelte'
 import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
+import { pfpProps } from './img-props'
 
 let { lang, apiData = $bindable() }: { lang: Lang; apiData: ApiData | undefined } = $props()
 const t = useTranslations(lang)
@@ -102,7 +102,7 @@ onMount(async () => {
 <div class="flex justify-between items-center h-10 px-1">
   <div class="flex items-center">
     <div class="w-10 h-10 mr-4 flex justify-center items-center">
-      <Icon id={apiData.playerInfo.profilePicture.id || apiData.playerInfo.profilePicture.avatarId || 1} ui="circle" />
+      <img {...pfpProps(apiData.playerInfo.profilePicture.id || apiData.playerInfo.profilePicture.avatarId || 1)} />
     </div>
     <div>{apiData.playerInfo.nickname}</div>
   </div>
@@ -168,7 +168,7 @@ onMount(async () => {
       <button class="btn btn-neutral p-1 min-h-6 w-6 h-6 my-auto rounded-full" onclick={() => trashHandler(log.uid)} aria-label="delete uid log">
         <Svg icon="trash-can" height="100%" />
       </button>
-      <Icon id={log.pfp.id || log.pfp.avatarId || 1} ui="circle" />
+      <img {...pfpProps(log.pfp.id || log.pfp.avatarId || 1)} />
       <div>{log.name}</div>
       <div>{log.uid}</div>
       <button class="btn btn-neutral p-0.5 min-h-6 w-6 h-6 my-auto rounded-full" onclick={() => logClickHandler(log.uid)} aria-label="get uid info">

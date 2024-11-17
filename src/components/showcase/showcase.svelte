@@ -17,7 +17,7 @@ let avatarInfo = $state<AvatarInfo>()
 </script>
 
 <UidInput {lang} bind:apiData />
-<ShowcaseSelector {apiData} bind:avatarInfo sticky />
+<ShowcaseSelector {lang} {apiData} bind:avatarInfo sticky />
 {#if avatarInfo}
 {@const a = avatarRemap(avatarInfo)}
 {@const type = statFocus[useTranslations('en')(a.avatarId, 'avatar')] ?? 'ATK'}

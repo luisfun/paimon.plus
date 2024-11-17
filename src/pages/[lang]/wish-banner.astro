@@ -1,5 +1,5 @@
 ---
-import Icon from '@components/icon.svelte'
+import { avatarProps } from '@components/img-props'
 import avatarJson from '@game/avatar.json'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
@@ -82,14 +82,14 @@ const colorScale = (value: number) => {
           {e.c51.map(c => {
             const a = avatarJson.find(a => en(a.id, "avatar") === c)
             if (!a) return undefined
-            return <Icon id={a.id} ui="avatar" nonBg />
+            return <img {...avatarProps(a.id, undefined, undefined, true)} />
           })}
         </div>
         <div class="h-1/2">
           {e.c52.map(c => {
             const a = avatarJson.find(a => en(a.id, "avatar") === c)
             if (!a) return undefined
-            return <Icon id={a.id} ui="avatar" nonBg />
+            return <img {...avatarProps(a.id, undefined, undefined, true)} />
           })}
         </div>
       </div>
@@ -99,11 +99,11 @@ const colorScale = (value: number) => {
       const a = avatarJson.find(a => en(a.id, "avatar") === e.name)
       if (!a) return undefined
       return <>
-        <Icon id={a.id} ui="avatar" style={`grid-row-start: ${i+3};`} />
+        <img {...avatarProps(a.id)} style={`grid-row-start: ${i+3};`} />
         {e.data.map(num => {
           if (num === -1) return undefined
           else if (num !== 0) return <div style={`grid-row-start: ${i+3}; background: ${colorScale((num-1)/15)}`}>{num}</div>
-          return <Icon id={a.id} ui="avatar" style={`grid-row-start: ${i+3};`} nonBg />
+          return <img {...avatarProps(a.id, undefined, undefined, true)} style={`grid-row-start: ${i+3};`} />
         })}
       </>
     })}

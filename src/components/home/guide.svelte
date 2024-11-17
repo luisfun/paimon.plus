@@ -3,7 +3,7 @@
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
 import HoyoWiki from '@components/hoyo-wiki.svelte'
-import Icon from '@components/icon.svelte'
+import { avatarProps, elementProps, weaponProps, weaponTypeProps } from '@components/img-props'
 import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import weaponJson from '@game/weapon.json'
@@ -70,8 +70,8 @@ const weaponHandler = (id: number) => {
 </script>
 
 <div class="grid grid-cols-4 gap-3">
-  <button onclick={avatarLoadHandler}>
-    <Icon id={select} ui={selectData.element ? "avatar" : "weapon"} />
+  <button onclick={avatarLoadHandler} aria-label="character select">
+    <img {...(selectData.element ? avatarProps(select) : weaponProps(select))} />
   </button>
   <div class="col-span-3 flex flex-col justify-evenly pl-2">
     <button class="mr-auto text-xl flex items-center" onclick={avatarLoadHandler}>
@@ -79,9 +79,9 @@ const weaponHandler = (id: number) => {
     </button>
     <div class="mr-auto flex items-center">
       {#if selectData.element}
-      <Icon id={selectData.element} ui="element" class="w-7 mr-2" />
+      <img {...elementProps(selectData.element)} class="w-7 mr-2" />
       {/if}
-      <Icon id={selectData.weaponType} ui="weapon-type" class="w-7 mr-2" />
+      <img {...weaponTypeProps(selectData.weaponType)} class="w-7 mr-2" />
       <HoyoWiki class="text-sm text-link" {lang} wikiId={selectData.wikiId} />
     </div>
   </div>
@@ -93,20 +93,21 @@ const weaponHandler = (id: number) => {
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 my-3">
         <div class="grid grid-cols-7 gap-3 mx-auto">
           {#each elements as elem}
-            <button class="w-8 bg-neutral border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" onclick={() => elementFilterHandler(elem)}>
-              <Icon id={elem} ui="element" />
+            <button class="w-8 bg-neutral border rounded-full {elementFilter.includes(elem) ? "border-yellow-100" : "border-transparent"}" onclick={() => elementFilterHandler(elem)} aria-label={elem}>
+              <img {...elementProps(elem)} />
             </button>
           {/each}
         </div>
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
-            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" onclick={() => weaponTypeFilterHandler(type)}>
-              <Icon id={type} ui="weapon-type" />
+            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" onclick={() => weaponTypeFilterHandler(type)} aria-label={type}>
+              <img {...weaponTypeProps(type)} />
             </button>
           {/each}
         </div>
       </div>
       <DialogDelayIcon
+        {lang}
         ui="avatar"
         ids={avatarData
           .filter(a => !elementFilter[0] || elementFilter.includes(a.element || ""))
@@ -121,13 +122,14 @@ const weaponHandler = (id: number) => {
       <div class="grid grid-cols-1 gap-y-3 my-3">
         <div class="grid grid-cols-5 gap-3 mx-auto">
           {#each weaponTypes as type}
-            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" onclick={() => weaponTypeFilterHandler(type)}>
-              <Icon id={type} ui="weapon-type" />
+            <button class="w-8 bg-neutral border rounded-full {weaponTypeFilter.includes(type) ? "border-yellow-100" : "border-transparent"}" onclick={() => weaponTypeFilterHandler(type)} aria-label={type}>
+              <img {...weaponTypeProps(type)} />
             </button>
           {/each}
         </div>
       </div>
       <DialogDelayIcon
+        {lang}
         ui="weapon"
         ids={weaponJson.filter(a => !weaponTypeFilter[0] || weaponTypeFilter.includes(a.weaponType)).map(e => e.id)}
         onclick={weaponHandler}

@@ -1,9 +1,9 @@
 <script lang="ts">
 import HoyoWiki from '@components/hoyo-wiki.svelte'
-import Icon from '@components/icon.svelte'
+import { materialProps } from '@components/img-props'
+import Img from '@components/img.svelte'
 import materialJson from '@game/material.json'
-import type { Lang } from '@i18n/utils'
-import { useTranslations } from '@i18n/utils'
+import { type Lang, useTranslations } from '@i18n/utils'
 
 const {
   lang,
@@ -96,7 +96,12 @@ const materials = $derived.by(() => {
   {#each materials as material, i}
     <div class="dropdown dropdown-hover{i%4 === 3 ? " dropdown-end" : ""}">
       <div tabindex="0" role="button">
-        <Icon id={material.materials[0].id} ui="material" text={material.materials.map(e => e.count).reverse().join(", ")} dummyLoading />
+        <div class="relative rounded-[4%_4%_27%] overflow-hidden">
+          <Img {...materialProps(material.materials[0].id)} />
+          <div class="absolute top-0 right-0 bg-neutral rounded-bl-md px-1 text-xs">
+            {material.materials.map(e => e.count).reverse().join(", ")}
+          </div>
+        </div>
       </div>
       <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-max max-w-[calc(200%+0.75rem)] z-10 px-3 py-2 text-sm shadow-background">
         <div>{t(material.materials[0].id, "material")}</div>

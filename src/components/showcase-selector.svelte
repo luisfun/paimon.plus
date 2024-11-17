@@ -1,20 +1,24 @@
 <script lang="ts">
 import type { ApiData, AvatarInfo } from '@components/api'
+import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
 import DialogDelayIcon from './dialog-delay-Icon.svelte'
 import Dialog from './dialog.svelte'
-import Icon from './icon.svelte'
+import { sideProps } from './img-props'
 import Svg from './svg.svelte'
 
 let {
+  lang,
   apiData,
   avatarInfo = $bindable(),
   sticky,
 }: {
+  lang: Lang
   apiData: ApiData | undefined
   avatarInfo: AvatarInfo | undefined
   sticky?: boolean
 } = $props()
+const t = useTranslations(lang)
 
 let scrollElement: HTMLElement
 let scrollLeft = 0
@@ -91,6 +95,7 @@ $effect(() => {
       </button>
       <Dialog bind:dialog visible={isDialogVisible}>
         <DialogDelayIcon
+          {lang}
           style="m-2{apiData.avatarInfoList.length < 13 ? " !grid-cols-4 max-w-72" : ""}"
           ids={apiData.avatarInfoList.map(e => e.costumeId ? [e.avatarId, e.costumeId] : e.avatarId)}
           ui="avatar"
@@ -103,10 +108,10 @@ $effect(() => {
       {@const skinId = avatar.costumeId}
       {@const active = apiData.playerInfo.showAvatarInfoList.length - i > 0}
       {@const select = avatar.avatarId === avatarInfo?.avatarId}
-      <button class="relative flex-none w-[4.5rem] h-[4.5rem] pointer" onclick={() => onSelect(id)}>
+      <button class="relative flex-none w-[4.5rem] h-[4.5rem] pointer" onclick={() => onSelect(id)} aria-label={t(id, "avatar")}>
         <div class="side-bg absolute top-1/2 left-1/2 -transform-1/2 outline outline-[3px] w-12 h-12 rounded-full transition-all{(select ? ' side-bg-select' : "") + (active ? ' side-bg-active' : "")}"></div>
         <div class="absolute bottom-0 left-1/2 -transform-x-1/2 border border-b-2 transition-all {select ? "w-full side-bottom-color": "w-0 border-transparent"}"></div>
-        <Icon {id} {skinId} ui="side" class="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all {select ? "w-20" : "w-[4.6rem]"}" />
+        <img {...sideProps(id, skinId)} class="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all" class:w-20={select} class:w-[4.6rem]={!select} />
       </button>
     {/each}
   </div>

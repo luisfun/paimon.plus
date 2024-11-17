@@ -14,7 +14,7 @@ let avatarInfo = $state<AvatarInfo>()
 </script>
 
 <UidInput {lang} bind:apiData />
-<ShowcaseSelector {apiData} bind:avatarInfo />
+<ShowcaseSelector {lang} {apiData} bind:avatarInfo />
 {#if avatarInfo}
 <Character {lang} {avatarInfo} />
 {/if}

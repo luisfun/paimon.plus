@@ -1,13 +1,22 @@
 <script lang="ts">
-import Icon from '@components/icon.svelte'
+import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
+import { avatarProps, dummyProps, weaponProps } from './img-props'
 
 const {
+  lang,
   ids,
   onclick,
   ui,
   style = '',
-}: { ids: (number | number[])[]; onclick: (id: number) => void; ui: 'avatar' | 'weapon'; style?: string } = $props()
+}: {
+  lang: Lang
+  ids: (number | number[])[]
+  onclick: (id: number) => void
+  ui: 'avatar' | 'weapon'
+  style?: string
+} = $props()
+const t = useTranslations(lang)
 
 let form: HTMLElement
 let divs: HTMLElement[] = []
@@ -35,13 +44,11 @@ onMount(() => {
 </script>
 
 <form bind:this={form} class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2 {style}" method="dialog">
-  {#each ids as id, i}
-    <button bind:this={divs[i]} onclick={() => onclick(typeof id === "number" ? id : id[0])} id={`${ui}-${i}`}>
-      <Icon
-        id={typeof id === "number" ? id : id[0]}
-        skinId={typeof id === "number" ? undefined : id[1]}
-        ui={load[i] ? ui : "dummy"}
-      />
+  {#each ids as idSet, i}
+    {@const id = Array.isArray(idSet)? idSet[0]: idSet}
+    {@const skinId = Array.isArray(idSet)? idSet[1]: undefined}
+    <button bind:this={divs[i]} onclick={() => onclick(id)} id={`${ui}-${i}`} aria-label={t(id, ui)}>
+      <img {...(!load[i] ? dummyProps() : ui === "avatar" ? avatarProps(id, skinId) : weaponProps(id))} />
     </button>
   {/each}
 </form>

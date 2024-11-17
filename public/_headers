@@ -1,7 +1,10 @@
-https://paimon-plus.pages.dev/*
+https://:project.pages.dev/*
   X-Robots-Tag: noindex
 
 https://dev.paimon.plus/*
+  X-Robots-Tag: noindex
+
+/*/translator-tools/
   X-Robots-Tag: noindex
 
 /*

@@ -14,7 +14,7 @@ const translatedKeys = Object.keys(ui[lang]) as Key[]
 let baseLang = $state<'en' | 'ja'>('en')
 let untranslated = $state(true)
 // @ts-expect-error
-let translatedValues = $state(keys.map(key => (ui[lang][key] as string) ?? ''))
+let values = $state(keys.map(key => (ui[lang][key] as string) ?? ''))
 let copyButtonText = $state('Copy')
 
 const tsText = $derived.by(() => {
@@ -22,7 +22,7 @@ const tsText = $derived.by(() => {
 `
   for (let i = 0; i < keys.length; i++) {
     const key = keys[i]
-    const value = translatedValues[i]
+    const value = values[i]
     if (!value) continue
     const kQuote = !key.includes('-') && !key.includes('.') && !key.includes(' ') ? '' : "'"
     const vQuote = !value.includes("'") ? "'" : !value.includes('"') ? '"' : '`'
@@ -72,7 +72,7 @@ const copy = () => {
       <tr class:hidden={untranslated ? translatedKeys.includes(key) : false}>
         <td>{key}</td>
         <td>"{baseLang === "en" ? en(key) : ja(key)}"</td>
-        <td class="p-0"><textarea class="block textarea textarea-bordered w-full h-12" placeholder={translatedKeys.includes(key) ? t(key) : ""} bind:value={translatedValues[i]}></textarea></td>
+        <td class="p-0"><textarea class="block textarea textarea-bordered w-full h-12" placeholder={translatedKeys.includes(key) ? t(key) : ""} bind:value={values[i]}></textarea></td>
       </tr>
       {/each}
     </tbody>

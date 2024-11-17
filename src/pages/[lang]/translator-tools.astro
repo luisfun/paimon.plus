@@ -1,0 +1,13 @@
+---
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+import I18nGenerator from "@components/translator-tools/i18n-generator.svelte"
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title="Translator Tools">
+  <I18nGenerator client:load {lang} />
+</Layout>

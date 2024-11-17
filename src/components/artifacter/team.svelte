@@ -3,6 +3,7 @@ import type { AvatarInfo } from '@components/api'
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
 import { avatarProps, dummyProps } from '@components/img-props'
+import Img from '@components/img.svelte'
 import { type ScoreType, scoreTypeMenuItems } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
@@ -50,7 +51,7 @@ $effect.pre(() => {
   {#each selectTeam as member, i}
     <div class="grid gap-3 sm:gap-2 grid-cols-[repeat(2,_max-content)] sm:grid-cols-1 m-auto">
       <button class="w-14 m-auto" onclick={() => dialogs[i].showModal()} aria-label="team select">
-        <img {...avatarProps(member[0])} />
+        <Img {...avatarProps(member[0])} />
       </button>
       <select bind:value={member[1]} class="select select-bordered select-primary select-sm w-full max-w-xs m-auto">
         {#each scoreTypeMenuItems as item}

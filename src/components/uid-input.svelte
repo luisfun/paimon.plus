@@ -2,12 +2,13 @@
 import { type ApiData, fetchUid, uidTest } from '@components/api'
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
+import { pfpProps } from '@components/img-props'
+import Img from '@components/img.svelte'
 import { type UidLog, ls } from '@components/local-storage'
 import More from '@components/more.svelte'
 import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
-import { pfpProps } from './img-props'
 
 let { lang, apiData = $bindable() }: { lang: Lang; apiData: ApiData | undefined } = $props()
 const t = useTranslations(lang)
@@ -102,7 +103,7 @@ onMount(async () => {
 <div class="flex justify-between items-center h-10 px-1">
   <div class="flex items-center">
     <div class="w-10 h-10 mr-4 flex justify-center items-center">
-      <img {...pfpProps(apiData.playerInfo.profilePicture.id || apiData.playerInfo.profilePicture.avatarId || 1)} />
+      <Img {...pfpProps(apiData.playerInfo.profilePicture.id || apiData.playerInfo.profilePicture.avatarId || 1)} />
     </div>
     <div>{apiData.playerInfo.nickname}</div>
   </div>

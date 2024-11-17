@@ -1,11 +1,12 @@
 <script lang="ts">
 import type { ApiData, AvatarInfo } from '@components/api'
+import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
+import Dialog from '@components/dialog.svelte'
+import { sideProps } from '@components/img-props'
+import Img from '@components/img.svelte'
+import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
-import DialogDelayIcon from './dialog-delay-Icon.svelte'
-import Dialog from './dialog.svelte'
-import { sideProps } from './img-props'
-import Svg from './svg.svelte'
 
 let {
   lang,
@@ -111,7 +112,7 @@ $effect(() => {
       <button class="relative flex-none w-[4.5rem] h-[4.5rem] pointer" onclick={() => onSelect(id)} aria-label={t(id, "avatar")}>
         <div class="side-bg absolute top-1/2 left-1/2 -transform-1/2 outline outline-[3px] w-12 h-12 rounded-full transition-all{(select ? ' side-bg-select' : "") + (active ? ' side-bg-active' : "")}"></div>
         <div class="absolute bottom-0 left-1/2 -transform-x-1/2 border border-b-2 transition-all {select ? "w-full side-bottom-color": "w-0 border-transparent"}"></div>
-        <img {...sideProps(id, skinId)} class="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all" class:w-20={select} class:w-[4.6rem]={!select} />
+        <Img {...sideProps(id, skinId)} class="absolute bottom-3 left-1/2 -transform-x-1/2 max-w-none transition-all {select ? "w-20" : "w-[4.6rem]"}" />
       </button>
     {/each}
   </div>

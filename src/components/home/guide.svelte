@@ -4,6 +4,7 @@ import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
 import HoyoWiki from '@components/hoyo-wiki.svelte'
 import { avatarProps, elementProps, weaponProps, weaponTypeProps } from '@components/img-props'
+import Img from '@components/img.svelte'
 import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import weaponJson from '@game/weapon.json'
@@ -71,7 +72,7 @@ const weaponHandler = (id: number) => {
 
 <div class="grid grid-cols-4 gap-3">
   <button onclick={avatarLoadHandler} aria-label="character select">
-    <img {...(selectData.element ? avatarProps(select) : weaponProps(select))} />
+    <Img {...(selectData.element ? avatarProps(select) : weaponProps(select))} />
   </button>
   <div class="col-span-3 flex flex-col justify-evenly pl-2">
     <button class="mr-auto text-xl flex items-center" onclick={avatarLoadHandler}>
@@ -79,9 +80,9 @@ const weaponHandler = (id: number) => {
     </button>
     <div class="mr-auto flex items-center">
       {#if selectData.element}
-      <img {...elementProps(selectData.element)} class="w-7 mr-2" />
+      <Img {...elementProps(selectData.element)} class="w-7 mr-2" />
       {/if}
-      <img {...weaponTypeProps(selectData.weaponType)} class="w-7 mr-2" />
+      <Img {...weaponTypeProps(selectData.weaponType)} class="w-7 mr-2" />
       <HoyoWiki class="text-sm text-link" {lang} wikiId={selectData.wikiId} />
     </div>
   </div>

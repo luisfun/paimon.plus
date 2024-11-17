@@ -7,10 +7,10 @@ const {
 }: { dummy?: string } & SvelteHTMLElements['img'] = $props()
 
 let overwrite = $state<SvelteHTMLElements['img']>({})
-let srcLog = $state(rest.src)
+let srcLog = rest.src
 
 $effect(() => {
-  if (typeof window === 'undefined' || srcLog === rest.src || !rest.src) overwrite = {}
+  if (srcLog === rest.src || !rest.src) overwrite = {}
   else {
     overwrite = { src: dummy }
     const img = new Image()

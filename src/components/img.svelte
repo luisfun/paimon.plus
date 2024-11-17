@@ -1,8 +1,10 @@
 <script lang="ts">
-import { dummySrc } from '@components/img-props'
 import type { SvelteHTMLElements } from 'svelte/elements'
 
-const { dummy = dummySrc, ...rest }: { dummy?: string } & SvelteHTMLElements['img'] = $props()
+const {
+  dummy = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7',
+  ...rest
+}: { dummy?: string } & SvelteHTMLElements['img'] = $props()
 
 let overwrite = $state<SvelteHTMLElements['img']>({})
 let srcLog = $state(rest.src)

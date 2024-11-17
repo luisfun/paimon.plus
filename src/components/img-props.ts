@@ -5,11 +5,9 @@ import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
 const textMap: { en: Record<number, string> } = textMapJson
 
-export const dummySrc = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
-
 const classInit = (c: string | null | undefined) => `bg-cover w-full rounded-[4%_4%_27%]${c ? ` ${c}` : ''}`
 const propsInit = (c: string | null | undefined) => ({
-  src: dummySrc,
+  src: '/images/Empty.webp',
   width: 1,
   height: 1,
   alt: 'None',

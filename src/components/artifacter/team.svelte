@@ -2,7 +2,7 @@
 import type { AvatarInfo } from '@components/api'
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
-import { avatarProps } from '@components/img-props'
+import { avatarProps, dummyProps } from '@components/img-props'
 import { type ScoreType, scoreTypeMenuItems } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
 import type { Lang } from '@i18n/utils'
@@ -50,7 +50,7 @@ $effect.pre(() => {
   {#each selectTeam as member, i}
     <div class="grid gap-3 sm:gap-2 grid-cols-[repeat(2,_max-content)] sm:grid-cols-1 m-auto">
       <button class="w-14 m-auto" onclick={() => dialogs[i].showModal()} aria-label="team select">
-        <img {...avatarProps(member[0])} {...(member[0] === -1 ? { src: "/images/Empty.webp" } : {})} />
+        <img {...avatarProps(member[0])} />
       </button>
       <select bind:value={member[1]} class="select select-bordered select-primary select-sm w-full max-w-xs m-auto">
         {#each scoreTypeMenuItems as item}
@@ -59,8 +59,8 @@ $effect.pre(() => {
       </select>
     </div>
     <Dialog bind:dialog={dialogs[i]}>
-      <button class="h-12 mt-2 mb-0 mx-auto block" onclick={() => onReset(i)}>
-        <img class="w-12 h-12" src="/images/Empty.webp" alt="Empty" />
+      <button class="h-12 mt-2 mb-0 mx-auto block" onclick={() => onReset(i)} aria-label="Empty">
+        <img {...dummyProps("w-12 h-12")} />
       </button>
       <DialogDelayIcon
         {lang}

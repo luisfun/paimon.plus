@@ -132,7 +132,6 @@ export const ui = {
     'game.weapons': '武器',
     'footer.unofficial': 'Paimon+は非公式のwebサイトです。',
     'nopage.text': 'このページは廃止されました。代わりに次のURLを利用してください。',
-    // home
     'home.title': '原神 webツール',
     'home.thanks': '謝辞',
     'home.developers': '開発者',
@@ -152,7 +151,6 @@ export const ui = {
     'home.nav.chronicle': '戦績',
     'home.nav.calculator': '育成計算機',
     'home.nav.calendar': '素材曜日',
-    // showcase, artifacter
     'showcase.title': 'プロフィール キャラクター',
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
     'showcase.error.public':
@@ -187,7 +185,6 @@ export const ui = {
     'uid.error.report': 'Discordで報告すると、より早く対応できるかもしれません。',
     'uid.error.link': 'Discordの招待リンク',
     'card.download': 'ダウンロード',
-    // crit-ratio, avg-dmg
     'crit-ratio.title': '会心バランス 理想値診断',
     'crit-ratio.(wg)': '(白字 + 緑字)',
     'crit-ratio.keep': '期待値をメモ',
@@ -205,10 +202,8 @@ export const ui = {
     'avg-dmg.damage': '与ダメージ',
     'avg-dmg.noncrit': '非会心',
     'avg-dmg.avg': 'ダメージ (期待値)',
-    // wish-banner
     'wish-banner.title': '祈願ピックアップ履歴',
     'wish-banner.hint': '[Shift] + [マウスホイール] で横スクロール',
-    // stat
     'Base ATK': '基礎攻撃力',
     ATK: '攻撃力',
     DEF: '防御力',
@@ -234,18 +229,15 @@ export const ui = {
     'Hydro DMG Bonus': '水元素ダメージ',
     'Dendro DMG Bonus': '草元素ダメージ',
     'Anemo DMG Bonus': '風元素ダメージ',
-    'Geo DMG Bonus': '岩元素ダメージ',
     'Cryo DMG Bonus': '氷元素ダメージ',
-    // like stat
+    'Geo DMG Bonus': '岩元素ダメージ',
     'CRIT Value': '会心スコア',
   },
   ko: {
     label: '한국어',
     'seo.prefix': '[원신] ',
     'game.title': '원신',
-
     'footer.unofficial': 'Paimon+는 비공식 웹사이트입니다.',
-    // home
     'home.title': '원신 웹 툴',
     'showcase.title': '캐릭터 진열장',
   },
@@ -256,7 +248,6 @@ export const ui = {
     'game.characters': 'Personagens',
     'game.weapons': 'Armas',
     'footer.unofficial': 'Paimon+ não esta filiada com a miHoYo.',
-    // home
     'home.title': 'Ferramentas Genshin Impact Online',
     'home.thanks': 'Agradecimentos',
     'home.developers': 'Desenvolvedor',
@@ -278,7 +269,6 @@ export const ui = {
     'home.nav.chronicle': 'Conquistas',
     'home.nav.calculator': 'Calculador  de Aprimoramento',
     'home.nav.calendar': 'Calendário de Viagem',
-    // showcase, artifacter
     'showcase.title': 'Exibição de Personagens',
     'showcase.error.register': 'Nenhum Personagem foi encontrado no Perfil.',
     'showcase.error.public':
@@ -316,7 +306,6 @@ export const ui = {
     'uid.error.report': 'Se você reportar isso em nosso Discord, poderemos lidar com isso mais rapido',
     'uid.error.link': 'Link de convite do Discord',
     'card.download': 'Baixar',
-    // crit-ratio, avg-dmg
     'crit-ratio.title': 'Visualizador de Chance de Crítico',
     'crit-ratio.(wg)': '(Branco + Verde)',
     'crit-ratio.keep': 'Salvar Nota',
@@ -334,11 +323,9 @@ export const ui = {
     'avg-dmg.damage': 'Dano Causado',
     'avg-dmg.noncrit': 'Sem CRIT',
     'avg-dmg.avg': 'Dano (Média)',
-    // wish-banner
     'wish-banner.title': 'Histórico de Banners',
     'wish-banner.ver': 'Ver.',
     'wish-banner.hint': '[Shift] + [Scroll do mouse] para rolar horizontalmente',
-    // Status
     'Base ATK': 'ATQ Básico',
     HP: 'Vida',
     ATK: 'ATQ',
@@ -368,7 +355,6 @@ export const ui = {
     'Anemo DMG Bonus': 'Bônus de Dano Anemo',
     'Cryo DMG Bonus': 'Bônus de Dano Cryo',
     'Geo DMG Bonus': 'Bônus de Dano Geo',
-    // like stat
     'CRIT Value': 'Valor Crítico',
   },
 } as const

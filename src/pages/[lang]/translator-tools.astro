@@ -1,13 +1,17 @@
 ---
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import I18nGenerator from '@components/translator-tools/i18n-generator.svelte'
+import { getLangFromUrl } from '@i18n/utils'
 import Layout from '@layout'
-import I18nGenerator from "@components/translator-tools/i18n-generator.svelte"
 export { getStaticPaths } from '@i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
-const t = useTranslations(lang)
 ---
 
 <Layout title="Translator Tools">
+  {lang==="en" ?
+  <div class="mb-12 text-xl text-center">Please select the language you want to translate to from the language navigation in the upper right corner, and navigate to the page for each language.</div>
+  :
+  <div class="mb-12 text-sm text-center text-text-sub">When the notation is the same as English, making it blank will make the site slightly lighter.</div>
+  }
   <I18nGenerator client:load {lang} />
 </Layout>

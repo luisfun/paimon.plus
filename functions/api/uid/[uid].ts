@@ -1,21 +1,25 @@
 import type { CacheStorage } from '../../../node_modules/@cloudflare/workers-types/index'
 import { API_VER, uidTest } from '../../../src/components/api-uid'
 import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api-uid-types'
+import {
+  type DBKVResult,
+  QUERY_GET_KV,
+  QUERY_GET_TABLE,
+  QUERY_SET_KV,
+  cacheSet,
+  dbkvGet,
+  dbkvSet,
+  resStatus,
+} from '../../utils'
 
 type Env = {
-  //kv: KVNamespace
   showcase: D1Database
-  statistical: D1Database
+  statistics: D1Database
 }
-
-type DBKVResult = { key: string; value: string; updated_at: number } | undefined
 
 const KEY_STATUS = 'enka-status'
 const KEY_UIDS = 'showcase-uids'
 const KEY_TABLE_NAMES = 'table-names'
-const QUERY_GET_TABLE = 'SELECT name FROM sqlite_master WHERE type="table"'
-const QUERY_GET_KV = 'SELECT * FROM key_value WHERE key = ? LIMIT 1'
-const QUERY_SET_KV = 'REPLACE INTO key_value (key, updated_at, value) VALUES(?, ?, ?)'
 const QUERY_SET_UID = 'REPLACE INTO cache_uid (uid, updated_at, status, data) VALUES(?, ?, ?, ?)'
 
 export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
@@ -87,13 +91,13 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     case 429:
     case 500:
     case 503:
-      await putDBKV(ctx.env.showcase, KEY_STATUS, Date.now(), status.toString())
+      await dbkvSet(ctx.env.showcase, KEY_STATUS, Date.now(), status.toString())
       //await sendDiscord(status)
       console.log(`fetch enka.status: ${status}, ${uid}`)
       return resError(status)
     case 400:
     case 404:
-      await putUidCache(ctx.env, uid, Date.now(), status, '')
+      await ctx.env.showcase.prepare(QUERY_SET_UID).bind(uid, Date.now(), status, '').all()
       return resError(status)
   }
   // other error
@@ -107,7 +111,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   // save
   ctx.waitUntil(
     Promise.all([
-      saveCache(cache, cacheKey, response),
+      cacheSet(cache, cacheKey, response, 180 * 24 * 60 * 60),
       saveShowcase(ctx.env, uid, json, storedUids),
       saveStatistical(ctx.env, uid, json),
     ]),
@@ -128,33 +132,21 @@ const createTable = async (env: Env) => {
     await db
       .prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, status INT, data TEXT)')
       .all()
-  // statistical sources
-  db = env.statistical
+  // statistics sources
+  db = env.statistics
   tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
   if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableNames.includes('player'))
     await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
 }
 
-const resStatus = (status: number) => new Response(null, { status })
 // biome-ignore format: ternary operator
 const res = (data: ApiData | undefined, status: number, age: number) =>
   !data && Number(status) < 400 ? resStatus(599) :
   !data ? resStatus(status) :
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': `max-age=${age}` } })
 
-const putUidCache = (env: Env, uid: string, timestamp: number, status: number, data: string) =>
-  env.showcase.prepare(QUERY_SET_UID).bind(uid, timestamp, status, data).all<undefined>()
-const putDBKV = (db: D1Database, key: string, timestamp: number, value: string) =>
-  db.prepare(QUERY_SET_KV).bind(key, timestamp, value).all<undefined>()
-
 const getDBShowcase = async (env: Env, uid: string) => {}
-
-const saveCache = async (cache: CacheStorage['default'], cacheKey: string, res: Response) => {
-  res.headers.append('Cache-Control', 's-maxage=15552000') // 180day
-  // @ts-expect-error
-  await cache.put(cacheKey, res.clone())
-}
 
 const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: string[]) => {
   const db = env.showcase
@@ -172,11 +164,9 @@ const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: string[]
 const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
   // キャラなし
   if (!json.avatarInfoList) return
-  const db = env.statistical
+  const db = env.statistics
   const { timestamp } = json
-  const tableNames = JSON.parse(
-    (await db.prepare(QUERY_GET_KV).bind(KEY_TABLE_NAMES).first<DBKVResult>())?.value || '[]',
-  ) as string[]
+  const tableNames = JSON.parse((await dbkvGet(db, KEY_TABLE_NAMES))?.value || '[]') as string[]
   const idList = json.avatarInfoList.map(e => `_${e.avatarId}`)
   const diffId = idList.filter(e => tableNames.indexOf(e) === -1)
   // テーブル生成

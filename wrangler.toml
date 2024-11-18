@@ -11,7 +11,7 @@ database_name = "genshin-showcase"
 database_id = "f3603251-bb65-4a83-9314-53fd72c78b5a"
 
 [[ d1_databases ]]
-binding = "statistical"
+binding = "statistics"
 database_name = "genshin-statistical-sources"
 database_id = "ecd6e443-de93-48b2-8d30-038e2613bf95"
 

@@ -1,5 +1,5 @@
 import type { CacheStorage } from '../../../node_modules/@cloudflare/workers-types/index'
-import { API_VER, uidTest } from '../../../src/components/api'
+import { API_VER, uidTest } from '../../../src/components/api-uid'
 import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api-uid-types'
 
 type Env = {

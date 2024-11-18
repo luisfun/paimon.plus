@@ -1,6 +1,6 @@
 <script lang="ts">
 // client:only="svelte"
-import { avatarRemap } from '@components/api'
+import { avatarRemap } from '@components/api-uid'
 import type { ApiData, AvatarInfo } from '@components/api-uid-types'
 import CritRatioChart from '@components/crit-ratio-chart.svelte'
 import ShowcaseSelector from '@components/showcase-selector.svelte'

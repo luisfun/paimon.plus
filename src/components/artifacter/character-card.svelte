@@ -1,5 +1,5 @@
 <script lang="ts">
-import { avatarRemap } from '@components/api'
+import { avatarRemap } from '@components/api-uid'
 import type { AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api-uid-types'
 import {
   type ScoreType,

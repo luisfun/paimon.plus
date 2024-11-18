@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { AvatarRemapped } from '@components/api'
+import type { AvatarRemapped } from '@components/api-uid'
 import Dialog from '@components/dialog.svelte'
 import { statProps } from '@components/img-props'
 // biome-ignore lint: svelte

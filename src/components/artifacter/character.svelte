@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { AvatarInfo } from '@components/api'
+import type { AvatarInfo } from '@components/api-uid-types'
 import Dialog from '@components/dialog.svelte'
 import { type ScoreType, scoreTypeMenuItems } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'

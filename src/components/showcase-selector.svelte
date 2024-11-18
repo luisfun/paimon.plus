@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { ApiData, AvatarInfo } from '@components/api'
+import type { ApiData, AvatarInfo } from '@components/api-uid-types'
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
 import { sideProps } from '@components/img-props'

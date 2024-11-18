@@ -1,6 +1,6 @@
 <script lang="ts">
 // client:only="svelte"
-import type { ApiData, AvatarInfo } from '@components/api'
+import type { ApiData, AvatarInfo } from '@components/api-uid-types'
 import ShowcaseSelector from '@components/showcase-selector.svelte'
 import UidInput from '@components/uid-input.svelte'
 import type { Lang } from '@i18n/utils'

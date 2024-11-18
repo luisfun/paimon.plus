@@ -1,6 +1,6 @@
 import type { CacheStorage } from '../../../node_modules/@cloudflare/workers-types/index'
 import { API_VER, uidTest } from '../../../src/components/api'
-import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api'
+import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api-uid-types'
 
 type Env = {
   //kv: KVNamespace

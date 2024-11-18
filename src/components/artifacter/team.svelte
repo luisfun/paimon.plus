@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { AvatarInfo } from '@components/api'
+import type { AvatarInfo } from '@components/api-uid-types'
 import DialogDelayIcon from '@components/dialog-delay-Icon.svelte'
 import Dialog from '@components/dialog.svelte'
 import { avatarProps, dummyProps } from '@components/img-props'

@@ -1,5 +1,6 @@
 <script lang="ts">
-import { type ApiData, fetchUid, uidTest } from '@components/api'
+import { fetchUid, uidTest } from '@components/api'
+import type { ApiData } from '@components/api-uid-types'
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'
 import { pfpProps } from '@components/img-props'

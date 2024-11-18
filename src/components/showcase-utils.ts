@@ -1,4 +1,4 @@
-import type { ReliquaryRemap } from './api'
+import type { ReliquaryRemap } from '@components/api-uid-types'
 
 export const bga = '#0005'
 export const bga2 = '#0007'

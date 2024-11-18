@@ -1,4 +1,4 @@
-import type { ApiData } from '@components/api'
+import type { ApiData } from '@components/api-uid-types'
 
 const uidLogLimit = 9
 

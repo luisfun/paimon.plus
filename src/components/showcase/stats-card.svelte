@@ -1,6 +1,6 @@
 <script lang="ts">
-import type { AvatarRemapped, ReliquaryRemap, WeaponRemap } from '@components/api'
-import { avatarRemap } from '@components/api'
+import type { AvatarRemapped } from '@components/api'
+import type { ReliquaryRemap, WeaponRemap } from '@components/api-uid-types'
 import {
   bga,
   bga2,

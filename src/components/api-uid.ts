@@ -2,6 +2,7 @@ import type { ApiData, AvatarInfo, ReliquaryRemap, WeaponRemap } from '@componen
 import { type UidLog, ls } from '@components/local-storage'
 import avatarJson from '@game/avatar.json'
 import affixJson from '@game/reliquary-affix.json'
+import { displayStatus, fightProps } from "@components/api-utils"
 
 export const API_VER = '0.3.0'
 export const uidTest = (uid: string | number | undefined) => /^(18|[1-35-9])\d{8}$/.test(uid?.toString() || '')
@@ -116,7 +117,6 @@ export const avatarRemap = (info: AvatarInfo) => {
 const get_ascension_level = (ascension: string | number | undefined) =>
   [20, 40, 50, 60, 70, 80, 90][Number(ascension)] || 20
 const get_character_stats = (avatarInfo: AvatarInfo) => {
-  const displayStatus = ['HP', 'ATK', 'DEF', 'Elemental Mastery', 'CRIT Rate', 'CRIT DMG', 'Energy Recharge']
   const displayDmgs = [
     'Physical DMG Bonus',
     'Pyro DMG Bonus',
@@ -126,23 +126,6 @@ const get_character_stats = (avatarInfo: AvatarInfo) => {
     'Anemo DMG Bonus',
     'Geo DMG Bonus',
     'Cryo DMG Bonus',
-  ]
-  const fightProps = [
-    { type: 'HP', prop: 2000, icon: 'FIGHT_PROP_HP' },
-    { type: 'ATK', prop: 2001, icon: 'FIGHT_PROP_ATTACK' },
-    { type: 'DEF', prop: 2002, icon: 'FIGHT_PROP_DEFENSE' },
-    { type: 'Elemental Mastery', prop: 28, icon: 'FIGHT_PROP_ELEMENT_MASTERY' },
-    { type: 'CRIT Rate', prop: 20, icon: 'FIGHT_PROP_CRITICAL' },
-    { type: 'CRIT DMG', prop: 22, icon: 'FIGHT_PROP_CRITICAL_HURT' },
-    { type: 'Energy Recharge', prop: 23, icon: 'FIGHT_PROP_CHARGE_EFFICIENCY' },
-    { type: 'Physical DMG Bonus', prop: 30, icon: 'FIGHT_PROP_PHYSICAL_ADD_HURT' },
-    { type: 'Pyro DMG Bonus', prop: 40, icon: 'FIGHT_PROP_FIRE_ADD_HURT' },
-    { type: 'Electro DMG Bonus', prop: 41, icon: 'FIGHT_PROP_ELEC_ADD_HURT' },
-    { type: 'Hydro DMG Bonus', prop: 42, icon: 'FIGHT_PROP_WATER_ADD_HURT' },
-    { type: 'Dendro DMG Bonus', prop: 43, icon: 'FIGHT_PROP_GRASS_ADD_HURT' },
-    { type: 'Anemo DMG Bonus', prop: 44, icon: 'FIGHT_PROP_WIND_ADD_HURT' },
-    { type: 'Geo DMG Bonus', prop: 45, icon: 'FIGHT_PROP_ROCK_ADD_HURT' },
-    { type: 'Cryo DMG Bonus', prop: 46, icon: 'FIGHT_PROP_ICE_ADD_HURT' },
   ]
   const baseList = [
     { type: 'HP', prop: 1 },

@@ -49,4 +49,5 @@ export type Statistics = {
   playerInfo: StatisticsPlayer
   avatarInfoList: StatisticsAvatar[]
   timestamp: number
+  ver: string
 }

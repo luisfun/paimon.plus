@@ -1,8 +1,8 @@
 import type { ApiData, AvatarInfo, ReliquaryRemap, WeaponRemap } from '@components/api-uid-types'
+import { displayStatus, fightProps } from '@components/api-utils'
 import { type UidLog, ls } from '@components/local-storage'
 import avatarJson from '@game/avatar.json'
 import affixJson from '@game/reliquary-affix.json'
-import { displayStatus, fightProps } from "@components/api-utils"
 
 export const API_VER = '0.3.0'
 export const uidTest = (uid: string | number | undefined) => /^(18|[1-35-9])\d{8}$/.test(uid?.toString() || '')

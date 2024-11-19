@@ -41,7 +41,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     (async () => {
       const db = ctx.env.showcase
       const results = (
-        await db.batch([
+        await db.batch<{ uid: string; status: number; data: string; updated_at: number } | DBKVResult | undefined>([
           db.prepare('SELECT * FROM cache_uid WHERE uid = ? LIMIT 1').bind(uid),
           db.prepare(QUERY_GET_KV).bind(KEY_STATUS),
           db.prepare(QUERY_GET_KV).bind(KEY_UIDS),

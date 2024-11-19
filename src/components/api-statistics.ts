@@ -1,12 +1,12 @@
-import type { Statistics, StatisticsAvatar } from "@components/api-statistics-types";
+import type { Statistics, StatisticsAvatar } from '@components/api-statistics-types'
 import avatarJson from '@game/avatar.json'
-import weaponJson from '@game/weapon.json'
 import reliquarySetJson from '@game/reliquary-set.json'
+import weaponJson from '@game/weapon.json'
 
 export const API_VER = '0.0.1'
 
 export const fetchStatistics = async (): Promise<{ json: Statistics | undefined; status: number }> => {
-  const res = await fetch("/api/statistics")
+  const res = await fetch('/api/statistics')
   if (200 <= res.status && res.status <= 399) {
     const json = (await res.json()) as Statistics
     // ver check
@@ -25,7 +25,7 @@ const remap = (json: Statistics) => {
   const { avatarInfoList } = json
   for (const a of avatarInfoList) {
     const data = avatarJson.find(e => e.id === a.avatarId)
-    if (!data) throw new Error("statistics remap: no avatar data")
+    if (!data) throw new Error('statistics remap: no avatar data')
     const nameTextMapHash = data.nameTextMapHash
     const element = data.element
     const talentIcons = data.consts.map((icon, i) => ({ icon, count: a.consts[i] }))
@@ -38,6 +38,4 @@ const remap = (json: Statistics) => {
   }
 }
 
-const get_character_stats = (a: StatisticsAvatar) => {
-
-}
+const get_character_stats = (a: StatisticsAvatar) => {}

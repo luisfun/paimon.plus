@@ -1,6 +1,6 @@
 on:
   schedule:
-    - cron: "*/30 0 * * 3"
+    - cron: "0 0,8 * * 3"
 
 jobs:
   js:

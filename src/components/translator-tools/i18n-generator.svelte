@@ -15,7 +15,7 @@ let baseLang = $state<'en' | 'ja'>('en')
 let untranslated = $state(true)
 // @ts-expect-error
 let values = $state(keys.map(key => (ui[lang][key] as string) ?? ''))
-let copyButtonText = $state('Copy')
+let buttonText = $state('Download')
 
 const tsText = $derived.by(() => {
   let text = `  ${lang}: {
@@ -34,11 +34,16 @@ const tsText = $derived.by(() => {
   return text
 })
 
-const copy = () => {
-  navigator.clipboard.writeText(tsText)
-  copyButtonText = 'Copied!'
+const onclick = () => {
+  const url = URL.createObjectURL(new Blob([tsText], { type: 'text/plain' }))
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `${lang}.txt`
+  a.click()
+  URL.revokeObjectURL(url)
+  buttonText = 'Downloaded!'
   setTimeout(() => {
-    copyButtonText = 'Copy'
+    buttonText = 'Download'
   }, 1500)
 }
 </script>
@@ -80,7 +85,6 @@ const copy = () => {
 </div>
 
 <div class="mt-12 mb-4 text-center">
-  Generated Text
-  <button class="btn btn-sm btn-primary ml-2" onclick={copy}>{copyButtonText}</button>
+  <button class="btn btn-sm btn-primary ml-2" {onclick}>{buttonText}</button>
 </div>
 <textarea class="block textarea textarea-bordered w-full h-72 px-0 !cursor-text !text-text-sub !bg-neutral" value={tsText} disabled></textarea>

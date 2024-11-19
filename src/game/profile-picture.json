@@ -108,6 +108,8 @@
   "8600": "UI_AvatarIcon_Mualani_Circle",
   "8700": "UI_AvatarIcon_Kinich_Circle",
   "8800": "UI_AvatarIcon_Xilonen_Circle",
+  "8900": "UI_AvatarIcon_Olorun_Circle",
+  "9000": "UI_AvatarIcon_Chasca_Circle",
   "99999": "UI_AvatarIcon_Ambor_Circle",
   "100010": "UI_AvatarIcon_72105_Circle",
   "100020": "UI_AvatarIcon_72158_Circle",
@@ -126,5 +128,6 @@
   "100150": "UI_AvatarIcon_74085_Circle",
   "100160": "UI_AvatarIcon_71100_Circle",
   "100170": "UI_AvatarIcon_74196_Circle",
-  "100180": "UI_AvatarIcon_75002_Circle"
+  "100180": "UI_AvatarIcon_75002_Circle",
+  "100190": "UI_AvatarIcon_75048_Circle"
 }

@@ -1,5 +1,61 @@
 [
   {
+    "key": "Chasca",
+    "id": 10000104,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 3746229466,
+    "skillDepotId": 10401,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Chasca_01",
+      "UI_Talent_S_Chasca_02",
+      "UI_Talent_U_Chasca_01",
+      "UI_Talent_S_Chasca_03",
+      "UI_Talent_U_Chasca_02",
+      "UI_Talent_S_Chasca_04"
+    ],
+    "skills": [
+      {
+        "id": 11041,
+        "icon": "Skill_A_02",
+        "proud": 10431
+      },
+      {
+        "id": 11042,
+        "icon": "Skill_S_Chasca_01",
+        "proud": 10432
+      },
+      {
+        "id": 11045,
+        "icon": "Skill_E_Chasca_01",
+        "proud": 10439
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101253": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112101": 36,
+        "112102": 96,
+        "112103": 129,
+        "113061": 18,
+        "113067": 46
+      }
+    },
+    "wikiId": 7080
+  },
+  {
     "key": "Xilonen",
     "id": 10000103,
     "qualityType": "QUALITY_ORANGE",
@@ -3377,6 +3433,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Olorun",
+    "id": 10000105,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 1198350762,
+    "skillDepotId": 10501,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Olorun_01",
+      "UI_Talent_S_Olorun_02",
+      "UI_Talent_U_Olorun_01",
+      "UI_Talent_S_Olorun_03",
+      "UI_Talent_U_Olorun_02",
+      "UI_Talent_S_Olorun_04"
+    ],
+    "skills": [
+      {
+        "id": 30501,
+        "icon": "Skill_A_02",
+        "proud": 10531
+      },
+      {
+        "id": 30502,
+        "icon": "Skill_S_Olorun_01",
+        "proud": 10532
+      },
+      {
+        "id": 30505,
+        "icon": "Skill_E_Olorun_01",
+        "proud": 10539
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101252": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104350": 9,
+        "104351": 63,
+        "104352": 114,
+        "112101": 36,
+        "112102": 96,
+        "112103": 129,
+        "113054": 18,
+        "113064": 46
+      }
+    },
+    "wikiId": 7079
   },
   {
     "key": "Kachina",

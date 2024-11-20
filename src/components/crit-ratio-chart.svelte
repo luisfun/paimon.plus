@@ -1,9 +1,9 @@
 <script lang="ts">
+import { type InputStats, avg, text, textSub } from '@components/crit-ratio-utils'
 import More from '@components/more.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { Chart, Filler, Legend, LineElement, PointElement, RadarController, RadialLinearScale, Tooltip } from 'chart.js'
 import type { Snippet } from 'svelte'
-import { type InputStats, avg, text, textSub } from './crit-ratio-utils'
 
 Chart.register(RadarController, RadialLinearScale, PointElement, LineElement, Filler, Tooltip, Legend)
 
@@ -72,7 +72,7 @@ const data = $derived({
 const options = {
   plugins: {
     legend: {
-      position: 'bottom' as const,
+      position: 'bottom',
       labels: {
         color: text,
         font: {
@@ -84,6 +84,7 @@ const options = {
       enabled: false,
     },
   },
+  responsive: true,
   scales: {
     r: {
       min: 0,
@@ -105,7 +106,7 @@ const options = {
       },
     },
   },
-}
+} as const
 
 $effect(() => {
   if (canvas) {

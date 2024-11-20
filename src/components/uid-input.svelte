@@ -53,10 +53,8 @@ const logClickHandler = async (uid: string) => {
 onMount(async () => {
   const lsUid = localStorage.getItem('uid')
   const uid = lsUid ? Number(lsUid) : undefined
-  await Promise.all([
-    clickHandler(uid, 'cache'),
-    clickHandler(uid, import.meta.env.MODE === 'development' ? 'cache' : undefined),
-  ])
+  await clickHandler(uid, 'cache')
+  await clickHandler(uid, import.meta.env.DEV ? 'cache' : undefined)
   isInitLoading = false
 })
 </script>

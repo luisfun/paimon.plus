@@ -87,6 +87,14 @@ export const ui = {
     'avg-dmg.damage': 'Damage Dealt',
     'avg-dmg.noncrit': 'Non CRIT',
     'avg-dmg.avg': 'Damage (Avg.)',
+    // statistics
+    'statistics.title': 'Showcase Analytics',
+    'statistics.player': 'Player Data',
+    'statistics.ar': 'Adventure Rank',
+    'statistics.achievement': 'Achievement',
+    'statistics.abyss': 'Spiral Abyss Floor',
+    'statistics.theater': 'Imaginarium Theater Floor',
+    'statistics.character': 'Character Data',
     // wish-banner
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',

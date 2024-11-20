@@ -1,6 +1,7 @@
 ---
 import enka from '@assets/webp/EnkaNetwork.webp'
 import ExternalA from '@components/external-a.svelte'
+import Analytics from '@components/showcase-analytics/statistics.svelte'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
 export { getStaticPaths } from '@i18n/utils'
@@ -9,7 +10,8 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<Layout title={t("showcase.title")} minHFull>
+<Layout title={t("statistics.title")} minHFull>
+  <Analytics client:load {lang} />
   <ExternalA slot="main-bottom" href="https://enka.network" aria-label="enka network" class="block w-fit m-auto">
     <img src={enka.src} width={enka.width} height={enka.height} alt="enka network" />
   </ExternalA>

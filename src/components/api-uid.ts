@@ -4,6 +4,8 @@ import { type UidLog, ls } from '@components/local-storage'
 import avatarJson from '@game/avatar.json'
 import affixJson from '@game/reliquary-affix.json'
 
+export type AvatarRemapped = ReturnType<typeof avatarRemap>
+
 export const API_VER = '0.3.0'
 export const uidTest = (uid: string | number | undefined) => /^(18|[1-35-9])\d{8}$/.test(uid?.toString() || '')
 
@@ -317,5 +319,3 @@ const get_reliquary_roll_set = (idList: number[] | undefined) => {
 }
 const rollStatToString = (prop: string, value: number) =>
   isFlat(get_prop_type(prop)) ? value.toFixed(0) : (value * 100).toFixed(1)
-
-export type AvatarRemapped = ReturnType<typeof avatarRemap>

@@ -1,5 +1,6 @@
 <script lang="ts">
 import type { NoteArr } from '@components/crit-ratio-utils'
+import { text, textSub } from '@components/crit-ratio-utils'
 import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import {
@@ -14,7 +15,6 @@ import {
   Title,
   Tooltip,
 } from 'chart.js'
-import { text, textSub } from './crit-ratio-utils'
 
 Chart.register(
   BarController,
@@ -38,7 +38,7 @@ let chartElem: HTMLDivElement
 
 const options = {
   maintainAspectRatio: false,
-  indexAxis: 'y' as const,
+  indexAxis: 'y',
   elements: {
     bar: {
       borderWidth: 2,
@@ -46,7 +46,7 @@ const options = {
   },
   plugins: {
     legend: {
-      position: 'top' as const,
+      position: 'top',
       labels: {
         color: text,
         usePointStyle: true,
@@ -56,6 +56,7 @@ const options = {
       enabled: false,
     },
   },
+  responsive: true,
   scales: {
     y: {
       ticks: {
@@ -80,7 +81,7 @@ const options = {
       },
     },
   },
-}
+} as const
 
 $effect(() => {
   const data = {

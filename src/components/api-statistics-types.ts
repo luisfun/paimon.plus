@@ -41,6 +41,7 @@ export type StatisticsPlayer = {
   finishAchievementNum: number[]
   finishAchievementNum100: number[]
   finishAchievementNumTop: number
+  fetterCount: number[]
   towerFloorIndex: number[]
   theaterActIndex: number[]
 }

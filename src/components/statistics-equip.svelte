@@ -23,6 +23,7 @@ const {
 } & SvelteHTMLElements['div'] = $props()
 const t = useTranslations(lang)
 
+const widht = view === 5 ? 'w-1/5' : view === 2 ? 'w-1/2' : `w-1/${view}`
 const realityColor = ['#868586', '#868586', '#519072', '#5392b8', '#9c75b7', '#b27330']
 
 $effect(() => {
@@ -41,7 +42,7 @@ $effect(() => {
 <div {...rest}>
   {#if weapon}
     {#each weapon as w, i}
-      <div class="w-1/{view.toString()} relative px-1 dropdown dropdown-hover{(dropEnd && view - i === 1) ? " dropdown-end" : ""}">
+      <div class="{widht} relative px-1 dropdown dropdown-hover{(dropEnd && view - i === 1) ? " dropdown-end" : ""}">
         <div tabindex="0" role="button">
           <Svg icon="star" class="absolute w-5" style="color: {realityColor[w.rankLevel]};" />
           <Img {...weaponProps(w.id, "w-full", true)} />
@@ -55,7 +56,7 @@ $effect(() => {
     {/each}
   {:else if reliquarySet}
     {#each reliquarySet as s, i}
-    <div class="w-1/{view.toString()} px-1 dropdown dropdown-hover{(dropEnd && view - i === 1) ? " dropdown-end" : ""}">
+    <div class="{widht} px-1 dropdown dropdown-hover{(dropEnd && view - i === 1) ? " dropdown-end" : ""}">
       <div tabindex="0" role="button">
         {#if !s.set[1]}
           <div class="relative">

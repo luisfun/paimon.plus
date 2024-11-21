@@ -42,7 +42,7 @@ export const avatarProps = (id: number, skinId?: number | undefined, className?:
   }
 }
 
-export const weaponProps = (id: number, className?: string) => {
+export const weaponProps = (id: number, className?: string, nonBg?: boolean) => {
   const w = weaponJson.find(e => e.id === id)
   if (!w) return propsInit('')
   return {
@@ -50,7 +50,7 @@ export const weaponProps = (id: number, className?: string) => {
     width: 128,
     height: 128,
     alt: textMap.en[w.nameTextMapHash],
-    class: `${classInit(className)} bg-rank-${w.rankLevel}`,
+    class: `${classInit(className)}${nonBg ? '' : ` bg-rank-${w.rankLevel}`}`,
   }
 }
 

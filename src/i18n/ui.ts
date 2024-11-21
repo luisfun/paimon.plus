@@ -90,11 +90,15 @@ export const ui = {
     // statistics
     'statistics.title': 'Showcase Analytics',
     'statistics.player': 'Player Data',
+    'statistics.users': 'users',
     'statistics.ar': 'Adventure Rank',
     'statistics.achievement': 'Achievement',
     'statistics.abyss': 'Spiral Abyss Floor',
     'statistics.theater': 'Imaginarium Theater Floor',
     'statistics.character': 'Character Data',
+    'statistics.select-character': 'Select Character',
+    'statistics.talent': 'Median Talent Level',
+    'statistics.stats': 'Median Stats',
     // wish-banner
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',

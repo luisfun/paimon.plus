@@ -5,7 +5,7 @@ import { onMount } from 'svelte'
 
 Chart.register(BarController, CategoryScale, LinearScale, ArcElement, BarElement, Tooltip, Legend)
 
-let { playerInfo }: { playerInfo: StatisticsPlayer } = $props()
+const { playerInfo }: { playerInfo: StatisticsPlayer } = $props()
 
 let canvas: HTMLCanvasElement
 

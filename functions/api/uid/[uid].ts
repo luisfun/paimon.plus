@@ -1,16 +1,7 @@
 import type { CacheStorage } from '../../../node_modules/@cloudflare/workers-types/index'
 import { API_VER, uidTest } from '../../../src/components/api-uid'
 import type { ApiData, EnkaApi, Reliquary, Weapon } from '../../../src/components/api-uid-types'
-import {
-  type DBKVResult,
-  QUERY_GET_KV,
-  QUERY_GET_TABLE,
-  QUERY_SET_KV,
-  cacheSet,
-  dbkvGet,
-  dbkvSet,
-  resStatus,
-} from '../../utils'
+import { type DBKVResult, QUERY_GET_KV, QUERY_GET_TABLE, cacheSet, dbkvSet, resStatus } from '../../utils'
 
 type Env = {
   showcase: D1Database
@@ -19,7 +10,6 @@ type Env = {
 
 const KEY_STATUS = 'enka-status'
 const KEY_UIDS = 'showcase-uids'
-const KEY_TABLE_NAMES = 'table-names'
 const QUERY_SET_UID = 'REPLACE INTO cache_uid (uid, updated_at, status, data) VALUES(?, ?, ?, ?)'
 
 export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
@@ -131,14 +121,22 @@ const createTable = async (env: Env) => {
   if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableNames.includes('cache_uid'))
     await db
-      .prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid INTEGER PRIMARY KEY, updated_at INTEGER, status INTEGER, data TEXT)')
+      .prepare(
+        'CREATE TABLE IF NOT EXISTS cache_uid (uid INTEGER PRIMARY KEY, updated_at INTEGER, status INTEGER, data TEXT)',
+      )
       .all()
   // statistics sources
   db = env.statistics
   tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
-  if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
+  //if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableNames.includes('_player'))
-    await db.prepare('CREATE TABLE IF NOT EXISTS _player (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)').all()
+    await db
+      .prepare('CREATE TABLE IF NOT EXISTS _player (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)')
+      .all()
+  if (!tableNames.includes('statistics'))
+    await db
+      .prepare('CREATE TABLE IF NOT EXISTS statistics (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)')
+      .all()
 }
 
 // biome-ignore format: ternary operator
@@ -167,17 +165,15 @@ const saveStatistical = async (env: Env, uid: number, json: ApiData) => {
   if (!json.avatarInfoList) return
   const db = env.statistics
   const { timestamp } = json
-  const tableNames = JSON.parse((await dbkvGet(db, KEY_TABLE_NAMES))?.value || '[]') as string[]
+  const tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
   const idList = json.avatarInfoList.map(e => `_${e.avatarId}`)
   const diffId = idList.filter(e => tableNames.indexOf(e) === -1)
   // テーブル生成
   if (diffId[0]) {
-    const oldNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
     await db.batch([
       ...diffId.flatMap(e =>
         db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)`),
       ),
-      db.prepare(QUERY_SET_KV).bind(KEY_TABLE_NAMES, timestamp, JSON.stringify([...oldNames, ...diffId])),
     ])
   }
   await db.batch([

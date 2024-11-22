@@ -22,7 +22,7 @@ let avatarInfo = $state<AvatarInfo>()
 let resStat = $state<{ json: StatisticsRemapped | undefined; status: number }>({ json: undefined, status: 0 })
 
 onMount(async () => {
-  //resStat = await fetchStatistics()
+  resStat = await fetchStatistics()
 })
 </script>
 

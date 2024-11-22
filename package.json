@@ -11,9 +11,9 @@
     "log": "wrangler pages deployment tail --project-name paimon-plus",
     "fix": "biome check --write . && astro check",
     "fix:unsafe": "biome check --write --unsafe . && astro check",
-    "update": "node .github/local-scripts/update.mjs",
-    "update:wiki": "node .github/local-scripts/wiki-update.mjs",
-    "update:image": "node .github/local-scripts/image-sharp.mjs"
+    "act:all": "node .github/local-scripts/all.mjs",
+    "act:wiki": "node .github/local-scripts/wiki.mjs",
+    "act:image": "node .github/local-scripts/image-sharp.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.4",

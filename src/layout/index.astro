@@ -24,7 +24,7 @@ const { title, grid, defaultTitle, minHFull } = Astro.props
     <Header />
     <main>
       <h1 class="my-2 text-center">{title}</h1>
-      <div class=`my-12${grid ? " grid grid-cols-1 md:grid-cols-2 gap-12" : ""}${minHFull ? " min-h-[calc(100svh-6rem-3.25rem-1.5rem)]" : ""}`>
+      <div class=`my-12${grid ? " grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto" : ""}${minHFull ? " min-h-[calc(100svh-6rem-3.25rem-1.5rem)]" : ""}`>
         <slot />
       </div>
       <slot name="main-bottom" />

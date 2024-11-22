@@ -1,18 +1,13 @@
 <script lang="ts">
 import type { StatisticsRemapped } from '@components/api-statistics'
-import HoyoWiki from '@components/hoyo-wiki.svelte'
-import { avatarProps } from '@components/img-props'
+import { src } from '@components/img-props'
 import Img from '@components/img.svelte'
 import { elementColor } from '@components/showcase-utils'
 import StatisticsEquip from '@components/statistics-equip.svelte'
-import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 
 const { lang, avatarInfo }: { lang: Lang; avatarInfo: StatisticsRemapped['avatarInfoList'][number] } = $props()
 const t = useTranslations(lang)
-
-const src = (folder: 'ui' | 'element' | 'card-assets', name: string | null | undefined) =>
-  name ? `/images/${folder}/${name}.webp` : '/images/Empty.webp'
 </script>
 
 {#snippet label(text: string | number, color: string)}

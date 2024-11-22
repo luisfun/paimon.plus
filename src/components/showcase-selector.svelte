@@ -83,7 +83,7 @@ $effect(() => {
 </script>
 
 {#if apiData?.avatarInfoList && apiData.playerInfo.showAvatarInfoList}
-<div class="{sticky ? "sticky -top-px" : "relative"} flex justify-center mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
+<div class="{sticky ? "sticky -top-px z-10" : "relative"} flex justify-center mb-3 mx-[calc((-100/91.666667+1)/2*100%)] lg:mx-[-2rem]">
   <div class="absolute inset-0 backdrop-blur avatar-list-bg"></div>
   <div
     class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"

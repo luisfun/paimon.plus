@@ -54,4 +54,4 @@ onMount(() => {
 })
 </script>
 
-<canvas class="max-w-[485px] max-h-[285px]" bind:this={canvas}></canvas>
+<canvas class="max-h-48" bind:this={canvas}></canvas>

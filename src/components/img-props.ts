@@ -5,6 +5,11 @@ import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
 const textMap: { en: Record<number, string> } = textMapJson
 
+type FolderName = 'ui' | 'card-assets' | 'element' | 'weapon-type' | 'official'
+
+export const src = (folder: FolderName, name: string | null | undefined, extension: 'webp' | 'jpg' = 'webp') =>
+  name ? `/images/${folder}/${name}.${extension}` : '/images/Empty.webp'
+
 const classInit = (c: string | null | undefined) => `bg-cover w-full rounded-[4%_4%_27%]${c ? ` ${c}` : ''}`
 const propsInit = (c: string | null | undefined) => ({
   src: '/images/Empty.webp',

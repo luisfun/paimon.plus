@@ -125,5 +125,5 @@ $effect(() => {
 <More checked={checked === undefined ? true : checked}>
   <div class="text-lg font-bold mb-4" class:mt-4={!children}>{t(`crit-ratio.${type}`)}</div>
   {#if (a_ < 2.776)}<div>{t("crit-ratio.low")}</div>{/if}
-  <canvas class="max-w-[485px] max-h-[485px]" bind:this={canvas}></canvas>
+  <canvas bind:this={canvas}></canvas>
 </More>

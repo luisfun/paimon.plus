@@ -5,8 +5,9 @@ import weapon from '@game/weapon.json'
 import { defaultLang, ui } from '@i18n/ui'
 
 export type Lang = keyof typeof ui
+export type TranslationKey = keyof (typeof ui)[typeof defaultLang]
 type TextMap = Record<Lang, Record<number, string>>
-type Ui = Record<Lang, Record<keyof (typeof ui)[typeof defaultLang], string>>
+type Ui = Record<Lang, Record<TranslationKey, string>>
 
 export const getStaticPaths = async () => Object.keys(ui).map(lang => ({ params: { lang } }))
 
@@ -24,7 +25,7 @@ export const useTranslations =
    * @param type
    * @returns
    */
-  (key: keyof (typeof ui)[typeof defaultLang] | number, type?: 'avatar' | 'weapon' | 'material') => {
+  (key: TranslationKey | number, type?: 'avatar' | 'weapon' | 'material') => {
     const l = lang instanceof URL ? getLangFromUrl(lang) : lang
     if (typeof key === 'number') {
       let hash = key

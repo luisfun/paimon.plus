@@ -54,7 +54,7 @@ onMount(() => {
 })
 </script>
 
-<canvas class="max-w-[485px] max-h-10 my-1" bind:this={canvas}></canvas>
+<canvas class="max-h-10 my-1" bind:this={canvas}></canvas>
 <div class="text-center">
   {#each colorsLegend as c,i}
     <Svg icon="square" class="inline-block w-4 h-4" style={`color: ${c};`} />{c0 + i}&nbsp;

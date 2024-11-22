@@ -25,43 +25,53 @@ export const fetchStatistics = async (): Promise<{ json: StatisticsRemapped | un
 }
 
 const remap = (json: Statistics) => {
-  const avatarInfoList = json.avatarInfoList.map(a => {
-    const data = avatarJson.find(e => e.id === a.avatarId)
-    if (!data) throw new Error('statistics remap: no avatar data')
-    const element = data.element
-    const travelerElement = a.travelerElement?.map(elem => ({
-      display: per(a.count, elem.count),
-      element: avatarJson.find(e => e.id === a.avatarId && e.skillDepotId === elem.id)?.element,
-    }))
-    const talentIcons = a.consts.map((e, i) => ({
-      icon: i === 0 ? null : data.consts[i - 1],
-      display: per(a.count, e),
-    }))
-    const skills = data.skills.map(skill => {
-      const s = a.skills?.find(e => e.id === skill.id)
-      if (!s) return skill
-      return { ...skill, display: s.median }
+  const avatarInfoList = json.avatarInfoList
+    .map(a => {
+      const data = avatarJson.find(e => e.id === a.avatarId)
+      if (!data) throw new Error('statistics remap: no avatar data')
+      const element = data.element
+      const travelerElement = a.travelerElement?.map(elem => ({
+        display: per(a.count, elem.count),
+        element: avatarJson.find(e => e.id === a.avatarId && e.skillDepotId === elem.id)?.element,
+      }))
+      const talentIcons = a.consts.map((e, i) => ({
+        icon: i === 0 ? null : data.consts[i - 1],
+        display: per(a.count, e),
+      }))
+      const skills = data.skills.map(skill => {
+        const s = a.skills?.find(e => e.id === skill.id)
+        if (!s) return skill
+        return { ...skill, display: s.median }
+      })
+      const stats = get_character_stats(a)
+      const weapon = a.weapon.map(w => {
+        const wj = weaponJson.find(e => e.id === w.id)
+        return {
+          ...w,
+          display: per(a.count, w.count),
+          wikiId: wj?.wikiId ?? -1,
+          rankLevel: wj?.rankLevel ?? 1,
+        }
+      })
+      const reliquarySet = a.reliquarySet.map(rs => ({
+        display: per(a.count, rs.count),
+        set: rs.set.map(s => {
+          const set = reliquarySetJson.find(e => e.id === s.id)
+          return { ...s, wikiId: set?.wikiId ?? -1, nameTextMapHash: set?.nameTextMapHash }
+        }),
+      }))
+      const qualityType = data.qualityType // ソート用
+      const reInfo = { ...a, element, travelerElement, talentIcons, skills, stats, weapon, reliquarySet, qualityType }
+      return reInfo
     })
-    const stats = get_character_stats(a)
-    const weapon = a.weapon.map(w => {
-      const wj = weaponJson.find(e => e.id === w.id)
-      return {
-        ...w,
-        display: per(a.count, w.count),
-        wikiId: wj?.wikiId ?? -1,
-        rankLevel: wj?.rankLevel ?? 1,
-      }
+    .sort((a, b) => {
+      if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
+      if (a.avatarId === 10000005 || a.avatarId === 10000007) return -1
+      if (a.qualityType === 'QUALITY_PURPLE' && b.qualityType === 'QUALITY_ORANGE') return -1
+      if (a.qualityType === 'QUALITY_ORANGE' && b.qualityType === 'QUALITY_PURPLE') return 1
+      return 0
     })
-    const reliquarySet = a.reliquarySet.map(rs => ({
-      display: per(a.count, rs.count),
-      set: rs.set.map(s => {
-        const set = reliquarySetJson.find(e => e.id === s.id)
-        return { ...s, wikiId: set?.wikiId ?? -1, nameTextMapHash: set?.nameTextMapHash }
-      }),
-    }))
-    const reInfo = { ...a, element, travelerElement, talentIcons, skills, stats, weapon, reliquarySet }
-    return reInfo
-  })
+    .reverse()
   return { ...json, avatarInfoList }
 }
 

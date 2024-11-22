@@ -36,7 +36,7 @@ export type DBKVResult = { key: string; value: string; updated_at: number } | un
 
 export const QUERY_GET_KV = 'SELECT * FROM key_value WHERE key = ? LIMIT 1'
 
-const dbkvGet = (db: D1Database, key: string) => db.prepare(QUERY_GET_KV).bind(key).first<DBKVResult>()
+//const dbkvGet = (db: D1Database, key: string) => db.prepare(QUERY_GET_KV).bind(key).first<DBKVResult>()
 
 /*
  * compress

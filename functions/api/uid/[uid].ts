@@ -137,8 +137,8 @@ const createTable = async (env: Env) => {
   db = env.statistics
   tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
   if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
-  if (!tableNames.includes('player'))
-    await db.prepare('CREATE TABLE IF NOT EXISTS player (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)').all()
+  if (!tableNames.includes('_player'))
+    await db.prepare('CREATE TABLE IF NOT EXISTS _player (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)').all()
 }
 
 // biome-ignore format: ternary operator
@@ -183,7 +183,7 @@ const saveStatistical = async (env: Env, uid: number, json: ApiData) => {
   await db.batch([
     // プレイヤーデータ保存
     db
-      .prepare('REPLACE INTO player (uid, updated_at, data) VALUES(?, ?, ?)')
+      .prepare('REPLACE INTO _player (uid, updated_at, data) VALUES(?, ?, ?)')
       .bind(uid, timestamp, JSON.stringify(json.playerInfo)),
     // Characterデータ保存
     ...json.avatarInfoList

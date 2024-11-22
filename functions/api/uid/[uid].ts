@@ -19,7 +19,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   const uid = Number(rawUid)
 
   //********** create table **********
-  await createTable(ctx.env)
+  //await createTable(ctx.env)
 
   //********** cache section **********
   // cache init

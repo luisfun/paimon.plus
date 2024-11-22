@@ -51,7 +51,11 @@ onMount(async () => {
   <div>
     {@render analysisTitle("showcase.statistics", `/showcase-analytics/?c=${en(a.avatarId, "avatar")}`)}
     {#if !stat}
-      <div>{resStat.status}</div>
+      {#if resStat.status === 200}
+        <div class="text-center mt-4">{t("showcase.non-stat")}</div>
+      {:else}
+        <div class="text-center mt-4">Error: {resStat.status}</div>
+      {/if}
     {:else}
       <Statistics {lang} {a} {stat} />
     {/if}
@@ -59,7 +63,7 @@ onMount(async () => {
   <div>
     {@render analysisTitle("showcase.crit-ratio", `/crit-ratio/?type=${type}&base=${base.toFixed(0)}&add=${add.toFixed(0)}&cr=${(cr*100).toFixed(1)}&cd=${(cd*100).toFixed(1)}`)}
     {#if type === "none"}
-      <div>none</div>
+      <div class="text-center mt-4">{t("showcase.non-crit-ratio")}</div>
     {:else}
       <CritRatioChart {lang} {type} {base} {add} {cr} {cd} />
     {/if}

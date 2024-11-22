@@ -55,7 +55,7 @@ const t = useTranslations(lang)
 <div class="divider mx-12 my-2"></div>
 {/if}
 <div class="text-center font-bold">{t("statistics.stats")}</div>
-<div class="max-w-80 mx-auto mt-2 px-6 py-3 bg-neutral rounded-2xl">
+<div class="max-w-xs mx-auto mt-2 px-6 py-3 bg-neutral rounded-2xl">
   {#each avatarInfo.stats as s}
     <div class="flex justify-between items-center mb-4 last:mb-0">
       <div class="flex items-center">

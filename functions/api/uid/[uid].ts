@@ -23,12 +23,13 @@ const KEY_TABLE_NAMES = 'table-names'
 const QUERY_SET_UID = 'REPLACE INTO cache_uid (uid, updated_at, status, data) VALUES(?, ?, ?, ?)'
 
 export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
-  const { uid } = ctx.params
   if (ctx.request.headers.get('sec-fetch-site') !== 'same-origin') return resStatus(403)
-  if (typeof uid !== 'string' || !uidTest(uid)) return resStatus(400)
+  const rawUid = ctx.params.uid
+  if (typeof rawUid !== 'string' || !uidTest(rawUid)) return resStatus(400)
+  const uid = Number(rawUid)
 
   //********** create table **********
-  //await createTable(ctx.env)
+  await createTable(ctx.env)
 
   //********** cache section **********
   // cache init
@@ -41,15 +42,15 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     (async () => {
       const db = ctx.env.showcase
       const results = (
-        await db.batch<{ uid: string; status: number; data: string; updated_at: number } | DBKVResult | undefined>([
+        await db.batch<{ uid: number; status: number; data: string; updated_at: number } | DBKVResult | undefined>([
           db.prepare('SELECT * FROM cache_uid WHERE uid = ? LIMIT 1').bind(uid),
           db.prepare(QUERY_GET_KV).bind(KEY_STATUS),
           db.prepare(QUERY_GET_KV).bind(KEY_UIDS),
         ])
       ).map(e => e.results)
-      const uidCache = results[0][0] as { uid: string; status: number; data: string; updated_at: number } | undefined
+      const uidCache = results[0][0] as { uid: number; status: number; data: string; updated_at: number } | undefined
       const enkaStatus = results[1][0] as DBKVResult
-      const storedUids = JSON.parse((results[1][0] as DBKVResult)?.value || '[]') as string[]
+      const storedUids = JSON.parse((results[1][0] as DBKVResult)?.value || '[]') as number[]
       return { uidCache, enkaStatus, storedUids }
     })(),
     cache.match(cacheKey),
@@ -123,21 +124,21 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
 //********** create table **********
 const createTable = async (env: Env) => {
-  const queryCreateKv = 'CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INT, value TEXT)'
+  const queryCreateKv = 'CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INTEGER, value TEXT)'
   // showcase
   let db = env.showcase
   let tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
   if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableNames.includes('cache_uid'))
     await db
-      .prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid TEXT PRIMARY KEY, updated_at INT, status INT, data TEXT)')
+      .prepare('CREATE TABLE IF NOT EXISTS cache_uid (uid INTEGER PRIMARY KEY, updated_at INTEGER, status INTEGER, data TEXT)')
       .all()
   // statistics sources
   db = env.statistics
   tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
   if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
   if (!tableNames.includes('player'))
-    await db.prepare('CREATE TABLE IF NOT EXISTS player (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)').all()
+    await db.prepare('CREATE TABLE IF NOT EXISTS player (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)').all()
 }
 
 // biome-ignore format: ternary operator
@@ -146,9 +147,9 @@ const res = (data: ApiData | undefined, status: number, age: number) =>
   !data ? resStatus(status) :
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': `max-age=${age}` } })
 
-const getDBShowcase = async (env: Env, uid: string) => {}
+const getDBShowcase = async (env: Env, uid: number) => {}
 
-const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: string[]) => {
+const saveShowcase = async (env: Env, uid: number, json: ApiData, uids: number[]) => {
   const db = env.showcase
   const { timestamp } = json
   // cache
@@ -161,7 +162,7 @@ const saveShowcase = async (env: Env, uid: string, json: ApiData, uids: string[]
   //********************************
 }
 
-const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
+const saveStatistical = async (env: Env, uid: number, json: ApiData) => {
   // キャラなし
   if (!json.avatarInfoList) return
   const db = env.statistics
@@ -174,7 +175,7 @@ const saveStatistical = async (env: Env, uid: string, json: ApiData) => {
     const oldNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
     await db.batch([
       ...diffId.flatMap(e =>
-        db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid TEXT PRIMARY KEY, updated_at INT, data TEXT)`),
+        db.prepare(`CREATE TABLE IF NOT EXISTS ${e} (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)`),
       ),
       db.prepare(QUERY_SET_KV).bind(KEY_TABLE_NAMES, timestamp, JSON.stringify([...oldNames, ...diffId])),
     ])

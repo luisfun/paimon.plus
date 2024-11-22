@@ -37,7 +37,7 @@ const bgColor = (range: -1 | 0 | 1) =>
       {#if !stat.travelerElement}
         {#each stat.skills as s}
           <div class="flex items-end">
-            <Img class="border-2 rounded-full bg-neutral w-7" style="border-color: {elementColor(a.element, true)};" src={src("ui", s.icon)} alt={s.icon} />
+            <Img class="border-2 rounded-full bg-neutral w-7 h-7" style="border-color: {elementColor(a.element, true)};" src={src("ui", s.icon)} alt={s.icon} />
             <div class="px-1 py-px rounded" style="background-color: {elementColor(a.element)};">{"display" in s ? s.display : ""}</div>
           </div>
         {/each}

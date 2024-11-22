@@ -1,6 +1,6 @@
 import { API_VER } from '../../src/components/api-statistics'
 import type { Statistics } from '../../src/components/api-statistics-types'
-import { dbkvGet, dbkvSet, resStatus } from '../utils'
+import { resStatus } from '../utils'
 
 // Cloudflare Cache Rule を利用
 
@@ -8,7 +8,8 @@ type Env = {
   statistics: D1Database
 }
 
-const KEY = 'statistics'
+const TABLE = 'statistics'
+const COMP_UID = 1
 
 export const onRequestGet: PagesFunction<Env> = async ctx => {
   if (ctx.request.headers.get('sec-fetch-site') !== 'same-origin') return resStatus(403)
@@ -17,9 +18,11 @@ export const onRequestGet: PagesFunction<Env> = async ctx => {
   //await setTestData(ctx.env.statistics)
 
   //********** get data **********
-  const value = (await dbkvGet(ctx.env.statistics, KEY))?.value
-  if (!value) throw new Error('No statistics value')
-  const json = JSON.parse(value) as Statistics
+  const data = await ctx.env.statistics
+    .prepare(`SELECT uid, data FROM ${TABLE} WHERE uid=${COMP_UID}`)
+    .first<{ uid: number; data: string }>()
+  if (!data?.data) throw new Error('No statistics value')
+  const json = JSON.parse(data.data) as Statistics
   return new Response(JSON.stringify({ ...json, ver: API_VER } as Statistics), {
     headers: { 'Content-Type': 'application/json' },
   })

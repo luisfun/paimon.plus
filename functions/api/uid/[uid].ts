@@ -114,29 +114,25 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 
 //********** create table **********
 const createTable = async (env: Env) => {
-  const queryCreateKv = 'CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INTEGER, value TEXT)'
+  // showcase query
+  const createKv = 'CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INTEGER, value TEXT)'
+  const createCacheUid =
+    'CREATE TABLE IF NOT EXISTS cache_uid (uid INTEGER PRIMARY KEY, updated_at INTEGER, status INTEGER, data TEXT)'
+
+  // statistics sources query
+  const createUidData = (table: string) =>
+    `CREATE TABLE IF NOT EXISTS ${table} (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)`
+
   // showcase
   let db = env.showcase
-  let tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
-  if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
-  if (!tableNames.includes('cache_uid'))
-    await db
-      .prepare(
-        'CREATE TABLE IF NOT EXISTS cache_uid (uid INTEGER PRIMARY KEY, updated_at INTEGER, status INTEGER, data TEXT)',
-      )
-      .all()
+  await db.prepare(createKv).all()
+  await db.prepare(createCacheUid).all()
+
   // statistics sources
   db = env.statistics
-  tableNames = (await db.prepare(QUERY_GET_TABLE).raw<[string]>()).map(e => e[0])
-  //if (!tableNames.includes('key_value')) await db.prepare(queryCreateKv).all()
-  if (!tableNames.includes('_player'))
-    await db
-      .prepare('CREATE TABLE IF NOT EXISTS _player (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)')
-      .all()
-  if (!tableNames.includes('statistics'))
-    await db
-      .prepare('CREATE TABLE IF NOT EXISTS statistics (uid INTEGER PRIMARY KEY, updated_at INTEGER, data TEXT)')
-      .all()
+  //await db.prepare(createKv).all() _player statistics
+  await db.prepare(createUidData('_player')).all()
+  await db.prepare(createUidData('statistics')).all()
 }
 
 // biome-ignore format: ternary operator

@@ -130,7 +130,7 @@ const createTable = async (env: Env) => {
 
   // statistics sources
   db = env.statistics
-  //await db.prepare(createKv).all() _player statistics
+  //await db.prepare(createKv).all()
   await db.prepare(createUidData('_player')).all()
   await db.prepare(createUidData('statistics')).all()
 }

@@ -46,13 +46,16 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     cache.match(cacheKey),
   ])
   const { uidCache, enkaStatus, storedUids } = rawCache[0]
-  const uidCacheData = uidCache ? (JSON.parse(uidCache.data) as ApiData) : await rawCache[1]?.json<ApiData>()
+  const apiCacheData =
+    uidCache?.status === 200 ? (JSON.parse(uidCache.data) as ApiData) : await rawCache[1]?.json<ApiData>()
+
+  // define
   const timestamp = Date.now()
   const isValid = (result: { updated_at: number } | undefined, sec: number) =>
     !!result && result.updated_at + sec * 1e3 > timestamp
-  const resCache = (age: number) => (uidCacheData ? res({ ...uidCacheData, status: 304 }, 203, age) : resStatus(599))
+  const resCache = (age: number) => (apiCacheData ? res({ ...apiCacheData, status: 304 }, 203, age) : resStatus(599))
   const resError = (status: number) =>
-    uidCacheData ? res({ ...uidCacheData, status }, 203, uidCacheData.ttl) : resStatus(status)
+    apiCacheData ? res({ ...apiCacheData, status }, 203, apiCacheData.ttl) : resStatus(status)
 
   // response error
   if (isValid(uidCache, 180) && (uidCache?.status === 400 || uidCache?.status === 404)) return resError(uidCache.status)
@@ -61,11 +64,11 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
   // response cache
   if (isValid(uidCache, 60)) {
     //const uidAllData = getDBShowcase(ctx.env, uid)
-    const age = Math.ceil(uidCacheData.timestamp / 1000 + uidCacheData.ttl - timestamp / 1000)
+    const age = Math.ceil(apiCacheData.timestamp / 1000 + apiCacheData.ttl - timestamp / 1000)
     if (age > 0) return resCache(age)
   }
-  // response force cache
-  if (ctx.request.headers.get('cache-control') === 'force-cache' && uidCacheData) return resCache(0)
+  // response force-cache
+  if (ctx.request.headers.get('cache-control') === 'force-cache' && apiCacheData) return resCache(0)
 
   //if (uid) return resJson({uid}, 200, 60)
 
@@ -104,7 +107,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
     Promise.all([
       cacheSet(cache, cacheKey, response, 180 * 24 * 60 * 60),
       saveShowcase(ctx.env, uid, json, storedUids),
-      saveStatistical(ctx.env, uid, json),
+      saveStatistics(ctx.env, uid, json),
     ]),
   )
 
@@ -113,6 +116,7 @@ export const onRequestGet: PagesFunction<Env, 'uid'> = async ctx => {
 }
 
 //********** create table **********
+/*
 const createTable = async (env: Env) => {
   // showcase query
   const createKv = 'CREATE TABLE IF NOT EXISTS key_value (key TEXT PRIMARY KEY, updated_at INTEGER, value TEXT)'
@@ -134,10 +138,11 @@ const createTable = async (env: Env) => {
   await db.prepare(createUidData('_player')).all()
   await db.prepare(createUidData('statistics')).all()
 }
+*/
 
 // biome-ignore format: ternary operator
 const res = (data: ApiData | undefined, status: number, age: number) =>
-  !data && Number(status) < 400 ? resStatus(599) :
+  !data && status < 400 ? resStatus(599) :
   !data ? resStatus(status) :
   new Response(JSON.stringify(data), { status, headers: { 'Content-Type': 'application/json', 'Cache-Control': `max-age=${age}` } })
 
@@ -156,7 +161,7 @@ const saveShowcase = async (env: Env, uid: number, json: ApiData, uids: number[]
   //********************************
 }
 
-const saveStatistical = async (env: Env, uid: number, json: ApiData) => {
+const saveStatistics = async (env: Env, uid: number, json: ApiData) => {
   // キャラなし
   if (!json.avatarInfoList) return
   const db = env.statistics

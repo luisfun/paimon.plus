@@ -60,7 +60,7 @@ $effect(() => {
       <div tabindex="0" role="button">
         {#if !s.set[1]}
           <div class="relative">
-            <Img class="w-full" src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" />
+            <Img class="w-full aspect-square" src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" />
             {@render label(s.set[0].piece)}
           </div>
         {:else}

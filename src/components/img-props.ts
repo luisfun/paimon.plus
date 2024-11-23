@@ -7,17 +7,16 @@ const textMap: { en: Record<number, string> } = textMapJson
 
 type FolderName = 'ui' | 'card-assets' | 'element' | 'weapon-type' | 'official'
 
-export const src = (folder: FolderName, name: string | null | undefined, extension: 'webp' | 'jpg' = 'webp') =>
-  name ? `/images/${folder}/${name}.${extension}` : '/images/Empty.webp'
+export const src = (folder: FolderName, name: string | null | undefined) =>
+  name ? `/images/${folder}/${name}.webp` : '/images/Empty.webp'
 
-const classInit = (c: string | null | undefined) => `bg-cover w-full rounded-[4%_4%_27%]${c ? ` ${c}` : ''}`
-const propsInit = (c: string | null | undefined) => ({
-  src: '/images/Empty.webp',
-  width: 1,
-  height: 1,
-  alt: 'None',
-  class: classInit(c),
-})
+const wh = (size: number) => ({ width: size, height: size })
+
+const join = (...args: (string | null | undefined)[]) => args.filter(e => e).join(' ')
+
+const roundedStyle = 'bg-cover w-full rounded-[4%_4%_27%]'
+const pfpStyle = 'bg-[#DAAB86] border border-[#F0EBE1] rounded-full'
+
 const rankNum: Record<string, number> = {
   QUALITY_ORANGE: 5,
   QUALITY_PURPLE: 4,
@@ -32,42 +31,44 @@ const stats = {
   'Energy Recharge': 'FIGHT_PROP_CHARGE_EFFICIENCY',
 } as const
 
-export const dummyProps = (className?: string) => propsInit(className)
+export const dummyProps = (className?: string | null | undefined) => ({
+  ...wh(280),
+  src: '/images/Empty.webp',
+  alt: 'None',
+  class: className,
+})
 
 export const avatarProps = (id: number, skinId?: number | undefined, className?: string, nonBg?: boolean) => {
   const a = avatarJson.find(e => e.id === id)
-  if (!a) return propsInit('')
+  if (!a) return dummyProps()
   const key = a.costumes?.find(e => e.skinId === skinId)?.key || a.key
   return {
+    ...wh(192),
     src: `/images/ui/Min_UI_AvatarIcon_${key}.webp`,
-    width: 192,
-    height: 192,
     alt: textMap.en[a.nameTextMapHash],
-    class: `${classInit(className)}${nonBg ? '' : ` bg-rank-${rankNum[a.qualityType] || 1}`}`,
+    class: join(roundedStyle, nonBg ? '' : `bg-rank-${rankNum[a.qualityType] || 1}`, className),
   }
 }
 
 export const weaponProps = (id: number, className?: string, nonBg?: boolean) => {
   const w = weaponJson.find(e => e.id === id)
-  if (!w) return propsInit('')
+  if (!w) return dummyProps()
   return {
+    ...wh(128),
     src: `/images/ui/Min_${w.icon}.webp`,
-    width: 128,
-    height: 128,
     alt: textMap.en[w.nameTextMapHash],
-    class: `${classInit(className)}${nonBg ? '' : ` bg-rank-${w.rankLevel}`}`,
+    class: join(roundedStyle, nonBg ? '' : `bg-rank-${w.rankLevel}`, className),
   }
 }
 
 export const materialProps = (id: number, className?: string) => {
   const m = materialJson.find(e => e.id === id)
-  if (!m) return propsInit('')
+  if (!m) return dummyProps()
   return {
+    ...wh(128),
     src: `/images/ui/Min_${m.icon}.webp`,
-    width: 128,
-    height: 128,
     alt: textMap.en[m.nameTextMapHash],
-    class: `${classInit(className)} bg-rank-${m.rankLevel || 1}`,
+    class: join(roundedStyle, `bg-rank-${m.rankLevel || 1}`, className),
   }
 }
 
@@ -76,43 +77,39 @@ export const pfpProps = (id: number, className?: string) => {
     (profilePictureJson as Record<string | number, string>)[id] ||
     `UI_AvatarIcon_${avatarJson.find(e => e.id === id)?.key}`
   return {
-    src: `/images/ui/Min_${pfp}.webp`,
     width: undefined,
     height: 128,
+    src: `/images/ui/Min_${pfp}.webp`,
     alt: pfp?.split('_')[2] || '',
-    class: `${classInit(className)} pfp-icon`,
+    class: join(pfpStyle, className),
   }
 }
 
 export const sideProps = (id: number, skinId: number | undefined) => {
   const a = avatarJson.find(e => e.id === id)
-  if (!a) return propsInit('')
+  if (!a) return dummyProps()
   const key = a.costumes?.find(e => e.skinId === skinId)?.key || a.key
   return {
+    ...wh(128),
     src: `/images/ui/UI_AvatarIcon_Side_${key}.webp`,
-    width: 128,
-    height: 128,
     alt: textMap.en[a.nameTextMapHash],
   }
 }
 
 export const elementProps = (id: string) => ({
+  ...wh(84),
   src: `/images/element/${id}.webp`,
-  width: 84,
-  height: 84,
   alt: id,
 })
 
 export const weaponTypeProps = (id: string) => ({
+  ...wh(56),
   src: `/images/weapon-type/${id}.webp`,
-  width: 56,
-  height: 56,
   alt: id,
 })
 
 export const statProps = (id: keyof typeof stats) => ({
+  ...wh(256),
   src: `/images/card-assets/${stats[id]}.webp`,
-  width: 256,
-  height: 256,
   alt: id.toString(),
 })

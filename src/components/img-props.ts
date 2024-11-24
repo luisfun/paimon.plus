@@ -5,7 +5,7 @@ import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
 const textMap: { en: Record<number, string> } = textMapJson
 
-type FolderName = 'ui' | 'card-assets' | 'element' | 'weapon-type' | 'official'
+type FolderName = 'ui' | 'card-assets' | 'element' | 'weapon-type' | 'official' | 'player-card/sample'
 
 export const src = (folder: FolderName, name: string | null | undefined) =>
   name ? `/images/${folder}/${name}.webp` : '/images/Empty.webp'

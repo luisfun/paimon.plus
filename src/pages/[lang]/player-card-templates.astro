@@ -1,11 +1,69 @@
 ---
-import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Seiyu_1216 from '@assets/webp/player-card-sample/Seiyu_1216.webp'
+import asphere_lag from '@assets/webp/player-card-sample/asphere_lag.webp'
+import catudon_1276 from '@assets/webp/player-card-sample/catudon_1276.webp'
+import fukafukafuka29 from '@assets/webp/player-card-sample/fukafukafuka29.webp'
+import ge_mpie from '@assets/webp/player-card-sample/ge_mpie.webp'
+import genshin_wazooo from '@assets/webp/player-card-sample/genshin_wazooo.webp'
+import genshin_wazooo_y from '@assets/webp/player-card-sample/genshin_wazooo_y.webp'
+import genshinlev from '@assets/webp/player-card-sample/genshinlev.webp'
+import mechan_genshin from '@assets/webp/player-card-sample/mechan_genshin.webp'
+import naga_ken from '@assets/webp/player-card-sample/naga_ken.webp'
+import naga_ken_y from '@assets/webp/player-card-sample/naga_ken_y.webp'
+import o_kami_games from '@assets/webp/player-card-sample/o_kami_games.webp'
+import ExternalA from '@components/external-a.svelte'
+import Svg from '@components/svg.svelte'
+import { getLangFromUrl, useTranslatedPath, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
 export { getStaticPaths } from '@i18n/utils'
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
+const translatePath = useTranslatedPath(lang)
+
+type Sample = {
+  img: ImageMetadata
+  tool?: string
+  href: string
+  self?: boolean
+}
+// biome-ignore format: width
+const samples: Sample[][] = [
+  [
+    { img: fukafukafuka29, tool: 'fukafukafuka29', href: translatePath('/player-card-fukafukafuka29/'), self: true },
+    { img: catudon_1276, tool: 'catudon_1276', href: 'https://catudon1276.booth.pm/' },
+    { img: genshin_wazooo, tool: 'genshin_wazooo', href: 'https://x.com/genshin_wazooo/status/1511649659147948039' },
+    { img: naga_ken, href: 'https://naga-ken.info/genshin-self-introduction-card/' },
+    { img: ge_mpie, href: 'https://x.com/ge_mpie/status/1424681851021451268' },
+    { img: Seiyu_1216, href: 'https://x.com/Seiyu_1216/status/1330707237149368320' },
+    { img: asphere_lag, href: 'https://x.com/asphere_lag/status/1425807531163545611' },
+  ],
+  [
+    { img: genshinlev, tool: 'genshinlev', href: 'https://x.com/genshinlev/status/1546715277802754048' },
+    { img: genshin_wazooo_y, tool: 'genshin_wazooo_y', href: 'https://x.com/genshin_wazooo/status/1563848391750488064' },
+    { img: naga_ken_y, href: 'https://naga-ken.info/genshin-self-introduction-card_ver3/' },
+    { img: mechan_genshin, href: 'https://x.com/mechan_genshin/status/1354264608979132422' },
+    { img: o_kami_games, href: 'https://o-kami-games.com/generator/genshin/' },
+  ],
+]
 ---
 
-<Layout title={t("player-card-templates.title")} grid>
+<Layout title={t("player-card-templates.title")}>
+  <div class="grid gap-4 sm:gap-12 grid-cols-[3fr_2fr]">
+    {samples.map(sample => <div class="grid gap-4 sm:gap-12 mb-auto">
+      {sample.map(s => <div class="relative h-fit">
+        <img class="rounded-lg sm:rounded-2xl" src={s.img.src} width={s.img.width} height={s.img.height} alt="sample" />
+        <div class="flex absolute bottom-1 right-1">
+          {s.tool &&
+            <a class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2 mr-2" href={translatePath(`/player-card/?t=${s.tool}`)}>
+              <Svg class="w-5 h-5 sm:w-8 sm:h-8" icon="pencil" />
+            </a>
+          }
+          <ExternalA class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2" href={s.href} self={s.self}>
+            <Svg class="w-5 h-5 sm:w-8 sm:h-8" icon={s.self ? "menu-tile" : "arrow-up-right-from-square"} />
+          </ExternalA>
+        </div>
+      </div>)}
+    </div>)}
+  </div>
 </Layout>

@@ -114,7 +114,7 @@ export const ui = {
     'wish-banner.ver': 'Ver.',
     'wish-banner.hint': '[Shift] + [Mouse Wheel] to scroll horizontally',
     // player-card
-    "player-card-templates.title": "Player Card Templates",
+    'player-card-templates.title': 'Player Card Templates',
     // stat
     'Base ATK': 'Base ATK',
     HP: 'HP',

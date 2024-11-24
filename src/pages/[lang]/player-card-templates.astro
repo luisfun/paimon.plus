@@ -55,11 +55,11 @@ const samples: Sample[][] = [
         <img class="rounded-lg sm:rounded-2xl" src={s.img.src} width={s.img.width} height={s.img.height} alt="sample" />
         <div class="flex absolute bottom-1 right-1">
           {s.tool &&
-            <a class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2 mr-2" href={translatePath(`/player-card/?t=${s.tool}`)}>
+            <a class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2 mr-2" href={translatePath(`/player-card/?t=${s.tool}`)} aria-label="editor">
               <Svg class="w-5 h-5 sm:w-8 sm:h-8" icon="pencil" />
             </a>
           }
-          <ExternalA class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2" href={s.href} self={s.self}>
+          <ExternalA class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2" href={s.href} self={s.self} aria-label="source">
             <Svg class="w-5 h-5 sm:w-8 sm:h-8" icon={s.self ? "menu-tile" : "arrow-up-right-from-square"} />
           </ExternalA>
         </div>

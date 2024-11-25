@@ -47,11 +47,13 @@ const download = () => {
     </button>
   {/each}
   <Dialog bind:dialog>
-    <img
-      class="aspect-video"
-      src={src("player-card/fukafukafuka29", select, "png")}
-      alt={select}
-    />
+    {#if select}
+      <img
+        class="aspect-video w-full"
+        src={src("player-card/fukafukafuka29", select, "png")}
+        alt={select}
+      />
+    {/if}
     <button class="btn btn-sm btn-primary flex mx-auto my-2" onclick={download}>
       <Svg icon="download" class="w-4 h-4" />{t("card.download")}
     </button>

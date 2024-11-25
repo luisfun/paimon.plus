@@ -1,0 +1,20 @@
+---
+import ExternalA from '@components/external-a.svelte'
+import CardList from '@components/player-card-fukafukafuka29/card-list.svelte'
+import Svg from '@components/svg.svelte'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title={t("player-card-templates.title")}>
+  <div class="mb-6 text-center">{t("player-card.creator")}:
+    <ExternalA class="text-link" href="https://x.com/fukafukafuka29">
+      <Svg class="w-4 h-4 inline-block" icon="x-twitter" />@fukafukafuka29
+    </ExternalA>
+  </div>
+  <CardList client:load {lang} />
+</Layout>

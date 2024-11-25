@@ -5,10 +5,18 @@ import textMapJson from '@game/text-map.json'
 import weaponJson from '@game/weapon.json'
 const textMap: { en: Record<number, string> } = textMapJson
 
-type FolderName = 'ui' | 'card-assets' | 'element' | 'weapon-type' | 'official' | 'player-card/sample'
+type FolderName =
+  | 'ui'
+  | 'card-assets'
+  | 'element'
+  | 'weapon-type'
+  | 'official'
+  | 'player-card/sample'
+  | 'player-card/fukafukafuka29'
+  | 'player-card/fukafukafuka29-sample'
 
-export const src = (folder: FolderName, name: string | null | undefined) =>
-  name ? `/images/${folder}/${name}.webp` : '/images/Empty.webp'
+export const src = (folder: FolderName, name: string | null | undefined, extension: 'webp' | 'png' = 'webp') =>
+  name ? `/images/${folder}/${name}.${extension}` : '/images/Empty.webp'
 
 const wh = (size: number) => ({ width: size, height: size })
 

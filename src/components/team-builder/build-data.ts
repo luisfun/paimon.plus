@@ -1,7 +1,7 @@
 type Name = string
-type Roll = "main" | "sub" | "support" | "healer"
-type Elem = "4elem" | "" | ""
-type Dmg = "normal" | "charge" | "落下" | "skill" | "burst"
+type Roll = 'main' | 'sub' | 'support' | 'healer'
+type Elem = '4elem' | '' | ''
+type Dmg = 'normal' | 'charge' | '落下' | 'skill' | 'burst'
 type Scope = {
   roll?: Roll[]
   elem?: Elem[]
@@ -9,7 +9,7 @@ type Scope = {
   exclude?: (Roll | Elem | Dmg)[]
 }
 type Member = Name | Scope
-type Explor = ["run" | "run-speed" | "run-stamina" | "climb" | "boat" | "fly" , number]
+type Explor = ['run' | 'run-speed' | 'run-stamina' | 'climb' | 'boat' | 'fly', number]
 type Avatar = {
   name: Name
   score: [number, number, number, number]

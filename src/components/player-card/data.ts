@@ -29,7 +29,7 @@ export const data: {
   x: string
   canvas?: { w: number; h: number }
   modal?: {
-    clickArea: number[]
+    clickArea: [number, number, number, number] | [number, number, number, number, number, number, number, number]
     baseSize?: number
     settingType?: 'frame' | 'checkbox'
     field: {

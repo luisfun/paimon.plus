@@ -6,10 +6,7 @@ import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import { type Lang, useTranslations } from '@i18n/utils'
 
-const fileNames = Object.keys(
-  import.meta.glob('../../../public/images/player-card/fukafukafuka29-sample/*.webp', { eager: true }),
-).map(path => path.split('/').at(-1)?.replace('.webp', ''))
-const reverseList = data.find(e => e.x === 'fukafukafuka29')?.custom?.list ?? []
+const dataFind = data.find(e => e.x === 'fukafukafuka29')?.custom
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
@@ -20,9 +17,9 @@ let visibles = $state<boolean[]>([])
 
 const names = avatarJson
   .map(e => en(e.id, 'avatar'))
-  .filter(e => fileNames.includes(e))
+  .filter(e => dataFind?.list.includes(e))
   .concat('Aether', 'Lumine', 'Paimon', 'Dainsleif')
-  .map(name => ({ name, reverse: reverseList.includes(name) }))
+  .map(name => ({ name, reverse: dataFind?.offsetList?.includes(name) }))
 
 const onclick = (i: number) => {
   visibles[i] = true

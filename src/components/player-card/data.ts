@@ -11,6 +11,14 @@ import mechan_genshin from '@assets/webp/player-card-sample/mechan_genshin.webp'
 import naga_ken from '@assets/webp/player-card-sample/naga_ken.webp'
 import naga_ken_y from '@assets/webp/player-card-sample/naga_ken_y.webp'
 import o_kami_games from '@assets/webp/player-card-sample/o_kami_games.webp'
+import avatarJson from '@game/avatar.json'
+import { useTranslations } from '@i18n/utils'
+
+const en = useTranslations('en')
+
+const fukafukafuka29List = Object.keys(
+  import.meta.glob('../../../public/images/player-card/fukafukafuka29-sample/*.webp', { eager: true }),
+).map(path => path.split('/').at(-1)?.replace('.webp', ''))
 
 export const data: {
   toolId?: 'fukafukafuka29' | 'catudon_1276' | 'genshinlev' | 'genshin_wazooo' | 'genshin_wazooo_2' | 'genshin_wazooo_y'
@@ -42,6 +50,7 @@ export const data: {
   }[]
   custom?: {
     list: string[]
+    offsetList?: string[]
   }
 }[] = [
   {
@@ -70,7 +79,11 @@ export const data: {
     ],
     custom: {
       //values: [890, 0],
-      list: [
+      list: avatarJson
+        .map(e => en(e.id, 'avatar'))
+        .filter(e => fukafukafuka29List.includes(e))
+        .concat('Aether', 'Lumine', 'Paimon', 'Dainsleif'),
+      offsetList: [
         'Shenhe',
         'Arataki Itto',
         'Sangonomiya Kokomi',

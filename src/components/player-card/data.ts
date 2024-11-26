@@ -13,9 +13,10 @@ import naga_ken_y from '@assets/webp/player-card-sample/naga_ken_y.webp'
 import o_kami_games from '@assets/webp/player-card-sample/o_kami_games.webp'
 
 export const data: {
+  toolId?: 'fukafukafuka29' | 'catudon_1276' | 'genshinlev' | 'genshin_wazooo' | 'genshin_wazooo_2' | 'genshin_wazooo_y'
   vertical?: boolean
   sample: ImageMetadata
-  link?: string
+  link: string
   self?: boolean
   x: string
   canvas?: { w: number; h: number }
@@ -40,11 +41,11 @@ export const data: {
     preDraw?: boolean
   }[]
   custom?: {
-    id: 'fukafukafuka29' | 'catudon_1276' | 'genshinlev'
     list: string[]
   }
 }[] = [
   {
+    toolId: 'fukafukafuka29',
     sample: fukafukafuka29,
     link: '/player-card-fukafukafuka29/',
     self: true,
@@ -68,10 +69,6 @@ export const data: {
       },
     ],
     custom: {
-      id: 'fukafukafuka29',
-      //type: 'offset',
-      //ref: 'character',
-      //refType: 'radio',
       //values: [890, 0],
       list: [
         'Shenhe',
@@ -104,6 +101,7 @@ export const data: {
     },
   },
   {
+    toolId: 'catudon_1276',
     sample: catudon_1276,
     link: 'https://catudon1276.booth.pm',
     x: 'catudon_1276',
@@ -142,11 +140,11 @@ export const data: {
       },
     ],
     custom: {
-      id: 'catudon_1276',
       list: ['Mondstadt', 'Liyue', 'Inazuma', 'Sumeru', 'Fontaine'],
     },
   },
   {
+    toolId: 'genshin_wazooo',
     sample: genshin_wazooo,
     link: 'https://x.com/genshin_wazooo/status/1511649659147948039',
     x: 'genshin_wazooo',
@@ -185,7 +183,9 @@ export const data: {
     ],
   },
   {
+    toolId: 'genshin_wazooo_2',
     sample: genshin_wazooo_2,
+    link: 'https://x.com/genshin_wazooo/status/1511649659147948039',
     x: 'genshin_wazooo',
     canvas: { w: 1172, h: 522 },
     modal: [
@@ -238,6 +238,7 @@ export const data: {
     x: 'asphere_lag',
   },
   {
+    toolId: 'genshinlev',
     vertical: true,
     sample: genshinlev,
     link: 'https://x.com/genshinlev/status/1546715277802754048',
@@ -336,11 +337,11 @@ export const data: {
       },
     ],
     custom: {
-      id: 'genshinlev',
       list: ['greenyellow', 'lightpink', 'dodgerblue'],
     },
   },
   {
+    toolId: 'genshin_wazooo_y',
     vertical: true,
     sample: genshin_wazooo_y,
     link: 'https://x.com/genshin_wazooo/status/1563848391750488064',

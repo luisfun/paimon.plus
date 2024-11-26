@@ -9,22 +9,20 @@ export { getStaticPaths } from '@i18n/utils'
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
-
-const samples = [data.filter(e => e.link && !e.vertical), data.filter(e => e.link && e.vertical)]
 ---
 
 <Layout title={t("player-card-templates.title")}>
   <div class="grid gap-4 sm:gap-12 grid-cols-[3fr_2fr]">
-    {samples.map(sample => <div class="grid gap-4 sm:gap-12 mb-auto">
+    {[data.filter(e => !e.vertical), data.filter(e => e.vertical)].map(sample => <div class="grid gap-4 sm:gap-12 mb-auto">
       {sample.map(s => <div class="relative h-fit">
         <img class="rounded-lg sm:rounded-2xl" src={s.sample.src} width={s.sample.width} height={s.sample.height} alt="sample" />
         <div class="flex absolute bottom-1 right-1">
-          {s.canvas &&
-            <a class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2 mr-2" href={translatePath(`/player-card/?t=${s.x}`)} aria-label="editor">
+          {s.toolId &&
+            <a class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2 mr-2" href={translatePath(`/player-card/?t=${s.toolId}`)} aria-label="editor">
               <Svg class="w-5 h-5 sm:w-8 sm:h-8" icon="pencil" />
             </a>
           }
-          <ExternalA class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2" href={s.self ? translatePath(s.link ?? "") : s.link} self={s.self} aria-label="source">
+          <ExternalA class="block rounded-full bg-neutral p-1.5 sm:p-2 border-primary border-2" href={s.self ? translatePath(s.link) : s.link} self={s.self} aria-label="source">
             <Svg class="w-5 h-5 sm:w-8 sm:h-8" icon={s.self ? "menu-tile" : "arrow-up-right-from-square"} />
           </ExternalA>
         </div>

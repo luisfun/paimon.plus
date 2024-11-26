@@ -14,6 +14,8 @@ import o_kami_games from '@assets/webp/player-card-sample/o_kami_games.webp'
 import avatarJson from '@game/avatar.json'
 import { useTranslations } from '@i18n/utils'
 
+type Num4 = [number, number, number, number]
+
 const en = useTranslations('en')
 
 const fukafukafuka29List = Object.keys(
@@ -29,12 +31,12 @@ export const data: {
   x: string
   canvas?: { w: number; h: number }
   modal?: {
-    clickArea: [number, number, number, number] | [number, number, number, number, number, number, number, number]
+    clickArea: Num4 | [...Num4, ...Num4]
     baseSize?: number
     settingType?: 'frame' | 'checkbox'
     field: {
       type: 'text' | 'textarea' | 'number' | 'frame' | 'checkbox'
-      area?: [number, number, number, number]
+      area?: Num4
       label: string
       row?: number[]
       items?: {
@@ -44,8 +46,8 @@ export const data: {
     }[]
   }[]
   pasteImage?: {
-    editArea: [number, number, number, number]
-    drawArea: [number, number, number, number]
+    editArea: Num4
+    drawArea: Num4
     preDraw?: boolean
   }[]
   custom?: {

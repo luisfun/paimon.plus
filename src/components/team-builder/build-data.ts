@@ -13,8 +13,9 @@ type Explor = ['run' | 'run-speed' | 'run-stamina' | 'climb' | 'boat' | 'fly', n
 type Avatar = {
   name: Name
   score: [number, number, number, number]
-  explor?: Explor
+  burstDep: number // 爆発依存度 探索には-1点分影響させる // (max(点数, max(星4キャラ数, 星5キャラ数)×0.1) - 点数) // 爆発依存有りで40,60,80族 -> 1,2,3 辺りで
   dmg?: Dmg[] // roll: main, sub のダメージタイプ
+  explor?: Explor
   coop: {
     score: number
     add?: (Member | Member[])[] // 全て加算 // Array.isArray() -> typeof string -> Scope

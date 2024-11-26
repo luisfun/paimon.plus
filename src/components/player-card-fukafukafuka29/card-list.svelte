@@ -1,7 +1,7 @@
 <script lang="ts">
 import Dialog from '@components/dialog.svelte'
 import { src } from '@components/img-props'
-import { data } from '@components/player-card/canvas-data'
+import { data } from '@components/player-card/data'
 import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import { type Lang, useTranslations } from '@i18n/utils'
@@ -9,7 +9,7 @@ import { type Lang, useTranslations } from '@i18n/utils'
 const fileNames = Object.keys(
   import.meta.glob('../../../public/images/player-card/fukafukafuka29-sample/*.webp', { eager: true }),
 ).map(path => path.split('/').at(-1)?.replace('.webp', ''))
-const reverseList = data.find(e => e.id === 'fukafukafuka29')?.right_field ?? []
+const reverseList = data.find(e => e.x === 'fukafukafuka29')?.custom?.list ?? []
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)

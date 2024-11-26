@@ -113,6 +113,8 @@ export const ui = {
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',
     'wish-banner.hint': '[Shift] + [Mouse Wheel] to scroll horizontally',
+    'wish-banner.obsolete':
+      'I discontinued updates for characters other than 5-star ones because it was too troublesome.',
     // player-card
     'player-card-templates.title': 'Player Card Templates',
     'player-card.creator': 'Creator',
@@ -150,6 +152,7 @@ export const ui = {
     'CRIT Value': 'CRIT Value',
   },
   ja: {
+    'wish-banner.obsolete': '星5キャラクター以外は、更新がめんどくさくて廃止しました。',
     'statistics.population': 'このページのユーザーが統計の母集団です。',
     label: '日本語',
     'seo.prefix': '【原神】',

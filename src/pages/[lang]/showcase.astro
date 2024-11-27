@@ -13,6 +13,6 @@ const t = useTranslations(lang)
 <Layout title={t("showcase.title")} minHFull>
   <Island client:only="svelte" {lang} />
   <ExternalA slot="main-bottom" href="https://enka.network" aria-label="enka network" class="block w-fit m-auto">
-    <img src={enka.src} width={enka.width} height={enka.height} alt="enka network" />
+    <img loading="lazy" src={enka.src} width={enka.width} height={enka.height} alt="enka network" />
   </ExternalA>
 </Layout>

@@ -50,7 +50,7 @@ $effect(() => {
         </div>
         <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-max max-w-[200%] z-10 px-3 py-2 text-sm shadow-background">
           <div>{t(w.id, "weapon")}</div>
-          <HoyoWiki class="text-link" {lang} wikiId={w.wikiId} />
+          <HoyoWiki class="text-link" {lang} wikiId={w.wikiId} aria-label={t(w.id, "weapon")} />
         </div>
       </div>
     {/each}
@@ -60,20 +60,20 @@ $effect(() => {
       <div tabindex="0" role="button">
         {#if !s.set[1]}
           <div class="relative">
-            <Img class="w-full aspect-square" src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" />
+            <Img class="w-full aspect-square" src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" alt={t(s.set[0].nameTextMapHash ?? 0)} />
             {@render label(s.set[0].piece)}
           </div>
         {:else}
           <div class="relative w-full aspect-square">
             <div class="absolute w-full aspect-square" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%);">
               <div class="absolute top-0 right-0 w-2/3">
-                <Img src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" />
+                <Img src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" alt={t(s.set[0].nameTextMapHash ?? 0)} />
                 {@render label(s.set[0].piece)}
               </div>
             </div>
             <div class="absolute w-full aspect-square" style="clip-path: polygon(0% 0%, 0% 100%, 100% 100%);">
               <div class="absolute bottom-0 left-0 w-2/3">
-                <Img src="/images/ui/UI_RelicIcon_{s.set[1].id}_4.webp" />
+                <Img src="/images/ui/UI_RelicIcon_{s.set[1].id}_4.webp" alt={t(s.set[1].nameTextMapHash ?? 0)} />
                 {@render label(s.set[1].piece)}
               </div>
             </div>
@@ -84,7 +84,7 @@ $effect(() => {
       <div tabindex="-1" class="dropdown-content bg-neutral rounded-lg w-max max-w-[200%] z-10 px-3 py-2 text-sm shadow-background">
         {#each s.set as set}
           <div>{t(set.nameTextMapHash ?? 0)}</div>
-          <HoyoWiki class="text-link" {lang} wikiId={set.wikiId} />
+          <HoyoWiki class="text-link" {lang} wikiId={set.wikiId} aria-label={t(set.nameTextMapHash ?? 0)} />
         {/each}
       </div>
     </div>

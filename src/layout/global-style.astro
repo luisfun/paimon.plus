@@ -52,10 +52,7 @@
     -moz-appearance:textfield;
   }
   .collapse:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .collapse-title) > .svg-down {
-    display: none;
-  }
-  .collapse:not(.collapse-close) > :where(input[type="checkbox"]:checked ~ .collapse-title) > .svg-up {
-    display: block;
+    transform: rotate(180deg);
   }
   .shadow-background {
     box-shadow: 0 0 .5rem var(--background);

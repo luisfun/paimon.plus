@@ -13,7 +13,7 @@ import Character from './character.svelte'
 import ChartBar from './chart-bar.svelte'
 import ChartStacked from './chart-stacked.svelte'
 
-const INIT_ACHIEVEMENT = 700
+const INIT_ACHIEVEMENT = 800
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)

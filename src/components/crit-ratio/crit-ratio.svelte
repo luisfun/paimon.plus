@@ -39,10 +39,10 @@ onMount(() => {
   const typePram = params.get('type')
   // @ts-expect-error
   type = selectType.includes(typePram) ? typePram : 'ATK'
-  base = Number(params.get('base'))
-  add = Number(params.get('add'))
-  cr = Number(params.get('cr'))
-  cd = Number(params.get('cd'))
+  base = Number(params.get('base')) || undefined
+  add = Number(params.get('add')) || undefined
+  cr = Number(params.get('cr')) || undefined
+  cd = Number(params.get('cd')) || undefined
 })
 
 $effect(() => {

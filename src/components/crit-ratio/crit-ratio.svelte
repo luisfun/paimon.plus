@@ -4,6 +4,7 @@ import CritRatioChart from '@components/crit-ratio-chart.svelte'
 import CritRatioNote from '@components/crit-ratio-note.svelte'
 import { type NoteArr, avg } from '@components/crit-ratio-utils'
 import { type Lang, useTranslations } from '@i18n/utils'
+import { onMount } from 'svelte'
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
@@ -32,6 +33,17 @@ const onclick = () => {
     })
   }
 }
+
+onMount(() => {
+  const params = new URLSearchParams(window.location.search)
+  const typePram = params.get('type')
+  // @ts-expect-error
+  type = selectType.includes(typePram) ? typePram : 'ATK'
+  base = Number(params.get('base'))
+  add = Number(params.get('add'))
+  cr = Number(params.get('cr'))
+  cd = Number(params.get('cd'))
+})
 
 $effect(() => {
   if (!noteArr[0]) checked = true

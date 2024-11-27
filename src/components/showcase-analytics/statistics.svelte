@@ -17,6 +17,7 @@ const INIT_ACHIEVEMENT = 700
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
+const en = useTranslations('en')
 
 let isInitLoading = $state(true)
 let res = $state<{ json: StatisticsRemapped | undefined; status: number }>({ json: undefined, status: 0 })
@@ -43,7 +44,8 @@ onMount(() =>
   Promise.all([
     (async () => {
       res = await fetchStatistics()
-      avatarInfo = res.json?.avatarInfoList[0]
+      const name = new URLSearchParams(window.location.search).get('c')
+      avatarInfo = res.json?.avatarInfoList.find(e => name === en(e.avatarId, 'avatar')) ?? res.json?.avatarInfoList[0]
       isInitLoading = false
     })(),
     (async () => {

@@ -157,7 +157,7 @@ const saveShowcase = async (env: Env, uid: number, json: ApiData, uids: number[]
     db.prepare('DELETE FROM cache_uid WHERE updated_at < ?').bind(timestamp - 180_000),
   ])
   // save
-  if (!uids?.includes(uid)) return
+  //if (!uids?.includes(uid)) return
   //********************************
 }
 

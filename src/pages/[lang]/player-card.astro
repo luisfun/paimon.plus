@@ -1,0 +1,29 @@
+---
+import Collapse from '@components/collapse.svelte'
+import ExternalA from '@components/external-a.svelte'
+import { data } from '@components/player-card/data'
+import Generator from '@components/player-card/generator.svelte'
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+
+const xIds = [...new Set(data.filter(e => e.toolId).map(e => e.x))]
+---
+
+<Layout title={t("player-card.title")}>
+  <Generator {lang} />
+  <Collapse title={t("player-card.credit")} arrow>
+    <div class="grid gap-2 sm:gap-0 grid-cols-1 sm:grid-cols-2">
+      <div>
+        <div class="text-xl mb-2">{t("player-card.templates")}</div>
+        {xIds.map(id => <ExternalA class="block text-link" href={`https://x.com/${id}`} aria-label={id}>@{id}</ExternalA>)}
+      </div>
+      <div>
+        <div class="text-xl mb-2">{t("player-card.fonts")}</div>
+      </div>
+    </div>
+  </Collapse>
+</Layout>

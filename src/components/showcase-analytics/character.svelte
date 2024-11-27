@@ -21,7 +21,7 @@ const t = useTranslations(lang)
 {#if avatarInfo.travelerElement}
   {#each avatarInfo.travelerElement as e}
     <div class="relative w-[calc(100%/7)] px-1">
-      <Img class="border-2 rounded-full bg-neutral w-full" style="border-color: {elementColor(e.element, true)};" src={src("element", e.element)} alt={e.element} />
+      <Img class="border-2 rounded-full bg-neutral w-full aspect-square" style="border-color: {elementColor(e.element, true)};" src={src("element", e.element)} alt={e.element} />
       {@render per(e.display, true)}
     </div>
   {/each}
@@ -29,7 +29,7 @@ const t = useTranslations(lang)
   {#each avatarInfo.talentIcons as t, i}
   <div class="w-[calc(100%/7)] px-1">
     <div class="relative">
-      <Img class="border-2 rounded-full bg-neutral w-full" style="border-color: {elementColor(avatarInfo.element, true)};" src={src("ui", t.icon)} alt="c{i}" />
+      <Img class="border-2 rounded-full bg-neutral w-full aspect-square" style="border-color: {elementColor(avatarInfo.element, true)};" src={src("ui", t.icon)} alt="c{i}" />
       {@render label(`c${i}`, elementColor(avatarInfo.element))}
     </div>
     {@render per(t.display, true)}
@@ -47,7 +47,7 @@ const t = useTranslations(lang)
 <div class="mt-2 flex justify-center">
   {#each avatarInfo.skills as s}
     <div class="relative w-1/6 px-2">
-      <Img class="border-2 rounded-full bg-neutral w-full" style="border-color: {elementColor(avatarInfo.element, true)};" src={src("ui", s.icon)} alt={s.icon} />
+      <Img class="border-2 rounded-full bg-neutral w-full aspect-square" style="border-color: {elementColor(avatarInfo.element, true)};" src={src("ui", s.icon)} alt={s.icon} />
       {@render label("display" in s ? s.display : "", elementColor(avatarInfo.element))}
     </div>
   {/each}

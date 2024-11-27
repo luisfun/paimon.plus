@@ -1,4 +1,5 @@
 ---
+import Collapse from '@components/collapse.svelte'
 import ExternalA from '@components/external-a.svelte'
 import Guide from '@components/home/guide.svelte'
 import Nav from '@components/home/nav.svelte'
@@ -30,27 +31,17 @@ const thx = {
 	<div>
 		<Guide client:load {lang} />
 	</div>
-	<div class="collapse collapse-arrow bg-neutral">
-		<input type="checkbox" class="min-h-12" aria-label={t("home.thanks")} />
-		<div class="collapse-title min-h-12">{t("home.thanks")}</div>
-		<div class="collapse-content text-base">
-			{(Object.keys(thx) as (keyof typeof thx)[]).map(key => (
-				<div class="mt-6 mb-3 first:mt-3">{t(key)}</div>
-				<>
-					{thx[key].map(e => (
-						<div>
-							{e[1] ? <ExternalA class="text-link" href={e[1]} aria-label={e[0]}>{e[0]}</ExternalA> : e[0]}
-							— {e[2]}
-						</div>
-					))}
-				</>
-			))}
-		</div>
-	</div>
+	<Collapse title={t("home.thanks")} arrow>
+		{(Object.keys(thx) as (keyof typeof thx)[]).map(key => (
+			<div class="mt-6 mb-3 first:mt-3">{t(key)}</div>
+			<>
+				{thx[key].map(e => (
+					<div>
+						{e[1] ? <ExternalA class="text-link" href={e[1]} aria-label={e[0]}>{e[0]}</ExternalA> : e[0]}
+						— {e[2]}
+					</div>
+				))}
+			</>
+		))}
+	</Collapse>
 </Layout>
-
-<style>
-	.collapse-arrow > .collapse-title:after{
-		top: 1.55rem;
-	}
-</style>

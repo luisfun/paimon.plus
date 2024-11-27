@@ -116,8 +116,12 @@ export const ui = {
     'wish-banner.obsolete':
       'I discontinued updates for characters other than 5-star ones because it was too troublesome.',
     // player-card
-    'player-card-templates.title': 'Player Card Templates',
+    'player-card.title': 'Player Card Generator',
     'player-card.creator': 'Creator',
+    'player-card.credit': 'Credit',
+    'player-card.templates': 'Templates',
+    'player-card.fonts': 'Fonts',
+    'player-card-templates.title': 'Player Card Templates',
     // stat
     'Base ATK': 'Base ATK',
     HP: 'HP',

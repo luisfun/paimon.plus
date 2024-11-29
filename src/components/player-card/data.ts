@@ -52,6 +52,7 @@ export const data: {
   }[]
   custom?: {
     list: string[]
+    offset?: number[]
     offsetList?: string[]
   }
 }[] = [
@@ -80,11 +81,11 @@ export const data: {
       },
     ],
     custom: {
-      //values: [890, 0],
       list: avatarJson
         .map(e => en(e.id, 'avatar'))
         .filter(e => fukafukafuka29List.includes(e))
         .concat('Aether', 'Lumine', 'Paimon', 'Dainsleif'),
+      offset: [890, 0],
       offsetList: [
         'Shenhe',
         'Arataki Itto',

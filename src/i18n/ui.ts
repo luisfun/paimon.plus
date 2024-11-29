@@ -121,6 +121,7 @@ export const ui = {
     'player-card.title': 'Player Card Generator',
     'player-card.change': 'Change Template',
     'player-card.creator': 'Creator',
+    'player-card.hint': 'Tap on a template to edit it.',
     'player-card.credit': 'Credit',
     'player-card.templates': 'Templates',
     'player-card.fonts': 'Fonts',

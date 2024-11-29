@@ -110,7 +110,7 @@ export const ui = {
     'statistics.stats': 'Median Stats',
     'statistics.population': 'The users of this page are the statistical population.',
     // team-builder
-    "team-builder.title": "Team Builder",
+    'team-builder.title': 'Team Builder',
     // wish-banner
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',
@@ -119,6 +119,7 @@ export const ui = {
       'I discontinued updates for characters other than 5-star ones because it was too troublesome.',
     // player-card
     'player-card.title': 'Player Card Generator',
+    'player-card.change': 'Change Template',
     'player-card.creator': 'Creator',
     'player-card.credit': 'Credit',
     'player-card.templates': 'Templates',

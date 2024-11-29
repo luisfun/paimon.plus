@@ -109,6 +109,8 @@ export const ui = {
     'statistics.talent': 'Median Talent Level',
     'statistics.stats': 'Median Stats',
     'statistics.population': 'The users of this page are the statistical population.',
+    // team-builder
+    "team-builder.title": "Team Builder",
     // wish-banner
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',

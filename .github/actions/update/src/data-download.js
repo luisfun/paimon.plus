@@ -44,20 +44,20 @@ const gitlabFileName = [
 
 export const dataDownload = async () => {
   console.log('Data Download Start')
-  await Promise.all(
-    gitlabFileName.map(async name => {
+  await Promise.all([
+    ...gitlabFileName.map(async name => {
       const url = `${gitlabUrl}ExcelBinOutput%2F${name}%2Ejson/raw`
       const response = await fetch(url)
       const json = await response.json()
-      fs.writeFileSync(`${folder.data + name}.json`, JSON.stringify(json, null, 2))
+      await fs.promises.writeFile(`${folder.data + name}.json`, JSON.stringify(json, null, 2))
     }),
-    languages.map(async lang => {
+    ...languages.map(async lang => {
       const name = `TextMap${lang}`
       const url = `${gitlabUrl}TextMap%2F${name}%2Ejson/raw`
       const response = await fetch(url)
       const json = await response.json()
-      fs.writeFileSync(`${folder.text + name}.json`, JSON.stringify(json, null, 2))
+      await fs.promises.writeFile(`${folder.text + name}.json`, JSON.stringify(json, null, 2))
     }),
-  )
+  ])
   console.log('Data Download End')
 }

@@ -1,8 +1,8 @@
 <script lang="ts">
+// non // client:load
 import ExternalA from '@components/external-a.svelte'
 import More from '@components/more.svelte'
 import { type Lang, useTranslatedPath, useTranslations } from '@i18n/utils'
-// client:load
 import { navLink, officialLink } from './nav-data'
 import NavSvg from './nav-svg.svelte'
 
@@ -11,7 +11,7 @@ const t = useTranslations(lang)
 const translatePath = useTranslatedPath(lang)
 
 const dummy = 'data:image/gif;base64,R0lGODlhAQABAGAAACH5BAEKAP8ALAAAAAABAAEAAAgEAP8FBAA7'
-let isLoading = $state(false)
+let isLoading = $state(true) //$state(false)
 
 const onclick = () => {
   isLoading = true
@@ -37,7 +37,7 @@ const onclick = () => {
     <div class="grid grid-cols-3 gap-y-8">
       {#each officialLink as link}
         <ExternalA href={`${link.href + (link.img==="checkin"? "&" : "?")}lang=${lang}`}>
-          <img class="max-w-28 w-full mx-auto mb-3 px-7" src={isLoading ? `/images/official/${link.img}.webp` : dummy} alt={link.img} />
+          <img loading="lazy" fetchPriority="low" class="max-w-28 w-full mx-auto mb-3 px-7" src={isLoading ? `/images/official/${link.img}.webp` : dummy} alt={link.img} />
           <div class="text-center">{t(link.text)}</div>
         </ExternalA>
       {/each}

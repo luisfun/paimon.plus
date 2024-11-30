@@ -171,8 +171,9 @@ class XCanvasWorker {
   render(root) {
     const pos = { x: 0, y: 0, z: 0, w: this.#canvas.width, h: this.#canvas.height };
     this.#structure = { pos, elem: root, inner: this.#recuStructure(pos, root) };
-    if (this.#isFontReady) this.#draw();
-    else
+    this.#draw();
+    this.#load();
+    if (!this.#isFontReady)
       this.#fontFace?.load().then(() => {
         if (self.fonts.check(`${this.#fontSize}px ${this.#fontFamily}`)) {
           this.#isFontReady = true;
@@ -180,7 +181,6 @@ class XCanvasWorker {
           this.#draw();
         }
       });
-    this.#load();
   }
   /*
    * Analysis of Structure

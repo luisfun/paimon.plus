@@ -11,6 +11,8 @@ import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
 
+const UID_FETTH_INHIBIT_TIME = 10 * 60 * 1000 // 10m
+
 let { lang, apiData = $bindable() }: { lang: Lang; apiData: ApiData | undefined } = $props()
 const t = useTranslations(lang)
 
@@ -54,7 +56,8 @@ onMount(async () => {
   const lsUid = localStorage.getItem('uid')
   const uid = lsUid ? Number(lsUid) : undefined
   await clickHandler(uid, 'cache')
-  await clickHandler(uid, import.meta.env.DEV ? 'cache' : undefined)
+  if (!apiData?.timestamp || apiData.timestamp + UID_FETTH_INHIBIT_TIME < Date.now())
+    await clickHandler(uid, import.meta.env.DEV ? 'cache' : undefined)
   isInitLoading = false
 })
 </script>

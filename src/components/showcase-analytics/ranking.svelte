@@ -25,30 +25,24 @@ const c6 = avatarInfoList
 const per = (num: number) => (num * 100).toFixed(num < 0.1 ? 1 : 0)
 </script>
 
-{#snippet iconButtons(list: {avatarId: number; num: number}[], percent?: boolean)}
-  <div class="grid gap-4 grid-cols-5 md:grid-cols-10 mt-4">
-    {#each list as icon}
-      <button onclick={() => onSelect(icon.avatarId)}>
-        <img loading="lazy" fetchpriority="low" {...avatarProps(icon.avatarId)} />
-        <div class="text-center text-base">
-          {percent ? per(icon.num) : icon.num}{#if percent}<span class="text-xs text-text-sub">%</span>{/if}
-        </div>
-      </button>
-    {/each}
+{#snippet tab(title: string, list: {avatarId: number; num: number}[], percent?: boolean, checked?: boolean)}
+  <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label={title} {checked} />
+  <div role="tabpanel" class="tab-content">
+    <div class="grid gap-4 grid-cols-5 md:grid-cols-10 mt-4">
+      {#each list as icon}
+        <button onclick={() => onSelect(icon.avatarId)}>
+          <img loading="lazy" fetchpriority="low" {...avatarProps(icon.avatarId)} />
+          <div class="text-center text-base">
+            {percent ? per(icon.num) : icon.num}{#if percent}<span class="text-xs text-text-sub">%</span>{/if}
+          </div>
+        </button>
+      {/each}
+    </div>
   </div>
 {/snippet}
 
 <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-3">
-  <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label={t("statistics.tab.users")} checked />
-  <div role="tabpanel" class="tab-content">
-    {@render iconButtons(users)}
-  </div>
-  <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label={t("statistics.tab.c0")} />
-  <div role="tabpanel" class="tab-content">
-    {@render iconButtons(c0, true)}
-  </div>
-  <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label={t("statistics.tab.c6")} />
-  <div role="tabpanel" class="tab-content">
-    {@render iconButtons(c6, true)}
-  </div>
+  {@render tab(t("statistics.tab.users"), users, false, true)}
+  {@render tab(t("statistics.tab.c0"), c0, true)}
+  {@render tab(t("statistics.tab.c6"), c6, true)}
 </div>

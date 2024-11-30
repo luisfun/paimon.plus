@@ -89,7 +89,7 @@ const weaponHandler = (id: number) => {
 </div>
 <Dialog bind:dialog maxFixed visible={isAvatarLoading}>
   <div role="tablist" class="tabs tabs-lg tabs-bordered grid-cols-2">
-    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-text-sub !border-b-4 checked:text-text checked:bg-neutral checked:!border-primary" aria-label={t("game.characters")} checked />
+    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label={t("game.characters")} checked />
     <div role="tabpanel" class="tab-content">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 my-3">
         <div class="grid grid-cols-7 gap-3 mx-auto">
@@ -117,7 +117,7 @@ const weaponHandler = (id: number) => {
         onclick={avatarHandler}
       />
     </div>
-    <input type="radio" name="my_tabs_1" role="tab" class="tab w-1/2 text-text-sub !border-b-4 checked:text-text checked:bg-neutral checked:!border-primary border-b-4" aria-label={t("game.weapons")} onclick={weaponLoadHandler} />
+    <input type="radio" name="my_tabs_1" role="tab" class="tab" aria-label={t("game.weapons")} onclick={weaponLoadHandler} />
     <div role="tabpanel" class="tab-content">
       {#if isWeaponLoading}
       <div class="grid grid-cols-1 gap-y-3 my-3">

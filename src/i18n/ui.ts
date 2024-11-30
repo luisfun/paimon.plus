@@ -108,6 +108,10 @@ export const ui = {
     'statistics.select-character': 'Select Character',
     'statistics.talent': 'Median Talent Level',
     'statistics.stats': 'Median Stats',
+    'statistics.ranking': 'Ranking',
+    'statistics.tab.users': 'Users',
+    'statistics.tab.c0': '5☆ - c0',
+    'statistics.tab.c6': '5☆ - c6',
     'statistics.population': 'The users of this page are the statistical population.',
     // team-builder
     'team-builder.title': 'Team Builder',

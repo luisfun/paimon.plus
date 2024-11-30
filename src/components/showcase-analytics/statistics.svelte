@@ -12,6 +12,7 @@ import { onMount } from 'svelte'
 import Character from './character.svelte'
 import ChartBar from './chart-bar.svelte'
 import ChartStacked from './chart-stacked.svelte'
+import Ranking from './ranking.svelte'
 
 const INIT_ACHIEVEMENT = 800
 
@@ -116,6 +117,10 @@ onMount(() =>
     <ChartStacked array={res.json.playerInfo.towerFloorIndex} />
     <div class="text-center font-bold mt-12">{t("statistics.theater")}</div>
     <ChartStacked array={res.json.playerInfo.theaterActIndex} />
+  </div>
+  <div class="md:col-span-2">
+    <div class="text-2xl font-bold">{t("statistics.ranking")}</div>
+    <Ranking {lang} avatarInfoList={res.json.avatarInfoList} {onSelect} />
   </div>
 </div>
 {:else}

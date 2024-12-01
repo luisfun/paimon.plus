@@ -66,13 +66,17 @@ const remap = (json: Statistics) => {
     })
     .sort((a, b) => {
       if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
-      if (a.avatarId === 10000005 || a.avatarId === 10000007) return -1
-      if (a.qualityType === 'QUALITY_PURPLE' && b.qualityType === 'QUALITY_ORANGE') return -1
-      if (a.qualityType === 'QUALITY_ORANGE' && b.qualityType === 'QUALITY_PURPLE') return 1
-      return 0
+      if (a.qualityType === b.qualityType) return 0
+      return a.qualityType < b.qualityType ? 1 : -1 // QUALITY_PURPLE -> QUALITY_ORANGE
     })
     .reverse()
-  return { ...json, avatarInfoList }
+  return {
+    ...json,
+    avatarInfoList: [
+      ...avatarInfoList.filter(e => e.avatarId !== 10000005 && e.avatarId !== 10000007),
+      ...avatarInfoList.filter(e => e.avatarId === 10000005 || e.avatarId === 10000007),
+    ],
+  }
 }
 
 const get_character_stats = (a: StatisticsAvatar) => {

@@ -1,10 +1,27 @@
-export const avatar: Avatar[] = [
+export const avatar: {
+  name: Name
+  elem?: Elem
+  score: [number, number, number, number] // main, sub, support, healer
+  burstDep?: number // 爆発依存度 40,60,80族 -> 1,2,3 くらい
+  dmg?: Dmg[] // main, sub のダメージタイプ
+  stat?: Stat[] // main, sub のダメージのステータスタイプ
+  explor?: Explor
+  coop?: {
+    score: number
+    add?: (Member | Member[])[] // 全て加算
+    or?: (Member | Member[])[] // いずれか
+  }[]
+  filter: {
+    score: number
+    roll: Roll
+  }
+}[] = [
   {
     name: 'Kamisato Ayaka',
     score: [4, 3, 0, 0],
     burstDep: 3,
     dmg: ['burst'],
-    stat: ["ATK"],
+    stat: ['ATK'],
     filter: {
       score: 4,
       roll: 'main',
@@ -16,7 +33,7 @@ type Name = string
 type Roll = 'main' | 'sub' | 'support' | 'healer'
 type Elem = '4elem' | 'Pyro' | 'Hydro' | 'Cryo' | 'Electro' | 'Dendro' | 'Anemo' | 'Geo'
 type Dmg = 'normal' | 'charge' | 'plunge' | 'skill' | 'burst'
-type Stat = "HP" | "ATK" | "DEF"
+type Stat = 'HP' | 'ATK' | 'DEF'
 type Scope = {
   roll?: Roll[]
   elem?: Elem[]
@@ -26,6 +43,7 @@ type Scope = {
 }
 type Member = Name | Scope
 type Explor = ['run' | 'run-speed' | 'run-stamina' | 'climb' | 'boat' | 'fly', number]
+/*
 type Avatar = {
   name: Name
   elem?: Elem
@@ -44,3 +62,4 @@ type Avatar = {
     roll: Roll
   }
 }
+*/

@@ -17,7 +17,7 @@ const t = useTranslations(lang)
   <div class="text-center" class:mt-1={mt}>{num}<span class="text-xs text-text-sub">%</span></div>
 {/snippet}
 
-<div class="mt-6 flex">
+<div class="mt-6 flex justify-center">
 {#if avatarInfo.travelerElement}
   {#each avatarInfo.travelerElement as e}
     <div class="relative w-[calc(100%/7)] px-1">

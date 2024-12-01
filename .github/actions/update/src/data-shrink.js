@@ -115,9 +115,8 @@ const dumpAvatar = () => {
     a
       .sort((a, b) => {
         if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
-        if (a.qualityType === 'QUALITY_PURPLE' && b.qualityType === 'QUALITY_ORANGE') return -1
-        if (a.qualityType === 'QUALITY_ORANGE' && b.qualityType === 'QUALITY_PURPLE') return 1
-        return 0
+        if (a.qualityType === b.qualityType) return 0
+        return a.qualityType < b.qualityType ? 1 : -1 // QUALITY_PURPLE -> QUALITY_ORANGE
       })
       .reverse(),
   )

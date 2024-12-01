@@ -110,7 +110,7 @@ onMount(() =>
         {:else}
         <div>{t("statistics.achievement.you")}</div>
         {/if}
-        <input type="number" class="input text-2xl w-2/3 h-10" bind:value={achievement} aria-label="Your Achievement" />
+        <input type="number" class="input text-2xl w-2/3 h-10 pl-0 text-center" bind:value={achievement} aria-label="Your Achievement" />
       </div>
     </div>
     <div class="text-center font-bold mt-12">{t("statistics.abyss")}</div>

@@ -11,7 +11,7 @@ const t = useTranslations(lang)
 const en = useTranslations('en')
 
 const initOwnedNames = ['Traveler', 'Amber', 'Kaeya', 'Lisa', 'Barbara', 'Noelle']
-let owned = $state(avatar)//avatar.filter(e => initOwnedNames.includes(e.name)))
+let owned = $state(avatar) //avatar.filter(e => initOwnedNames.includes(e.name)))
 
 const avatarClick = (name: Name, elem: Elem | undefined) => {
   const eq = (e: Avatar) => e.name === name && e.elem === elem

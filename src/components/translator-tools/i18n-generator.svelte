@@ -1,4 +1,5 @@
 <script lang="ts">
+// client:load
 import { ui } from '@i18n/ui'
 import { type Lang, useTranslations } from '@i18n/utils'
 

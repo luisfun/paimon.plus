@@ -1,5 +1,4 @@
 <script lang="ts">
-// client:only="svelte"
 import Collapse from '@components/collapse.svelte'
 import Dialog from '@components/dialog.svelte'
 import ExternalA from '@components/external-a.svelte'

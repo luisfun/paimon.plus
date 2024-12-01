@@ -1,6 +1,6 @@
 <script lang="ts">
-import { type StatisticsRemapped, fetchStatistics } from '@components/api-statistics'
 // client:only="svelte"
+import { type StatisticsRemapped, fetchStatistics } from '@components/api-statistics'
 import { avatarRemap } from '@components/api-uid'
 import type { ApiData, AvatarInfo } from '@components/api-uid-types'
 import CritRatioChart from '@components/crit-ratio-chart.svelte'

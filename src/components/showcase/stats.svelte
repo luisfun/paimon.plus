@@ -7,10 +7,9 @@ import { defineSub, defineToName } from '@components/showcase-utils'
 import Svg from '@components/svg.svelte'
 import { type Lang, useTranslatedPath, useTranslations } from '@i18n/utils'
 import { imageDownload } from '@luisfun/x-canvas'
-import DefaultMarks from '@manual/showcase-default-marks'
+import { marks } from '@manual/showcase-default-marks'
 import StatsCard from './stats-card.svelte'
-const initSub = (id: number | undefined) =>
-  DefaultMarks[useTranslations('en')(id || -1, 'avatar') as keyof typeof DefaultMarks] || DefaultMarks.default
+const initSub = (id: number | undefined) => marks[useTranslations('en')(id || -1, 'avatar')] ?? marks.default
 
 const {
   lang,

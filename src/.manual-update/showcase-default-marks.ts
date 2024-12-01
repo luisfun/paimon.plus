@@ -1,8 +1,7 @@
 import type { defineSub } from '@components/showcase-utils'
 
-const marks = {
+export const marks: Record<string, (typeof defineSub)[number][]> = {
   'Kamisato Ayaka': ['ATK', 'CRIT'],
   Aloy: ['ATK', 'CRIT'],
   default: ['CRIT'],
 }
-export default marks as Record<keyof typeof marks, (typeof defineSub)[number][]>

@@ -1,4 +1,4 @@
-export const statFocus = {
+export const statFocus: Record<string, 'none' | 'HP' | 'ATK' | 'DEF'> = {
   Sigewinne: 'HP',
   Chiori: 'none',
   Furina: 'HP',
@@ -15,7 +15,7 @@ export const statFocus = {
   'Kuki Shinobu': 'HP',
   'Yun Jin': 'none',
   Noelle: 'none',
-} as Record<string, 'none' | 'HP' | 'ATK' | 'DEF'>
+}
 
 /*
 export const statFocus = [

@@ -21,6 +21,7 @@
     "@astrojs/tailwind": "^5.1.2",
     "@biomejs/biome": "1.9.4",
     "@cloudflare/workers-types": "^4.20241127.0",
+    "@codianz/typed-worker": "^0.0.12",
     "@luisfun/x-canvas": "^0.0.17",
     "astro": "^4.16.16",
     "astro-webmanifest": "^1.0.0",

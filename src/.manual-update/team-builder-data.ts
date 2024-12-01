@@ -93,7 +93,7 @@ export const avatar: Avatar[] = [
     name: 'Ororon',
     score: [0, 1, 0, 0],
     coop: [
-      { score: 1, or: [{ roll: ['main'], stat: ['ATK'] }, { elem: ['Hydro'] }, { elem: ['Electro'] }] },
+      { score: 1, add: [{ elem: ['Hydro'] }] },
       { score: 2, add: [{ roll: ['main'], elem: ['Anemo', 'Cryo', 'Dendro', 'Geo', 'Hydro', 'Pyro'] }] },
     ],
   },

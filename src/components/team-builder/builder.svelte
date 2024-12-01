@@ -11,7 +11,7 @@ const t = useTranslations(lang)
 const en = useTranslations('en')
 
 const initOwnedNames = ['Traveler', 'Amber', 'Kaeya', 'Lisa', 'Barbara', 'Noelle']
-let owned = $state(avatar.filter(e => initOwnedNames.includes(e.name)))
+let owned = $state(avatar)//avatar.filter(e => initOwnedNames.includes(e.name)))
 
 const avatarClick = (name: Name, elem: Elem | undefined) => {
   const eq = (e: Avatar) => e.name === name && e.elem === elem
@@ -27,11 +27,11 @@ const avatarClick = (name: Name, elem: Elem | undefined) => {
   <div>けっか</div>
   <div>
     <div class="mb-4">{t("team-builder.owned")}</div>
-    <div class="grid grid-cols-6 gap-2">
+    <div class="grid grid-cols-6 gap-3 mx-1">
       {#each avatar as a}
         {@const id = avatarJson.find(e => en(e.id, "avatar") === a.name)?.id}
         <button onclick={() => avatarClick(a.name, a.elem)} aria-label={a.name}>
-          <img {...avatarProps(id ?? -1, undefined, owned.find(e => e.name === a.name && e.elem === a.elem) ? "outline outline-primary outline-offset-4" : "opacity-50")} />
+          <img {...avatarProps(id ?? -1, undefined, owned.find(e => e.name === a.name && e.elem === a.elem) ? "outline outline-primary outline-offset-2" : "opacity-50")} />
         </button>
       {/each}
     </div>

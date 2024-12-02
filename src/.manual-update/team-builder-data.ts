@@ -94,11 +94,12 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Furina',
-    score: [0, 6, 4, 0],
+    score: [0, 5, 4, 0],
     burstDep: 2,
     dmg: ['skill'],
     stat: ['HP'],
     explor: ['boat', 3],
+    coop: [{ score: 1, add: ['Sigewinne', 'Baizhu', 'Sangonomiya Kokomi', 'Jean', 'Charlotte', 'Yaoyao', 'Barbara'] }],
   },
   {
     name: 'Wriothesley',

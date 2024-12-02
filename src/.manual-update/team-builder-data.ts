@@ -149,9 +149,11 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Nahida',
-    score: [0, 6, 0, 0],
+    score: [0, 4, 0, 0],
     dmg: ['skill'],
     stat: ['EM'],
+    coop: [{ score: 2, add: [{ roll: ['main', 'sub'], elem: ['4elem'] }] }],
+    filter: { score: 6, roll: 'sub' },
   },
   {
     name: 'Nilou',

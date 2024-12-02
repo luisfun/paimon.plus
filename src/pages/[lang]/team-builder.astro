@@ -8,6 +8,6 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<Layout title={t("team-builder.title")}>
+<Layout title={t("team-builder.title")} minHFull>
   <Builder client:only="svelte" {lang} />
 </Layout>

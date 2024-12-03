@@ -7,8 +7,6 @@ import { avatar as buildData } from '@manual/team-builder-data'
 import type { Elem } from './types'
 import { singleTeam } from './worker-single'
 
-const SEPARATOR = ';'
-
 const en = useTranslations('en')
 const elemMap: Record<string, Elem> = {
   Fire: 'Pyro',
@@ -27,12 +25,13 @@ const avatar = buildData
     newA.elem = elemMap[find.element]
     return newA
   })
-  .map(a => ({ ...a, id: a.name + SEPARATOR + a.elem }))
+  .map(a => ({ ...a, id: `${a.name}:${a.elem}` })) // :でnameとelemを合わせる
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
 
 const initNames = ['Traveler', 'Amber', 'Kaeya', 'Lisa', 'Barbara', 'Noelle']
+let favoriteIds = $state<string[]>([])
 let ownedIds = $state(avatar.map(e => e.id)) //avatar.filter(e => initNames.includes(e.name)).map(e => e.id))
 const ownedList = $derived(avatar.filter(e => ownedIds.includes(e.id)))
 
@@ -41,8 +40,7 @@ const avatarClick = (id: string) => {
 }
 
 $effect(() => {
-  console.log(ownedList)
-  singleTeam(ownedList, undefined)
+  singleTeam(ownedList, ['Amber:Pyro', "Yae Miko:Electro"], undefined)
 })
 </script>
 

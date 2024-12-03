@@ -9,7 +9,7 @@ type CalcScoreFunc = (
 ) => void
 
 export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globalParam: undefined) => {
-  const PREPROCESS_LIMIT = 15
+  const ROLL_LIMIT = 15
   const RESULT_LIMIT = 10
 
   ////////////////////////////// 組み合わせロジック //////////////////////////////
@@ -35,7 +35,7 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
       )
       .map(e => e.id),
   )
-  for (const ids of sortedIdMap) if (PREPROCESS_LIMIT < ids.length) ids.length = PREPROCESS_LIMIT
+  for (const ids of sortedIdMap) if (ROLL_LIMIT < ids.length) ids.length = ROLL_LIMIT
   const filteredIds = [...new Set([...sortedIdMap.flat(), ...favoriteIds])]
 
   // 計算に使うリスト

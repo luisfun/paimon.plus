@@ -9,7 +9,7 @@ export const singleTeam = (ownedList: AvatarData[], globalParam: undefined) => {
 
   // 計算量削減
   const sortedIdMap = ['main', 'sub', 'support', 'healer'].map((roll, i) =>
-    ownedList
+    [...ownedList]
       .sort(
         (a, b) =>
           (b.filter?.roll === roll ? b.filter.score : b.score[i]) -

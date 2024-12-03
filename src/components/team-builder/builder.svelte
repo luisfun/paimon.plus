@@ -34,7 +34,7 @@ const t = useTranslations(lang)
 
 const initNames = ['Traveler', 'Amber', 'Kaeya', 'Lisa', 'Barbara', 'Noelle']
 let ownedIds = $state(avatar.map(e => e.id)) //avatar.filter(e => initNames.includes(e.name)).map(e => e.id))
-const ownedList = $derived(avatar.filter(e => ownedIds.includes(e.id))) // !!!!!!!!!!!!! バグ: 順序が維持されない
+const ownedList = $derived(avatar.filter(e => ownedIds.includes(e.id)))
 
 const avatarClick = (id: string) => {
   ownedIds = ownedIds.includes(id) ? ownedIds.filter(e => e !== id) : [...ownedIds, id]

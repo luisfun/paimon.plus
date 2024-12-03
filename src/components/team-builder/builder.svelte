@@ -41,6 +41,7 @@ const avatarClick = (id: string) => {
 }
 
 $effect(() => {
+  console.log(ownedList)
   singleTeam(ownedList, undefined)
 })
 </script>

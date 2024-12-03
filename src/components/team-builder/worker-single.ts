@@ -3,13 +3,13 @@ import type { Avatar } from './types'
 type AvatarData = Avatar & { id: string; avatarId: number | undefined }
 type ScoreData = { data: AvatarData[]; explorScore: number; domainScore: number }
 
-export const singleTeam = (inputList: AvatarData[], globalParam: undefined) => {
+export const singleTeam = (ownedList: AvatarData[], globalParam: undefined) => {
   const PREPROCESS_LIMIT = 15
   const RESULT_LIMIT = 10
 
   // 計算量削減
   const sortedIdMap = ['main', 'sub', 'support', 'healer'].map((roll, i) =>
-    inputList
+    ownedList
       .sort(
         (a, b) =>
           (b.filter?.roll === roll ? b.filter.score : b.score[i]) -
@@ -20,7 +20,7 @@ export const singleTeam = (inputList: AvatarData[], globalParam: undefined) => {
   for (const ids of sortedIdMap) if (PREPROCESS_LIMIT < ids.length) ids.length = PREPROCESS_LIMIT
   const filteredIds = [...new Set(sortedIdMap.flat())]
   // 実際に計算に使うリスト
-  const list = inputList.filter(e => filteredIds.includes(e.id))
+  const list = ownedList.filter(e => filteredIds.includes(e.id))
 
   // 総当たり計算
   const resultMap = new Map<string[], ScoreData>() // key: ids

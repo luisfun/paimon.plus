@@ -88,7 +88,7 @@ $effect(() => {
   <div
     class="flex flex-nowrap overflow-x-auto scrollbar-hidden{isList ? "" : " px-3"} lg:px-12"
     bind:this={scrollElement}
-    onwheel={e => wheelHandler(e)}
+    onwheel={wheelHandler}
   >
     {#if isList}
       <button class="relative flex-none w-12 h-12 my-auto mx-3 menu-outline rounded-full" onclick={onModal} aria-label="character list">
@@ -131,9 +131,6 @@ $effect(() => {
   }
   .list-bg-right {
     background: linear-gradient(to left, var(--background) calc(100% - 4rem), transparent);
-  }
-  .scrollbar-hidden {
-    scrollbar-width: none;
   }
   .scrollbar-hidden::-webkit-scrollbar {
     display: none;

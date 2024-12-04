@@ -99,8 +99,8 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
   // 計算と結果
   const result = totalHit(calcScore)
   const maxScore = {
-    explor: Math.max(...result.map(e => e.explorScore)),
-    domain: Math.max(...result.map(e => e.domainScore)),
+    explor: result.map(e => e.explorScore).reduce((a, b) => Math.max(a, b), Number.NEGATIVE_INFINITY),
+    domain: result.map(e => e.domainScore).reduce((a, b) => Math.max(a, b), Number.NEGATIVE_INFINITY),
   }
   // explor
   let explorScoreList: ScoreData[] = []

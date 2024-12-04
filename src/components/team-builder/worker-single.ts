@@ -2,11 +2,7 @@ import type { Avatar } from './types'
 
 type AvatarData = Avatar & { id: string; avatarId: number | undefined }
 type ScoreData = { data: AvatarData[]; explorScore: number; domainScore: number }
-type CalcScoreFunc = (
-  data: AvatarData[],
-  map: Map<string, ScoreData>,
-  maxScore: { explor: number; domain: number },
-) => void
+type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 
 export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globalParam: undefined) => {
   const ROLL_LIMIT = 15
@@ -53,7 +49,6 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
   // 総当たり計算
   const totalHit = (calcScore: CalcScoreFunc) => {
     const resultMap = new Map<string, ScoreData>() // key: ids
-    const maxScore = { explor: 0, domain: 0 }
     const isZero = (roll: AvatarData, index: number[]) => index.every(i => roll.score[i] === 0) // ゼロスコア排除
     const hasIds = (data: AvatarData[], roll: AvatarData) => data.map(e => e.avatarId).includes(roll.avatarId) // 重複回避
     for (const main of list) {
@@ -69,12 +64,12 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
             if (hasIds([main, subsup1, subsup2], heal)) continue
             const ids = [main, subsup1, subsup2, heal].map(e => e.id)
             if (!favoriteIds.every(id => ids.includes(id))) continue
-            calcScore([main, subsup1, subsup2, heal], resultMap, maxScore)
+            calcScore([main, subsup1, subsup2, heal], resultMap)
           }
         }
       }
     }
-    return { result: Array.from(resultMap.values()), maxScore }
+    return Array.from(resultMap.values())
   }
 
   ////////////////////////////// スコアロジック //////////////////////////////
@@ -88,23 +83,25 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
     return domainScore + 3
   }
   // まとめ
-  const calcScore: CalcScoreFunc = (data, resultMap, maxScore) => {
+  const calcScore: CalcScoreFunc = (data, resultMap) => {
     const key = data
       .map(e => e.id)
       .sort()
       .join('&')
     const domainScore = calcDomainScore(data)
     const explorScore = calcExplorScore(data, domainScore)
-    if (maxScore.explor < explorScore) maxScore.explor = explorScore
-    if (maxScore.domain < domainScore) maxScore.domain = domainScore
     const tmp = resultMap.get(key)
     if (!tmp || tmp.domainScore < domainScore) resultMap.set(key, { data, explorScore, domainScore })
   }
 
   ////////////////////////////// 結果と後処理 //////////////////////////////
 
-  // フィルター、ソート
-  const { result, maxScore } = totalHit(calcScore)
+  // 計算と結果
+  const result = totalHit(calcScore)
+  const maxScore = {
+    explor: Math.max(...result.map(e => e.explorScore)),
+    domain: Math.max(...result.map(e => e.domainScore)),
+  }
   // explor
   let explorScoreList: ScoreData[] = []
   for (let i = 0; i < maxScore.explor; i++) {
@@ -120,5 +117,5 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
   }
   domainScoreList.sort((a, b) => b.domainScore - a.domainScore)
 
-  console.log(explorScoreList)
+  return { explorScoreList, domainScoreList }
 }

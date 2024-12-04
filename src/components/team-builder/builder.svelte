@@ -42,7 +42,7 @@ const ownedClick = (id: string) => {
 }
 
 $effect(() => {
-  singleTeam(ownedList, favoriteIds, undefined)
+  console.log(singleTeam(ownedList, favoriteIds, undefined).domainScoreList)
 })
 </script>
 

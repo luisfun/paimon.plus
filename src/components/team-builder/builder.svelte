@@ -81,6 +81,7 @@ const listDelete = (i: number) => {
 
 onMount(() => {
   const lsData = JSON.parse(localStorage.getItem(LocalStorageKey) ?? '{}') as ListData[] | undefined
+  // 古いバージョン（連想配列）の時は無視する
   if (Array.isArray(lsData)) listData = lsData
 })
 

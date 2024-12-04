@@ -279,7 +279,7 @@ export const avatar: Avatar[] = [
     score: [6, 0, 0, 0],
     burstDep: 2,
     dmg: ['plunge'],
-    coop: [{ score: -3, add: [{ trigger: ['normal'] }] }],
+    coop: [{ score: -2, add: [{ trigger: ['normal'] }] }],
   },
   {
     name: 'Ganyu',

@@ -23,7 +23,10 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
       0,
     ),
   )
-  const isRollBreak = 1 < favoriteRoll[0] || 2 < favoriteRoll[1] + favoriteRoll[2] || 1 < favoriteRoll[3]
+  // biome-ignore format: ternary operator
+  const isRollBreak =
+    1 < favoriteRoll[0] || 1 < favoriteRoll[3] ? (i: number) => i === 1 || i === 2 :
+    2 < favoriteRoll[1] + favoriteRoll[2] ? (i: number) => i === 0 : false
 
   // 計算量の削減（低スコアを排除）
   const sortedIdMap = ['main', 'sub', 'support', 'healer'].map((roll, i) =>
@@ -43,7 +46,7 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
     .filter(e => filteredIds.includes(e.id))
     .map(e =>
       isRollBreak && favoriteIds.includes(e.id)
-        ? { ...e, score: e.score.map(num => num + 0.001) as [number, number, number, number] }
+        ? ({ ...e, score: e.score.map((num, i) => num + 0.001 * Number(isRollBreak(i))) } as AvatarData)
         : e,
     )
 

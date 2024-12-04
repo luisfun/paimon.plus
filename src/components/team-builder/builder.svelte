@@ -1,5 +1,6 @@
 <script lang="ts">
 // client:only="svelte"
+import Dialog from '@components/dialog.svelte'
 import { avatarProps } from '@components/img-props'
 import avatarJson from '@game/avatar.json'
 import { type Lang, useTranslations } from '@i18n/utils'
@@ -32,25 +33,44 @@ const t = useTranslations(lang)
 
 const initNames = ['Traveler', 'Amber', 'Kaeya', 'Lisa', 'Barbara', 'Noelle']
 let favoriteIds = $state<string[]>([])
-let ownedIds = $state(avatar.map(e => e.id)) //avatar.filter(e => initNames.includes(e.name)).map(e => e.id))
-const ownedList = $derived(avatar.filter(e => ownedIds.includes(e.id)))
+let ownedIds = $state(avatar.map(e => e.id)) //$state(avatar.filter(e => initNames.includes(e.name)).map(e => e.id))
+const ownedList = $derived(avatar.filter(e => [...favoriteIds, ...ownedIds].includes(e.id)))
+const dialogs: HTMLDialogElement[] = []
 
-const avatarClick = (id: string) => {
+const ownedClick = (id: string) => {
   ownedIds = ownedIds.includes(id) ? ownedIds.filter(e => e !== id) : [...ownedIds, id]
 }
 
 $effect(() => {
-  singleTeam(ownedList, ['Amber:Pyro', 'Yae Miko:Electro'], undefined)
+  singleTeam(ownedList, favoriteIds, undefined)
 })
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">
   <div>けっか</div>
   <div>
+    <div class="mb-4">{t("team-builder.favorite")}</div>
+    <div class="flex justify-around mb-4">
+      {#each [0, 1, 2] as i}
+        {@const fav = avatar.find(e => favoriteIds[i] === e.id)}
+        <button class="w-1/5" onclick={() => dialogs[i]?.showModal()} aria-label="favorite character select">
+          <img {...avatarProps(fav?.avatarId ?? -1)} />
+        </button>
+        <Dialog bind:dialog={dialogs[i]}>
+          <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2 m-2" method="dialog">
+            {#each avatar as a}
+              <button onclick={() => favoriteIds[i] = a.id} aria-label={a.id}>
+                <img {...avatarProps(a.avatarId ?? -1)} />
+              </button>
+            {/each}
+          </form>
+        </Dialog>
+      {/each}
+    </div>
     <div class="mb-4">{t("team-builder.owned")}</div>
     <div class="grid grid-cols-6 gap-3 mx-1">
       {#each avatar as a}
-        <button onclick={() => avatarClick(a.id)} aria-label={a.name}>
+        <button onclick={() => ownedClick(a.id)} aria-label={a.name}>
           <img {...avatarProps(a.avatarId ?? -1, undefined, ownedIds.includes(a.id) ? "outline outline-primary outline-offset-2" : "opacity-50")} />
         </button>
       {/each}

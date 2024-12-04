@@ -40,7 +40,7 @@ const avatarClick = (id: string) => {
 }
 
 $effect(() => {
-  singleTeam(ownedList, ['Amber:Pyro', "Yae Miko:Electro"], undefined)
+  singleTeam(ownedList, ['Amber:Pyro', 'Yae Miko:Electro'], undefined)
 })
 </script>
 

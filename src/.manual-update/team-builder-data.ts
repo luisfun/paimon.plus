@@ -22,14 +22,27 @@ export const avatar: Avatar[] = [
     name: 'Xilonen',
     score: [0, 0, 1, 2],
     explor: ['climb', 3],
-    coop: [{ score: 4, add: [{ roll: ['main', 'sub'], elem: ['4elem'] }] }],
+    coop: [
+      {
+        score: 4,
+        or: [
+          { roll: ['main'], elem: ['4elem'] },
+          [
+            { roll: ['sub'], elem: ['4elem'] },
+            { roll: ['sub'], elem: ['4elem'] },
+          ],
+        ],
+      },
+    ],
     filter: { score: 5, roll: 'healer' },
   },
   {
     name: 'Kinich',
-    score: [5, 0, 0, 0],
+    score: [4, 0, 0, 0],
     dmg: ['skill'],
     explor: ['fly', 2],
+    coop: [{ score: 1, add: [{ elem: ['Pyro'] }, [{ elem: ['Pyro'] }, { elem: ['Pyro'] }]] }],
+    filter: { score: 5, roll: 'main' },
   },
   {
     name: 'Mualani',

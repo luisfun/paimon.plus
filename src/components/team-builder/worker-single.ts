@@ -86,7 +86,10 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
   }
   // まとめ
   const calcScore: CalcScoreFunc = (data, resultMap, maxScore) => {
-    const key = data.map(e => e.id).sort().join("&")
+    const key = data
+      .map(e => e.id)
+      .sort()
+      .join('&')
     const domainScore = calcDomainScore(data)
     const explorScore = calcExplorScore(data, domainScore)
     if (maxScore.explor < explorScore) maxScore.explor = explorScore

@@ -19,7 +19,7 @@ export type Avatar = {
   name: Name
   elem?: Elem
   score: [number, number, number, number] // 'main' | 'sub' | 'support' | 'healer'
-  burstDep?: number // 爆発依存度 探索には-1点分影響させる // + max(点数, max(星4キャラ数, 星5キャラ数)×0.1) - 点数 // 爆発依存有りで40,60,80族 -> 1,2,3 辺りで // 3以上はscore-1 同族ありでscore-0
+  burstDep?: number // 爆発依存度 探索に影響させる 同族有で軽減させる // + max(点数, max(星4キャラ数, 星5キャラ数)×0.1) - 点数
   dmg?: Dmg[] // roll: main, sub のダメージタイプ
   stat?: Stat[] // default: "ATK" roll: main, sub のダメージタイプ
   trigger?: Trigger[] // main 以外の発動条件

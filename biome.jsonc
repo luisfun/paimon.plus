@@ -32,6 +32,6 @@
     }
   ],
   "files": {
-    "ignore": ["dist", "package.json", "src/game", ".wrangler", "public/workers"]
+    "ignore": [".astro/", ".wrangler/", "dist/", "package.json", "src/game/", "public/workers/"]
   }
 }

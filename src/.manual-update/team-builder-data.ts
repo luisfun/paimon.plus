@@ -34,7 +34,7 @@ export const avatar: Avatar[] = [
         ],
       },
     ],
-    filter: { score: 5, roll: 'healer' },
+    filter: { score: 6, roll: 'healer' },
   },
   {
     name: 'Kinich',
@@ -59,15 +59,15 @@ export const avatar: Avatar[] = [
   {
     name: 'Emilie',
     score: [0, 4, 0, 0],
-    burstDep: 2,
+    burstDep: 1,
     dmg: ['skill'],
     coop: [{ score: 2, add: [{ elem: ['Pyro'] }] }],
     filter: { score: 5, roll: 'sub' },
   },
   {
     name: 'Sigewinne',
-    score: [0, 0, 0, 3],
-    coop: [{ score: 2, add: [{ roll: ['sub'], dmg: ['skill'] }] }],
+    score: [0, 0, 0, 4],
+    coop: [{ score: 1, add: [{ roll: ['sub'], dmg: ['skill'] }] }],
     filter: { score: 4, roll: 'healer' },
   },
   {
@@ -87,7 +87,7 @@ export const avatar: Avatar[] = [
     score: [0, 4, 0, 0],
     dmg: ['skill'],
     stat: ['DEF'],
-    coop: [{ score: 2, add: ['Arataki Itto', 'Albedo', 'Zhongli', 'Ningguang'] }],
+    coop: [{ score: 2, or: ['Arataki Itto', 'Albedo', 'Zhongli', 'Ningguang'] }],
     filter: { score: 5, roll: 'sub' },
   },
   {
@@ -109,7 +109,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Furina',
-    score: [0, 5, 4, 0],
+    score: [0, 6, 0, 5],
     burstDep: 2,
     dmg: ['skill'],
     stat: ['HP'],
@@ -123,7 +123,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Neuvillette',
-    score: [6, 0, 0, 0],
+    score: [6.5, 0, 0, 0],
     dmg: ['charge'],
     stat: ['HP'],
     coop: [{ score: -2, add: [{ trigger: ['normal'] }] }],
@@ -158,16 +158,18 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Wanderer',
-    score: [5, 0, 0, 0],
+    score: [4, 0, 0, 0],
     dmg: ['normal'],
     explor: ['fly', 3],
+    coop: [{ score: 1, add: [{ elem: ['Pyro', 'Cryo'] }] }],
+    filter: { score: 5, roll: 'main' },
   },
   {
     name: 'Nahida',
     score: [0, 4, 0, 0],
     dmg: ['skill'],
     stat: ['EM'],
-    coop: [{ score: 2, add: [{ roll: ['main', 'sub'], elem: ['4elem'] }] }],
+    coop: [{ score: 2, add: [{ roll: ['main', 'sub'], elem: ['Pyro', 'Hydro', 'Electro'] }] }],
     filter: { score: 6, roll: 'sub' },
   },
   {
@@ -194,7 +196,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Yelan',
-    score: [0, 5, 0, 0],
+    score: [0, 6, 0, 0],
     burstDep: 2,
     dmg: ['burst'],
     stat: ['HP'],
@@ -236,7 +238,7 @@ export const avatar: Avatar[] = [
   {
     name: 'Raiden Shogun',
     score: [5, 0, 0, 0],
-    burstDep: 3,
+    burstDep: 2,
     dmg: ['burst'],
     coop: [
       { score: -2, add: ['Beidou'] },
@@ -266,9 +268,11 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Eula',
-    score: [5, 0, 0, 0],
+    score: [4, 0, 0, 0],
     burstDep: 3,
     dmg: ['normal', 'burst'],
+    coop: [{ score: 1, add: [{ roll: ['sub'], elem: ['Electro'] }] }],
+    filter: { score: 5, roll: 'main' },
   },
   {
     name: 'Hu Tao',

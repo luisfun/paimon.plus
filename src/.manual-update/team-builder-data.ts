@@ -72,8 +72,10 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Clorinde',
-    score: [6, 0, 0, 0],
+    score: [4, 0, 0, 0],
     dmg: ['normal'],
+    coop: [{ score: 2, add: [{ roll: ['sub'] }] }],
+    filter: { score: 6, roll: 'main' },
   },
   {
     name: 'Arlecchino',

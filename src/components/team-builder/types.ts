@@ -10,9 +10,9 @@ type Scope = {
   dmg?: Dmg[]
   stat?: Stat[]
   trigger?: Trigger[]
-  exclude?: (Roll | Elem | Dmg)[]
+  //exclude?: (Roll | Elem | Dmg)[]
 }
-type Member = Name | Scope
+export type Member = Name | Scope
 type Explor = ['run' | 'run-speed' | 'run-stamina' | 'climb' | 'boat' | 'fly', number]
 
 export type Avatar = {

@@ -1,12 +1,13 @@
 import type { Avatar } from './types'
 
 type AvatarData = Avatar & { id: string; avatarId: number | undefined }
-type ScoreData = { data: AvatarData[]; explorScore: number; domainScore: number }
+type ScoreData = { data: AvatarData[]; explor: number; domain: number }
 type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 
 export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globalParam: undefined) => {
   const ROLL_LIMIT = 15
-  const RESULT_LIMIT = 10
+  const RESULT_LIMIT = 100
+  const MAX_RESULT_GROUP = 5
 
   ////////////////////////////// 組み合わせロジック //////////////////////////////
 
@@ -88,10 +89,63 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
       .map(e => e.id)
       .sort()
       .join('&')
-    const domainScore = calcDomainScore(data)
-    const explorScore = calcExplorScore(data, domainScore)
+    const domain = calcDomainScore(data)
+    const explor = calcExplorScore(data, domain)
     const tmp = resultMap.get(key)
-    if (!tmp || tmp.domainScore < domainScore) resultMap.set(key, { data, explorScore, domainScore })
+    if (!tmp || tmp.domain < domain) resultMap.set(key, { data, explor, domain })
+  }
+
+  ////////////////////////////// 3キャラ探索 //////////////////////////////
+
+  const scoreFilter = (
+    result: ScoreData[],
+    maxScore: { explor: number; domain: number },
+    index: 'explor' | 'domain',
+  ) => {
+    let list: ScoreData[] = []
+    for (let i = maxScore[index]; i; i--) {
+      if (RESULT_LIMIT < list.length) break
+      list = result.filter(e => i <= e[index])
+    }
+    return list.sort((a, b) => b.explor - a.explor)
+  }
+
+  const calc3CharaSet = (list: ScoreData[]) => {
+    const map = new Map<string, Map<string, ScoreData[]>>() // main-id, {other-ids, ScoreData[]}
+    for (const score of list) {
+      const mainKey = score.data[0].id
+      const subKeys = [1, 2, 3].map(i => [score.data[i].id, score.data[(i % 3) + 1].id].sort().join('&'))
+      const main = map.get(mainKey)
+      if (!main) {
+        const subMap = new Map<string, ScoreData[]>()
+        for (const key of subKeys) subMap.set(key, [score])
+        map.set(mainKey, subMap)
+      } else {
+        for (const key of subKeys) {
+          const sub = main.get(key)
+          if (!sub) main.set(key, [score])
+          else main.set(key, [...sub, score])
+        }
+      }
+    }
+    const result: { base: AvatarData[]; all: ScoreData[] }[] = []
+    for (const [mainKey, subMap] of map) {
+      let keyOfMax = ''
+      let maxLength = 0
+      for (const [subKey, scoreList] of subMap) {
+        if (maxLength < scoreList.length) {
+          keyOfMax = subKey
+          maxLength = scoreList.length
+        }
+      }
+      const sub = subMap.get(keyOfMax)
+      if (!sub) continue // error
+      const ids = [mainKey, ...keyOfMax.split('&')]
+      const base = sub[0].data.filter(e => ids.includes(e.id))
+      result.push({ base, all: sub })
+    }
+    if (MAX_RESULT_GROUP < result.length) result.length = MAX_RESULT_GROUP
+    return result
   }
 
   ////////////////////////////// 結果と後処理 //////////////////////////////
@@ -99,23 +153,12 @@ export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globa
   // 計算と結果
   const result = totalHit(calcScore)
   const maxScore = {
-    explor: result.map(e => e.explorScore).reduce((a, b) => Math.max(a, b), Number.NEGATIVE_INFINITY),
-    domain: result.map(e => e.domainScore).reduce((a, b) => Math.max(a, b), Number.NEGATIVE_INFINITY),
+    explor: result.map(e => e.explor).reduce((a, b) => Math.max(a, b), Number.NEGATIVE_INFINITY),
+    domain: result.map(e => e.domain).reduce((a, b) => Math.max(a, b), Number.NEGATIVE_INFINITY),
   }
-  // explor
-  let explorScoreList: ScoreData[] = []
-  for (let i = 0; i < maxScore.explor; i++) {
-    if (RESULT_LIMIT < explorScoreList.length) break
-    explorScoreList = result.filter(e => maxScore.explor - i <= e.explorScore)
-  }
-  explorScoreList.sort((a, b) => b.explorScore - a.explorScore)
-  // domain
-  let domainScoreList: ScoreData[] = []
-  for (let i = 0; i < maxScore.domain; i++) {
-    if (RESULT_LIMIT < domainScoreList.length) break
-    domainScoreList = result.filter(e => maxScore.domain - i <= e.domainScore)
-  }
-  domainScoreList.sort((a, b) => b.domainScore - a.domainScore)
+  // 3キャラPU
+  const explor = calc3CharaSet(scoreFilter(result, maxScore, 'explor'))
+  const domain = calc3CharaSet(scoreFilter(result, maxScore, 'domain'))
 
-  return { explorScoreList, domainScoreList }
+  return { explor, domain }
 }

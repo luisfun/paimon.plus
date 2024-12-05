@@ -93,7 +93,7 @@ $effect(() => {
         ownedList,
         favoriteIds.filter(e => e),
         undefined,
-      ).domainScoreList,
+      ).domain,
     )
   }
 })

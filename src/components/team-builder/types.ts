@@ -34,3 +34,5 @@ export type Avatar = {
     roll: Roll
   }
 }
+
+export type AvatarData = Avatar & { id: string; avatarId: number | undefined }

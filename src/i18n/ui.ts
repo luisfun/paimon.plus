@@ -115,6 +115,8 @@ export const ui = {
     'statistics.population': 'The users of this page are the statistical population.',
     // team-builder
     'team-builder.title': 'Team Builder',
+    'team-builder.battle': 'Battle Team',
+    'team-builder.explor': 'Exploration Team',
     'team-builder.favorite': 'Favorite Characters',
     'team-builder.owned': 'Owned Characters',
     // wish-banner

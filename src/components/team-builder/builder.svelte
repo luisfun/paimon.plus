@@ -8,6 +8,7 @@ import avatarJson from '@game/avatar.json'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { avatar as buildData, globalCoop } from '@manual/team-builder-data'
 import { onMount } from 'svelte'
+import Result from './result.svelte'
 import type { Elem } from './types'
 import { teamBuild } from './worker'
 
@@ -96,15 +97,14 @@ $effect(() => {
     exe = worker.execute([ownedList, favoriteIds.filter(e => e), globalCoop])
     exe.promise.then(res => {
       result = res
-      console.log(result?.battle)
     })
   }
 })
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">
-  <div>けっか</div>
-  <div>
+  <Result {lang} {result} />
+  <div class="mb-auto">
     <div class="mb-4">{t("team-builder.favorite")}</div>
     <div class="flex justify-around mb-4">
       {#each [0, 1, 2] as i}

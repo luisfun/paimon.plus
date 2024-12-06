@@ -1,7 +1,6 @@
 import type { globalCoop as gc } from '@manual/team-builder-data'
-import type { Avatar, Elem, Explor, Member } from './types'
+import type { Avatar, AvatarData, Elem, Explor, Member } from './types'
 
-type AvatarData = Avatar & { id: string; avatarId: number | undefined }
 type ScoreData = { data: AvatarData[]; battle: number; explor: number }
 type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 

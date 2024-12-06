@@ -8,7 +8,7 @@ import { type Lang, useTranslations } from '@i18n/utils'
 import { avatar as buildData } from '@manual/team-builder-data'
 import { onMount } from 'svelte'
 import type { Elem } from './types'
-import { singleTeam } from './worker-single'
+import { teamBuild } from './worker'
 
 type ListData = { listName: string; list: string[] }
 

@@ -4,7 +4,7 @@ type AvatarData = Avatar & { id: string; avatarId: number | undefined }
 type ScoreData = { data: AvatarData[]; explor: number; battle: number }
 type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 
-export const singleTeam = (ownedList: AvatarData[], favoriteIds: string[], globalParam: undefined) => {
+export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], globalParam: undefined) => {
   const ROLL_LIMIT = 15 // 初期のrollフィルター数
   const RESULT_LIMIT = 30 // ハイスコアの最小数
   const MAX_RESULT_GROUP = 10 // 最大表示数

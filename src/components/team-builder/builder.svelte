@@ -1,11 +1,12 @@
 <script lang="ts">
 // client:only="svelte"
+import { TypedWorker } from '@codianz/typed-worker'
 import Dialog from '@components/dialog.svelte'
 import { avatarProps } from '@components/img-props'
 import Svg from '@components/svg.svelte'
 import avatarJson from '@game/avatar.json'
 import { type Lang, useTranslations } from '@i18n/utils'
-import { avatar as buildData } from '@manual/team-builder-data'
+import { avatar as buildData, globalCoop } from '@manual/team-builder-data'
 import { onMount } from 'svelte'
 import type { Elem } from './types'
 import { teamBuild } from './worker'
@@ -47,6 +48,7 @@ let listData = $state<ListData[]>([
   },
 ])
 const ownedList = $derived(avatar.filter(e => [...favoriteIds, ...listData[tabIndex].list].includes(e.id)))
+let result = $state<ReturnType<typeof teamBuild>>()
 const dialogs: HTMLDialogElement[] = []
 let dialog: HTMLDialogElement
 let scrollElement: HTMLElement
@@ -85,16 +87,17 @@ onMount(() => {
   if (Array.isArray(lsData)) listData = lsData
 })
 
+const worker = new TypedWorker(teamBuild)
+let exe: ReturnType<typeof worker.execute>
 $effect(() => {
   localStorage.setItem(LocalStorageKey, JSON.stringify(listData))
   if (!dialog.open) {
-    console.log(
-      singleTeam(
-        ownedList,
-        favoriteIds.filter(e => e),
-        undefined,
-      ).domain,
-    )
+    if (exe) exe.abort()
+    exe = worker.execute([ownedList, favoriteIds.filter(e => e), globalCoop])
+    exe.promise.then(res => {
+      result = res
+      console.log(result?.battle)
+    })
   }
 })
 </script>

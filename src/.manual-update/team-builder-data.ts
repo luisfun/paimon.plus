@@ -13,8 +13,18 @@ export const avatar: Avatar[] = [
     dmg: ['charge'],
     explor: ['fly', 3],
     coop: [
-      { score: 1, add: [[{ elem: ['4elem'] }, { elem: ['4elem'] }, { elem: ['4elem'] }]] },
-      { score: 4, add: [[{ elem: ['4elem'] }, { elem: ['4elem'] }]] },
+      { score: -3, add: [{ trigger: ['normal'] }] },
+      {
+        score: 1,
+        add: [
+          { elem: ['4elem'] },
+          [{ elem: ['4elem'] }, { elem: ['4elem'] }],
+          { elem: ['Pyro'] },
+          { elem: ['Hydro'] },
+          { elem: ['Cryo'] },
+          { elem: ['Electro'] },
+        ],
+      },
     ],
     filter: { score: 5, roll: 'main' },
   },
@@ -123,7 +133,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Neuvillette',
-    score: [6.5, 0, 0, 0],
+    score: [6.1, 0, 0, 0],
     dmg: ['charge'],
     stat: ['HP'],
     coop: [{ score: -2, add: [{ trigger: ['normal'] }] }],
@@ -257,7 +267,7 @@ export const avatar: Avatar[] = [
     burstDep: 3,
     dmg: ['normal', 'burst'],
     explor: ['boat', 2],
-    coop: [{ score: 1, add: [{ elem: ['Hydro'] }, { elem: ['Cryo'] }] }],
+    coop: [{ score: 1, add: [{ elem: ['Hydro'] }] }],
     filter: { score: 5, roll: 'main' },
   },
   {
@@ -573,10 +583,7 @@ export const avatar: Avatar[] = [
     name: 'Bennett',
     score: [0, 0, 1, 3],
     burstDep: 2,
-    coop: [
-      { score: 1, add: ['Xiangling'] },
-      { score: 2, add: [{ roll: ['main'], stat: ['ATK'] }] },
-    ],
+    coop: [{ score: 2, add: [{ roll: ['main'], stat: ['ATK'] }] }],
     filter: { score: 5, roll: 'healer' },
   },
   {
@@ -606,7 +613,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Xiangling',
-    score: [0, 5, 0, 0],
+    score: [0, 5.1, 0, 0],
     burstDep: 3,
     dmg: ['burst'],
   },
@@ -682,3 +689,19 @@ export const avatar: Avatar[] = [
     burstDep: 1,
   },
 ]
+
+export const globalCoop = {
+  battleCoop: [
+    {
+      score: 1,
+      add: [
+        [
+          { roll: ['main'], elem: ['4elem'] },
+          { roll: ['support'], elem: ['Anemo'] },
+        ],
+      ],
+    },
+  ] as NonNullable<Avatar['coop']>,
+  explorCoop: [{ score: 1, add: [[{ elem: ['Anemo'] }, { elem: ['Anemo'] }]] }] as NonNullable<Avatar['coop']>,
+  avatarNum: avatar.length,
+}

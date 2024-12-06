@@ -1,10 +1,11 @@
-import type { Avatar, Member } from './types'
+import type { globalCoop as gc } from '@manual/team-builder-data'
+import type { Avatar, Elem, Explor, Member } from './types'
 
 type AvatarData = Avatar & { id: string; avatarId: number | undefined }
-type ScoreData = { data: AvatarData[]; explor: number; battle: number }
+type ScoreData = { data: AvatarData[]; battle: number; explor: number }
 type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 
-export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], globalParam: undefined) => {
+export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], globalCoop: typeof gc) => {
   const ROLL_LIMIT = 15 // 初期のrollフィルター数
   const RESULT_LIMIT = 30 // ハイスコアの最小数
   const MAX_RESULT_GROUP = 10 // 最大表示数
@@ -115,16 +116,39 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
     }
     return score
   }
-  // 秘境スコア
+  // 同一元素キャラ数と元素爆発影響度のスコア
+  const elemNumBurstDepScore = (data: AvatarData[]) => {
+    const elemCount = {} as Record<Elem, number>
+    for (const { elem } of data) if (elem) elemCount[elem] = (elemCount[elem] ?? 0) + 1
+    let score = 0
+    for (const a of data)
+      if (a.burstDep && 2 < a.burstDep) score -= Math.max(0, a.burstDep - 1 - (elemCount[a.elem ?? '4elem'] ?? 0))
+    return score
+  }
+  // explor用の値
+  const minmax = (min: number, value: number, max: number) => Math.min(Math.max(min, value), max)
+  const ownedRate = minmax(0, (ownedList.length / globalCoop.avatarNum) * 2 - 0.5, 1)
+  // explor用のスコア
+  const explorScore = (data: AvatarData[]) => {
+    const scores = {} as Record<Explor[0], number>
+    for (const { explor } of data)
+      if (explor) scores[explor[0]] = scores[explor[0]] ? Math.max(scores[explor[0]], explor[1]) : explor[1]
+    return (
+      data.reduce((sum, { burstDep }) => sum - (burstDep ?? 0) * (1 - ownedRate / 2), 0) +
+      Object.values(scores).reduce((sum, e) => sum + e, 0) * ownedRate
+    )
+  }
+  // 戦闘スコア
   const calcBattleScore = (data: AvatarData[]) => {
     const hasMainHeal = 1 <= data[0].score[3] // mainがヒーラー兼任かどうか
-    let maxScore = 0
-    ;[
+    let battle = 0
+    let explor = 0
+    for (const indexs of [
       [1, 1],
       [1, 2],
       [2, 1],
       [2, 2],
-    ].map(indexs => {
+    ]) {
       const rollIndexs = [0, ...indexs, hasMainHeal ? 1 : 3]
       const dataRemap = data.map((e, i) => ({ ...e, rollIndex: rollIndexs[i], roll: ROLLS[rollIndexs[i]] }))
       let score = dataRemap.reduce((sum, e) => sum + e.score[e.rollIndex], 0)
@@ -133,13 +157,13 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
           dataRemap[i].coop,
           dataRemap.filter((_, j) => i !== j),
         )
-      if (maxScore < score) maxScore = score
-    })
-    return maxScore
-  }
-  // 探索スコア
-  const calcExplorScore = (data: AvatarData[], battleScore: number) => {
-    return battleScore + 3
+      score += coopScore(globalCoop.battleCoop, dataRemap) + elemNumBurstDepScore(data)
+      if (battle < score) {
+        battle = score
+        explor = battle + coopScore(globalCoop.explorCoop, dataRemap) + explorScore(data)
+      }
+    }
+    return { battle, explor }
   }
   // まとめ
   const calcScore: CalcScoreFunc = (data, resultMap) => {
@@ -147,10 +171,9 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
       .map(e => e.id)
       .sort()
       .join('&')
-    const battle = calcBattleScore(data)
-    const explor = calcExplorScore(data, battle)
+    const { battle, explor } = calcBattleScore(data)
     const tmp = resultMap.get(key)
-    if (!tmp || tmp.battle < battle) resultMap.set(key, { data, explor, battle })
+    if (!tmp || tmp.battle < battle) resultMap.set(key, { data, battle, explor })
   }
 
   ////////////////////////////// 3キャラ探索 //////////////////////////////
@@ -158,17 +181,23 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
   // ハイスコア順に、RESULT_LIMITを超えるくらいまで数を抑制する
   const scoreFilter = (
     result: ScoreData[],
-    maxScore: { explor: number; battle: number },
-    index: 'explor' | 'battle',
+    maxScore: { battle: number; explor: number },
+    index: 'battle' | 'explor',
   ) => {
     let list: ScoreData[] = []
     for (let i = maxScore[index]; 0 < i; i--) {
       if (RESULT_LIMIT < list.length) break
       list = result.filter(e => i <= e[index])
     }
-    return list.sort((a, b) => b.explor - a.explor)
+    return list.sort((a, b) => b[index] - a[index])
   }
 
+  // 軽量化用
+  const resultAllRemap = (all: ScoreData[]) =>
+    all.map(e => ({
+      ...e,
+      data: e.data.map(a => ({ avatarId: a.avatarId, id: a.id, name: a.name, elem: a.elem, score: a.score })),
+    }))
   // 主要3キャラの組み合わせを作成する
   const calc3CharaSet = (list: ScoreData[]) => {
     const map = new Map<string, Map<string, ScoreData[]>>() // main-id, {other-ids, ScoreData[]}
@@ -198,7 +227,7 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
           if (maxLength < scoreList.length) maxLength = scoreList.length
           const ids = [mainKey, ...subKey.split('&')]
           const base = scoreList[0].data.filter(e => ids.includes(e.id))
-          result.push({ base, all: scoreList })
+          result.push({ base, all: resultAllRemap(scoreList) })
         }
         if (1 < maxLength) result = result.filter(e => maxLength / 2 < e.all.length)
       } else {
@@ -213,7 +242,7 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
         if (!sub) continue // error
         const ids = [mainKey, ...keyOfMax.split('&')]
         const base = sub[0].data.filter(e => ids.includes(e.id))
-        result.push({ base, all: sub })
+        result.push({ base, all: resultAllRemap(sub) })
       }
     }
     if (MAX_RESULT_GROUP < result.length) result.length = MAX_RESULT_GROUP
@@ -225,13 +254,13 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
   // 計算と結果
   const result = totalHit(calcScore)
   const maxScore = {
-    explor: result.map(e => e.explor).reduce((a, b) => Math.max(a, b), 0),
     battle: result.map(e => e.battle).reduce((a, b) => Math.max(a, b), 0),
+    explor: result.map(e => e.explor).reduce((a, b) => Math.max(a, b), 0),
   }
 
   // 3キャラ
-  const explor = calc3CharaSet(scoreFilter(result, maxScore, 'explor'))
   const battle = calc3CharaSet(scoreFilter(result, maxScore, 'battle'))
+  const explor = calc3CharaSet(scoreFilter(result, maxScore, 'explor'))
 
-  return { explor, battle }
+  return { battle, explor }
 }

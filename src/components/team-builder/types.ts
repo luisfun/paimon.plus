@@ -5,7 +5,7 @@ type Dmg = 'normal' | 'charge' | 'plunge' | 'skill' | 'burst' | 'element'
 type Stat = 'HP' | 'ATK' | 'DEF' | 'EM'
 type Trigger = 'normal'
 type Scope = {
-  roll?: ('main' | 'sub')[]
+  roll?: Roll[]
   elem?: Elem[]
   dmg?: Dmg[]
   stat?: Stat[]
@@ -13,7 +13,7 @@ type Scope = {
   //exclude?: (Roll | Elem | Dmg)[]
 }
 export type Member = Name | Scope
-type Explor = ['run' | 'run-speed' | 'run-stamina' | 'climb' | 'boat' | 'fly', number]
+export type Explor = ['run' | 'run-speed' | 'run-stamina' | 'climb' | 'boat' | 'fly', number]
 
 export type Avatar = {
   name: Name

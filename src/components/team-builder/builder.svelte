@@ -39,15 +39,10 @@ const avatar = buildData
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
 
-const initNames = ['Traveler', 'Amber', 'Kaeya', 'Lisa', 'Barbara', 'Noelle']
+const initList = avatar.filter(e => e.qualityType === 'QUALITY_PURPLE' || e.name === 'Traveler').map(e => e.id)
 let favoriteIds = $state<string[]>([])
 let tabIndex = $state(0)
-let listData = $state<ListData[]>([
-  {
-    listName: t('team-builder.owned'),
-    list: avatar.filter(e => e.qualityType === 'QUALITY_PURPLE' || e.name === 'Traveler').map(e => e.id),
-  },
-])
+let listData = $state<ListData[]>([{ listName: t('team-builder.owned'), list: initList }])
 const ownedList = $derived(avatar.filter(e => [...favoriteIds, ...listData[tabIndex].list].includes(e.id)))
 let result = $state<ReturnType<typeof teamBuild>>()
 let loadingIndicator = $state(true)
@@ -102,6 +97,7 @@ $effect(() => {
       loadingIndicator = false
     })
   }
+  tabIndex // effect
 })
 </script>
 
@@ -168,7 +164,7 @@ $effect(() => {
           {/each}
           <button
             class="btn btn-sm btn-wide col-span-3 text-xl mx-auto"
-            onclick={() => listData.push({listName: (listData.length + 1).toString(), list: []})}
+            onclick={() => listData.push({listName: (listData.length + 1).toString(), list: initList})}
           >+</button>
         </div>
       </Dialog>

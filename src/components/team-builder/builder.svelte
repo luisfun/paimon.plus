@@ -29,7 +29,7 @@ const elemMap: Record<string, Elem> = {
 const avatar = buildData
   .map(a => {
     const find = avatarJson.find(e => en(e.id, 'avatar') === a.name)
-    const newA = { ...a, avatarId: find?.id }
+    const newA = { ...a, avatarId: find?.id, qualityType: find?.qualityType }
     if (newA.elem || !find?.element) return newA
     newA.elem = elemMap[find.element]
     return newA
@@ -45,11 +45,12 @@ let tabIndex = $state(0)
 let listData = $state<ListData[]>([
   {
     listName: t('team-builder.owned'),
-    list: avatar.map(e => e.id), // avatar.filter(e => initNames.includes(e.name)).map(e => e.id),
+    list: avatar.filter(e => e.qualityType === 'QUALITY_PURPLE' || e.name === 'Traveler').map(e => e.id),
   },
 ])
 const ownedList = $derived(avatar.filter(e => [...favoriteIds, ...listData[tabIndex].list].includes(e.id)))
 let result = $state<ReturnType<typeof teamBuild>>()
+let loadingIndicator = $state(true)
 const dialogs: HTMLDialogElement[] = []
 let dialog: HTMLDialogElement
 let scrollElement: HTMLElement
@@ -93,19 +94,21 @@ let exe: ReturnType<typeof worker.execute>
 $effect(() => {
   localStorage.setItem(LocalStorageKey, JSON.stringify(listData))
   if (!dialog.open) {
+    loadingIndicator = true
     if (exe) exe.abort()
     exe = worker.execute([ownedList, favoriteIds.filter(e => e), globalCoop])
     exe.promise.then(res => {
       result = res
+      loadingIndicator = false
     })
   }
 })
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">
-  <Result {lang} {result} />
+  <Result {lang} {result} {loadingIndicator} />
   <div class="mb-auto">
-    <div class="mb-4">{t("team-builder.favorite")}</div>
+    <div class="mb-4 text-base">{t("team-builder.favorite")}</div>
     <div class="flex justify-around mb-4">
       {#each [0, 1, 2] as i}
         {@const fav = avatar.find(e => favoriteIds[i] === e.id)}

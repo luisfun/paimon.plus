@@ -160,10 +160,10 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Alhaitham',
-    score: [5, 0, 0, 0],
+    score: [4, 0, 0, 0],
     dmg: ['normal'],
     stat: ['ATK', 'EM'],
-    coop: [{ score: 1, add: [{ elem: ['Electro'] }] }],
+    coop: [{ score: 2, add: [{ elem: ['Electro'] }] }],
     filter: { score: 6, roll: 'main' },
   },
   {
@@ -200,9 +200,14 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Tighnari',
-    score: [5, 0, 0, 0],
+    score: [4, 0, 0, 0],
     dmg: ['charge'],
-    coop: [{ score: -2, add: [{ trigger: ['normal'] }] }],
+    stat: ['ATK', 'EM'],
+    coop: [
+      { score: -2, add: [{ trigger: ['normal'] }] },
+      { score: 1, add: [{ elem: ['Electro'] }] },
+    ],
+    filter: { score: 5, roll: 'main' },
   },
   {
     name: 'Yelan',
@@ -228,8 +233,11 @@ export const avatar: Avatar[] = [
     name: 'Shenhe',
     score: [0, 0, 1, 0],
     burstDep: 3,
-    coop: [{ score: 4, add: [{ roll: ['main', 'sub'], elem: ['Cryo'] }] }],
-    filter: { score: 4, roll: 'support' },
+    coop: [
+      { score: 1, add: [{ roll: ['main'], elem: ['Cryo'] }] },
+      { score: 3, or: [{ roll: ['main', 'sub'], elem: ['Cryo'] }, 'Chasca'] },
+    ],
+    filter: { score: 5, roll: 'support' },
   },
   {
     name: 'Arataki Itto',
@@ -263,11 +271,14 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Kamisato Ayaka',
-    score: [4, 3, 0, 0],
+    score: [4.5, 3.5, 0, 0],
     burstDep: 3,
     dmg: ['normal', 'burst'],
     explor: ['boat', 2],
-    coop: [{ score: 1, add: [{ elem: ['Hydro'] }] }],
+    coop: [
+      { score: -0.5, add: [{ roll: ['main', 'sub'], elem: ['Pyro'] }] },
+      { score: 0.5, add: [{ roll: ['main', 'sub'], elem: ['Hydro'] }] },
+    ],
     filter: { score: 5, roll: 'main' },
   },
   {
@@ -376,14 +387,18 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Sethos',
-    score: [4, 0, 0, 0],
+    score: [3, 0, 0, 0],
     burstDep: 2,
     dmg: ['charge'],
+    stat: ['EM'],
+    coop: [{ score: 1, add: [{ roll: ['sub'], elem: ['Dendro'] }] }],
+    filter: { score: 4, roll: 'main' },
   },
   {
     name: 'Gaming',
     score: [4, 0, 0, 0],
     burstDep: 2,
+    dmg: ['plunge'],
     explor: ['run-speed', 1],
     coop: [{ score: -1, add: [{ trigger: ['normal'] }] }],
   },
@@ -447,7 +462,7 @@ export const avatar: Avatar[] = [
     burstDep: 3,
     coop: [
       { score: 1, add: [{ roll: ['main'], dmg: ['normal'] }] },
-      { score: 3, add: ['Eula', 'Freminet', 'Razor'] },
+      { score: 2.1, add: ['Eula', 'Freminet', 'Razor'] },
     ],
     filter: { score: 4, roll: 'healer' },
   },
@@ -460,7 +475,10 @@ export const avatar: Avatar[] = [
     name: 'Faruzan',
     score: [0, 0, 1, 0],
     burstDep: 3,
-    coop: [{ score: 4, add: [{ roll: ['main'], elem: ['Anemo'] }] }],
+    coop: [
+      { score: -2, add: ['Chasca'] },
+      { score: 4, add: [{ roll: ['main'], elem: ['Anemo'] }] },
+    ],
     filter: { score: 4, roll: 'support' },
   },
   {
@@ -496,8 +514,19 @@ export const avatar: Avatar[] = [
   {
     name: 'Kuki Shinobu',
     score: [0, 0, 0, 3],
-    coop: [{ score: 2, add: [[{ elem: ['Hydro'] }, { elem: ['Dendro'] }]] }],
-    filter: { score: 4, roll: 'healer' },
+    coop: [
+      { score: -1, add: [{ roll: ['main', 'sub'], elem: ['Electro'] }] },
+      {
+        score: 2.1,
+        add: [
+          [
+            { roll: ['main', 'sub'], elem: ['Hydro'] },
+            { roll: ['main', 'sub'], elem: ['Dendro'] },
+          ],
+        ],
+      },
+    ],
+    filter: { score: 5, roll: 'healer' },
   },
   {
     name: 'Yun Jin',
@@ -588,7 +617,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Fischl',
-    score: [0, 4, 0, 0],
+    score: [0, 4.1, 0, 0],
     burstDep: 1,
     dmg: ['skill'],
   },
@@ -600,7 +629,7 @@ export const avatar: Avatar[] = [
   {
     name: 'Xingqiu',
     score: [0, 5, 0, 0],
-    burstDep: 3,
+    burstDep: 2,
     dmg: ['burst'],
     trigger: ['normal'],
   },
@@ -619,11 +648,12 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Razor',
-    score: [3, 0, 0, 0],
+    score: [2, 0, 0, 0],
     burstDep: 3,
     dmg: ['normal'],
     explor: ['run-stamina', 1],
     coop: [{ score: 1, add: [{ elem: ['Cryo'] }] }],
+    filter: { score: 3, roll: 'main' },
   },
   {
     name: 'Barbara',

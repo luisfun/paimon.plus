@@ -7,7 +7,7 @@ type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], globalCoop: typeof gc) => {
   const ROLL_LIMIT = 15 // 初期のrollフィルター数
   const RESULT_LIMIT = 30 // ハイスコアの最小数
-  const MAX_RESULT_GROUP = 10 // 最大表示数
+  const MAX_RESULT_GROUP = 5 // 最大表示数
 
   const ROLLS = ['main', 'sub', 'support', 'healer'] as const
 

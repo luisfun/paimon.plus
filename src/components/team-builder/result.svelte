@@ -2,6 +2,8 @@
 import { avatarProps } from '@components/img-props'
 import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
+import Icon from './icon.svelte'
+import type { Elem } from './types'
 import type { teamBuild } from './worker'
 
 const {
@@ -12,10 +14,10 @@ const {
 const t = useTranslations(lang)
 </script>
 
-{#snippet teamGrid(team: {avatarId: number | undefined; elem?: string}[])}
+{#snippet teamGrid(team: {avatarId: number | undefined; elem?: Elem; name?: string}[])}
   {#each team as avatar}
-    <div>
-      <img {...avatarProps(avatar.avatarId ?? -1)} />
+    <div class="relative">
+      <Icon {...avatarProps(avatar.avatarId ?? -1)} elem={avatar.name === 'Traveler' ? avatar.elem : undefined} />
     </div>
   {/each}
 {/snippet}

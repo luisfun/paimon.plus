@@ -8,6 +8,7 @@ import avatarJson from '@game/avatar.json'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { avatar as buildData, globalCoop } from '@manual/team-builder-data'
 import { onMount } from 'svelte'
+import Icon from './icon.svelte'
 import Result from './result.svelte'
 import type { Elem } from './types'
 import { teamBuild } from './worker'
@@ -115,17 +116,17 @@ $effect(() => {
     <div class="flex justify-around mb-4">
       {#each [0, 1, 2] as i}
         {@const fav = avatar.find(e => favoriteIds[i] === e.id)}
-        <button class="w-1/5" onclick={() => dialogs[i]?.showModal()} aria-label="favorite character select">
-          <img {...avatarProps(fav?.avatarId ?? -1)} />
+        <button class="relative w-1/5" onclick={() => dialogs[i]?.showModal()} aria-label="favorite character select">
+          <Icon {...avatarProps(fav?.avatarId ?? -1)} elem={fav?.name === 'Traveler' ? fav?.elem : undefined} />
         </button>
         <Dialog bind:dialog={dialogs[i]}>
           <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2 m-2" method="dialog">
             <button onclick={() => favoriteIds[i] = ""} aria-label={"none"}>
-              <img {...avatarProps(-1)} />
+              <Icon {...avatarProps(-1)} />
             </button>
             {#each avatar as a}
-              <button onclick={() => favoriteIds[i] = a.id} aria-label={a.id}>
-                <img {...avatarProps(a.avatarId ?? -1)} />
+              <button class="relative" onclick={() => favoriteIds[i] = a.id} aria-label={a.id}>
+                <Icon {...avatarProps(a.avatarId ?? -1)} elem={a.name === 'Traveler' ? a.elem : undefined} />
               </button>
             {/each}
           </form>
@@ -178,8 +179,8 @@ $effect(() => {
     </div>
     <div class="grid grid-cols-6 gap-3 mx-1">
       {#each avatar as a}
-        <button onclick={() => ownedClick(a.id)} aria-label={a.name}>
-          <img {...avatarProps(a.avatarId ?? -1, undefined, listData[tabIndex].list.includes(a.id) ? "outline outline-primary outline-offset-2" : "opacity-50")} />
+        <button class="relative" onclick={() => ownedClick(a.id)} aria-label={a.name}>
+          <Icon {...avatarProps(a.avatarId ?? -1, undefined, listData[tabIndex].list.includes(a.id) ? "outline outline-primary outline-offset-2" : "opacity-50")} elem={a.name === 'Traveler' ? a.elem : undefined} />
         </button>
       {/each}
     </div>

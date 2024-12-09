@@ -642,9 +642,10 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Xiangling',
-    score: [0, 5.1, 0, 0],
+    score: [0, 4.5, 0, 0],
     burstDep: 3,
     dmg: ['burst'],
+    coop: [{ score: 0.6, add: [{ roll: ['main', 'sub'], elem: ['Hydro'] }] }],
   },
   {
     name: 'Razor',

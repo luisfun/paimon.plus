@@ -192,11 +192,16 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
   }
 
   // 軽量化用
-  const resultAllRemap = (all: ScoreData[]) =>
-    all.map(e => ({
+  const resultAllRemap = (all: ScoreData[]) => {
+    const battleHiScore = Math.max(...all.map(e => e.battle))
+    const explorHiScore = Math.max(...all.map(e => e.explor))
+    return all.map(e => ({
       ...e,
       data: e.data.map(a => ({ avatarId: a.avatarId, id: a.id, name: a.name, elem: a.elem, score: a.score })),
+      battleHiScore: battleHiScore - 0.01 < e.battle,
+      explorHiScore: explorHiScore - 0.01 < e.explor,
     }))
+  }
   // 主要3キャラの組み合わせを作成する
   const calc3CharaSet = (list: ScoreData[]) => {
     const map = new Map<string, Map<string, ScoreData[]>>() // main-id, {other-ids, ScoreData[]}
@@ -218,7 +223,7 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
       }
     }
     // mapから不要な部分を削除しつつ、結果を作成
-    let result: { base: AvatarData[]; all: ScoreData[] }[] = []
+    let result: { base: AvatarData[]; all: (ScoreData & { battleHiScore: boolean; explorHiScore: boolean })[] }[] = []
     for (const [mainKey, subMap] of map) {
       let maxLength = 0
       if (map.size === 1) {

@@ -20,7 +20,7 @@ const t = useTranslations(lang)
   {/each}
 {/snippet}
 
-{#snippet teamsView(teams: ReturnType<typeof teamBuild>["battle"] | undefined)}
+{#snippet teamsView(teams: ReturnType<typeof teamBuild>["battle"] | undefined, battle: boolean)}
   {#if teams?.[0]}
     {#each teams as team}
       <div class="collapse bg-neutral my-3">
@@ -33,8 +33,13 @@ const t = useTranslations(lang)
         </div>
         <div class="collapse-content">
           {#each team.all as all}
-            <div class="collapse-title grid grid-cols-4 gap-6 py-3 px-6">
-              {@render teamGrid(all.data)}
+            <div class="flex">
+              <div class="relative w-1/6" class:opacity-0={!(battle ? all.battleHiScore : all.explorHiScore)}>
+                <Svg icon="thumbs-up" class="absolute inset-0 h-1/2 m-auto" />
+              </div>
+              <div class="collapse-title grid grid-cols-4 gap-4 py-3 px-4">
+                {@render teamGrid(all.data)}
+              </div>
             </div>
           {/each}
         </div>
@@ -50,11 +55,11 @@ const t = useTranslations(lang)
 <div role="tablist" class="relative tabs tabs-lg tabs-bordered grid-cols-2 mb-auto">
   <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label={t("team-builder.battle")} defaultChecked />
   <div role="tabpanel" class="tab-content">
-    {@render teamsView(result?.battle)}
+    {@render teamsView(result?.battle, true)}
   </div>
   <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label={t("team-builder.explor")} />
   <div role="tabpanel" class="tab-content">
-    {@render teamsView(result?.explor)}
+    {@render teamsView(result?.explor, false)}
   </div>
   <progress class="absolute inset-x-1/2 bottom-[-1.5rem] -transform-x-1/2 progress progress-primary w-56" class:inline-block={loadingIndicator} class:hidden={!loadingIndicator}></progress>
 </div>

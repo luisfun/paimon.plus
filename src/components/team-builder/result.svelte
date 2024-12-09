@@ -20,10 +20,16 @@ const t = useTranslations(lang)
   {/each}
 {/snippet}
 
+{#snippet indicator(show: boolean)}
+  <div class="absolute z-10 inset-0 bg-background bg-opacity-50" class:hidden={!show}>
+    <span class="absolute top-1/2 left-1/2 -transform-1/2 loading loading-bars loading-lg"></span>
+  </div>
+{/snippet}
+
 {#snippet teamsView(teams: ReturnType<typeof teamBuild>["battle"] | undefined, battle: boolean)}
   {#if teams?.[0]}
     {#each teams as team}
-      <div class="collapse bg-neutral my-3">
+      <div class="collapse bg-neutral my-3 relative">
         <input type="checkbox" class="cursor-pointer" aria-label="more" />
         <div class="collapse-title grid grid-cols-4 gap-6 p-6">
           {@render teamGrid(team.base)}
@@ -43,11 +49,13 @@ const t = useTranslations(lang)
             </div>
           {/each}
         </div>
+        {@render indicator(loadingIndicator)}
       </div>
     {/each}
   {:else}
-    <div class="grid grid-cols-4 gap-6 p-6">
+    <div class="grid grid-cols-4 gap-6 p-6 relative">
       {@render teamGrid([{avatarId: -1}])}
+      {@render indicator(loadingIndicator)}
     </div>
   {/if}
 {/snippet}
@@ -61,5 +69,4 @@ const t = useTranslations(lang)
   <div role="tabpanel" class="tab-content">
     {@render teamsView(result?.explor, false)}
   </div>
-  <progress class="absolute inset-x-1/2 bottom-[-1.5rem] -transform-x-1/2 progress progress-primary w-56" class:inline-block={loadingIndicator} class:hidden={!loadingIndicator}></progress>
 </div>

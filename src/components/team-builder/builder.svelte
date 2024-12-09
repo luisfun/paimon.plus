@@ -73,6 +73,13 @@ const ownedClick = (id: string) => {
   listData[tabIndex].list = ids.includes(id) ? ids.filter(e => e !== id) : [...ids, id]
 }
 
+const listAdd = (copyIndex?: number) => {
+  if (typeof copyIndex === 'number') listData = [...listData, structuredClone($state.snapshot(listData[copyIndex]))]
+  else listData.push({ listName: (listData.length + 1).toString(), list: initList })
+  tabIndex = listData.length - 1
+  dialog.close()
+}
+
 const listDelete = (i: number) => {
   listData = listData.filter((_, j) => i !== j)
   if (listData.length === tabIndex) tabIndex--
@@ -157,14 +164,14 @@ $effect(() => {
             <button
               class="btn btn-sm leading-8 btn-circle"
               aria-label="copy"
-              onclick={() => listData = [...listData, structuredClone($state.snapshot(listData[i]))]}
+              onclick={() => listAdd(i)}
             >
               <Svg icon="copy" class="w-4 h-4" />
             </button>
           {/each}
           <button
             class="btn btn-sm btn-wide col-span-3 text-xl mx-auto"
-            onclick={() => listData.push({listName: (listData.length + 1).toString(), list: initList})}
+            onclick={() => listAdd()}
           >+</button>
         </div>
       </Dialog>

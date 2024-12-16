@@ -119,7 +119,7 @@ export const ui = {
     'team-builder.explor': 'Exploration Team',
     'team-builder.favorite': 'Favorite Characters',
     'team-builder.owned': 'Owned Characters',
-    "team-randomizer.title": "Random Team Generator",
+    'team-randomizer.title': 'Random Team Generator',
     // wish-banner
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',

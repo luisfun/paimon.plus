@@ -64,7 +64,7 @@ onMount(() => {
 
 $effect(() => {
   localStorage.setItem(LocalStorageKey, JSON.stringify(listData))
-  if (!dialog.open) list = listData[tabIndex].list
+  list = listData[tabIndex].list
 })
 </script>
 

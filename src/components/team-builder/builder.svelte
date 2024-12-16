@@ -23,7 +23,6 @@ const dialogs: HTMLDialogElement[] = []
 const worker = new TypedWorker(teamBuild)
 let exe: ReturnType<typeof worker.execute>
 $effect(() => {
-  console.log('effect')
   loadingIndicator = true
   if (exe) exe.abort()
   exe = worker.execute([

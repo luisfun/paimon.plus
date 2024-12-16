@@ -17,7 +17,8 @@ let result = $state<typeof avatar>()
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">
-  <Result {lang} {result} {loadingIndicator} />
+  <div class="mb-auto">
+  </div>
   <div class="mb-auto">
     <TeamBuilderInput {lang} bind:list />
   </div>

@@ -45,7 +45,7 @@ const t = useTranslations(lang)
               <div class="relative w-1/6" class:opacity-0={!(battle ? all.battleHiScore : all.explorHiScore)}>
                 <Svg icon="thumbs-up" class="absolute inset-0 h-1/2 m-auto" />
               </div>
-              <div class="collapse-title grid grid-cols-4 gap-4 py-3 px-4">
+              <div class="collapse-title w-full grid grid-cols-4 gap-4 py-3 px-4">
                 {@render teamGrid(all.data)}
               </div>
             </div>

@@ -10,7 +10,7 @@ const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)
 ---
 
-<Layout title={t("player-card-templates.title")}>
+<Layout title={t("player-card-templates.title") + " @Shie"}>
   <div class="mb-6 text-center">{t("player-card.creator")}:
     <ExternalA class="text-link" href="https://x.com/fukafukafuka29">
       <Svg class="w-4 h-4 inline-block" icon="x-twitter" />@fukafukafuka29

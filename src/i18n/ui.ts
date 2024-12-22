@@ -120,6 +120,10 @@ export const ui = {
     'team-builder.favorite': 'Favorite Characters',
     'team-builder.owned': 'Owned Characters',
     'team-randomizer.title': 'Random Team Generator',
+    'team-randomizer.abyss': 'Abyss',
+    'team-randomizer.domain': 'Domain',
+    'team-randomizer.character': 'Character',
+    'team-randomizer.error': 'There may not be enough owned characters.',
     // wish-banner
     'wish-banner.title': 'Wish Banner History',
     'wish-banner.ver': 'Ver.',

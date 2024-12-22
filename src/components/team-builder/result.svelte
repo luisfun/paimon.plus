@@ -63,11 +63,11 @@ const t = useTranslations(lang)
 {/snippet}
 
 <div role="tablist" class="relative tabs tabs-lg tabs-bordered grid-cols-2 mb-auto">
-  <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label={t("team-builder.battle")} defaultChecked />
+  <input type="radio" name="team_builder_result" role="tab" class="tab" aria-label={t("team-builder.battle")} defaultChecked />
   <div role="tabpanel" class="tab-content">
     {@render teamsView(result?.battle, true)}
   </div>
-  <input type="radio" name="my_tabs_2" role="tab" class="tab" aria-label={t("team-builder.explor")} />
+  <input type="radio" name="team_builder_result" role="tab" class="tab" aria-label={t("team-builder.explor")} />
   <div role="tabpanel" class="tab-content">
     {@render teamsView(result?.explor, false)}
   </div>

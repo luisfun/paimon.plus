@@ -76,7 +76,7 @@ $effect(() => {
 >
   {#each listData as data, i}
     <input
-      type="radio" name="my_tabs_1" role="tab" class="tab !ps-4 !pe-4 whitespace-nowrap"
+      type="radio" name="team_builder_input" role="tab" class="tab !ps-4 !pe-4 whitespace-nowrap"
       aria-label={data.listName}
       onclick={() => tabIndex = i}
       checked={tabIndex === i}

@@ -689,8 +689,8 @@ export const avatar: Avatar[] = [
   {
     name: 'Traveler',
     elem: 'Hydro',
-    score: [0, 0, 0, 1],
-    burstDep: 0,
+    score: [0, 1, 0, 0],
+    burstDep: 3,
   },
   {
     name: 'Traveler',

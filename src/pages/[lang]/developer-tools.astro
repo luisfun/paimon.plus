@@ -1,0 +1,15 @@
+---
+import { getLangFromUrl, useTranslations } from '@i18n/utils'
+import Layout from '@layout'
+export { getStaticPaths } from '@i18n/utils'
+
+const lang = getLangFromUrl(Astro.url)
+const t = useTranslations(lang)
+---
+
+<Layout title={t("developer-tools.title")}>
+  <div>
+    <div class="text-xl text-center my-6">This page is under reconstruction.</div>
+    <div class="text-center text-base my-6">If you need it urgently, please request via Discord.</div>
+  </div>
+</Layout>

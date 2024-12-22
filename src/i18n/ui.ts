@@ -139,6 +139,8 @@ export const ui = {
     'player-card.templates': 'Templates',
     'player-card.fonts': 'Fonts',
     'player-card-templates.title': 'Player Card Templates',
+    // developer-tools
+    'developer-tools.title': 'Developer Tools',
     // stat
     'Base ATK': 'Base ATK',
     HP: 'HP',

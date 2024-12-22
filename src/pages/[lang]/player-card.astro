@@ -14,6 +14,7 @@ const xIds = [...new Set(data.filter(e => e.toolId).map(e => e.x))]
 ---
 
 <Layout title={t("player-card.title")}>
+  {import.meta.env.DEV ?
   <Generator client:only="svelte" {lang} />
   <Collapse title={t("player-card.credit")} arrow>
     <div class="grid gap-2 sm:gap-0 grid-cols-1 sm:grid-cols-2">
@@ -26,4 +27,10 @@ const xIds = [...new Set(data.filter(e => e.toolId).map(e => e.x))]
       </div>
     </div>
   </Collapse>
+  :
+  <div>
+    <div class="text-xl text-center my-6">ページの再構築中です。</div>
+    <div class="text-center text-base my-6">ブックマーク等はそのまま、<ExternalA class="text-link" href={`https://old.paimon.plus/${lang}/player-card/`}>こちら</ExternalA>の古いサイトを利用してください。</div>
+  </div>
+  }
 </Layout>

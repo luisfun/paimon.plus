@@ -16,10 +16,8 @@ let { lang, list = $bindable(), dialogs }: { lang: Lang; list: string[]; dialogs
 const t = useTranslations(lang)
 
 const initList = avatar.filter(e => e.qualityType === 'QUALITY_PURPLE' || e.name === 'Traveler').map(e => e.id)
-const travelerList = avatar.filter(e => e.name === 'Traveler').map(e => e.id)
 let tabIndex = $state(0)
 let listData = $state<ListData[]>([{ listName: t('team-builder.owned'), list: initList }])
-let isTravelerAll = $derived(list.filter(e => e.split(':')[0] === 'Traveler').length === travelerList.length)
 let dialog: HTMLDialogElement
 let scrollElement: HTMLElement
 let scrollLeft = 0
@@ -44,15 +42,6 @@ const wheelHandler = (e: WheelEvent & { currentTarget: EventTarget & HTMLDivElem
 const ownedClick = (id: string) => {
   const ids = listData[tabIndex].list
   listData[tabIndex].list = ids.includes(id) ? ids.filter(e => e !== id) : [...ids, id]
-}
-
-const allTravelerClick = () => {
-  const ids = listData[tabIndex].list
-  if (isTravelerAll) {
-    listData[tabIndex].list = ids.filter(e => e.split(':')[0] !== 'Traveler')
-  } else {
-    listData[tabIndex].list = [...ids.filter(e => e.split(':')[0] !== 'Traveler'), ...travelerList]
-  }
 }
 
 const listAdd = (copyIndex?: number) => {
@@ -129,7 +118,4 @@ $effect(() => {
     <Icon {...avatarProps(a.avatarId ?? -1, undefined, listData[tabIndex].list.includes(a.id) ? "outline outline-primary outline-offset-2" : "opacity-50")} elem={a.name === 'Traveler' ? a.elem : undefined} />
   </button>
 {/each}
-  <button class="relative" onclick={allTravelerClick} aria-label="Traveler">
-    <Icon {...avatarProps(10000007, undefined, isTravelerAll ? "outline outline-primary outline-offset-2" : "opacity-50")} />
-  </button>
 </div>

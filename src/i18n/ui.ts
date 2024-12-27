@@ -200,7 +200,7 @@ export const ui = {
     'home.nav.map': 'マップ',
     'home.nav.chronicle': '戦績',
     'home.nav.calculator': '育成計算機',
-    'home.nav.calendar': '素材曜日',
+    'home.nav.calendar': '曜日素材',
     'showcase.title': 'プロフィール キャラクター',
     'showcase.error.register': 'キャラクターラインナップにキャラが登録されていません。',
     'showcase.error.public':

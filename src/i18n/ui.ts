@@ -30,7 +30,7 @@ export const ui = {
     'home.nav.map': 'Teyvat Map',
     'home.nav.chronicle': 'Chronicle',
     'home.nav.calculator': 'Calculator',
-    'home.nav.calendar': 'Calendar',
+    'home.nav.calendar': 'Daily Materials',
     // showcase, artifacter
     'showcase.title': 'Character Showcase',
     'showcase.error.register': 'No characters found in the Character Showcase.',

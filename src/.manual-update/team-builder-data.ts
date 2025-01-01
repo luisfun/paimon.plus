@@ -8,6 +8,31 @@ export const avatar: Avatar[] = [
   },
   */
   {
+    name: 'Citlali',
+    score: [0, 0, 1, 2],
+    coop: [
+      {
+        score: 4,
+        or: [
+          [
+            { roll: ['main', 'sub'], elem: ['Pyro'] },
+            { roll: ['main', 'sub'], elem: ['Cryo'] },
+          ],
+          { roll: ['main'], elem: ['Hydro'] },
+        ],
+      },
+    ],
+    filter: { score: 6, roll: 'healer' },
+  },
+  {
+    name: 'Mavuika',
+    score: [5, 3, 0, 0],
+    dmg: ['charge'],
+    explor: ['fly', 2],
+    coop: [{ score: 1, add: ['Chasca', 'Xilonen', 'Kinich', 'Mualani'] }],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Chasca',
     score: [1, 0, 0, 0],
     dmg: ['charge'],

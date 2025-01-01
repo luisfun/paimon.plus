@@ -1,5 +1,117 @@
 [
   {
+    "key": "Citlali",
+    "id": 10000107,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 1197975042,
+    "skillDepotId": 10701,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Citlali_01",
+      "UI_Talent_S_Citlali_02",
+      "UI_Talent_U_Citlali_01",
+      "UI_Talent_S_Citlali_03",
+      "UI_Talent_U_Citlali_02",
+      "UI_Talent_S_Citlali_04"
+    ],
+    "skills": [
+      {
+        "id": 11071,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 10731
+      },
+      {
+        "id": 11072,
+        "icon": "Skill_S_Citlali_01",
+        "proud": 10732
+      },
+      {
+        "id": 11075,
+        "icon": "Skill_E_Citlali_01",
+        "proud": 10739
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101249": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104319": 3,
+        "104350": 9,
+        "104351": 63,
+        "104352": 114,
+        "112101": 36,
+        "112102": 96,
+        "112103": 129,
+        "113062": 18,
+        "113071": 46
+      }
+    },
+    "wikiId": 7300
+  },
+  {
+    "key": "Mavuika",
+    "id": 10000106,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 113398050,
+    "skillDepotId": 10601,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Mavuika_01",
+      "UI_Talent_S_Mavuika_02",
+      "UI_Talent_U_Mavuika_01",
+      "UI_Talent_S_Mavuika_03",
+      "UI_Talent_U_Mavuika_02",
+      "UI_Talent_S_Mavuika_04"
+    ],
+    "skills": [
+      {
+        "id": 11061,
+        "icon": "Skill_A_04",
+        "proud": 10631
+      },
+      {
+        "id": 11062,
+        "icon": "Skill_S_Mavuika_01",
+        "proud": 10632
+      },
+      {
+        "id": 11065,
+        "icon": "Skill_E_Mavuika_01",
+        "proud": 10639
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101253": 168,
+        "104111": 1,
+        "104112": 9,
+        "104113": 9,
+        "104114": 6,
+        "104319": 3,
+        "104347": 9,
+        "104348": 63,
+        "104349": 114,
+        "112104": 36,
+        "112105": 96,
+        "112106": 129,
+        "113066": 46,
+        "113068": 18
+      }
+    },
+    "wikiId": 7299
+  },
+  {
     "key": "Chasca",
     "id": 10000104,
     "qualityType": "QUALITY_ORANGE",
@@ -1890,7 +2002,12 @@
         "proud": 4639
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 204601,
+        "key": "HutaoCostumeWinter"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,
@@ -2876,6 +2993,67 @@
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "nameTextMapHash": 3816664530,
+    "skillDepotId": 702,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_PlayerFire_01",
+      "UI_Talent_S_PlayerFire_02",
+      "UI_Talent_U_PlayerFire_01",
+      "UI_Talent_S_PlayerFire_03",
+      "UI_Talent_U_PlayerFire_02",
+      "UI_Talent_S_PlayerFire_04"
+    ],
+    "skills": [
+      {
+        "id": 100551,
+        "icon": "Skill_A_01",
+        "proud": 531
+      },
+      {
+        "id": 10097,
+        "icon": "Skill_S_PlayerFire_01",
+        "proud": 532
+      },
+      {
+        "id": 10098,
+        "icon": "Skill_E_PlayerFire_01",
+        "proud": 539
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "100024": 168,
+        "104101": 1,
+        "104102": 9,
+        "104103": 9,
+        "104104": 6,
+        "104319": 3,
+        "104347": 9,
+        "104348": 18,
+        "104349": 18,
+        "104351": 33,
+        "104352": 36,
+        "104354": 12,
+        "104355": 60,
+        "112005": 18,
+        "112006": 30,
+        "112007": 36,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113063": 12
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "PlayerGirl",
+    "id": 10000007,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 3816664530,
     "skillDepotId": 701,
     "element": null,
     "consts": [
@@ -3253,6 +3431,67 @@
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "nameTextMapHash": 1533656818,
+    "skillDepotId": 502,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_PlayerFire_01",
+      "UI_Talent_S_PlayerFire_02",
+      "UI_Talent_U_PlayerFire_01",
+      "UI_Talent_S_PlayerFire_03",
+      "UI_Talent_U_PlayerFire_02",
+      "UI_Talent_S_PlayerFire_04"
+    ],
+    "skills": [
+      {
+        "id": 100541,
+        "icon": "Skill_A_01",
+        "proud": 530
+      },
+      {
+        "id": 10097,
+        "icon": "Skill_S_PlayerFire_01",
+        "proud": 532
+      },
+      {
+        "id": 10098,
+        "icon": "Skill_E_PlayerFire_01",
+        "proud": 539
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "100024": 168,
+        "104101": 1,
+        "104102": 9,
+        "104103": 9,
+        "104104": 6,
+        "104319": 3,
+        "104347": 9,
+        "104348": 18,
+        "104349": 18,
+        "104351": 33,
+        "104352": 36,
+        "104354": 12,
+        "104355": 60,
+        "112005": 18,
+        "112006": 30,
+        "112007": 36,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113063": 12
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "PlayerBoy",
+    "id": 10000005,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1533656818,
     "skillDepotId": 501,
     "element": null,
     "consts": [
@@ -3433,6 +3672,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Lanyan",
+    "id": 10000108,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 1888132250,
+    "skillDepotId": 10801,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Lanyan_01",
+      "UI_Talent_S_Lanyan_02",
+      "UI_Talent_U_Lanyan_01",
+      "UI_Talent_S_Lanyan_03",
+      "UI_Talent_U_Lanyan_02",
+      "UI_Talent_S_Lanyan_04"
+    ],
+    "skills": [
+      {
+        "id": 11081,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 10831
+      },
+      {
+        "id": 11082,
+        "icon": "Skill_S_Lanyan_01",
+        "proud": 10832
+      },
+      {
+        "id": 11085,
+        "icon": "Skill_E_Lanyan_01",
+        "proud": 10839
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101241": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104313": 9,
+        "104314": 63,
+        "104315": 114,
+        "104319": 3,
+        "112038": 36,
+        "112039": 96,
+        "112040": 129,
+        "113066": 46,
+        "113069": 18
+      }
+    },
+    "wikiId": 7301
   },
   {
     "key": "Olorun",
@@ -5508,7 +5803,12 @@
         "proud": 2339
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 202301,
+        "key": "XianglingCostumeWinter"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,

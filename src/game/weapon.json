@@ -1075,6 +1075,29 @@
     "wikiId": 1979
   },
   {
+    "id": 12514,
+    "icon": "UI_EquipIcon_Claymore_RadianceSword",
+    "rankLevel": 5,
+    "nameTextMapHash": 1876377995,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112101": 15,
+        "112102": 23,
+        "112103": 27,
+        "112113": 23,
+        "112114": 27,
+        "112115": 41,
+        "114061": 5,
+        "114062": 14,
+        "114063": 14,
+        "114064": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 12513,
     "icon": "UI_EquipIcon_Claymore_EmeraldSword",
     "rankLevel": 5,
@@ -2901,6 +2924,29 @@
       }
     },
     "wikiId": 1993
+  },
+  {
+    "id": 14517,
+    "icon": "UI_EquipIcon_Catalyst_Figurines",
+    "rankLevel": 5,
+    "nameTextMapHash": 2466897131,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112104": 15,
+        "112105": 23,
+        "112106": 27,
+        "112107": 23,
+        "112108": 27,
+        "112109": 41,
+        "114065": 5,
+        "114066": 14,
+        "114067": 14,
+        "114068": 6
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 14516,

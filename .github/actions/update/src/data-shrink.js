@@ -9,6 +9,7 @@ import pt from '../../../../src/game/.text/TextMapPT.json' assert { type: 'json'
 
 const TextMap = { en, ja, ko, pt }
 
+import AvatarCodex from '../../../../src/game/.data/AvatarCodexExcelConfigData.json' assert { type: 'json' }
 // avatar
 import AvatarCostume from '../../../../src/game/.data/AvatarCostumeExcelConfigData.json' assert { type: 'json' }
 import Avatar from '../../../../src/game/.data/AvatarExcelConfigData.json' assert { type: 'json' }
@@ -48,6 +49,7 @@ const E = {
   AvatarTalent,
   AvatarCostume,
   AvatarPromote,
+  AvatarCodex,
   Weapon,
   WeaponPromote,
   Material,
@@ -78,7 +80,12 @@ const dumpAvatar = () => {
   //const blockIds = [10000001, 11000008, 11000009, 11000010, 11000011, 11000013, 11000017, 11000018, 11000019, 11000025, 11000026, 11000027, 11000028, 11000030, 11000031, 11000032, 11000033, 11000034, 11000035, 11000036, 11000037, 11000038, 11000039, 11000040, 11000041, 11000042, 11000043, 11000044, 11000045, 11000046, 10000901]
   const minIdNum = 10000001
   const maxIdNum = 10000901 // 11000000
-  for (const avatar of E.Avatar.filter(e => minIdNum < e.id && e.id < maxIdNum)) {
+  const isCodex = id => {
+    const find = E.AvatarCodex.find(e => e.avatarId === id)
+    if (!find || new Date(find.beginTime) < new Date()) return true
+    return false
+  }
+  for (const avatar of E.Avatar.filter(e => minIdNum < e.id && e.id < maxIdNum && isCodex(e.id))) {
     const aInfo = {}
     aInfo.key = avatar.iconName.split('_').at(-1)
     // biome-ignore format: index

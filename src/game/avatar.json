@@ -3674,62 +3674,6 @@
     "wikiId": 32
   },
   {
-    "key": "Lanyan",
-    "id": 10000108,
-    "qualityType": "QUALITY_PURPLE",
-    "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 1888132250,
-    "skillDepotId": 10801,
-    "element": "Wind",
-    "consts": [
-      "UI_Talent_S_Lanyan_01",
-      "UI_Talent_S_Lanyan_02",
-      "UI_Talent_U_Lanyan_01",
-      "UI_Talent_S_Lanyan_03",
-      "UI_Talent_U_Lanyan_02",
-      "UI_Talent_S_Lanyan_04"
-    ],
-    "skills": [
-      {
-        "id": 11081,
-        "icon": "Skill_A_Catalyst_MD",
-        "proud": 10831
-      },
-      {
-        "id": 11082,
-        "icon": "Skill_S_Lanyan_01",
-        "proud": 10832
-      },
-      {
-        "id": 11085,
-        "icon": "Skill_E_Lanyan_01",
-        "proud": 10839
-      }
-    ],
-    "costumes": [],
-    "allCosts": {
-      "promoteCoin": 420000,
-      "skillCoin": 4957500,
-      "materials": {
-        "101241": 168,
-        "104151": 1,
-        "104152": 9,
-        "104153": 9,
-        "104154": 6,
-        "104313": 9,
-        "104314": 63,
-        "104315": 114,
-        "104319": 3,
-        "112038": 36,
-        "112039": 96,
-        "112040": 129,
-        "113066": 46,
-        "113069": 18
-      }
-    },
-    "wikiId": 7301
-  },
-  {
     "key": "Olorun",
     "id": 10000105,
     "qualityType": "QUALITY_PURPLE",

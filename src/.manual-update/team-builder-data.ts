@@ -713,6 +713,24 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Traveler',
+    elem: 'Pyro',
+    score: [0, 0, 1, 0],
+    burstDep: 2,
+    coop: [
+      {
+        score: 2,
+        add: [
+          [
+            { roll: ['main', 'sub'], elem: ['Dendro'] },
+            { roll: ['main', 'sub'], elem: ['Hydro'] },
+          ],
+        ],
+      },
+    ],
+    filter: { score: 3, roll: 'support' },
+  },
+  {
+    name: 'Traveler',
     elem: 'Hydro',
     score: [0, 1, 0, 0],
     burstDep: 3,

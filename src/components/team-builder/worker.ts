@@ -4,6 +4,8 @@ import type { Avatar, AvatarData, Elem, Explor, Member } from './types'
 type ScoreData = { data: AvatarData[]; battle: number; explor: number }
 type CalcScoreFunc = (data: AvatarData[], map: Map<string, ScoreData>) => void
 
+// メモ：一般旅人について。UIのバックロジック追加。お気に入りのロール破壊ロジック修正。フィルターロジック修正。の3つで対応可能
+
 export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], globalCoop: typeof gc) => {
   const ROLL_LIMIT = 15 // 初期のrollフィルター数
   const RESULT_LIMIT = 30 // ハイスコアの最小数

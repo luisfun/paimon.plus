@@ -13,6 +13,7 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
 
   ////////////////////////////// 組み合わせロジック //////////////////////////////
 
+  // ANDとORロジックの混在を解決したい ///// 一般旅人
   // お気に入りのrollを破壊するかどうか
   const favoriteList = ownedList.filter(e => favoriteIds.includes(e.id))
   const favoriteRoll = ROLLS.map((roll, i) =>
@@ -68,6 +69,7 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
             if (hasIds([main, subsup1, subsup2], heal)) continue
             const ids = [main, subsup1, subsup2, heal].map(e => e.id)
             if (!favoriteIds.every(id => ids.includes(id))) continue
+            // if (!everyFavoriteIds.every(id => ids.includes(id)) && !someFavoriteIds.some(id => ids.includes(id))) continue ///// 一般旅人
             calcScore([main, subsup1, subsup2, heal], resultMap)
           }
         }

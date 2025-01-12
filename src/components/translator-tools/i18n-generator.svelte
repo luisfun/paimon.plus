@@ -2,6 +2,7 @@
 // client:load
 import { ui } from '@i18n/ui'
 import { type Lang, useTranslations } from '@i18n/utils'
+import { onMount } from 'svelte'
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)
@@ -47,6 +48,19 @@ const onclick = () => {
     buttonText = 'Download'
   }, 1500)
 }
+
+onMount(() => {
+  if (lang !== 'en') {
+    const handleBeforeUnload = (event: BeforeUnloadEvent) => {
+      event.preventDefault()
+      event.returnValue = ''
+    }
+    window.addEventListener('beforeunload', handleBeforeUnload)
+    return () => {
+      window.removeEventListener('beforeunload', handleBeforeUnload)
+    }
+  }
+})
 </script>
 
 <div class="overflow-x-auto">

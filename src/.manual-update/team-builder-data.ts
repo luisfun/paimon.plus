@@ -395,6 +395,12 @@ export const avatar: Avatar[] = [
   },
 
   {
+    name: 'Lan Yan',
+    score: [0, 0, 2, 3],
+    burstDep: 1,
+    coop: [{ score: 1, add: ['Bennett', 'Kujou Sara'] }],
+  },
+  {
     name: 'Ororon',
     score: [0, 1, 0, 0],
     coop: [
@@ -771,7 +777,7 @@ export const globalCoop = {
       add: [
         [
           { roll: ['main'], elem: ['4elem'] },
-          { roll: ['support'], elem: ['Anemo'] },
+          { roll: ['support', 'healer'], elem: ['Anemo'] },
         ],
       ],
     },

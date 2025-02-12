@@ -1,5 +1,61 @@
 [
   {
+    "key": "Mizuki",
+    "id": 10000109,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 3784387538,
+    "skillDepotId": 10901,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Mizuki_01",
+      "UI_Talent_S_Mizuki_02",
+      "UI_Talent_U_Mizuki_01",
+      "UI_Talent_S_Mizuki_03",
+      "UI_Talent_U_Mizuki_02",
+      "UI_Talent_S_Mizuki_04"
+    ],
+    "skills": [
+      {
+        "id": 11091,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 10931
+      },
+      {
+        "id": 11092,
+        "icon": "Skill_S_Mizuki_01",
+        "proud": 10932
+      },
+      {
+        "id": 11095,
+        "icon": "Skill_E_Mizuki_01",
+        "proud": 10939
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101206": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104319": 3,
+        "104320": 9,
+        "104321": 63,
+        "104322": 114,
+        "112044": 36,
+        "112045": 96,
+        "112046": 129,
+        "113060": 18,
+        "113071": 46
+      }
+    },
+    "wikiId": 7420
+  },
+  {
     "key": "Citlali",
     "id": 10000107,
     "qualityType": "QUALITY_ORANGE",

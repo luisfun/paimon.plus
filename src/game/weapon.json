@@ -2926,6 +2926,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14518,
+    "icon": "UI_EquipIcon_Catalyst_SakuraFan",
+    "rankLevel": 5,
+    "nameTextMapHash": 3790622667,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112053": 15,
+        "112054": 23,
+        "112055": 27,
+        "112110": 23,
+        "112111": 27,
+        "112112": 41,
+        "114029": 5,
+        "114030": 14,
+        "114031": 14,
+        "114032": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14517,
     "icon": "UI_EquipIcon_Catalyst_Figurines",
     "rankLevel": 5,
@@ -4091,6 +4114,29 @@
       }
     },
     "wikiId": 1972
+  },
+  {
+    "id": 13432,
+    "icon": "UI_EquipIcon_Pole_Aoandon",
+    "rankLevel": 4,
+    "nameTextMapHash": 486513155,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112044": 10,
+        "112045": 15,
+        "112046": 18,
+        "112116": 15,
+        "112117": 18,
+        "112118": 27,
+        "114033": 3,
+        "114034": 9,
+        "114035": 9,
+        "114036": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13431,

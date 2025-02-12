@@ -3,10 +3,8 @@ import { avatarProps } from '@components/img-props'
 import avatarJson from '@game/avatar.json'
 import { getLangFromUrl, useTranslations } from '@i18n/utils'
 import Layout from '@layout'
-import { wish } from '@manual/wish-banner'
+import { normals, wish } from '@manual/wish-banner'
 export { getStaticPaths } from '@i18n/utils'
-
-const normals = ['Jean', 'Diluc', 'Qiqi', 'Mona', 'Keqing', 'Tighnari', 'Dehya']
 
 const lang = getLangFromUrl(Astro.url)
 const t = useTranslations(lang)

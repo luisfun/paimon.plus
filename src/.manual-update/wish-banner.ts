@@ -5,6 +5,11 @@ export const wish: {
   c5e1?: string[]
 }[] = [
   {
+    ver: 5.4,
+    c51: ['Yumemizuki Mizuki', 'Sigewinne'],
+    c52: ['Furina', 'Wriothesley'],
+  },
+  {
     ver: 5.3,
     c51: ['Mavuika', 'Citlali'],
     c52: ['Arlecchino', 'Clorinde'],
@@ -202,3 +207,5 @@ export const wish: {
     c52: ['Klee'],
   },
 ]
+
+export const normals = ['Jean', 'Diluc', 'Qiqi', 'Mona', 'Keqing', 'Tighnari', 'Dehya', 'Yumemizuki Mizuki']

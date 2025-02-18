@@ -8,21 +8,48 @@ export const avatar: Avatar[] = [
   },
   */
   {
-    name: 'Citlali',
-    score: [0, 0, 1, 2],
+    name: 'Yumemizuki Mizuki',
+    score: [1, 0, 0, 0],
+    dmg: ['element'],
+    explor: ['fly', 2],
     coop: [
+      { score: -3, add: [{ trigger: ['normal'] }] },
+      { score: -2, add: ['Bennett', 'Faruzan'] },
       {
-        score: 4,
-        or: [
-          [
-            { roll: ['main', 'sub'], elem: ['Pyro'] },
-            { roll: ['main', 'sub'], elem: ['Cryo'] },
-          ],
-          { roll: ['main'], elem: ['Hydro'] },
+        score: 1,
+        add: [
+          { elem: ['4elem'] },
+          { elem: ['4elem'], roll: ['sub'] },
+          [{ elem: ['4elem'] }, { elem: ['4elem'] }],
+          { elem: ['Pyro'] },
+          { elem: ['Hydro'] },
+          { elem: ['Cryo'] },
+          { elem: ['Electro'] },
         ],
       },
     ],
-    filter: { score: 6, roll: 'healer' },
+    filter: { score: 5, roll: 'main' },
+  },
+  {
+    name: 'Citlali',
+    score: [0, 0, 1, 1],
+    coop: [
+      {
+        score: 1,
+        or: [
+          { roll: ['main'], elem: ['Pyro'] },
+          { roll: ['main'], elem: ['Hydro'] },
+        ],
+      },
+      {
+        score: 3,
+        or: [
+          { roll: ['main', 'sub'], elem: ['Pyro'] },
+          { roll: ['main', 'sub'], elem: ['Hydro'] },
+        ],
+      },
+    ],
+    filter: { score: 5, roll: 'healer' },
   },
   {
     name: 'Mavuika',
@@ -43,6 +70,7 @@ export const avatar: Avatar[] = [
         score: 1,
         add: [
           { elem: ['4elem'] },
+          { elem: ['4elem'], roll: ['sub'] },
           [{ elem: ['4elem'] }, { elem: ['4elem'] }],
           { elem: ['Pyro'] },
           { elem: ['Hydro'] },

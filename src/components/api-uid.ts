@@ -266,8 +266,8 @@ const get_reliquary_roll_set = (idList: number[] | undefined) => {
         rolls: [
           {
             rank: id % 10,
-            value: data.propValue,
-            display: rollStatToString(data.propType, data.propValue),
+            value: data.propValue ?? 0,
+            display: rollStatToString(data.propType, data.propValue ?? 0),
           },
         ],
       })
@@ -275,8 +275,8 @@ const get_reliquary_roll_set = (idList: number[] | undefined) => {
       const i = re.findIndex(e => e.prop === data.propType)
       re[i].rolls.push({
         rank: id % 10,
-        value: data.propValue,
-        display: rollStatToString(data.propType, data.propValue),
+        value: data.propValue ?? 0,
+        display: rollStatToString(data.propType, data.propValue ?? 0),
       })
     }
   }

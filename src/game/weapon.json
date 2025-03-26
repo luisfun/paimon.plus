@@ -2926,6 +2926,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14519,
+    "icon": "UI_EquipIcon_Catalyst_VaresaTransformer",
+    "rankLevel": 5,
+    "nameTextMapHash": 2559426851,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112101": 15,
+        "112102": 23,
+        "112103": 27,
+        "112119": 23,
+        "112120": 27,
+        "112121": 41,
+        "114065": 5,
+        "114066": 14,
+        "114067": 14,
+        "114068": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14518,
     "icon": "UI_EquipIcon_Catalyst_SakuraFan",
     "rankLevel": 5,

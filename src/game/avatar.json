@@ -1,5 +1,189 @@
 [
   {
+    "key": "Hutao",
+    "id": 10000046,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 853394138,
+    "skillDepotId": 4601,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Hutao_03",
+      "UI_Talent_S_Hutao_01",
+      "UI_Talent_U_Hutao_01",
+      "UI_Talent_S_Hutao_02",
+      "UI_Talent_U_Hutao_02",
+      "UI_Talent_S_Hutao_04"
+    ],
+    "skills": [
+      {
+        "id": 10461,
+        "icon": "Skill_A_03",
+        "proud": 4631
+      },
+      {
+        "id": 10462,
+        "icon": "Skill_S_Hutao_01",
+        "proud": 4632
+      },
+      {
+        "id": 10463,
+        "icon": "Skill_E_Hutao_01",
+        "proud": 4639
+      }
+    ],
+    "costumes": [
+      {
+        "skinId": 204601,
+        "key": "HutaoCostumeWinter"
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101202": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104313": 9,
+        "104314": 63,
+        "104315": 114,
+        "104319": 3,
+        "112038": 18,
+        "112039": 66,
+        "112040": 93,
+        "112044": 18,
+        "112045": 30,
+        "112046": 36,
+        "113014": 18,
+        "113023": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "Mavuika",
+    "id": 10000023,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 3293134650,
+    "skillDepotId": 2301,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Xiangling_01",
+      "UI_Talent_S_Xiangling_02",
+      "UI_Talent_U_Xiangling_02",
+      "UI_Talent_S_Xiangling_03",
+      "UI_Talent_U_Xiangling_01",
+      "UI_Talent_S_Xiangling_04"
+    ],
+    "skills": [
+      {
+        "id": 10231,
+        "icon": "Skill_A_03",
+        "proud": 2331
+      },
+      {
+        "id": 10232,
+        "icon": "Skill_S_Xiangling_01",
+        "proud": 2332
+      },
+      {
+        "id": 10235,
+        "icon": "Skill_E_Xiangling_01",
+        "proud": 2339
+      }
+    ],
+    "costumes": [
+      {
+        "skinId": 202301,
+        "key": "XianglingCostumeWinter"
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101202": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104313": 9,
+        "104314": 63,
+        "104315": 114,
+        "104319": 3,
+        "112002": 18,
+        "112003": 66,
+        "112004": 93,
+        "112044": 18,
+        "112045": 30,
+        "112046": 36,
+        "113004": 18,
+        "113023": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "Varesa",
+    "id": 10000111,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 283438874,
+    "skillDepotId": 11101,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Varesa_01",
+      "UI_Talent_S_Varesa_02",
+      "UI_Talent_U_Varesa_01",
+      "UI_Talent_S_Varesa_03",
+      "UI_Talent_U_Varesa_02",
+      "UI_Talent_S_Varesa_04"
+    ],
+    "skills": [
+      {
+        "id": 11111,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 11131
+      },
+      {
+        "id": 11112,
+        "icon": "Skill_S_Varesa_01",
+        "proud": 11132
+      },
+      {
+        "id": 11115,
+        "icon": "Skill_E_Varesa_01",
+        "proud": 11139
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101254": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112101": 36,
+        "112102": 96,
+        "112103": 129,
+        "113070": 18,
+        "113072": 46
+      }
+    },
+    "wikiId": 7488
+  },
+  {
     "key": "Mizuki",
     "id": 10000109,
     "qualityType": "QUALITY_ORANGE",
@@ -3728,6 +3912,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Iansan",
+    "id": 10000110,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 3120492514,
+    "skillDepotId": 11001,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Iansan_01",
+      "UI_Talent_S_Iansan_02",
+      "UI_Talent_U_Iansan_01",
+      "UI_Talent_S_Iansan_03",
+      "UI_Talent_U_Iansan_02",
+      "UI_Talent_S_Iansan_04"
+    ],
+    "skills": [
+      {
+        "id": 11101,
+        "icon": "Skill_A_03",
+        "proud": 11031
+      },
+      {
+        "id": 11102,
+        "icon": "Skill_S_Iansan_01",
+        "proud": 11032
+      },
+      {
+        "id": 11105,
+        "icon": "Skill_E_Iansan_01",
+        "proud": 11039
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101255": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104347": 9,
+        "104348": 63,
+        "104349": 114,
+        "112104": 36,
+        "112105": 96,
+        "112106": 129,
+        "113062": 18,
+        "113067": 46
+      }
+    },
+    "wikiId": 7502
   },
   {
     "key": "Lanyan",

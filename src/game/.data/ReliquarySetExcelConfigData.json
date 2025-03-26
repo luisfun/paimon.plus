@@ -1,1393 +1,1416 @@
 [
   {
-    "ALEHMIINBPG": [
+    "setId": 10001,
+    "setIcon": "UI_RelicIcon_10001_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210001,
+    "containsList": [
       51140,
       51120,
       51150,
       51110,
       51130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10001,
-    "GGIFNFCHNPN": "UI_RelicIcon_10001_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 4,
-    "MKODHDBFBDO": 210001,
-    "NALHEHOJMJM": [
+    "bagSortValue": 4,
+    "dungeonGroup": [],
+    "textList": [
       3554068574,
       3930680251
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10002,
+    "setIcon": "UI_RelicIcon_10002_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210002,
+    "containsList": [
       52140,
       52120,
       52150,
       52110,
       52130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10002,
-    "GGIFNFCHNPN": "UI_RelicIcon_10002_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 10,
-    "MKODHDBFBDO": 210002,
-    "NALHEHOJMJM": [
+    "bagSortValue": 10,
+    "dungeonGroup": [],
+    "textList": [
       3286811710,
       2520149811
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10003,
+    "setIcon": "UI_RelicIcon_10003_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210003,
+    "containsList": [
       53140,
       53120,
       53150,
       53110,
       53130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10003,
-    "GGIFNFCHNPN": "UI_RelicIcon_10003_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 9,
-    "MKODHDBFBDO": 210003,
-    "NALHEHOJMJM": [
+    "bagSortValue": 9,
+    "dungeonGroup": [],
+    "textList": [
       232496686,
       594914603
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10004,
+    "setIcon": "UI_RelicIcon_10004_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210004,
+    "containsList": [
       54140,
       54120,
       54150,
       54110,
       54130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10004,
-    "GGIFNFCHNPN": "UI_RelicIcon_10004_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 5,
-    "MKODHDBFBDO": 210004,
-    "NALHEHOJMJM": [
+    "bagSortValue": 5,
+    "dungeonGroup": [],
+    "textList": [
       2558816190,
       1164604419
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10005,
+    "setIcon": "UI_RelicIcon_10005_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210005,
+    "containsList": [
       55140,
       55120,
       55150,
       55110,
       55130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10005,
-    "GGIFNFCHNPN": "UI_RelicIcon_10005_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 6,
-    "MKODHDBFBDO": 210005,
-    "NALHEHOJMJM": [
+    "bagSortValue": 6,
+    "dungeonGroup": [],
+    "textList": [
       1440602798,
       3934658059
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10006,
+    "setIcon": "UI_RelicIcon_10006_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210006,
+    "containsList": [
       56140,
       56120,
       56150,
       56110,
       56130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10006,
-    "GGIFNFCHNPN": "UI_RelicIcon_10006_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 11,
-    "MKODHDBFBDO": 210006,
-    "NALHEHOJMJM": [
+    "bagSortValue": 11,
+    "dungeonGroup": [],
+    "textList": [
       2301958078,
       1744056099
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10007,
+    "setIcon": "UI_RelicIcon_10007_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210007,
+    "containsList": [
       57140,
       57120,
       57150,
       57110,
       57130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10007,
-    "GGIFNFCHNPN": "UI_RelicIcon_10007_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 7,
-    "MKODHDBFBDO": 210007,
-    "NALHEHOJMJM": [
+    "bagSortValue": 7,
+    "dungeonGroup": [],
+    "textList": [
       2152781502,
       1666101139
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10008,
+    "setIcon": "UI_RelicIcon_10008_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210008,
+    "containsList": [
       58240,
       58220,
       58250,
       58210,
       58230
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10008,
-    "GGIFNFCHNPN": "UI_RelicIcon_10008_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 12,
-    "MKODHDBFBDO": 210008,
-    "NALHEHOJMJM": [
+    "bagSortValue": 12,
+    "dungeonGroup": [],
+    "textList": [
       3435100542,
       3500507723
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10009,
+    "setIcon": "UI_RelicIcon_10009_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210009,
+    "containsList": [
       59140,
       59120,
       59150,
       59110,
       59130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10009,
-    "GGIFNFCHNPN": "UI_RelicIcon_10009_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 8,
-    "MKODHDBFBDO": 210009,
-    "NALHEHOJMJM": [
+    "bagSortValue": 8,
+    "dungeonGroup": [],
+    "textList": [
       1523555942,
       3039984011
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10010,
+    "setIcon": "UI_RelicIcon_10010_4",
+    "EKBNEFGNCDP": 3,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210010,
+    "containsList": [
       60140,
       60120,
       60150,
       60110,
       60130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10010,
-    "GGIFNFCHNPN": "UI_RelicIcon_10010_4",
-    "HDBBFMIDLPE": 3,
-    "HLCHLKECILA": 1,
-    "MKODHDBFBDO": 210010,
-    "NALHEHOJMJM": [
+    "bagSortValue": 1,
+    "dungeonGroup": [],
+    "textList": [
       1817050462,
       575390611
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10011,
+    "setIcon": "UI_RelicIcon_10011_4",
+    "EKBNEFGNCDP": 3,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210011,
+    "containsList": [
       61140,
       61120,
       61150,
       61110,
       61130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10011,
-    "GGIFNFCHNPN": "UI_RelicIcon_10011_4",
-    "HDBBFMIDLPE": 3,
-    "HLCHLKECILA": 2,
-    "MKODHDBFBDO": 210011,
-    "NALHEHOJMJM": [
+    "bagSortValue": 2,
+    "dungeonGroup": [],
+    "textList": [
       4021451694,
       1065267667
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10012,
+    "setIcon": "UI_RelicIcon_10012_4",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210012,
+    "containsList": [
       62140,
       62120,
       62150,
       62110,
       62130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10012,
-    "GGIFNFCHNPN": "UI_RelicIcon_10012_4",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 13,
-    "MKODHDBFBDO": 210012,
-    "NALHEHOJMJM": [
+    "bagSortValue": 13,
+    "dungeonGroup": [],
+    "textList": [
       1407486230,
       1160154787
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 10013,
+    "setIcon": "UI_RelicIcon_10013_4",
+    "EKBNEFGNCDP": 3,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 210013,
+    "containsList": [
       63140,
       63120,
       63150,
       63110,
       63130
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 10013,
-    "GGIFNFCHNPN": "UI_RelicIcon_10013_4",
-    "HDBBFMIDLPE": 3,
-    "HLCHLKECILA": 3,
-    "MKODHDBFBDO": 210013,
-    "NALHEHOJMJM": [
+    "bagSortValue": 3,
+    "dungeonGroup": [],
+    "textList": [
       568790406,
       3607087251
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 14001,
+    "setIcon": "UI_RelicIcon_14001_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 214001,
+    "containsList": [
       71340,
       71320,
       71350,
       71310,
       71330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 14001,
-    "GGIFNFCHNPN": "UI_RelicIcon_14001_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 30,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 30,
+    "dungeonGroup": [
       5122,
       5123
     ],
-    "MKODHDBFBDO": 214001,
-    "NALHEHOJMJM": [
+    "textList": [
       1641249022,
       3455611563
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 14002,
+    "setIcon": "UI_RelicIcon_14002_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 214002,
+    "containsList": [
       72340,
       72320,
       72350,
       72310,
       72330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 14002,
-    "GGIFNFCHNPN": "UI_RelicIcon_14002_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 26,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 26,
+    "dungeonGroup": [
       5005,
       5006
     ],
-    "MKODHDBFBDO": 214002,
-    "NALHEHOJMJM": [
+    "textList": [
       1192561894,
       1968896091
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 14003,
+    "setIcon": "UI_RelicIcon_14003_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 214003,
+    "containsList": [
       73340,
       73320,
       73350,
       73310,
       73330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 14003,
-    "GGIFNFCHNPN": "UI_RelicIcon_14003_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 28,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 28,
+    "dungeonGroup": [
       5109,
       5110
     ],
-    "MKODHDBFBDO": 214003,
-    "NALHEHOJMJM": [
+    "textList": [
       351271598,
       2828057235
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 14004,
+    "setIcon": "UI_RelicIcon_14004_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 214004,
+    "containsList": [
       74340,
       74320,
       74350,
       74310,
       74330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 14004,
-    "GGIFNFCHNPN": "UI_RelicIcon_14004_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 22,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 22,
+    "dungeonGroup": [
       5011,
       5012
     ],
-    "MKODHDBFBDO": 214004,
-    "NALHEHOJMJM": [
+    "textList": [
       401042630,
       150564555
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15001,
+    "setIcon": "UI_RelicIcon_15001_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215001,
+    "containsList": [
       75340,
       75320,
       75350,
       75310,
       75330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15001,
-    "GGIFNFCHNPN": "UI_RelicIcon_15001_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 18,
-    "MKODHDBFBDO": 215001,
-    "NALHEHOJMJM": [
+    "bagSortValue": 18,
+    "dungeonGroup": [],
+    "textList": [
       1890216262,
       522318403
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15002,
+    "setIcon": "UI_RelicIcon_15002_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215002,
+    "containsList": [
       76340,
       76320,
       76350,
       76310,
       76330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15002,
-    "GGIFNFCHNPN": "UI_RelicIcon_15002_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 23,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 23,
+    "dungeonGroup": [
       5011,
       5012
     ],
-    "MKODHDBFBDO": 215002,
-    "NALHEHOJMJM": [
+    "textList": [
       3418857494,
       3906211907
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15003,
+    "setIcon": "UI_RelicIcon_15003_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215003,
+    "containsList": [
       77340,
       77320,
       77350,
       77310,
       77330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15003,
-    "GGIFNFCHNPN": "UI_RelicIcon_15003_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 19,
-    "MKODHDBFBDO": 215003,
-    "NALHEHOJMJM": [
+    "bagSortValue": 19,
+    "dungeonGroup": [],
+    "textList": [
       2602151358,
       205455459
     ]
   },
   {
-    "ACIMIKEFPAE": 1,
-    "ALEHMIINBPG": [
+    "setId": 15004,
+    "setIcon": "UI_RelicIcon_15004_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215004,
+    "disableFilter": 1,
+    "containsList": [
       78340,
       78320,
       78350,
       78310,
       78330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15004,
-    "GGIFNFCHNPN": "UI_RelicIcon_15004_4",
-    "HDBBFMIDLPE": 5,
-    "MKODHDBFBDO": 215004,
-    "NALHEHOJMJM": [
+    "dungeonGroup": [],
+    "textList": [
       3786709222,
       3239325019
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15005,
+    "setIcon": "UI_RelicIcon_15005_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215005,
+    "containsList": [
       79340,
       79320,
       79350,
       79310,
       79330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15005,
-    "GGIFNFCHNPN": "UI_RelicIcon_15005_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 27,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 27,
+    "dungeonGroup": [
       5005,
       5006
     ],
-    "MKODHDBFBDO": 215005,
-    "NALHEHOJMJM": [
+    "textList": [
       1140176206,
       580927259
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15006,
+    "setIcon": "UI_RelicIcon_15006_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215006,
+    "containsList": [
       80340,
       80320,
       80350,
       80310,
       80330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15006,
-    "GGIFNFCHNPN": "UI_RelicIcon_15006_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 29,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 29,
+    "dungeonGroup": [
       5109,
       5110
     ],
-    "MKODHDBFBDO": 215006,
-    "NALHEHOJMJM": [
+    "textList": [
       2097515030,
       731621371
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15007,
+    "setIcon": "UI_RelicIcon_15007_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215007,
+    "containsList": [
       81340,
       81320,
       81350,
       81310,
       81330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15007,
-    "GGIFNFCHNPN": "UI_RelicIcon_15007_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 20,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 20,
+    "dungeonGroup": [
       5113,
       5114
     ],
-    "MKODHDBFBDO": 215007,
-    "NALHEHOJMJM": [
+    "textList": [
       1950711078,
       2003140467
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15008,
+    "setIcon": "UI_RelicIcon_15008_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215008,
+    "containsList": [
       82340,
       82320,
       82350,
       82310,
       82330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15008,
-    "GGIFNFCHNPN": "UI_RelicIcon_15008_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 21,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 21,
+    "dungeonGroup": [
       5113,
       5114
     ],
-    "MKODHDBFBDO": 215008,
-    "NALHEHOJMJM": [
+    "textList": [
       3776130198,
       2723354699
     ]
   },
   {
-    "ALEHMIINBPG": [
-      83330
-    ],
-    "DAPKAPNJEAI": [
+    "setId": 15009,
+    "setIcon": "UI_RelicIcon_15009_3",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
       1
     ],
-    "FAGPIACCGJE": 15009,
-    "GGIFNFCHNPN": "UI_RelicIcon_15009_3",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 16,
-    "MKODHDBFBDO": 215009,
-    "NALHEHOJMJM": [
+    "equipAffixId": 215009,
+    "containsList": [
+      83330
+    ],
+    "bagSortValue": 16,
+    "dungeonGroup": [],
+    "textList": [
       1600414334,
       1178752179
     ]
   },
   {
-    "ALEHMIINBPG": [
-      84330
-    ],
-    "DAPKAPNJEAI": [
+    "setId": 15010,
+    "setIcon": "UI_RelicIcon_15010_3",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
       1
     ],
-    "FAGPIACCGJE": 15010,
-    "GGIFNFCHNPN": "UI_RelicIcon_15010_3",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 15,
-    "MKODHDBFBDO": 215010,
-    "NALHEHOJMJM": [
+    "equipAffixId": 215010,
+    "containsList": [
+      84330
+    ],
+    "bagSortValue": 15,
+    "dungeonGroup": [],
+    "textList": [
       1799147854,
       2961475019
     ]
   },
   {
-    "ALEHMIINBPG": [
-      85330
-    ],
-    "DAPKAPNJEAI": [
+    "setId": 15011,
+    "setIcon": "UI_RelicIcon_15011_3",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
       1
     ],
-    "FAGPIACCGJE": 15011,
-    "GGIFNFCHNPN": "UI_RelicIcon_15011_3",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 14,
-    "MKODHDBFBDO": 215011,
-    "NALHEHOJMJM": [
+    "equipAffixId": 215011,
+    "containsList": [
+      85330
+    ],
+    "bagSortValue": 14,
+    "dungeonGroup": [],
+    "textList": [
       3683910422,
       1198100419
     ]
   },
   {
-    "ACIMIKEFPAE": 1,
-    "ALEHMIINBPG": [
-      86330
-    ],
-    "DAPKAPNJEAI": [
+    "setId": 15012,
+    "setIcon": "UI_RelicIcon_15012_3",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
       1
     ],
-    "FAGPIACCGJE": 15012,
-    "GGIFNFCHNPN": "UI_RelicIcon_15012_3",
-    "HDBBFMIDLPE": 4,
-    "MKODHDBFBDO": 215012,
-    "NALHEHOJMJM": [
+    "equipAffixId": 215012,
+    "disableFilter": 1,
+    "containsList": [
+      86330
+    ],
+    "dungeonGroup": [],
+    "textList": [
       606069766,
       2520461163
     ]
   },
   {
-    "ALEHMIINBPG": [
-      87330
-    ],
-    "DAPKAPNJEAI": [
+    "setId": 15013,
+    "setIcon": "UI_RelicIcon_15013_3",
+    "EKBNEFGNCDP": 4,
+    "setNeedNum": [
       1
     ],
-    "FAGPIACCGJE": 15013,
-    "GGIFNFCHNPN": "UI_RelicIcon_15013_3",
-    "HDBBFMIDLPE": 4,
-    "HLCHLKECILA": 17,
-    "MKODHDBFBDO": 215013,
-    "NALHEHOJMJM": [
+    "equipAffixId": 215013,
+    "containsList": [
+      87330
+    ],
+    "bagSortValue": 17,
+    "dungeonGroup": [],
+    "textList": [
       2222490622,
       3773807931
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15014,
+    "setIcon": "UI_RelicIcon_15014_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215014,
+    "containsList": [
       88340,
       88320,
       88350,
       88310,
       88330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15014,
-    "GGIFNFCHNPN": "UI_RelicIcon_15014_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 24,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 24,
+    "dungeonGroup": [
       5104,
       5105
     ],
-    "MKODHDBFBDO": 215014,
-    "NALHEHOJMJM": [
+    "textList": [
       2664577174,
       592694043
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15015,
+    "setIcon": "UI_RelicIcon_15015_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215015,
+    "containsList": [
       89340,
       89320,
       89350,
       89310,
       89330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15015,
-    "GGIFNFCHNPN": "UI_RelicIcon_15015_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 25,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 25,
+    "dungeonGroup": [
       5104,
       5105
     ],
-    "MKODHDBFBDO": 215015,
-    "NALHEHOJMJM": [
+    "textList": [
       3519135894,
       3824293219
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15016,
+    "setIcon": "UI_RelicIcon_15016_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215016,
+    "containsList": [
       90340,
       90320,
       90350,
       90310,
       90330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15016,
-    "GGIFNFCHNPN": "UI_RelicIcon_15016_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 31,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 31,
+    "dungeonGroup": [
       5122,
       5123
     ],
-    "MKODHDBFBDO": 215016,
-    "NALHEHOJMJM": [
+    "textList": [
       744843214,
       2102945267
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15017,
+    "setIcon": "UI_RelicIcon_15017_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215017,
+    "containsList": [
       91340,
       91320,
       91350,
       91310,
       91330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15017,
-    "GGIFNFCHNPN": "UI_RelicIcon_15017_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 32,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 32,
+    "dungeonGroup": [
       5016,
       5017
     ],
-    "MKODHDBFBDO": 215017,
-    "NALHEHOJMJM": [
+    "textList": [
       3006628830,
       1301524275
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15018,
+    "setIcon": "UI_RelicIcon_15018_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215018,
+    "containsList": [
       92340,
       92320,
       92350,
       92310,
       92330
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15018,
-    "GGIFNFCHNPN": "UI_RelicIcon_15018_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 33,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 33,
+    "dungeonGroup": [
       5016,
       5017
     ],
-    "MKODHDBFBDO": 215018,
-    "NALHEHOJMJM": [
+    "textList": [
       3846340430,
       220839051
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15019,
+    "setIcon": "UI_RelicIcon_15019_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215019,
+    "containsList": [
       93442,
       93422,
       93452,
       93412,
       93432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15019,
-    "GGIFNFCHNPN": "UI_RelicIcon_15019_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 34,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 34,
+    "dungeonGroup": [
       5202,
       5203
     ],
-    "MKODHDBFBDO": 215019,
-    "NALHEHOJMJM": [
+    "textList": [
       3379981326,
       1909146235
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15020,
+    "setIcon": "UI_RelicIcon_15020_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215020,
+    "containsList": [
       94442,
       94422,
       94452,
       94412,
       94432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15020,
-    "GGIFNFCHNPN": "UI_RelicIcon_15020_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 35,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 35,
+    "dungeonGroup": [
       5202,
       5203
     ],
-    "MKODHDBFBDO": 215020,
-    "NALHEHOJMJM": [
+    "textList": [
       178637006,
       3063165291
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15021,
+    "setIcon": "UI_RelicIcon_15021_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215021,
+    "containsList": [
       95442,
       95422,
       95452,
       95412,
       95432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15021,
-    "GGIFNFCHNPN": "UI_RelicIcon_15021_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 36,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 36,
+    "dungeonGroup": [
       5206,
       5207
     ],
-    "MKODHDBFBDO": 215021,
-    "NALHEHOJMJM": [
+    "textList": [
       771272886,
       3712988195
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15022,
+    "setIcon": "UI_RelicIcon_15022_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215022,
+    "containsList": [
       96442,
       96422,
       96452,
       96412,
       96432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15022,
-    "GGIFNFCHNPN": "UI_RelicIcon_15022_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 37,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 37,
+    "dungeonGroup": [
       5206,
       5207
     ],
-    "MKODHDBFBDO": 215022,
-    "NALHEHOJMJM": [
+    "textList": [
       652463502,
       3326279315
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15023,
+    "setIcon": "UI_RelicIcon_15023_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215023,
+    "containsList": [
       97442,
       97422,
       97452,
       97412,
       97432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15023,
-    "GGIFNFCHNPN": "UI_RelicIcon_15023_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 38,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 38,
+    "dungeonGroup": [
       5127,
       5128
     ],
-    "MKODHDBFBDO": 215023,
-    "NALHEHOJMJM": [
+    "textList": [
       2550361214,
       160031931
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15024,
+    "setIcon": "UI_RelicIcon_15024_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215024,
+    "containsList": [
       98442,
       98422,
       98452,
       98412,
       98432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15024,
-    "GGIFNFCHNPN": "UI_RelicIcon_15024_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 39,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 39,
+    "dungeonGroup": [
       5127,
       5128
     ],
-    "MKODHDBFBDO": 215024,
-    "NALHEHOJMJM": [
+    "textList": [
       260761190,
       2264156139
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15025,
+    "setIcon": "UI_RelicIcon_15025_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215025,
+    "containsList": [
       20442,
       20422,
       20452,
       20412,
       20432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15025,
-    "GGIFNFCHNPN": "UI_RelicIcon_15025_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 40,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 40,
+    "dungeonGroup": [
       5052,
       5053
     ],
-    "MKODHDBFBDO": 215025,
-    "NALHEHOJMJM": [
+    "textList": [
       235669822,
       2351156307
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15026,
+    "setIcon": "UI_RelicIcon_15026_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215026,
+    "containsList": [
       21442,
       21422,
       21452,
       21412,
       21432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15026,
-    "GGIFNFCHNPN": "UI_RelicIcon_15026_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 41,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 41,
+    "dungeonGroup": [
       5052,
       5053
     ],
-    "MKODHDBFBDO": 215026,
-    "NALHEHOJMJM": [
+    "textList": [
       1245570190,
       2786980939
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15027,
+    "setIcon": "UI_RelicIcon_15027_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215027,
+    "containsList": [
       27442,
       27422,
       27452,
       27412,
       27432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15027,
-    "GGIFNFCHNPN": "UI_RelicIcon_15027_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 42,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 42,
+    "dungeonGroup": [
       5062,
       5063
     ],
-    "MKODHDBFBDO": 215027,
-    "NALHEHOJMJM": [
+    "textList": [
       294255758,
       4086792275
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15028,
+    "setIcon": "UI_RelicIcon_15028_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215028,
+    "containsList": [
       28442,
       28422,
       28452,
       28412,
       28432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15028,
-    "GGIFNFCHNPN": "UI_RelicIcon_15028_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 43,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 43,
+    "dungeonGroup": [
       5062,
       5063
     ],
-    "MKODHDBFBDO": 215028,
-    "NALHEHOJMJM": [
+    "textList": [
       429562510,
       2358985011
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15029,
+    "setIcon": "UI_RelicIcon_15029_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215029,
+    "containsList": [
       29442,
       29422,
       29452,
       29412,
       29432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15029,
-    "GGIFNFCHNPN": "UI_RelicIcon_15029_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 44,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 44,
+    "dungeonGroup": [
       5066,
       5067
     ],
-    "MKODHDBFBDO": 215029,
-    "NALHEHOJMJM": [
+    "textList": [
       1718787446,
       1807240227
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15030,
+    "setIcon": "UI_RelicIcon_15030_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215030,
+    "containsList": [
       30442,
       30422,
       30452,
       30412,
       30432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15030,
-    "GGIFNFCHNPN": "UI_RelicIcon_15030_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 45,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 45,
+    "dungeonGroup": [
       5066,
       5067
     ],
-    "MKODHDBFBDO": 215030,
-    "NALHEHOJMJM": [
+    "textList": [
       2924198126,
       2817123035
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15031,
+    "setIcon": "UI_RelicIcon_15031_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215031,
+    "containsList": [
       31442,
       31422,
       31452,
       31412,
       31432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15031,
-    "GGIFNFCHNPN": "UI_RelicIcon_15031_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 46,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 46,
+    "dungeonGroup": [
       4482,
       4483
     ],
-    "MKODHDBFBDO": 215031,
-    "NALHEHOJMJM": [
+    "textList": [
       930115270,
       1717323939
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15032,
+    "setIcon": "UI_RelicIcon_15032_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215032,
+    "containsList": [
       32442,
       32422,
       32452,
       32412,
       32432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15032,
-    "GGIFNFCHNPN": "UI_RelicIcon_15032_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 47,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 47,
+    "dungeonGroup": [
       4482,
       4483
     ],
-    "MKODHDBFBDO": 215032,
-    "NALHEHOJMJM": [
+    "textList": [
       2296062934,
       3171350643
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15033,
+    "setIcon": "UI_RelicIcon_15033_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215033,
+    "containsList": [
       33442,
       33422,
       33452,
       33412,
       33432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15033,
-    "GGIFNFCHNPN": "UI_RelicIcon_15033_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 48,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 48,
+    "dungeonGroup": [
       4486,
       4487
     ],
-    "MKODHDBFBDO": 215033,
-    "NALHEHOJMJM": [
+    "textList": [
       3699137590,
       1462645979
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15034,
+    "setIcon": "UI_RelicIcon_15034_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215034,
+    "containsList": [
       34442,
       34422,
       34452,
       34412,
       34432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15034,
-    "GGIFNFCHNPN": "UI_RelicIcon_15034_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 49,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 49,
+    "dungeonGroup": [
       4486,
       4487
     ],
-    "MKODHDBFBDO": 215034,
-    "NALHEHOJMJM": [
+    "textList": [
       3551528574,
       1513333099
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15035,
+    "setIcon": "UI_RelicIcon_15035_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215035,
+    "containsList": [
       35442,
       35422,
       35452,
       35412,
       35432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15035,
-    "GGIFNFCHNPN": "UI_RelicIcon_15035_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 50,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 50,
+    "dungeonGroup": [
       4512,
       4513
     ],
-    "MKODHDBFBDO": 215035,
-    "NALHEHOJMJM": [
+    "textList": [
       1963076470,
       1236189427
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15036,
+    "setIcon": "UI_RelicIcon_15036_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215036,
+    "containsList": [
       36442,
       36422,
       36452,
       36412,
       36432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15036,
-    "GGIFNFCHNPN": "UI_RelicIcon_15036_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 51,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 51,
+    "dungeonGroup": [
       4512,
       4513
     ],
-    "MKODHDBFBDO": 215036,
-    "NALHEHOJMJM": [
+    "textList": [
       2137664806,
       2076662451
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15037,
+    "setIcon": "UI_RelicIcon_15037_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215037,
+    "containsList": [
       37442,
       37422,
       37452,
       37412,
       37432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15037,
-    "GGIFNFCHNPN": "UI_RelicIcon_15037_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 52,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 52,
+    "dungeonGroup": [
       5020,
       5021
     ],
-    "MKODHDBFBDO": 215037,
-    "NALHEHOJMJM": [
+    "textList": [
       3776658126,
       2269330339
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15038,
+    "setIcon": "UI_RelicIcon_15038_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215038,
+    "containsList": [
       38442,
       38422,
       38452,
       38412,
       38432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15038,
-    "GGIFNFCHNPN": "UI_RelicIcon_15038_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 53,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 53,
+    "dungeonGroup": [
       5020,
       5021
     ],
-    "MKODHDBFBDO": 215038,
-    "NALHEHOJMJM": [
+    "textList": [
       2364224526,
       730276251
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15039,
+    "setIcon": "UI_RelicIcon_15039_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215039,
+    "containsList": [
       39442,
       39422,
       39452,
       39412,
       39432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15039,
-    "GGIFNFCHNPN": "UI_RelicIcon_15039_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 54,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 54,
+    "dungeonGroup": [
       5024,
       5025
     ],
-    "MKODHDBFBDO": 215039,
-    "NALHEHOJMJM": [
+    "textList": [
       1867443326,
       2202813275
     ]
   },
   {
-    "ALEHMIINBPG": [
+    "setId": 15040,
+    "setIcon": "UI_RelicIcon_15040_4",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      2,
+      4
+    ],
+    "equipAffixId": 215040,
+    "containsList": [
       40442,
       40422,
       40452,
       40412,
       40432
     ],
-    "DAPKAPNJEAI": [
-      2,
-      4
-    ],
-    "FAGPIACCGJE": 15040,
-    "GGIFNFCHNPN": "UI_RelicIcon_15040_4",
-    "HDBBFMIDLPE": 5,
-    "HLCHLKECILA": 55,
-    "MBCPCJLIMJL": [
+    "bagSortValue": 55,
+    "dungeonGroup": [
       5024,
       5025
     ],
-    "MKODHDBFBDO": 215040,
-    "NALHEHOJMJM": [
+    "textList": [
       748688758,
       3686884347
     ]
   },
   {
-    "ACIMIKEFPAE": 1,
-    "ALEHMIINBPG": [
+    "setId": 15000,
+    "setIcon": "",
+    "EKBNEFGNCDP": 5,
+    "setNeedNum": [
+      3,
+      5
+    ],
+    "disableFilter": 1,
+    "containsList": [
       99340,
       99320,
       99350,
       99310,
       99330
     ],
-    "DAPKAPNJEAI": [
-      3,
-      5
-    ],
-    "FAGPIACCGJE": 15000,
-    "HDBBFMIDLPE": 5,
-    "NALHEHOJMJM": [
+    "dungeonGroup": [],
+    "textList": [
       714505142,
       3191443955
     ]

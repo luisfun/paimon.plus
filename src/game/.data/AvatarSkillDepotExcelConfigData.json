@@ -1,27 +1,52 @@
 [
   {
-    "CBJGLADMBHG": [
+    "id": 101,
+    "energySkill": 10014,
+    "skills": [
       10011,
-      10012
+      10012,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10300,
       10101,
       10102,
       10001
     ],
-    "ELKKIAIGOBK": 101,
-    "GIEFGHHKGDD": 10014
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 201,
+    "energySkill": 10019,
+    "skills": [
       10024,
       10018,
-      10013
+      10013,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10020,
       10021,
       10052,
@@ -30,22 +55,13 @@
       10001,
       5002010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 223
-      }
+    "leaderTalent": 211,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 201,
-    "GIEFGHHKGDD": 10019,
-    "IAGMADCJGIA": [
+    "talents": [
       21,
       22,
       23,
@@ -53,37 +69,46 @@
       25,
       26
     ],
-    "IDLNEHLBGAJ": "Talent_Ayaka",
-    "OEJNCGDIBID": 211
+    "talentStarName": "Talent_Ayaka",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 301,
+    "energySkill": 10034,
+    "skills": [
       10031,
-      10033
+      10033,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       5003010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 323
-      }
+    "leaderTalent": 1300,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 301,
-    "GIEFGHHKGDD": 10034,
-    "IAGMADCJGIA": [
+    "talents": [
       31,
       32,
       33,
@@ -91,49 +116,83 @@
       35,
       36
     ],
-    "IDLNEHLBGAJ": "Talent_Qin",
-    "OEJNCGDIBID": 1300
+    "talentStarName": "Talent_Qin",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
-      100540
+    "id": 501,
+    "skills": [
+      100540,
+      0,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10035,
       10101,
       10001,
       10102,
       5005010
     ],
-    "ELKKIAIGOBK": 501,
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Common"
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Common"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 502,
+    "energySkill": 10098,
+    "skills": [
       100541,
-      10097
+      10097,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10054,
       5005010,
       10099
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 522,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 502,
-    "GIEFGHHKGDD": 10098,
-    "IAGMADCJGIA": [
+    "talents": [
       51,
       52,
       53,
@@ -141,33 +200,42 @@
       55,
       56
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Fire",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Fire"
+    "talentStarName": "Talent_PlayerBoy_Fire",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 522,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Fire"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 503,
+    "energySkill": 10088,
+    "skills": [
       100542,
-      10087
+      10087,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10054,
       5005010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 622,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 503,
-    "GIEFGHHKGDD": 10088,
-    "IAGMADCJGIA": [
+    "talents": [
       61,
       62,
       63,
@@ -175,35 +243,46 @@
       65,
       66
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Water",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Water"
+    "talentStarName": "Talent_PlayerBoy_Water",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 622,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Water"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 504,
+    "energySkill": 10068,
+    "skills": [
       100543,
-      10067
+      10067,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       10006,
       5005010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 722,
-        "ECKFGHMJDJK": 4
-      }
+    "leaderTalent": 1481,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 504,
-    "GIEFGHHKGDD": 10068,
-    "IAGMADCJGIA": [
+    "talents": [
       71,
       72,
       73,
@@ -211,50 +290,82 @@
       75,
       76
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Wind",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Wind",
-    "OEJNCGDIBID": 1481
+    "talentStarName": "Talent_PlayerBoy_Wind",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 722,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Wind"
   },
   {
-    "CBJGLADMBHG": [
-      100544
+    "id": 505,
+    "skills": [
+      100544,
+      0,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       10054,
       5005010
     ],
-    "ELKKIAIGOBK": 505,
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Ice"
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "Talent_PlayerBoy_Ice",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 506,
+    "energySkill": 10078,
+    "skills": [
       100545,
-      10077
+      10077,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       5005010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 922,
-        "ECKFGHMJDJK": 4
-      }
+    "leaderTalent": 1641,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 506,
-    "GIEFGHHKGDD": 10078,
-    "IAGMADCJGIA": [
+    "talents": [
       91,
       92,
       93,
@@ -262,34 +373,42 @@
       95,
       96
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Rock",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Rock",
-    "OEJNCGDIBID": 1641
+    "talentStarName": "Talent_PlayerBoy_Rock",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 922,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Rock"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 507,
+    "energySkill": 10605,
+    "skills": [
       100546,
-      10602
+      10602,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10054,
       5005010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1022,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 507,
-    "GIEFGHHKGDD": 10605,
-    "IAGMADCJGIA": [
+    "talents": [
       101,
       102,
       103,
@@ -297,33 +416,42 @@
       105,
       106
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Electric",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Electric"
+    "talentStarName": "Talent_PlayerBoy_Electric",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1022,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Electric"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 508,
+    "energySkill": 10118,
+    "skills": [
       100547,
-      10117
+      10117,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10054,
       5005010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1122,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 508,
-    "GIEFGHHKGDD": 10118,
-    "IAGMADCJGIA": [
+    "talents": [
       111,
       112,
       113,
@@ -331,37 +459,44 @@
       115,
       116
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerBoy_Grass",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Boy_Grass"
+    "talentStarName": "Talent_PlayerBoy_Grass",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1122,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Boy_Grass"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 601,
+    "energySkill": 10062,
+    "skills": [
       10060,
-      10061
+      10061,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10003,
       5006010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 423
-      }
+    "leaderTalent": 1100,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 601,
-    "GIEFGHHKGDD": 10062,
-    "IAGMADCJGIA": [
+    "talents": [
       41,
       42,
       43,
@@ -369,49 +504,83 @@
       45,
       46
     ],
-    "IDLNEHLBGAJ": "Talent_Lisa",
-    "OEJNCGDIBID": 1100
+    "talentStarName": "Talent_Lisa",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
-      100550
+    "id": 701,
+    "skills": [
+      100550,
+      0,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10035,
       10101,
       10001,
       10102,
       5007010
     ],
-    "ELKKIAIGOBK": 701,
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Common"
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Common"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 702,
+    "energySkill": 10098,
+    "skills": [
       100551,
-      10097
+      10097,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10055,
       5007010,
       10096
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 522,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 702,
-    "GIEFGHHKGDD": 10098,
-    "IAGMADCJGIA": [
+    "talents": [
       51,
       52,
       53,
@@ -419,33 +588,42 @@
       55,
       56
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Fire",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Fire"
+    "talentStarName": "Talent_PlayerGirl_Fire",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 522,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Fire"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 703,
+    "energySkill": 10088,
+    "skills": [
       100552,
-      10087
+      10087,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10055,
       5007010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 622,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 703,
-    "GIEFGHHKGDD": 10088,
-    "IAGMADCJGIA": [
+    "talents": [
       61,
       62,
       63,
@@ -453,35 +631,46 @@
       65,
       66
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Water",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Water"
+    "talentStarName": "Talent_PlayerGirl_Water",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 622,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Water"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 704,
+    "energySkill": 10068,
+    "skills": [
       100553,
-      10067
+      10067,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       10006,
       5007010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 722,
-        "ECKFGHMJDJK": 4
-      }
+    "leaderTalent": 1481,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 704,
-    "GIEFGHHKGDD": 10068,
-    "IAGMADCJGIA": [
+    "talents": [
       71,
       72,
       73,
@@ -489,50 +678,82 @@
       75,
       76
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Wind",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Wind",
-    "OEJNCGDIBID": 1481
+    "talentStarName": "Talent_PlayerGirl_Wind",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 722,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Wind"
   },
   {
-    "CBJGLADMBHG": [
-      100554
+    "id": 705,
+    "skills": [
+      100554,
+      0,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       10055,
       5007010
     ],
-    "ELKKIAIGOBK": 705,
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Ice"
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "Talent_PlayerGirl_Ice",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 706,
+    "energySkill": 10078,
+    "skills": [
       100555,
-      10077
+      10077,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10001,
       10102,
       5007010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 922,
-        "ECKFGHMJDJK": 4
-      }
+    "leaderTalent": 1641,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 706,
-    "GIEFGHHKGDD": 10078,
-    "IAGMADCJGIA": [
+    "talents": [
       91,
       92,
       93,
@@ -540,34 +761,42 @@
       95,
       96
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Rock",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Rock",
-    "OEJNCGDIBID": 1641
+    "talentStarName": "Talent_PlayerGirl_Rock",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 922,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Rock"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 707,
+    "energySkill": 10605,
+    "skills": [
       100556,
-      10602
+      10602,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10055,
       5007010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1022,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 707,
-    "GIEFGHHKGDD": 10605,
-    "IAGMADCJGIA": [
+    "talents": [
       101,
       102,
       103,
@@ -575,33 +804,42 @@
       105,
       106
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Electric",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Electric"
+    "talentStarName": "Talent_PlayerGirl_Electric",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1022,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Electric"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 708,
+    "energySkill": 10118,
+    "skills": [
       100557,
-      10117
+      10117,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10055,
       5007010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1122,
-        "ECKFGHMJDJK": 4
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 708,
-    "GIEFGHHKGDD": 10118,
-    "IAGMADCJGIA": [
+    "talents": [
       111,
       112,
       113,
@@ -609,16 +847,32 @@
       115,
       116
     ],
-    "IDLNEHLBGAJ": "Talent_PlayerGirl_Grass",
-    "KFKBPILIJAH": "Avatar_Player_AbilityGroup_Girl_Grass"
+    "talentStarName": "Talent_PlayerGirl_Grass",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1122,
+        "needAvatarPromoteLevel": 4
+      },
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": "Avatar_Player_AbilityGroup_Girl_Grass"
   },
   {
-    "CBJGLADMBHG": [
+    "id": 1401,
+    "energySkill": 10072,
+    "skills": [
       10070,
-      10071
+      10071,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10076,
       10079,
       10080,
@@ -627,22 +881,13 @@
       10003,
       5014010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 1423
-      }
+    "leaderTalent": 1560,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 1401,
-    "GIEFGHHKGDD": 10072,
-    "IAGMADCJGIA": [
+    "talents": [
       141,
       142,
       143,
@@ -650,38 +895,47 @@
       145,
       146
     ],
-    "IDLNEHLBGAJ": "Talent_Barbara",
-    "OEJNCGDIBID": 1560
+    "talentStarName": "Talent_Barbara",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 1423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 1501,
+    "energySkill": 10075,
+    "skills": [
       10073,
-      10074
+      10074,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10081,
       10101,
       10001,
       10102,
       5015010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 1523
-      }
+    "leaderTalent": 1050,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 1501,
-    "GIEFGHHKGDD": 10075,
-    "IAGMADCJGIA": [
+    "talents": [
       151,
       152,
       153,
@@ -689,38 +943,47 @@
       155,
       156
     ],
-    "IDLNEHLBGAJ": "Talent_Kaeya",
-    "OEJNCGDIBID": 1050
+    "talentStarName": "Talent_Kaeya",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 1523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 1601,
+    "energySkill": 10165,
+    "skills": [
       10160,
-      10161
+      10161,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10162,
       10163,
       10101,
       10102,
       5016010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 1621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 1622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 1623
-      }
+    "leaderTalent": 1400,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 1601,
-    "GIEFGHHKGDD": 10165,
-    "IAGMADCJGIA": [
+    "talents": [
       161,
       162,
       163,
@@ -728,37 +991,46 @@
       165,
       166
     ],
-    "IDLNEHLBGAJ": "Talent_Diluc",
-    "OEJNCGDIBID": 1400
+    "talentStarName": "Talent_Diluc",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 1621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 1622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 1623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2001,
+    "energySkill": 10203,
+    "skills": [
       10201,
-      10202
+      10202,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10204,
       10101,
       10102,
       5020010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2023
-      }
+    "leaderTalent": 2011,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2001,
-    "GIEFGHHKGDD": 10203,
-    "IAGMADCJGIA": [
+    "talents": [
       201,
       202,
       203,
@@ -766,16 +1038,34 @@
       205,
       206
     ],
-    "IDLNEHLBGAJ": "Talent_Razor",
-    "OEJNCGDIBID": 2011
+    "talentStarName": "Talent_Razor",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2023
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2101,
+    "energySkill": 10017,
+    "skills": [
       10041,
-      10032
+      10032,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10042,
       10043,
       10211,
@@ -783,22 +1073,14 @@
       10102,
       5021010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2123
-      }
+    "attackModeSkill": 20000,
+    "leaderTalent": 1000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2101,
-    "GIEFGHHKGDD": 10017,
-    "IAGMADCJGIA": [
+    "talents": [
       211,
       212,
       213,
@@ -806,39 +1088,48 @@
       215,
       216
     ],
-    "IDLNEHLBGAJ": "Talent_Ambor",
-    "NEMHOCMDGNM": 20000,
-    "OEJNCGDIBID": 1000
+    "talentStarName": "Talent_Ambor",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2201,
+    "energySkill": 10225,
+    "skills": [
       10221,
-      10224
+      10224,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10222,
       10223,
       10101,
       10102,
       5022010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2223
-      }
+    "attackModeSkill": 20000,
+    "leaderTalent": 2211,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2201,
-    "GIEFGHHKGDD": 10225,
-    "IAGMADCJGIA": [
+    "talents": [
       221,
       222,
       223,
@@ -846,38 +1137,46 @@
       225,
       226
     ],
-    "IDLNEHLBGAJ": "Talent_Venti",
-    "NEMHOCMDGNM": 20000,
-    "OEJNCGDIBID": 2211
+    "talentStarName": "Talent_Venti",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2301,
+    "energySkill": 10235,
+    "skills": [
       10231,
-      10232
+      10232,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10002,
       10102,
       5023010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2323
-      }
+    "leaderTalent": 2311,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2301,
-    "GIEFGHHKGDD": 10235,
-    "IAGMADCJGIA": [
+    "talents": [
       231,
       232,
       233,
@@ -885,36 +1184,44 @@
       235,
       236
     ],
-    "IDLNEHLBGAJ": "Talent_Xiangling",
-    "OEJNCGDIBID": 2311
+    "talentStarName": "Talent_Xiangling",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2401,
+    "energySkill": 10245,
+    "skills": [
       10241,
-      10242
+      10242,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       5024010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2423
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2401,
-    "GIEFGHHKGDD": 10245,
-    "IAGMADCJGIA": [
+    "talents": [
       241,
       242,
       243,
@@ -922,36 +1229,45 @@
       245,
       246
     ],
-    "IDLNEHLBGAJ": "Talent_Beidou"
+    "talentStarName": "Talent_Beidou",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2501,
+    "energySkill": 10385,
+    "skills": [
       10381,
-      10382
+      10382,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10001,
       5025010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2523
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2501,
-    "GIEFGHHKGDD": 10385,
-    "IAGMADCJGIA": [
+    "talents": [
       251,
       252,
       253,
@@ -959,37 +1275,46 @@
       255,
       256
     ],
-    "IDLNEHLBGAJ": "Talent_Xingqiu"
+    "talentStarName": "Talent_Xingqiu",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2601,
+    "energySkill": 10265,
+    "skills": [
       10261,
-      10262
+      10262,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10002,
       10263,
       10264
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2623
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2601,
-    "GIEFGHHKGDD": 10265,
-    "IAGMADCJGIA": [
+    "talents": [
       261,
       262,
       263,
@@ -997,15 +1322,34 @@
       265,
       266
     ],
-    "IDLNEHLBGAJ": "Talent_Xiao"
+    "talentStarName": "Talent_Xiao",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2701,
+    "energySkill": 10274,
+    "skills": [
       10271,
-      10272
+      10272,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10003,
@@ -1013,22 +1357,12 @@
       10275,
       5027010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2723
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2701,
-    "GIEFGHHKGDD": 10274,
-    "IAGMADCJGIA": [
+    "talents": [
       271,
       272,
       273,
@@ -1036,37 +1370,46 @@
       275,
       276
     ],
-    "IDLNEHLBGAJ": "Talent_Ningguang"
+    "talentStarName": "Talent_Ningguang",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 2901,
+    "energySkill": 10295,
+    "skills": [
       10291,
-      10292
+      10292,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10300,
       10101,
       10102,
       10003,
       5029010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 2921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 2922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 2923
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 2901,
-    "GIEFGHHKGDD": 10295,
-    "IAGMADCJGIA": [
+    "talents": [
       291,
       292,
       293,
@@ -1074,36 +1417,45 @@
       295,
       296
     ],
-    "IDLNEHLBGAJ": "Talent_Klee"
+    "talentStarName": "Talent_Klee",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 2921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 2922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 2923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3001,
+    "energySkill": 10303,
+    "skills": [
       10301,
-      10302
+      10302,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10002,
       5030010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3023
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3001,
-    "GIEFGHHKGDD": 10303,
-    "IAGMADCJGIA": [
+    "talents": [
       301,
       302,
       303,
@@ -1111,15 +1463,34 @@
       305,
       306
     ],
-    "IDLNEHLBGAJ": "Talent_Zhongli"
+    "talentStarName": "Talent_Zhongli",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3023
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3101,
+    "energySkill": 10313,
+    "skills": [
       10311,
-      10312
+      10312,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10314,
       10315,
       10316,
@@ -1127,22 +1498,13 @@
       10102,
       5031010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3123
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3101,
-    "GIEFGHHKGDD": 10313,
-    "IAGMADCJGIA": [
+    "talents": [
       311,
       312,
       313,
@@ -1150,37 +1512,45 @@
       315,
       316
     ],
-    "IDLNEHLBGAJ": "Talent_Fischl",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Fischl",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3201,
+    "energySkill": 10323,
+    "skills": [
       10321,
-      10322
+      10322,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10001,
       5032010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3223
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3201,
-    "GIEFGHHKGDD": 10323,
-    "IAGMADCJGIA": [
+    "talents": [
       321,
       322,
       323,
@@ -1188,15 +1558,34 @@
       325,
       326
     ],
-    "IDLNEHLBGAJ": "Talent_Bennett"
+    "talentStarName": "Talent_Bennett",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3301,
+    "energySkill": 10333,
+    "skills": [
       10331,
-      10332
+      10332,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10334,
       10335,
       10336,
@@ -1206,22 +1595,13 @@
       10001,
       5033010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3323
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3301,
-    "GIEFGHHKGDD": 10333,
-    "IAGMADCJGIA": [
+    "talents": [
       331,
       332,
       333,
@@ -1229,37 +1609,45 @@
       335,
       336
     ],
-    "IDLNEHLBGAJ": "Talent_Tartaglia",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Tartaglia",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3401,
+    "energySkill": 10343,
+    "skills": [
       10341,
-      10342
+      10342,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10344,
       10101,
       10102,
       5034010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3423
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3401,
-    "GIEFGHHKGDD": 10343,
-    "IAGMADCJGIA": [
+    "talents": [
       341,
       342,
       343,
@@ -1267,37 +1655,46 @@
       345,
       346
     ],
-    "IDLNEHLBGAJ": "Talent_Noel"
+    "talentStarName": "Talent_Noel",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3501,
+    "energySkill": 10353,
+    "skills": [
       10351,
-      10352
+      10352,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10355,
       10001,
       5035010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3523
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3501,
-    "GIEFGHHKGDD": 10353,
-    "IAGMADCJGIA": [
+    "talents": [
       351,
       352,
       353,
@@ -1305,35 +1702,44 @@
       355,
       356
     ],
-    "IDLNEHLBGAJ": "Talent_Qiqi"
+    "talentStarName": "Talent_Qiqi",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3601,
+    "energySkill": 10403,
+    "skills": [
       10401,
-      10402
+      10402,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       5036010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3623
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3601,
-    "GIEFGHHKGDD": 10403,
-    "IAGMADCJGIA": [
+    "talents": [
       361,
       362,
       363,
@@ -1341,36 +1747,46 @@
       365,
       366
     ],
-    "IDLNEHLBGAJ": "Talent_Chongyun"
+    "talentStarName": "Talent_Chongyun",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3701,
+    "energySkill": 10373,
+    "skills": [
       10371,
-      10372
+      10372,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10374,
       10101,
       10102,
       5037010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3723
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3701,
-    "GIEFGHHKGDD": 10373,
-    "IAGMADCJGIA": [
+    "talents": [
       371,
       372,
       373,
@@ -1378,37 +1794,45 @@
       375,
       376
     ],
-    "IDLNEHLBGAJ": "Talent_Ganyu",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Ganyu",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3801,
+    "energySkill": 10388,
+    "skills": [
       10386,
-      10387
+      10387,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       5038010,
       10001
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3801,
-    "GIEFGHHKGDD": 10388,
-    "IAGMADCJGIA": [
+    "talents": [
       381,
       382,
       383,
@@ -1416,37 +1840,47 @@
       385,
       386
     ],
-    "IDLNEHLBGAJ": "Talent_Albedo"
+    "talentStarName": "Talent_Albedo",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3823
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 3901,
+    "energySkill": 10395,
+    "skills": [
       10391,
-      10392
+      10392,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10393,
       10394,
       5039010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3923
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 3901,
-    "GIEFGHHKGDD": 10395,
-    "IAGMADCJGIA": [
+    "talents": [
       391,
       392,
       393,
@@ -1454,38 +1888,45 @@
       395,
       396
     ],
-    "IDLNEHLBGAJ": "Talent_Diona",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Diona",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4101,
+    "energySkill": 10415,
+    "skills": [
       10411,
       10412,
-      10413
+      10413,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10003,
       5041010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4101,
-    "GIEFGHHKGDD": 10415,
-    "IAGMADCJGIA": [
+    "talents": [
       411,
       412,
       413,
@@ -1493,37 +1934,46 @@
       415,
       416
     ],
-    "IDLNEHLBGAJ": "Talent_Mona"
+    "talentStarName": "Talent_Mona",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4201,
+    "energySkill": 10425,
+    "skills": [
       10421,
-      10422
+      10422,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10101,
       10102,
       10423,
       5042010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4223
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4201,
-    "GIEFGHHKGDD": 10425,
-    "IAGMADCJGIA": [
+    "talents": [
       421,
       422,
       423,
@@ -1531,37 +1981,46 @@
       425,
       426
     ],
-    "IDLNEHLBGAJ": "Talent_Keqing"
+    "talentStarName": "Talent_Keqing",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4301,
+    "energySkill": 10435,
+    "skills": [
       10431,
-      10432
+      10432,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10003,
       10433,
       5043010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4323
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4301,
-    "GIEFGHHKGDD": 10435,
-    "IAGMADCJGIA": [
+    "talents": [
       431,
       432,
       433,
@@ -1569,35 +2028,44 @@
       435,
       436
     ],
-    "IDLNEHLBGAJ": "Talent_Sucrose"
+    "talentStarName": "Talent_Sucrose",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4401,
+    "energySkill": 10443,
+    "skills": [
       10441,
-      10442
+      10442,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       5044010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4423
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4401,
-    "GIEFGHHKGDD": 10443,
-    "IAGMADCJGIA": [
+    "talents": [
       441,
       442,
       443,
@@ -1605,36 +2073,45 @@
       445,
       446
     ],
-    "IDLNEHLBGAJ": "Talent_Xinyan"
+    "talentStarName": "Talent_Xinyan",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4501,
+    "energySkill": 10453,
+    "skills": [
       10451,
-      10452
+      10452,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10002,
       5045010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4523
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4501,
-    "GIEFGHHKGDD": 10453,
-    "IAGMADCJGIA": [
+    "talents": [
       451,
       452,
       453,
@@ -1642,37 +2119,46 @@
       455,
       456
     ],
-    "IDLNEHLBGAJ": "Talent_Rosaria"
+    "talentStarName": "Talent_Rosaria",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4601,
+    "energySkill": 10463,
+    "skills": [
       10461,
-      10462
+      10462,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10002,
       10102,
       10464,
       5046010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4623
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4601,
-    "GIEFGHHKGDD": 10463,
-    "IAGMADCJGIA": [
+    "talents": [
       461,
       462,
       463,
@@ -1680,15 +2166,34 @@
       465,
       466
     ],
-    "IDLNEHLBGAJ": "Talent_Hutao"
+    "talentStarName": "Talent_Hutao",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4701,
+    "energySkill": 10475,
+    "skills": [
       10471,
-      10472
+      10472,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10001,
@@ -1696,22 +2201,12 @@
       10474,
       5047010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4723
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4701,
-    "GIEFGHHKGDD": 10475,
-    "IAGMADCJGIA": [
+    "talents": [
       471,
       472,
       473,
@@ -1719,37 +2214,46 @@
       475,
       476
     ],
-    "IDLNEHLBGAJ": "Talent_Kazuha"
+    "talentStarName": "Talent_Kazuha",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4801,
+    "energySkill": 10485,
+    "skills": [
       10481,
-      10482
+      10482,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10003,
       10473,
       5048010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4801,
-    "GIEFGHHKGDD": 10485,
-    "IAGMADCJGIA": [
+    "talents": [
       481,
       482,
       483,
@@ -1757,34 +2261,44 @@
       485,
       486
     ],
-    "IDLNEHLBGAJ": "Talent_Feiyan"
+    "talentStarName": "Talent_Feiyan",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4823
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 4901,
+    "energySkill": 10495,
+    "skills": [
       10491,
-      10492
+      10492,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10493,
       5049010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 4921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 4922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 4923
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 4901,
-    "GIEFGHHKGDD": 10495,
-    "IAGMADCJGIA": [
+    "talents": [
       491,
       492,
       493,
@@ -1792,35 +2306,43 @@
       495,
       496
     ],
-    "IDLNEHLBGAJ": "Talent_Yoimiya",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Yoimiya",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 4921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 4922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 4923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5001,
+    "energySkill": 10505,
+    "skills": [
       10501,
-      10502
+      10502,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       5050010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5023
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5001,
-    "GIEFGHHKGDD": 10505,
-    "IAGMADCJGIA": [
+    "talents": [
       501,
       502,
       503,
@@ -1828,35 +2350,44 @@
       505,
       506
     ],
-    "IDLNEHLBGAJ": "Talent_Tohma"
+    "talentStarName": "Talent_Tohma",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5023
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5101,
+    "energySkill": 10515,
+    "skills": [
       10511,
-      10512
+      10512,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       5051010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5101,
-    "GIEFGHHKGDD": 10515,
-    "IAGMADCJGIA": [
+    "talents": [
       511,
       512,
       513,
@@ -1864,38 +2395,44 @@
       515,
       516
     ],
-    "IDLNEHLBGAJ": "Talent_Eula"
+    "talentStarName": "Talent_Eula",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5201,
+    "energySkill": 10525,
+    "skills": [
       10521,
-      10522
+      10522,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10002,
       5052010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5223
-      },
-      {
-        "DGIJCGLPDPI": 5225
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5201,
-    "GIEFGHHKGDD": 10525,
-    "IAGMADCJGIA": [
+    "talents": [
       521,
       522,
       523,
@@ -1903,34 +2440,45 @@
       525,
       526
     ],
-    "IDLNEHLBGAJ": "Talent_Shougun"
+    "talentStarName": "Talent_Shougun",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5223
+      },
+      {},
+      {
+        "proudSkillGroupId": 5225
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5301,
+    "energySkill": 10535,
+    "skills": [
       10531,
-      10532
+      10532,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10533,
       5053010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5323
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5301,
-    "GIEFGHHKGDD": 10535,
-    "IAGMADCJGIA": [
+    "talents": [
       531,
       532,
       533,
@@ -1938,37 +2486,43 @@
       535,
       536
     ],
-    "IDLNEHLBGAJ": "Talent_Sayu"
+    "talentStarName": "Talent_Sayu",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5401,
+    "energySkill": 10545,
+    "skills": [
       10541,
-      10542
+      10542,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5054010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5423
-      },
-      {
-        "DGIJCGLPDPI": 5425
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5401,
-    "GIEFGHHKGDD": 10545,
-    "IAGMADCJGIA": [
+    "talents": [
       541,
       542,
       543,
@@ -1976,35 +2530,47 @@
       545,
       546
     ],
-    "IDLNEHLBGAJ": "Talent_Kokomi"
+    "talentStarName": "Talent_Kokomi",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5423
+      },
+      {},
+      {
+        "proudSkillGroupId": 5425
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5501,
+    "energySkill": 10555,
+    "skills": [
       10551,
-      10552
+      10552,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10553,
       10554,
       5055010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5523
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5501,
-    "GIEFGHHKGDD": 10555,
-    "IAGMADCJGIA": [
+    "talents": [
       551,
       552,
       553,
@@ -2012,36 +2578,45 @@
       555,
       556
     ],
-    "IDLNEHLBGAJ": "Talent_Gorou",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Gorou",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5601,
+    "energySkill": 10565,
+    "skills": [
       10561,
-      10562
+      10562,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10563,
       10564,
       5056010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5623
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5601,
-    "GIEFGHHKGDD": 10565,
-    "IAGMADCJGIA": [
+    "talents": [
       561,
       562,
       563,
@@ -2049,36 +2624,44 @@
       565,
       566
     ],
-    "IDLNEHLBGAJ": "Talent_Sara",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Sara",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5701,
+    "energySkill": 10575,
+    "skills": [
       10571,
-      10572
+      10572,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       10102,
       5057010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5723
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5701,
-    "GIEFGHHKGDD": 10575,
-    "IAGMADCJGIA": [
+    "talents": [
       571,
       572,
       573,
@@ -2086,35 +2669,44 @@
       575,
       576
     ],
-    "IDLNEHLBGAJ": "Talent_Itto"
+    "talentStarName": "Talent_Itto",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5801,
+    "energySkill": 10585,
+    "skills": [
       10581,
-      10582
+      10582,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10583,
       10003,
       5058010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5801,
-    "GIEFGHHKGDD": 10585,
-    "IAGMADCJGIA": [
+    "talents": [
       581,
       582,
       583,
@@ -2122,34 +2714,43 @@
       585,
       586
     ],
-    "IDLNEHLBGAJ": "Talent_Yae"
+    "talentStarName": "Talent_Yae",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5823
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 5901,
+    "energySkill": 10595,
+    "skills": [
       10591,
-      10592
+      10592,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5059010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 5921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 5922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 5923
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 5901,
-    "GIEFGHHKGDD": 10595,
-    "IAGMADCJGIA": [
+    "talents": [
       591,
       592,
       593,
@@ -2157,35 +2758,45 @@
       595,
       596
     ],
-    "IDLNEHLBGAJ": "Talent_Heizo"
+    "talentStarName": "Talent_Heizo",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 5921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 5922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 5923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6001,
+    "energySkill": 10610,
+    "skills": [
       10606,
-      10607
+      10607,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10608,
       10609,
       5060010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6023
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6001,
-    "GIEFGHHKGDD": 10610,
-    "IAGMADCJGIA": [
+    "talents": [
       601,
       602,
       603,
@@ -2193,38 +2804,46 @@
       605,
       606
     ],
-    "IDLNEHLBGAJ": "Talent_Yelan",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Yelan",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6023
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6101,
+    "energySkill": 10615,
+    "skills": [
       10611,
-      10612
+      10612,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10001,
       10613,
       5061010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6101,
-    "GIEFGHHKGDD": 10615,
-    "IAGMADCJGIA": [
+    "talents": [
       611,
       612,
       613,
@@ -2232,35 +2851,45 @@
       615,
       616
     ],
-    "IDLNEHLBGAJ": "Talent_Momoka"
+    "talentStarName": "Talent_Momoka",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6201,
+    "energySkill": 10625,
+    "skills": [
       10621,
-      10622
+      10622,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10623,
       10624,
       5062010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6223
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6201,
-    "GIEFGHHKGDD": 10625,
-    "IAGMADCJGIA": [
+    "talents": [
       621,
       622,
       623,
@@ -2268,35 +2897,43 @@
       625,
       626
     ],
-    "IDLNEHLBGAJ": "Talent_Aloy",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Aloy",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6401,
+    "energySkill": 10643,
+    "skills": [
       10641,
-      10642
+      10642,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       5064010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6423
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6401,
-    "GIEFGHHKGDD": 10643,
-    "IAGMADCJGIA": [
+    "talents": [
       641,
       642,
       643,
@@ -2304,36 +2941,45 @@
       645,
       646
     ],
-    "IDLNEHLBGAJ": "Talent_Yunjin"
+    "talentStarName": "Talent_Yunjin",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6301,
+    "energySkill": 10635,
+    "skills": [
       10631,
-      10632
+      10632,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10002,
       5063010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6323
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6301,
-    "GIEFGHHKGDD": 10635,
-    "IAGMADCJGIA": [
+    "talents": [
       631,
       632,
       633,
@@ -2341,15 +2987,34 @@
       635,
       636
     ],
-    "IDLNEHLBGAJ": "Talent_Shenhe"
+    "talentStarName": "Talent_Shenhe",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6501,
+    "energySkill": 10655,
+    "skills": [
       10651,
-      10652
+      10652,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10001,
@@ -2357,22 +3022,12 @@
       10657,
       5065010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6523
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6501,
-    "GIEFGHHKGDD": 10655,
-    "IAGMADCJGIA": [
+    "talents": [
       651,
       652,
       653,
@@ -2380,35 +3035,44 @@
       655,
       656
     ],
-    "IDLNEHLBGAJ": "Talent_Shinobu"
+    "talentStarName": "Talent_Shinobu",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6601,
+    "energySkill": 10665,
+    "skills": [
       10661,
-      10662
+      10662,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10663,
       5066010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6623
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6601,
-    "GIEFGHHKGDD": 10665,
-    "IAGMADCJGIA": [
+    "talents": [
       661,
       662,
       663,
@@ -2416,34 +3080,44 @@
       665,
       666
     ],
-    "IDLNEHLBGAJ": "Talent_Ayato"
+    "talentStarName": "Talent_Ayato",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6701,
+    "energySkill": 10675,
+    "skills": [
       10671,
-      10672
+      10672,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10674,
       5067010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6723
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6701,
-    "GIEFGHHKGDD": 10675,
-    "IAGMADCJGIA": [
+    "talents": [
       671,
       672,
       673,
@@ -2451,34 +3125,42 @@
       675,
       676
     ],
-    "IDLNEHLBGAJ": "Talent_Collei",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Collei",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6801,
+    "energySkill": 10685,
+    "skills": [
       10681,
-      10682
+      10682,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       5068010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6801,
-    "GIEFGHHKGDD": 10685,
-    "IAGMADCJGIA": [
+    "talents": [
       681,
       682,
       683,
@@ -2486,34 +3168,44 @@
       685,
       686
     ],
-    "IDLNEHLBGAJ": "Talent_Dori"
+    "talentStarName": "Talent_Dori",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6823
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 6901,
+    "energySkill": 10695,
+    "skills": [
       10691,
-      10692
+      10692,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10693,
       5069010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 6921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 6922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 6923
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 6901,
-    "GIEFGHHKGDD": 10695,
-    "IAGMADCJGIA": [
+    "talents": [
       691,
       692,
       693,
@@ -2521,16 +3213,34 @@
       695,
       696
     ],
-    "IDLNEHLBGAJ": "Talent_Tighnari",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Tighnari",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 6921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 6922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 6923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7001,
+    "energySkill": 10705,
+    "skills": [
       10701,
-      10702
+      10702,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10703,
       10704,
       10706,
@@ -2541,22 +3251,12 @@
       10102,
       5070010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7023
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7001,
-    "GIEFGHHKGDD": 10705,
-    "IAGMADCJGIA": [
+    "talents": [
       701,
       702,
       703,
@@ -2564,35 +3264,44 @@
       705,
       706
     ],
-    "IDLNEHLBGAJ": "Talent_Nilou"
+    "talentStarName": "Talent_Nilou",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7023
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7101,
+    "energySkill": 10715,
+    "skills": [
       10711,
-      10712
+      10712,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       10713,
       5071010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7101,
-    "GIEFGHHKGDD": 10715,
-    "IAGMADCJGIA": [
+    "talents": [
       711,
       712,
       713,
@@ -2600,34 +3309,43 @@
       715,
       716
     ],
-    "IDLNEHLBGAJ": "Talent_Cyno"
+    "talentStarName": "Talent_Cyno",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7201,
+    "energySkill": 10725,
+    "skills": [
       10721,
-      10722
+      10722,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       5072010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7223
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7201,
-    "GIEFGHHKGDD": 10725,
-    "IAGMADCJGIA": [
+    "talents": [
       721,
       722,
       723,
@@ -2635,34 +3353,43 @@
       725,
       726
     ],
-    "IDLNEHLBGAJ": "Talent_Candace"
+    "talentStarName": "Talent_Candace",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7301,
+    "energySkill": 10735,
+    "skills": [
       10731,
-      10732
+      10732,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5073010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7323
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7301,
-    "GIEFGHHKGDD": 10735,
-    "IAGMADCJGIA": [
+    "talents": [
       731,
       732,
       733,
@@ -2670,34 +3397,43 @@
       735,
       736
     ],
-    "IDLNEHLBGAJ": "Talent_Nahida"
+    "talentStarName": "Talent_Nahida",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7401,
+    "energySkill": 10745,
+    "skills": [
       10741,
-      10742
+      10742,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       5074010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7423
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7401,
-    "GIEFGHHKGDD": 10745,
-    "IAGMADCJGIA": [
+    "talents": [
       741,
       742,
       743,
@@ -2705,15 +3441,34 @@
       745,
       746
     ],
-    "IDLNEHLBGAJ": "Talent_Layla"
+    "talentStarName": "Talent_Layla",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7501,
+    "energySkill": 10755,
+    "skills": [
       10751,
-      10752
+      10752,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10753,
       10756,
       10757,
@@ -2723,22 +3478,12 @@
       10003,
       5075010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7523
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7501,
-    "GIEFGHHKGDD": 10755,
-    "IAGMADCJGIA": [
+    "talents": [
       751,
       752,
       753,
@@ -2746,36 +3491,46 @@
       755,
       756
     ],
-    "IDLNEHLBGAJ": "Talent_Wanderer"
+    "talentStarName": "Talent_Wanderer",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7523
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7601,
+    "energySkill": 10765,
+    "skills": [
       10761,
-      10762
+      10762,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10764,
       10101,
       10102,
       5076010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7623
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7601,
-    "GIEFGHHKGDD": 10765,
-    "IAGMADCJGIA": [
+    "talents": [
       761,
       762,
       763,
@@ -2783,37 +3538,45 @@
       765,
       766
     ],
-    "IDLNEHLBGAJ": "Talent_Faruzan",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Faruzan",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7701,
+    "energySkill": 10775,
+    "skills": [
       10771,
-      10772
+      10772,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10002,
       5077010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7723
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7701,
-    "GIEFGHHKGDD": 10775,
-    "IAGMADCJGIA": [
+    "talents": [
       771,
       772,
       773,
@@ -2821,34 +3584,43 @@
       775,
       776
     ],
-    "IDLNEHLBGAJ": "Talent_Yaoyao"
+    "talentStarName": "Talent_Yaoyao",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7801,
+    "energySkill": 10785,
+    "skills": [
       10781,
-      10782
+      10782,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       5078010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7801,
-    "GIEFGHHKGDD": 10785,
-    "IAGMADCJGIA": [
+    "talents": [
       781,
       782,
       783,
@@ -2856,37 +3628,46 @@
       785,
       786
     ],
-    "IDLNEHLBGAJ": "Talent_Alhatham"
+    "talentStarName": "Talent_Alhatham",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7823
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 7901,
+    "energySkill": 10795,
+    "skills": [
       10791,
-      10792
+      10792,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       10102,
       10793,
       10794,
       5079010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 7921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 7922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 7923
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 7901,
-    "GIEFGHHKGDD": 10795,
-    "IAGMADCJGIA": [
+    "talents": [
       791,
       792,
       793,
@@ -2894,34 +3675,43 @@
       795,
       796
     ],
-    "IDLNEHLBGAJ": "Talent_Dehya"
+    "talentStarName": "Talent_Dehya",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 7921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 7922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 7923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8001,
+    "energySkill": 10805,
+    "skills": [
       10801,
-      10802
+      10802,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       5080010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8023
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8001,
-    "GIEFGHHKGDD": 10805,
-    "IAGMADCJGIA": [
+    "talents": [
       801,
       802,
       803,
@@ -2929,35 +3719,44 @@
       805,
       806
     ],
-    "IDLNEHLBGAJ": "Talent_Mika"
+    "talentStarName": "Talent_Mika",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8023
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8101,
+    "energySkill": 10815,
+    "skills": [
       10811,
-      10812
+      10812,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       10102,
       5081010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8101,
-    "GIEFGHHKGDD": 10815,
-    "IAGMADCJGIA": [
+    "talents": [
       811,
       812,
       813,
@@ -2965,34 +3764,43 @@
       815,
       816
     ],
-    "IDLNEHLBGAJ": "Talent_Kaveh"
+    "talentStarName": "Talent_Kaveh",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8201,
+    "energySkill": 10825,
+    "skills": [
       10821,
-      10822
+      10822,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5082010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8223
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8201,
-    "GIEFGHHKGDD": 10825,
-    "IAGMADCJGIA": [
+    "talents": [
       821,
       822,
       823,
@@ -3000,35 +3808,44 @@
       825,
       826
     ],
-    "IDLNEHLBGAJ": "Talent_Baizhuer"
+    "talentStarName": "Talent_Baizhuer",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8301,
+    "energySkill": 10835,
+    "skills": [
       10831,
-      10832
+      10832,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Pneuma",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10833,
       10001,
       5083010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8323
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8301,
-    "GIEFGHHKGDD": 10835,
-    "IAGMADCJGIA": [
+    "talents": [
       831,
       832,
       833,
@@ -3036,35 +3853,46 @@
       835,
       836
     ],
-    "IDLNEHLBGAJ": "Talent_Linette"
+    "talentStarName": "Talent_Linette",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8323
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Pneuma",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8401,
+    "energySkill": 10845,
+    "skills": [
       10841,
-      10842
+      10842,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10843,
       10844,
       5084010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8423
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8401,
-    "GIEFGHHKGDD": 10845,
-    "IAGMADCJGIA": [
+    "talents": [
       841,
       842,
       843,
@@ -3072,37 +3900,46 @@
       845,
       846
     ],
-    "IDLNEHLBGAJ": "Talent_Liney",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Liney",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8423
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8501,
+    "energySkill": 10855,
+    "skills": [
       10851,
-      10852
+      10852,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       10853,
       10854,
       5085010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8523
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8501,
-    "GIEFGHHKGDD": 10855,
-    "IAGMADCJGIA": [
+    "talents": [
       851,
       852,
       853,
@@ -3110,34 +3947,44 @@
       855,
       856
     ],
-    "IDLNEHLBGAJ": "Talent_Freminet"
+    "talentStarName": "Talent_Freminet",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8523
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8601,
+    "energySkill": 10865,
+    "skills": [
       10861,
-      10862
+      10862,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Pneuma",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5086010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8623
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8601,
-    "GIEFGHHKGDD": 10865,
-    "IAGMADCJGIA": [
+    "talents": [
       861,
       862,
       863,
@@ -3145,34 +3992,44 @@
       865,
       866
     ],
-    "IDLNEHLBGAJ": "Talent_Wriothesley"
+    "talentStarName": "Talent_Wriothesley",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8623
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Pneuma",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8701,
+    "energySkill": 10875,
+    "skills": [
       10871,
-      10872
+      10872,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5087010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8723
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8701,
-    "GIEFGHHKGDD": 10875,
-    "IAGMADCJGIA": [
+    "talents": [
       871,
       872,
       873,
@@ -3180,34 +4037,44 @@
       875,
       876
     ],
-    "IDLNEHLBGAJ": "Talent_Neuvillette"
+    "talentStarName": "Talent_Neuvillette",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8723
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8801,
+    "energySkill": 10885,
+    "skills": [
       10881,
-      10882
+      10882,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       5088010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8801,
-    "GIEFGHHKGDD": 10885,
-    "IAGMADCJGIA": [
+    "talents": [
       881,
       882,
       883,
@@ -3215,35 +4082,45 @@
       885,
       886
     ],
-    "IDLNEHLBGAJ": "Talent_Charlotte"
+    "talentStarName": "Talent_Charlotte",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8823
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 8901,
+    "energySkill": 10895,
+    "skills": [
       10891,
-      10892
+      10892,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Furina",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       5089010,
       10893
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 8921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 8922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 8923
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 8901,
-    "GIEFGHHKGDD": 10895,
-    "IAGMADCJGIA": [
+    "talents": [
       891,
       892,
       893,
@@ -3251,34 +4128,44 @@
       895,
       896
     ],
-    "IDLNEHLBGAJ": "Talent_Furina"
+    "talentStarName": "Talent_Furina",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 8921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 8922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 8923
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Furina",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9001,
+    "energySkill": 10905,
+    "skills": [
       10901,
-      10902
+      10902,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Pneuma",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       5090010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9023
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9001,
-    "GIEFGHHKGDD": 10905,
-    "IAGMADCJGIA": [
+    "talents": [
       901,
       902,
       903,
@@ -3286,35 +4173,45 @@
       905,
       906
     ],
-    "IDLNEHLBGAJ": "Talent_Chevreuse"
+    "talentStarName": "Talent_Chevreuse",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9023
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Pneuma",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9101,
+    "energySkill": 10915,
+    "skills": [
       10911,
-      10912
+      10912,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Pneuma",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       10102,
       5091010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9101,
-    "GIEFGHHKGDD": 10915,
-    "IAGMADCJGIA": [
+    "talents": [
       911,
       912,
       913,
@@ -3322,36 +4219,46 @@
       915,
       916
     ],
-    "IDLNEHLBGAJ": "Talent_Navia"
+    "talentStarName": "Talent_Navia",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9123
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Pneuma",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9201,
+    "energySkill": 10925,
+    "skills": [
       10921,
-      10922
+      10922,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       10102,
       10923,
       5092010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9223
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9201,
-    "GIEFGHHKGDD": 10925,
-    "IAGMADCJGIA": [
+    "talents": [
       921,
       922,
       923,
@@ -3359,15 +4266,34 @@
       925,
       926
     ],
-    "IDLNEHLBGAJ": "Talent_Gaming"
+    "talentStarName": "Talent_Gaming",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9223
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9301,
+    "energySkill": 10935,
+    "skills": [
       10931,
-      10932
+      10932,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       10933,
       10936,
@@ -3375,22 +4301,12 @@
       10934,
       5093010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9323
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9301,
-    "GIEFGHHKGDD": 10935,
-    "IAGMADCJGIA": [
+    "talents": [
       931,
       932,
       933,
@@ -3398,35 +4314,44 @@
       935,
       936
     ],
-    "IDLNEHLBGAJ": "Talent_Liuyun"
+    "talentStarName": "Talent_Liuyun",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9323
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9401,
+    "energySkill": 10945,
+    "skills": [
       10941,
-      10942
+      10942,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10944,
       5094010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9423
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9401,
-    "GIEFGHHKGDD": 10945,
-    "IAGMADCJGIA": [
+    "talents": [
       941,
       942,
       943,
@@ -3434,34 +4359,44 @@
       945,
       946
     ],
-    "IDLNEHLBGAJ": "Talent_Chiori"
+    "talentStarName": "Talent_Chiori",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9423
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9701,
+    "energySkill": 10975,
+    "skills": [
       10971,
-      10972
+      10972,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10974,
       5097010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9723
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9701,
-    "GIEFGHHKGDD": 10975,
-    "IAGMADCJGIA": [
+    "talents": [
       971,
       972,
       973,
@@ -3469,35 +4404,44 @@
       975,
       976
     ],
-    "IDLNEHLBGAJ": "Talent_Sethos",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Sethos",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9723
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9501,
+    "energySkill": 10955,
+    "skills": [
       10951,
-      10952
+      10952,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Pneuma",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10953,
       5095010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9523
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9501,
-    "GIEFGHHKGDD": 10955,
-    "IAGMADCJGIA": [
+    "talents": [
       951,
       952,
       953,
@@ -3505,37 +4449,46 @@
       955,
       956
     ],
-    "IDLNEHLBGAJ": "Talent_Sigewinne",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Sigewinne",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9523
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Pneuma",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9601,
+    "energySkill": 10965,
+    "skills": [
       10961,
-      10962
+      10962,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       10966,
       10967,
       5096010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9623
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9601,
-    "GIEFGHHKGDD": 10965,
-    "IAGMADCJGIA": [
+    "talents": [
       961,
       962,
       963,
@@ -3543,36 +4496,45 @@
       965,
       966
     ],
-    "IDLNEHLBGAJ": "Talent_Arlecchino"
+    "talentStarName": "Talent_Arlecchino",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9623
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9801,
+    "energySkill": 10985,
+    "skills": [
       10981,
-      10982
+      10982,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Pneuma",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       10983,
       10984,
       5098010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9801,
-    "GIEFGHHKGDD": 10985,
-    "IAGMADCJGIA": [
+    "talents": [
       981,
       982,
       983,
@@ -3580,34 +4542,44 @@
       985,
       986
     ],
-    "IDLNEHLBGAJ": "Talent_Clorinde"
+    "talentStarName": "Talent_Clorinde",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9823
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Pneuma",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 9901,
+    "energySkill": 10995,
+    "skills": [
       10991,
-      10992
+      10992,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "Ousia",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       5099010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 9921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 9922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 9923
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 9901,
-    "GIEFGHHKGDD": 10995,
-    "IAGMADCJGIA": [
+    "talents": [
       991,
       992,
       993,
@@ -3615,15 +4587,35 @@
       995,
       996
     ],
-    "IDLNEHLBGAJ": "Talent_Emilie"
+    "talentStarName": "Talent_Emilie",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 9921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 9922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 9923
+      },
+      {},
+      {}
+    ],
+    "ILIINJLKPBD": "Ousia",
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10001,
+    "energySkill": 11005,
+    "skills": [
       11001,
-      11002
+      11002,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       11003,
       11004,
       11006,
@@ -3632,25 +4624,12 @@
       10002,
       5100010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10023
-      },
-      {
-        "DGIJCGLPDPI": 10025
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10001,
-    "GIEFGHHKGDD": 11005,
-    "IAGMADCJGIA": [
+    "talents": [
       1001,
       1002,
       1003,
@@ -3658,15 +4637,36 @@
       1005,
       1006
     ],
-    "IDLNEHLBGAJ": "Talent_Kachina"
+    "talentStarName": "Talent_Kachina",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10023
+      },
+      {},
+      {
+        "proudSkillGroupId": 10025
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10101,
+    "energySkill": 11015,
+    "skills": [
       11011,
-      11012
+      11012,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       11013,
       11014,
@@ -3676,25 +4676,12 @@
       11019,
       5101010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10123
-      },
-      {
-        "DGIJCGLPDPI": 10125
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10101,
-    "GIEFGHHKGDD": 11015,
-    "IAGMADCJGIA": [
+    "talents": [
       1011,
       1012,
       1013,
@@ -3702,15 +4689,36 @@
       1015,
       1016
     ],
-    "IDLNEHLBGAJ": "Talent_Kinich"
+    "talentStarName": "Talent_Kinich",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10123
+      },
+      {},
+      {
+        "proudSkillGroupId": 10125
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10201,
+    "energySkill": 30007,
+    "skills": [
       30000,
-      30002
+      30002,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       30003,
       30004,
       30005,
@@ -3722,25 +4730,12 @@
       10003,
       5102010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10221,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10222,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10223
-      },
-      {
-        "DGIJCGLPDPI": 10225
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10201,
-    "GIEFGHHKGDD": 30007,
-    "IAGMADCJGIA": [
+    "talents": [
       1021,
       1022,
       1023,
@@ -3748,15 +4743,36 @@
       1025,
       1026
     ],
-    "IDLNEHLBGAJ": "Talent_Mualani"
+    "talentStarName": "Talent_Mualani",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10221,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10222,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10223
+      },
+      {},
+      {
+        "proudSkillGroupId": 10225
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10401,
+    "energySkill": 11045,
+    "skills": [
       11041,
-      11042
+      11042,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       11043,
       11044,
       11046,
@@ -3766,25 +4782,13 @@
       11040,
       5104010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10421,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10422,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10423
-      },
-      {
-        "DGIJCGLPDPI": 10425
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10401,
-    "GIEFGHHKGDD": 11045,
-    "IAGMADCJGIA": [
+    "talents": [
       1041,
       1042,
       1043,
@@ -3792,16 +4796,36 @@
       1045,
       1046
     ],
-    "IDLNEHLBGAJ": "Talent_Chasca",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Chasca",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10421,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10422,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10423
+      },
+      {},
+      {
+        "proudSkillGroupId": 10425
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10301,
+    "energySkill": 11035,
+    "skills": [
       11031,
-      11032
+      11032,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10001,
       11033,
       11034,
@@ -3809,25 +4833,12 @@
       11037,
       5103010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10321,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10322,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10323
-      },
-      {
-        "DGIJCGLPDPI": 10325
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10301,
-    "GIEFGHHKGDD": 11035,
-    "IAGMADCJGIA": [
+    "talents": [
       1031,
       1032,
       1033,
@@ -3835,39 +4846,47 @@
       1035,
       1036
     ],
-    "IDLNEHLBGAJ": "Talent_Xilonen"
+    "talentStarName": "Talent_Xilonen",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10321,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10322,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10323
+      },
+      {},
+      {
+        "proudSkillGroupId": 10325
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10501,
+    "energySkill": 30505,
+    "skills": [
       30501,
       30502,
+      0,
       30506
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       30503,
       30504,
       5105010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10521,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10522,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10523
-      },
-      {
-        "DGIJCGLPDPI": 10525
-      }
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10501,
-    "GIEFGHHKGDD": 30505,
-    "IAGMADCJGIA": [
+    "talents": [
       1051,
       1052,
       1053,
@@ -3875,16 +4894,36 @@
       1055,
       1056
     ],
-    "IDLNEHLBGAJ": "Talent_Olorun",
-    "NEMHOCMDGNM": 20000
+    "talentStarName": "Talent_Olorun",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10521,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10522,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10523
+      },
+      {},
+      {
+        "proudSkillGroupId": 10525
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10601,
+    "energySkill": 11065,
+    "skills": [
       11061,
-      11062
+      11062,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10004,
       11063,
       11064,
@@ -3894,25 +4933,12 @@
       11069,
       5106010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10621,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10622,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10623
-      },
-      {
-        "DGIJCGLPDPI": 10625
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10601,
-    "GIEFGHHKGDD": 11065,
-    "IAGMADCJGIA": [
+    "talents": [
       1061,
       1062,
       1063,
@@ -3920,39 +4946,46 @@
       1065,
       1066
     ],
-    "IDLNEHLBGAJ": "Talent_Mavuika"
+    "talentStarName": "Talent_Mavuika",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10621,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10622,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10623
+      },
+      {},
+      {
+        "proudSkillGroupId": 10625
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10701,
+    "energySkill": 11075,
+    "skills": [
       11071,
       11072,
+      0,
       11076
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       11073,
       5107010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10721,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10722,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10723
-      },
-      {
-        "DGIJCGLPDPI": 10725
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10701,
-    "GIEFGHHKGDD": 11075,
-    "IAGMADCJGIA": [
+    "talents": [
       1071,
       1072,
       1073,
@@ -3960,35 +4993,46 @@
       1075,
       1076
     ],
-    "IDLNEHLBGAJ": "Talent_Citlali"
+    "talentStarName": "Talent_Citlali",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10721,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10722,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10723
+      },
+      {},
+      {
+        "proudSkillGroupId": 10725
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10801,
+    "energySkill": 11085,
+    "skills": [
       11081,
-      11082
+      11082,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       11083,
       5108010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10821,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10822,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10823
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10801,
-    "GIEFGHHKGDD": 11085,
-    "IAGMADCJGIA": [
+    "talents": [
       1081,
       1082,
       1083,
@@ -3996,37 +5040,46 @@
       1085,
       1086
     ],
-    "IDLNEHLBGAJ": "Talent_Lanyan"
+    "talentStarName": "Talent_Lanyan",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10821,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10822,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10823
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 10901,
+    "energySkill": 11095,
+    "skills": [
       11091,
-      11092
+      11092,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       11093,
       11094,
       11096,
       5109010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 10921,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 10922,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 10923
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 10901,
-    "GIEFGHHKGDD": 11095,
-    "IAGMADCJGIA": [
+    "talents": [
       1091,
       1092,
       1093,
@@ -4034,15 +5087,34 @@
       1095,
       1096
     ],
-    "IDLNEHLBGAJ": "Talent_Mizuki"
+    "talentStarName": "Talent_Mizuki",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 10921,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 10922,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 10923
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 11001,
+    "energySkill": 11105,
+    "skills": [
       11101,
-      11102
+      11102,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10002,
       11103,
       11104,
@@ -4051,25 +5123,12 @@
       11108,
       5110010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 11021,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 11022,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 11023
-      },
-      {
-        "DGIJCGLPDPI": 11025
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 11001,
-    "GIEFGHHKGDD": 11105,
-    "IAGMADCJGIA": [
+    "talents": [
       1101,
       1102,
       1103,
@@ -4077,15 +5136,36 @@
       1105,
       1106
     ],
-    "IDLNEHLBGAJ": "Talent_Iansan"
+    "talentStarName": "Talent_Iansan",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 11021,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 11022,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 11023
+      },
+      {},
+      {
+        "proudSkillGroupId": 11025
+      }
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 11101,
+    "energySkill": 11115,
+    "skills": [
       11111,
-      11112
+      11112,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10003,
       11113,
       11114,
@@ -4095,25 +5175,12 @@
       11119,
       5111010
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 11121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 11122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 11123
-      },
-      {
-        "DGIJCGLPDPI": 11125
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 11101,
-    "GIEFGHHKGDD": 11115,
-    "IAGMADCJGIA": [
+    "talents": [
       1111,
       1112,
       1113,
@@ -4121,64 +5188,271 @@
       1115,
       1116
     ],
-    "IDLNEHLBGAJ": "Talent_Varesa"
-  },
-  {
-    "CDKFLDLHCAD": "None",
-    "ELKKIAIGOBK": 8011
-  },
-  {
-    "CDKFLDLHCAD": "None",
-    "ELKKIAIGOBK": 9011
-  },
-  {
-    "CDKFLDLHCAD": "None",
-    "ELKKIAIGOBK": 10011
-  },
-  {
-    "CDKFLDLHCAD": "None",
-    "ELKKIAIGOBK": 12011
-  },
-  {
-    "CDKFLDLHCAD": "None",
-    "ELKKIAIGOBK": 13011
-  },
-  {
-    "CBJGLADMBHG": [
-      10251,
-      10362
+    "talentStarName": "Talent_Varesa",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 11121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 11122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 11123
+      },
+      {},
+      {
+        "proudSkillGroupId": 11125
+      }
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "skillDepotAbilityGroup": ""
+  },
+  {
+    "id": 8011,
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "subSkills": [],
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
+  },
+  {
+    "id": 9011,
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "subSkills": [],
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
+  },
+  {
+    "id": 10011,
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "subSkills": [],
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
+  },
+  {
+    "id": 12011,
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "subSkills": [],
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
+  },
+  {
+    "id": 13011,
+    "skills": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "subSkills": [],
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
+  },
+  {
+    "id": 25011,
+    "energySkill": 10255,
+    "skills": [
+      10251,
+      10362,
+      0,
+      0
+    ],
+    "subSkills": [
       10252,
       10253,
       10101,
       10102
     ],
-    "ELKKIAIGOBK": 25011,
-    "GIEFGHHKGDD": 10255,
-    "NEMHOCMDGNM": 20000
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 28011,
+    "energySkill": 10283,
+    "skills": [
       10281,
-      10282
+      10282,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102
     ],
-    "ELKKIAIGOBK": 28011,
-    "GIEFGHHKGDD": 10283
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 40001,
+    "energySkill": 30007,
+    "skills": [
       30000,
-      30002
+      30002,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       30003,
       30004,
       30005,
@@ -4189,115 +5463,258 @@
       30011,
       10003
     ],
-    "ELKKIAIGOBK": 40001,
-    "GIEFGHHKGDD": 30007
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 40002,
+    "energySkill": 30105,
+    "skills": [
       30101,
-      30102
+      30102,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       30103,
       30104
     ],
-    "ELKKIAIGOBK": 40002,
-    "GIEFGHHKGDD": 30105
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 40003,
+    "energySkill": 30205,
+    "skills": [
       30201,
-      30202
+      30202,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       30203,
       30204,
       30206
     ],
-    "ELKKIAIGOBK": 40003,
-    "GIEFGHHKGDD": 30205
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 30011,
+    "energySkill": 11305,
+    "skills": [
       11301,
-      11302
+      11302,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102
     ],
-    "DPEHDGNEIDM": [
-      {
-        "DGIJCGLPDPI": 3121,
-        "ECKFGHMJDJK": 1
-      },
-      {
-        "DGIJCGLPDPI": 3122,
-        "ECKFGHMJDJK": 4
-      },
-      {
-        "DGIJCGLPDPI": 3123
-      }
+    "extraAbilities": [
+      "",
+      "",
+      ""
     ],
-    "ELKKIAIGOBK": 30011,
-    "GIEFGHHKGDD": 11305,
-    "IAGMADCJGIA": [
+    "talents": [
       311,
       312,
       313,
       314,
       315,
       316
-    ]
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {
+        "proudSkillGroupId": 3121,
+        "needAvatarPromoteLevel": 1
+      },
+      {
+        "proudSkillGroupId": 3122,
+        "needAvatarPromoteLevel": 4
+      },
+      {
+        "proudSkillGroupId": 3123
+      },
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 37011,
+    "energySkill": 11373,
+    "skills": [
       11371,
-      11372
+      11372,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       11374,
       11375,
       10101,
       10102
     ],
-    "ELKKIAIGOBK": 37011,
-    "GIEFGHHKGDD": 11373,
-    "IDLNEHLBGAJ": "Talent_Test_NoStar",
-    "NEMHOCMDGNM": 20000
+    "attackModeSkill": 20000,
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "Talent_Test_NoStar",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 38001,
+    "energySkill": 10362,
+    "skills": [
       100540,
-      10365
+      10365,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10101,
       10102,
       10364
     ],
-    "ELKKIAIGOBK": 38001,
-    "GIEFGHHKGDD": 10362
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   },
   {
-    "CBJGLADMBHG": [
+    "id": 46011,
+    "energySkill": 10463,
+    "skills": [
       10461,
-      10462
+      10462,
+      0,
+      0
     ],
-    "CDKFLDLHCAD": "None",
-    "DPEGKJDJEPK": [
+    "subSkills": [
       10081,
       10101,
       10001,
       10102
     ],
-    "ELKKIAIGOBK": 46011,
-    "GIEFGHHKGDD": 10463,
-    "IDLNEHLBGAJ": "Talent_Kaeya"
+    "extraAbilities": [
+      "",
+      "",
+      ""
+    ],
+    "talents": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "talentStarName": "Talent_Kaeya",
+    "inherentProudSkillOpens": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ],
+    "skillDepotAbilityGroup": ""
   }
 ]

@@ -1,12 +1,17 @@
 import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
-  /*
   {
-    name: '',
-    score: [0, 0, 0, 0],
+    name: 'Varesa',
+    score: [6, 0, 0, 0],
+    dmg: ['plunge'],
+    explor: ['run', 3],
+    coop: [
+      { score: -2, add: [{ trigger: ['normal'] }] },
+      { score: -1, add: ['Xianyun'] },
+      { score: 2, add: ['Chevreuse'] }, // 感覚的には score:1 調節のために 2
+    ],
   },
-  */
   {
     name: 'Yumemizuki Mizuki',
     score: [1, 0, 0, 0],
@@ -423,6 +428,16 @@ export const avatar: Avatar[] = [
   },
 
   {
+    name: 'Iansan',
+    score: [0, 0, 2, 1],
+    burstDep: 2,
+    coop: [
+      { score: 1, add: ['Yumemizuki Mizuki', 'Clorinde', 'Hu Tao', 'Xiao', 'Gaming'] },
+      { score: 2, add: ['Varesa', 'Mavuika', 'Chasca', 'Kinich', 'Mualani', { roll: ['main'], stat: ['ATK'] }] },
+    ],
+    filter: { score: 6, roll: 'support' },
+  },
+  {
     name: 'Lan Yan',
     score: [0, 0, 2, 3],
     burstDep: 1,
@@ -463,21 +478,21 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Chevreuse',
-    score: [0, 0, 0, 1],
+    score: [0, 0, 1, 1],
     burstDep: 2,
     explor: ['run-stamina', 1],
     coop: [
+      { score: 0.5, add: [{ elem: ['Electro'] }, { elem: ['Pyro'] }] },
       {
-        score: 2,
+        score: 3,
         add: [
-          { elem: ['Electro'] },
           [{ elem: ['Electro'] }, { elem: ['Electro'] }, { elem: ['Electro'] }],
           [{ elem: ['Electro'] }, { elem: ['Electro'] }, { elem: ['Pyro'] }],
           [{ elem: ['Electro'] }, { elem: ['Pyro'] }, { elem: ['Pyro'] }],
         ],
       },
     ],
-    filter: { score: 4, roll: 'healer' },
+    filter: { score: 5, roll: 'support' },
   },
   {
     name: 'Charlotte',

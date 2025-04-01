@@ -5,6 +5,11 @@ export const wish: {
   c5e1?: string[]
 }[] = [
   {
+    ver: 5.5,
+    c51: ['Varesa', 'Xianyun'],
+    c52: ['Xilonen', 'Venti'],
+  },
+  {
     ver: 5.4,
     c51: ['Yumemizuki Mizuki', 'Sigewinne'],
     c52: ['Furina', 'Wriothesley'],

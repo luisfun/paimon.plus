@@ -2,6 +2,17 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Escoffier',
+    score: [0, 4, 0, 5], // 回復評価自体は3.5くらい
+    burstDep: 2,
+    dmg: ['skill'],
+    stat: ['ATK'],
+    coop: [
+      { score: 2, add: [[{ elem: ['Cryo', 'Hydro'] }, { elem: ['Cryo', 'Hydro'] }, { elem: ['Cryo', 'Hydro'] }]] },
+    ],
+    filter: { score: 6, roll: 'healer' },
+  },
+  {
     name: 'Varesa',
     score: [6, 0, 0, 0],
     dmg: ['plunge'],
@@ -18,14 +29,15 @@ export const avatar: Avatar[] = [
     dmg: ['element'],
     explor: ['fly', 2],
     coop: [
-      { score: -3, add: [{ trigger: ['normal'] }] },
-      { score: -2, add: ['Bennett', 'Faruzan'] },
+      { score: -3, add: ['Bennett', 'Faruzan', { trigger: ['normal'] }] },
       {
         score: 1,
         add: [
-          { elem: ['4elem'] },
           { elem: ['4elem'], roll: ['sub'] },
-          [{ elem: ['4elem'] }, { elem: ['4elem'] }],
+          [
+            { elem: ['4elem'], roll: ['sub'] },
+            { elem: ['4elem'], roll: ['sub'] },
+          ],
           { elem: ['Pyro'] },
           { elem: ['Hydro'] },
           { elem: ['Cryo'] },
@@ -182,7 +194,12 @@ export const avatar: Avatar[] = [
     dmg: ['skill'],
     stat: ['HP'],
     explor: ['boat', 3],
-    coop: [{ score: 1, add: ['Sigewinne', 'Baizhu', 'Sangonomiya Kokomi', 'Jean', 'Charlotte', 'Yaoyao', 'Barbara'] }],
+    coop: [
+      {
+        score: 1,
+        add: ['Escoffier', 'Sigewinne', 'Baizhu', 'Sangonomiya Kokomi', 'Jean', 'Charlotte', 'Yaoyao', 'Barbara'],
+      },
+    ],
   },
   {
     name: 'Wriothesley',
@@ -371,6 +388,7 @@ export const avatar: Avatar[] = [
     score: [5, 3, 0, 0],
     burstDep: 1,
     dmg: ['charge', 'burst'],
+    coop: [{ score: -2, add: [{ trigger: ['normal'] }] }],
   },
   {
     name: 'Albedo',
@@ -427,6 +445,29 @@ export const avatar: Avatar[] = [
     burstDep: 3,
   },
 
+  {
+    name: 'Ifa',
+    score: [1, 0, 0, 1],
+    dmg: ['element'],
+    explor: ['fly', 3],
+    coop: [
+      { score: -3, add: ['Bennett', 'Faruzan', { roll: ['main'] }] },
+      {
+        score: 1,
+        add: [
+          [
+            { elem: ['4elem'], roll: ['sub'] },
+            { elem: ['4elem'], roll: ['sub'] },
+          ],
+          { elem: ['Hydro'], roll: ['sub'] },
+          { elem: ['Electro'], roll: ['sub'] },
+          [{ elem: ['Hydro', 'Electro'] }, { elem: ['Hydro', 'Electro'] }, { elem: ['Hydro', 'Electro'] }],
+          'Ororon',
+        ],
+      },
+    ],
+    filter: { score: 4, roll: 'main' },
+  },
   {
     name: 'Iansan',
     score: [0, 0, 2, 1],

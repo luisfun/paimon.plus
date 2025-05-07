@@ -117,20 +117,8 @@ const dumpAvatar = () => {
       a.push(aInfo)
     }
   }
-  // 一時的な対応
-  const saveA = a
-    .sort((a, b) => {
-      if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
-      if (a.qualityType === b.qualityType) return 0
-      return a.qualityType < b.qualityType ? 1 : -1 // QUALITY_PURPLE -> QUALITY_ORANGE
-    })
-    .reverse()
-  saveA.shift()
-  saveA.shift()
   dumpFile(
     'avatar',
-    saveA,
-    /*   // 一時的な対応
     a
       .sort((a, b) => {
         if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
@@ -138,7 +126,6 @@ const dumpAvatar = () => {
         return a.qualityType < b.qualityType ? 1 : -1 // QUALITY_PURPLE -> QUALITY_ORANGE
       })
       .reverse(),
-    */
   )
 }
 

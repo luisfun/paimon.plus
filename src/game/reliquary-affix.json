@@ -7,57 +7,57 @@
   {
     "id": 101022,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 29.879999
+    "propValue": 29.88
   },
   {
     "id": 201021,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 50.189999
+    "propValue": 50.19
   },
   {
     "id": 201022,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 60.950001
+    "propValue": 60.95
   },
   {
     "id": 201023,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 71.699997
+    "propValue": 71.7
   },
   {
     "id": 301021,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 100.379997
+    "propValue": 100.38
   },
   {
     "id": 301022,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 114.720001
+    "propValue": 114.72
   },
   {
     "id": 301023,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 129.059998
+    "propValue": 129.06
   },
   {
     "id": 301024,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 143.399994
+    "propValue": 143.4
   },
   {
     "id": 401021,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 167.300003
+    "propValue": 167.3
   },
   {
     "id": 401022,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 191.199997
+    "propValue": 191.2
   },
   {
     "id": 401023,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 215.100006
+    "propValue": 215.1
   },
   {
     "id": 401024,
@@ -67,7 +67,7 @@
   {
     "id": 501021,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 209.130005
+    "propValue": 209.13
   },
   {
     "id": 501022,
@@ -77,7 +77,7 @@
   {
     "id": 501023,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 268.880005
+    "propValue": 268.88
   },
   {
     "id": 501024,
@@ -252,7 +252,7 @@
   {
     "id": 501054,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 19.450001
+    "propValue": 19.45
   },
   {
     "id": 101061,
@@ -407,7 +407,7 @@
   {
     "id": 501081,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 16.200001
+    "propValue": 16.2
   },
   {
     "id": 501082,
@@ -652,7 +652,7 @@
   {
     "id": 401243,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 16.790001
+    "propValue": 16.79
   },
   {
     "id": 401244,
@@ -677,7 +677,7 @@
   {
     "id": 501244,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 23.309999
+    "propValue": 23.31
   },
   {
     "id": 101201,
@@ -897,7 +897,7 @@
   {
     "id": 998006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 998007,
@@ -932,7 +932,7 @@
   {
     "id": 995006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 995007,
@@ -967,7 +967,7 @@
   {
     "id": 997006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 37.299999
+    "propValue": 37.3
   },
   {
     "id": 997007,
@@ -1002,7 +1002,7 @@
   {
     "id": 996006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 37.299999
+    "propValue": 37.3
   },
   {
     "id": 996007,
@@ -1017,12 +1017,12 @@
   {
     "id": 996009,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 31.120001
+    "propValue": 31.12
   },
   {
     "id": 996010,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 37.040001
+    "propValue": 37.04
   },
   {
     "id": 994001,
@@ -1151,11 +1151,13 @@
   },
   {
     "id": 969001,
-    "propType": "FIGHT_PROP_DEFENSE"
+    "propType": "FIGHT_PROP_DEFENSE",
+    "propValue": -500
   },
   {
     "id": 968001,
-    "propType": "FIGHT_PROP_ELEMENT_MASTERY"
+    "propType": "FIGHT_PROP_ELEMENT_MASTERY",
+    "propValue": -300
   },
   {
     "id": 967001,
@@ -1195,7 +1197,7 @@
   {
     "id": 961006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 961007,
@@ -1205,17 +1207,17 @@
   {
     "id": 961008,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 746.880005
+    "propValue": 746.88
   },
   {
     "id": 961009,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 48.630001
+    "propValue": 48.63
   },
   {
     "id": 961010,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 57.869999
+    "propValue": 57.87
   },
   {
     "id": 962001,
@@ -1245,7 +1247,7 @@
   {
     "id": 962006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 962007,
@@ -1255,17 +1257,17 @@
   {
     "id": 962008,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 746.880005
+    "propValue": 746.88
   },
   {
     "id": 962009,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 48.630001
+    "propValue": 48.63
   },
   {
     "id": 962010,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 57.869999
+    "propValue": 57.87
   },
   {
     "id": 963001,
@@ -1295,7 +1297,7 @@
   {
     "id": 963006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 963007,
@@ -1305,17 +1307,17 @@
   {
     "id": 963008,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 746.880005
+    "propValue": 746.88
   },
   {
     "id": 963009,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 48.630001
+    "propValue": 48.63
   },
   {
     "id": 963010,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 57.869999
+    "propValue": 57.87
   },
   {
     "id": 964001,
@@ -1345,7 +1347,7 @@
   {
     "id": 964006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 964007,
@@ -1355,17 +1357,17 @@
   {
     "id": 964008,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 746.880005
+    "propValue": 746.88
   },
   {
     "id": 964009,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 48.630001
+    "propValue": 48.63
   },
   {
     "id": 964010,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 57.869999
+    "propValue": 57.87
   },
   {
     "id": 965001,
@@ -1395,7 +1397,7 @@
   {
     "id": 965006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 965007,
@@ -1405,17 +1407,17 @@
   {
     "id": 965008,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 746.880005
+    "propValue": 746.88
   },
   {
     "id": 965009,
     "propType": "FIGHT_PROP_ATTACK",
-    "propValue": 48.630001
+    "propValue": 48.63
   },
   {
     "id": 965010,
     "propType": "FIGHT_PROP_DEFENSE",
-    "propValue": 57.869999
+    "propValue": 57.87
   },
   {
     "id": 951001,
@@ -1445,7 +1447,7 @@
   {
     "id": 951006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 951007,
@@ -1480,7 +1482,7 @@
   {
     "id": 952006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 952007,
@@ -1515,7 +1517,7 @@
   {
     "id": 953006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 953007,
@@ -1550,7 +1552,7 @@
   {
     "id": 956006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 58.279999
+    "propValue": 58.28
   },
   {
     "id": 956007,
@@ -1585,7 +1587,7 @@
   {
     "id": 941006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 37.299999
+    "propValue": 37.3
   },
   {
     "id": 941007,
@@ -1620,7 +1622,7 @@
   {
     "id": 942006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 37.299999
+    "propValue": 37.3
   },
   {
     "id": 942007,
@@ -1655,7 +1657,7 @@
   {
     "id": 943006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 37.299999
+    "propValue": 37.3
   },
   {
     "id": 943007,
@@ -1690,7 +1692,7 @@
   {
     "id": 946006,
     "propType": "FIGHT_PROP_ELEMENT_MASTERY",
-    "propValue": 37.299999
+    "propValue": 37.3
   },
   {
     "id": 946007,
@@ -1735,7 +1737,7 @@
   {
     "id": 947008,
     "propType": "FIGHT_PROP_HP",
-    "propValue": 203.149994
+    "propValue": 203.15
   },
   {
     "id": 947009,

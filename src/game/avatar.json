@@ -1,5 +1,61 @@
 [
   {
+    "key": "Escoffier",
+    "id": 10000112,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 4035850498,
+    "skillDepotId": 11201,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Escoffier_01",
+      "UI_Talent_S_Escoffier_02",
+      "UI_Talent_U_Escoffier_01",
+      "UI_Talent_S_Escoffier_03",
+      "UI_Talent_U_Escoffier_02",
+      "UI_Talent_S_Escoffier_04"
+    ],
+    "skills": [
+      {
+        "id": 11121,
+        "icon": "Skill_A_03",
+        "proud": 11231
+      },
+      {
+        "id": 11122,
+        "icon": "Skill_S_Escoffier_01",
+        "proud": 11232
+      },
+      {
+        "id": 11125,
+        "icon": "Skill_E_Escoffier_01",
+        "proud": 11239
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101232": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104319": 3,
+        "104341": 9,
+        "104342": 63,
+        "104343": 114,
+        "112083": 36,
+        "112084": 96,
+        "112085": 129,
+        "113068": 18,
+        "113076": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "key": "Varesa",
     "id": 10000111,
     "qualityType": "QUALITY_ORANGE",
@@ -3784,6 +3840,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Ifa",
+    "id": 10000113,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 3398665018,
+    "skillDepotId": 11301,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Ifa_01",
+      "UI_Talent_S_Ifa_02",
+      "UI_Talent_U_Ifa_01",
+      "UI_Talent_S_Ifa_03",
+      "UI_Talent_U_Ifa_02",
+      "UI_Talent_S_Ifa_04"
+    ],
+    "skills": [
+      {
+        "id": 11131,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 11331
+      },
+      {
+        "id": 11132,
+        "icon": "Skill_S_Ifa_01",
+        "proud": 11332
+      },
+      {
+        "id": 11135,
+        "icon": "Skill_E_Ifa_01",
+        "proud": 11339
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101250": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112101": 36,
+        "112102": 96,
+        "112103": 129,
+        "113072": 46,
+        "113074": 18
+      }
+    },
+    "wikiId": -1
   },
   {
     "key": "Iansan",

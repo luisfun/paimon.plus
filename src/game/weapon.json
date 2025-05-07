@@ -2196,6 +2196,29 @@
     "wikiId": 1956
   },
   {
+    "id": 15432,
+    "icon": "UI_EquipIcon_Bow_Stinger",
+    "rankLevel": 4,
+    "nameTextMapHash": 2846112523,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112083": 10,
+        "112084": 15,
+        "112085": 18,
+        "112119": 15,
+        "112120": 18,
+        "112121": 27,
+        "114049": 3,
+        "114050": 9,
+        "114051": 9,
+        "114052": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 15431,
     "icon": "UI_EquipIcon_Bow_Isikhulu",
     "rankLevel": 4,
@@ -3930,6 +3953,29 @@
       }
     },
     "wikiId": 1958
+  },
+  {
+    "id": 13514,
+    "icon": "UI_EquipIcon_Pole_Trident",
+    "rankLevel": 5,
+    "nameTextMapHash": 518077587,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112080": 15,
+        "112081": 23,
+        "112082": 27,
+        "112086": 23,
+        "112087": 27,
+        "112088": 41,
+        "114053": 5,
+        "114054": 14,
+        "114055": 14,
+        "114056": 6
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13513,

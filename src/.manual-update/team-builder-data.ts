@@ -3,18 +3,18 @@ import type { Avatar } from '@components/team-builder/types'
 export const avatar: Avatar[] = [
   {
     name: 'Skirk',
-    score: [4.1, 0, 0, 0], // スカーク、エスコフィエ、フリーナでスコアが過剰かもしれないが、他は適正
+    score: [3, 0, 0, 0], // 実スコア4くらいはあるが、組み合わせを重視するために3
     dmg: ['normal'],
     stat: ['ATK'],
     explor: ['run', 1],
     coop: [
       { score: 3, add: [[{ elem: ['Cryo', 'Hydro'] }, { elem: ['Cryo', 'Hydro'] }, { elem: ['Cryo', 'Hydro'] }]] },
     ],
-    filter: { score: 6.1, roll: 'main' },
+    filter: { score: 6, roll: 'main' },
   },
   {
     name: 'Escoffier',
-    score: [0, 4, 0, 5], // 回復評価自体は3.5くらい
+    score: [0, 3, 0, 4],
     burstDep: 2,
     dmg: ['skill'],
     stat: ['ATK'],

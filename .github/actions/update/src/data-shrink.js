@@ -92,6 +92,7 @@ const dumpAvatar = () => {
     for (const index of ["id", "qualityType", "weaponType", "nameTextMapHash", "skillDepotId"]) {
       aInfo[index] = avatar[index]
     }
+    // 旅人
     if (aInfo.id === 10000005 || aInfo.id === 10000007) {
       for (const depot of E.AvatarSkillDepot.filter(e => avatar.candSkillDepotIds.includes(e.id))) {
         const aInfo57 = { ...aInfo }
@@ -113,7 +114,9 @@ const dumpAvatar = () => {
         costume => ({ skinId: costume.skinId, key: costume.frontIconName.split('_').at(-1) }),
       )
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
-      aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])
+      // スカーク
+      if (aInfo.id === 10000114) aInfo.wikiId = 7706
+      else aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
     }
   }

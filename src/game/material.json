@@ -2648,6 +2648,14 @@
     "wikiId": 7560
   },
   {
+    "id": 113073,
+    "icon": "UI_ItemIcon_113073",
+    "rankLevel": 5,
+    "nameTextMapHash": 903170652,
+    "rank": 11101,
+    "wikiId": 7656
+  },
+  {
     "id": 113074,
     "icon": "UI_ItemIcon_113074",
     "rankLevel": 5,

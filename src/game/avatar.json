@@ -1,5 +1,61 @@
 [
   {
+    "key": "SkirkNew",
+    "id": 10000114,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 123650890,
+    "skillDepotId": 11401,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_SkirkNew_01",
+      "UI_Talent_S_SkirkNew_02",
+      "UI_Talent_U_SkirkNew_01",
+      "UI_Talent_S_SkirkNew_03",
+      "UI_Talent_U_SkirkNew_02",
+      "UI_Talent_S_SkirkNew_04"
+    ],
+    "skills": [
+      {
+        "id": 11141,
+        "icon": "Skill_A_01",
+        "proud": 11431
+      },
+      {
+        "id": 11142,
+        "icon": "Skill_S_SkirkNew_01",
+        "proud": 11432
+      },
+      {
+        "id": 11145,
+        "icon": "Skill_E_SkirkNew_01",
+        "proud": 11439
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101254": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104319": 3,
+        "104347": 9,
+        "104348": 63,
+        "104349": 114,
+        "112083": 36,
+        "112084": 96,
+        "112085": 129,
+        "113067": 46,
+        "113073": 18
+      }
+    },
+    "wikiId": 7706
+  },
+  {
     "key": "Escoffier",
     "id": 10000112,
     "qualityType": "QUALITY_ORANGE",
@@ -3840,6 +3896,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Dahlia",
+    "id": 10000115,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 2332664426,
+    "skillDepotId": 11501,
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Dahlia_01",
+      "UI_Talent_S_Dahlia_02",
+      "UI_Talent_U_Dahlia_01",
+      "UI_Talent_S_Dahlia_03",
+      "UI_Talent_U_Dahlia_02",
+      "UI_Talent_S_Dahlia_04"
+    ],
+    "skills": [
+      {
+        "id": 11151,
+        "icon": "Skill_A_01",
+        "proud": 11531
+      },
+      {
+        "id": 11152,
+        "icon": "Skill_S_Dahlia_01",
+        "proud": 11532
+      },
+      {
+        "id": 11155,
+        "icon": "Skill_E_Dahlia_01",
+        "proud": 11539
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "100056": 168,
+        "104121": 1,
+        "104122": 9,
+        "104123": 9,
+        "104124": 6,
+        "104307": 9,
+        "104308": 63,
+        "104309": 114,
+        "104319": 3,
+        "112011": 36,
+        "112012": 96,
+        "112013": 129,
+        "113070": 18,
+        "113076": 46
+      }
+    },
+    "wikiId": 7707
   },
   {
     "key": "Ifa",

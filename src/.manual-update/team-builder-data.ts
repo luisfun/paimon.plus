@@ -2,6 +2,14 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Ineffa',
+    score: [0, 3, 0, 2],
+    dmg: ['element'],
+    stat: ['ATK', 'EM'],
+    coop: [{ score: 2, add: [{ elem: ['Hydro'], roll: ['main', 'sub'] }] }],
+    filter: { score: 5, roll: 'sub' },
+  },
+  {
     name: 'Skirk',
     score: [3, 0, 0, 0], // 実スコア4くらいはあるが、組み合わせを重視するために3
     dmg: ['normal'],

@@ -2,45 +2,45 @@ import fs from 'node:fs'
 import { folder } from './utils.js'
 
 // text-map
-import en from '../../../../src/game/.text/TextMapEN.json' assert { type: 'json' }
-import ja from '../../../../src/game/.text/TextMapJP.json' assert { type: 'json' }
-import ko from '../../../../src/game/.text/TextMapKR.json' assert { type: 'json' }
-import pt from '../../../../src/game/.text/TextMapPT.json' assert { type: 'json' }
+import en from '../../../../src/game/.text/TextMapEN.json' with { type: 'json' }
+import ja from '../../../../src/game/.text/TextMapJP.json' with { type: 'json' }
+import ko from '../../../../src/game/.text/TextMapKR.json' with { type: 'json' }
+import pt from '../../../../src/game/.text/TextMapPT.json' with { type: 'json' }
 
 const TextMap = { en, ja, ko, pt }
 
-import AvatarCodex from '../../../../src/game/.data/AvatarCodexExcelConfigData.json' assert { type: 'json' }
+import AvatarCodex from '../../../../src/game/.data/AvatarCodexExcelConfigData.json' with { type: 'json' }
 // avatar
-import AvatarCostume from '../../../../src/game/.data/AvatarCostumeExcelConfigData.json' assert { type: 'json' }
-import Avatar from '../../../../src/game/.data/AvatarExcelConfigData.json' assert { type: 'json' }
-import AvatarPromote from '../../../../src/game/.data/AvatarPromoteExcelConfigData.json' assert { type: 'json' }
-import AvatarSkillDepot from '../../../../src/game/.data/AvatarSkillDepotExcelConfigData.json' assert { type: 'json' }
-import AvatarSkill from '../../../../src/game/.data/AvatarSkillExcelConfigData.json' assert { type: 'json' }
-import AvatarTalent from '../../../../src/game/.data/AvatarTalentExcelConfigData.json' assert { type: 'json' }
-import ProudSkill from '../../../../src/game/.data/ProudSkillExcelConfigData.json' assert { type: 'json' }
+import AvatarCostume from '../../../../src/game/.data/AvatarCostumeExcelConfigData.json' with { type: 'json' }
+import Avatar from '../../../../src/game/.data/AvatarExcelConfigData.json' with { type: 'json' }
+import AvatarPromote from '../../../../src/game/.data/AvatarPromoteExcelConfigData.json' with { type: 'json' }
+import AvatarSkillDepot from '../../../../src/game/.data/AvatarSkillDepotExcelConfigData.json' with { type: 'json' }
+import AvatarSkill from '../../../../src/game/.data/AvatarSkillExcelConfigData.json' with { type: 'json' }
+import AvatarTalent from '../../../../src/game/.data/AvatarTalentExcelConfigData.json' with { type: 'json' }
+import ProudSkill from '../../../../src/game/.data/ProudSkillExcelConfigData.json' with { type: 'json' }
 
 // weapon
-import Weapon from '../../../../src/game/.data/WeaponExcelConfigData.json' assert { type: 'json' }
-import WeaponPromote from '../../../../src/game/.data/WeaponPromoteExcelConfigData.json' assert { type: 'json' }
+import Weapon from '../../../../src/game/.data/WeaponExcelConfigData.json' with { type: 'json' }
+import WeaponPromote from '../../../../src/game/.data/WeaponPromoteExcelConfigData.json' with { type: 'json' }
 
-import EquipAffix from '../../../../src/game/.data/EquipAffixExcelConfigData.json' assert { type: 'json' }
+import EquipAffix from '../../../../src/game/.data/EquipAffixExcelConfigData.json' with { type: 'json' }
 // material
-import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' assert { type: 'json' }
+import Material from '../../../../src/game/.data/MaterialExcelConfigData.json' with { type: 'json' }
 
 // artifact
-import Reliquary from '../../../../src/game/.data/ReliquaryExcelConfigData.json' assert { type: 'json' }
+import Reliquary from '../../../../src/game/.data/ReliquaryExcelConfigData.json' with { type: 'json' }
 
 // artifact-set
-import ReliquarySet from '../../../../src/game/.data/ReliquarySetExcelConfigData.json' assert { type: 'json' }
+import ReliquarySet from '../../../../src/game/.data/ReliquarySetExcelConfigData.json' with { type: 'json' }
 
 // artifact-substat
-import ReliquaryAffix from '../../../../src/game/.data/ReliquaryAffixExcelConfigData.json' assert { type: 'json' }
+import ReliquaryAffix from '../../../../src/game/.data/ReliquaryAffixExcelConfigData.json' with { type: 'json' }
 
 // pfp
-import ProfilePicture from '../../../../src/game/.data/ProfilePictureExcelConfigData.json' assert { type: 'json' }
+import ProfilePicture from '../../../../src/game/.data/ProfilePictureExcelConfigData.json' with { type: 'json' }
 
 // wiki-id
-import WikiId from '../../../../src/game/.wiki/id.json' assert { type: 'json' }
+import WikiId from '../../../../src/game/.wiki/id.json' with { type: 'json' }
 
 const E = {
   Avatar,

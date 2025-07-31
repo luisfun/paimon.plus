@@ -1305,6 +1305,29 @@
     "wikiId": 1953
   },
   {
+    "id": 12432,
+    "icon": "UI_EquipIcon_Claymore_Polilith",
+    "rankLevel": 4,
+    "nameTextMapHash": 3573591875,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112119": 15,
+        "112120": 18,
+        "112121": 27,
+        "114065": 3,
+        "114066": 9,
+        "114067": 9,
+        "114068": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 12431,
     "icon": "UI_EquipIcon_Claymore_Isikhulu",
     "rankLevel": 4,
@@ -3976,6 +3999,29 @@
       }
     },
     "wikiId": 1958
+  },
+  {
+    "id": 13515,
+    "icon": "UI_EquipIcon_Pole_Perdix",
+    "rankLevel": 5,
+    "nameTextMapHash": 2878068027,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112101": 15,
+        "112102": 23,
+        "112103": 27,
+        "112119": 23,
+        "112120": 27,
+        "112121": 41,
+        "114061": 5,
+        "114062": 14,
+        "114063": 14,
+        "114064": 6
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13514,

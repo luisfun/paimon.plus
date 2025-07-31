@@ -1,5 +1,61 @@
 [
   {
+    "key": "Ineffa",
+    "id": 10000116,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 2759230658,
+    "skillDepotId": 11601,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Ineffa_01",
+      "UI_Talent_S_Ineffa_02",
+      "UI_Talent_U_Ineffa_01",
+      "UI_Talent_S_Ineffa_03",
+      "UI_Talent_U_Ineffa_02",
+      "UI_Talent_S_Ineffa_04"
+    ],
+    "skills": [
+      {
+        "id": 11161,
+        "icon": "Skill_A_03",
+        "proud": 11631
+      },
+      {
+        "id": 11162,
+        "icon": "Skill_S_Ineffa_01",
+        "proud": 11632
+      },
+      {
+        "id": 11165,
+        "icon": "Skill_E_Ineffa_01",
+        "proud": 11639
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101252": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 36,
+        "112105": 96,
+        "112106": 129,
+        "113069": 18,
+        "113076": 46
+      }
+    },
+    "wikiId": 7852
+  },
+  {
     "key": "SkirkNew",
     "id": 10000114,
     "qualityType": "QUALITY_ORANGE",
@@ -1778,7 +1834,12 @@
         "proud": 6039
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 206001,
+        "key": "YelanCostumeSummer"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,
@@ -5900,7 +5961,12 @@
         "proud": 3239
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 203201,
+        "key": "BennettCostumeSummer"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,

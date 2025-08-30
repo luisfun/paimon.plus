@@ -18,8 +18,8 @@ export default defineConfig({
     },
   },
   integrations: [
-    svelte(),
     tailwind(),
+    svelte(),
     webmanifest({
       name: 'Paimon+',
       start_url: '/',

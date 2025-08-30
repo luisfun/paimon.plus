@@ -1,9 +1,7 @@
 <script lang="ts">
-import { avatarProps } from '@components/img-props'
 import Svg from '@components/svg.svelte'
 import { type Lang, useTranslations } from '@i18n/utils'
-import Icon from './icon.svelte'
-import type { Elem } from './types'
+import TeamGridChildren from './team-grid-children.svelte'
 import type { teamBuild } from './worker'
 
 const {
@@ -20,16 +18,7 @@ const {
   stopAddTeam: boolean
 } = $props()
 const t = useTranslations(lang)
-console.log(stopAddTeam)
 </script>
-
-{#snippet teamGrid(team: {avatarId: number | undefined; elem?: Elem; name?: string}[])}
-  {#each team as avatar}
-    <div class="relative">
-      <Icon {...avatarProps(avatar.avatarId ?? -1)} elem={avatar.name === 'Traveler' ? avatar.elem : undefined} />
-    </div>
-  {/each}
-{/snippet}
 
 {#snippet indicator(show: boolean)}
   <div class="absolute z-10 inset-0 bg-background bg-opacity-50" class:hidden={!show}>
@@ -43,7 +32,7 @@ console.log(stopAddTeam)
       <div class="collapse bg-neutral my-3 relative">
         <input type="checkbox" class="cursor-pointer" aria-label="more" />
         <div class="collapse-title grid grid-cols-4 gap-6 p-6">
-          {@render teamGrid(team.base)}
+          <TeamGridChildren team={team.base} />
           <div class="svg-down aspect-square relative">
             <Svg icon="angle-down" class="absolute inset-0 max-h-1/2 m-auto" />
           </div>
@@ -55,7 +44,7 @@ console.log(stopAddTeam)
                 <Svg icon="thumbs-up" class="absolute inset-0 max-h-1/2 m-auto" />
               </div>
               <div class="collapse-title w-full grid grid-cols-4 gap-4 py-3 px-4">
-                {@render teamGrid(all.data)}
+                <TeamGridChildren team={all.data} />
               </div>
               <button class="btn btn-circle btn-sm relative my-auto" disabled={stopAddTeam} onclick={() => addTeam(all)}>
                 <Svg icon="plus" class="absolute inset-0 h-3/4 m-auto" />
@@ -68,7 +57,7 @@ console.log(stopAddTeam)
     {/each}
   {:else}
     <div class="grid grid-cols-4 gap-6 p-6 relative">
-      {@render teamGrid([{avatarId: -1}])}
+      <TeamGridChildren team={[{avatarId: -1}]} />
       {@render indicator(loadingIndicator)}
     </div>
   {/if}

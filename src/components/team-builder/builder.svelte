@@ -52,16 +52,19 @@ $effect(() => {
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">
   <div class="mb-auto">
     {#if keepTeams.length > 0}
-      {#each keepTeams as team, i}
-        <div class="mb-4 flex bg-neutral rounded-2xl p-3">
-          <div class="collapse-title w-full grid grid-cols-4 gap-4 p-3">
-            <TeamGridChildren team={team.data} />
+      <div class="sticky top-0 bg-background z-20">
+        {#each keepTeams as team, i}
+          <div class="mb-4 flex bg-neutral rounded-2xl px-3">
+            <div class="collapse-title w-full grid grid-cols-4 gap-4 p-3">
+              <TeamGridChildren team={team.data} />
+            </div>
+            <button class="btn btn-circle relative my-auto" onclick={() => deleteTeam(i)}>
+              <Svg icon="trash-can" class="absolute inset-0 max-h-1/2 m-auto" />
+            </button>
           </div>
-          <button class="btn btn-circle relative my-auto" onclick={() => deleteTeam(i)}>
-            <Svg icon="trash-can" class="absolute inset-0 max-h-1/2 m-auto" />
-          </button>
-        </div>
-      {/each}
+        {/each}
+        <div class="my-4 border-b border-border"></div>
+      </div>
     {/if}
     <Result {lang} {result} {loadingIndicator} {addTeam} stopAddTeam={keepTeams.length >= 3} />
   </div>

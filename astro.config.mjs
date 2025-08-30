@@ -9,6 +9,7 @@ export default defineConfig({
   image: {
     service: passthroughImageService(), // ???
   },
+  trailingSlash: 'always',
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'ja', 'ko', 'pt'], // webmanifest, src/i18n/ui.ts, .github/actions/update/src/data-download.js, data-shrink.js

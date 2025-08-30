@@ -36,8 +36,10 @@ $effect(() => {
   loadingIndicator = true
   if (exe) exe.abort()
   exe = worker.execute([
-    avatar.filter(e => [...favoriteIds, ...list].includes(e.id)),
-    favoriteIds.filter(e => e),
+    avatar
+      .filter(e => [...favoriteIds, ...list].includes(e.id))
+      .filter(e => !keepTeams.flatMap(team => team.data.map(a => a.id)).includes(e.id)),
+    favoriteIds.filter(e => e).filter(e => !keepTeams.flatMap(team => team.data.map(a => a.id)).includes(e)),
     globalCoop,
   ])
   exe.promise.then(res => {

@@ -1,14 +1,13 @@
 <script lang="ts">
 import type { SvelteHTMLElements } from 'svelte/elements'
 
-const { self, children, ...rest }: { self?: boolean } & SvelteHTMLElements['a'] = $props()
+const { self, href, children, ...rest }: { self?: boolean } & SvelteHTMLElements['a'] = $props()
 
 const externalProps = self
   ? {}
-  : {
-      rel: 'noreferrer noopener',
-      target: '_blank',
-    }
+  : href?.includes('luis.fun')
+    ? { target: '_blank' }
+    : { rel: 'noreferrer', target: '_blank' }
 </script>
 
-<a {...externalProps} {...rest}>{@render children?.()}</a>
+<a {...externalProps} {href} {...rest}>{@render children?.()}</a>

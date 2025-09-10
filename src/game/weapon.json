@@ -322,6 +322,52 @@
     "wikiId": 2046
   },
   {
+    "id": 11434,
+    "icon": "UI_EquipIcon_Sword_Miekka",
+    "rankLevel": 4,
+    "nameTextMapHash": 357888539,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112122": 10,
+        "112123": 15,
+        "112124": 18,
+        "112131": 15,
+        "112132": 18,
+        "112133": 27,
+        "114081": 3,
+        "114082": 9,
+        "114083": 9,
+        "114084": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 11433,
+    "icon": "UI_EquipIcon_Sword_Ilmarinen",
+    "rankLevel": 4,
+    "nameTextMapHash": 3426916507,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112125": 10,
+        "112126": 15,
+        "112127": 18,
+        "112128": 15,
+        "112129": 18,
+        "112130": 27,
+        "114073": 3,
+        "114074": 9,
+        "114075": 9,
+        "114076": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11432,
     "icon": "UI_EquipIcon_Sword_SacrificialNgombe",
     "rankLevel": 4,
@@ -1305,6 +1351,29 @@
     "wikiId": 1953
   },
   {
+    "id": 12433,
+    "icon": "UI_EquipIcon_Claymore_Ilmarinen",
+    "rankLevel": 4,
+    "nameTextMapHash": 3225522227,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112122": 10,
+        "112123": 15,
+        "112124": 18,
+        "112131": 15,
+        "112132": 18,
+        "112133": 27,
+        "114081": 3,
+        "114082": 9,
+        "114083": 9,
+        "114084": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 12432,
     "icon": "UI_EquipIcon_Claymore_Polilith",
     "rankLevel": 4,
@@ -2242,6 +2311,29 @@
     "wikiId": 1956
   },
   {
+    "id": 15433,
+    "icon": "UI_EquipIcon_Bow_Ilmarinen",
+    "rankLevel": 4,
+    "nameTextMapHash": 3380505211,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112011": 10,
+        "112012": 15,
+        "112013": 18,
+        "112134": 15,
+        "112135": 18,
+        "112136": 27,
+        "114077": 3,
+        "114078": 9,
+        "114079": 9,
+        "114080": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 15432,
     "icon": "UI_EquipIcon_Bow_Stinger",
     "rankLevel": 4,
@@ -2995,6 +3087,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14520,
+    "icon": "UI_EquipIcon_Catalyst_MenulisRing",
+    "rankLevel": 5,
+    "nameTextMapHash": 1198975171,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112122": 15,
+        "112123": 23,
+        "112124": 27,
+        "112128": 23,
+        "112129": 27,
+        "112130": 41,
+        "114073": 5,
+        "114074": 14,
+        "114075": 14,
+        "114076": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14519,
     "icon": "UI_EquipIcon_Catalyst_VaresaTransformer",
     "rankLevel": 5,
@@ -3338,6 +3453,52 @@
       }
     },
     "wikiId": 1955
+  },
+  {
+    "id": 14433,
+    "icon": "UI_EquipIcon_Catalyst_Ilmarinen",
+    "rankLevel": 4,
+    "nameTextMapHash": 658627627,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112125": 10,
+        "112126": 15,
+        "112127": 18,
+        "112128": 15,
+        "112129": 18,
+        "112130": 27,
+        "114073": 3,
+        "114074": 9,
+        "114075": 9,
+        "114076": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 14432,
+    "icon": "UI_EquipIcon_Catalyst_SeeliesLute",
+    "rankLevel": 4,
+    "nameTextMapHash": 21074019,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112125": 10,
+        "112126": 15,
+        "112127": 18,
+        "112131": 15,
+        "112132": 18,
+        "112133": 27,
+        "114081": 3,
+        "114082": 9,
+        "114083": 9,
+        "114084": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 14431,
@@ -4001,6 +4162,29 @@
     "wikiId": 1958
   },
   {
+    "id": 13516,
+    "icon": "UI_EquipIcon_Pole_TummaLyhty",
+    "rankLevel": 5,
+    "nameTextMapHash": 3869745515,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112125": 15,
+        "112126": 23,
+        "112127": 27,
+        "112134": 23,
+        "112135": 27,
+        "112136": 41,
+        "114077": 5,
+        "114078": 14,
+        "114079": 14,
+        "114080": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 13515,
     "icon": "UI_EquipIcon_Pole_Perdix",
     "rankLevel": 5,
@@ -4252,6 +4436,29 @@
       }
     },
     "wikiId": 1972
+  },
+  {
+    "id": 13433,
+    "icon": "UI_EquipIcon_Pole_Ilmarinen",
+    "rankLevel": 4,
+    "nameTextMapHash": 2225698043,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112122": 10,
+        "112123": 15,
+        "112124": 18,
+        "112134": 15,
+        "112135": 18,
+        "112136": 27,
+        "114077": 3,
+        "114078": 9,
+        "114079": 9,
+        "114080": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13432,

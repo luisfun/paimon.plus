@@ -1,5 +1,61 @@
 [
   {
+    "key": "Lauma",
+    "id": 10000119,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 1776874018,
+    "skillDepotId": 11901,
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Lauma_01",
+      "UI_Talent_S_Lauma_02",
+      "UI_Talent_U_Lauma_01",
+      "UI_Talent_S_Lauma_03",
+      "UI_Talent_U_Lauma_02",
+      "UI_Talent_S_Lauma_04"
+    ],
+    "skills": [
+      {
+        "id": 11191,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 11931
+      },
+      {
+        "id": 11192,
+        "icon": "Skill_S_Lauma_01",
+        "proud": 11932
+      },
+      {
+        "id": 11195,
+        "icon": "Skill_E_Lauma_01",
+        "proud": 11939
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101263": 168,
+        "104131": 1,
+        "104132": 9,
+        "104133": 9,
+        "104134": 6,
+        "104319": 3,
+        "104356": 9,
+        "104357": 63,
+        "104358": 114,
+        "112125": 36,
+        "112126": 96,
+        "112127": 129,
+        "113070": 18,
+        "113078": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "key": "Ineffa",
     "id": 10000116,
     "qualityType": "QUALITY_ORANGE",
@@ -3957,6 +4013,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Aino",
+    "id": 10000121,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 3887688410,
+    "skillDepotId": 12101,
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Aino_03",
+      "UI_Talent_S_Aino_02",
+      "UI_Talent_U_Aino_01",
+      "UI_Talent_S_Aino_01",
+      "UI_Talent_U_Aino_02",
+      "UI_Talent_S_Aino_04"
+    ],
+    "skills": [
+      {
+        "id": 11211,
+        "icon": "Skill_A_04",
+        "proud": 12131
+      },
+      {
+        "id": 11212,
+        "icon": "Skill_S_Aino_01",
+        "proud": 12132
+      },
+      {
+        "id": 11215,
+        "icon": "Skill_E_Aino_01",
+        "proud": 12139
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101257": 168,
+        "104121": 1,
+        "104122": 9,
+        "104123": 9,
+        "104124": 6,
+        "104319": 3,
+        "104359": 9,
+        "104360": 63,
+        "104361": 114,
+        "112122": 36,
+        "112123": 96,
+        "112124": 129,
+        "113061": 18,
+        "113077": 46
+      }
+    },
+    "wikiId": -1
   },
   {
     "key": "Dahlia",

@@ -2,6 +2,17 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Lauma',
+    score: [0, 0, 1, 0],
+    dmg: ['element'],
+    stat: ['EM'],
+    coop: [
+      { score: 1, add: ['Nilou'] },
+      { score: 4, or: [{ elem: ['Hydro'], roll: ['main', 'sub'] }, 'Nilou'] },
+    ],
+    filter: { score: 5, roll: 'support' },
+  },
+  {
     name: 'Ineffa',
     score: [0, 3, 0, 2],
     dmg: ['element'],
@@ -464,6 +475,12 @@ export const avatar: Avatar[] = [
     burstDep: 3,
   },
 
+  {
+    name: 'Aino',
+    score: [0, 0, 1, 0],
+    burstDep: 2,
+    coop: [{ score: 1, add: [{ roll: ['main', 'sub'], elem: ['Electro', 'Dendro'] }, 'Ineffa'] }],
+  },
   {
     name: 'Dahlia',
     score: [0, 0, 2, 2],

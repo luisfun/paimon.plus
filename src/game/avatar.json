@@ -1,5 +1,61 @@
 [
   {
+    "key": "Flins",
+    "id": 10000120,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 1804674810,
+    "skillDepotId": 12001,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Flins_01",
+      "UI_Talent_S_Flins_02",
+      "UI_Talent_U_Flins_02",
+      "UI_Talent_S_Flins_03",
+      "UI_Talent_U_Flins_01",
+      "UI_Talent_S_Flins_04"
+    ],
+    "skills": [
+      {
+        "id": 11201,
+        "icon": "Skill_A_03",
+        "proud": 12031
+      },
+      {
+        "id": 11202,
+        "icon": "Skill_S_Flins_01",
+        "proud": 12032
+      },
+      {
+        "id": 11205,
+        "icon": "Skill_E_Flins_01",
+        "proud": 12039
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101261": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104362": 9,
+        "104363": 63,
+        "104364": 114,
+        "112122": 36,
+        "112123": 96,
+        "112124": 129,
+        "113075": 18,
+        "113077": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "key": "Lauma",
     "id": 10000119,
     "qualityType": "QUALITY_ORANGE",

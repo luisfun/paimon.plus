@@ -1124,6 +1124,26 @@
     "wikiId": 2039
   },
   {
+    "id": 10009,
+    "icon": "UI_EquipIcon_Sword_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 123009691,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112011": 3,
+        "112012": 5,
+        "112014": 5,
+        "112015": 6,
+        "114001": 1,
+        "114002": 3,
+        "114003": 1
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11101,
     "icon": "UI_EquipIcon_Sword_Blunt",
     "rankLevel": 1,
@@ -3087,6 +3107,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14521,
+    "icon": "UI_EquipIcon_Catalyst_Sistrum",
+    "rankLevel": 5,
+    "nameTextMapHash": 1566338363,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112059": 15,
+        "112060": 23,
+        "112061": 27,
+        "112131": 23,
+        "112132": 27,
+        "112133": 41,
+        "114041": 5,
+        "114042": 14,
+        "114043": 14,
+        "114044": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14520,
     "icon": "UI_EquipIcon_Catalyst_MenulisRing",
     "rankLevel": 5,
@@ -3453,6 +3496,29 @@
       }
     },
     "wikiId": 1955
+  },
+  {
+    "id": 14434,
+    "icon": "UI_EquipIcon_Catalyst_Ziedas",
+    "rankLevel": 4,
+    "nameTextMapHash": 3497155131,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112125": 10,
+        "112126": 15,
+        "112127": 18,
+        "112128": 15,
+        "112129": 18,
+        "112130": 27,
+        "114073": 3,
+        "114074": 9,
+        "114075": 9,
+        "114076": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 14433,
@@ -4436,6 +4502,29 @@
       }
     },
     "wikiId": 1972
+  },
+  {
+    "id": 13434,
+    "icon": "UI_EquipIcon_Pole_Krivule",
+    "rankLevel": 4,
+    "nameTextMapHash": 980370707,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112122": 10,
+        "112123": 15,
+        "112124": 18,
+        "112134": 15,
+        "112135": 18,
+        "112136": 27,
+        "114077": 3,
+        "114078": 9,
+        "114079": 9,
+        "114080": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13433,

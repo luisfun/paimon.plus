@@ -1,5 +1,61 @@
 [
   {
+    "key": "Nefer",
+    "id": 10000122,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 2745786202,
+    "skillDepotId": 12201,
+    "element": "Grass",
+    "consts": [
+      "UI_Talent_S_Nefer_01",
+      "UI_Talent_S_Nefer_02",
+      "UI_Talent_U_Nefer_01",
+      "UI_Talent_S_Nefer_03",
+      "UI_Talent_U_Nefer_02",
+      "UI_Talent_S_Nefer_04"
+    ],
+    "skills": [
+      {
+        "id": 11221,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 12231
+      },
+      {
+        "id": 11222,
+        "icon": "Skill_S_Nefer_01",
+        "proud": 12232
+      },
+      {
+        "id": 11225,
+        "icon": "Skill_E_Nefer_01",
+        "proud": 12239
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101263": 168,
+        "104131": 1,
+        "104132": 9,
+        "104133": 9,
+        "104134": 6,
+        "104319": 3,
+        "104359": 9,
+        "104360": 63,
+        "104361": 114,
+        "112125": 36,
+        "112126": 96,
+        "112127": 129,
+        "113074": 18,
+        "113079": 46
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "key": "Flins",
     "id": 10000120,
     "qualityType": "QUALITY_ORANGE",
@@ -6812,5 +6868,105 @@
       }
     },
     "wikiId": 13
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11701,
+    "element": null,
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 1652500,
+      "materials": {
+        "104319": 1,
+        "104353": 3,
+        "104354": 21,
+        "104355": 38,
+        "112104": 6,
+        "112105": 22,
+        "112106": 31,
+        "113069": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11801,
+    "element": null,
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 1652500,
+      "materials": {
+        "104319": 1,
+        "104353": 3,
+        "104354": 21,
+        "104355": 38,
+        "112104": 6,
+        "112105": 22,
+        "112106": 31,
+        "113069": 6
+      }
+    },
+    "wikiId": -1
   }
 ]

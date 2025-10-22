@@ -128,6 +128,7 @@
   "10200": "UI_AvatarIcon_Aino_Circle",
   "10300": "UI_AvatarIcon_Lauma_Circle",
   "10400": "UI_AvatarIcon_Flins_Circle",
+  "10500": "UI_AvatarIcon_Nefer_Circle",
   "99999": "UI_AvatarIcon_Ambor_Circle",
   "100010": "UI_AvatarIcon_72105_Circle",
   "100020": "UI_AvatarIcon_72158_Circle",
@@ -153,5 +154,9 @@
   "100220": "UI_AvatarIcon_75230_Circle",
   "100230": "UI_AvatarIcon_76011_Circle",
   "100240": "UI_AvatarIcon_76003_Circle",
-  "200010": "UI_AvatarIcon_Activity_01_Circle"
+  "200010": "UI_AvatarIcon_Activity_01_Circle",
+  "900001": "UI_AvatarIcon_MannequinBoy_Circle",
+  "900002": "UI_AvatarIcon_MannequinGirl_Circle",
+  "900003": "UI_AvatarIcon_Mannequin_Custom_Circle",
+  "900004": ""
 }

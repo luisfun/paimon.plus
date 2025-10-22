@@ -2,6 +2,21 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Nefer',
+    score: [4, 0, 0, 0],
+    dmg: ['element'],
+    stat: ['EM'],
+    coop: [
+      // 過剰評価を抑制
+      { score: -4, add: [{ trigger: ['normal'] }, 'Nilou'] },
+      { score: -2, add: [{ elem: ['Pyro', 'Electro'] }, 'Furina', 'Mona'] },
+      { score: 1, add: [{ elem: ['Dendro'] }] },
+      { score: 2, add: ['Aino'] },
+      { score: 3, add: [{ elem: ['Hydro'] }], or: ['Aino', 'Lauma'] },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+    {
     name: 'Flins',
     score: [3, 0, 0, 0],
     burstDep: 3,
@@ -21,6 +36,8 @@ export const avatar: Avatar[] = [
     dmg: ['element'],
     stat: ['EM'],
     coop: [
+      // 過剰評価を抑制
+      { score: -2, add: ['Furina']},
       { score: 1, add: ['Nilou'] },
       { score: 4, or: [{ elem: ['Hydro'], roll: ['main', 'sub'] }, 'Nilou'] },
     ],
@@ -295,10 +312,13 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Nahida',
-    score: [0, 4, 0, 0],
+    score: [0, 3, 0, 0],
     dmg: ['skill'],
     stat: ['EM'],
-    coop: [{ score: 2, add: [{ roll: ['main', 'sub'], elem: ['Pyro', 'Hydro', 'Electro'] }] }],
+    coop: [
+      { score: 1, add: [{ roll: ['main', 'sub'], stat: ['EM'] }] },
+      { score: 2, add: [{ roll: ['main', 'sub'], elem: ['Pyro', 'Hydro', 'Electro'] }] }
+    ],
     filter: { score: 6, roll: 'sub' },
   },
   {
@@ -496,7 +516,7 @@ export const avatar: Avatar[] = [
     coop: [
       { score: 1, or: ['Flins', 'Lauma','Ineffa'] }
     ],
-    filter: { score: 2, roll: 'support' },
+    filter: { score: 4, roll: 'support' },
   },
   {
     name: 'Dahlia',

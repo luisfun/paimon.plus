@@ -159,7 +159,7 @@ const avatarAllCosts = (avatar, aInfo) => {
   const promoteCoin = promoteArray
     .filter(e => e.scoinCost)
     .map(e => e.scoinCost)
-    .reduce((a, b) => a + b)
+    .reduce((a, b) => a + b, 0)
   const skillCoin = skillArray
     .filter(e => e.coinCost)
     .map(e => e.coinCost)

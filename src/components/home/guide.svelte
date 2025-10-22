@@ -10,7 +10,7 @@ import avatarJson from '@game/avatar.json'
 import weaponJson from '@game/weapon.json'
 import { type Lang, useTranslations } from '@i18n/utils'
 import Materials from './materials.svelte'
-const avatarData = avatarJson.filter(e => !(e.id === 10000005 || e.id === 10000007))
+const avatarData = avatarJson.filter(e => !(e.id === 10000005 || e.id === 10000007 || e.id === 10000117 || e.id === 10000118))
 
 const { lang }: { lang: Lang } = $props()
 const t = useTranslations(lang)

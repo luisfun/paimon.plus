@@ -1,5 +1,66 @@
 [
   {
+    "key": "Durin",
+    "id": 10000123,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 2801077538,
+    "skillDepotId": 12301,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Durin_03",
+      "UI_Talent_S_Durin_04",
+      "UI_Talent_U_Durin_01",
+      "UI_Talent_S_Durin_05",
+      "UI_Talent_U_Durin_02",
+      "UI_Talent_S_Durin_06"
+    ],
+    "skills": [
+      {
+        "id": 11231,
+        "icon": "Skill_A_01",
+        "proud": 12331
+      },
+      {
+        "id": 11232,
+        "icon": "Skill_S_Durin_01",
+        "proud": 12332
+      },
+      {
+        "id": 11235,
+        "icon": "Skill_E_Durin_01",
+        "proud": 12339
+      }
+    ],
+    "costumes": [
+      {
+        "skinId": 212301,
+        "key": "DurinCostumeWic"
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101261": 168,
+        "104111": 1,
+        "104112": 9,
+        "104113": 9,
+        "104114": 6,
+        "104307": 9,
+        "104308": 63,
+        "104309": 114,
+        "104319": 3,
+        "112125": 36,
+        "112126": 96,
+        "112127": 129,
+        "113069": 18,
+        "113080": 46
+      }
+    },
+    "wikiId": 9017
+  },
+  {
     "key": "Nefer",
     "id": 10000122,
     "qualityType": "QUALITY_ORANGE",
@@ -277,7 +338,7 @@
         "113073": 18
       }
     },
-    "wikiId": 7706
+    "wikiId": 4582
   },
   {
     "key": "Escoffier",
@@ -4125,6 +4186,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Jahoda",
+    "id": 10000124,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 1438964522,
+    "skillDepotId": 12401,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Jahoda_03",
+      "UI_Talent_S_Jahoda_02",
+      "UI_Talent_U_Jahoda_01",
+      "UI_Talent_S_Jahoda_01",
+      "UI_Talent_U_Jahoda_02",
+      "UI_Talent_S_Jahoda_04"
+    ],
+    "skills": [
+      {
+        "id": 11241,
+        "icon": "Skill_A_02",
+        "proud": 12431
+      },
+      {
+        "id": 11242,
+        "icon": "Skill_S_Jahoda_01",
+        "proud": 12432
+      },
+      {
+        "id": 11245,
+        "icon": "Skill_E_Jahoda_01",
+        "proud": 12439
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101257": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104319": 3,
+        "104362": 9,
+        "104363": 63,
+        "104364": 114,
+        "112122": 36,
+        "112123": 96,
+        "112124": 129,
+        "113073": 18,
+        "113078": 46
+      }
+    },
+    "wikiId": -1
   },
   {
     "key": "Aino",

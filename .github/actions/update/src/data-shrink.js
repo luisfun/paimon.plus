@@ -114,8 +114,9 @@ const dumpAvatar = () => {
         costume => ({ skinId: costume.skinId, key: costume.frontIconName.split('_').at(-1) }),
       )
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
-      // スカーク
+      // スカーク、ドゥリン
       if (aInfo.id === 10000114) aInfo.wikiId = 7706
+      if (aInfo.id === 10000123) aInfo.wikiId = 9017
       else aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])
       a.push(aInfo)
     }

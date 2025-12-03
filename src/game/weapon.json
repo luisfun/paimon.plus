@@ -1,5 +1,28 @@
 [
   {
+    "id": 11518,
+    "icon": "UI_EquipIcon_Sword_Motsognir",
+    "rankLevel": 5,
+    "nameTextMapHash": 4099034547,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112122": 15,
+        "112123": 23,
+        "112124": 27,
+        "112128": 23,
+        "112129": 27,
+        "112130": 41,
+        "114001": 5,
+        "114002": 14,
+        "114003": 14,
+        "114004": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11517,
     "icon": "UI_EquipIcon_Sword_OuterSword",
     "rankLevel": 5,
@@ -2101,6 +2124,29 @@
     "wikiId": 2023
   },
   {
+    "id": 15515,
+    "icon": "UI_EquipIcon_Bow_Arianna",
+    "rankLevel": 5,
+    "nameTextMapHash": 1235521427,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112014": 23,
+        "112015": 27,
+        "112016": 41,
+        "112035": 15,
+        "112036": 23,
+        "112037": 27,
+        "114009": 5,
+        "114010": 14,
+        "114011": 14,
+        "114012": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 15514,
     "icon": "UI_EquipIcon_Bow_Qoyllorsnova",
     "rankLevel": 5,
@@ -2329,6 +2375,29 @@
       }
     },
     "wikiId": 1956
+  },
+  {
+    "id": 15434,
+    "icon": "UI_EquipIcon_Bow_ElegguaBow",
+    "rankLevel": 4,
+    "nameTextMapHash": 2320082227,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112116": 15,
+        "112117": 18,
+        "112118": 27,
+        "112125": 10,
+        "112126": 15,
+        "112127": 18,
+        "114069": 3,
+        "114070": 9,
+        "114071": 9,
+        "114072": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 15433,

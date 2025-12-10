@@ -2,6 +2,12 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Durin',
+    score: [0, 6, 0, 0],
+    burstDep: 1,
+    dmg: ['burst'],
+  },
+  {
     name: 'Nefer',
     score: [4, 0, 0, 0],
     dmg: ['element'],
@@ -16,7 +22,7 @@ export const avatar: Avatar[] = [
     ],
     filter: { score: 6, roll: 'main' },
   },
-    {
+  {
     name: 'Flins',
     score: [3, 0, 0, 0],
     burstDep: 3,
@@ -458,6 +464,7 @@ export const avatar: Avatar[] = [
     name: 'Albedo',
     score: [0, 5, 0, 0],
     dmg: ['skill'],
+    coop: [{ score: 1, or: ['Durin', 'Venti', 'Klee', 'Mona', 'Razor', 'Fischl', 'Sucrose'] }],
   },
   {
     name: 'Zhongli',
@@ -472,13 +479,16 @@ export const avatar: Avatar[] = [
     name: 'Klee',
     score: [5, 0, 0, 0],
     dmg: ['normal', 'charge'],
+    coop: [ { score: 1, or: ['Durin', 'Venti', 'Albedo', 'Mona', 'Fischl', 'Sucrose'] }],
   },
   {
     name: 'Venti',
-    score: [0, 4, 5, 0],
+    score: [3, 3, 0, 0],
     burstDep: 2,
     explor: ['fly', 1],
     dmg: ['burst'],
+    coop: [{ score: 2, or: [{ roll: ['main'] }, 'Durin', 'Albedo', 'Mona', 'Fischl'] }],
+    filter: { score: 5, roll: 'main' },
   },
   {
     name: 'Keqing',
@@ -490,6 +500,7 @@ export const avatar: Avatar[] = [
     score: [0, 4, 0, 0],
     burstDep: 2,
     dmg: ['burst'],
+    coop: [{ score: 1, or: ['Durin', 'Venti', 'Klee', 'Albedo', 'Razor', 'Fischl', 'Sucrose'] }],
     explor: ['boat', 1],
   },
   {
@@ -510,11 +521,20 @@ export const avatar: Avatar[] = [
   },
 
   {
+    name: 'Jahoda',
+    score: [0, 0, 0, 4],
+    burstDep: 3,
+    coop: [
+      { score: 1, add: [{ roll: ['main', 'sub'], dmg: ['element'] }], or: ['Flins', 'Lauma', 'Ineffa'] },
+    ],
+    filter: { score: 5, roll: 'healer' },
+  },
+  {
     name: 'Aino',
     score: [0, 0, 1, 0],
     burstDep: 2,
     coop: [
-      { score: 1, or: ['Flins', 'Lauma','Ineffa'] }
+      { score: 1, or: ['Flins', 'Lauma', 'Ineffa'] }
     ],
     filter: { score: 4, roll: 'support' },
   },
@@ -814,6 +834,14 @@ export const avatar: Avatar[] = [
     score: [0, 4.1, 0, 0],
     burstDep: 1,
     dmg: ['skill'],
+    coop: [{ score: 1, or: [
+      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Durin' ],
+      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Venti' ],
+      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Albedo' ],
+      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Mona' ],
+      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Sucrose' ],
+      'Klee'
+    ]}],
   },
   {
     name: 'Ningguang',
@@ -843,12 +871,10 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Razor',
-    score: [2, 0, 0, 0],
-    burstDep: 3,
+    score: [4, 0, 0, 0],
+    burstDep: 2,
     dmg: ['normal'],
     explor: ['run-stamina', 1],
-    coop: [{ score: 1, add: [{ elem: ['Cryo'] }] }],
-    filter: { score: 3, roll: 'main' },
   },
   {
     name: 'Barbara',
@@ -938,6 +964,7 @@ export const globalCoop = {
     {
       score: 1,
       add: [
+        // 風バフ
         [
           { roll: ['main'], elem: ['4elem'] },
           { roll: ['support', 'healer'], elem: ['Anemo'] },

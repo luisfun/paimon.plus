@@ -29,10 +29,10 @@ export const avatar: Avatar[] = [
     dmg: ['burst'],
     stat: ['ATK', 'EM'],
     coop: [
-      { score: -3, add: ['Lauma']},
+      { score: -3, add: ['Lauma'] },
       { score: -1, add: [{ elem: ['Anemo'] }] },
       { score: 1, add: [{ elem: ['Hydro'] }, [{ elem: ['Anemo'] }, { elem: ['Electro'] }]] },
-      { score: 4, or: ['Lauma', 'Ineffa', 'Aino'] },
+      { score: 4, or: ['Lauma', 'Ineffa', 'Aino', 'Jahoda'] },
     ],
     filter: { score: 6, roll: 'main' },
   },
@@ -44,6 +44,7 @@ export const avatar: Avatar[] = [
     coop: [
       // 過剰評価を抑制
       { score: -2, add: ['Furina']},
+      { score: -1, add: ['Jahoda']},
       { score: 1, add: ['Nilou'] },
       { score: 4, or: [{ elem: ['Hydro'], roll: ['main', 'sub'] }, 'Nilou'] },
     ],
@@ -525,7 +526,7 @@ export const avatar: Avatar[] = [
     score: [0, 0, 0, 4],
     burstDep: 3,
     coop: [
-      { score: 1, add: [{ roll: ['main', 'sub'], dmg: ['element'] }], or: ['Flins', 'Lauma', 'Ineffa'] },
+      { score: 1, add: [{ roll: ['main', 'sub'], dmg: ['element'] }] },
     ],
     filter: { score: 5, roll: 'healer' },
   },
@@ -956,6 +957,42 @@ export const avatar: Avatar[] = [
     elem: 'Anemo',
     score: [0, 0, 1, 0],
     burstDep: 1,
+  },
+  {
+    name: 'Manekin',
+    elem: 'Pyro',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
+  },
+  {
+    name: 'Manekin',
+    elem: 'Hydro',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
+  },
+  {
+    name: 'Manekin',
+    elem: 'Dendro',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
+  },
+  {
+    name: 'Manekin',
+    elem: 'Electro',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
+  },
+  {
+    name: 'Manekin',
+    elem: 'Geo',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
+  },
+  {
+    name: 'Manekin',
+    elem: 'Anemo',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
   },
 ]
 

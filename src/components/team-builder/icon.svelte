@@ -14,6 +14,7 @@ const elemMap: Record<string, string> = {
   Anemo: 'Wind',
   Geo: 'Rock',
 }
+if (elem) console.log(elem)
 </script>
 
 <img {...rest} />

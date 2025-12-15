@@ -3,7 +3,7 @@
 import Dialog from '@components/dialog.svelte'
 import { avatarProps } from '@components/img-props'
 import Svg from '@components/svg.svelte'
-import { avatar } from '@components/team-builder-utils'
+import { avatar, playerElem } from '@components/team-builder-utils'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { onMount } from 'svelte'
 import Icon from './team-builder/icon.svelte'
@@ -115,7 +115,7 @@ $effect(() => {
 <div class="grid grid-cols-6 gap-3 mx-1">
 {#each avatar as a}
   <button class="relative" onclick={() => ownedClick(a.id)} aria-label={a.name}>
-    <Icon {...avatarProps(a.avatarId ?? -1, undefined, listData[tabIndex].list.includes(a.id) ? "outline outline-primary outline-offset-2" : "opacity-50")} elem={a.name === 'Traveler' ? a.elem : undefined} />
+    <Icon {...avatarProps(a.avatarId ?? -1, undefined, listData[tabIndex].list.includes(a.id) ? "outline outline-primary outline-offset-2" : "opacity-50")} elem={playerElem(a)} />
   </button>
 {/each}
 </div>

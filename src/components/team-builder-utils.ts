@@ -22,3 +22,5 @@ export const avatar = buildData
     return newA
   })
   .map(a => ({ ...a, id: `${a.name}:${a.elem}` })) // :でnameとelemを合わせる
+
+export const playerElem = (info: {name?: string; elem?: Elem} | undefined) => ((info?.name === 'Traveler' || info?.name === 'Manekin') ? info.elem : undefined)

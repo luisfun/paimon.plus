@@ -5,7 +5,7 @@ import Dialog from '@components/dialog.svelte'
 import { avatarProps } from '@components/img-props'
 import Svg from '@components/svg.svelte'
 import TeamBuilderInput from '@components/team-builder-input.svelte'
-import { avatar } from '@components/team-builder-utils'
+import { avatar, playerElem } from '@components/team-builder-utils'
 import { type Lang, useTranslations } from '@i18n/utils'
 import { globalCoop } from '@manual/team-builder-data'
 import Icon from './icon.svelte'
@@ -47,6 +47,7 @@ $effect(() => {
     loadingIndicator = false
   })
 })
+
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">
@@ -74,7 +75,7 @@ $effect(() => {
       {#each [0, 1, 2] as i}
         {@const fav = avatar.find(e => favoriteIds[i] === e.id)}
         <button class="relative w-1/5" onclick={() => dialogs[i]?.showModal()} aria-label="favorite character select">
-          <Icon {...avatarProps(fav?.avatarId ?? -1)} elem={fav?.name === 'Traveler' ? fav?.elem : undefined} />
+          <Icon {...avatarProps(fav?.avatarId ?? -1)} elem={playerElem(fav)} />
         </button>
         <Dialog bind:dialog={dialogs[i]}>
           <form class="grid grid-cols-6 sm:grid-cols-7 md:grid-cols-8 gap-2 m-2" method="dialog">
@@ -83,7 +84,7 @@ $effect(() => {
             </button>
             {#each avatar as a}
               <button class="relative" onclick={() => favoriteIds[i] = a.id} aria-label={a.id}>
-                <Icon {...avatarProps(a.avatarId ?? -1)} elem={a.name === 'Traveler' ? a.elem : undefined} />
+                <Icon {...avatarProps(a.avatarId ?? -1)} elem={playerElem(a)} />
               </button>
             {/each}
           </form>

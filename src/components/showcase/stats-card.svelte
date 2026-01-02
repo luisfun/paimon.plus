@@ -53,7 +53,7 @@ $effect(() => {
   }
   xc.render(
     {
-      backgroundColor: elementMap[a.element || ''],
+      backgroundColor: elementMap[a.element || 'None'],
       backgroundImage: src('overlay', 'card-assets', 'jpg'),
       backgroundBlendMode: 'overlay',
       objectFit: 'cover',

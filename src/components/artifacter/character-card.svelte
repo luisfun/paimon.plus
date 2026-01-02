@@ -55,7 +55,7 @@ $effect(() => {
   const totalScore = getTotalScoreSet(scoreSet, scoreType)
   xc.render(
     {
-      backgroundColor: elementMap[a.element || ''],
+      backgroundColor: elementMap[a.element || 'None'],
       backgroundImage: src('overlay', 'card-assets', 'jpg'),
       backgroundBlendMode: 'overlay',
       objectFit: 'cover',
@@ -89,7 +89,7 @@ $effect(() => {
           ),
           div(
             { display: 'flex', m: 0, h: 24 * 1.2 },
-            div({ w: 76 * 1.2, ml: 0, mr: 0, fontSize: '1.2rem', shadow: { size: 12, for: 4 } }, `Lv.${a.level}`),
+            div({ w: 86 * 1.2, ml: 0, mr: 0, fontSize: '1.2rem', shadow: { size: 12, for: 4 } }, `Lv.${a.level}`),
             img(
               { ml: 0, mr: 2 * 1.2, w: 28 * 1.2, h: 28 * 1.2, shadow: { size: 12, for: 4 } },
               src('Friendship', 'card-assets'),

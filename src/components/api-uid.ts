@@ -51,7 +51,7 @@ export const avatarRemap = (info: AvatarInfo) => {
     Array(6)
       .fill(0)
       .map(() => ({ icon: null, unlock: false }))
-  const skills = (JSON.parse(JSON.stringify(data?.skills)) as (typeof avatarJson)[number]['skills'] | undefined)?.map(
+  const skills = structuredClone(data?.skills)?.map(
     skill => ({
       ...skill,
       level: info.skillLevelMap[skill.id || 0],

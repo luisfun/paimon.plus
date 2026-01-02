@@ -71,7 +71,7 @@ $effect(() => {
       const totalScore = getTotalScoreSet(scoreSet, a.scoreType)
       return div(
         {
-          backgroundColor: elementMap[a.element || ''],
+          backgroundColor: elementMap[a.element || 'None'],
           backgroundImage: src('overlay', 'card-assets', 'jpg'),
           backgroundBlendMode: 'overlay',
           objectFit: 'cover',

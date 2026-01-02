@@ -92,8 +92,8 @@ const dumpAvatar = () => {
     for (const index of ["id", "qualityType", "weaponType", "nameTextMapHash", "skillDepotId"]) {
       aInfo[index] = avatar[index]
     }
-    // 旅人
-    if (aInfo.id === 10000005 || aInfo.id === 10000007) {
+    // 旅人、ドール
+    if (aInfo.id === 10000005 || aInfo.id === 10000007 || aInfo.id === 10000117 || aInfo.id === 10000118) {
       for (const depot of E.AvatarSkillDepot.filter(e => avatar.candSkillDepotIds.includes(e.id))) {
         const aInfo57 = { ...aInfo }
         aInfo57.skillDepotId = depot.id
@@ -191,7 +191,7 @@ const elementText = {
 const dumpWeapon = () => {
   const w = []
   // biome-ignore format: ids
-  const blockIds = [20001, 10002, 10003, 10004, 10005, 10006, 10008, 11411, 11506, 11507, 11508, 12505, 12506, 12508, 12509, 13503, 13506, 14411, 14503, 14508, 15504, 15505, 15506]
+  const blockIds = [20001, 10002, 10003, 10004, 10005, 10006, 10008, 10009, 11411, 11506, 11507, 11508, 12505, 12506, 12508, 12509, 13503, 13506, 14411, 14503, 14508, 15504, 15505, 15506]
   for (const weapon of E.Weapon.filter(e => !blockIds.includes(e.id))) {
     const wInfo = {}
     // biome-ignore format: index

@@ -1147,26 +1147,6 @@
     "wikiId": 2039
   },
   {
-    "id": 10009,
-    "icon": "UI_EquipIcon_Sword_Template",
-    "rankLevel": 1,
-    "nameTextMapHash": 123009691,
-    "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "allCosts": {
-      "promoteCoin": 20000,
-      "materials": {
-        "112011": 3,
-        "112012": 5,
-        "112014": 5,
-        "112015": 6,
-        "114001": 1,
-        "114002": 3,
-        "114003": 1
-      }
-    },
-    "wikiId": -1
-  },
-  {
     "id": 11101,
     "icon": "UI_EquipIcon_Sword_Blunt",
     "rankLevel": 1,

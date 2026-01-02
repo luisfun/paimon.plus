@@ -44,8 +44,8 @@ export const avatarRemap = (info: AvatarInfo) => {
   const levelLimit = get_ascension_level(info.propMap['1002'].val)
   const nameTextMapHash = data?.nameTextMapHash
   const element = data?.element
-  const sideIcon = costume ? `UI_AvatarIcon_Side_${costume.key}` : `UI_AvatarIcon_Side_${data?.key}`
-  const avatarImg = costume ? `UI_Costume_${costume.key}` : `UI_Gacha_AvatarImg_${data?.key}`
+  const sideIcon = costume?.key ? `UI_AvatarIcon_Side_${costume.key}` : `UI_AvatarIcon_Side_${data?.key}`
+  const avatarImg = costume?.key ? `UI_Costume_${costume.key}` : `UI_Gacha_AvatarImg_${data?.key}`
   const talentIcons =
     data?.consts.map((icon, i) => ({ icon, unlock: i < (info.talentIdList?.length || 0) })) ||
     Array(6)

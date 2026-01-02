@@ -6992,8 +6992,8 @@
     "qualityType": "QUALITY_ORANGE_SP",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "nameTextMapHash": 1496871274,
-    "skillDepotId": 11701,
-    "element": null,
+    "skillDepotId": 11702,
+    "element": "Fire",
     "consts": [
       null,
       null,
@@ -7009,29 +7009,518 @@
         "proud": 11731
       },
       {
-        "id": null,
-        "icon": null,
-        "proud": null
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
       },
       {
-        "id": null,
-        "icon": null,
-        "proud": null
+        "id": 111751,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
       }
     ],
-    "costumes": [],
     "allCosts": {
       "promoteCoin": 0,
-      "skillCoin": 1652500,
+      "skillCoin": 4957500,
       "materials": {
-        "104319": 1,
-        "104353": 3,
-        "104354": 21,
-        "104355": 38,
-        "112104": 6,
-        "112105": 22,
-        "112106": 31,
-        "113069": 6
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 7306
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11703,
+    "element": "Water",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111752,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 3997
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11704,
+    "element": "Electric",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111753,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 18
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11705,
+    "element": "Ice",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111754,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11706,
+    "element": "Wind",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111755,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 19
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11707,
+    "element": "Rock",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111756,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 17
+  },
+  {
+    "key": "MannequinBoy",
+    "id": 10000117,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1496871274,
+    "skillDepotId": 11708,
+    "element": "Grass",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111757,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 2674
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11802,
+    "element": "Fire",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111751,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 7306
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11803,
+    "element": "Water",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111752,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 3997
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11804,
+    "element": "Electric",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111753,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 18
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11805,
+    "element": "Ice",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111754,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
       }
     },
     "wikiId": -1
@@ -7042,8 +7531,8 @@
     "qualityType": "QUALITY_ORANGE_SP",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "nameTextMapHash": 4125864442,
-    "skillDepotId": 11801,
-    "element": null,
+    "skillDepotId": 11806,
+    "element": "Wind",
     "consts": [
       null,
       null,
@@ -7059,31 +7548,128 @@
         "proud": 11731
       },
       {
-        "id": null,
-        "icon": null,
-        "proud": null
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
       },
       {
-        "id": null,
-        "icon": null,
-        "proud": null
+        "id": 111755,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
       }
     ],
-    "costumes": [],
     "allCosts": {
       "promoteCoin": 0,
-      "skillCoin": 1652500,
+      "skillCoin": 4957500,
       "materials": {
-        "104319": 1,
-        "104353": 3,
-        "104354": 21,
-        "104355": 38,
-        "112104": 6,
-        "112105": 22,
-        "112106": 31,
-        "113069": 6
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
       }
     },
-    "wikiId": -1
+    "wikiId": 19
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11807,
+    "element": "Rock",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111756,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 17
+  },
+  {
+    "key": "MannequinGirl",
+    "id": 10000118,
+    "qualityType": "QUALITY_ORANGE_SP",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 4125864442,
+    "skillDepotId": 11808,
+    "element": "Grass",
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 11171,
+        "icon": "Skill_A_01",
+        "proud": 11731
+      },
+      {
+        "id": 11172,
+        "icon": "Skill_S_LittleIdol_01",
+        "proud": 11732
+      },
+      {
+        "id": 111757,
+        "icon": "Skill_E_LittleIdol_01",
+        "proud": 11739
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 0,
+      "skillCoin": 4957500,
+      "materials": {
+        "104319": 3,
+        "104353": 9,
+        "104354": 63,
+        "104355": 114,
+        "112104": 18,
+        "112105": 66,
+        "112106": 93,
+        "113069": 18
+      }
+    },
+    "wikiId": 2674
   }
 ]

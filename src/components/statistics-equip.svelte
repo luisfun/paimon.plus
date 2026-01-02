@@ -60,20 +60,20 @@ $effect(() => {
       <div tabindex="0" role="button">
         {#if !s.set[1]}
           <div class="relative">
-            <Img class="w-full aspect-square" src="/images/ui/UI_RelicIcon_{s.set[0]?.id}_4.webp" alt={t(s.set[0].nameTextMapHash ?? 0)} />
-            {@render label(s.set[0].piece)}
+            <Img class="w-full aspect-square" src="/images/ui/UI_RelicIcon_{s.set[0]?.id}_4.webp" alt={t(s.set[0]?.nameTextMapHash ?? 0)} />
+            {@render label(s.set[0]?.piece)}
           </div>
         {:else}
           <div class="relative w-full aspect-square">
             <div class="absolute w-full aspect-square" style="clip-path: polygon(0% 0%, 100% 0%, 100% 100%);">
               <div class="absolute top-0 right-0 w-2/3">
-                <Img src="/images/ui/UI_RelicIcon_{s.set[0]?.id}_4.webp" alt={t(s.set[0].nameTextMapHash ?? 0)} />
+                <Img src="/images/ui/UI_RelicIcon_{s.set[0].id}_4.webp" alt={t(s.set[0].nameTextMapHash ?? 0)} />
                 {@render label(s.set[0].piece)}
               </div>
             </div>
             <div class="absolute w-full aspect-square" style="clip-path: polygon(0% 0%, 0% 100%, 100% 100%);">
               <div class="absolute bottom-0 left-0 w-2/3">
-                <Img src="/images/ui/UI_RelicIcon_{s.set[1]?.id}_4.webp" alt={t(s.set[1].nameTextMapHash ?? 0)} />
+                <Img src="/images/ui/UI_RelicIcon_{s.set[1].id}_4.webp" alt={t(s.set[1].nameTextMapHash ?? 0)} />
                 {@render label(s.set[1].piece)}
               </div>
             </div>

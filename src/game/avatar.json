@@ -1,5 +1,61 @@
 [
   {
+    "key": "Columbina",
+    "id": 10000125,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 1888371618,
+    "skillDepotId": 12501,
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Columbina_01",
+      "UI_Talent_S_Columbina_02",
+      "UI_Talent_U_Columbina_01",
+      "UI_Talent_S_Columbina_03",
+      "UI_Talent_U_Columbina_02",
+      "UI_Talent_S_Columbina_04"
+    ],
+    "skills": [
+      {
+        "id": 11251,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 12531
+      },
+      {
+        "id": 11252,
+        "icon": "Skill_S_Columbina_01",
+        "proud": 12532
+      },
+      {
+        "id": 11255,
+        "icon": "Skill_E_Columbina_01",
+        "proud": 12539
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101268": 168,
+        "104121": 1,
+        "104122": 9,
+        "104123": 9,
+        "104124": 6,
+        "104319": 3,
+        "104356": 9,
+        "104357": 63,
+        "104358": 114,
+        "112002": 36,
+        "112003": 96,
+        "112004": 129,
+        "113079": 46,
+        "113081": 18
+      }
+    },
+    "wikiId": 7476
+  },
+  {
     "key": "Durin",
     "id": 10000123,
     "qualityType": "QUALITY_ORANGE",
@@ -1325,7 +1381,12 @@
         "proud": 8739
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 208701,
+        "key": "NeuvilletteCostumeWinter"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,
@@ -5116,7 +5177,12 @@
         "proud": 7739
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 207701,
+        "key": "YaoyaoCostumeWinter"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,

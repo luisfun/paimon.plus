@@ -2,6 +2,22 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Columbina',
+    score: [1, 4, 0, 0],
+    burstDep: 2,
+    dmg: ['element'],
+    stat: ['EM', 'HP'],
+    coop: [
+      // 過剰評価を抑制
+      { score: -1, add: ['Furina'] },
+      // mainアタッカー
+      { score: 5, add: [['Lauma', {roll: ['sub', 'support']}, {roll: ['healer']}]]},
+      // subアタッカー
+      { score: 1, or: [{elem: ['Electro', 'Geo'], roll: ['main', 'sub']}, 'Lauma'] },
+      { score: 1, or: ['Ineffa', 'Lauma'], add: ['Ineffa'] },
+    ]
+  },
+  {
     name: 'Durin',
     score: [0, 6, 0, 0],
     burstDep: 1,

@@ -440,6 +440,14 @@
     "wikiId": -1
   },
   {
+    "id": 101269,
+    "icon": "UI_ItemIcon_101269",
+    "rankLevel": 0,
+    "nameTextMapHash": 3765898220,
+    "rank": 317,
+    "wikiId": -1
+  },
+  {
     "id": 104003,
     "icon": "UI_ItemIcon_104003",
     "rankLevel": 4,
@@ -2964,6 +2972,14 @@
     "icon": "UI_ItemIcon_113081",
     "rankLevel": 5,
     "nameTextMapHash": 372102468,
+    "rank": 11101,
+    "wikiId": -1
+  },
+  {
+    "id": 113084,
+    "icon": "UI_ItemIcon_113084",
+    "rankLevel": 4,
+    "nameTextMapHash": 1225964828,
     "rank": 11101,
     "wikiId": -1
   },

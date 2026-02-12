@@ -2,65 +2,79 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Zibai',
+    score: [3, 0, 0, 0],
+    group: ['moonsign'],
+    burstDep: 2,
+    stat: ['EM', 'DEF'],
+    coop: [
+      { score: 1, add: [{ group: ['moonsign'] }] },
+      { score: 3, add: [{ elem: ['Hydro'] }] },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Columbina',
     score: [1, 4, 0, 0],
+    group: ['moonsign'],
     burstDep: 2,
     dmg: ['element'],
     stat: ['EM', 'HP'],
     coop: [
-      // 過剰評価を抑制
-      { score: -1, add: ['Furina'] },
       // mainアタッカー
       { score: 5, add: [['Lauma', {roll: ['sub', 'support']}, {roll: ['healer']}]]},
       // subアタッカー
-      { score: 1, or: [{elem: ['Electro', 'Geo'], roll: ['main', 'sub']}, 'Lauma'] },
-      { score: 1, or: ['Ineffa', 'Lauma'], add: ['Ineffa'] },
-    ]
+      { score: 1, or: [{elem: ['Electro', 'Geo'], roll: ['main', 'sub']}] },
+      { score: 2, or: ['Ineffa', 'Lauma'] },
+    ],
+    filter: { score: 6, roll: 'sub' },
   },
   {
     name: 'Durin',
     score: [0, 6, 0, 0],
+    group: ['hexerei'],
     burstDep: 1,
     dmg: ['burst'],
   },
   {
     name: 'Nefer',
-    score: [4, 0, 0, 0],
+    score: [1, 0, 0, 0],
+    group: ['moonsign'],
     dmg: ['element'],
     stat: ['EM'],
     coop: [
       // 過剰評価を抑制
-      { score: -4, add: [{ trigger: ['normal'] }, 'Nilou'] },
-      { score: -2, add: [{ elem: ['Pyro', 'Electro'] }, 'Furina', 'Mona'] },
-      { score: 1, add: [{ elem: ['Dendro'] }] },
-      { score: 2, add: ['Aino'] },
-      { score: 3, add: [{ elem: ['Hydro'] }], or: ['Aino', 'Lauma'] },
+      { score: -5, add: [{ trigger: ['normal'] }, 'Nilou'] },
+      { score: -3, add: [{ elem: ['Pyro', 'Electro'] }, 'Mona', 'Furina'] },
+      { score: 1, add: [{ elem: ['Dendro'] }, 'Aino'] },
+      { score: 2, add: ['Lauma'] },
+      { score: 3, add: [{ group: ['moonsign'] }, { elem: ['Hydro'] }] },
     ],
     filter: { score: 6, roll: 'main' },
   },
   {
     name: 'Flins',
     score: [3, 0, 0, 0],
+    group: ['moonsign'],
     burstDep: 3,
     dmg: ['element'],
     stat: ['ATK'],
     coop: [
       { score: -3, add: ['Lauma'] },
-      { score: -1, add: [{ elem: ['Anemo'] }, 'Furina'] },
+      { score: -1, add: [{ elem: ['Anemo'] }] },
       { score: 1, add: [{ elem: ['Hydro'] }, [{ elem: ['Anemo'] }, { elem: ['Electro'] }]] },
-      { score: 4, or: ['Lauma', 'Ineffa', 'Aino', 'Jahoda'] },
+      { score: 4, or: [{ group: ['moonsign'] }] },
     ],
     filter: { score: 6, roll: 'main' },
   },
   {
     name: 'Lauma',
     score: [0, 0, 1, 0],
+    group: ['moonsign'],
     dmg: ['element'],
     stat: ['EM'],
     coop: [
-      // 過剰評価を抑制
-      { score: -2, add: ['Furina']},
-      { score: -1, add: ['Jahoda']},
+      { score: -1, add: [{ group: ['moonsign'] }] },
       { score: 1, add: ['Nilou'] },
       { score: 4, or: [{ elem: ['Hydro'], roll: ['main', 'sub'] }, 'Nilou'] },
     ],
@@ -69,6 +83,7 @@ export const avatar: Avatar[] = [
   {
     name: 'Ineffa',
     score: [0, 3, 0, 2],
+    group: ['moonsign'],
     dmg: ['element'],
     stat: ['ATK', 'EM'],
     coop: [{ score: 2, add: [{ elem: ['Hydro'], roll: ['main', 'sub'] }] }],
@@ -279,6 +294,8 @@ export const avatar: Avatar[] = [
     stat: ['HP'],
     explor: ['boat', 3],
     coop: [
+      { score: -2, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }]] },
+      { score: -1, add: [{ group: ['moonsign'] }] },
       {
         score: 1,
         add: ['Escoffier', 'Sigewinne', 'Baizhu', 'Sangonomiya Kokomi', 'Jean', 'Charlotte', 'Yaoyao', 'Barbara'],
@@ -538,8 +555,19 @@ export const avatar: Avatar[] = [
   },
 
   {
+    name: 'Illuga',
+    score: [0, 0, 1, 0],
+    group: ['moonsign'],
+    burstDep: 1,
+    coop: [
+      { score: 5, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] },
+    ],
+    filter: { score: 4, roll: 'support' },
+  },
+  {
     name: 'Jahoda',
     score: [0, 0, 0, 4],
+    group: ['moonsign'],
     burstDep: 3,
     coop: [
       { score: 1, add: [{ roll: ['main', 'sub'], dmg: ['element'] }] },
@@ -549,9 +577,10 @@ export const avatar: Avatar[] = [
   {
     name: 'Aino',
     score: [0, 0, 1, 0],
+    group: ['moonsign'],
     burstDep: 2,
     coop: [
-      { score: 1, or: ['Flins', 'Lauma', 'Ineffa'] }
+      { score: 1, add: [{ group: ['moonsign'] }] },
     ],
     filter: { score: 4, roll: 'support' },
   },

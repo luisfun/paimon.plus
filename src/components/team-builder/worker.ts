@@ -95,6 +95,7 @@ export const teamBuild = (ownedList: AvatarData[], favoriteIds: string[], global
         if (typeof member === 'string') return member === other.name
         if (member.roll?.every(e => e !== other.roll)) return false
         if (member.elem?.every(e => (e === '4elem' ? not4Elem(other) : e !== other.elem))) return false
+        if (member.group?.every(e => !other.group?.includes(e))) return false
         if (member.dmg?.every(e => !other.dmg?.includes(e))) return false
         if (member.stat?.every(e => !(other.stat ?? ['ATK']).includes(e))) return false
         if (member.trigger?.every(e => !other.trigger?.includes(e))) return false

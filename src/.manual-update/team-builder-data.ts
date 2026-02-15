@@ -8,14 +8,14 @@ export const avatar: Avatar[] = [
     burstDep: 2,
     stat: ['EM', 'DEF'],
     coop: [
-      { score: 1, add: [{ group: ['moonsign'] }] },
+      { score: 1, add: [{ group: ['moonsign'] }, 'Illuga', 'Gorou'] },
       { score: 3, add: [{ elem: ['Hydro'] }] },
     ],
     filter: { score: 6, roll: 'main' },
   },
   {
     name: 'Columbina',
-    score: [1, 4, 0, 0],
+    score: [1, 3, 0, 0],
     group: ['moonsign'],
     burstDep: 2,
     dmg: ['element'],
@@ -24,8 +24,7 @@ export const avatar: Avatar[] = [
       // mainアタッカー
       { score: 5, add: [['Lauma', {roll: ['sub', 'support']}, {roll: ['healer']}]]},
       // subアタッカー
-      { score: 1, or: [{elem: ['Electro', 'Geo'], roll: ['main', 'sub']}] },
-      { score: 2, or: ['Ineffa', 'Lauma'] },
+      { score: 1, add: [{group: ['moonsign']}, {elem: ['Electro', 'Geo'], roll: ['main', 'sub']}, 'Ineffa'], or: ['Ineffa', 'Lauma'] },
     ],
     filter: { score: 6, roll: 'sub' },
   },

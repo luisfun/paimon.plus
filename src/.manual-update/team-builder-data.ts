@@ -8,7 +8,7 @@ export const avatar: Avatar[] = [
     burstDep: 2,
     stat: ['EM', 'DEF'],
     coop: [
-      { score: 1, add: [{ group: ['moonsign'] }, 'Illuga', 'Gorou'] },
+      { score: 1, add: [{ group: ['moonsign'] }] },
       { score: 3, add: [{ elem: ['Hydro'] }] },
     ],
     filter: { score: 6, roll: 'main' },
@@ -395,6 +395,9 @@ export const avatar: Avatar[] = [
     stat: ['HP'],
     trigger: ['normal'],
     explor: ['run', 2],
+    coop: [
+      { score: -1, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }]] },
+    ],
   },
   {
     name: 'Kamisato Ayato',
@@ -559,9 +562,9 @@ export const avatar: Avatar[] = [
     group: ['moonsign'],
     burstDep: 1,
     coop: [
-      { score: 4, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] },
+      { score: 5, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] },
     ],
-    filter: { score: 4, roll: 'support' },
+    filter: { score: 5, roll: 'support' },
   },
   {
     name: 'Jahoda',
@@ -804,9 +807,9 @@ export const avatar: Avatar[] = [
       { score: 3, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['healer'] }]] },
       // healer
       { score: -3, add: [[{ roll: ['main'], elem: ['4elem', 'Anemo'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
-      { score: 2, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
+      { score: 3, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
     ],
-    filter: { score: 3, roll: 'support' },
+    filter: { score: 4, roll: 'support' },
   },
   {
     name: 'Thoma',

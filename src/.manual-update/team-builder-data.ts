@@ -559,7 +559,7 @@ export const avatar: Avatar[] = [
     group: ['moonsign'],
     burstDep: 1,
     coop: [
-      { score: 5, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] },
+      { score: 4, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] },
     ],
     filter: { score: 4, roll: 'support' },
   },
@@ -796,11 +796,15 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Gorou',
-    score: [0, 0, 1, 0],
+    score: [0, 0, 1, 1],
     burstDep: 1,
     coop: [
       { score: 1, add: [[{ elem: ['Geo'] }, { elem: ['Geo'] }]] },
-      { score: 3, add: [{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }] },
+      // support
+      { score: 3, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['healer'] }]] },
+      // healer
+      { score: -3, add: [[{ roll: ['main'], elem: ['4elem', 'Anemo'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
+      { score: 2, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
     ],
     filter: { score: 3, roll: 'support' },
   },

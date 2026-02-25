@@ -1,5 +1,61 @@
 [
   {
+    "key": "Varka",
+    "id": 10000128,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 963351866,
+    "skillDepotId": 12801,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Varka_01",
+      "UI_Talent_S_Varka_02",
+      "UI_Talent_U_Varka_01",
+      "UI_Talent_S_Varka_03",
+      "UI_Talent_U_Varka_02",
+      "UI_Talent_S_Varka_04"
+    ],
+    "skills": [
+      {
+        "id": 11281,
+        "icon": "Skill_A_04",
+        "proud": 12831
+      },
+      {
+        "id": 11282,
+        "icon": "Skill_S_Varka_01",
+        "proud": 12832
+      },
+      {
+        "id": 11285,
+        "icon": "Skill_E_Varka_01",
+        "proud": 12839
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "100021": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104301": 9,
+        "104302": 63,
+        "104303": 114,
+        "104319": 3,
+        "112122": 36,
+        "112123": 96,
+        "112124": 129,
+        "113074": 18,
+        "113085": 46
+      }
+    },
+    "wikiId": 9342
+  },
+  {
     "key": "Zibai",
     "id": 10000126,
     "qualityType": "QUALITY_ORANGE",

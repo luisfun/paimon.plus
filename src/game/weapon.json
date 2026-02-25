@@ -1190,6 +1190,29 @@
     "wikiId": 1979
   },
   {
+    "id": 12515,
+    "icon": "UI_EquipIcon_Claymore_EnsisAquilonis",
+    "rankLevel": 5,
+    "nameTextMapHash": 3121311955,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112032": 15,
+        "112033": 23,
+        "112034": 27,
+        "112137": 23,
+        "112138": 27,
+        "112139": 41,
+        "114005": 5,
+        "114006": 14,
+        "114007": 14,
+        "114008": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 12514,
     "icon": "UI_EquipIcon_Claymore_RadianceSword",
     "rankLevel": 5,

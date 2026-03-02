@@ -2,6 +2,22 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Varka',
+    score: [1, 0, 0, 0], // 実際は2-3はありそう
+    group: ['hexerei'],
+    stat: ['ATK'],
+    dmg: ['normal'],
+    explor: ['fly', 1],
+    coop: [
+      { score: -1, add: ['Faruzan'] },
+      // 編成重視の調節用
+      { score: -0.9, add: [{ roll: ['sub', 'support', 'healer'] }] },
+      { score: 1, add: [{ group: ['hexerei'] }] },
+      { score: 3, add: [{ elem: ['Anemo']}], or: [[{ elem: ["Pyro"]}, { elem: ['Pyro']}], [{ elem: ['Hydro']}, { elem: ['Hydro']}], [{ elem: ['Electro'] }, { elem: ['Electro'] }], [{ elem: ['Cryo']}, { elem: ['Cryo']}]] },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Zibai',
     score: [3, 0, 0, 0],
     group: ['moonsign'],
@@ -168,7 +184,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Mavuika',
-    score: [5, 3, 0, 0],
+    score: [6, 3, 0, 0],
     dmg: ['charge'],
     explor: ['fly', 2],
     coop: [{ score: 1, add: ['Chasca', 'Xilonen', 'Kinich', 'Mualani'] }],
@@ -499,8 +515,9 @@ export const avatar: Avatar[] = [
   {
     name: 'Albedo',
     score: [0, 5, 0, 0],
+    group: ['hexerei'],
     dmg: ['skill'],
-    coop: [{ score: 1, or: ['Durin', 'Venti', 'Klee', 'Mona', 'Razor', 'Fischl', 'Sucrose'] }],
+    coop: [{ score: 1, add: [{ group: ['hexerei'] }] }],
   },
   {
     name: 'Zhongli',
@@ -514,17 +531,19 @@ export const avatar: Avatar[] = [
   {
     name: 'Klee',
     score: [5, 0, 0, 0],
+    group: ['hexerei'],
     dmg: ['normal', 'charge'],
-    coop: [ { score: 1, or: ['Durin', 'Venti', 'Albedo', 'Mona', 'Fischl', 'Sucrose'] }],
+    coop: [ { score: 1, add: [{ group: ['hexerei'] }] }],
   },
   {
     name: 'Venti',
     score: [3, 3, 0, 0],
+    group: ['hexerei'],
     burstDep: 2,
     explor: ['fly', 1],
     dmg: ['burst'],
-    coop: [{ score: 2, or: [{ roll: ['main'] }, 'Durin', 'Albedo', 'Mona', 'Fischl'] }],
-    filter: { score: 5, roll: 'main' },
+    coop: [{ score: 2, or: [{ roll: ['main'] }, { group: ['hexerei'] }] }],
+    filter: { score: 5, roll: 'sub' },
   },
   {
     name: 'Keqing',
@@ -534,9 +553,10 @@ export const avatar: Avatar[] = [
   {
     name: 'Mona',
     score: [0, 4, 0, 0],
+    group: ['hexerei'],
     burstDep: 2,
     dmg: ['burst'],
-    coop: [{ score: 1, or: ['Durin', 'Venti', 'Klee', 'Albedo', 'Razor', 'Fischl', 'Sucrose'] }],
+    coop: [{ score: 1, add: [{ group: ['hexerei'] }] }],
     explor: ['boat', 1],
   },
   {
@@ -859,6 +879,7 @@ export const avatar: Avatar[] = [
   {
     name: 'Sucrose',
     score: [0, 0, 3, 0],
+    group: ['hexerei'],
     burstDep: 2,
     coop: [{ score: 1, add: [{ stat: ['EM'] }] }],
   },
@@ -884,16 +905,10 @@ export const avatar: Avatar[] = [
   {
     name: 'Fischl',
     score: [0, 4.1, 0, 0],
+    group: ['hexerei'],
     burstDep: 1,
     dmg: ['skill'],
-    coop: [{ score: 1, or: [
-      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Durin' ],
-      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Venti' ],
-      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Albedo' ],
-      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Mona' ],
-      [ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, 'Sucrose' ],
-      'Klee'
-    ]}],
+    coop: [{ score: 1, or: [[ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, { group: ['hexerei'] } ], 'Klee']}],
   },
   {
     name: 'Ningguang',
@@ -924,6 +939,7 @@ export const avatar: Avatar[] = [
   {
     name: 'Razor',
     score: [4, 0, 0, 0],
+    group: ['hexerei'],
     burstDep: 2,
     dmg: ['normal'],
     explor: ['run-stamina', 1],

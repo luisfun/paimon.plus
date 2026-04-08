@@ -1,5 +1,61 @@
 [
   {
+    "key": "Linnea",
+    "id": 10000130,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_BOW",
+    "nameTextMapHash": 1961019898,
+    "skillDepotId": 13001,
+    "element": "Rock",
+    "consts": [
+      "UI_Talent_S_Linnea_01",
+      "UI_Talent_S_Linnea_02",
+      "UI_Talent_U_Linnea_01",
+      "UI_Talent_S_Linnea_03",
+      "UI_Talent_U_Linnea_02",
+      "UI_Talent_S_Linnea_04"
+    ],
+    "skills": [
+      {
+        "id": 11301,
+        "icon": "Skill_A_02",
+        "proud": 13031
+      },
+      {
+        "id": 11302,
+        "icon": "Skill_S_Linnea_01",
+        "proud": 13032
+      },
+      {
+        "id": 11305,
+        "icon": "Skill_E_Linnea_01",
+        "proud": 13039
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101272": 168,
+        "104171": 1,
+        "104172": 9,
+        "104173": 9,
+        "104174": 6,
+        "104319": 3,
+        "104362": 9,
+        "104363": 63,
+        "104364": 114,
+        "112125": 36,
+        "112126": 96,
+        "112127": 129,
+        "113083": 18,
+        "113086": 46
+      }
+    },
+    "wikiId": 10412
+  },
+  {
     "key": "Varka",
     "id": 10000128,
     "qualityType": "QUALITY_ORANGE",
@@ -60,7 +116,7 @@
     "id": 10000126,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 937533090,
+    "nameTextMapHash": 937532578,
     "skillDepotId": 12601,
     "element": "Rock",
     "consts": [
@@ -116,7 +172,7 @@
     "id": 10000125,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 1888371618,
+    "nameTextMapHash": 1888371106,
     "skillDepotId": 12501,
     "element": "Water",
     "consts": [
@@ -233,7 +289,7 @@
     "id": 10000122,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 2745786202,
+    "nameTextMapHash": 2745785690,
     "skillDepotId": 12201,
     "element": "Grass",
     "consts": [
@@ -289,7 +345,7 @@
     "id": 10000120,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 1804674810,
+    "nameTextMapHash": 1804674298,
     "skillDepotId": 12001,
     "element": "Electric",
     "consts": [
@@ -345,7 +401,7 @@
     "id": 10000119,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 1776874018,
+    "nameTextMapHash": 1776873506,
     "skillDepotId": 11901,
     "element": "Grass",
     "consts": [
@@ -457,7 +513,7 @@
     "id": 10000114,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 123650890,
+    "nameTextMapHash": 123650378,
     "skillDepotId": 11401,
     "element": "Ice",
     "consts": [
@@ -569,7 +625,7 @@
     "id": 10000111,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 283438874,
+    "nameTextMapHash": 283438362,
     "skillDepotId": 11101,
     "element": "Electric",
     "consts": [
@@ -625,7 +681,7 @@
     "id": 10000109,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 3784387538,
+    "nameTextMapHash": 3784387026,
     "skillDepotId": 10901,
     "element": "Wind",
     "consts": [
@@ -681,7 +737,7 @@
     "id": 10000107,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 1197975042,
+    "nameTextMapHash": 1197974530,
     "skillDepotId": 10701,
     "element": "Ice",
     "consts": [
@@ -849,7 +905,7 @@
     "id": 10000103,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 2515292882,
+    "nameTextMapHash": 2515292370,
     "skillDepotId": 10301,
     "element": "Rock",
     "consts": [
@@ -961,7 +1017,7 @@
     "id": 10000101,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 4172712634,
+    "nameTextMapHash": 4172712122,
     "skillDepotId": 10101,
     "element": "Grass",
     "consts": [
@@ -1017,7 +1073,7 @@
     "id": 10000099,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 1705786122,
+    "nameTextMapHash": 1705785610,
     "skillDepotId": 9901,
     "element": "Grass",
     "consts": [
@@ -1073,7 +1129,7 @@
     "id": 10000098,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 2745369298,
+    "nameTextMapHash": 2745368786,
     "skillDepotId": 9801,
     "element": "Electric",
     "consts": [
@@ -1129,7 +1185,7 @@
     "id": 10000096,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 167199474,
+    "nameTextMapHash": 167198962,
     "skillDepotId": 9601,
     "element": "Fire",
     "consts": [
@@ -1185,7 +1241,7 @@
     "id": 10000095,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 781488962,
+    "nameTextMapHash": 781488450,
     "skillDepotId": 9501,
     "element": "Water",
     "consts": [
@@ -1297,7 +1353,7 @@
     "id": 10000093,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 3648220770,
+    "nameTextMapHash": 3648220258,
     "skillDepotId": 9301,
     "element": "Wind",
     "consts": [
@@ -1526,7 +1582,7 @@
     "id": 10000086,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 370151050,
+    "nameTextMapHash": 370150538,
     "skillDepotId": 8601,
     "element": "Ice",
     "consts": [
@@ -1750,7 +1806,7 @@
     "id": 10000078,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 4002157418,
+    "nameTextMapHash": 4002156906,
     "skillDepotId": 7801,
     "element": "Grass",
     "consts": [
@@ -1862,7 +1918,7 @@
     "id": 10000073,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 712501082,
+    "nameTextMapHash": 712500570,
     "skillDepotId": 7301,
     "element": "Grass",
     "consts": [
@@ -2147,7 +2203,7 @@
     "id": 10000063,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 334242634,
+    "nameTextMapHash": 334242122,
     "skillDepotId": 6301,
     "element": "Ice",
     "consts": [
@@ -2208,7 +2264,7 @@
     "id": 10000060,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 2848374378,
+    "nameTextMapHash": 2848373866,
     "skillDepotId": 6001,
     "element": "Water",
     "consts": [
@@ -2269,7 +2325,7 @@
     "id": 10000058,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 2713453234,
+    "nameTextMapHash": 2713452722,
     "skillDepotId": 5801,
     "element": "Electric",
     "consts": [
@@ -2437,7 +2493,7 @@
     "id": 10000052,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 3024507506,
+    "nameTextMapHash": 3024506994,
     "skillDepotId": 5201,
     "element": "Electric",
     "consts": [
@@ -2493,7 +2549,7 @@
     "id": 10000051,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 3717667418,
+    "nameTextMapHash": 3717666906,
     "skillDepotId": 5101,
     "element": "Ice",
     "consts": [
@@ -2661,7 +2717,7 @@
     "id": 10000046,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 1940919994,
+    "nameTextMapHash": 1940919482,
     "skillDepotId": 4601,
     "element": "Fire",
     "consts": [
@@ -2844,7 +2900,7 @@
     "id": 10000038,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 4108620722,
+    "nameTextMapHash": 4108620210,
     "skillDepotId": 3801,
     "element": "Rock",
     "consts": [
@@ -2900,7 +2956,7 @@
     "id": 10000037,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 2679781122,
+    "nameTextMapHash": 2679780610,
     "skillDepotId": 3701,
     "element": "Ice",
     "consts": [
@@ -2961,7 +3017,7 @@
     "id": 10000035,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 168956722,
+    "nameTextMapHash": 168956210,
     "skillDepotId": 3501,
     "element": "Ice",
     "consts": [
@@ -3017,7 +3073,7 @@
     "id": 10000033,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 3847143266,
+    "nameTextMapHash": 3847142754,
     "skillDepotId": 3301,
     "element": "Water",
     "consts": [
@@ -3190,7 +3246,7 @@
     "id": 10000026,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 1021947690,
+    "nameTextMapHash": 1021947178,
     "skillDepotId": 2601,
     "element": "Wind",
     "consts": [
@@ -3302,7 +3358,7 @@
     "id": 10000016,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 3608180322,
+    "nameTextMapHash": 3608179810,
     "skillDepotId": 1601,
     "element": "Fire",
     "consts": [
@@ -3801,7 +3857,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 508,
     "element": "Grass",
     "consts": [
@@ -3862,7 +3918,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 507,
     "element": "Electric",
     "consts": [
@@ -3923,7 +3979,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 506,
     "element": "Rock",
     "consts": [
@@ -3995,7 +4051,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 504,
     "element": "Wind",
     "consts": [
@@ -4056,7 +4112,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 503,
     "element": "Water",
     "consts": [
@@ -4117,7 +4173,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 502,
     "element": "Fire",
     "consts": [
@@ -4178,7 +4234,7 @@
     "id": 10000005,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1533656818,
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 501,
     "element": null,
     "consts": [
@@ -4239,7 +4295,7 @@
     "id": 10000003,
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 3221566250,
+    "nameTextMapHash": 3221565738,
     "skillDepotId": 301,
     "element": "Wind",
     "consts": [
@@ -4365,7 +4421,7 @@
     "id": 10000127,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 102656986,
+    "nameTextMapHash": 102656474,
     "skillDepotId": 12701,
     "element": "Rock",
     "consts": [
@@ -4421,7 +4477,7 @@
     "id": 10000115,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 2332664426,
+    "nameTextMapHash": 2332663914,
     "skillDepotId": 11501,
     "element": "Water",
     "consts": [
@@ -4477,7 +4533,7 @@
     "id": 10000113,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 3398665018,
+    "nameTextMapHash": 3398664506,
     "skillDepotId": 11301,
     "element": "Wind",
     "consts": [
@@ -4533,7 +4589,7 @@
     "id": 10000110,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 3120492514,
+    "nameTextMapHash": 3120492002,
     "skillDepotId": 11001,
     "element": "Electric",
     "consts": [
@@ -4701,7 +4757,7 @@
     "id": 10000067,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 2948362178,
+    "nameTextMapHash": 2948361666,
     "skillDepotId": 6701,
     "element": "Grass",
     "consts": [
@@ -4757,7 +4813,7 @@
     "id": 10000065,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1940821986,
+    "nameTextMapHash": 1940821474,
     "skillDepotId": 6501,
     "element": "Electric",
     "consts": [
@@ -4813,7 +4869,7 @@
     "id": 10000064,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 655825874,
+    "nameTextMapHash": 655825362,
     "skillDepotId": 6401,
     "element": "Rock",
     "consts": [
@@ -4869,7 +4925,7 @@
     "id": 10000061,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 1456643042,
+    "nameTextMapHash": 1456642530,
     "skillDepotId": 6101,
     "element": "Grass",
     "consts": [
@@ -4930,7 +4986,7 @@
     "id": 10000059,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 646032090,
+    "nameTextMapHash": 646031578,
     "skillDepotId": 5901,
     "element": "Wind",
     "consts": [
@@ -5042,7 +5098,7 @@
     "id": 10000055,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 3400133546,
+    "nameTextMapHash": 3400133034,
     "skillDepotId": 5501,
     "element": "Rock",
     "consts": [
@@ -5154,7 +5210,7 @@
     "id": 10000050,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 3555115602,
+    "nameTextMapHash": 3555115090,
     "skillDepotId": 5001,
     "element": "Fire",
     "consts": [
@@ -5439,7 +5495,7 @@
     "id": 10000039,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 1468367538,
+    "nameTextMapHash": 1468367026,
     "skillDepotId": 3901,
     "element": "Ice",
     "consts": [
@@ -5551,7 +5607,7 @@
     "id": 10000034,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 1921418842,
+    "nameTextMapHash": 1921418330,
     "skillDepotId": 3401,
     "element": "Rock",
     "consts": [
@@ -5607,7 +5663,7 @@
     "id": 10000032,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 968893378,
+    "nameTextMapHash": 968892866,
     "skillDepotId": 3201,
     "element": "Fire",
     "consts": [
@@ -5729,7 +5785,7 @@
     "id": 10000027,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 4127888970,
+    "nameTextMapHash": 4127888458,
     "skillDepotId": 2701,
     "element": "Rock",
     "consts": [
@@ -5790,7 +5846,7 @@
     "id": 10000025,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 4197635682,
+    "nameTextMapHash": 4197635170,
     "skillDepotId": 2501,
     "element": "Water",
     "consts": [
@@ -5907,7 +5963,7 @@
     "id": 10000023,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 1130996346,
+    "nameTextMapHash": 1130995834,
     "skillDepotId": 2301,
     "element": "Fire",
     "consts": [
@@ -6029,7 +6085,7 @@
     "id": 10000020,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 4160147242,
+    "nameTextMapHash": 4160146730,
     "skillDepotId": 2001,
     "element": "Electric",
     "consts": [
@@ -6085,7 +6141,7 @@
     "id": 10000015,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
-    "nameTextMapHash": 4119663210,
+    "nameTextMapHash": 4119662698,
     "skillDepotId": 1501,
     "element": "Ice",
     "consts": [
@@ -6146,7 +6202,7 @@
     "id": 10000014,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CATALYST",
-    "nameTextMapHash": 3775299170,
+    "nameTextMapHash": 3775298658,
     "skillDepotId": 1401,
     "element": "Water",
     "consts": [
@@ -6268,7 +6324,7 @@
     "id": 10000062,
     "qualityType": "QUALITY_ORANGE_SP",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 3689108098,
+    "nameTextMapHash": 3689107586,
     "skillDepotId": 6201,
     "element": "Ice",
     "consts": [
@@ -7010,7 +7066,7 @@
     "id": 10000124,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 1438964522,
+    "nameTextMapHash": 1438964010,
     "skillDepotId": 12401,
     "element": "Wind",
     "consts": [
@@ -7066,7 +7122,7 @@
     "id": 10000121,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 3887688410,
+    "nameTextMapHash": 3887687898,
     "skillDepotId": 12101,
     "element": "Water",
     "consts": [
@@ -7234,7 +7290,7 @@
     "id": 10000097,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 1431322346,
+    "nameTextMapHash": 1431321834,
     "skillDepotId": 9701,
     "element": "Electric",
     "consts": [
@@ -7458,7 +7514,7 @@
     "id": 10000085,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_CLAYMORE",
-    "nameTextMapHash": 4201964354,
+    "nameTextMapHash": 4201963842,
     "skillDepotId": 8501,
     "element": "Ice",
     "consts": [
@@ -7682,7 +7738,7 @@
     "id": 10000077,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_POLE",
-    "nameTextMapHash": 1732418482,
+    "nameTextMapHash": 1732417970,
     "skillDepotId": 7701,
     "element": "Grass",
     "consts": [
@@ -7743,7 +7799,7 @@
     "id": 10000076,
     "qualityType": "QUALITY_PURPLE",
     "weaponType": "WEAPON_BOW",
-    "nameTextMapHash": 2387711994,
+    "nameTextMapHash": 2387711482,
     "skillDepotId": 7601,
     "element": "Wind",
     "consts": [

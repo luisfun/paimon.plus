@@ -52,7 +52,7 @@ export const dataDownload = async () => {
       await fs.promises.writeFile(`${folder.data + name}.json`, JSON.stringify(json, null, 2))
     }),
     ...languages.map(async lang => {
-      const name = `TextMap${lang}`
+      const name = `TextMap_Medium${lang}`
       const url = `${gitlabUrl}TextMap%2F${name}%2Ejson/raw`
       const response = await fetch(url)
       const json = await response.json()

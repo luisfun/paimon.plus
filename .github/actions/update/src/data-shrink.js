@@ -2,10 +2,10 @@ import fs from 'node:fs'
 import { folder } from './utils.js'
 
 // text-map
-import en from '../../../../src/game/.text/TextMapEN.json' with { type: 'json' }
-import ja from '../../../../src/game/.text/TextMapJP.json' with { type: 'json' }
-import ko from '../../../../src/game/.text/TextMapKR.json' with { type: 'json' }
-import pt from '../../../../src/game/.text/TextMapPT.json' with { type: 'json' }
+import en from '../../../../src/game/.text/TextMap_MediumEN.json' with { type: 'json' }
+import ja from '../../../../src/game/.text/TextMap_MediumJP.json' with { type: 'json' }
+import ko from '../../../../src/game/.text/TextMap_MediumKR.json' with { type: 'json' }
+import pt from '../../../../src/game/.text/TextMap_MediumPT.json' with { type: 'json' }
 
 const TextMap = { en, ja, ko, pt }
 

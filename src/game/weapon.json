@@ -3,7 +3,7 @@
     "id": 11519,
     "icon": "UI_EquipIcon_Sword_SilverwareSaw",
     "rankLevel": 5,
-    "nameTextMapHash": 1573692171,
+    "nameTextMapHash": 1573691659,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
@@ -49,7 +49,7 @@
     "id": 11517,
     "icon": "UI_EquipIcon_Sword_OuterSword",
     "rankLevel": 5,
-    "nameTextMapHash": 1479741275,
+    "nameTextMapHash": 1479740763,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
@@ -141,7 +141,7 @@
     "id": 11513,
     "icon": "UI_EquipIcon_Sword_Regalis",
     "rankLevel": 5,
-    "nameTextMapHash": 1473399443,
+    "nameTextMapHash": 1473398931,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
@@ -210,7 +210,7 @@
     "id": 11510,
     "icon": "UI_EquipIcon_Sword_Amenoma",
     "rankLevel": 5,
-    "nameTextMapHash": 1600275315,
+    "nameTextMapHash": 1600274803,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
@@ -302,7 +302,7 @@
     "id": 11503,
     "icon": "UI_EquipIcon_Sword_Widsith",
     "rankLevel": 5,
-    "nameTextMapHash": 2949448555,
+    "nameTextMapHash": 2949448043,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
@@ -371,7 +371,7 @@
     "id": 11434,
     "icon": "UI_EquipIcon_Sword_Miekka",
     "rankLevel": 4,
-    "nameTextMapHash": 357888539,
+    "nameTextMapHash": 357888027,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -486,7 +486,7 @@
     "id": 11428,
     "icon": "UI_EquipIcon_Sword_Purewill",
     "rankLevel": 4,
-    "nameTextMapHash": 3016493955,
+    "nameTextMapHash": 3016493443,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -509,7 +509,7 @@
     "id": 11427,
     "icon": "UI_EquipIcon_Sword_Mechanic",
     "rankLevel": 4,
-    "nameTextMapHash": 1790067483,
+    "nameTextMapHash": 1790066971,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -693,7 +693,7 @@
     "id": 11415,
     "icon": "UI_EquipIcon_Sword_Opus",
     "rankLevel": 4,
-    "nameTextMapHash": 342097547,
+    "nameTextMapHash": 342097035,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -762,7 +762,7 @@
     "id": 11412,
     "icon": "UI_EquipIcon_Sword_Psalmus",
     "rankLevel": 4,
-    "nameTextMapHash": 1773425155,
+    "nameTextMapHash": 1773424643,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -808,7 +808,7 @@
     "id": 11409,
     "icon": "UI_EquipIcon_Sword_Bloodstained",
     "rankLevel": 4,
-    "nameTextMapHash": 3796905611,
+    "nameTextMapHash": 3796905099,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -854,7 +854,7 @@
     "id": 11407,
     "icon": "UI_EquipIcon_Sword_Exotic",
     "rankLevel": 4,
-    "nameTextMapHash": 4103022435,
+    "nameTextMapHash": 4103021923,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -900,7 +900,7 @@
     "id": 11405,
     "icon": "UI_EquipIcon_Sword_Rockkiller",
     "rankLevel": 4,
-    "nameTextMapHash": 1321135667,
+    "nameTextMapHash": 1321135155,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1015,7 +1015,7 @@
     "id": 11306,
     "icon": "UI_EquipIcon_Sword_Mitsurugi",
     "rankLevel": 3,
-    "nameTextMapHash": 1388004931,
+    "nameTextMapHash": 1388004419,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 105000,
@@ -1038,7 +1038,7 @@
     "id": 11305,
     "icon": "UI_EquipIcon_Sword_Sashimi",
     "rankLevel": 3,
-    "nameTextMapHash": 3421967235,
+    "nameTextMapHash": 3421966723,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 105000,
@@ -1061,7 +1061,7 @@
     "id": 11304,
     "icon": "UI_EquipIcon_Sword_Darker",
     "rankLevel": 3,
-    "nameTextMapHash": 160493219,
+    "nameTextMapHash": 160492707,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 105000,
@@ -1084,7 +1084,7 @@
     "id": 11303,
     "icon": "UI_EquipIcon_Sword_Traveler",
     "rankLevel": 3,
-    "nameTextMapHash": 3673792067,
+    "nameTextMapHash": 3673791555,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 105000,
@@ -1107,7 +1107,7 @@
     "id": 11302,
     "icon": "UI_EquipIcon_Sword_Dawn",
     "rankLevel": 3,
-    "nameTextMapHash": 1608953539,
+    "nameTextMapHash": 1608953027,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 105000,
@@ -1153,7 +1153,7 @@
     "id": 11201,
     "icon": "UI_EquipIcon_Sword_Silver",
     "rankLevel": 2,
-    "nameTextMapHash": 2125206395,
+    "nameTextMapHash": 2125205883,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 35000,
@@ -1239,7 +1239,7 @@
     "id": 12513,
     "icon": "UI_EquipIcon_Claymore_EmeraldSword",
     "rankLevel": 5,
-    "nameTextMapHash": 1183454019,
+    "nameTextMapHash": 1183453507,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -1354,7 +1354,7 @@
     "id": 12503,
     "icon": "UI_EquipIcon_Claymore_Widsith",
     "rankLevel": 5,
-    "nameTextMapHash": 1075647299,
+    "nameTextMapHash": 1075646787,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -1377,7 +1377,7 @@
     "id": 12502,
     "icon": "UI_EquipIcon_Claymore_Wolfmound",
     "rankLevel": 5,
-    "nameTextMapHash": 3995710363,
+    "nameTextMapHash": 3995709851,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -1400,7 +1400,7 @@
     "id": 12501,
     "icon": "UI_EquipIcon_Claymore_Dvalin",
     "rankLevel": 5,
-    "nameTextMapHash": 1089950259,
+    "nameTextMapHash": 1089949747,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -1446,7 +1446,7 @@
     "id": 12432,
     "icon": "UI_EquipIcon_Claymore_Polilith",
     "rankLevel": 4,
-    "nameTextMapHash": 3573591875,
+    "nameTextMapHash": 3573591363,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1469,7 +1469,7 @@
     "id": 12431,
     "icon": "UI_EquipIcon_Claymore_Isikhulu",
     "rankLevel": 4,
-    "nameTextMapHash": 2481464075,
+    "nameTextMapHash": 2481463563,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1538,7 +1538,7 @@
     "id": 12426,
     "icon": "UI_EquipIcon_Claymore_Champion",
     "rankLevel": 4,
-    "nameTextMapHash": 933442195,
+    "nameTextMapHash": 933441683,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1561,7 +1561,7 @@
     "id": 12425,
     "icon": "UI_EquipIcon_Claymore_Vorpal",
     "rankLevel": 4,
-    "nameTextMapHash": 2077869763,
+    "nameTextMapHash": 2077869251,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1607,7 +1607,7 @@
     "id": 12418,
     "icon": "UI_EquipIcon_Claymore_Fleurfair",
     "rankLevel": 4,
-    "nameTextMapHash": 1200948859,
+    "nameTextMapHash": 1200948347,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1630,7 +1630,7 @@
     "id": 12417,
     "icon": "UI_EquipIcon_Claymore_Arakalari",
     "rankLevel": 4,
-    "nameTextMapHash": 902184579,
+    "nameTextMapHash": 902184067,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1653,7 +1653,7 @@
     "id": 12416,
     "icon": "UI_EquipIcon_Claymore_Maria",
     "rankLevel": 4,
-    "nameTextMapHash": 2359799475,
+    "nameTextMapHash": 2359798963,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1676,7 +1676,7 @@
     "id": 12415,
     "icon": "UI_EquipIcon_Claymore_Pleroma",
     "rankLevel": 4,
-    "nameTextMapHash": 3073454867,
+    "nameTextMapHash": 3073454355,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1745,7 +1745,7 @@
     "id": 12411,
     "icon": "UI_EquipIcon_Claymore_Dragonfell",
     "rankLevel": 4,
-    "nameTextMapHash": 2753539619,
+    "nameTextMapHash": 2753539107,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1837,7 +1837,7 @@
     "id": 12407,
     "icon": "UI_EquipIcon_Claymore_Exotic",
     "rankLevel": 4,
-    "nameTextMapHash": 680510411,
+    "nameTextMapHash": 680509899,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1975,7 +1975,7 @@
     "id": 12401,
     "icon": "UI_EquipIcon_Claymore_Zephyrus",
     "rankLevel": 4,
-    "nameTextMapHash": 735056795,
+    "nameTextMapHash": 735056283,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -1998,7 +1998,7 @@
     "id": 12306,
     "icon": "UI_EquipIcon_Claymore_Mitsurugi",
     "rankLevel": 3,
-    "nameTextMapHash": 2614170427,
+    "nameTextMapHash": 2614169915,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 105000,
@@ -2021,7 +2021,7 @@
     "id": 12305,
     "icon": "UI_EquipIcon_Claymore_Reasoning",
     "rankLevel": 3,
-    "nameTextMapHash": 3097441915,
+    "nameTextMapHash": 3097441403,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 105000,
@@ -2090,7 +2090,7 @@
     "id": 12301,
     "icon": "UI_EquipIcon_Claymore_Glaive",
     "rankLevel": 3,
-    "nameTextMapHash": 1479961579,
+    "nameTextMapHash": 1479961067,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 105000,
@@ -2113,7 +2113,7 @@
     "id": 12201,
     "icon": "UI_EquipIcon_Claymore_Oyaji",
     "rankLevel": 2,
-    "nameTextMapHash": 1182966603,
+    "nameTextMapHash": 1182966091,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 35000,
@@ -2133,7 +2133,7 @@
     "id": 12101,
     "icon": "UI_EquipIcon_Claymore_Aniki",
     "rankLevel": 1,
-    "nameTextMapHash": 2666951267,
+    "nameTextMapHash": 2666950755,
     "weaponType": "WEAPON_CLAYMORE",
     "allCosts": {
       "promoteCoin": 20000,
@@ -2150,10 +2150,33 @@
     "wikiId": 2023
   },
   {
+    "id": 15516,
+    "icon": "UI_EquipIcon_Bow_Alkonost",
+    "rankLevel": 5,
+    "nameTextMapHash": 2250670211,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112125": 15,
+        "112126": 23,
+        "112127": 27,
+        "112140": 23,
+        "112141": 27,
+        "112142": 41,
+        "114077": 5,
+        "114078": 14,
+        "114079": 14,
+        "114080": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 15515,
     "icon": "UI_EquipIcon_Bow_Arianna",
     "rankLevel": 5,
-    "nameTextMapHash": 1235521427,
+    "nameTextMapHash": 1235520915,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
@@ -2176,7 +2199,7 @@
     "id": 15514,
     "icon": "UI_EquipIcon_Bow_Qoyllorsnova",
     "rankLevel": 5,
-    "nameTextMapHash": 1363661611,
+    "nameTextMapHash": 1363661099,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
@@ -2199,7 +2222,7 @@
     "id": 15513,
     "icon": "UI_EquipIcon_Bow_Arcdange",
     "rankLevel": 5,
-    "nameTextMapHash": 1257396043,
+    "nameTextMapHash": 1257395531,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
@@ -2268,7 +2291,7 @@
     "id": 15509,
     "icon": "UI_EquipIcon_Bow_Narukami",
     "rankLevel": 5,
-    "nameTextMapHash": 2918525947,
+    "nameTextMapHash": 2918525435,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
@@ -2314,7 +2337,7 @@
     "id": 15507,
     "icon": "UI_EquipIcon_Bow_Worldbane",
     "rankLevel": 5,
-    "nameTextMapHash": 1901973075,
+    "nameTextMapHash": 1901972563,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
@@ -2337,7 +2360,7 @@
     "id": 15503,
     "icon": "UI_EquipIcon_Bow_Widsith",
     "rankLevel": 5,
-    "nameTextMapHash": 3112679155,
+    "nameTextMapHash": 3112678643,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 225000,
@@ -2429,7 +2452,7 @@
     "id": 15433,
     "icon": "UI_EquipIcon_Bow_Ilmarinen",
     "rankLevel": 4,
-    "nameTextMapHash": 3380505211,
+    "nameTextMapHash": 3380504699,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2452,7 +2475,7 @@
     "id": 15432,
     "icon": "UI_EquipIcon_Bow_Stinger",
     "rankLevel": 4,
-    "nameTextMapHash": 2846112523,
+    "nameTextMapHash": 2846112011,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2475,7 +2498,7 @@
     "id": 15431,
     "icon": "UI_EquipIcon_Bow_Isikhulu",
     "rankLevel": 4,
-    "nameTextMapHash": 565052971,
+    "nameTextMapHash": 565052459,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2521,7 +2544,7 @@
     "id": 15427,
     "icon": "UI_EquipIcon_Bow_Mechanic",
     "rankLevel": 4,
-    "nameTextMapHash": 1055195035,
+    "nameTextMapHash": 1055194523,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2544,7 +2567,7 @@
     "id": 15426,
     "icon": "UI_EquipIcon_Bow_Ultimatum",
     "rankLevel": 4,
-    "nameTextMapHash": 4038676067,
+    "nameTextMapHash": 4038675555,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2613,7 +2636,7 @@
     "id": 15419,
     "icon": "UI_EquipIcon_Bow_Ibis",
     "rankLevel": 4,
-    "nameTextMapHash": 316078811,
+    "nameTextMapHash": 316078299,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2659,7 +2682,7 @@
     "id": 15417,
     "icon": "UI_EquipIcon_Bow_Arakalari",
     "rankLevel": 4,
-    "nameTextMapHash": 3176599083,
+    "nameTextMapHash": 3176598571,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2774,7 +2797,7 @@
     "id": 15412,
     "icon": "UI_EquipIcon_Bow_Nachtblind",
     "rankLevel": 4,
-    "nameTextMapHash": 3949653579,
+    "nameTextMapHash": 3949653067,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2843,7 +2866,7 @@
     "id": 15409,
     "icon": "UI_EquipIcon_Bow_Viridescent",
     "rankLevel": 4,
-    "nameTextMapHash": 3439749859,
+    "nameTextMapHash": 3439749347,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2866,7 +2889,7 @@
     "id": 15408,
     "icon": "UI_EquipIcon_Bow_Blackrock",
     "rankLevel": 4,
-    "nameTextMapHash": 3447737235,
+    "nameTextMapHash": 3447736723,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2912,7 +2935,7 @@
     "id": 15406,
     "icon": "UI_EquipIcon_Bow_Proto",
     "rankLevel": 4,
-    "nameTextMapHash": 3625393819,
+    "nameTextMapHash": 3625393307,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2958,7 +2981,7 @@
     "id": 15404,
     "icon": "UI_EquipIcon_Bow_Theocrat",
     "rankLevel": 4,
-    "nameTextMapHash": 2832648187,
+    "nameTextMapHash": 2832647675,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -2981,7 +3004,7 @@
     "id": 15403,
     "icon": "UI_EquipIcon_Bow_Fossil",
     "rankLevel": 4,
-    "nameTextMapHash": 2400012995,
+    "nameTextMapHash": 2400012483,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3004,7 +3027,7 @@
     "id": 15402,
     "icon": "UI_EquipIcon_Bow_Troupe",
     "rankLevel": 4,
-    "nameTextMapHash": 2556914683,
+    "nameTextMapHash": 2556914171,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3050,7 +3073,7 @@
     "id": 15305,
     "icon": "UI_EquipIcon_Bow_Msg",
     "rankLevel": 3,
-    "nameTextMapHash": 4139294531,
+    "nameTextMapHash": 4139294019,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 105000,
@@ -3073,7 +3096,7 @@
     "id": 15304,
     "icon": "UI_EquipIcon_Bow_Sling",
     "rankLevel": 3,
-    "nameTextMapHash": 1021898539,
+    "nameTextMapHash": 1021898027,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 105000,
@@ -3165,7 +3188,7 @@
     "id": 15201,
     "icon": "UI_EquipIcon_Bow_Old",
     "rankLevel": 2,
-    "nameTextMapHash": 2340970067,
+    "nameTextMapHash": 2340969555,
     "weaponType": "WEAPON_BOW",
     "allCosts": {
       "promoteCoin": 35000,
@@ -3205,7 +3228,7 @@
     "id": 14522,
     "icon": "UI_EquipIcon_Catalyst_Brisingamen",
     "rankLevel": 5,
-    "nameTextMapHash": 1441327747,
+    "nameTextMapHash": 1441327235,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3297,7 +3320,7 @@
     "id": 14518,
     "icon": "UI_EquipIcon_Catalyst_SakuraFan",
     "rankLevel": 5,
-    "nameTextMapHash": 3790622667,
+    "nameTextMapHash": 3790622155,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3389,7 +3412,7 @@
     "id": 14514,
     "icon": "UI_EquipIcon_Catalyst_Iudex",
     "rankLevel": 5,
-    "nameTextMapHash": 4176923379,
+    "nameTextMapHash": 4176922867,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3412,7 +3435,7 @@
     "id": 14513,
     "icon": "UI_EquipIcon_Catalyst_Wheatley",
     "rankLevel": 5,
-    "nameTextMapHash": 724881171,
+    "nameTextMapHash": 724880659,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3458,7 +3481,7 @@
     "id": 14511,
     "icon": "UI_EquipIcon_Catalyst_Ayus",
     "rankLevel": 5,
-    "nameTextMapHash": 1201790667,
+    "nameTextMapHash": 1201790155,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3481,7 +3504,7 @@
     "id": 14509,
     "icon": "UI_EquipIcon_Catalyst_Narukami",
     "rankLevel": 5,
-    "nameTextMapHash": 310247243,
+    "nameTextMapHash": 310246731,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3504,7 +3527,7 @@
     "id": 14506,
     "icon": "UI_EquipIcon_Catalyst_Kaleido",
     "rankLevel": 5,
-    "nameTextMapHash": 1890163363,
+    "nameTextMapHash": 1890162851,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3550,7 +3573,7 @@
     "id": 14504,
     "icon": "UI_EquipIcon_Catalyst_Kunwu",
     "rankLevel": 5,
-    "nameTextMapHash": 693354267,
+    "nameTextMapHash": 693353755,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3573,7 +3596,7 @@
     "id": 14502,
     "icon": "UI_EquipIcon_Catalyst_Fourwinds",
     "rankLevel": 5,
-    "nameTextMapHash": 1455107995,
+    "nameTextMapHash": 1455107483,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 225000,
@@ -3619,7 +3642,7 @@
     "id": 14434,
     "icon": "UI_EquipIcon_Catalyst_Ziedas",
     "rankLevel": 4,
-    "nameTextMapHash": 3497155131,
+    "nameTextMapHash": 3497154619,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3803,7 +3826,7 @@
     "id": 14424,
     "icon": "UI_EquipIcon_Catalyst_Yue",
     "rankLevel": 4,
-    "nameTextMapHash": 2275710883,
+    "nameTextMapHash": 2275710371,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3849,7 +3872,7 @@
     "id": 14416,
     "icon": "UI_EquipIcon_Catalyst_Pleroma",
     "rankLevel": 4,
-    "nameTextMapHash": 426363739,
+    "nameTextMapHash": 426363227,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3872,7 +3895,7 @@
     "id": 14415,
     "icon": "UI_EquipIcon_Catalyst_Jyanome",
     "rankLevel": 4,
-    "nameTextMapHash": 2539208459,
+    "nameTextMapHash": 2539207947,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3918,7 +3941,7 @@
     "id": 14413,
     "icon": "UI_EquipIcon_Catalyst_Ludiharpastum",
     "rankLevel": 4,
-    "nameTextMapHash": 3456986819,
+    "nameTextMapHash": 3456986307,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -3987,7 +4010,7 @@
     "id": 14409,
     "icon": "UI_EquipIcon_Catalyst_Truelens",
     "rankLevel": 4,
-    "nameTextMapHash": 3156385731,
+    "nameTextMapHash": 3156385219,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4010,7 +4033,7 @@
     "id": 14408,
     "icon": "UI_EquipIcon_Catalyst_Blackrock",
     "rankLevel": 4,
-    "nameTextMapHash": 3273999011,
+    "nameTextMapHash": 3273998499,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4079,7 +4102,7 @@
     "id": 14405,
     "icon": "UI_EquipIcon_Catalyst_Resurrection",
     "rankLevel": 4,
-    "nameTextMapHash": 37147251,
+    "nameTextMapHash": 37146739,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4102,7 +4125,7 @@
     "id": 14404,
     "icon": "UI_EquipIcon_Catalyst_Theocrat",
     "rankLevel": 4,
-    "nameTextMapHash": 3827789435,
+    "nameTextMapHash": 3827788923,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4125,7 +4148,7 @@
     "id": 14403,
     "icon": "UI_EquipIcon_Catalyst_Fossil",
     "rankLevel": 4,
-    "nameTextMapHash": 2195665683,
+    "nameTextMapHash": 2195665171,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4194,7 +4217,7 @@
     "id": 14305,
     "icon": "UI_EquipIcon_Catalyst_Phoney",
     "rankLevel": 3,
-    "nameTextMapHash": 3719372715,
+    "nameTextMapHash": 3719372203,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 105000,
@@ -4263,7 +4286,7 @@
     "id": 14302,
     "icon": "UI_EquipIcon_Catalyst_Pulpfic",
     "rankLevel": 3,
-    "nameTextMapHash": 3500935003,
+    "nameTextMapHash": 3500934491,
     "weaponType": "WEAPON_CATALYST",
     "allCosts": {
       "promoteCoin": 105000,
@@ -4441,7 +4464,7 @@
     "id": 13512,
     "icon": "UI_EquipIcon_Pole_BloodMoon",
     "rankLevel": 5,
-    "nameTextMapHash": 2944936683,
+    "nameTextMapHash": 2944936171,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -4579,7 +4602,7 @@
     "id": 13502,
     "icon": "UI_EquipIcon_Pole_Dvalin",
     "rankLevel": 5,
-    "nameTextMapHash": 4158505619,
+    "nameTextMapHash": 4158505107,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -4602,7 +4625,7 @@
     "id": 13501,
     "icon": "UI_EquipIcon_Pole_Homa",
     "rankLevel": 5,
-    "nameTextMapHash": 3235324891,
+    "nameTextMapHash": 3235324379,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 225000,
@@ -4671,7 +4694,7 @@
     "id": 13432,
     "icon": "UI_EquipIcon_Pole_Aoandon",
     "rankLevel": 4,
-    "nameTextMapHash": 486513155,
+    "nameTextMapHash": 486512643,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4717,7 +4740,7 @@
     "id": 13430,
     "icon": "UI_EquipIcon_Pole_Umpakati",
     "rankLevel": 4,
-    "nameTextMapHash": 1965515667,
+    "nameTextMapHash": 1965515155,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4740,7 +4763,7 @@
     "id": 13427,
     "icon": "UI_EquipIcon_Pole_Mechanic",
     "rankLevel": 4,
-    "nameTextMapHash": 882305891,
+    "nameTextMapHash": 882305379,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4809,7 +4832,7 @@
     "id": 13424,
     "icon": "UI_EquipIcon_Pole_Shanty",
     "rankLevel": 4,
-    "nameTextMapHash": 449192923,
+    "nameTextMapHash": 449192411,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4855,7 +4878,7 @@
     "id": 13417,
     "icon": "UI_EquipIcon_Pole_Arakalari",
     "rankLevel": 4,
-    "nameTextMapHash": 452357939,
+    "nameTextMapHash": 452357427,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4878,7 +4901,7 @@
     "id": 13416,
     "icon": "UI_EquipIcon_Pole_Maria",
     "rankLevel": 4,
-    "nameTextMapHash": 4122509083,
+    "nameTextMapHash": 4122508571,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4901,7 +4924,7 @@
     "id": 13415,
     "icon": "UI_EquipIcon_Pole_Mori",
     "rankLevel": 4,
-    "nameTextMapHash": 1148024603,
+    "nameTextMapHash": 1148024091,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4924,7 +4947,7 @@
     "id": 13414,
     "icon": "UI_EquipIcon_Pole_Bakufu",
     "rankLevel": 4,
-    "nameTextMapHash": 2491797315,
+    "nameTextMapHash": 2491796803,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -4970,7 +4993,7 @@
     "id": 13408,
     "icon": "UI_EquipIcon_Pole_Theocrat",
     "rankLevel": 4,
-    "nameTextMapHash": 2935286715,
+    "nameTextMapHash": 2935286203,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -5039,7 +5062,7 @@
     "id": 13405,
     "icon": "UI_EquipIcon_Pole_Gladiator",
     "rankLevel": 4,
-    "nameTextMapHash": 4049410651,
+    "nameTextMapHash": 4049410139,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -5085,7 +5108,7 @@
     "id": 13403,
     "icon": "UI_EquipIcon_Pole_Exotic",
     "rankLevel": 4,
-    "nameTextMapHash": 578575283,
+    "nameTextMapHash": 578574771,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -5131,7 +5154,7 @@
     "id": 13401,
     "icon": "UI_EquipIcon_Pole_Stardust",
     "rankLevel": 4,
-    "nameTextMapHash": 2664629131,
+    "nameTextMapHash": 2664628619,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 150000,
@@ -5177,7 +5200,7 @@
     "id": 13302,
     "icon": "UI_EquipIcon_Pole_Halberd",
     "rankLevel": 3,
-    "nameTextMapHash": 618786571,
+    "nameTextMapHash": 618786059,
     "weaponType": "WEAPON_POLE",
     "allCosts": {
       "promoteCoin": 105000,

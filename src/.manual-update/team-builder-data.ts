@@ -2,6 +2,21 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Linnea',
+    score: [0, 3, 0, 3], // 実際は4はありそうだが、組み合わせを重視するために3
+    group: ['moonsign'],
+    stat: ['DEF'],
+    dmg: ['element'],
+    coop: [
+      { score: 1, add: [{ group: ['moonsign'] }, { roll: ['main'], elem: ['Geo'] }] },
+      {
+        score: 2,
+        add: [{ elem: ['Hydro'] }],
+      },
+    ],
+    filter: { score: 6, roll: 'healer' },
+  },
+  {
     name: 'Varka',
     score: [1, 0, 0, 0], // 実際は2-3はありそう
     group: ['hexerei'],
@@ -51,7 +66,7 @@ export const avatar: Avatar[] = [
       // subアタッカー
       {
         score: 1,
-        add: [{ group: ['moonsign'] }, { elem: ['Electro', 'Geo'], roll: ['main', 'sub'] }, 'Ineffa'],
+        add: [{ group: ['moonsign'] }, { elem: ['Electro', 'Geo'], roll: ['main', 'sub'] }],
         or: ['Ineffa', 'Lauma'],
       },
     ],

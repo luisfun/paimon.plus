@@ -51,13 +51,11 @@ export const avatarRemap = (info: AvatarInfo) => {
     Array(6)
       .fill(0)
       .map(() => ({ icon: null, unlock: false }))
-  const skills = structuredClone(data?.skills)?.map(
-    skill => ({
-      ...skill,
-      level: info.skillLevelMap[skill.id || 0],
-      add: info.proudSkillExtraLevelMap?.[skill.proud || 0] || 0,
-    }),
-  )
+  const skills = structuredClone(data?.skills)?.map(skill => ({
+    ...skill,
+    level: info.skillLevelMap[skill.id || 0],
+    add: info.proudSkillExtraLevelMap?.[skill.proud || 0] || 0,
+  }))
   const stats = get_character_stats(info)
   const reliquarySets = get_reliquary_sets(info)
   const re = {

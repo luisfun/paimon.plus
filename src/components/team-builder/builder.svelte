@@ -47,7 +47,6 @@ $effect(() => {
     loadingIndicator = false
   })
 })
-
 </script>
 
 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-md md:max-w-full mx-auto">

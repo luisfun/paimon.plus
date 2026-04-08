@@ -28,7 +28,7 @@ const remap = (json: Statistics) => {
   const avatarInfoList = json.avatarInfoList
     .map(a => {
       const data = avatarJson.find(e => e.id === a.avatarId)
-      if (!data) throw new Error('statistics remap: no avatar data')
+      if (!data) return undefined //throw new Error('statistics remap: no avatar data')
       const element = data.element
       const travelerElement = a.travelerElement?.map(elem => ({
         display: per(a.count, elem.count),
@@ -64,6 +64,7 @@ const remap = (json: Statistics) => {
       const reInfo = { ...a, element, travelerElement, talentIcons, skills, stats, weapon, reliquarySet, qualityType }
       return reInfo
     })
+    .filter(a => !!a)
     .sort((a, b) => {
       if (a.qualityType === 'QUALITY_ORANGE_SP') return -1
       if (a.qualityType === b.qualityType) return 0

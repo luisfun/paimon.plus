@@ -13,7 +13,16 @@ export const avatar: Avatar[] = [
       // 編成重視の調節用
       { score: -0.9, add: [{ roll: ['sub', 'support', 'healer'] }] },
       { score: 1, add: [{ group: ['hexerei'] }] },
-      { score: 3, add: [{ elem: ['Anemo']}], or: [[{ elem: ["Pyro"]}, { elem: ['Pyro']}], [{ elem: ['Hydro']}, { elem: ['Hydro']}], [{ elem: ['Electro'] }, { elem: ['Electro'] }], [{ elem: ['Cryo']}, { elem: ['Cryo']}]] },
+      {
+        score: 3,
+        add: [{ elem: ['Anemo'] }],
+        or: [
+          [{ elem: ['Pyro'] }, { elem: ['Pyro'] }],
+          [{ elem: ['Hydro'] }, { elem: ['Hydro'] }],
+          [{ elem: ['Electro'] }, { elem: ['Electro'] }],
+          [{ elem: ['Cryo'] }, { elem: ['Cryo'] }],
+        ],
+      },
     ],
     filter: { score: 6, roll: 'main' },
   },
@@ -38,9 +47,13 @@ export const avatar: Avatar[] = [
     stat: ['EM', 'HP'],
     coop: [
       // mainアタッカー
-      { score: 5, add: [['Lauma', {roll: ['sub', 'support']}, {roll: ['healer']}]]},
+      { score: 5, add: [['Lauma', { roll: ['sub', 'support'] }, { roll: ['healer'] }]] },
       // subアタッカー
-      { score: 1, add: [{group: ['moonsign']}, {elem: ['Electro', 'Geo'], roll: ['main', 'sub']}, 'Ineffa'], or: ['Ineffa', 'Lauma'] },
+      {
+        score: 1,
+        add: [{ group: ['moonsign'] }, { elem: ['Electro', 'Geo'], roll: ['main', 'sub'] }, 'Ineffa'],
+        or: ['Ineffa', 'Lauma'],
+      },
     ],
     filter: { score: 6, roll: 'sub' },
   },
@@ -372,7 +385,7 @@ export const avatar: Avatar[] = [
     stat: ['EM'],
     coop: [
       { score: 1, add: [{ roll: ['main', 'sub'], stat: ['EM'] }] },
-      { score: 2, add: [{ roll: ['main', 'sub'], elem: ['Pyro', 'Hydro', 'Electro'] }] }
+      { score: 2, add: [{ roll: ['main', 'sub'], elem: ['Pyro', 'Hydro', 'Electro'] }] },
     ],
     filter: { score: 6, roll: 'sub' },
   },
@@ -411,9 +424,7 @@ export const avatar: Avatar[] = [
     stat: ['HP'],
     trigger: ['normal'],
     explor: ['run', 2],
-    coop: [
-      { score: -1, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }]] },
-    ],
+    coop: [{ score: -1, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }]] }],
   },
   {
     name: 'Kamisato Ayato',
@@ -533,7 +544,7 @@ export const avatar: Avatar[] = [
     score: [5, 0, 0, 0],
     group: ['hexerei'],
     dmg: ['normal', 'charge'],
-    coop: [ { score: 1, add: [{ group: ['hexerei'] }] }],
+    coop: [{ score: 1, add: [{ group: ['hexerei'] }] }],
   },
   {
     name: 'Venti',
@@ -581,9 +592,7 @@ export const avatar: Avatar[] = [
     score: [0, 0, 1, 0],
     group: ['moonsign'],
     burstDep: 1,
-    coop: [
-      { score: 5, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] },
-    ],
+    coop: [{ score: 5, add: [{ roll: ['main', 'sub'], elem: ['Geo'], group: ['moonsign'] }] }],
     filter: { score: 5, roll: 'support' },
   },
   {
@@ -591,9 +600,7 @@ export const avatar: Avatar[] = [
     score: [0, 0, 0, 4],
     group: ['moonsign'],
     burstDep: 3,
-    coop: [
-      { score: 1, add: [{ roll: ['main', 'sub'], dmg: ['element'] }] },
-    ],
+    coop: [{ score: 1, add: [{ roll: ['main', 'sub'], dmg: ['element'] }] }],
     filter: { score: 5, roll: 'healer' },
   },
   {
@@ -601,9 +608,7 @@ export const avatar: Avatar[] = [
     score: [0, 0, 1, 0],
     group: ['moonsign'],
     burstDep: 2,
-    coop: [
-      { score: 1, add: [{ group: ['moonsign'] }] },
-    ],
+    coop: [{ score: 1, add: [{ group: ['moonsign'] }] }],
     filter: { score: 4, roll: 'support' },
   },
   {
@@ -826,8 +831,22 @@ export const avatar: Avatar[] = [
       // support
       { score: 3, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['healer'] }]] },
       // healer
-      { score: -3, add: [[{ roll: ['main'], elem: ['4elem', 'Anemo'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
-      { score: 3, add: [[{ roll: ['main'], elem: ['Geo'], stat: ['DEF'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }]] },
+      {
+        score: -3,
+        add: [
+          [{ roll: ['main'], elem: ['4elem', 'Anemo'] }, { roll: ['sub', 'support'] }, { roll: ['sub', 'support'] }],
+        ],
+      },
+      {
+        score: 3,
+        add: [
+          [
+            { roll: ['main'], elem: ['Geo'], stat: ['DEF'] },
+            { roll: ['sub', 'support'] },
+            { roll: ['sub', 'support'] },
+          ],
+        ],
+      },
     ],
     filter: { score: 4, roll: 'support' },
   },
@@ -908,7 +927,12 @@ export const avatar: Avatar[] = [
     group: ['hexerei'],
     burstDep: 1,
     dmg: ['skill'],
-    coop: [{ score: 1, or: [[ { roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, { group: ['hexerei'] } ], 'Klee']}],
+    coop: [
+      {
+        score: 1,
+        or: [[{ roll: ['main'], elem: ['Hydro', 'Pyro'], stat: ['ATK', 'EM'] }, { group: ['hexerei'] }], 'Klee'],
+      },
+    ],
   },
   {
     name: 'Ningguang',

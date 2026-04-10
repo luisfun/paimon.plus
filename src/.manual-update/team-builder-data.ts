@@ -193,19 +193,26 @@ export const avatar: Avatar[] = [
     name: 'Citlali',
     score: [0, 0, 1, 1],
     coop: [
+      // 溶解する回数が減るため
+      {
+        score: -2,
+        add: [
+          [
+            { roll: ['main'], elem: ['Pyro'] },
+            { roll: ['sub'], elem: ['Pyro'] },
+          ],
+        ],
+      },
       {
         score: 1,
-        or: [
+        add: [
+          { roll: ['main'], elem: ['Pyro', 'Hydro'] },
           { roll: ['main'], elem: ['Pyro'] },
-          { roll: ['main'], elem: ['Hydro'] },
         ],
       },
       {
         score: 3,
-        or: [
-          { roll: ['main', 'sub'], elem: ['Pyro'] },
-          { roll: ['main', 'sub'], elem: ['Hydro'] },
-        ],
+        add: [{ roll: ['main', 'sub'], elem: ['Pyro', 'Hydro'] }],
       },
     ],
     filter: { score: 5, roll: 'healer' },

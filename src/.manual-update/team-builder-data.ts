@@ -280,10 +280,13 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Emilie',
-    score: [0, 4, 0, 0],
+    score: [0, 3, 0, 0],
     burstDep: 1,
     dmg: ['skill'],
-    coop: [{ score: 2, add: [{ elem: ['Pyro'] }] }],
+    coop: [
+      { score: 1, add: [{ elem: ['Pyro'], roll: ['main', 'sub'] }] },
+      { score: 2, add: [{ elem: ['Pyro'] }] },
+    ],
     filter: { score: 5, roll: 'sub' },
   },
   {

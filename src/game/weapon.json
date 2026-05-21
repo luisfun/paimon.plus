@@ -3225,6 +3225,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14523,
+    "icon": "UI_EquipIcon_Catalyst_FairyGarden",
+    "rankLevel": 5,
+    "nameTextMapHash": 1871665507,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112122": 15,
+        "112123": 23,
+        "112124": 27,
+        "112140": 23,
+        "112141": 27,
+        "112142": 41,
+        "114073": 5,
+        "114074": 14,
+        "114075": 14,
+        "114076": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14522,
     "icon": "UI_EquipIcon_Catalyst_Brisingamen",
     "rankLevel": 5,
@@ -4367,6 +4390,29 @@
       }
     },
     "wikiId": 1958
+  },
+  {
+    "id": 13517,
+    "icon": "UI_EquipIcon_Pole_Carbine",
+    "rankLevel": 5,
+    "nameTextMapHash": 3376210043,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112038": 15,
+        "112039": 23,
+        "112040": 27,
+        "112131": 23,
+        "112132": 27,
+        "112133": 41,
+        "114001": 5,
+        "114002": 14,
+        "114003": 14,
+        "114004": 6
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13516,

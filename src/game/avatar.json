@@ -1,5 +1,61 @@
 [
   {
+    "key": "Nicole",
+    "id": 10000131,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 1711582634,
+    "skillDepotId": 13101,
+    "element": "Fire",
+    "consts": [
+      "UI_Talent_S_Nicole_01",
+      "UI_Talent_S_Nicole_02",
+      "UI_Talent_U_Nicole_01",
+      "UI_Talent_S_Nicole_03",
+      "UI_Talent_U_Nicole_02",
+      "UI_Talent_S_Nicole_04"
+    ],
+    "skills": [
+      {
+        "id": 11311,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 13131
+      },
+      {
+        "id": 11312,
+        "icon": "Skill_S_Nicole_01",
+        "proud": 13132
+      },
+      {
+        "id": 11315,
+        "icon": "Skill_E_Nicole_01",
+        "proud": 13139
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101269": 168,
+        "104111": 1,
+        "104112": 9,
+        "104113": 9,
+        "104114": 6,
+        "104319": 3,
+        "104359": 9,
+        "104360": 63,
+        "104361": 114,
+        "112125": 36,
+        "112126": 96,
+        "112127": 129,
+        "113084": 46,
+        "113087": 18
+      }
+    },
+    "wikiId": 10622
+  },
+  {
     "key": "Linnea",
     "id": 10000130,
     "qualityType": "QUALITY_ORANGE",
@@ -562,7 +618,7 @@
         "113073": 18
       }
     },
-    "wikiId": 4582
+    "wikiId": 7706
   },
   {
     "key": "Escoffier",
@@ -4415,6 +4471,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Prune",
+    "id": 10000132,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 2787504450,
+    "skillDepotId": 13201,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Prune_01",
+      "UI_Talent_S_Prune_02",
+      "UI_Talent_U_Prune_01",
+      "UI_Talent_S_Prune_03",
+      "UI_Talent_U_Prune_02",
+      "UI_Talent_S_Prune_04"
+    ],
+    "skills": [
+      {
+        "id": 11321,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 13231
+      },
+      {
+        "id": 11322,
+        "icon": "Skill_S_Prune_01",
+        "proud": 13232
+      },
+      {
+        "id": 11325,
+        "icon": "Skill_E_Prune_01",
+        "proud": 13239
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101268": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104304": 9,
+        "104305": 63,
+        "104306": 114,
+        "104319": 3,
+        "112035": 36,
+        "112036": 96,
+        "112037": 129,
+        "113079": 46,
+        "113081": 18
+      }
+    },
+    "wikiId": 10624
   },
   {
     "key": "Illuga",

@@ -114,10 +114,13 @@ const dumpAvatar = () => {
         costume => ({ skinId: costume.skinId, key: costume.frontIconName.split('_').at(-1) }),
       )
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
-      // スカーク、ドゥリン
-      if (aInfo.id === 10000114) aInfo.wikiId = 7706
-      if (aInfo.id === 10000123) aInfo.wikiId = 9017
-      else aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])
+      // スカーク、ドゥリン、ニコ
+      switch (aInfo.id) {
+        case 10000114: aInfo.wikiId = 7706; break
+        case 10000123: aInfo.wikiId = 9017; break
+        case 10000131: aInfo.wikiId = 10622; break
+        default: aInfo.wikiId = findWikiId(TextMap.en[aInfo.nameTextMapHash])
+      }
       a.push(aInfo)
     }
   }

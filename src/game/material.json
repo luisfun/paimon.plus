@@ -3040,6 +3040,14 @@
     "wikiId": 10475
   },
   {
+    "id": 113087,
+    "icon": "UI_ItemIcon_113087",
+    "rankLevel": 5,
+    "nameTextMapHash": 2058515932,
+    "rank": 11101,
+    "wikiId": -1
+  },
+  {
     "id": 114001,
     "icon": "UI_ItemIcon_114001",
     "rankLevel": 2,

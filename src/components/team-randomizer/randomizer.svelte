@@ -48,6 +48,7 @@ const getAbyss = () => {
   for (let i = 300; i; i--) {
     const teams = [getTeam(), getTeam()]
     if (teams.includes(undefined)) break
+    if (teams.some(team => team?.some(e => e.avatarId === 10000117 || e.avatarId === 10000118))) continue
     if ([...new Set(teams.flatMap(team => team?.map(e => e.avatarId)))].length === 8) return teams as (typeof avatar)[]
   }
   return undefined

@@ -112,6 +112,62 @@
     "wikiId": 10412
   },
   {
+    "key": "Lohen",
+    "id": 10000129,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 2872823194,
+    "skillDepotId": 12901,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Lohen_01",
+      "UI_Talent_S_Lohen_02",
+      "UI_Talent_U_Lohen_01",
+      "UI_Talent_S_Lohen_03",
+      "UI_Talent_U_Lohen_02",
+      "UI_Talent_S_Lohen_04"
+    ],
+    "skills": [
+      {
+        "id": 11291,
+        "icon": "Skill_A_03",
+        "proud": 12931
+      },
+      {
+        "id": 11292,
+        "icon": "Skill_S_Lohen_01",
+        "proud": 12932
+      },
+      {
+        "id": 11295,
+        "icon": "Skill_E_Lohen_01",
+        "proud": 12939
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101272": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104304": 9,
+        "104305": 63,
+        "104306": 114,
+        "104319": 3,
+        "112011": 36,
+        "112012": 96,
+        "112013": 129,
+        "113073": 18,
+        "113085": 46
+      }
+    },
+    "wikiId": 10623
+  },
+  {
     "key": "Varka",
     "id": 10000128,
     "qualityType": "QUALITY_ORANGE",

@@ -2,12 +2,23 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Lohen',
+    group: ['hexerei'],
+    score: [4, 0, 0, 0],
+    dmg: ['charge', 'skill'],
+    stat: ['ATK'],
+    coop: [
+      { score: 1, add: [{ group: ['hexerei'] }, { elem: ['Pyro', 'Dendro', 'Electro', 'Geo', 'Hydro'], roll: ['sub'] }] },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Nicole',
     group: ['hexerei'],
     score: [0, 0, 2, 3],
     coop: [
       { score: 1, add: [{ roll: ['sub'], stat: ['ATK'] }, { group: ['hexerei'] }] },
-      { score: 2, add: [{ roll: ['main'], stat: ['ATK'] }] }
+      { score: 2, add: [{ roll: ['main'], stat: ['ATK'] }] },
     ],
     filter: { score: 6, roll: 'healer' },
   },
@@ -628,7 +639,10 @@ export const avatar: Avatar[] = [
     score: [0, 0, 2, 0],
     burstDep: 3,
     coop: [
-      { score: 1, add: [{ group: ['hexerei'] }, { roll: ['sub'] }, { roll: ['main'], elem: ['Anemo'], group: ['hexerei'] }] }
+      {
+        score: 1,
+        add: [{ group: ['hexerei'] }, { roll: ['sub'] }, { roll: ['main'], elem: ['Anemo'], group: ['hexerei'] }],
+      },
     ],
     filter: { score: 4, roll: 'support' },
   },

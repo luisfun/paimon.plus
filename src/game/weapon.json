@@ -1190,6 +1190,29 @@
     "wikiId": 1979
   },
   {
+    "id": 12516,
+    "icon": "UI_EquipIcon_Claymore_CrystallineSword",
+    "rankLevel": 5,
+    "nameTextMapHash": 3034568739,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112125": 15,
+        "112126": 23,
+        "112127": 27,
+        "112143": 23,
+        "112144": 27,
+        "112145": 41,
+        "114081": 5,
+        "114082": 14,
+        "114083": 14,
+        "114084": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 12515,
     "icon": "UI_EquipIcon_Claymore_EnsisAquilonis",
     "rankLevel": 5,

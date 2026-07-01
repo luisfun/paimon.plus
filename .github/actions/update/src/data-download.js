@@ -1,11 +1,11 @@
 import fs from 'node:fs'
 import { folder } from './utils.js'
 
-// https://gitlab.com/Dimbreath/AnimeGameData/-/tree/master/TextMap
+// https://gitlab.com/Dimbreath/animegamedata2/-/tree/main/TextMap
 const languages = ['EN', 'JP', 'KR', 'PT']
 
-// @Dimbreath @FZFalzar https://gitlab.com/Dimbreath/AnimeGameData
-const gitlabUrl = 'https://gitlab.com/api/v4/projects/53216109/repository/files/'
+// @Dimbreath @FZFalzar https://gitlab.com/Dimbreath/animegamedata2
+const gitlabUrl = 'https://gitlab.com/api/v4/projects/83871005/repository/files/'
 
 // @yuko1101 https://github.com/yuko1101/enka-network-api/blob/main/LICENSE
 // https://github.com/yuko1101/enka-network-api/blob/main/src/client/CachedAssetsManager.ts

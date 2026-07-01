@@ -1,5 +1,61 @@
 [
   {
+    "key": "MarionetteNew",
+    "id": 10000133,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CLAYMORE",
+    "nameTextMapHash": 108893506,
+    "skillDepotId": 13301,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_MarionetteNew_01",
+      "UI_Talent_S_MarionetteNew_02",
+      "UI_Talent_U_MarionetteNew_01",
+      "UI_Talent_S_MarionetteNew_03",
+      "UI_Talent_U_MarionetteNew_02",
+      "UI_Talent_S_MarionetteNew_04"
+    ],
+    "skills": [
+      {
+        "id": 11331,
+        "icon": "Skill_A_04",
+        "proud": 13331
+      },
+      {
+        "id": 11332,
+        "icon": "Skill_S_MarionetteNew_01",
+        "proud": 13332
+      },
+      {
+        "id": 11335,
+        "icon": "Skill_E_MarionetteNew_01",
+        "proud": 13339
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101239": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104319": 3,
+        "104362": 9,
+        "104363": 63,
+        "104364": 114,
+        "112122": 36,
+        "112123": 96,
+        "112124": 129,
+        "113082": 18,
+        "113086": 46
+      }
+    },
+    "wikiId": 7479
+  },
+  {
     "key": "Nicole",
     "id": 10000131,
     "qualityType": "QUALITY_ORANGE",
@@ -877,7 +933,12 @@
         "proud": 10739
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 210701,
+        "key": "CitlaliCostumeXia"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,
@@ -5289,7 +5350,12 @@
         "proud": 8839
       }
     ],
-    "costumes": [],
+    "costumes": [
+      {
+        "skinId": 208801,
+        "key": "CharlotteCostumeDong"
+      }
+    ],
     "allCosts": {
       "promoteCoin": 420000,
       "skillCoin": 4957500,

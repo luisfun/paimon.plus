@@ -2,13 +2,36 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Sandrone',
+    score: [2, 0, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    dmg: ['charge', 'element'],
+    stat: ['ATK', 'EM'],
+    coop: [
+      { score: -3, add: ['Furina'] },
+      { score: -2, add: [{ trigger: ['normal'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      {
+        score: 2,
+        add: [{ elem: ['Electro'] }, { elem: ['Electro'], roll: ['sub'] }],
+        or: [
+          [{ elem: ['Electro'] }, { elem: ['Electro'] }],
+          [{ elem: ['Electro'] }, { elem: ['Cryo'] }],
+        ],
+      },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Lohen',
     group: ['hexerei'],
     score: [4, 0, 0, 0],
     dmg: ['charge', 'skill'],
     stat: ['ATK'],
     coop: [
-      { score: 1, add: [{ group: ['hexerei'] }, { elem: ['Pyro', 'Dendro', 'Electro', 'Geo', 'Hydro'], roll: ['sub'] }] },
+      {
+        score: 1,
+        add: [{ group: ['hexerei'] }, { elem: ['Pyro', 'Dendro', 'Electro', 'Geo', 'Hydro'], roll: ['sub'] }],
+      },
     ],
     filter: { score: 6, roll: 'main' },
   },
@@ -1010,7 +1033,7 @@ export const avatar: Avatar[] = [
     score: [0, 5, 0, 0],
     burstDep: 3,
     dmg: ['burst'],
-    trigger: ['normal'],
+    // trigger: ['normal'],
   },
   {
     name: 'Xiangling',

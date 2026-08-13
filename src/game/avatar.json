@@ -1,5 +1,167 @@
 [
   {
+    "key": "Odette",
+    "id": 10000150,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 2417850,
+    "skillDepotId": 15001,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_Odette_01",
+      "UI_Talent_S_Odette_02",
+      "UI_Talent_U_Odette_01",
+      "UI_Talent_S_Odette_03",
+      "UI_Talent_U_Odette_02",
+      "UI_Talent_S_Odette_04"
+    ],
+    "skills": [
+      {
+        "id": 11501,
+        "icon": "Skill_A_01",
+        "proud": 15031
+      },
+      {
+        "id": 11502,
+        "icon": "Skill_S_Odette_01",
+        "proud": 15032
+      },
+      {
+        "id": 11505,
+        "icon": "Skill_E_Odette_01",
+        "proud": 15039
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101275": 168,
+        "104161": 1,
+        "104162": 9,
+        "104163": 9,
+        "104164": 6,
+        "104319": 3,
+        "104365": 9,
+        "104366": 63,
+        "104367": 114,
+        "112146": 36,
+        "112147": 96,
+        "112148": 129,
+        "113088": 18,
+        "113090": 46
+      }
+    },
+    "wikiId": 11162
+  },
+  {
+    "key": "PlayerGirl",
+    "id": 10000135,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CROSSBOW",
+    "nameTextMapHash": 2503561282,
+    "skillDepotId": 701,
+    "element": null,
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 100550,
+        "icon": "Skill_A_01",
+        "proud": 731
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 1652500,
+      "materials": {
+        "104301": 3,
+        "104302": 6,
+        "104303": 6,
+        "104305": 11,
+        "104306": 12,
+        "104308": 4,
+        "104309": 20,
+        "104319": 1,
+        "112008": 6,
+        "112009": 22,
+        "112010": 31,
+        "113005": 6
+      }
+    },
+    "wikiId": 20
+  },
+  {
+    "key": "PlayerBoy",
+    "id": 10000134,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CROSSBOW",
+    "nameTextMapHash": 1320822938,
+    "skillDepotId": 501,
+    "element": null,
+    "consts": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "skills": [
+      {
+        "id": 100540,
+        "icon": "Skill_A_01",
+        "proud": 730
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      },
+      {
+        "id": null,
+        "icon": null,
+        "proud": null
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 1652500,
+      "materials": {
+        "104301": 3,
+        "104302": 6,
+        "104303": 6,
+        "104305": 11,
+        "104306": 12,
+        "104308": 4,
+        "104309": 20,
+        "104319": 1,
+        "112008": 6,
+        "112009": 22,
+        "112010": 31,
+        "113005": 6
+      }
+    },
+    "wikiId": 20
+  },
+  {
     "key": "MarionetteNew",
     "id": 10000133,
     "qualityType": "QUALITY_ORANGE",
@@ -3787,6 +3949,67 @@
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "nameTextMapHash": 3816664530,
+    "skillDepotId": 705,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_02",
+      "UI_Talent_U_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_03",
+      "UI_Talent_U_PlayerIce_02",
+      "UI_Talent_S_PlayerIce_04"
+    ],
+    "skills": [
+      {
+        "id": 100554,
+        "icon": "Skill_A_01",
+        "proud": 831
+      },
+      {
+        "id": 10127,
+        "icon": "Skill_E_PlayerIce_01",
+        "proud": 832
+      },
+      {
+        "id": 10128,
+        "icon": "Skill_S_PlayerIce_01",
+        "proud": 839
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "100024": 168,
+        "104101": 1,
+        "104102": 9,
+        "104103": 9,
+        "104104": 6,
+        "104319": 3,
+        "104365": 9,
+        "104366": 18,
+        "104367": 18,
+        "104369": 33,
+        "104370": 36,
+        "104372": 12,
+        "104373": 60,
+        "112005": 18,
+        "112006": 30,
+        "112007": 36,
+        "112149": 18,
+        "112150": 66,
+        "112151": 93,
+        "113075": 18
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "PlayerGirl",
+    "id": 10000007,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 3816664530,
     "skillDepotId": 704,
     "element": "Wind",
     "consts": [
@@ -4225,6 +4448,67 @@
     "qualityType": "QUALITY_ORANGE",
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "nameTextMapHash": 1533656306,
+    "skillDepotId": 505,
+    "element": "Ice",
+    "consts": [
+      "UI_Talent_S_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_02",
+      "UI_Talent_U_PlayerIce_01",
+      "UI_Talent_S_PlayerIce_03",
+      "UI_Talent_U_PlayerIce_02",
+      "UI_Talent_S_PlayerIce_04"
+    ],
+    "skills": [
+      {
+        "id": 100544,
+        "icon": "Skill_A_01",
+        "proud": 830
+      },
+      {
+        "id": 10127,
+        "icon": "Skill_E_PlayerIce_01",
+        "proud": 832
+      },
+      {
+        "id": 10128,
+        "icon": "Skill_S_PlayerIce_01",
+        "proud": 839
+      }
+    ],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "100024": 168,
+        "104101": 1,
+        "104102": 9,
+        "104103": 9,
+        "104104": 6,
+        "104319": 3,
+        "104365": 9,
+        "104366": 18,
+        "104367": 18,
+        "104369": 33,
+        "104370": 36,
+        "104372": 12,
+        "104373": 60,
+        "112005": 18,
+        "112006": 30,
+        "112007": 36,
+        "112149": 18,
+        "112150": 66,
+        "112151": 93,
+        "113075": 18
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "key": "PlayerBoy",
+    "id": 10000005,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 1533656306,
     "skillDepotId": 504,
     "element": "Wind",
     "consts": [
@@ -4588,6 +4872,62 @@
       }
     },
     "wikiId": 32
+  },
+  {
+    "key": "Alyosha",
+    "id": 10000148,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_POLE",
+    "nameTextMapHash": 2727450010,
+    "skillDepotId": 14801,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Alyosha_01",
+      "UI_Talent_S_Alyosha_02",
+      "UI_Talent_U_Alyosha_01",
+      "UI_Talent_S_Alyosha_03",
+      "UI_Talent_U_Alyosha_02",
+      "UI_Talent_S_Alyosha_04"
+    ],
+    "skills": [
+      {
+        "id": 11481,
+        "icon": "Skill_A_03",
+        "proud": 14831
+      },
+      {
+        "id": 11482,
+        "icon": "Skill_S_Alyosha_01",
+        "proud": 14832
+      },
+      {
+        "id": 11485,
+        "icon": "Skill_E_Alyosha_01",
+        "proud": 14839
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101276": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104368": 9,
+        "104369": 63,
+        "104370": 114,
+        "112149": 36,
+        "112150": 96,
+        "112151": 129,
+        "113083": 18,
+        "113091": 46
+      }
+    },
+    "wikiId": 11163
   },
   {
     "key": "Prune",

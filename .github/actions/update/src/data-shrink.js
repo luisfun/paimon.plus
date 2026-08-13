@@ -93,7 +93,14 @@ const dumpAvatar = () => {
       aInfo[index] = avatar[index]
     }
     // 旅人、ドール
-    if (aInfo.id === 10000005 || aInfo.id === 10000007 || aInfo.id === 10000117 || aInfo.id === 10000118) {
+    if (
+      aInfo.id === 10000005 ||
+      aInfo.id === 10000007 ||
+      aInfo.id === 10000117 ||
+      aInfo.id === 10000118 ||
+      aInfo.id === 10000134 ||
+      aInfo.id === 10000135
+    ) {
       for (const depot of E.AvatarSkillDepot.filter(e => avatar.candSkillDepotIds.includes(e.id))) {
         const aInfo57 = { ...aInfo }
         aInfo57.skillDepotId = depot.id
@@ -110,9 +117,9 @@ const dumpAvatar = () => {
       aInfo.element = avatarElement(depot)
       aInfo.consts = avatarConsts(depot)
       aInfo.skills = avatarSkills(depot)
-      aInfo.costumes = E.AvatarCostume.filter(e => e.characterId === aInfo.id && e.sideIconName !== '').map(
-        costume => ({ skinId: costume.skinId, key: costume.frontIconName.split('_').at(-1) }),
-      )
+      aInfo.costumes = E.AvatarCostume.filter(
+        e => e.characterId === aInfo.id && e.sideIconName !== '' && !!e.frontIconName,
+      ).map(costume => ({ skinId: costume.skinId, key: costume.frontIconName.split('_').at(-1) }))
       aInfo.allCosts = avatarAllCosts(avatar, aInfo)
       // スカーク、ドゥリン、ニコ
       switch (aInfo.id) {

@@ -147,6 +147,8 @@
   "11400": "UI_AvatarIcon_Nicole_Circle",
   "11500": "UI_AvatarIcon_Lohen_Circle",
   "11600": "UI_AvatarIcon_MarionetteNew_Circle",
+  "11700": "UI_AvatarIcon_Alyosha_Circle",
+  "11800": "UI_AvatarIcon_Odette_Circle",
   "99999": "UI_AvatarIcon_Ambor_Circle",
   "100010": "UI_AvatarIcon_72105_Circle",
   "100020": "UI_AvatarIcon_72158_Circle",
@@ -175,10 +177,11 @@
   "100250": "UI_AvatarIcon_76101_Circle",
   "100260": "UI_AvatarIcon_76096_Circle",
   "100270": "UI_AvatarIcon_76143_Circle",
+  "100280": "UI_AvatarIcon_77104_Circle",
+  "100290": "UI_AvatarIcon_77160_Circle",
   "200010": "UI_AvatarIcon_Activity_01_Circle",
   "200011": "UI_AvatarIcon_Activity_02_Circle",
   "900001": "UI_AvatarIcon_MannequinBoy_Circle",
   "900002": "UI_AvatarIcon_MannequinGirl_Circle",
-  "900003": "UI_AvatarIcon_Mannequin_Custom_Circle",
-  "900004": ""
+  "900003": "UI_AvatarIcon_Mannequin_Custom_Circle"
 }

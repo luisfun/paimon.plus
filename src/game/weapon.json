@@ -1,5 +1,51 @@
 [
   {
+    "id": 11521,
+    "icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+    "rankLevel": 5,
+    "nameTextMapHash": 1896898739,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112146": 15,
+        "112147": 23,
+        "112148": 27,
+        "112152": 23,
+        "112153": 27,
+        "112154": 41,
+        "114093": 5,
+        "114094": 14,
+        "114095": 14,
+        "114096": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 11520,
+    "icon": "UI_EquipIcon_Sword_Swanlake",
+    "rankLevel": 5,
+    "nameTextMapHash": 4113623219,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112149": 15,
+        "112150": 23,
+        "112151": 27,
+        "112155": 23,
+        "112156": 27,
+        "112157": 41,
+        "114089": 5,
+        "114090": 14,
+        "114091": 14,
+        "114092": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11519,
     "icon": "UI_EquipIcon_Sword_SilverwareSaw",
     "rankLevel": 5,
@@ -366,6 +412,52 @@
       }
     },
     "wikiId": 2046
+  },
+  {
+    "id": 11436,
+    "icon": "UI_EquipIcon_Sword_GlintstoneSword",
+    "rankLevel": 4,
+    "nameTextMapHash": 210291963,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112146": 10,
+        "112147": 15,
+        "112148": 18,
+        "112152": 15,
+        "112153": 18,
+        "112154": 27,
+        "114085": 3,
+        "114086": 9,
+        "114087": 9,
+        "114088": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 11435,
+    "icon": "UI_EquipIcon_Sword_SerpentTooth",
+    "rankLevel": 4,
+    "nameTextMapHash": 924032139,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112104": 10,
+        "112105": 15,
+        "112106": 18,
+        "112119": 15,
+        "112120": 18,
+        "112121": 27,
+        "114061": 3,
+        "114062": 9,
+        "114063": 9,
+        "114064": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 11434,
@@ -1170,6 +1262,46 @@
     "wikiId": 2039
   },
   {
+    "id": 10012,
+    "icon": "UI_EquipIcon_Sword_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 2244919379,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112011": 3,
+        "112012": 5,
+        "112014": 5,
+        "112015": 6,
+        "114001": 1,
+        "114002": 3,
+        "114003": 1
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 10010,
+    "icon": "UI_EquipIcon_Sword_Template",
+    "rankLevel": 1,
+    "nameTextMapHash": 3931154627,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 20000,
+      "materials": {
+        "112011": 3,
+        "112012": 5,
+        "112014": 5,
+        "112015": 6,
+        "114001": 1,
+        "114002": 3,
+        "114003": 1
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 11101,
     "icon": "UI_EquipIcon_Sword_Blunt",
     "rankLevel": 1,
@@ -1441,6 +1573,52 @@
       }
     },
     "wikiId": 1953
+  },
+  {
+    "id": 12436,
+    "icon": "UI_EquipIcon_Claymore_GlintstoneClaymore",
+    "rankLevel": 4,
+    "nameTextMapHash": 3259124203,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112149": 10,
+        "112150": 15,
+        "112151": 18,
+        "112155": 15,
+        "112156": 18,
+        "112157": 27,
+        "114085": 3,
+        "114086": 9,
+        "114087": 9,
+        "114088": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 12435,
+    "icon": "UI_EquipIcon_Claymore_EscapeWheel",
+    "rankLevel": 4,
+    "nameTextMapHash": 2136397971,
+    "weaponType": "WEAPON_CLAYMORE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112080": 10,
+        "112081": 15,
+        "112082": 18,
+        "112098": 15,
+        "112099": 18,
+        "112100": 27,
+        "114053": 3,
+        "114054": 9,
+        "114055": 9,
+        "114056": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 12433,
@@ -2447,6 +2625,52 @@
       }
     },
     "wikiId": 1956
+  },
+  {
+    "id": 15436,
+    "icon": "UI_EquipIcon_Bow_GlintstoneBow",
+    "rankLevel": 4,
+    "nameTextMapHash": 3730903067,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112149": 10,
+        "112150": 15,
+        "112151": 18,
+        "112155": 15,
+        "112156": 18,
+        "112157": 27,
+        "114085": 3,
+        "114086": 9,
+        "114087": 9,
+        "114088": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 15435,
+    "icon": "UI_EquipIcon_Bow_ShatteredMirror",
+    "rankLevel": 4,
+    "nameTextMapHash": 3783773579,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 15434,
@@ -3685,6 +3909,52 @@
     "wikiId": 1955
   },
   {
+    "id": 14436,
+    "icon": "UI_EquipIcon_Catalyst_GlintstoneCatalyst",
+    "rankLevel": 4,
+    "nameTextMapHash": 3594490091,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112146": 10,
+        "112147": 15,
+        "112148": 18,
+        "112152": 15,
+        "112153": 18,
+        "112154": 27,
+        "114085": 3,
+        "114086": 9,
+        "114087": 9,
+        "114088": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 14435,
+    "icon": "UI_EquipIcon_Catalyst_SandMemoria",
+    "rankLevel": 4,
+    "nameTextMapHash": 3881404531,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112065": 10,
+        "112066": 15,
+        "112067": 18,
+        "112071": 15,
+        "112072": 18,
+        "112073": 27,
+        "114037": 3,
+        "114038": 9,
+        "114039": 9,
+        "114040": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14434,
     "icon": "UI_EquipIcon_Catalyst_Ziedas",
     "rankLevel": 4,
@@ -4712,6 +4982,52 @@
       }
     },
     "wikiId": 1972
+  },
+  {
+    "id": 13436,
+    "icon": "UI_EquipIcon_Pole_GlintstonePolearm",
+    "rankLevel": 4,
+    "nameTextMapHash": 3271318547,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112146": 10,
+        "112147": 15,
+        "112148": 18,
+        "112155": 15,
+        "112156": 18,
+        "112157": 27,
+        "114093": 3,
+        "114094": 9,
+        "114095": 9,
+        "114096": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 13435,
+    "icon": "UI_EquipIcon_Pole_FaesCrystalle",
+    "rankLevel": 4,
+    "nameTextMapHash": 3884163131,
+    "weaponType": "WEAPON_POLE",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112149": 10,
+        "112150": 15,
+        "112151": 18,
+        "112152": 15,
+        "112153": 18,
+        "112154": 27,
+        "114089": 3,
+        "114090": 9,
+        "114091": 9,
+        "114092": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 13434,

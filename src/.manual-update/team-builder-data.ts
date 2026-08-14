@@ -2,6 +2,19 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Odette',
+    score: [0, 2, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    dmg: ['element'],
+    stat: ['ATK'],
+    coop: [
+      { score: -3, add: ['Furina'] },
+      { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
+      { score: -2, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: 4, or: [{ elem: ['Electro', 'Anemo'], roll: ['main'] }, 'Sandrone', 'Wriothesley'] }, // Travelerは氷のみ個別
+    ],
+    filter: { score: 6, roll: 'sub' },
+  },
+  {
     name: 'Sandrone',
     score: [2, 0, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
     dmg: ['charge', 'element'],
@@ -70,7 +83,7 @@ export const avatar: Avatar[] = [
     coop: [
       { score: -1, add: ['Faruzan'] },
       // 編成重視の調節用
-      { score: -0.9, add: [{ roll: ['sub', 'support', 'healer'] }] },
+      { score: -1, add: [{ roll: ['sub', 'support', 'healer'] }] },
       { score: 1, add: [{ group: ['hexerei'] }] },
       {
         score: 3,
@@ -657,6 +670,13 @@ export const avatar: Avatar[] = [
   },
 
   {
+    name: 'Alyosha',
+    score: [0, 0, 1, 1],
+    burstDep: 2,
+    coop: [{ score: 4, or: [['Sandrone'], ['Odette', { elem: ['Electro', 'Anemo'], roll: ['main'] }]] }],
+    filter: { score: 4, roll: 'support' },
+  },
+  {
     name: 'Prune',
     group: ['hexerei'],
     score: [0, 0, 2, 0],
@@ -1079,6 +1099,20 @@ export const avatar: Avatar[] = [
     name: 'Aloy',
     score: [2, 0, 0, 0],
     dmg: ['normal'],
+  },
+  {
+    name: 'Traveler',
+    elem: 'Cryo',
+    score: [2.1, 0, 0, 0], // 一旦風拡散によるsubは無視
+    burstDep: 2,
+    coop: [
+      { score: -3, add: ['Furina'] },
+      { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
+      { score: -2, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: 4, add: ['Odette', 'Alyosha'] }, // 元々よそのバフ
+      { score: 5, add: [{ elem: ['Electro'], roll: ['sub'] }] }, // ちょっと高い？
+    ],
+    filter: { score: 6.1, roll: 'main' },
   },
   {
     name: 'Traveler',

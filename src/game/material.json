@@ -403,14 +403,14 @@
     "icon": "UI_ItemIcon_101275",
     "nameTextMapHash": 560079332,
     "rank": 318,
-    "wikiId": -1
+    "wikiId": 11336
   },
   {
     "id": 101276,
     "icon": "UI_ItemIcon_101276",
     "nameTextMapHash": 1349578068,
     "rank": 318,
-    "wikiId": -1
+    "wikiId": 11337
   },
   {
     "id": 104003,
@@ -1202,7 +1202,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 505625700,
     "rank": 13122,
-    "wikiId": -1
+    "wikiId": 11344
   },
   {
     "id": 104366,
@@ -1210,7 +1210,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 222584948,
     "rank": 13122,
-    "wikiId": -1
+    "wikiId": 11345
   },
   {
     "id": 104367,
@@ -1218,7 +1218,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 1248493628,
     "rank": 13122,
-    "wikiId": -1
+    "wikiId": 11346
   },
   {
     "id": 104368,
@@ -1226,7 +1226,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 3239790804,
     "rank": 13123,
-    "wikiId": -1
+    "wikiId": 11347
   },
   {
     "id": 104369,
@@ -1234,7 +1234,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 2604902780,
     "rank": 13123,
-    "wikiId": -1
+    "wikiId": 11348
   },
   {
     "id": 104370,
@@ -1242,7 +1242,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 3449618828,
     "rank": 13123,
-    "wikiId": -1
+    "wikiId": 11349
   },
   {
     "id": 104372,
@@ -1250,7 +1250,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 739610052,
     "rank": 13124,
-    "wikiId": -1
+    "wikiId": 11351
   },
   {
     "id": 104373,
@@ -1258,7 +1258,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 20496492,
     "rank": 13124,
-    "wikiId": -1
+    "wikiId": 11352
   },
   {
     "id": 112002,
@@ -2418,7 +2418,7 @@
     "rankLevel": 1,
     "nameTextMapHash": 1458299076,
     "rank": 10639,
-    "wikiId": -1
+    "wikiId": 11367
   },
   {
     "id": 112147,
@@ -2426,7 +2426,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 398604620,
     "rank": 10639,
-    "wikiId": -1
+    "wikiId": 11368
   },
   {
     "id": 112148,
@@ -2434,7 +2434,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 3631088012,
     "rank": 10639,
-    "wikiId": -1
+    "wikiId": 11369
   },
   {
     "id": 112149,
@@ -2442,7 +2442,7 @@
     "rankLevel": 1,
     "nameTextMapHash": 1741322300,
     "rank": 10640,
-    "wikiId": -1
+    "wikiId": 11370
   },
   {
     "id": 112150,
@@ -2450,7 +2450,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 2580579452,
     "rank": 10640,
-    "wikiId": -1
+    "wikiId": 11371
   },
   {
     "id": 112151,
@@ -2458,7 +2458,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 1758466156,
     "rank": 10640,
-    "wikiId": -1
+    "wikiId": 11372
   },
   {
     "id": 112152,
@@ -2466,7 +2466,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 21126652,
     "rank": 10148,
-    "wikiId": -1
+    "wikiId": 11373
   },
   {
     "id": 112153,
@@ -2474,7 +2474,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 2554481956,
     "rank": 10148,
-    "wikiId": -1
+    "wikiId": 11374
   },
   {
     "id": 112154,
@@ -2482,7 +2482,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 1883441476,
     "rank": 10148,
-    "wikiId": -1
+    "wikiId": 11375
   },
   {
     "id": 112155,
@@ -2490,7 +2490,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 2167337164,
     "rank": 10149,
-    "wikiId": -1
+    "wikiId": 11376
   },
   {
     "id": 112156,
@@ -2498,7 +2498,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 1869121636,
     "rank": 10149,
-    "wikiId": -1
+    "wikiId": 11377
   },
   {
     "id": 112157,
@@ -2506,7 +2506,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 3882282028,
     "rank": 10149,
-    "wikiId": -1
+    "wikiId": 11378
   },
   {
     "id": 113001,
@@ -3210,7 +3210,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 3455637732,
     "rank": 11101,
-    "wikiId": -1
+    "wikiId": 11365
   },
   {
     "id": 113091,
@@ -3218,7 +3218,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 2633703740,
     "rank": 11101,
-    "wikiId": -1
+    "wikiId": 11366
   },
   {
     "id": 114001,
@@ -3898,7 +3898,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 717723940,
     "rank": 15122,
-    "wikiId": -1
+    "wikiId": 11353
   },
   {
     "id": 114086,
@@ -3906,7 +3906,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 2771465684,
     "rank": 15122,
-    "wikiId": -1
+    "wikiId": 11354
   },
   {
     "id": 114087,
@@ -3914,7 +3914,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 322167004,
     "rank": 15122,
-    "wikiId": -1
+    "wikiId": 11355
   },
   {
     "id": 114088,
@@ -3922,7 +3922,7 @@
     "rankLevel": 5,
     "nameTextMapHash": 1777650988,
     "rank": 15122,
-    "wikiId": -1
+    "wikiId": 11356
   },
   {
     "id": 114089,
@@ -3930,7 +3930,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 2816513132,
     "rank": 15123,
-    "wikiId": -1
+    "wikiId": 11357
   },
   {
     "id": 114090,
@@ -3938,7 +3938,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 3386104180,
     "rank": 15123,
-    "wikiId": -1
+    "wikiId": 11358
   },
   {
     "id": 114091,
@@ -3946,7 +3946,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 2930290868,
     "rank": 15123,
-    "wikiId": -1
+    "wikiId": 11359
   },
   {
     "id": 114092,
@@ -3954,7 +3954,7 @@
     "rankLevel": 5,
     "nameTextMapHash": 1884106116,
     "rank": 15123,
-    "wikiId": -1
+    "wikiId": 11360
   },
   {
     "id": 114093,
@@ -3962,7 +3962,7 @@
     "rankLevel": 2,
     "nameTextMapHash": 1216718092,
     "rank": 15124,
-    "wikiId": -1
+    "wikiId": 11361
   },
   {
     "id": 114094,
@@ -3970,7 +3970,7 @@
     "rankLevel": 3,
     "nameTextMapHash": 4094478748,
     "rank": 15124,
-    "wikiId": -1
+    "wikiId": 11362
   },
   {
     "id": 114095,
@@ -3978,7 +3978,7 @@
     "rankLevel": 4,
     "nameTextMapHash": 1400480780,
     "rank": 15124,
-    "wikiId": -1
+    "wikiId": 11363
   },
   {
     "id": 114096,
@@ -3986,6 +3986,6 @@
     "rankLevel": 5,
     "nameTextMapHash": 299621836,
     "rank": 15124,
-    "wikiId": -1
+    "wikiId": 11364
   }
 ]

@@ -56,6 +56,118 @@
     "wikiId": 11162
   },
   {
+    "key": "Vesna",
+    "id": 10000143,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 3992521194,
+    "skillDepotId": 14301,
+    "element": "Wind",
+    "consts": [
+      "UI_Talent_S_Vesna_01",
+      "UI_Talent_S_Vesna_02",
+      "UI_Talent_U_Vesna_01",
+      "UI_Talent_S_Vesna_03",
+      "UI_Talent_U_Vesna_02",
+      "UI_Talent_S_Vesna_04"
+    ],
+    "skills": [
+      {
+        "id": 11431,
+        "icon": "Skill_A_01",
+        "proud": 14331
+      },
+      {
+        "id": 11432,
+        "icon": "Skill_S_Vesna_01",
+        "proud": 14332
+      },
+      {
+        "id": 11435,
+        "icon": "Skill_E_Vesna_01",
+        "proud": 14339
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101277": 168,
+        "104151": 1,
+        "104152": 9,
+        "104153": 9,
+        "104154": 6,
+        "104319": 3,
+        "104371": 9,
+        "104372": 63,
+        "104373": 114,
+        "112146": 36,
+        "112147": 96,
+        "112148": 129,
+        "113089": 18,
+        "113092": 46
+      }
+    },
+    "wikiId": 11661
+  },
+  {
+    "key": "Vodyanitsa",
+    "id": 10000140,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 1692132714,
+    "skillDepotId": 14001,
+    "element": "Water",
+    "consts": [
+      "UI_Talent_S_Vodyanitsa_01",
+      "UI_Talent_S_Vodyanitsa_02",
+      "UI_Talent_U_Vodyanitsa_01",
+      "UI_Talent_S_Vodyanitsa_03",
+      "UI_Talent_U_Vodyanitsa_02",
+      "UI_Talent_S_Vodyanitsa_04"
+    ],
+    "skills": [
+      {
+        "id": 11401,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 14031
+      },
+      {
+        "id": 11402,
+        "icon": "Skill_S_Vodyanitsa_01",
+        "proud": 14032
+      },
+      {
+        "id": 11405,
+        "icon": "Skill_E_Vodyanitsa_01",
+        "proud": 14039
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101275": 168,
+        "104121": 1,
+        "104122": 9,
+        "104123": 9,
+        "104124": 6,
+        "104319": 3,
+        "104368": 9,
+        "104369": 63,
+        "104370": 114,
+        "112149": 36,
+        "112150": 96,
+        "112151": 129,
+        "113082": 18,
+        "113090": 46
+      }
+    },
+    "wikiId": 11702
+  },
+  {
     "key": "PlayerGirl",
     "id": 10000135,
     "qualityType": "QUALITY_ORANGE",

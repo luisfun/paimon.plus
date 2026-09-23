@@ -413,6 +413,13 @@
     "wikiId": 11337
   },
   {
+    "id": 101277,
+    "icon": "UI_ItemIcon_101277",
+    "nameTextMapHash": 3043659980,
+    "rank": 318,
+    "wikiId": 11338
+  },
+  {
     "id": 104003,
     "icon": "UI_ItemIcon_104003",
     "rankLevel": 4,
@@ -1243,6 +1250,14 @@
     "nameTextMapHash": 3449618828,
     "rank": 13123,
     "wikiId": 11349
+  },
+  {
+    "id": 104371,
+    "icon": "UI_ItemIcon_104371",
+    "rankLevel": 2,
+    "nameTextMapHash": 1465714156,
+    "rank": 13124,
+    "wikiId": 11350
   },
   {
     "id": 104372,
@@ -3205,6 +3220,14 @@
     "wikiId": 10783
   },
   {
+    "id": 113089,
+    "icon": "UI_ItemIcon_113089",
+    "rankLevel": 5,
+    "nameTextMapHash": 3293531492,
+    "rank": 11101,
+    "wikiId": 10784
+  },
+  {
     "id": 113090,
     "icon": "UI_ItemIcon_113090",
     "rankLevel": 4,
@@ -3219,6 +3242,14 @@
     "nameTextMapHash": 2633703740,
     "rank": 11101,
     "wikiId": 11366
+  },
+  {
+    "id": 113092,
+    "icon": "UI_ItemIcon_113092",
+    "rankLevel": 4,
+    "nameTextMapHash": 32764212,
+    "rank": 11101,
+    "wikiId": -1
   },
   {
     "id": 114001,

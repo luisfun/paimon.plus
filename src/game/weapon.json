@@ -1,23 +1,23 @@
 [
   {
-    "id": 11521,
-    "icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya",
+    "id": 11522,
+    "icon": "UI_EquipIcon_Sword_Samosvist",
     "rankLevel": 5,
-    "nameTextMapHash": 1896898739,
+    "nameTextMapHash": 4086029419,
     "weaponType": "WEAPON_SWORD_ONE_HAND",
     "allCosts": {
       "promoteCoin": 225000,
       "materials": {
-        "112146": 15,
-        "112147": 23,
-        "112148": 27,
-        "112152": 23,
-        "112153": 27,
-        "112154": 41,
-        "114093": 5,
-        "114094": 14,
-        "114095": 14,
-        "114096": 6
+        "112149": 15,
+        "112150": 23,
+        "112151": 27,
+        "112155": 23,
+        "112156": 27,
+        "112157": 41,
+        "114085": 5,
+        "114086": 14,
+        "114087": 14,
+        "114088": 6
       }
     },
     "wikiId": -1
@@ -412,6 +412,52 @@
       }
     },
     "wikiId": 2046
+  },
+  {
+    "id": 11438,
+    "icon": "UI_EquipIcon_Sword_Fajian",
+    "rankLevel": 4,
+    "nameTextMapHash": 2153081171,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112032": 10,
+        "112033": 15,
+        "112034": 18,
+        "112041": 15,
+        "112042": 18,
+        "112043": 27,
+        "114021": 3,
+        "114022": 9,
+        "114023": 9,
+        "114024": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
+    "id": 11437,
+    "icon": "UI_EquipIcon_Sword_SpikedStake",
+    "rankLevel": 4,
+    "nameTextMapHash": 1359826123,
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112149": 10,
+        "112150": 15,
+        "112151": 18,
+        "112155": 15,
+        "112156": 18,
+        "112157": 27,
+        "114089": 3,
+        "114090": 9,
+        "114091": 9,
+        "114092": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 11436,
@@ -2627,6 +2673,29 @@
     "wikiId": 1956
   },
   {
+    "id": 15437,
+    "icon": "UI_EquipIcon_Bow_Windtalker",
+    "rankLevel": 4,
+    "nameTextMapHash": 3763051755,
+    "weaponType": "WEAPON_BOW",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112149": 10,
+        "112150": 15,
+        "112151": 18,
+        "112152": 15,
+        "112153": 18,
+        "112154": 27,
+        "114093": 3,
+        "114094": 9,
+        "114095": 9,
+        "114096": 4
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 15436,
     "icon": "UI_EquipIcon_Bow_GlintstoneBow",
     "rankLevel": 4,
@@ -3472,6 +3541,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14524,
+    "icon": "UI_EquipIcon_Catalyst_Bludnye",
+    "rankLevel": 5,
+    "nameTextMapHash": 2677592067,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112146": 15,
+        "112147": 23,
+        "112148": 27,
+        "112152": 23,
+        "112153": 27,
+        "112154": 41,
+        "114089": 5,
+        "114090": 14,
+        "114091": 14,
+        "114092": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14523,
     "icon": "UI_EquipIcon_Catalyst_FairyGarden",
     "rankLevel": 5,
@@ -3907,6 +3999,29 @@
       }
     },
     "wikiId": 1955
+  },
+  {
+    "id": 14437,
+    "icon": "UI_EquipIcon_Catalyst_FrostScepter",
+    "rankLevel": 4,
+    "nameTextMapHash": 2998374891,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 150000,
+      "materials": {
+        "112146": 10,
+        "112147": 15,
+        "112148": 18,
+        "112155": 15,
+        "112156": 18,
+        "112157": 27,
+        "114093": 3,
+        "114094": 9,
+        "114095": 9,
+        "114096": 4
+      }
+    },
+    "wikiId": -1
   },
   {
     "id": 14436,

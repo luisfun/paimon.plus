@@ -2,6 +2,57 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Vodyanitsa',
+    score: [0, 0, 1, 2], // 実際は3はありそうだが、組み合わせを重視するために2
+    stat: ['HP'],
+    coop: [
+      { score: -1, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      {
+        score: 1,
+        or: [
+          [
+            { elem: ['Cryo'], roll: ['main'] },
+            { elem: ['Hydro'], roll: ['sub'] },
+          ],
+          [
+            { elem: ['Hydro'], roll: ['main'] },
+            { elem: ['Cryo'], roll: ['sub'] },
+          ],
+          'Vesna',
+          'Yumemizuki Mizuki',
+        ],
+      },
+      {
+        score: 4,
+        or: [
+          [{ elem: ['Cryo'], roll: ['main'] }],
+          [
+            { elem: ['Hydro'], roll: ['main'] },
+            { elem: ['Cryo'], roll: ['sub'] },
+          ],
+          'Vesna',
+          'Yumemizuki Mizuki',
+        ],
+      },
+    ],
+    filter: { score: 6, roll: 'healer' },
+  },
+  {
+    name: 'Vesna',
+    score: [2, 0, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    dmg: ['element'],
+    stat: ['ATK'],
+    explor: ['fly', 4],
+    coop: [
+      { score: -3, add: ['Furina'] },
+      { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
+      { score: -2, add: [{ elem: ['Pyro', 'Electro'], roll: ['sub'] }] },
+      { score: 1, add: [[{ elem: ['Cryo'] }, { elem: ['Cryo'] }]] },
+      { score: 4, add: [{ elem: ['Cryo'] }] },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Odette',
     score: [0, 2, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
     dmg: ['element'],
@@ -422,7 +473,10 @@ export const avatar: Avatar[] = [
     score: [6.1, 0, 0, 0],
     dmg: ['charge'],
     stat: ['HP'],
-    coop: [{ score: -2, add: [{ trigger: ['normal'] }] }],
+    coop: [
+      { score: -2, add: [{ trigger: ['normal'] }] },
+      { score: -1, add: [{ elem: ['Hydro'] }] },
+    ],
   },
   {
     name: 'Lyney',
@@ -1109,6 +1163,7 @@ export const avatar: Avatar[] = [
       { score: -3, add: ['Furina'] },
       { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
       { score: -2, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: -0.1, add: ['Vodyanitsa'] }, // 調節
       { score: 4, add: ['Odette', 'Alyosha'] }, // 元々よそのバフ
       { score: 5, add: [{ elem: ['Electro'], roll: ['sub'] }] }, // ちょっと高い？
     ],

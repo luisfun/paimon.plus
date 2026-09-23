@@ -1222,6 +1222,12 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Manekin',
+    elem: 'Cryo',
+    score: [1.1, 0, 0, 0],
+    dmg: ['normal'],
+  },
+  {
+    name: 'Manekin',
     elem: 'Pyro',
     score: [1.1, 0, 0, 0],
     dmg: ['normal'],

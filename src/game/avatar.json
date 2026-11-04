@@ -168,6 +168,62 @@
     "wikiId": 11702
   },
   {
+    "key": "Mitya",
+    "id": 10000136,
+    "qualityType": "QUALITY_ORANGE",
+    "weaponType": "WEAPON_CATALYST",
+    "nameTextMapHash": 2607187986,
+    "skillDepotId": 13601,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Mitya_01",
+      "UI_Talent_S_Mitya_02",
+      "UI_Talent_U_Mitya_01",
+      "UI_Talent_S_Mitya_03",
+      "UI_Talent_U_Mitya_02",
+      "UI_Talent_S_Mitya_04"
+    ],
+    "skills": [
+      {
+        "id": 11361,
+        "icon": "Skill_A_Catalyst_MD",
+        "proud": 13631
+      },
+      {
+        "id": 11362,
+        "icon": "Skill_S_Mitya_01",
+        "proud": 13632
+      },
+      {
+        "id": 11364,
+        "icon": "Skill_E_Mitya_01",
+        "proud": 13639
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101274": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104365": 9,
+        "104366": 63,
+        "104367": 114,
+        "112149": 36,
+        "112150": 96,
+        "112151": 129,
+        "113081": 18,
+        "113093": 46
+      }
+    },
+    "wikiId": 11827
+  },
+  {
     "key": "PlayerGirl",
     "id": 10000135,
     "qualityType": "QUALITY_ORANGE",
@@ -5040,6 +5096,62 @@
       }
     },
     "wikiId": 11163
+  },
+  {
+    "key": "Valeriy",
+    "id": 10000137,
+    "qualityType": "QUALITY_PURPLE",
+    "weaponType": "WEAPON_SWORD_ONE_HAND",
+    "nameTextMapHash": 3993177338,
+    "skillDepotId": 13701,
+    "element": "Electric",
+    "consts": [
+      "UI_Talent_S_Valeriy_01",
+      "UI_Talent_S_Valeriy_02",
+      "UI_Talent_U_Valeriy_01",
+      "UI_Talent_S_Valeriy_03",
+      "UI_Talent_U_Valeriy_02",
+      "UI_Talent_S_Valeriy_04"
+    ],
+    "skills": [
+      {
+        "id": 30601,
+        "icon": "Skill_A_01",
+        "proud": 13731
+      },
+      {
+        "id": 30602,
+        "icon": "Skill_S_Valeriy_01",
+        "proud": 13732
+      },
+      {
+        "id": 30605,
+        "icon": "Skill_E_Valeriy_01",
+        "proud": 13739
+      }
+    ],
+    "costumes": [],
+    "allCosts": {
+      "promoteCoin": 420000,
+      "skillCoin": 4957500,
+      "materials": {
+        "101273": 168,
+        "104141": 1,
+        "104142": 9,
+        "104143": 9,
+        "104144": 6,
+        "104319": 3,
+        "104371": 9,
+        "104372": 63,
+        "104373": 114,
+        "112146": 36,
+        "112147": 96,
+        "112148": 129,
+        "113087": 18,
+        "113091": 46
+      }
+    },
+    "wikiId": 11828
   },
   {
     "key": "Prune",

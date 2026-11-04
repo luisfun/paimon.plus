@@ -399,6 +399,20 @@
     "wikiId": 10457
   },
   {
+    "id": 101273,
+    "icon": "UI_ItemIcon_101273",
+    "nameTextMapHash": 486821180,
+    "rank": 318,
+    "wikiId": -1
+  },
+  {
+    "id": 101274,
+    "icon": "UI_ItemIcon_101274",
+    "nameTextMapHash": 1891709084,
+    "rank": 318,
+    "wikiId": -1
+  },
+  {
     "id": 101275,
     "icon": "UI_ItemIcon_101275",
     "nameTextMapHash": 560079332,
@@ -2524,6 +2538,30 @@
     "wikiId": 11378
   },
   {
+    "id": 112158,
+    "icon": "UI_ItemIcon_112158",
+    "rankLevel": 2,
+    "nameTextMapHash": 2223054196,
+    "rank": 10150,
+    "wikiId": -1
+  },
+  {
+    "id": 112159,
+    "icon": "UI_ItemIcon_112159",
+    "rankLevel": 3,
+    "nameTextMapHash": 416153004,
+    "rank": 10150,
+    "wikiId": -1
+  },
+  {
+    "id": 112160,
+    "icon": "UI_ItemIcon_112160",
+    "rankLevel": 4,
+    "nameTextMapHash": 2612765932,
+    "rank": 10150,
+    "wikiId": -1
+  },
+  {
     "id": 113001,
     "icon": "UI_ItemIcon_113001",
     "rankLevel": 4,
@@ -3250,6 +3288,14 @@
     "nameTextMapHash": 32764212,
     "rank": 11101,
     "wikiId": 11760
+  },
+  {
+    "id": 113093,
+    "icon": "UI_ItemIcon_113093",
+    "rankLevel": 4,
+    "nameTextMapHash": 1702887612,
+    "rank": 11101,
+    "wikiId": -1
   },
   {
     "id": 114001,

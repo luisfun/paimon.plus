@@ -3541,6 +3541,29 @@
     "wikiId": 1993
   },
   {
+    "id": 14525,
+    "icon": "UI_EquipIcon_Catalyst_Chernaya",
+    "rankLevel": 5,
+    "nameTextMapHash": 4206156163,
+    "weaponType": "WEAPON_CATALYST",
+    "allCosts": {
+      "promoteCoin": 225000,
+      "materials": {
+        "112146": 15,
+        "112147": 23,
+        "112148": 27,
+        "112158": 23,
+        "112159": 27,
+        "112160": 41,
+        "114093": 5,
+        "114094": 14,
+        "114095": 14,
+        "114096": 6
+      }
+    },
+    "wikiId": -1
+  },
+  {
     "id": 14524,
     "icon": "UI_EquipIcon_Catalyst_Bludnye",
     "rankLevel": 5,

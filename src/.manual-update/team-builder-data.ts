@@ -2,11 +2,25 @@ import type { Avatar } from '@components/team-builder/types'
 
 export const avatar: Avatar[] = [
   {
+    name: 'Mitya',
+    score: [2, 1, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    group: ['stellar'],
+    dmg: ['element'],
+    stat: ['EM'],
+    coop: [
+      { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
+      { score: -1, add: [{ elem: ['Pyro', 'Geo', 'Dendro'], roll: ['main', 'sub'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Geo', 'Dendro'] }] },
+      { score: 4, add: [{ elem: ['Cryo'], roll: ['main', 'sub'] }] },
+    ],
+    filter: { score: 6, roll: 'main' },
+  },
+  {
     name: 'Vodyanitsa',
     score: [0, 0, 1, 2], // 実際は3はありそうだが、組み合わせを重視するために2
     stat: ['HP'],
     coop: [
-      { score: -1, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Geo', 'Dendro'], roll: ['sub'] }] },
       {
         score: 1,
         or: [
@@ -40,14 +54,15 @@ export const avatar: Avatar[] = [
   {
     name: 'Vesna',
     score: [2, 0, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    group: ['stellar'],
     dmg: ['element'],
     stat: ['ATK'],
     explor: ['fly', 4],
     coop: [
-      { score: -3, add: ['Furina'] },
       { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
-      { score: -2, add: [{ elem: ['Pyro', 'Electro'], roll: ['sub'] }] },
-      { score: 1, add: [[{ elem: ['Cryo'] }, { elem: ['Cryo'] }]] },
+      { score: -1, add: [{ elem: ['Pyro', 'Electro'], roll: ['sub'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Electro'] }] },
+      { score: 1, add: [{ elem: ['Cryo'], roll: ['sub'] }] },
       { score: 4, add: [{ elem: ['Cryo'] }] },
     ],
     filter: { score: 6, roll: 'main' },
@@ -55,12 +70,13 @@ export const avatar: Avatar[] = [
   {
     name: 'Odette',
     score: [0, 2, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    group: ['stellar'],
     dmg: ['element'],
     stat: ['ATK'],
     coop: [
-      { score: -3, add: ['Furina'] },
       { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
-      { score: -2, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Geo'] }] },
       { score: 4, or: [{ elem: ['Electro', 'Anemo'], roll: ['main'] }, 'Sandrone', 'Wriothesley'] }, // Travelerは氷のみ個別
     ],
     filter: { score: 6, roll: 'sub' },
@@ -68,12 +84,12 @@ export const avatar: Avatar[] = [
   {
     name: 'Sandrone',
     score: [2, 0, 0, 0], // 実際は3はありそうだが、組み合わせを重視するために2
+    group: ['stellar'],
     dmg: ['charge', 'element'],
     stat: ['ATK', 'EM'],
     coop: [
-      { score: -3, add: ['Furina'] },
       { score: -2, add: [{ trigger: ['normal'] }] },
-      { score: -1, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
+      { score: -1, add: [{ elem: ['Pyro', 'Geo'] }] },
       {
         score: 2,
         add: [{ elem: ['Electro'] }, { elem: ['Electro'], roll: ['sub'] }],
@@ -455,6 +471,7 @@ export const avatar: Avatar[] = [
     stat: ['HP'],
     explor: ['boat', 3],
     coop: [
+      { score: -3, add: [{ group: ['stellar'] }] },
       { score: -2, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }]] },
       { score: -1, add: [{ group: ['moonsign'] }] },
       {
@@ -560,7 +577,7 @@ export const avatar: Avatar[] = [
     stat: ['HP'],
     trigger: ['normal'],
     explor: ['run', 2],
-    coop: [{ score: -1, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }]] }],
+    coop: [{ score: -1, add: [[{ group: ['moonsign'] }, { group: ['moonsign'] }], { group: ['stellar'] }] }],
   },
   {
     name: 'Kamisato Ayato',
@@ -570,7 +587,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Yae Miko',
-    score: [0, 5, 0, 0],
+    score: [0, 6, 0, 0],
     dmg: ['skill'],
   },
   {
@@ -629,7 +646,10 @@ export const avatar: Avatar[] = [
     name: 'Kaedehara Kazuha',
     score: [0, 0, 5, 0],
     explor: ['climb', 1],
-    coop: [{ score: -3, add: [{ roll: ['main'], elem: ['Dendro', 'Anemo', 'Geo'] }] }],
+    coop: [
+      { score: -3, add: [{ roll: ['main'], elem: ['Dendro', 'Anemo', 'Geo'] }] },
+      { score: -1, add: [{ group: ['stellar'] }] },
+    ],
   },
   {
     name: 'Eula',
@@ -723,6 +743,35 @@ export const avatar: Avatar[] = [
     burstDep: 3,
   },
 
+  {
+    name: 'Valeriy',
+    score: [0, 0, 1, 3],
+    burstDep: 1,
+    coop: [
+      { score: 1, add: [{ elem: ['Electro'], roll: ['main'] }] },
+      {
+        score: 1,
+        or: [
+          [{ elem: ['Electro'], group: ['stellar'] }, { elem: ['Cryo'] }],
+          [{ elem: ['Electro'] }, { elem: ['Cryo'], group: ['stellar'] }],
+        ],
+      },
+      {
+        score: 2,
+        or: [
+          [
+            { elem: ['Electro'], roll: ['main'], group: ['stellar'] },
+            { elem: ['Cryo'], roll: ['sub'] },
+          ],
+          [
+            { elem: ['Electro'], roll: ['main'] },
+            { elem: ['Cryo'], roll: ['sub'], group: ['stellar'] },
+          ],
+        ],
+      },
+    ],
+    filter: { score: 6, roll: 'healer' },
+  },
   {
     name: 'Alyosha',
     score: [0, 0, 1, 1],
@@ -922,7 +971,7 @@ export const avatar: Avatar[] = [
       { score: -2, add: ['Chasca'] },
       { score: 4, add: [{ roll: ['main'], elem: ['Anemo'] }] },
     ],
-    filter: { score: 4, roll: 'support' },
+    filter: { score: 5, roll: 'support' },
   },
   {
     name: 'Layla',
@@ -1036,7 +1085,7 @@ export const avatar: Avatar[] = [
   },
   {
     name: 'Rosaria',
-    score: [0, 5, 0, 0],
+    score: [0, 4.1, 0, 0],
     burstDep: 2,
     explor: ['run-speed', 1],
   },
@@ -1158,9 +1207,9 @@ export const avatar: Avatar[] = [
     name: 'Traveler',
     elem: 'Cryo',
     score: [2.1, 0, 0, 0], // 一旦風拡散によるsubは無視
+    group: ['stellar'],
     burstDep: 2,
     coop: [
-      { score: -3, add: ['Furina'] },
       { score: -2, add: [{ group: ['moonsign'] }] }, // たぶん相性よくない？（検証不足）
       { score: -2, add: [{ elem: ['Pyro', 'Geo'], roll: ['sub'] }] },
       { score: -0.1, add: ['Vodyanitsa'] }, // 調節

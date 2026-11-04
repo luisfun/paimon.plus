@@ -1,7 +1,7 @@
 export type Name = string
 type Roll = 'main' | 'sub' | 'support' | 'healer'
 export type Elem = '4elem' | 'Pyro' | 'Hydro' | 'Cryo' | 'Electro' | 'Dendro' | 'Anemo' | 'Geo'
-type Group = 'hexerei' | 'moonsign'
+type Group = 'hexerei' | 'moonsign' | 'stellar'
 type Dmg = 'normal' | 'charge' | 'plunge' | 'skill' | 'burst' | 'element'
 type Stat = 'HP' | 'ATK' | 'DEF' | 'EM'
 type Trigger = 'normal'
